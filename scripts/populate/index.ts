@@ -11,6 +11,7 @@ import TIPI_FABBRICATO from './data/tipo_fabbricato';
 import PRESIDENTI from './data/presidente';
 import DIPARTIMENTI_UNITN from './data/dipartimento_unitn';
 import OSPITI from './data/ospite';
+import FABBRICATI from './data/fabbricato';
 
 async function main() {
     const prisma = new PrismaClient();
@@ -58,6 +59,7 @@ async function main() {
     await populate('presidente', PRESIDENTI, false);
     await populate('dipartimentoUnitn', DIPARTIMENTI_UNITN);
     await populate('ospite', OSPITI, false);
+    await populate('fabbricato', FABBRICATI);
     logger.hr();
     logger.info('Database populated');
 

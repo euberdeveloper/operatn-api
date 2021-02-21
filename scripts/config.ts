@@ -6,6 +6,9 @@ dotenv.config({
 });
 
 const CONFIG = {
+    DATABASE: {
+        URL: process.env.DATABASE_URL
+    },
     SECURITY: {
         SALT_ROUNDS: +process.env.SECURITY_SALT_ROUNDS
     }

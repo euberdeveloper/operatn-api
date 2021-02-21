@@ -150,7 +150,7 @@ model DipartimentoUnitn {
 
 model Fabbricato {
     id                 Int            @id @default(autoincrement())
-    nome               String
+    nome               String         @unique
     provincia          String
     comune             String
     cap                String         @db.Char(5)
