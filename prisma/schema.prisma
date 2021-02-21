@@ -1,0 +1,540 @@
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+generator generator {
+    provider        = "prisma-client-js"
+    previewFeatures = ["createMany"]
+}
+
+// PERSONA
+
+model Persona {
+    uid              String          @id @default(uuid())
+    codice_fiscale   String?
+    nome             String
+    cognome          String
+    sesso            Sesso
+    data_nascita     DateTime
+    luogo_di_nascita LuogoDiNascita?
+    residenza        Residenza?
+    domicili         Domicilio[]
+
+    data_creazione DateTime  @default(now())
+    eliminato      DateTime?
+
+    Presidente Presidente[]
+    Ospite     Ospite[]
+    @@map("persona")
+}
+
+model LuogoDiNascita {
+    uid       String  @id
+    stato     String
+    provincia String?
+    comune    String?
+    persona   Persona @relation(fields: [uid], references: [uid])
+
+    @@map("luogo_di_nascita")
+}
+
+model Residenza {
+    uid       String  @id
+    stato     String
+    provincia String
+    comune    String
+    cap       String
+    indirizzo String
+    n_civico  String
+    persona   Persona @relation(fields: [uid], references: [uid])
+
+    @@map("residenza")
+}
+
+model Domicilio {
+    id        Int     @default(autoincrement())
+    uid       String
+    stato     String
+    provincia String
+    comune    String
+    cap       String
+    indirizzo String
+    n_civico  String
+    persona   Persona @relation(fields: [uid], references: [uid])
+
+    @@id([id, uid])
+    @@map("domicilio")
+}
+
+enum Sesso {
+    MASCHIO
+    FEMMINA
+}
+
+model Presidente {
+    uid                 String   @id
+    data_inizio_mandato DateTime
+    data_fine_mandato   DateTime
+    firma               String
+    persona             Persona  @relation(fields: [uid], references: [uid])
+
+    @@map("presidente")
+}
+
+model Ospite {
+    uid                String             @id
+    email              String
+    telefono           String
+    foto               String
+    cittadinanza       String
+    conto_corrente     ContoCorrente?
+    documento_identita DocumentoIdentita?
+
+    codice_dipartimento_unitn String?
+    dipartimento_unitn        DipartimentoUnitn? @relation(fields: [codice_dipartimento_unitn], references: [codice])
+
+    possiede_cauzione Boolean @default(false)
+
+    persona Persona @relation(fields: [uid], references: [uid])
+
+    Contratto Contratto[]
+    Bolletta  Bolletta[]
+    @@map("ospite")
+}
+
+model ContoCorrente {
+    uid          String @id
+    iban         String
+    banca        String
+    swift_bic    String
+    aba          String
+    agenzia      String
+    transit_code String
+    ospite       Ospite @relation(fields: [uid], references: [uid])
+
+    @@map("conto_corrente")
+}
+
+model DocumentoIdentita {
+    uid           String   @id
+    tipo          String
+    numero        String
+    ente          String
+    data_scadenza DateTime
+    data_rilascio DateTime
+    documento     String
+    ospite        Ospite   @relation(fields: [uid], references: [uid])
+
+    @@map("documento_identita")
+}
+
+model DipartimentoUnitn {
+    codice    String @id
+    nome      String
+    provincia String
+    comune    String
+    cap       String
+    indirizzo String
+    n_civico  String
+    sito_web  String
+
+    creato_il DateTime  @default(now())
+    eliminato DateTime?
+
+    Ospite Ospite[]
+    @@map("dipartimento_unitn")
+}
+
+// FABBRICATO
+
+model Fabbricato {
+    id                 Int            @id @default(autoincrement())
+    nome               String
+    provincia          String
+    comune             String
+    cap                String         @db.Char(5)
+    indirizzo          String
+    numero_civico      String
+    id_tipo_fabbricato Int
+    tipo_fabbricato    TipoFabbricato @relation(fields: [id_tipo_fabbricato], references: [id])
+
+    Stanza Stanza[]
+    @@map("fabbricato")
+}
+
+model TipoFabbricato {
+    id              Int    @id @default(autoincrement())
+    tipo_fabbricato String @unique
+
+    Fabbricato Fabbricato[]
+    Tariffa    Tariffa[]
+    @@map("tipo_fabbricato")
+}
+
+model Stanza {
+    id Int @id @default(autoincrement())
+
+    id_fabbricato Int
+    fabbricato    Fabbricato @relation(fields: [id_fabbricato], references: [id])
+
+    unita_immobiliare String
+    numero_stanza     String
+
+    id_tipo_stanza Int
+    tipo_stanza    TipoStanza @relation(fields: [id_tipo_stanza], references: [id])
+
+    centro_di_costo String
+
+    gestione_diretta Boolean
+    handicap         Boolean
+    bagno            Boolean
+    piano            Piano
+
+    valido_dal DateTime
+    valido_al  DateTime
+
+    manutenzioni Manutenzione[]
+
+    PostoLetto PostoLetto[]
+    @@unique([id_fabbricato, unita_immobiliare, numero_stanza])
+    @@map("stanza")
+}
+
+model TipoStanza {
+    id          Int    @id @default(autoincrement())
+    tipo_stanza String @unique
+
+    Stanza Stanza[]
+    @@map("tipo_stanza")
+}
+
+model Manutenzione {
+    id          Int       @id @default(autoincrement())
+    data_inizio DateTime
+    data_fine   DateTime?
+
+    id_stanza Int
+    stanza    Stanza @relation(fields: [id_stanza], references: [id])
+
+    @@map("manutenzione")
+}
+
+model PostoLetto {
+    id Int @id @default(autoincrement())
+
+    id_stanza Int
+    stanza    Stanza @relation(fields: [id_stanza], references: [id])
+
+    posto_letto Int @default(autoincrement())
+
+    ContrattiSuPostiLetto ContrattiSuPostiLetto[]
+    @@map("posto_letto")
+}
+
+enum Piano {
+    PIANO_TERRA
+    PIANO_RIALZATO
+    PRIMO_PIANO
+    SECONDO_PIANO
+    TERZO_PIANO
+    QUARTO_PIANO
+    QUINTO_PIANO
+    SESTO_PIANO
+    SETTIMO_PIANO
+}
+
+// TARIFFA
+
+model Tariffa {
+    id Int @id @default(autoincrement())
+
+    id_tipo_utente Int
+    tipo_utente    TipoUtente @relation(fields: [id_tipo_utente], references: [id])
+
+    id_utilizzo_stanza Int
+    utilizzo_stanza    UtilizzoStanza @relation(fields: [id_utilizzo_stanza], references: [id])
+
+    id_tipo_fabbricato Int
+    tipo_fabbricato    TipoFabbricato @relation(fields: [id_tipo_fabbricato], references: [id])
+
+    id_tipo_tariffa Int
+    tipo_tariffa    TipoTariffa @relation(fields: [id_tipo_tariffa], references: [id])
+
+    prezzo_consumi Float
+    prezzo_canone  Float
+
+    valida_dal DateTime
+    valida_al  DateTime?
+
+    Contratto Contratto[]
+    @@unique([id_tipo_utente, id_utilizzo_stanza, id_tipo_fabbricato, id_tipo_tariffa])
+    @@map("tariffa")
+}
+
+model UtilizzoStanza {
+    id              Int    @id @default(autoincrement())
+    utilizzo_stanza String @unique
+
+    Tariffa Tariffa[]
+    @@map("utilizzo_stanza")
+}
+
+model TipoUtente {
+    id          Int    @id @default(autoincrement())
+    sigla       String @unique
+    tipo_utente String @unique
+
+    id_conto_ricavi_consumi Int
+    conto_ricavi_consumi    ContoRicaviConsumi @relation(fields: [id_conto_ricavi_consumi], references: [id])
+
+    id_conto_ricavi_canoni Int
+    conto_ricavi_canoni    ContoRicaviCanoni @relation(fields: [id_conto_ricavi_canoni], references: [id])
+
+    Tariffa Tariffa[]
+    @@map("tipo_utente")
+}
+
+model TipoTariffa {
+    id           Int    @id @default(autoincrement())
+    tipo_tariffa String @unique
+
+    Tariffa Tariffa[]
+    @@map("tipo_tariffa")
+}
+
+// CONTRATTO
+
+model Contratto {
+    id Int @id @default(autoincrement())
+
+    data_inizio DateTime
+    data_fine   DateTime
+
+    data_firma_contratto     DateTime?
+    data_contabilizzazione   DateTime?
+    data_chiusura_anticipata DateTime?
+
+    checkout      Float?
+    data_checkin  DateTime
+    data_checkout DateTime?
+
+    cauzione Float?
+
+    id_tipo_rata Int
+    tipo_rata    TipoRata @relation(fields: [id_tipo_rata], references: [id])
+
+    id_tariffa Int
+    tariffa    Tariffa @relation(fields: [id_tariffa], references: [id])
+
+    id_tipo_contratto Int
+    tipo_contratto    TipoContratto @relation(fields: [id_tipo_contratto], references: [id])
+
+    id_quietanziante Int
+    quietanziante    Quietanziante @relation(fields: [id_quietanziante], references: [id])
+
+    uid_ospite String
+    ospite     Ospite @relation(fields: [uid_ospite], references: [uid])
+
+    posti_letto ContrattiSuPostiLetto[]
+
+    Bolletta Bolletta[]
+    @@map("contratto")
+}
+
+model ContrattiSuPostiLetto {
+    id_contratto Int
+    contratto    Contratto @relation(fields: [id_contratto], references: [id])
+
+    id_posto_letto Int
+    posto_letto    PostoLetto @relation(fields: [id_posto_letto], references: [id])
+
+    @@id([id_contratto, id_posto_letto])
+    @@map("contratti_su_posti_letto")
+}
+
+model TipoRata {
+    id        Int    @id @default(autoincrement())
+    tipo_rata String @unique
+
+    Contratto Contratto[]
+    @@map("tipo_rata")
+}
+
+model TipoContratto {
+    id Int @id @default(autoincrement())
+
+    id_tipo_studente Int
+    tipo_studente    TipoStudente @relation(fields: [id_tipo_studente], references: [id])
+
+    sigla String @unique
+    nome  String @unique
+
+    Contratto Contratto[]
+    @@map("tipo_contratto")
+}
+
+model Quietanziante {
+    id            Int    @id @default(autoincrement())
+    quietanziante String @unique
+
+    Contratto Contratto[]
+    @@map("quietanziante")
+}
+
+model TipoStudente {
+    id            Int    @id @default(autoincrement())
+    tipo_studente String @unique
+
+    TipoContratto TipoContratto[]
+    @@map("tipo_studente")
+}
+
+model ContoRicaviConsumi {
+    id                   Int    @id @default(autoincrement())
+    codice               String @unique
+    conto_ricavi_consumi String @unique
+
+    TipoUtente TipoUtente[]
+    @@map("conto_ricavi_consumi")
+}
+
+model ContoRicaviCanoni {
+    id                  Int    @id @default(autoincrement())
+    codice              String @unique
+    conto_ricavi_canoni String @unique
+
+    TipoUtente TipoUtente[]
+    @@map("conto_ricavi_canoni")
+}
+
+// BOLLETTA
+
+model Bolletta {
+    id Int @id @default(autoincrement())
+
+    importo_consumi Float?
+    importo_canone  Float?
+    importo_totale  Float
+
+    competenza_al  DateTime
+    competenza_dal DateTime
+    data_scadenza  DateTime
+
+    data_invio         DateTime?
+    data_registrazione DateTime?
+
+    centro_di_costo      String
+    conto_ricavi_consumi String
+    conto_ricavi_canoni  String
+
+    id_bolletta_stornata Int?
+    bolletta_stornata    Bolletta? @relation(fields: [id_bolletta_stornata], references: [id])
+
+    id_tipo_bolletta Int
+    tipo_bolletta    TipoBolletta @relation(fields: [id_tipo_bolletta], references: [id])
+
+    id_contratto Int
+    contratto    Contratto @relation(fields: [id_contratto], references: [id])
+
+    uid_ospite String
+    ospite     Ospite @relation(fields: [uid_ospite], references: [uid])
+
+    Bolletta Bolletta[] @relation("BollettaToBolletta")
+    @@map("bolletta")
+}
+
+model TipoBolletta {
+    id            Int    @id @default(autoincrement())
+    tipo_bolletta String @unique
+
+    Bolletta Bolletta[]
+    @@map("tipo_bolletta")
+}
+
+// NAZIONE / PROVINCIA / COMUNE
+
+model Stato {
+    codice_iso String @id
+
+    codice_stato      String @unique
+    codice_istat      String @unique
+    codice_istat_inps String @unique
+    denominazione     String @unique
+
+    Provincia Provincia[]
+    @@map("stato")
+}
+
+model Provincia {
+    sigla String @id
+
+    denominazione String @unique
+    regione       String
+
+    codice_stato String
+    stato        Stato  @relation(fields: [codice_stato], references: [codice_iso])
+
+    Comune Comune[]
+    @@map("provincia")
+}
+
+model Comune {
+    id Int @id
+
+    codice_istat  String @unique
+    denominazione String @unique
+
+    sigla_provincia String
+    provincia       Provincia @relation(fields: [sigla_provincia], references: [sigla])
+
+    @@map("comune")
+}
+
+// UTENTE
+
+model Utente {
+    uid                     String      @id @default(uuid())
+    nome_utente             String      @unique
+    password                String
+    email                   String
+    ruolo                   RuoloUtente
+    token_recupero_password String?
+
+    Cronologia Cronologia[]
+
+    @@map("utente")
+}
+
+enum RuoloUtente {
+    ADMIN
+    SPORTELLO
+    PORTINERIA
+    CONTROLLO_ALLOGGI
+}
+
+// CRONOLOGIA
+
+model Cronologia {
+    id        Int               @id @default(autoincrement())
+    timestamp DateTime
+    ip        String
+    uid       String
+    utente    Utente            @relation(fields: [uid], references: [uid])
+    azione    CronologiaAzione
+    risorsa   CronologiaRisorsa
+
+    @@map("cronologia")
+}
+
+enum CronologiaAzione {
+    CREATE
+    RETRIEVE
+    UPDATE
+    DELETE
+}
+
+enum CronologiaRisorsa {
+    OSPITE
+    PRESIDENTE
+}
