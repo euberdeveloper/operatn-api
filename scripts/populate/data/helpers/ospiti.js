@@ -106,6 +106,49 @@ function getDocumento(p, documentoIdentitaRaw) {
     } : undefined;
 }
 
+function getHeader() {
+    return [
+        'nome',
+        'cognome',
+        'codice_fiscale',
+        'sesso',
+        'data_nascita',
+        'email',
+        'telefono_principale',
+        'telefono_secondario',
+        'foto',
+        'cittadinanza',
+        'stato_nascita',
+        'provincia_nascita',
+        'comune_nascita',
+        'stato_residenza',
+        'provincia_residenza',
+        'comune_residenza',
+        'cap_residenza',
+        'indirizzo_residenza',
+        'n_civico_residenza',
+        'stato_domicilio',
+        'provincia_domicilio',
+        'comune_domicilio',
+        'cap_domicilio',
+        'indirizzo_domicilio',
+        'n_civico_domicilio',
+        'DIPARTIMENTO IGNOTO',
+        'iban_conto_corrente',
+        'banca_conto_corrente',
+        'swift_bic_conto_corrente',
+        'aba_conto_corrente',
+        'agenzia_conto_corrente',
+        'transit_code_conto_corrente',
+        'documento_identita_tipo',
+        'documento_identita_numero',
+        'documento_identita_ente',
+        'documento_identita_data_scadenza',
+        'documento_identita_data_rilascio',
+        'documento_identita_documento'
+    ]; 
+}
+
 function dataToTuple(el) {
     return [
         el?.persona?.create?.nome,
@@ -145,8 +188,8 @@ function dataToTuple(el) {
         el?.documento_identita?.create?.ente,
         el?.documento_identita?.create?.data_scadenza,
         el?.documento_identita?.create?.data_rilascio,
-        el?.documento_identita?.create?.documento,
-    ];
+        el?.documento_identita?.create?.documento
+    ].map(el => el === null ? 'NULL' : (el instanceof Date ? el.toISOString() : el));
 }
 
 async function main() {
@@ -189,7 +232,12 @@ async function main() {
             }
         }
     }));
-    fs.writeFileSync(path.join(__dirname, './ospiti.json'), JSON.stringify(ospiti, null, 2));
+
+    fs.writeFileSync(path.join(__dirname, 'ospiti.json'), JSON.stringify(ospiti, null, 2));
+
+    const tuple = [getHeader(), ...ospiti.map(el => dataToTuple(el))];
+    fs.writeFileSync(path.join(__dirname, 'ospiti.csv'), tuple.map(el => el.join('\t')).join('\n'));
+
     await client.end();
 }
 main();
