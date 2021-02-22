@@ -87,7 +87,7 @@ model Ospite {
     email               String
     telefono_principale String?
     telefono_secondario String?
-    foto                String
+    foto                String?
     cittadinanza        String
     conto_corrente      ContoCorrente?
     documento_identita  DocumentoIdentita?
@@ -107,11 +107,11 @@ model Ospite {
 model ContoCorrente {
     uid          String @id
     iban         String
-    banca        String
-    swift_bic    String
-    aba          String
-    agenzia      String
-    transit_code String
+    banca        String?
+    swift_bic    String?
+    aba          String?
+    agenzia      String?
+    transit_code String?
     ospite       Ospite @relation(fields: [uid], references: [uid])
 
     @@map("conto_corrente")
@@ -132,7 +132,8 @@ model DocumentoIdentita {
 
 model DipartimentoUnitn {
     codice    String @id
-    nome      String
+    sigla     String?
+    nome      String @unique
     provincia String
     comune    String
     cap       String

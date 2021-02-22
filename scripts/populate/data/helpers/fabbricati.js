@@ -1,9 +1,14 @@
 const { Client } = require('pg');
 const fs = require('fs');
 const path = require('path');
+const dotenv = require('dotenv');
+
+dotenv.config({
+    path: path.join(__dirname, '..', '..', '..', '..', '.env')
+});
 
 const client = new Client({
-    connectionString: 'postgresql://postgres:Vivaintereacdc1%21%3F@localhost:5432/alloggi-opera?schema=public'
+    connectionString: `postgresql://postgres:${process.env.DATABASE_PASSWORD}@localhost:5432/alloggi-opera?schema=public`
 });
 
 function capitalize(str) {

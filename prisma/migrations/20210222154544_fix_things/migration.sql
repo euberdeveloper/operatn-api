@@ -1,0 +1,9 @@
+-- AlterTable
+ALTER TABLE "conto_corrente" ALTER COLUMN "banca" DROP NOT NULL,
+ALTER COLUMN "swift_bic" DROP NOT NULL,
+ALTER COLUMN "aba" DROP NOT NULL,
+ALTER COLUMN "agenzia" DROP NOT NULL,
+ALTER COLUMN "transit_code" DROP NOT NULL;
+
+-- AlterTable
+ALTER TABLE "ospite" ALTER COLUMN "foto" DROP NOT NULL;
