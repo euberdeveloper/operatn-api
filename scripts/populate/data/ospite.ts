@@ -1,4 +1,4 @@
-import { Domicilio, LuogoDiNascita, Persona, Ospite, Prisma, Residenza, Sesso, DipartimentoUnitn } from '@prisma/client';
+import { Domicilio, LuogoDiNascita, Persona, Ospite, Residenza, Sesso } from '@prisma/client';
 
 type OspiteInsert = Omit<Ospite, 'uid' | 'possiede_cauzione' | 'codice_dipartimento_unitn'> & {
     persona: {
@@ -26,7 +26,8 @@ type OspiteInsert = Omit<Ospite, 'uid' | 'possiede_cauzione' | 'codice_dipartime
 const OSPITI: OspiteInsert[] = [
     {
         email: 'eugenio.berretta@studenti.unitn.it',
-        telefono: 'mytelefono',
+        telefono_principale: 'mytelefono_principale',
+        telefono_secondario: 'mytelefono_secondario',
         foto: 'foto',
         dipartimento_unitn: {
             connect: {
@@ -82,8 +83,9 @@ const OSPITI: OspiteInsert[] = [
     },
     {
         email: 'carlo.agostini@unitn.i',
-        telefono: 'mytelefono',
         foto: 'foto',
+        telefono_principale: null,
+        telefono_secondario: null,
         dipartimento_unitn: {
             connect: {
                 codice: 'DISI'

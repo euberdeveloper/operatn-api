@@ -25,6 +25,7 @@ async function main() {
     await client.connect();
     const fabbricatiRaw = await client.query('SELECT * FROM "anagrafica_fabbricato" F, "tipo_residenza" T WHERE F.id_tipo_residenza = T.id');
     const fabbricati =  fabbricatiRaw.rows.map(f => ({
+        codice: '' + Math.random(),
         nome: f.descrizione_fabbricato,
         provincia: f.provincia,
         comune: capitalize(f.comune),

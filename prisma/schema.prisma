@@ -83,13 +83,14 @@ model Presidente {
 }
 
 model Ospite {
-    uid                String             @id
-    email              String
-    telefono           String
-    foto               String
-    cittadinanza       String
-    conto_corrente     ContoCorrente?
-    documento_identita DocumentoIdentita?
+    uid                 String             @id
+    email               String
+    telefono_principale String?
+    telefono_secondario String?
+    foto                String
+    cittadinanza        String
+    conto_corrente      ContoCorrente?
+    documento_identita  DocumentoIdentita?
 
     codice_dipartimento_unitn String?
     dipartimento_unitn        DipartimentoUnitn? @relation(fields: [codice_dipartimento_unitn], references: [codice])
@@ -150,6 +151,7 @@ model DipartimentoUnitn {
 
 model Fabbricato {
     id                 Int            @id @default(autoincrement())
+    codice             String         @unique
     nome               String         @unique
     provincia          String
     comune             String
