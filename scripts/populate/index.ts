@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import { Piano, PrismaClient } from '@prisma/client';
 import { Logger } from 'euberlog';
 import { constantCase } from 'change-case';
 
@@ -12,10 +12,13 @@ import PRESIDENTI from './data/presidente';
 import DIPARTIMENTI_UNITN from './data/dipartimento_unitn';
 import OSPITI from './data/ospite';
 import FABBRICATI from './data/fabbricato';
+import STANZE from './data/stanza';
 import CONTI_RICAVI_CONSUMI from './data/conto_ricavi_consumi';
 import CONTI_RICAVI_CANONI from './data/conto_ricavi_canoni';
 import TIPI_UTENTE from './data/tipo_utente';
 import TARIFFE from './data/tariffa';
+import TIPI_STUDENTE from './data/tipo_studente';
+import TIPI_CONTRATTO from './data/tipo_contratto';
 
 
 async function main() {
@@ -40,21 +43,22 @@ async function main() {
                 logInsert(result.count, constantCase(table));
             }
             else {
-                let duplicates = false;
+                let done = 0;
                 for (const el of data) {
                     try {
                         await prisma[table].create({
                             data: el
                         });
+                        done++;
                     }
                     catch (error) {
-                        duplicates = true;
                         if (error.message.indexOf('Unique constraint') === -1) {
+                            console.log(el)
                             throw error;
                         }
                     }
                 }
-                logInsert(duplicates ? 0 : data.length, constantCase(table));
+                logInsert(done, constantCase(table));
             }
         }
         catch (error) {
@@ -72,7 +76,10 @@ async function main() {
     await populate('tipoFabbricato', TIPI_FABBRICATO);
     await populate('presidente', PRESIDENTI, false);
     await populate('dipartimentoUnitn', DIPARTIMENTI_UNITN);
+    await populate('tipoStudente', TIPI_STUDENTE);
+    await populate('tipoContratto', TIPI_CONTRATTO, false);
     await populate('fabbricato', FABBRICATI);
+    await populate('stanza', STANZE, false);
     await populate('contoRicaviConsumi', CONTI_RICAVI_CONSUMI);
     await populate('contoRicaviCanoni', CONTI_RICAVI_CANONI);
     await populate('tipoUtente', TIPI_UTENTE, false);

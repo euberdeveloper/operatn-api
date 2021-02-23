@@ -37,7 +37,8 @@ async function main() {
         indirizzo: getIndirizzo(f.indirizzo),
         numero_civico: getCivico(f.indirizzo),
         cap: '' + f.cap,
-        id_tipo_fabbricato: +f.id_tipo_residenza
+        id_tipo_fabbricato: +f.id_tipo_residenza,
+        old_code: +f.codice_fabbricato
     }));
     fs.writeFileSync(path.join(__dirname, './fabbricati.json'), JSON.stringify(fabbricati, null, 2));
     await client.end();

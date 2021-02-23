@@ -105,14 +105,14 @@ model Ospite {
 }
 
 model ContoCorrente {
-    uid          String @id
+    uid          String  @id
     iban         String
     banca        String?
     swift_bic    String?
     aba          String?
     agenzia      String?
     transit_code String?
-    ospite       Ospite @relation(fields: [uid], references: [uid])
+    ospite       Ospite  @relation(fields: [uid], references: [uid])
 
     @@map("conto_corrente")
 }
@@ -131,9 +131,9 @@ model DocumentoIdentita {
 }
 
 model DipartimentoUnitn {
-    codice    String @id
+    codice    String  @id
     sigla     String?
-    nome      String @unique
+    nome      String  @unique
     provincia String
     comune    String
     cap       String
@@ -151,14 +151,17 @@ model DipartimentoUnitn {
 // FABBRICATO
 
 model Fabbricato {
-    id                 Int            @id @default(autoincrement())
-    codice             String         @unique
-    nome               String         @unique
-    provincia          String
-    comune             String
-    cap                String         @db.Char(5)
-    indirizzo          String
-    numero_civico      String
+    id            Int    @id @default(autoincrement())
+    codice        String 
+    nome          String 
+    provincia     String
+    comune        String
+    cap           String @db.Char(5)
+    indirizzo     String
+    numero_civico String
+
+    old_code Int @unique
+
     id_tipo_fabbricato Int
     tipo_fabbricato    TipoFabbricato @relation(fields: [id_tipo_fabbricato], references: [id])
 
@@ -187,15 +190,15 @@ model Stanza {
     id_tipo_stanza Int
     tipo_stanza    TipoStanza @relation(fields: [id_tipo_stanza], references: [id])
 
-    centro_di_costo String
+    centro_di_costo String?
 
     gestione_diretta Boolean
     handicap         Boolean
     bagno            Boolean
-    piano            Piano
+    piano            Piano?
 
-    valido_dal DateTime
-    valido_al  DateTime
+    valida_dal DateTime
+    valida_al  DateTime?
 
     manutenzioni Manutenzione[]
 
@@ -245,6 +248,7 @@ enum Piano {
     QUINTO_PIANO
     SESTO_PIANO
     SETTIMO_PIANO
+    MANSARDA
 }
 
 // TARIFFA
