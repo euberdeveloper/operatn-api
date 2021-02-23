@@ -1,4 +1,4 @@
-import { Piano, PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 import { Logger } from 'euberlog';
 import { constantCase } from 'change-case';
 
@@ -13,6 +13,7 @@ import DIPARTIMENTI_UNITN from './data/dipartimento_unitn';
 import OSPITI from './data/ospite';
 import FABBRICATI from './data/fabbricato';
 import STANZE from './data/stanza';
+import POSTI_LETTO from './data/posto_letto';
 import CONTI_RICAVI_CONSUMI from './data/conto_ricavi_consumi';
 import CONTI_RICAVI_CANONI from './data/conto_ricavi_canoni';
 import TIPI_UTENTE from './data/tipo_utente';
@@ -53,7 +54,6 @@ async function main() {
                     }
                     catch (error) {
                         if (error.message.indexOf('Unique constraint') === -1) {
-                            console.log(el)
                             throw error;
                         }
                     }
@@ -80,6 +80,7 @@ async function main() {
     await populate('tipoContratto', TIPI_CONTRATTO, false);
     await populate('fabbricato', FABBRICATI);
     await populate('stanza', STANZE, false);
+    await populate('postoLetto', POSTI_LETTO, false);
     await populate('contoRicaviConsumi', CONTI_RICAVI_CONSUMI);
     await populate('contoRicaviCanoni', CONTI_RICAVI_CANONI);
     await populate('tipoUtente', TIPI_UTENTE, false);

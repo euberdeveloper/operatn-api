@@ -232,9 +232,9 @@ model PostoLetto {
     id_stanza Int
     stanza    Stanza @relation(fields: [id_stanza], references: [id])
 
-    posto_letto Int @default(autoincrement())
+    posto_letto String
 
-    ContrattiSuPostiLetto ContrattiSuPostiLetto[]
+    ContrattoSuPostoLetto ContrattoSuPostoLetto[]
     @@map("posto_letto")
 }
 
@@ -340,16 +340,25 @@ model Contratto {
     id_quietanziante Int
     quietanziante    Quietanziante @relation(fields: [id_quietanziante], references: [id])
 
-    uid_ospite String
-    ospite     Ospite @relation(fields: [uid_ospite], references: [uid])
-
-    posti_letto ContrattiSuPostiLetto[]
+    ospiti ContrattoSuOspite[]
+    posti_letto ContrattoSuPostoLetto[]
 
     Bolletta Bolletta[]
     @@map("contratto")
 }
 
-model ContrattiSuPostiLetto {
+model ContrattoSuOspite {
+    id_contratto Int
+    contratto    Contratto @relation(fields: [id_contratto], references: [id])
+
+    uid_persona String
+    persona    Persona @relation(fields: [uid_persona], references: [uid])
+
+    @@id([id_contratto, uid_persona])
+    @@map("contratto_su_ospite")
+}
+
+model ContrattoSuPostoLetto {
     id_contratto Int
     contratto    Contratto @relation(fields: [id_contratto], references: [id])
 
@@ -357,7 +366,7 @@ model ContrattiSuPostiLetto {
     posto_letto    PostoLetto @relation(fields: [id_posto_letto], references: [id])
 
     @@id([id_contratto, id_posto_letto])
-    @@map("contratti_su_posti_letto")
+    @@map("contratto_su_posto_letto")
 }
 
 model TipoRata {

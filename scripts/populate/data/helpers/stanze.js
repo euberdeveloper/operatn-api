@@ -10,6 +10,9 @@ dotenv.config({
 const client = new Client({
     connectionString: `postgresql://postgres:${process.env.DATABASE_PASSWORD}@localhost:5432/alloggi-opera?schema=public`
 });
+const client2 = new Client({
+    connectionString: `postgresql://postgres:${process.env.DATABASE_PASSWORD}@localhost:5432/alloggi-opera?schema=test`
+});
 
 function getFabbricato(a, fabbricatiRaw) {
     const f = fabbricatiRaw.find(f => a.id_anagrafica_fabbricato === f.id);
@@ -20,10 +23,17 @@ function getFabbricato(a, fabbricatiRaw) {
     };
 }
 
+function getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw) {
+    const f = +fabbricatiRaw.find(f => a.id_anagrafica_fabbricato === f.id).codice_fabbricato;
+    return +fabbricatiNewRaw.find(el => +el.old_code === f).id;
+}
+
 
 async function main() {
     await client.connect();
+    await client2.connect();
     const fabbricatiRaw = (await client.query('SELECT * FROM "anagrafica_fabbricato"')).rows;
+    const fabbricatiNewRaw = (await client2.query('SELECT * FROM test.fabbricato')).rows;
     const alloggiRaw = (await client.query('SELECT * FROM anagrafica_alloggio A, tipo_stanza T WHERE A.id_tipo_stanza = T.id;'))
         .rows
         .filter(el => el.posto_letto !== 'B' && !(el.numero_stanza === 'EA0C03' && el.validita_dal.toISOString() === '2007-10-31T23:00:00.000Z'));
@@ -45,7 +55,52 @@ async function main() {
         valida_dal: a.validita_dal ?? new Date('1000-01-01'),
         valida_al: a.validita_al
     }));
+    const postiLetto = [];
+    for (const a of alloggiRaw) {
+        if (a.posto_letto === '') {
+            postiLetto.push({
+                stanza: {
+                    connect: {
+                        id_fabbricato_unita_immobiliare_numero_stanza: {
+                            id_fabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
+                            unita_immobiliare: a.codice_unita_immobiliare,
+                            numero_stanza: a.numero_stanza
+                        }
+                    }
+                },
+                posto_letto: 'A'
+            });
+        }
+        else {
+            postiLetto.push({
+                stanza: {
+                    connect: {
+                        id_fabbricato_unita_immobiliare_numero_stanza: {
+                            id_fabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
+                            unita_immobiliare: a.codice_unita_immobiliare,
+                            numero_stanza: a.numero_stanza
+                        }
+                    }
+                },
+                posto_letto: 'A'
+            });
+            postiLetto.push({
+                stanza: {
+                    connect: {
+                        id_fabbricato_unita_immobiliare_numero_stanza: {
+                            id_fabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
+                            unita_immobiliare: a.codice_unita_immobiliare,
+                            numero_stanza: a.numero_stanza
+                        }
+                    }
+                },
+                posto_letto: 'B'
+            });
+        }
+    }
     fs.writeFileSync(path.join(__dirname, './stanze.json'), JSON.stringify(alloggi, null, 2));
+    fs.writeFileSync(path.join(__dirname, './posti_letto.json'), JSON.stringify(postiLetto, null, 2));
     await client.end();
+    await client2.end();
 }
 main();
