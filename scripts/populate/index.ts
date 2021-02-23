@@ -15,6 +15,7 @@ import FABBRICATI from './data/fabbricato';
 import CONTI_RICAVI_CONSUMI from './data/conto_ricavi_consumi';
 import CONTI_RICAVI_CANONI from './data/conto_ricavi_canoni';
 import TIPI_UTENTE from './data/tipo_utente';
+import TARIFFE from './data/tariffa';
 
 
 async function main() {
@@ -39,12 +40,21 @@ async function main() {
                 logInsert(result.count, constantCase(table));
             }
             else {
+                let duplicates = false;
                 for (const el of data) {
-                    await prisma[table].create({
-                        data: el
-                    });
+                    try {
+                        await prisma[table].create({
+                            data: el
+                        });
+                    }
+                    catch (error) {
+                        duplicates = true;
+                        if (error.message.indexOf('Unique constraint') === -1) {
+                            throw error;
+                        }
+                    }
                 }
-                logInsert(data.length, constantCase(table));
+                logInsert(duplicates ? 0 : data.length, constantCase(table));
             }
         }
         catch (error) {
@@ -66,6 +76,7 @@ async function main() {
     await populate('contoRicaviConsumi', CONTI_RICAVI_CONSUMI);
     await populate('contoRicaviCanoni', CONTI_RICAVI_CANONI);
     await populate('tipoUtente', TIPI_UTENTE, false);
+    await populate('tariffa', TARIFFE, false);
     await populate('ospite', OSPITI, false);
     logger.hr();
     logger.info('Database populated');

@@ -1,4 +1,4 @@
-import { ContoRicaviCanoni, ContoRicaviConsumi, TipoUtente } from '@prisma/client';
+import { TipoUtente } from '@prisma/client';
 
 type TipoUtenteInsert = Omit<TipoUtente, 'id' | 'id_conto_ricavi_canoni' | 'id_conto_ricavi_consumi'> & {
     conto_ricavi_consumi: {
