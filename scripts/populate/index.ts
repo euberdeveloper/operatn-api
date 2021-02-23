@@ -12,6 +12,10 @@ import PRESIDENTI from './data/presidente';
 import DIPARTIMENTI_UNITN from './data/dipartimento_unitn';
 import OSPITI from './data/ospite';
 import FABBRICATI from './data/fabbricato';
+import CONTI_RICAVI_CONSUMI from './data/conto_ricavi_consumi';
+import CONTI_RICAVI_CANONI from './data/conto_ricavi_canoni';
+import TIPI_UTENTE from './data/tipo_utente';
+
 
 async function main() {
     const prisma = new PrismaClient();
@@ -58,8 +62,11 @@ async function main() {
     await populate('tipoFabbricato', TIPI_FABBRICATO);
     await populate('presidente', PRESIDENTI, false);
     await populate('dipartimentoUnitn', DIPARTIMENTI_UNITN);
-    await populate('ospite', OSPITI, false);
     await populate('fabbricato', FABBRICATI);
+    await populate('contoRicaviConsumi', CONTI_RICAVI_CONSUMI);
+    await populate('contoRicaviCanoni', CONTI_RICAVI_CANONI);
+    await populate('tipoUtente', TIPI_UTENTE, false);
+    await populate('ospite', OSPITI, false);
     logger.hr();
     logger.info('Database populated');
 
