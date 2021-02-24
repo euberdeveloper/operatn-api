@@ -11,7 +11,7 @@ generator generator {
 // PERSONA
 
 model Persona {
-    uid              String          @id @default(uuid())
+    id               Int             @id @default(autoincrement())
     codice_fiscale   String?
     nome             String
     cognome          String
@@ -30,40 +30,39 @@ model Persona {
 }
 
 model LuogoDiNascita {
-    uid       String  @id
+    id        Int     @id
     stato     String
     provincia String?
     comune    String?
-    persona   Persona @relation(fields: [uid], references: [uid])
+    persona   Persona @relation(fields: [id], references: [id])
 
     @@map("luogo_di_nascita")
 }
 
 model Residenza {
-    uid       String  @id
+    id        Int     @id
     stato     String
     provincia String
     comune    String
     cap       String
     indirizzo String
     n_civico  String
-    persona   Persona @relation(fields: [uid], references: [uid])
+    persona   Persona @relation(fields: [id], references: [id])
 
     @@map("residenza")
 }
 
 model Domicilio {
-    id        Int     @default(autoincrement())
-    uid       String
-    stato     String
-    provincia String
-    comune    String
-    cap       String
-    indirizzo String
-    n_civico  String
-    persona   Persona @relation(fields: [uid], references: [uid])
+    id         Int     @id @default(autoincrement())
+    id_persona Int     @unique
+    stato      String
+    provincia  String
+    comune     String
+    cap        String
+    indirizzo  String
+    n_civico   String
+    persona    Persona @relation(fields: [id_persona], references: [id])
 
-    @@id([id, uid])
     @@map("domicilio")
 }
 
@@ -73,17 +72,17 @@ enum Sesso {
 }
 
 model Presidente {
-    uid                 String   @id
+    id                  Int      @id
     data_inizio_mandato DateTime
     data_fine_mandato   DateTime
     firma               String
-    persona             Persona  @relation(fields: [uid], references: [uid])
+    persona             Persona  @relation(fields: [id], references: [id])
 
     @@map("presidente")
 }
 
 model Ospite {
-    uid                 String             @id
+    id                  Int                @id
     email               String
     telefono_principale String?
     telefono_secondario String?
@@ -97,7 +96,7 @@ model Ospite {
 
     possiede_cauzione Boolean @default(false)
 
-    persona Persona @relation(fields: [uid], references: [uid])
+    persona Persona @relation(fields: [id], references: [id])
 
     Contratto Contratto[]
     Bolletta  Bolletta[]
@@ -105,27 +104,27 @@ model Ospite {
 }
 
 model ContoCorrente {
-    uid          String  @id
+    id           Int     @id
     iban         String
     banca        String?
     swift_bic    String?
     aba          String?
     agenzia      String?
     transit_code String?
-    ospite       Ospite  @relation(fields: [uid], references: [uid])
+    ospite       Ospite  @relation(fields: [id], references: [id])
 
     @@map("conto_corrente")
 }
 
 model DocumentoIdentita {
-    uid           String   @id
+    id            Int      @id
     tipo          String
     numero        String
     ente          String
     data_scadenza DateTime
     data_rilascio DateTime
-    documento     String
-    ospite        Ospite   @relation(fields: [uid], references: [uid])
+    documento     String?
+    ospite        Ospite   @relation(fields: [id], references: [id])
 
     @@map("documento_identita")
 }
@@ -152,8 +151,8 @@ model DipartimentoUnitn {
 
 model Fabbricato {
     id            Int    @id @default(autoincrement())
-    codice        String 
-    nome          String 
+    codice        String
+    nome          String
     provincia     String
     comune        String
     cap           String @db.Char(5)
@@ -340,7 +339,7 @@ model Contratto {
     id_quietanziante Int
     quietanziante    Quietanziante @relation(fields: [id_quietanziante], references: [id])
 
-    ospiti ContrattoSuOspite[]
+    ospiti      ContrattoSuOspite[]
     posti_letto ContrattoSuPostoLetto[]
 
     Bolletta Bolletta[]
@@ -351,10 +350,10 @@ model ContrattoSuOspite {
     id_contratto Int
     contratto    Contratto @relation(fields: [id_contratto], references: [id])
 
-    uid_persona String
-    persona    Persona @relation(fields: [uid_persona], references: [uid])
+    id_persona Int
+    persona    Persona @relation(fields: [id_persona], references: [id])
 
-    @@id([id_contratto, uid_persona])
+    @@id([id_contratto, id_persona])
     @@map("contratto_su_ospite")
 }
 
@@ -453,8 +452,8 @@ model Bolletta {
     id_contratto Int
     contratto    Contratto @relation(fields: [id_contratto], references: [id])
 
-    uid_ospite String
-    ospite     Ospite @relation(fields: [uid_ospite], references: [uid])
+    id_ospite Int
+    ospite    Ospite @relation(fields: [id_ospite], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
     @@map("bolletta")

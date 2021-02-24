@@ -1,17 +1,17 @@
 import { Domicilio, LuogoDiNascita, Persona, Ospite, Residenza, ContoCorrente, DocumentoIdentita } from '@prisma/client';
 
-type OspiteInsert = Omit<Ospite, 'uid' | 'possiede_cauzione' | 'codice_dipartimento_unitn'> & {
+type OspiteInsert = Omit<Ospite, 'id' | 'possiede_cauzione' | 'codice_dipartimento_unitn'> & {
   persona: {
-    create: Omit<Persona, 'uid' | 'data_creazione' | 'eliminato'> & {
+    create: Omit<Persona, 'id' | 'data_creazione' | 'eliminato'> & {
       luogo_di_nascita: {
-        create: Omit<LuogoDiNascita, 'uid'>;
+        create: Omit<LuogoDiNascita, 'id'>;
       };
       residenza: {
-        create: Omit<Residenza, 'uid'>;
+        create: Omit<Residenza, 'id'>;
       };
       domicili?: {
         createMany: {
-          data: Omit<Domicilio, 'uid' | 'id'>[];
+          data: Omit<Domicilio, 'id' | 'id_persona'>[];
         }
       };
     }
@@ -22,10 +22,10 @@ type OspiteInsert = Omit<Ospite, 'uid' | 'possiede_cauzione' | 'codice_dipartime
     }
   };
   conto_corrente?: {
-    create: Omit<ContoCorrente, 'uid'>;
+    create: Omit<ContoCorrente, 'id'>;
   };
   documento_identita?: {
-    create: Omit<DocumentoIdentita, 'uid'>;
+    create: Omit<DocumentoIdentita, 'id'>;
   };
 };
 

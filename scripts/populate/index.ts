@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, Sesso } from '@prisma/client';
 import { Logger } from 'euberlog';
 import { constantCase } from 'change-case';
 

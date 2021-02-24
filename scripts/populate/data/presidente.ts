@@ -1,17 +1,17 @@
-import { Domicilio, LuogoDiNascita, Persona, Presidente, Prisma, Residenza, Sesso } from '@prisma/client';
+import { Domicilio, LuogoDiNascita, Persona, Presidente, Residenza, Sesso } from '@prisma/client';
 
-type PresidenteInsert = Omit<Presidente, 'uid'> & {
+type PresidenteInsert = Omit<Presidente, 'id'> & {
     persona: {
-        create: Omit<Persona, 'uid' | 'data_creazione' | 'eliminato'> & {
+        create: Omit<Persona, 'id' | 'data_creazione' | 'eliminato'> & {
             luogo_di_nascita: {
-                create: Omit<LuogoDiNascita, 'uid'>;
+                create: Omit<LuogoDiNascita, 'id'>;
             };
             residenza: {
-                create: Omit<Residenza, 'uid'>;
+                create: Omit<Residenza, 'id'>;
             };
             domicili: {
                 createMany: {
-                    data: Omit<Domicilio, 'uid' | 'id'>[];
+                    data: Omit<Domicilio, 'id' | 'id_persona'>[];
                 }
             }
         }
