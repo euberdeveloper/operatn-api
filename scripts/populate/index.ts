@@ -7,6 +7,7 @@ import TIPI_STANZE from './data/tipo_stanza';
 import UTILIZZI_STANZE from './data/utilizzo_stanza';
 import TIPI_TARIFFE from './data/tipo_tariffa';
 import TIPI_RATE from './data/tipo_rata';
+import TIPI_BOLLETTA from './data/tipo_bolletta';
 import TIPI_FABBRICATO from './data/tipo_fabbricato';
 import PRESIDENTI from './data/presidente';
 import DIPARTIMENTI_UNITN from './data/dipartimento_unitn';
@@ -72,6 +73,7 @@ async function main() {
     await populate('utilizzoStanza', UTILIZZI_STANZE);
     await populate('tipoTariffa', TIPI_TARIFFE);
     await populate('tipoRata', TIPI_RATE);
+    await populate('tipoBolletta', TIPI_BOLLETTA);
     await populate('tipoStanza', TIPI_STANZE);
     await populate('tipoFabbricato', TIPI_FABBRICATO);
     await populate('presidente', PRESIDENTI, false);

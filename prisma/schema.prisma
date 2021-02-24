@@ -54,7 +54,7 @@ model Residenza {
 
 model Domicilio {
     id         Int     @id @default(autoincrement())
-    id_persona Int     @unique
+    id_persona Int    
     stato      String
     provincia  String
     comune     String
@@ -462,6 +462,7 @@ model Bolletta {
 model TipoBolletta {
     id            Int    @id @default(autoincrement())
     tipo_bolletta String @unique
+    importo Float?
 
     Bolletta Bolletta[]
     @@map("tipo_bolletta")
