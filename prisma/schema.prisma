@@ -24,27 +24,32 @@ model Persona {
     data_creazione DateTime  @default(now())
     eliminato      DateTime?
 
-    Presidente Presidente[]
-    Ospite     Ospite[]
+    Presidente        Presidente[]
+    Ospite            Ospite[]
+    ContrattoSuOspite ContrattoSuOspite[]
     @@map("persona")
 }
 
 model LuogoDiNascita {
-    id        Int     @id
-    stato     String
-    provincia String?
-    comune    String?
-    persona   Persona @relation(fields: [id], references: [id])
+    id           Int     @id
+    stato        String
+    provincia    String?
+    comune       String
+    istat_comune String?
+    persona      Persona @relation(fields: [id], references: [id])
 
     @@map("luogo_di_nascita")
 }
 
 model Residenza {
-    id        Int     @id
-    stato     String
-    provincia String
-    comune    String
-    cap       String
+    id Int @id
+
+    stato        String
+    provincia    String?
+    comune       String
+    istat_comune String?
+
+    cap       String? @db.Char(5)
     indirizzo String
     n_civico  String
     persona   Persona @relation(fields: [id], references: [id])
@@ -53,15 +58,19 @@ model Residenza {
 }
 
 model Domicilio {
-    id         Int     @id @default(autoincrement())
-    id_persona Int    
-    stato      String
-    provincia  String
-    comune     String
-    cap        String
-    indirizzo  String
-    n_civico   String
-    persona    Persona @relation(fields: [id_persona], references: [id])
+    id         Int @id @default(autoincrement())
+    id_persona Int
+
+    stato        String
+    provincia    String?
+    comune       String
+    istat_comune String?
+
+    cap       String? @db.Char(5)
+    indirizzo String
+    n_civico  String
+
+    persona Persona @relation(fields: [id_persona], references: [id])
 
     @@map("domicilio")
 }
@@ -135,7 +144,7 @@ model DipartimentoUnitn {
     nome      String  @unique
     provincia String
     comune    String
-    cap       String
+    cap       String  @db.Char(5)
     indirizzo String
     n_civico  String
     sito_web  String
@@ -343,6 +352,8 @@ model Contratto {
     posti_letto ContrattoSuPostoLetto[]
 
     Bolletta Bolletta[]
+    Ospite   Ospite?    @relation(fields: [ospiteId], references: [id])
+    ospiteId Int?
     @@map("contratto")
 }
 
@@ -436,7 +447,7 @@ model Bolletta {
     competenza_dal DateTime
     data_scadenza  DateTime
 
-    data_invio         DateTime?
+    data_invio_eusis   DateTime?
     data_registrazione DateTime?
 
     centro_di_costo      String
@@ -462,7 +473,7 @@ model Bolletta {
 model TipoBolletta {
     id            Int    @id @default(autoincrement())
     tipo_bolletta String @unique
-    importo Float?
+    importo       Float?
 
     Bolletta Bolletta[]
     @@map("tipo_bolletta")
