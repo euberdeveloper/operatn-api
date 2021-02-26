@@ -1,10 +1,12 @@
 import { Express } from 'express';
 
+import logger from '@/utils/logger';
+
 import loadMorgan from './morgan';
 import loadHelmet from './helmet';
 import loadCors from './cors';
 import loadBodyParser from './bodyParser';
-import logger from '@/services/logger';
+import loadPassport from './passport';
 
 export default function load(app: Express): void {
     logger.hr();
@@ -15,6 +17,7 @@ export default function load(app: Express): void {
     loadCors(app);
     loadHelmet(app);
     loadBodyParser(app);
+    loadPassport(app);
 
     logger.br();
     logger.success('All middlewares loaded');

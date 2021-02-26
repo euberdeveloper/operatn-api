@@ -1,6 +1,6 @@
 import * as express from 'express';
 import { Express } from 'express';
-import logger from '@/services/logger';
+import logger from '@/utils/logger';
 
 export default function loadBodyParser(app: Express): void {
     logger.debug('Load bodyParser');

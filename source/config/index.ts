@@ -25,7 +25,11 @@ const CONFIG = {
         URL: `postgresql://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@${process.env.DATABASE_HOST}:${process.env.DATABASE_PORT}/${process.env.DATABASE_DB}?schema=${process.env.DATABASE_SCHEMA}`
     },
     SECURITY: {
-        SALT_ROUNDS: +process.env.SECURITY_SALT_ROUNDS
+        SALT_ROUNDS: +process.env.SECURITY_SALT_ROUNDS,
+        JWT: {
+            PASSWORD: process.env.SECURITY_JWT_PASSWORD,
+            EXPIRATION: process.env.SECURITY_JWT_EXPIRATION
+        }
     },
     LOGGER: {
         DEBUG: process.env.LOGGER_DEBUG === 'true'
