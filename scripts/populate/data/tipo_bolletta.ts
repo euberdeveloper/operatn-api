@@ -2,43 +2,43 @@ import { TipoBolletta } from '@prisma/client';
 
 const TIPI_BOLLETTA: Omit<TipoBolletta, 'id'>[] = [
     {
-        tipo_bolletta: 'MANCATA RESTITUZIONE BICI',
+        tipoBolletta: 'MANCATA RESTITUZIONE BICI',
         importo: 140
     },
     {
-        tipo_bolletta: 'DANNI BICI',
+        tipoBolletta: 'DANNI BICI',
         importo: null
     },
     {
-        tipo_bolletta: 'MANCATA RESTITUZIONE CHIAVI ALLOGGIO',
+        tipoBolletta: 'MANCATA RESTITUZIONE CHIAVI ALLOGGIO',
         importo: 50
     },
     {
-        tipo_bolletta: 'MANCATA RESTITUZIONE CHIAVI ARMADIETTO',
+        tipoBolletta: 'MANCATA RESTITUZIONE CHIAVI ARMADIETTO',
         importo: 5
     },
     {
-        tipo_bolletta: 'MANCATA RESTITUZIONE BADGE',
+        tipoBolletta: 'MANCATA RESTITUZIONE BADGE',
         importo: 6
     },
     {
-        tipo_bolletta: 'IGIENIZZAZIONE BLOCCHI ABC',
+        tipoBolletta: 'IGIENIZZAZIONE BLOCCHI ABC',
         importo: 10.36
     },
     {
-        tipo_bolletta: 'IGIENIZZAZIONE BLOCCHI EF',
+        tipoBolletta: 'IGIENIZZAZIONE BLOCCHI EF',
         importo: 16.92
     },
     {
-        tipo_bolletta: 'PENALE TRASFERIMENTO',
+        tipoBolletta: 'PENALE TRASFERIMENTO',
         importo: 50
     },
     {
-        tipo_bolletta: 'CHECKOUT',
+        tipoBolletta: 'CHECKOUT',
         importo: 40
     },
     {
-        tipo_bolletta: 'MULTA',
+        tipoBolletta: 'MULTA',
         importo: null
     }
 ];

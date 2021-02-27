@@ -11,18 +11,18 @@ generator generator {
 // PERSONA
 
 model Persona {
-    id               Int             @id @default(autoincrement())
-    codice_fiscale   String?
-    nome             String
-    cognome          String
-    sesso            Sesso
-    data_nascita     DateTime
-    luogo_di_nascita LuogoDiNascita?
-    residenza        Residenza?
-    domicili         Domicilio[]
+    id             Int             @id @default(autoincrement()) @map("id")
+    codiceFiscale  String?         @map("codice_fiscale")
+    nome           String          @map("nome")
+    cognome        String          @map("cognome")
+    sesso          Sesso           @map("sesso")
+    dataDiNascita  DateTime        @map("data_nascita")
+    luogoDiNascita LuogoDiNascita?
+    residenza      Residenza?
+    domicili       Domicilio[]
 
-    data_creazione DateTime  @default(now())
-    eliminato      DateTime?
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
 
     Presidente        Presidente[]
     Ospite            Ospite[]
@@ -31,46 +31,46 @@ model Persona {
 }
 
 model LuogoDiNascita {
-    id           Int     @id
-    stato        String
-    provincia    String?
-    comune       String
-    istat_comune String?
-    persona      Persona @relation(fields: [id], references: [id])
+    id          Int     @id @map("id")
+    stato       String  @map("stato")
+    provincia   String? @map("provincia")
+    comune      String  @map("comune")
+    istatComune String? @map("istat_comune")
+    persona     Persona @relation(fields: [id], references: [id])
 
     @@map("luogo_di_nascita")
 }
 
 model Residenza {
-    id Int @id
+    id Int @id @map("id")
 
-    stato        String
-    provincia    String?
-    comune       String
-    istat_comune String?
+    stato       String  @map("stato")
+    provincia   String? @map("provincia")
+    comune      String  @map("comune")
+    istatComune String? @map("istat_comune")
 
-    cap       String? @db.Char(5)
-    indirizzo String
-    n_civico  String
+    cap       String? @map("cap") @db.Char(5)
+    indirizzo String  @map("indirizzo")
+    nCivico   String  @map("n_civico")
     persona   Persona @relation(fields: [id], references: [id])
 
     @@map("residenza")
 }
 
 model Domicilio {
-    id         Int @id @default(autoincrement())
-    id_persona Int
+    id        Int @id @default(autoincrement()) @map("id")
+    idPersona Int @map("id_persona")
 
-    stato        String
-    provincia    String?
-    comune       String
-    istat_comune String?
+    stato       String  @map("stato")
+    provincia   String? @map("provincia")
+    comune      String  @map("comune")
+    istatComune String? @map("istat_comune")
 
-    cap       String? @db.Char(5)
-    indirizzo String
-    n_civico  String
+    cap       String? @map("cap") @db.Char(5)
+    indirizzo String  @map("indirizzo")
+    nCivico   String  @map("n_civico")
 
-    persona Persona @relation(fields: [id_persona], references: [id])
+    persona Persona @relation(fields: [idPersona], references: [id])
 
     @@map("domicilio")
 }
@@ -81,76 +81,76 @@ enum Sesso {
 }
 
 model Presidente {
-    id                  Int      @id
-    data_inizio_mandato DateTime
-    data_fine_mandato   DateTime
-    firma               String
-    persona             Persona  @relation(fields: [id], references: [id])
+    id                Int      @id @map("id")
+    dataInizioMandato DateTime @map("data_inizio_mandato")
+    dataFineMandato   DateTime @map("data_fine_mandato")
+    firma             String   @map("firma")
+    persona           Persona  @relation(fields: [id], references: [id])
 
     @@map("presidente")
 }
 
 model Ospite {
-    id                  Int                @id
-    email               String
-    telefono_principale String?
-    telefono_secondario String?
-    foto                String?
-    cittadinanza        String
-    conto_corrente      ContoCorrente?
-    documento_identita  DocumentoIdentita?
+    id                 Int                @id @map("id")
+    email              String             @map("email")
+    telefonoPrincipale String?            @map("telefono_principale")
+    telefonoSecondario String?            @map("telefono_secondario")
+    foto               String?            @map("foto")
+    cittadinanza       String             @map("cittadinanza")
+    contoCorrente      ContoCorrente?
+    documentoIdentita  DocumentoIdentita?
 
-    codice_dipartimento_unitn String?
-    dipartimento_unitn        DipartimentoUnitn? @relation(fields: [codice_dipartimento_unitn], references: [codice])
+    codiceDipartimentoUnitn String?            @map("codice_dipartimento_unitn")
+    dipartimentoUnitn       DipartimentoUnitn? @relation(fields: [codiceDipartimentoUnitn], references: [codice])
 
-    possiede_cauzione Boolean @default(false)
+    possiedeCauzione Boolean @default(false) @map("possiede_cauzione")
 
     persona Persona @relation(fields: [id], references: [id])
 
-    Contratto Contratto[]
-    Bolletta  Bolletta[]
+    ContrattoSuOspite ContrattoSuOspite[]
+    Bolletta          Bolletta[]
     @@map("ospite")
 }
 
 model ContoCorrente {
-    id           Int     @id
-    iban         String
-    banca        String?
-    swift_bic    String?
-    aba          String?
-    agenzia      String?
-    transit_code String?
-    ospite       Ospite  @relation(fields: [id], references: [id])
+    id          Int     @id @map("id")
+    iban        String  @map("iban")
+    banca       String? @map("banca")
+    swiftBic    String? @map("swift_bic")
+    aba         String? @map("aba")
+    agenzia     String? @map("agenzia")
+    transitCode String? @map("transit_code")
+    ospite      Ospite  @relation(fields: [id], references: [id])
 
     @@map("conto_corrente")
 }
 
 model DocumentoIdentita {
-    id            Int      @id
-    tipo          String
-    numero        String
-    ente          String
-    data_scadenza DateTime
-    data_rilascio DateTime
-    documento     String?
-    ospite        Ospite   @relation(fields: [id], references: [id])
+    id           Int      @id @map("id")
+    tipo         String   @map("tipo")
+    numero       String   @map("numero")
+    ente         String   @map("ente")
+    dataScadenza DateTime @map("data_scadenza")
+    dataRilascio DateTime @map("data_rilascio")
+    documento    String?  @map("documento")
+    ospite       Ospite   @relation(fields: [id], references: [id])
 
     @@map("documento_identita")
 }
 
 model DipartimentoUnitn {
-    codice    String  @id
-    sigla     String?
-    nome      String  @unique
-    provincia String
-    comune    String
-    cap       String  @db.Char(5)
-    indirizzo String
-    n_civico  String
-    sito_web  String
+    codice    String  @id @map("codice")
+    sigla     String? @map("sigla")
+    nome      String  @unique @map("nome")
+    provincia String  @map("provincia")
+    comune    String  @map("comune")
+    cap       String  @map("cap") @db.Char(5)
+    indirizzo String  @map("indirizzo")
+    nCivico   String  @map("n_civico")
+    sitoWeb   String  @map("sito_web")
 
-    creato_il DateTime  @default(now())
-    eliminato DateTime?
+    creatoIl  DateTime  @default(now()) @map("_creato_il")
+    eliminato DateTime? @map("_eliminato")
 
     Ospite Ospite[]
     @@map("dipartimento_unitn")
@@ -159,27 +159,27 @@ model DipartimentoUnitn {
 // FABBRICATO
 
 model Fabbricato {
-    id            Int    @id @default(autoincrement())
-    codice        String
-    nome          String
-    provincia     String
-    comune        String
-    cap           String @db.Char(5)
-    indirizzo     String
-    numero_civico String
+    id        Int    @id @default(autoincrement()) @map("id")
+    codice    String @map("codice")
+    nome      String @map("nome")
+    provincia String @map("provincia")
+    comune    String @map("comune")
+    cap       String @map("cap") @db.Char(5)
+    indirizzo String @map("indirizzo")
+    nCivico   String @map("n_civico")
 
-    old_code Int @unique
+    oldCode Int @unique @map("old_code")
 
-    id_tipo_fabbricato Int
-    tipo_fabbricato    TipoFabbricato @relation(fields: [id_tipo_fabbricato], references: [id])
+    idTipoFabbricato Int            @map("id_tipo_fabbricato")
+    tipoFabbricato   TipoFabbricato @relation(fields: [idTipoFabbricato], references: [id])
 
     Stanza Stanza[]
     @@map("fabbricato")
 }
 
 model TipoFabbricato {
-    id              Int    @id @default(autoincrement())
-    tipo_fabbricato String @unique
+    id             Int    @id @default(autoincrement()) @map("id")
+    tipoFabbricato String @unique @map("tipo_fabbricato")
 
     Fabbricato Fabbricato[]
     Tariffa    Tariffa[]
@@ -187,60 +187,60 @@ model TipoFabbricato {
 }
 
 model Stanza {
-    id Int @id @default(autoincrement())
+    id Int @id @default(autoincrement()) @map("id")
 
-    id_fabbricato Int
-    fabbricato    Fabbricato @relation(fields: [id_fabbricato], references: [id])
+    idFabbricato Int        @map("id_fabbricato")
+    fabbricato   Fabbricato @relation(fields: [idFabbricato], references: [id])
 
-    unita_immobiliare String
-    numero_stanza     String
+    unitaImmobiliare String @map("unita_immobiliare")
+    numeroStanza     String @map("numero_stanza")
 
-    id_tipo_stanza Int
-    tipo_stanza    TipoStanza @relation(fields: [id_tipo_stanza], references: [id])
+    idTipoStanza Int        @map("id_tipo_stanza")
+    tipoStanza   TipoStanza @relation(fields: [idTipoStanza], references: [id])
 
-    centro_di_costo String?
+    centroDiCosto String? @map("centro_di_costo")
 
-    gestione_diretta Boolean
-    handicap         Boolean
-    bagno            Boolean
-    piano            Piano?
+    gestioneDiretta Boolean @map("gestione_diretta")
+    handicap        Boolean @map("handicap")
+    bagno           Boolean @map("bagno")
+    piano           Piano?  @map("piano")
 
-    valida_dal DateTime
-    valida_al  DateTime?
+    validaDal DateTime  @map("valida_dal")
+    validaAl  DateTime? @map("valida_al")
 
     manutenzioni Manutenzione[]
 
     PostoLetto PostoLetto[]
-    @@unique([id_fabbricato, unita_immobiliare, numero_stanza])
+    @@unique([idFabbricato, unitaImmobiliare, numeroStanza])
     @@map("stanza")
 }
 
 model TipoStanza {
-    id          Int    @id @default(autoincrement())
-    tipo_stanza String @unique
+    id         Int    @id @default(autoincrement()) @map("id")
+    tipoStanza String @unique @map("tipo_stanza")
 
     Stanza Stanza[]
     @@map("tipo_stanza")
 }
 
 model Manutenzione {
-    id          Int       @id @default(autoincrement())
-    data_inizio DateTime
-    data_fine   DateTime?
+    id         Int       @id @default(autoincrement()) @map("id")
+    dataInizio DateTime  @map("data_inizio")
+    dataFine   DateTime? @map("data_fine")
 
-    id_stanza Int
-    stanza    Stanza @relation(fields: [id_stanza], references: [id])
+    idStanza Int    @map("id_stanza")
+    stanza   Stanza @relation(fields: [idStanza], references: [id])
 
     @@map("manutenzione")
 }
 
 model PostoLetto {
-    id Int @id @default(autoincrement())
+    id Int @id @default(autoincrement()) @map("id")
 
-    id_stanza Int
-    stanza    Stanza @relation(fields: [id_stanza], references: [id])
+    idStanza Int    @map("id_stanza")
+    stanza   Stanza @relation(fields: [idStanza], references: [id])
 
-    posto_letto String
+    postoLetto String @map("posto_letto")
 
     ContrattoSuPostoLetto ContrattoSuPostoLetto[]
     @@map("posto_letto")
@@ -262,57 +262,57 @@ enum Piano {
 // TARIFFA
 
 model Tariffa {
-    id Int @id @default(autoincrement())
+    id Int @id @default(autoincrement()) @map("id")
 
-    id_tipo_utente Int
-    tipo_utente    TipoUtente @relation(fields: [id_tipo_utente], references: [id])
+    idTipoUtente Int        @map("id_tipo_utente")
+    tipoUtente   TipoUtente @relation(fields: [idTipoUtente], references: [id])
 
-    id_utilizzo_stanza Int
-    utilizzo_stanza    UtilizzoStanza @relation(fields: [id_utilizzo_stanza], references: [id])
+    idUtilizzoStanza Int            @map("id_utilizzo_stanza")
+    utilizzoStanza   UtilizzoStanza @relation(fields: [idUtilizzoStanza], references: [id])
 
-    id_tipo_fabbricato Int
-    tipo_fabbricato    TipoFabbricato @relation(fields: [id_tipo_fabbricato], references: [id])
+    idTipoFabbricato Int            @map("id_tipo_fabbricato")
+    tipoFabbricato   TipoFabbricato @relation(fields: [idTipoFabbricato], references: [id])
 
-    id_tipo_tariffa Int
-    tipo_tariffa    TipoTariffa @relation(fields: [id_tipo_tariffa], references: [id])
+    idTipoTariffa Int         @map("id_tipo_tariffa")
+    tipoTariffa   TipoTariffa @relation(fields: [idTipoTariffa], references: [id])
 
-    prezzo_consumi Float
-    prezzo_canone  Float
+    prezzoConsumi Float @map("prezzo_consumi")
+    prezzoCanoni  Float @map("prezzo_canone")
 
-    valida_dal DateTime
-    valida_al  DateTime?
+    validaDal DateTime  @map("valida_dal")
+    validaAl  DateTime? @map("valida_al")
 
     Contratto Contratto[]
-    @@unique([id_tipo_utente, id_utilizzo_stanza, id_tipo_fabbricato, id_tipo_tariffa])
+    @@unique([idTipoUtente, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa])
     @@map("tariffa")
 }
 
 model UtilizzoStanza {
-    id              Int    @id @default(autoincrement())
-    utilizzo_stanza String @unique
+    id             Int    @id @default(autoincrement()) @map("id")
+    utilizzoStanza String @unique @map("utilizzo_stanza")
 
     Tariffa Tariffa[]
     @@map("utilizzo_stanza")
 }
 
 model TipoUtente {
-    id          Int    @id @default(autoincrement())
-    sigla       String @unique
-    tipo_utente String @unique
+    id         Int    @id @default(autoincrement()) @map("id")
+    sigla      String @unique @map("sigla")
+    tipoUtente String @unique @map("tipo_utente")
 
-    id_conto_ricavi_consumi Int
-    conto_ricavi_consumi    ContoRicaviConsumi @relation(fields: [id_conto_ricavi_consumi], references: [id])
+    idContoRicaviConsumi Int                @map("id_conto_ricavi_consumi")
+    contoRicaviConsumi   ContoRicaviConsumi @relation(fields: [idContoRicaviConsumi], references: [id])
 
-    id_conto_ricavi_canoni Int
-    conto_ricavi_canoni    ContoRicaviCanoni @relation(fields: [id_conto_ricavi_canoni], references: [id])
+    idContoRicaviCanoni Int               @map("id_conto_ricavi_canoni")
+    contoRicaviCanoni   ContoRicaviCanoni @relation(fields: [idContoRicaviCanoni], references: [id])
 
     Tariffa Tariffa[]
     @@map("tipo_utente")
 }
 
 model TipoTariffa {
-    id           Int    @id @default(autoincrement())
-    tipo_tariffa String @unique
+    id          Int    @id @default(autoincrement()) @map("id")
+    tipoTariffa String @unique @map("tipo_tariffa")
 
     Tariffa Tariffa[]
     @@map("tipo_tariffa")
@@ -321,114 +321,114 @@ model TipoTariffa {
 // CONTRATTO
 
 model Contratto {
-    id Int @id @default(autoincrement())
+    id Int @id @default(autoincrement()) @map("id")
 
-    data_inizio DateTime
-    data_fine   DateTime
+    dataInizio DateTime @map("data_inizio")
+    dataFine   DateTime @map("data_fine")
 
-    data_firma_contratto     DateTime?
-    data_contabilizzazione   DateTime?
-    data_chiusura_anticipata DateTime?
+    dataFirmaContratto     DateTime? @map("data_firma_contratto")
+    dataContabilizzazione  DateTime? @map("data_contabilizzazione")
+    dataChiusuraAnticipata DateTime? @map("data_chiusura_anticipata")
 
-    checkout      Float?
-    data_checkin  DateTime
-    data_checkout DateTime?
+    checkout     Float?    @map("checkout")
+    dataCheckin  DateTime  @map("data_checkin")
+    dataCheckout DateTime? @map("data_checkout")
 
-    cauzione Float?
+    cauzione Float? @map("cauzione")
 
-    id_tipo_rata Int
-    tipo_rata    TipoRata @relation(fields: [id_tipo_rata], references: [id])
+    idTipoRata Int      @map("id_tipo_rata")
+    tipoRata   TipoRata @relation(fields: [idTipoRata], references: [id])
 
-    id_tariffa Int
-    tariffa    Tariffa @relation(fields: [id_tariffa], references: [id])
+    idTariffa Int     @map("id_tariffa")
+    tariffa   Tariffa @relation(fields: [idTariffa], references: [id])
 
-    id_tipo_contratto Int
-    tipo_contratto    TipoContratto @relation(fields: [id_tipo_contratto], references: [id])
+    idTipoContratto Int           @map("id_tipo_contratto")
+    tipoContratto   TipoContratto @relation(fields: [idTipoContratto], references: [id])
 
-    id_quietanziante Int
-    quietanziante    Quietanziante @relation(fields: [id_quietanziante], references: [id])
+    idQuietanziante Int           @map("id_quietanziante")
+    quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
 
-    ospiti      ContrattoSuOspite[]
-    posti_letto ContrattoSuPostoLetto[]
+    ospiti     ContrattoSuOspite[]
+    postiLetto ContrattoSuPostoLetto[]
 
     Bolletta Bolletta[]
-    Ospite   Ospite?    @relation(fields: [ospiteId], references: [id])
-    ospiteId Int?
     @@map("contratto")
 }
 
 model ContrattoSuOspite {
-    id_contratto Int
-    contratto    Contratto @relation(fields: [id_contratto], references: [id])
+    idContratto Int       @map("id_contratto")
+    contratto   Contratto @relation(fields: [idContratto], references: [id])
 
-    id_persona Int
-    persona    Persona @relation(fields: [id_persona], references: [id])
+    idOspite Int    @map("id_ospite")
+    ospite   Ospite @relation(fields: [idOspite], references: [id])
 
-    @@id([id_contratto, id_persona])
+    Persona   Persona? @relation(fields: [personaId], references: [id])
+    personaId Int?
+    @@id([idContratto, idOspite])
     @@map("contratto_su_ospite")
 }
 
 model ContrattoSuPostoLetto {
-    id_contratto Int
-    contratto    Contratto @relation(fields: [id_contratto], references: [id])
+    idContratto Int       @map("id_contratto")
+    contratto   Contratto @relation(fields: [idContratto], references: [id])
 
-    id_posto_letto Int
-    posto_letto    PostoLetto @relation(fields: [id_posto_letto], references: [id])
+    idPostoLetto Int        @map("id_posto_letto")
+    postoLetto   PostoLetto @relation(fields: [idPostoLetto], references: [id])
 
-    @@id([id_contratto, id_posto_letto])
+    @@id([idContratto, idPostoLetto])
     @@map("contratto_su_posto_letto")
 }
 
 model TipoRata {
-    id        Int    @id @default(autoincrement())
-    tipo_rata String @unique
+    id       Int    @id @default(autoincrement()) @map("id")
+    tipoRata String @unique @map("tipo_rata")
 
     Contratto Contratto[]
     @@map("tipo_rata")
 }
 
 model TipoContratto {
-    id Int @id @default(autoincrement())
+    id Int @id @default(autoincrement()) @map("id")
 
-    id_tipo_studente Int
-    tipo_studente    TipoStudente @relation(fields: [id_tipo_studente], references: [id])
+    idTipoStudente Int          @map("id_tipo_studente")
+    tipoStudente   TipoStudente @relation(fields: [idTipoStudente], references: [id])
 
-    sigla String @unique
-    nome  String @unique
+    sigla String @unique @map("sigla")
+    nome  String @unique @map("nome")
 
     Contratto Contratto[]
     @@map("tipo_contratto")
 }
 
 model Quietanziante {
-    id            Int    @id @default(autoincrement())
-    quietanziante String @unique
+    id            Int    @id @default(autoincrement()) @map("id")
+    quietanziante String @unique @map("quietanziante")
 
     Contratto Contratto[]
     @@map("quietanziante")
 }
 
 model TipoStudente {
-    id            Int    @id @default(autoincrement())
-    tipo_studente String @unique
+    id           Int    @id @default(autoincrement()) @map("id")
+    tipoStudente String @unique @map("tipo_studente")
 
     TipoContratto TipoContratto[]
     @@map("tipo_studente")
 }
 
 model ContoRicaviConsumi {
-    id                   Int    @id @default(autoincrement())
-    codice               String @unique
-    conto_ricavi_consumi String @unique
+    id                 Int    @id @default(autoincrement()) @map("id")
+    codice             String @unique @map("codice")
+    contoRicaviConsumi String @unique @map("conto_ricavi_consumi")
 
     TipoUtente TipoUtente[]
     @@map("conto_ricavi_consumi")
 }
 
 model ContoRicaviCanoni {
-    id                  Int    @id @default(autoincrement())
-    codice              String @unique
-    conto_ricavi_canoni String @unique
+    id                Int    @id @default(autoincrement()) @map("id")
+    codice            String @unique @map("codice")
+    contoRicaviCanoni String @unique @map("conto_ricavi_canoni")
 
     TipoUtente TipoUtente[]
     @@map("conto_ricavi_canoni")
@@ -437,43 +437,43 @@ model ContoRicaviCanoni {
 // BOLLETTA
 
 model Bolletta {
-    id Int @id @default(autoincrement())
+    id Int @id @default(autoincrement()) @map("id")
 
-    importo_consumi Float?
-    importo_canone  Float?
-    importo_totale  Float
+    importoConsumi Float? @map("importo_consumi")
+    importoCanoni  Float? @map("importo_canone")
+    importoTotale  Float  @map("importo_totale")
 
-    competenza_al  DateTime
-    competenza_dal DateTime
-    data_scadenza  DateTime
+    competanzaAl  DateTime @map("competenza_al")
+    competenzaDal DateTime @map("competenza_dal")
+    dataScadenza  DateTime @map("data_scadenza")
 
-    data_invio_eusis   DateTime?
-    data_registrazione DateTime?
+    dataInvioEusis    DateTime? @map("data_invio_eusis")
+    dataRegistrazione DateTime? @map("data_registrazione")
 
-    centro_di_costo      String
-    conto_ricavi_consumi String
-    conto_ricavi_canoni  String
+    centroDiCosto      String @map("centro_di_costo")
+    contoRicaviConsumi String @map("conto_ricavi_consumi")
+    contoRicaviCanoni  String @map("conto_ricavi_canoni")
 
-    id_bolletta_stornata Int?
-    bolletta_stornata    Bolletta? @relation(fields: [id_bolletta_stornata], references: [id])
+    idBollettaStornata Int?      @map("id_bolletta_stornata")
+    bollettaStornata   Bolletta? @relation(fields: [idBollettaStornata], references: [id])
 
-    id_tipo_bolletta Int
-    tipo_bolletta    TipoBolletta @relation(fields: [id_tipo_bolletta], references: [id])
+    idTipoBolletta Int          @map("id_tipo_bolletta")
+    tipoBolletta   TipoBolletta @relation(fields: [idTipoBolletta], references: [id])
 
-    id_contratto Int
-    contratto    Contratto @relation(fields: [id_contratto], references: [id])
+    idContratto Int       @map("id_contratto")
+    contratto   Contratto @relation(fields: [idContratto], references: [id])
 
-    id_ospite Int
-    ospite    Ospite @relation(fields: [id_ospite], references: [id])
+    idOspite Int    @map("id_ospite")
+    ospite   Ospite @relation(fields: [idOspite], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
     @@map("bolletta")
 }
 
 model TipoBolletta {
-    id            Int    @id @default(autoincrement())
-    tipo_bolletta String @unique
-    importo       Float?
+    id           Int    @id @default(autoincrement()) @map("id")
+    tipoBolletta String @unique @map("tipo_bolletta")
+    importo      Float? @map("importo")
 
     Bolletta Bolletta[]
     @@map("tipo_bolletta")
@@ -482,38 +482,38 @@ model TipoBolletta {
 // NAZIONE / PROVINCIA / COMUNE
 
 model Stato {
-    codice_iso String @id
+    codiceIso String @id @map("codice_iso")
 
-    codice_stato      String @unique
-    codice_istat      String @unique
-    codice_istat_inps String @unique
-    denominazione     String @unique
+    codiceStato     String @unique @map("codice_stato")
+    codiceIstat     String @unique @map("codice_istat")
+    codiceIstatInps String @unique @map("codice_istat_inps")
+    denominazione   String @unique @map("denominazione")
 
     Provincia Provincia[]
     @@map("stato")
 }
 
 model Provincia {
-    sigla String @id
+    sigla String @id @map("sigla")
 
-    denominazione String @unique
-    regione       String
+    denominazione String @unique @map("denominazione")
+    regione       String @map("regione")
 
-    codice_stato String
-    stato        Stato  @relation(fields: [codice_stato], references: [codice_iso])
+    codiceStato String @map("codice_stato")
+    stato       Stato  @relation(fields: [codiceStato], references: [codiceIso])
 
     Comune Comune[]
     @@map("provincia")
 }
 
 model Comune {
-    id Int @id
+    id Int @id @map("id")
 
-    codice_istat  String @unique
-    denominazione String @unique
+    codiceIstat   String @unique @map("codice_istat")
+    denominazione String @unique @map("denominazione")
 
-    sigla_provincia String
-    provincia       Provincia @relation(fields: [sigla_provincia], references: [sigla])
+    siglaProvincia String    @map("sigla_provincia")
+    provincia      Provincia @relation(fields: [siglaProvincia], references: [sigla])
 
     @@map("comune")
 }
@@ -521,12 +521,12 @@ model Comune {
 // UTENTE
 
 model Utente {
-    uid                     String      @id @default(uuid())
-    nome_utente             String      @unique
-    password                String
-    email                   String
-    ruolo                   RuoloUtente
-    token_recupero_password String?
+    uid                   String      @id @default(uuid()) @map("uid")
+    nomeUtente            String      @unique @map("nome_utente")
+    password              String      @map("password")
+    email                 String      @map("email")
+    ruolo                 RuoloUtente @map("ruolo")
+    tokenRecuperoPassword String?     @map("token_recupero_password")
 
     Cronologia Cronologia[]
 
@@ -543,13 +543,13 @@ enum RuoloUtente {
 // CRONOLOGIA
 
 model Cronologia {
-    id        Int               @id @default(autoincrement())
-    timestamp DateTime
-    ip        String
-    uid       String
+    id        Int               @id @default(autoincrement()) @map("uid")
+    timestamp DateTime          @map("timestamp")
+    ip        String            @map("ip")
+    uid       String            @map("uid")
     utente    Utente            @relation(fields: [uid], references: [uid])
-    azione    CronologiaAzione
-    risorsa   CronologiaRisorsa
+    azione    CronologiaAzione  @map("azione")
+    risorsa   CronologiaRisorsa @map("risorsa")
 
     @@map("cronologia")
 }

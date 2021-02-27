@@ -4,26354 +4,26354 @@ const POSTI_LETTO: PostoLettoInsert[] = [
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "114S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "114S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "114S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "114S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "214S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "214S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "214S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "214S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "008S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "008S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "008S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "008S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "112S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "112S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "112S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "112S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "010S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "010S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "010S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "010S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "014S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "014S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "014S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "014S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "204S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "204S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "204S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "204S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "314S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "314S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "314S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "314S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "006S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "006S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "006S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "006S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "412"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "412"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "106S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "106S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "106S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "106S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "012S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "012S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "012S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "012S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "208S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "208S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "208S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "208S"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7913",
-          "numero_stanza": "421A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7913",
+          "numeroStanza": "421A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7913",
-          "numero_stanza": "421A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7913",
+          "numeroStanza": "421A_3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 9,
-          "unita_immobiliare": "281",
-          "numero_stanza": "2819"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 9,
+          "unitaImmobiliare": "281",
+          "numeroStanza": "2819"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7907",
-          "numero_stanza": "223A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7907",
+          "numeroStanza": "223A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7907",
-          "numero_stanza": "223A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7907",
+          "numeroStanza": "223A_3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7910",
-          "numero_stanza": "323A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7910",
+          "numeroStanza": "323A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7910",
-          "numero_stanza": "323A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7910",
+          "numeroStanza": "323A_3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C18"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C18"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C19"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C19"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C20"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C20"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C17"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C17"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C49"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C49"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 40,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 40,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 41,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 41,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 43,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 43,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA1",
-          "numero_stanza": "AA1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA1",
+          "numeroStanza": "AA1C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA1",
-          "numero_stanza": "AA1C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA1",
+          "numeroStanza": "AA1C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C74"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA1",
-          "numero_stanza": "BA1C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA1",
+          "numeroStanza": "BA1C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "107S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "107S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "115S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "115S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "120S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "120S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "201S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "201S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC201",
-          "numero_stanza": "CC2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC201",
+          "numeroStanza": "CC2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "203S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "203S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD201",
-          "numero_stanza": "CD2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD201",
+          "numeroStanza": "CD2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "218S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "218S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "302S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "302S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "304S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "304S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "307S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "307S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "313S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "313S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC0A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC0A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "402S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "402S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "409S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "409S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7906",
-          "numero_stanza": "222A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7906",
+          "numeroStanza": "222A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7909",
-          "numero_stanza": "322A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7909",
+          "numeroStanza": "322A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S18",
-          "numero_stanza": "S18C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S18",
+          "numeroStanza": "S18C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S5",
-          "numero_stanza": "S5C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S5",
+          "numeroStanza": "S5C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P9",
-          "numero_stanza": "P9C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P9",
+          "numeroStanza": "P9C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "6",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "111",
-          "numero_stanza": "1112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "111",
+          "numeroStanza": "1112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11123"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1721",
-          "numero_stanza": "17211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1721",
+          "numeroStanza": "17211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1825",
-          "numero_stanza": "18251"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1825",
+          "numeroStanza": "18251"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "222",
-          "numero_stanza": "2221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "222",
+          "numeroStanza": "2221"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "309"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "309"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "409"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "409"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 10,
-          "unita_immobiliare": "291",
-          "numero_stanza": "2917"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 10,
+          "unitaImmobiliare": "291",
+          "numeroStanza": "2917"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 12,
-          "unita_immobiliare": "3122",
-          "numero_stanza": "31221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 12,
+          "unitaImmobiliare": "3122",
+          "numeroStanza": "31221"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 36,
-          "unita_immobiliare": "5629",
-          "numero_stanza": "56291"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 36,
+          "unitaImmobiliare": "5629",
+          "numeroStanza": "56291"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5802",
-          "numero_stanza": "216"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5802",
+          "numeroStanza": "216"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5803",
-          "numero_stanza": "315"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5803",
+          "numeroStanza": "315"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C42"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C41"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C41"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C17"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C17"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C20"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C20"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C42"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "001S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "001S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "121S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "121S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C75"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "303S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "303S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "315S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "315S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "318S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "318S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "410S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "410S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "411S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "411S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7909",
-          "numero_stanza": "322A_4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7909",
+          "numeroStanza": "322A_4"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA0",
-          "numero_stanza": "EA0A06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA0",
+          "numeroStanza": "EA0A06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA0",
-          "numero_stanza": "EA0A08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA0",
+          "numeroStanza": "EA0A08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA0",
-          "numero_stanza": "EA0A10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA0",
+          "numeroStanza": "EA0A10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7912",
-          "numero_stanza": "420A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7912",
+          "numeroStanza": "420A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7912",
-          "numero_stanza": "420A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7912",
+          "numeroStanza": "420A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD0A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD0A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD1A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD1A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S5",
-          "numero_stanza": "S5C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S5",
+          "numeroStanza": "S5C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P3",
-          "numero_stanza": "P3C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P3",
+          "numeroStanza": "P3C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 26,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 26,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "384",
-          "numero_stanza": "3841"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "384",
+          "numeroStanza": "3841"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "121",
-          "numero_stanza": "1211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "121",
+          "numeroStanza": "1211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "133",
-          "numero_stanza": "1331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "133",
+          "numeroStanza": "1331"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1430",
-          "numero_stanza": "14301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1430",
+          "numeroStanza": "14301"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "109"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "109"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "310"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "310"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 10,
-          "unita_immobiliare": "291",
-          "numero_stanza": "2019"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 10,
+          "unitaImmobiliare": "291",
+          "numeroStanza": "2019"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 13,
-          "unita_immobiliare": "322",
-          "numero_stanza": "3221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 13,
+          "unitaImmobiliare": "322",
+          "numeroStanza": "3221"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "109"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "109"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5414",
-          "numero_stanza": "54141"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5414",
+          "numeroStanza": "54141"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5803",
-          "numero_stanza": "316"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5803",
+          "numeroStanza": "316"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C43"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C43"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C75"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C17"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C17"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C43"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C43"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C44"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C44"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C43"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C43"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C46"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C46"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 44,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 44,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 45,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 45,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 49,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA2C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 49,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA2C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "002S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "002S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C76"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C76"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C77"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C77"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "102S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "102S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "104S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "104S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB201",
-          "numero_stanza": "CB2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB201",
+          "numeroStanza": "CB2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC201",
-          "numero_stanza": "CC2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC201",
+          "numeroStanza": "CC2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "DD",
-          "numero_stanza": "DD1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "DD",
+          "numeroStanza": "DD1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA0A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA0A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC0A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC0A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S12",
-          "numero_stanza": "S12C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S12",
+          "numeroStanza": "S12C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S16",
-          "numero_stanza": "S16C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S16",
+          "numeroStanza": "S16C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S16",
-          "numero_stanza": "S16C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S16",
+          "numeroStanza": "S16C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "108S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "108S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "202S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "202S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "212S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "212S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "213S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "213S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "219S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "219S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "220S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "220S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "309S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "309S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "310S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "310S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "317S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "317S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7907",
-          "numero_stanza": "223A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7907",
+          "numeroStanza": "223A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "17",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "17",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1021",
-          "numero_stanza": "10211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1021",
+          "numeroStanza": "10211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1311",
-          "numero_stanza": "13111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1311",
+          "numeroStanza": "13111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1313",
-          "numero_stanza": "13131"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1313",
+          "numeroStanza": "13131"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "136",
-          "numero_stanza": "1361"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "136",
+          "numeroStanza": "1361"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1418",
-          "numero_stanza": "14181"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1418",
+          "numeroStanza": "14181"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1423",
-          "numero_stanza": "14231"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1423",
+          "numeroStanza": "14231"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1431",
-          "numero_stanza": "14311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1431",
+          "numeroStanza": "14311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 3,
-          "unita_immobiliare": "1521",
-          "numero_stanza": "15212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 3,
+          "unitaImmobiliare": "1521",
+          "numeroStanza": "15212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1824",
-          "numero_stanza": "18241"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1824",
+          "numeroStanza": "18241"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2048",
-          "numero_stanza": "211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2048",
+          "numeroStanza": "211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "401"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "401"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 14,
-          "unita_immobiliare": "331",
-          "numero_stanza": "3311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 14,
+          "unitaImmobiliare": "331",
+          "numeroStanza": "3311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 14,
-          "unita_immobiliare": "3316",
-          "numero_stanza": "33161"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 14,
+          "unitaImmobiliare": "3316",
+          "numeroStanza": "33161"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5415",
-          "numero_stanza": "54151"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5415",
+          "numeroStanza": "54151"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C43"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C43"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C46"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C46"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C41"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C41"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C42"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C45"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C45"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA1",
-          "numero_stanza": "BA1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA1",
+          "numeroStanza": "BA1C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "004S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "004S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C74"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C75"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA201",
-          "numero_stanza": "CA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA201",
+          "numeroStanza": "CA2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "011S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "011S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "105S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "105S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "111S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "111S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB0A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB0A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC1A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC1A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD0A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD0A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD2A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD2A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "116S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "116S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "117S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "117S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "209S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "209S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "311S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "311S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "319S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "319S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "407S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "407S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "412S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "412S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "415S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "415S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S22",
-          "numero_stanza": "S22C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S22",
+          "numeroStanza": "S22C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "417S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "417S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S29",
-          "numero_stanza": "S29C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S29",
+          "numeroStanza": "S29C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "121",
-          "numero_stanza": "1212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "121",
+          "numeroStanza": "1212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1212",
-          "numero_stanza": "12123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1212",
+          "numeroStanza": "12123"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1310",
-          "numero_stanza": "13101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1310",
+          "numeroStanza": "13101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1314",
-          "numero_stanza": "13141"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1314",
+          "numeroStanza": "13141"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "134",
-          "numero_stanza": "1341"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "134",
+          "numeroStanza": "1341"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1711",
-          "numero_stanza": "17111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1711",
+          "numeroStanza": "17111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "411"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "411"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2311",
-          "numero_stanza": "23111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2311",
+          "numeroStanza": "23111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 12,
-          "unita_immobiliare": "311",
-          "numero_stanza": "3111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 12,
+          "unitaImmobiliare": "311",
+          "numeroStanza": "3111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 15,
-          "unita_immobiliare": "3405",
-          "numero_stanza": "34051"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 15,
+          "unitaImmobiliare": "3405",
+          "numeroStanza": "34051"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "310"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "310"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5803",
-          "numero_stanza": "317"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5803",
+          "numeroStanza": "317"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C41"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C41"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EA2",
-          "numero_stanza": "EA2C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EA2",
+          "numeroStanza": "EA2C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C19"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C19"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C50"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C50"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C49"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C49"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C77"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C77"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA1A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA1A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB0A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB0A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC2A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC2A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "005S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "005S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "110S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "110S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "305S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "305S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "308S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "308S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "312S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "312S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "405S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "405S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "416S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "416S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S30",
-          "numero_stanza": "S30C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S30",
+          "numeroStanza": "S30C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7905",
-          "numero_stanza": "221A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7905",
+          "numeroStanza": "221A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7906",
-          "numero_stanza": "222A_4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7906",
+          "numeroStanza": "222A_4"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S7",
-          "numero_stanza": "S7C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S7",
+          "numeroStanza": "S7C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7908",
-          "numero_stanza": "321A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7908",
+          "numeroStanza": "321A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P6",
-          "numero_stanza": "P6C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P6",
+          "numeroStanza": "P6C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7910",
-          "numero_stanza": "323A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7910",
+          "numeroStanza": "323A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "14",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "303"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "303"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "121",
-          "numero_stanza": "1213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "121",
+          "numeroStanza": "1213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1212",
-          "numero_stanza": "12121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1212",
+          "numeroStanza": "12121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1417",
-          "numero_stanza": "14171"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1417",
+          "numeroStanza": "14171"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1424",
-          "numero_stanza": "14241"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1424",
+          "numeroStanza": "14241"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1426",
-          "numero_stanza": "14261"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1426",
+          "numeroStanza": "14261"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 3,
-          "unita_immobiliare": "1521",
-          "numero_stanza": "15211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 3,
+          "unitaImmobiliare": "1521",
+          "numeroStanza": "15211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "221",
-          "numero_stanza": "2211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "221",
+          "numeroStanza": "2211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "410"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "410"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "414"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "414"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2321",
-          "numero_stanza": "23211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2321",
+          "numeroStanza": "23211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 9,
-          "unita_immobiliare": "281",
-          "numero_stanza": "2817"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 9,
+          "unitaImmobiliare": "281",
+          "numeroStanza": "2817"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 9,
-          "unita_immobiliare": "281",
-          "numero_stanza": "2818"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 9,
+          "unitaImmobiliare": "281",
+          "numeroStanza": "2818"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3013",
-          "numero_stanza": "30135"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3013",
+          "numeroStanza": "30135"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5801",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5801",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5802",
-          "numero_stanza": "215"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5802",
+          "numeroStanza": "215"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C42"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C44"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C44"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C76"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C76"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C17"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C17"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C18"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C18"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C20"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C20"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C48"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C48"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 42,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 42,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA1",
-          "numero_stanza": "BA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA1",
+          "numeroStanza": "BA1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "009S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "009S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "109S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "109S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "113S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "113S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BBAC37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BBAC37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C26"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C26"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "206S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "206S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C59"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C59"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "210S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "210S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "211S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "211S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "215S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "215S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "301S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "301S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA0",
-          "numero_stanza": "EA0A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA0",
+          "numeroStanza": "EA0A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "306S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "306S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA0A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA0A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA1A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA1A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "316S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "316S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7903",
-          "numero_stanza": "320S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7903",
+          "numeroStanza": "320S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "404S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "404S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S1",
-          "numero_stanza": "S1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S1",
+          "numeroStanza": "S1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "414S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "414S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7905",
-          "numero_stanza": "221A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7905",
+          "numeroStanza": "221A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S19",
-          "numero_stanza": "S19C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S19",
+          "numeroStanza": "S19C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7913",
-          "numero_stanza": "421A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7913",
+          "numeroStanza": "421A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 58,
-          "unita_immobiliare": "831",
-          "numero_stanza": "8311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 58,
+          "unitaImmobiliare": "831",
+          "numeroStanza": "8311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "15",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "15",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 16,
-          "unita_immobiliare": "351",
-          "numero_stanza": "3511"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 16,
+          "unitaImmobiliare": "351",
+          "numeroStanza": "3511"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 17,
-          "unita_immobiliare": "361",
-          "numero_stanza": "3611"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 17,
+          "unitaImmobiliare": "361",
+          "numeroStanza": "3611"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "7",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1211",
-          "numero_stanza": "12111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1211",
+          "numeroStanza": "12111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1312",
-          "numero_stanza": "13121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1312",
+          "numeroStanza": "13121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "135",
-          "numero_stanza": "1351"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "135",
+          "numeroStanza": "1351"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "137",
-          "numero_stanza": "1371"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "137",
+          "numeroStanza": "1371"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "138",
-          "numero_stanza": "1381"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "138",
+          "numeroStanza": "1381"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "139",
-          "numero_stanza": "1391"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "139",
+          "numeroStanza": "1391"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1425",
-          "numero_stanza": "14251"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1425",
+          "numeroStanza": "14251"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 4,
-          "unita_immobiliare": "1611",
-          "numero_stanza": "16111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 4,
+          "unitaImmobiliare": "1611",
+          "numeroStanza": "16111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2038",
-          "numero_stanza": "111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2038",
+          "numeroStanza": "111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "210"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "210"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2331",
-          "numero_stanza": "23311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2331",
+          "numeroStanza": "23311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 10,
-          "unita_immobiliare": "291",
-          "numero_stanza": "2918"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 10,
+          "unitaImmobiliare": "291",
+          "numeroStanza": "2918"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3015",
-          "numero_stanza": "30153"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3015",
+          "numeroStanza": "30153"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 12,
-          "unita_immobiliare": "3103",
-          "numero_stanza": "31031"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 12,
+          "unitaImmobiliare": "3103",
+          "numeroStanza": "31031"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 12,
-          "unita_immobiliare": "312",
-          "numero_stanza": "3121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 12,
+          "unitaImmobiliare": "312",
+          "numeroStanza": "3121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 13,
-          "unita_immobiliare": "321",
-          "numero_stanza": "3211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 13,
+          "unitaImmobiliare": "321",
+          "numeroStanza": "3211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 14,
-          "unita_immobiliare": "3312",
-          "numero_stanza": "33121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 14,
+          "unitaImmobiliare": "3312",
+          "numeroStanza": "33121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 15,
-          "unita_immobiliare": "341",
-          "numero_stanza": "3411"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 15,
+          "unitaImmobiliare": "341",
+          "numeroStanza": "3411"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "210"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "210"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C45"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C45"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C19"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C19"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C20"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C20"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C19"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C19"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C41"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C41"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C45"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C45"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C47"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C47"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C47"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C47"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C50"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C50"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C54"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C54"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 43,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 43,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 44,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 44,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 47,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 47,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 49,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA2C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 49,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA2C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA1",
-          "numero_stanza": "AA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA1",
+          "numeroStanza": "AA1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C32"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C32"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C51"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C51"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C61"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C61"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C76"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C76"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA1",
-          "numero_stanza": "BA1C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA1",
+          "numeroStanza": "BA1C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA1",
-          "numero_stanza": "BA1C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA1",
+          "numeroStanza": "BA1C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "118S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "118S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C23"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C23"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C69"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C69"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C56"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C56"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "205S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "205S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "207S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "207S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA201",
-          "numero_stanza": "CA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA201",
+          "numeroStanza": "CA2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "217S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "217S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "406S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "406S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB201",
-          "numero_stanza": "CB2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB201",
+          "numeroStanza": "CB2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA0",
-          "numero_stanza": "EA0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA0",
+          "numeroStanza": "EA0A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "413S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "413S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "418S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "418S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7906",
-          "numero_stanza": "222A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7906",
+          "numeroStanza": "222A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA2A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA2A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB1A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB1A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB2A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB2A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC1A03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC1A03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD1A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD1A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7908",
-          "numero_stanza": "321A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7908",
+          "numeroStanza": "321A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7909",
-          "numero_stanza": "322A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7909",
+          "numeroStanza": "322A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7911",
-          "numero_stanza": "419A_2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7911",
+          "numeroStanza": "419A_2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7911",
-          "numero_stanza": "419A_3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7911",
+          "numeroStanza": "419A_3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S18",
-          "numero_stanza": "S18C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S18",
+          "numeroStanza": "S18C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S26",
-          "numero_stanza": "S26C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S26",
+          "numeroStanza": "S26C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S27",
-          "numero_stanza": "S27C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S27",
+          "numeroStanza": "S27C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "111",
-          "numero_stanza": "1113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "111",
+          "numeroStanza": "1113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1313"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "132",
-          "numero_stanza": "1321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "132",
+          "numeroStanza": "1321"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1420",
-          "numero_stanza": "14201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1420",
+          "numeroStanza": "14201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1422",
-          "numero_stanza": "14221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1422",
+          "numeroStanza": "14221"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1427",
-          "numero_stanza": "14271"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1427",
+          "numeroStanza": "14271"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1428",
-          "numero_stanza": "14281"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1428",
+          "numeroStanza": "14281"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 4,
-          "unita_immobiliare": "1611",
-          "numero_stanza": "16112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 4,
+          "unitaImmobiliare": "1611",
+          "numeroStanza": "16112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1721",
-          "numero_stanza": "17212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1721",
+          "numeroStanza": "17212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "301"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "314"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "314"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3012",
-          "numero_stanza": "30125"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3012",
+          "numeroStanza": "30125"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "301"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 38,
-          "unita_immobiliare": "5802",
-          "numero_stanza": "217"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 38,
+          "unitaImmobiliare": "5802",
+          "numeroStanza": "217"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EA2",
-          "numero_stanza": "EA2C15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EA2",
+          "numeroStanza": "EA2C15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB0",
-          "numero_stanza": "EB0C27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB0",
+          "numeroStanza": "EB0C27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C41"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C41"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C43"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C43"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC2",
-          "numero_stanza": "EC2C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC2",
+          "numeroStanza": "EC2C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C55"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C55"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C74"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA0",
-          "numero_stanza": "FA0C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA0",
+          "numeroStanza": "FA0C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA1",
-          "numero_stanza": "FA1C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA1",
+          "numeroStanza": "FA1C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA2",
-          "numero_stanza": "FA2C18"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA2",
+          "numeroStanza": "FA2C18"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FA3",
-          "numero_stanza": "FA3C18"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FA3",
+          "numeroStanza": "FA3C18"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB1",
-          "numero_stanza": "FB1C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB1",
+          "numeroStanza": "FB1C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C42"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C46"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C46"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C41"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C41"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C44"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C44"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 42,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 42,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 45,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA0C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 45,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA0C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 47,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 47,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C09"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C09"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C24"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C24"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C21"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C21"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C29"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C29"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC4",
-          "numero_stanza": "AC4C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC4",
+          "numeroStanza": "AC4C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C65"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C65"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C62"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C62"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C68"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C68"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C70"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C70"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C74"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C06"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C06"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C07"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C07"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C22"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C22"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C25"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C25"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C38"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C38"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C35"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C35"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C53"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C53"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C66"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C66"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C57"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C57"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C64"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C64"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C67"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C67"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C58"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C58"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C60"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C60"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C63"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C63"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C74"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "003S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "003S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD201",
-          "numero_stanza": "CD2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD201",
+          "numeroStanza": "CD2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA0",
-          "numero_stanza": "EA0A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA0",
+          "numeroStanza": "EA0A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA1",
-          "numero_stanza": "EA1A10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA1",
+          "numeroStanza": "EA1A10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 51,
-          "unita_immobiliare": "71EA2",
-          "numero_stanza": "EA2A08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 51,
+          "unitaImmobiliare": "71EA2",
+          "numeroStanza": "EA2A08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "007S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "007S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 65,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB1A02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 65,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB1A02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7900",
-          "numero_stanza": "013S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7900",
+          "numeroStanza": "013S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "101S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "101S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "103S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "103S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "119S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "119S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7901",
-          "numero_stanza": "122S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7901",
+          "numeroStanza": "122S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7902",
-          "numero_stanza": "216S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7902",
+          "numeroStanza": "216S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "401S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "401S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "403S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "403S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7904",
-          "numero_stanza": "408S"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7904",
+          "numeroStanza": "408S"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 71,
-          "unita_immobiliare": "7912",
-          "numero_stanza": "420A_4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 71,
+          "unitaImmobiliare": "7912",
+          "numeroStanza": "420A_4"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S7",
-          "numero_stanza": "S7C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S7",
+          "numeroStanza": "S7C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 59,
-          "unita_immobiliare": "921",
-          "numero_stanza": "9211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 59,
+          "unitaImmobiliare": "921",
+          "numeroStanza": "9211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "36"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "36"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 16,
-          "unita_immobiliare": "3518",
-          "numero_stanza": "35181"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 16,
+          "unitaImmobiliare": "3518",
+          "numeroStanza": "35181"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 16,
-          "unita_immobiliare": "3520",
-          "numero_stanza": "35201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 16,
+          "unitaImmobiliare": "3520",
+          "numeroStanza": "35201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "111",
-          "numero_stanza": "1111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "111",
+          "numeroStanza": "1111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1011",
-          "numero_stanza": "10111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1011",
+          "numeroStanza": "10111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1211",
-          "numero_stanza": "12113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1211",
+          "numeroStanza": "12113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1315",
-          "numero_stanza": "13151"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1315",
+          "numeroStanza": "13151"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1419",
-          "numero_stanza": "14191"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1419",
+          "numeroStanza": "14191"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1421",
-          "numero_stanza": "14211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1421",
+          "numeroStanza": "14211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1432",
-          "numero_stanza": "14321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1432",
+          "numeroStanza": "14321"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2033",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2033",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2033",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2033",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2036",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2036",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2036",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2036",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2043",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2043",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2043",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2043",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2045",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2045",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2045",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2045",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2054",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2054",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2054",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2054",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2125",
-          "numero_stanza": "6"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2125",
+          "numeroStanza": "6"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2125",
-          "numero_stanza": "6"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2125",
+          "numeroStanza": "6"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "407"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "407"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "407"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "407"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2315",
-          "numero_stanza": "23153"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2315",
+          "numeroStanza": "23153"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2315",
-          "numero_stanza": "23153"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2315",
+          "numeroStanza": "23153"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2331",
-          "numero_stanza": "23313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2331",
+          "numeroStanza": "23313"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2331",
-          "numero_stanza": "23313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2331",
+          "numeroStanza": "23313"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2332",
-          "numero_stanza": "23322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2332",
+          "numeroStanza": "23322"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2332",
-          "numero_stanza": "23322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2332",
+          "numeroStanza": "23322"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2335",
-          "numero_stanza": "23353"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2335",
+          "numeroStanza": "23353"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2335",
-          "numero_stanza": "23353"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2335",
+          "numeroStanza": "23353"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3013",
-          "numero_stanza": "30136"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3013",
+          "numeroStanza": "30136"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3013",
-          "numero_stanza": "30136"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3013",
+          "numeroStanza": "30136"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3015",
-          "numero_stanza": "30154"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3015",
+          "numeroStanza": "30154"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3015",
-          "numero_stanza": "30154"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3015",
+          "numeroStanza": "30154"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "12"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "12"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "12"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "538",
-          "numero_stanza": "5381"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "538",
+          "numeroStanza": "5381"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "538",
-          "numero_stanza": "5381"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "538",
+          "numeroStanza": "5381"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5404",
-          "numero_stanza": "54041"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5404",
+          "numeroStanza": "54041"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5404",
-          "numero_stanza": "54041"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5404",
+          "numeroStanza": "54041"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5406",
-          "numero_stanza": "54061"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5406",
+          "numeroStanza": "54061"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5406",
-          "numero_stanza": "54061"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5406",
+          "numeroStanza": "54061"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5413",
-          "numero_stanza": "54131"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5413",
+          "numeroStanza": "54131"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5413",
-          "numero_stanza": "54131"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5413",
+          "numeroStanza": "54131"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5414",
-          "numero_stanza": "54142"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5414",
+          "numeroStanza": "54142"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5414",
-          "numero_stanza": "54142"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5414",
+          "numeroStanza": "54142"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C40"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB1",
-          "numero_stanza": "EB1C40"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB1",
+          "numeroStanza": "EB1C40"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C52"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB3",
-          "numero_stanza": "FB3C52"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB3",
+          "numeroStanza": "FB3C52"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 57,
-          "unita_immobiliare": "711",
-          "numero_stanza": "7112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 57,
+          "unitaImmobiliare": "711",
+          "numeroStanza": "7112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 57,
-          "unita_immobiliare": "711",
-          "numero_stanza": "7112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 57,
+          "unitaImmobiliare": "711",
+          "numeroStanza": "7112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C05"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB3",
-          "numero_stanza": "AB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB3",
+          "numeroStanza": "AB3C37"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC4",
-          "numero_stanza": "BC4C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC4",
+          "numeroStanza": "BC4C71"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C71"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC1A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC1A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "306"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "306"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "306"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "306"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "724",
-          "numero_stanza": "402"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "724",
+          "numeroStanza": "402"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "724",
-          "numero_stanza": "402"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "724",
+          "numeroStanza": "402"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "724",
-          "numero_stanza": "403"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "724",
+          "numeroStanza": "403"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "724",
-          "numero_stanza": "403"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "724",
+          "numeroStanza": "403"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "215"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "215"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "215"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "215"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S11",
-          "numero_stanza": "S11C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S11",
+          "numeroStanza": "S11C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S11",
-          "numero_stanza": "S11C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S11",
+          "numeroStanza": "S11C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S15",
-          "numero_stanza": "S15C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S15",
+          "numeroStanza": "S15C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S15",
-          "numero_stanza": "S15C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S15",
+          "numeroStanza": "S15C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S22",
-          "numero_stanza": "S22C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S22",
+          "numeroStanza": "S22C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S22",
-          "numero_stanza": "S22C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S22",
+          "numeroStanza": "S22C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S23",
-          "numero_stanza": "S23C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S23",
+          "numeroStanza": "S23C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S23",
-          "numero_stanza": "S23C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S23",
+          "numeroStanza": "S23C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S4",
-          "numero_stanza": "S4C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S4",
+          "numeroStanza": "S4C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S4",
-          "numero_stanza": "S4C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S4",
+          "numeroStanza": "S4C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S8",
-          "numero_stanza": "S8C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S8",
+          "numeroStanza": "S8C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S8",
-          "numero_stanza": "S8C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S8",
+          "numeroStanza": "S8C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 58,
-          "unita_immobiliare": "831",
-          "numero_stanza": "8313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 58,
+          "unitaImmobiliare": "831",
+          "numeroStanza": "8313"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 58,
-          "unita_immobiliare": "831",
-          "numero_stanza": "8313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 58,
+          "unitaImmobiliare": "831",
+          "numeroStanza": "8313"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 59,
-          "unita_immobiliare": "921",
-          "numero_stanza": "9212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 59,
+          "unitaImmobiliare": "921",
+          "numeroStanza": "9212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 59,
-          "unita_immobiliare": "921",
-          "numero_stanza": "9212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 59,
+          "unitaImmobiliare": "921",
+          "numeroStanza": "9212"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "14",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "14",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "210"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "210"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "210"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "210"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "373",
-          "numero_stanza": "3731"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "373",
+          "numeroStanza": "3731"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "373",
-          "numero_stanza": "3731"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "373",
+          "numeroStanza": "3731"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "384",
-          "numero_stanza": "3842"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "384",
+          "numeroStanza": "3842"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "384",
-          "numero_stanza": "3842"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "384",
+          "numeroStanza": "3842"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "22",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "22",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "22",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "22",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "111",
-          "numero_stanza": "1114"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "111",
+          "numeroStanza": "1114"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "111",
-          "numero_stanza": "1114"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "111",
+          "numeroStanza": "1114"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11121"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1212",
-          "numero_stanza": "12123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1212",
+          "numeroStanza": "12123"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1212",
-          "numero_stanza": "12123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1212",
+          "numeroStanza": "12123"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1310",
-          "numero_stanza": "13102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1310",
+          "numeroStanza": "13102"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1310",
-          "numero_stanza": "13102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1310",
+          "numeroStanza": "13102"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1313",
-          "numero_stanza": "13132"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1313",
+          "numeroStanza": "13132"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1313",
-          "numero_stanza": "13132"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1313",
+          "numeroStanza": "13132"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1314",
-          "numero_stanza": "13142"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1314",
+          "numeroStanza": "13142"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1314",
-          "numero_stanza": "13142"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1314",
+          "numeroStanza": "13142"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1316",
-          "numero_stanza": "13161"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1316",
+          "numeroStanza": "13161"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1316",
-          "numero_stanza": "13161"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1316",
+          "numeroStanza": "13161"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "137",
-          "numero_stanza": "1372"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "137",
+          "numeroStanza": "1372"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "137",
-          "numero_stanza": "1372"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "137",
+          "numeroStanza": "1372"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "139",
-          "numero_stanza": "1393"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "139",
+          "numeroStanza": "1393"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "139",
-          "numero_stanza": "1393"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "139",
+          "numeroStanza": "1393"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1427",
-          "numero_stanza": "14272"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1427",
+          "numeroStanza": "14272"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1427",
-          "numero_stanza": "14272"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1427",
+          "numeroStanza": "14272"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1428",
-          "numero_stanza": "14282"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1428",
+          "numeroStanza": "14282"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1428",
-          "numero_stanza": "14282"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1428",
+          "numeroStanza": "14282"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1711",
-          "numero_stanza": "17112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1711",
+          "numeroStanza": "17112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1711",
-          "numero_stanza": "17112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1711",
+          "numeroStanza": "17112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1711",
-          "numero_stanza": "17113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1711",
+          "numeroStanza": "17113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1711",
-          "numero_stanza": "17113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1711",
+          "numeroStanza": "17113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1821",
-          "numero_stanza": "18211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1821",
+          "numeroStanza": "18211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1821",
-          "numero_stanza": "18211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1821",
+          "numeroStanza": "18211"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1825",
-          "numero_stanza": "18252"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1825",
+          "numeroStanza": "18252"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1825",
-          "numero_stanza": "18252"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1825",
+          "numeroStanza": "18252"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1826",
-          "numero_stanza": "18261"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1826",
+          "numeroStanza": "18261"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1826",
-          "numero_stanza": "18261"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1826",
+          "numeroStanza": "18261"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1831",
-          "numero_stanza": "18311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1831",
+          "numeroStanza": "18311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1831",
-          "numero_stanza": "18311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1831",
+          "numeroStanza": "18311"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1833",
-          "numero_stanza": "18332"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1833",
+          "numeroStanza": "18332"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1833",
-          "numero_stanza": "18332"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1833",
+          "numeroStanza": "18332"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1841",
-          "numero_stanza": "18411"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1841",
+          "numeroStanza": "18411"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1841",
-          "numero_stanza": "18411"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1841",
+          "numeroStanza": "18411"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1847",
-          "numero_stanza": "18471"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1847",
+          "numeroStanza": "18471"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1847",
-          "numero_stanza": "18471"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1847",
+          "numeroStanza": "18471"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1848",
-          "numero_stanza": "18481"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1848",
+          "numeroStanza": "18481"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1848",
-          "numero_stanza": "18481"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1848",
+          "numeroStanza": "18481"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2024",
-          "numero_stanza": "4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2024",
+          "numeroStanza": "4"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2024",
-          "numero_stanza": "4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2024",
+          "numeroStanza": "4"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2026",
-          "numero_stanza": "8"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2026",
+          "numeroStanza": "8"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2026",
-          "numero_stanza": "8"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2026",
+          "numeroStanza": "8"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2037",
-          "numero_stanza": "109"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2037",
+          "numeroStanza": "109"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2037",
-          "numero_stanza": "109"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2037",
+          "numeroStanza": "109"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2046",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2046",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2046",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2046",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2047",
-          "numero_stanza": "210"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2047",
+          "numeroStanza": "210"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2047",
-          "numero_stanza": "210"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2047",
+          "numeroStanza": "210"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2053",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2053",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2053",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2053",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "303"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "303"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "303"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "303"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "402"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "402"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "402"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "402"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "404"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "404"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "404"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "404"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2335",
-          "numero_stanza": "23351"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2335",
+          "numeroStanza": "23351"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2335",
-          "numero_stanza": "23351"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2335",
+          "numeroStanza": "23351"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2335",
-          "numero_stanza": "23352"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2335",
+          "numeroStanza": "23352"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2335",
-          "numero_stanza": "23352"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2335",
+          "numeroStanza": "23352"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "11"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "6",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5104",
-          "numero_stanza": "5104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5104",
+          "numeroStanza": "5104"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5104",
-          "numero_stanza": "5104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5104",
+          "numeroStanza": "5104"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5111",
-          "numero_stanza": "5111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5111",
+          "numeroStanza": "5111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5111",
-          "numero_stanza": "5111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5111",
+          "numeroStanza": "5111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5118",
-          "numero_stanza": "5118"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5118",
+          "numeroStanza": "5118"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5118",
-          "numero_stanza": "5118"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5118",
+          "numeroStanza": "5118"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5122",
-          "numero_stanza": "5122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5122",
+          "numeroStanza": "5122"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5122",
-          "numero_stanza": "5122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5122",
+          "numeroStanza": "5122"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5124",
-          "numero_stanza": "5124"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5124",
+          "numeroStanza": "5124"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5124",
-          "numero_stanza": "5124"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5124",
+          "numeroStanza": "5124"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5125",
-          "numero_stanza": "5125"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5125",
+          "numeroStanza": "5125"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5125",
-          "numero_stanza": "5125"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5125",
+          "numeroStanza": "5125"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "535",
-          "numero_stanza": "5351"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "535",
+          "numeroStanza": "5351"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "535",
-          "numero_stanza": "5351"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "535",
+          "numeroStanza": "5351"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5404",
-          "numero_stanza": "54042"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5404",
+          "numeroStanza": "54042"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5404",
-          "numero_stanza": "54042"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5404",
+          "numeroStanza": "54042"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5415",
-          "numero_stanza": "54152"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5415",
+          "numeroStanza": "54152"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5415",
-          "numero_stanza": "54152"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5415",
+          "numeroStanza": "54152"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5416",
-          "numero_stanza": "54161"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5416",
+          "numeroStanza": "54161"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5416",
-          "numero_stanza": "54161"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5416",
+          "numeroStanza": "54161"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5702",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5702",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C39"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB3",
-          "numero_stanza": "EB3C39"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB3",
+          "numeroStanza": "EB3C39"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 41,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 41,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 41,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 41,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C11"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C71"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C71"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C71"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD0A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD0A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "DD",
-          "numero_stanza": "DD1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "DD",
+          "numeroStanza": "DD1C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "DD",
-          "numero_stanza": "DD1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "DD",
+          "numeroStanza": "DD1C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S28",
-          "numero_stanza": "S28C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S28",
+          "numeroStanza": "S28C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S28",
-          "numero_stanza": "S28C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S28",
+          "numeroStanza": "S28C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P3",
-          "numero_stanza": "P3C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P3",
+          "numeroStanza": "P3C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P3",
-          "numero_stanza": "P3C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P3",
+          "numeroStanza": "P3C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P7",
-          "numero_stanza": "P7C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P7",
+          "numeroStanza": "P7C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P7",
-          "numero_stanza": "P7C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P7",
+          "numeroStanza": "P7C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P8",
-          "numero_stanza": "P8C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P8",
+          "numeroStanza": "P8C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P8",
-          "numero_stanza": "P8C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P8",
+          "numeroStanza": "P8C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "33"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "33"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "33"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 25,
-          "unita_immobiliare": "452",
-          "numero_stanza": "4521"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 25,
+          "unitaImmobiliare": "452",
+          "numeroStanza": "4521"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 25,
-          "unita_immobiliare": "452",
-          "numero_stanza": "4521"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 25,
+          "unitaImmobiliare": "452",
+          "numeroStanza": "4521"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "12",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "16",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "16",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "16",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "16",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "4"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "4"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "8"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "8"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "8"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "8"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "371",
-          "numero_stanza": "3711"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "371",
+          "numeroStanza": "3711"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "371",
-          "numero_stanza": "3711"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "371",
+          "numeroStanza": "3711"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 54,
-          "unita_immobiliare": "411",
-          "numero_stanza": "4112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 54,
+          "unitaImmobiliare": "411",
+          "numeroStanza": "4112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 54,
-          "unita_immobiliare": "411",
-          "numero_stanza": "4112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 54,
+          "unitaImmobiliare": "411",
+          "numeroStanza": "4112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "20",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "20",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "20",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "20",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "21",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "21",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "21",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "21",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "8",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "8",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1417",
-          "numero_stanza": "14172"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1417",
+          "numeroStanza": "14172"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1417",
-          "numero_stanza": "14172"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1417",
+          "numeroStanza": "14172"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1419",
-          "numero_stanza": "14192"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1419",
+          "numeroStanza": "14192"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1419",
-          "numero_stanza": "14192"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1419",
+          "numeroStanza": "14192"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1420",
-          "numero_stanza": "14202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1420",
+          "numeroStanza": "14202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1420",
-          "numero_stanza": "14202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1420",
+          "numeroStanza": "14202"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1421",
-          "numero_stanza": "14212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1421",
+          "numeroStanza": "14212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1421",
-          "numero_stanza": "14212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1421",
+          "numeroStanza": "14212"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1429",
-          "numero_stanza": "14291"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1429",
+          "numeroStanza": "14291"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1429",
-          "numero_stanza": "14291"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1429",
+          "numeroStanza": "14291"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1432",
-          "numero_stanza": "14322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1432",
+          "numeroStanza": "14322"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1432",
-          "numero_stanza": "14322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1432",
+          "numeroStanza": "14322"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1823",
-          "numero_stanza": "18232"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1823",
+          "numeroStanza": "18232"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1823",
-          "numero_stanza": "18232"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1823",
+          "numeroStanza": "18232"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1828",
-          "numero_stanza": "18281"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1828",
+          "numeroStanza": "18281"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1828",
-          "numero_stanza": "18281"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1828",
+          "numeroStanza": "18281"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1846",
-          "numero_stanza": "18461"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1846",
+          "numeroStanza": "18461"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1846",
-          "numero_stanza": "18461"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1846",
+          "numeroStanza": "18461"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2023",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2023",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2023",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2023",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2044",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2044",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2044",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2044",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2044",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2044",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2044",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2044",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2125",
-          "numero_stanza": "4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2125",
+          "numeroStanza": "4"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2125",
-          "numero_stanza": "4"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2125",
+          "numeroStanza": "4"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "308"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "308"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "308"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "308"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2322",
-          "numero_stanza": "23221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2322",
+          "numeroStanza": "23221"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2322",
-          "numero_stanza": "23221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2322",
+          "numeroStanza": "23221"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2325",
-          "numero_stanza": "23251"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2325",
+          "numeroStanza": "23251"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2325",
-          "numero_stanza": "23251"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2325",
+          "numeroStanza": "23251"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2325",
-          "numero_stanza": "23253"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2325",
+          "numeroStanza": "23253"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2325",
-          "numero_stanza": "23253"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2325",
+          "numeroStanza": "23253"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5112",
-          "numero_stanza": "5112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5112",
+          "numeroStanza": "5112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5112",
-          "numero_stanza": "5112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5112",
+          "numeroStanza": "5112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5114",
-          "numero_stanza": "5114"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5114",
+          "numeroStanza": "5114"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5114",
-          "numero_stanza": "5114"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5114",
+          "numeroStanza": "5114"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5126",
-          "numero_stanza": "5126"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5126",
+          "numeroStanza": "5126"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5126",
-          "numero_stanza": "5126"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5126",
+          "numeroStanza": "5126"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5403",
-          "numero_stanza": "54031"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5403",
+          "numeroStanza": "54031"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5403",
-          "numero_stanza": "54031"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5403",
+          "numeroStanza": "54031"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5407",
-          "numero_stanza": "54071"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5407",
+          "numeroStanza": "54071"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5407",
-          "numero_stanza": "54071"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5407",
+          "numeroStanza": "54071"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5412",
-          "numero_stanza": "54121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5412",
+          "numeroStanza": "54121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5412",
-          "numero_stanza": "54121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5412",
+          "numeroStanza": "54121"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C05"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C11"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C14"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C37"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C75"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC5",
-          "numero_stanza": "AC5C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC5",
+          "numeroStanza": "AC5C75"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C10"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA201",
-          "numero_stanza": "CA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA201",
+          "numeroStanza": "CA2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA201",
-          "numero_stanza": "CA2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA201",
+          "numeroStanza": "CA2C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC0A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC0A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD1A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD1A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "741",
-          "numero_stanza": "115"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "741",
+          "numeroStanza": "115"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "741",
-          "numero_stanza": "115"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "741",
+          "numeroStanza": "115"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S13",
-          "numero_stanza": "S13C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S13",
+          "numeroStanza": "S13C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S13",
-          "numero_stanza": "S13C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S13",
+          "numeroStanza": "S13C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S21",
-          "numero_stanza": "S21C04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S21",
+          "numeroStanza": "S21C04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S27",
-          "numero_stanza": "S27C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S27",
+          "numeroStanza": "S27C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S27",
-          "numero_stanza": "S27C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S27",
+          "numeroStanza": "S27C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S31",
-          "numero_stanza": "S31C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S31",
+          "numeroStanza": "S31C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S31",
-          "numero_stanza": "S31C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S31",
+          "numeroStanza": "S31C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S33",
-          "numero_stanza": "S33C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S33",
+          "numeroStanza": "S33C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S33",
-          "numero_stanza": "S33C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S33",
+          "numeroStanza": "S33C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P6",
-          "numero_stanza": "P6C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P6",
+          "numeroStanza": "P6C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P6",
-          "numero_stanza": "P6C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P6",
+          "numeroStanza": "P6C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "30"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "30"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "30"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 25,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 25,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 25,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 25,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "7",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "7",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "2",
-          "numero_stanza": "18"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "18"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "2",
-          "numero_stanza": "18"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "18"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "28"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "28"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "28"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "374",
-          "numero_stanza": "3741"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "374",
+          "numeroStanza": "3741"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "374",
-          "numero_stanza": "3741"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "374",
+          "numeroStanza": "3741"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "382",
-          "numero_stanza": "3821"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "382",
+          "numeroStanza": "3821"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "382",
-          "numero_stanza": "3821"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "382",
+          "numeroStanza": "3821"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "15",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "15",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "15",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "15",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "121",
-          "numero_stanza": "1214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "121",
+          "numeroStanza": "1214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "121",
-          "numero_stanza": "1214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "121",
+          "numeroStanza": "1214"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1021",
-          "numero_stanza": "10212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1021",
+          "numeroStanza": "10212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1021",
-          "numero_stanza": "10212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1021",
+          "numeroStanza": "10212"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11122"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11122"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1212",
-          "numero_stanza": "12122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1212",
+          "numeroStanza": "12122"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1212",
-          "numero_stanza": "12122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1212",
+          "numeroStanza": "12122"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1311",
-          "numero_stanza": "13112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1311",
+          "numeroStanza": "13112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1311",
-          "numero_stanza": "13112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1311",
+          "numeroStanza": "13112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "133",
-          "numero_stanza": "1332"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "133",
+          "numeroStanza": "1332"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "133",
-          "numero_stanza": "1332"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "133",
+          "numeroStanza": "1332"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "134",
-          "numero_stanza": "1342"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "134",
+          "numeroStanza": "1342"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "134",
-          "numero_stanza": "1342"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "134",
+          "numeroStanza": "1342"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "138",
-          "numero_stanza": "1382"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "138",
+          "numeroStanza": "1382"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "138",
-          "numero_stanza": "1382"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "138",
+          "numeroStanza": "1382"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "139",
-          "numero_stanza": "1392"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "139",
+          "numeroStanza": "1392"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "139",
-          "numero_stanza": "1392"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "139",
+          "numeroStanza": "1392"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1423",
-          "numero_stanza": "14232"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1423",
+          "numeroStanza": "14232"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1423",
-          "numero_stanza": "14232"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1423",
+          "numeroStanza": "14232"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1424",
-          "numero_stanza": "14242"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1424",
+          "numeroStanza": "14242"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1424",
-          "numero_stanza": "14242"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1424",
+          "numeroStanza": "14242"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1425",
-          "numero_stanza": "14252"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1425",
+          "numeroStanza": "14252"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1425",
-          "numero_stanza": "14252"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1425",
+          "numeroStanza": "14252"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1431",
-          "numero_stanza": "14312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1431",
+          "numeroStanza": "14312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1431",
-          "numero_stanza": "14312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1431",
+          "numeroStanza": "14312"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1432",
-          "numero_stanza": "14323"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1432",
+          "numeroStanza": "14323"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1432",
-          "numero_stanza": "14323"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1432",
+          "numeroStanza": "14323"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1842",
-          "numero_stanza": "18421"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1842",
+          "numeroStanza": "18421"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1842",
-          "numero_stanza": "18421"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1842",
+          "numeroStanza": "18421"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1845",
-          "numero_stanza": "18451"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1845",
+          "numeroStanza": "18451"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1845",
-          "numero_stanza": "18451"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1845",
+          "numeroStanza": "18451"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1846",
-          "numero_stanza": "18462"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1846",
+          "numeroStanza": "18462"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1846",
-          "numero_stanza": "18462"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1846",
+          "numeroStanza": "18462"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1847",
-          "numero_stanza": "18472"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1847",
+          "numeroStanza": "18472"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1847",
-          "numero_stanza": "18472"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1847",
+          "numeroStanza": "18472"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2023",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2023",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2023",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2023",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2024",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2024",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2024",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2024",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2034",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2034",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2034",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2034",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2037",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2037",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2037",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2037",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2055",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2055",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2055",
-          "numero_stanza": "305"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2055",
+          "numeroStanza": "305"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "103"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "103"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2312",
-          "numero_stanza": "23121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2312",
+          "numeroStanza": "23121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2312",
-          "numero_stanza": "23121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2312",
+          "numeroStanza": "23121"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2324",
-          "numero_stanza": "23241"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2324",
+          "numeroStanza": "23241"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2324",
-          "numero_stanza": "23241"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2324",
+          "numeroStanza": "23241"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "14"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "212"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5107",
-          "numero_stanza": "5107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5107",
+          "numeroStanza": "5107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5107",
-          "numero_stanza": "5107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5107",
+          "numeroStanza": "5107"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5116",
-          "numero_stanza": "5116"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5116",
+          "numeroStanza": "5116"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5116",
-          "numero_stanza": "5116"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5116",
+          "numeroStanza": "5116"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5121",
-          "numero_stanza": "5121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5121",
+          "numeroStanza": "5121"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5121",
-          "numero_stanza": "5121"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5121",
+          "numeroStanza": "5121"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "532",
-          "numero_stanza": "5321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "532",
+          "numeroStanza": "5321"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "532",
-          "numero_stanza": "5321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "532",
+          "numeroStanza": "5321"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "534",
-          "numero_stanza": "5341"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "534",
+          "numeroStanza": "5341"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "534",
-          "numero_stanza": "5341"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "534",
+          "numeroStanza": "5341"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5410",
-          "numero_stanza": "54101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5410",
+          "numeroStanza": "54101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5410",
-          "numero_stanza": "54101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5410",
+          "numeroStanza": "54101"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5502",
-          "numero_stanza": "55021"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5502",
+          "numeroStanza": "55021"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5502",
-          "numero_stanza": "55021"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5502",
+          "numeroStanza": "55021"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 37,
-          "unita_immobiliare": "5701",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 37,
+          "unitaImmobiliare": "5701",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 48,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA2C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 48,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA2C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 48,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA2C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 48,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA2C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 57,
-          "unita_immobiliare": "711",
-          "numero_stanza": "7113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 57,
+          "unitaImmobiliare": "711",
+          "numeroStanza": "7113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 57,
-          "unita_immobiliare": "711",
-          "numero_stanza": "7113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 57,
+          "unitaImmobiliare": "711",
+          "numeroStanza": "7113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C11"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C11"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C11"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C14"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C14"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C14"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S11",
-          "numero_stanza": "S11C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S11",
+          "numeroStanza": "S11C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S11",
-          "numero_stanza": "S11C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S11",
+          "numeroStanza": "S11C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "109"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "109"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "109"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "109"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "203"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S2",
-          "numero_stanza": "S2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S2",
+          "numeroStanza": "S2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S2",
-          "numero_stanza": "S2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S2",
+          "numeroStanza": "S2C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S22",
-          "numero_stanza": "S22C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S22",
+          "numeroStanza": "S22C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S22",
-          "numero_stanza": "S22C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S22",
+          "numeroStanza": "S22C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S24",
-          "numero_stanza": "S24C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S24",
+          "numeroStanza": "S24C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S24",
-          "numero_stanza": "S24C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S24",
+          "numeroStanza": "S24C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S29",
-          "numero_stanza": "S29C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S29",
+          "numeroStanza": "S29C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S29",
-          "numero_stanza": "S29C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S29",
+          "numeroStanza": "S29C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S3",
-          "numero_stanza": "S3C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S3",
+          "numeroStanza": "S3C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S3",
-          "numero_stanza": "S3C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S3",
+          "numeroStanza": "S3C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P9",
-          "numero_stanza": "P9C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P9",
+          "numeroStanza": "P9C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P9",
-          "numero_stanza": "P9C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P9",
+          "numeroStanza": "P9C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "9",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "9",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "3",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 26,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 26,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 26,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 26,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "15",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "15",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "15",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "15",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "211"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "372",
-          "numero_stanza": "3721"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "372",
+          "numeroStanza": "3721"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 18,
-          "unita_immobiliare": "372",
-          "numero_stanza": "3721"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 18,
+          "unitaImmobiliare": "372",
+          "numeroStanza": "3721"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 20,
-          "unita_immobiliare": "391",
-          "numero_stanza": "3911"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 20,
+          "unitaImmobiliare": "391",
+          "numeroStanza": "3911"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 20,
-          "unita_immobiliare": "391",
-          "numero_stanza": "3911"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 20,
+          "unitaImmobiliare": "391",
+          "numeroStanza": "3911"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "13",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "13",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "13",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "13",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "22",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "22",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "22",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "22",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "9",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1314"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1314"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 1,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1314"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 1,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1314"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1011",
-          "numero_stanza": "10112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1011",
+          "numeroStanza": "10112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1011",
-          "numero_stanza": "10112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1011",
+          "numeroStanza": "10112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1418",
-          "numero_stanza": "14182"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1418",
+          "numeroStanza": "14182"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1418",
-          "numero_stanza": "14182"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1418",
+          "numeroStanza": "14182"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1422",
-          "numero_stanza": "14222"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1422",
+          "numeroStanza": "14222"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1422",
-          "numero_stanza": "14222"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1422",
+          "numeroStanza": "14222"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 4,
-          "unita_immobiliare": "1611",
-          "numero_stanza": "16114"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 4,
+          "unitaImmobiliare": "1611",
+          "numeroStanza": "16114"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 4,
-          "unita_immobiliare": "1611",
-          "numero_stanza": "16114"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 4,
+          "unitaImmobiliare": "1611",
+          "numeroStanza": "16114"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1822",
-          "numero_stanza": "18223"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1822",
+          "numeroStanza": "18223"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1822",
-          "numero_stanza": "18223"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1822",
+          "numeroStanza": "18223"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1843",
-          "numero_stanza": "18431"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1843",
+          "numeroStanza": "18431"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1843",
-          "numero_stanza": "18431"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1843",
+          "numeroStanza": "18431"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1844",
-          "numero_stanza": "18442"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1844",
+          "numeroStanza": "18442"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1844",
-          "numero_stanza": "18442"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1844",
+          "numeroStanza": "18442"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2026",
-          "numero_stanza": "7"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2026",
+          "numeroStanza": "7"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2026",
-          "numero_stanza": "7"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2026",
+          "numeroStanza": "7"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2045",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2045",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2045",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2045",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "406"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "406"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "406"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "406"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "408"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "408"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "408"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "408"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2314",
-          "numero_stanza": "23141"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2314",
+          "numeroStanza": "23141"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2314",
-          "numero_stanza": "23141"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2314",
+          "numeroStanza": "23141"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2315",
-          "numero_stanza": "23151"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2315",
+          "numeroStanza": "23151"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2315",
-          "numero_stanza": "23151"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2315",
+          "numeroStanza": "23151"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2321",
-          "numero_stanza": "23213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2321",
+          "numeroStanza": "23213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2321",
-          "numero_stanza": "23213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2321",
+          "numeroStanza": "23213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "211"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "502",
-          "numero_stanza": "211"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "502",
+          "numeroStanza": "211"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "312"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5110",
-          "numero_stanza": "5110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5110",
+          "numeroStanza": "5110"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5110",
-          "numero_stanza": "5110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5110",
+          "numeroStanza": "5110"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5115",
-          "numero_stanza": "5115"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5115",
+          "numeroStanza": "5115"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5115",
-          "numero_stanza": "5115"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5115",
+          "numeroStanza": "5115"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5117",
-          "numero_stanza": "5117"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5117",
+          "numeroStanza": "5117"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5117",
-          "numero_stanza": "5117"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5117",
+          "numeroStanza": "5117"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5119",
-          "numero_stanza": "5119"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5119",
+          "numeroStanza": "5119"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5119",
-          "numero_stanza": "5119"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5119",
+          "numeroStanza": "5119"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5123",
-          "numero_stanza": "5123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5123",
+          "numeroStanza": "5123"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5123",
-          "numero_stanza": "5123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5123",
+          "numeroStanza": "5123"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5215"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5215"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5215"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5215"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5402",
-          "numero_stanza": "54021"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5402",
+          "numeroStanza": "54021"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5402",
-          "numero_stanza": "54021"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5402",
+          "numeroStanza": "54021"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5501",
-          "numero_stanza": "55011"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5501",
+          "numeroStanza": "55011"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5501",
-          "numero_stanza": "55011"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5501",
+          "numeroStanza": "55011"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5503",
-          "numero_stanza": "55031"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5503",
+          "numeroStanza": "55031"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5503",
-          "numero_stanza": "55031"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5503",
+          "numeroStanza": "55031"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 57,
-          "unita_immobiliare": "711",
-          "numero_stanza": "7111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 57,
+          "unitaImmobiliare": "711",
+          "numeroStanza": "7111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 57,
-          "unita_immobiliare": "711",
-          "numero_stanza": "7111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 57,
+          "unitaImmobiliare": "711",
+          "numeroStanza": "7111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C05"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C05"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C05"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA4",
-          "numero_stanza": "AA4C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA4",
+          "numeroStanza": "AA4C08"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA2",
-          "numero_stanza": "BA2C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA2",
+          "numeroStanza": "BA2C13"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C10"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C16"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C37"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC5",
-          "numero_stanza": "BC5C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC5",
+          "numeroStanza": "BC5C73"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C73"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BC6",
-          "numero_stanza": "BC6C73"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BC6",
+          "numeroStanza": "BC6C73"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB1A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB1A01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB1A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB1A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD1A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD",
-          "numero_stanza": "CD1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD",
+          "numeroStanza": "CD1A01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD201",
-          "numero_stanza": "CD2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD201",
+          "numeroStanza": "CD2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CD201",
-          "numero_stanza": "CD2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CD201",
+          "numeroStanza": "CD2C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "204"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "204"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S11",
-          "numero_stanza": "S11C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S11",
+          "numeroStanza": "S11C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S11",
-          "numero_stanza": "S11C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S11",
+          "numeroStanza": "S11C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S17",
-          "numero_stanza": "S17C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S17",
+          "numeroStanza": "S17C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S17",
-          "numero_stanza": "S17C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S17",
+          "numeroStanza": "S17C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "110"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "110"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S27",
-          "numero_stanza": "S27C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S27",
+          "numeroStanza": "S27C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S27",
-          "numero_stanza": "S27C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S27",
+          "numeroStanza": "S27C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S30",
-          "numero_stanza": "S30C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S30",
+          "numeroStanza": "S30C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S30",
-          "numero_stanza": "S30C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S30",
+          "numeroStanza": "S30C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P5",
-          "numero_stanza": "P5C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P5",
+          "numeroStanza": "P5C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P5",
-          "numero_stanza": "P5C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P5",
+          "numeroStanza": "P5C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "12",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "12",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "12",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "7",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "7",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 70,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 70,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 59,
-          "unita_immobiliare": "921",
-          "numero_stanza": "9213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 59,
+          "unitaImmobiliare": "921",
+          "numeroStanza": "9213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 59,
-          "unita_immobiliare": "921",
-          "numero_stanza": "9213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 59,
+          "unitaImmobiliare": "921",
+          "numeroStanza": "9213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "10",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "10",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "10",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "5"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "5"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "5"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "5"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "7"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "7"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "7"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "7"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "9"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "9"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "9"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "9"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "27"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "27"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "27"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "383",
-          "numero_stanza": "3831"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "383",
+          "numeroStanza": "3831"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "383",
-          "numero_stanza": "3831"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "383",
+          "numeroStanza": "3831"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "385",
-          "numero_stanza": "3851"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "385",
+          "numeroStanza": "3851"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "385",
-          "numero_stanza": "3851"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "385",
+          "numeroStanza": "3851"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "11",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "16",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "16",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "16",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "16",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "17",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "17",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "17",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "17",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "19",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "19",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "19",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "19",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "22",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "22",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "22",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "22",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "6",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "6",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1021",
-          "numero_stanza": "10213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1021",
+          "numeroStanza": "10213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1021",
-          "numero_stanza": "10213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1021",
+          "numeroStanza": "10213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1211",
-          "numero_stanza": "12112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1211",
+          "numeroStanza": "12112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1211",
-          "numero_stanza": "12112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1211",
+          "numeroStanza": "12112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1312"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1312",
-          "numero_stanza": "13122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1312",
+          "numeroStanza": "13122"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1312",
-          "numero_stanza": "13122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1312",
+          "numeroStanza": "13122"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "136",
-          "numero_stanza": "1362"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "136",
+          "numeroStanza": "1362"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "136",
-          "numero_stanza": "1362"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "136",
+          "numeroStanza": "1362"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1426",
-          "numero_stanza": "14262"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1426",
+          "numeroStanza": "14262"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1426",
-          "numero_stanza": "14262"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1426",
+          "numeroStanza": "14262"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1721",
-          "numero_stanza": "17213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1721",
+          "numeroStanza": "17213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1721",
-          "numero_stanza": "17213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1721",
+          "numeroStanza": "17213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1721",
-          "numero_stanza": "17214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1721",
+          "numeroStanza": "17214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 64,
-          "unita_immobiliare": "1721",
-          "numero_stanza": "17214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 64,
+          "unitaImmobiliare": "1721",
+          "numeroStanza": "17214"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1844",
-          "numero_stanza": "18441"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1844",
+          "numeroStanza": "18441"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1844",
-          "numero_stanza": "18441"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1844",
+          "numeroStanza": "18441"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "221",
-          "numero_stanza": "2213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "221",
+          "numeroStanza": "2213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "221",
-          "numero_stanza": "2213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "221",
+          "numeroStanza": "2213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "222",
-          "numero_stanza": "2223"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "222",
+          "numeroStanza": "2223"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "222",
-          "numero_stanza": "2223"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "222",
+          "numeroStanza": "2223"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2025",
-          "numero_stanza": "5"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2025",
+          "numeroStanza": "5"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2025",
-          "numero_stanza": "5"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2025",
+          "numeroStanza": "5"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2025",
-          "numero_stanza": "6"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2025",
+          "numeroStanza": "6"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2025",
-          "numero_stanza": "6"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2025",
+          "numeroStanza": "6"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2035",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2035",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2035",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2035",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2047",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2047",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2047",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2047",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2058",
-          "numero_stanza": "311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2058",
+          "numeroStanza": "311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2058",
-          "numero_stanza": "311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2058",
+          "numeroStanza": "311"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "108"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "108"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2321",
-          "numero_stanza": "23212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2321",
+          "numeroStanza": "23212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2321",
-          "numero_stanza": "23212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2321",
+          "numeroStanza": "23212"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2325",
-          "numero_stanza": "23252"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2325",
+          "numeroStanza": "23252"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2325",
-          "numero_stanza": "23252"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2325",
+          "numeroStanza": "23252"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2332",
-          "numero_stanza": "23321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2332",
+          "numeroStanza": "23321"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2332",
-          "numero_stanza": "23321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2332",
+          "numeroStanza": "23321"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "301",
-          "numero_stanza": "30113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "301",
+          "numeroStanza": "30113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "301",
-          "numero_stanza": "30113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "301",
+          "numeroStanza": "30113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3014",
-          "numero_stanza": "30144"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3014",
+          "numeroStanza": "30144"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3014",
-          "numero_stanza": "30144"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3014",
+          "numeroStanza": "30144"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "2",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "311"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "503"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "503"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "503"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "503"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "531",
-          "numero_stanza": "5311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "531",
+          "numeroStanza": "5311"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "531",
-          "numero_stanza": "5311"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "531",
+          "numeroStanza": "5311"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5408",
-          "numero_stanza": "54081"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5408",
+          "numeroStanza": "54081"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5408",
-          "numero_stanza": "54081"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5408",
+          "numeroStanza": "54081"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5409",
-          "numero_stanza": "54091"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5409",
+          "numeroStanza": "54091"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5409",
-          "numero_stanza": "54091"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5409",
+          "numeroStanza": "54091"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5409",
-          "numero_stanza": "54092"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5409",
+          "numeroStanza": "54092"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5409",
-          "numero_stanza": "54092"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5409",
+          "numeroStanza": "54092"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5505",
-          "numero_stanza": "55051"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5505",
+          "numeroStanza": "55051"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5505",
-          "numero_stanza": "55051"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5505",
+          "numeroStanza": "55051"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C42"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EB2",
-          "numero_stanza": "EB2C42"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EB2",
+          "numeroStanza": "EB2C42"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C74"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC3",
-          "numero_stanza": "EC3C74"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC3",
+          "numeroStanza": "EC3C74"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C72"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59EC4",
-          "numero_stanza": "EC4C72"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59EC4",
+          "numeroStanza": "EC4C72"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C48"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C48"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "59FB2",
-          "numero_stanza": "FB2C48"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "59FB2",
+          "numeroStanza": "FB2C48"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C13"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C16"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C16"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C16"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB5",
-          "numero_stanza": "BB5C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB5",
+          "numeroStanza": "BB5C34"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB0A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB",
-          "numero_stanza": "CB0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB",
+          "numeroStanza": "CB0A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "724",
-          "numero_stanza": "401"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "724",
+          "numeroStanza": "401"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "724",
-          "numero_stanza": "401"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "724",
+          "numeroStanza": "401"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S12",
-          "numero_stanza": "S12C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S12",
+          "numeroStanza": "S12C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S12",
-          "numero_stanza": "S12C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S12",
+          "numeroStanza": "S12C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S6",
-          "numero_stanza": "S6C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S6",
+          "numeroStanza": "S6C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S6",
-          "numero_stanza": "S6C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S6",
+          "numeroStanza": "S6C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "4",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "4",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "106"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "106"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "13",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "13",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "13",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "13",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "6"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "6"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "6"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "6"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "381",
-          "numero_stanza": "3811"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "381",
+          "numeroStanza": "3811"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 19,
-          "unita_immobiliare": "381",
-          "numero_stanza": "3811"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 19,
+          "unitaImmobiliare": "381",
+          "numeroStanza": "3811"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "18",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "18",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "18",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "18",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "4",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "4",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 66,
-          "unita_immobiliare": "742",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 66,
+          "unitaImmobiliare": "742",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1111",
-          "numero_stanza": "11113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1111",
+          "numeroStanza": "11113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1313"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "131",
-          "numero_stanza": "1313"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "131",
+          "numeroStanza": "1313"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "132",
-          "numero_stanza": "1322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "132",
+          "numeroStanza": "1322"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "132",
-          "numero_stanza": "1322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "132",
+          "numeroStanza": "1322"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1428",
-          "numero_stanza": "14283"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1428",
+          "numeroStanza": "14283"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1428",
-          "numero_stanza": "14283"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1428",
+          "numeroStanza": "14283"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 4,
-          "unita_immobiliare": "1611",
-          "numero_stanza": "16113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 4,
+          "unitaImmobiliare": "1611",
+          "numeroStanza": "16113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 4,
-          "unita_immobiliare": "1611",
-          "numero_stanza": "16113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 4,
+          "unitaImmobiliare": "1611",
+          "numeroStanza": "16113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1826",
-          "numero_stanza": "18262"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1826",
+          "numeroStanza": "18262"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1826",
-          "numero_stanza": "18262"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1826",
+          "numeroStanza": "18262"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1832",
-          "numero_stanza": "18321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1832",
+          "numeroStanza": "18321"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1832",
-          "numero_stanza": "18321"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1832",
+          "numeroStanza": "18321"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1832",
-          "numero_stanza": "18322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1832",
+          "numeroStanza": "18322"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1832",
-          "numero_stanza": "18322"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1832",
+          "numeroStanza": "18322"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1843",
-          "numero_stanza": "18432"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1843",
+          "numeroStanza": "18432"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1843",
-          "numero_stanza": "18432"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1843",
+          "numeroStanza": "18432"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2033",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2033",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2033",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2033",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2034",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2034",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2034",
-          "numero_stanza": "104"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2034",
+          "numeroStanza": "104"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2035",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2035",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2035",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2035",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2054",
-          "numero_stanza": "303"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2054",
+          "numeroStanza": "303"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2054",
-          "numero_stanza": "303"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2054",
+          "numeroStanza": "303"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2055",
-          "numero_stanza": "306"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2055",
+          "numeroStanza": "306"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2055",
-          "numero_stanza": "306"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2055",
+          "numeroStanza": "306"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2056",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2056",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2056",
-          "numero_stanza": "307"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2056",
+          "numeroStanza": "307"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2125",
-          "numero_stanza": "5"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2125",
+          "numeroStanza": "5"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2125",
-          "numero_stanza": "5"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2125",
+          "numeroStanza": "5"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "102"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "102"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2131",
-          "numero_stanza": "105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2131",
+          "numeroStanza": "105"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "202"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "202"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "304"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "304"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "306"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "306"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2181",
-          "numero_stanza": "306"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2181",
+          "numeroStanza": "306"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "405"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "405"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "405"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "405"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2311",
-          "numero_stanza": "23112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2311",
+          "numeroStanza": "23112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2311",
-          "numero_stanza": "23112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2311",
+          "numeroStanza": "23112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2311",
-          "numero_stanza": "23113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2311",
+          "numeroStanza": "23113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2311",
-          "numero_stanza": "23113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2311",
+          "numeroStanza": "23113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2312",
-          "numero_stanza": "23122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2312",
+          "numeroStanza": "23122"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2312",
-          "numero_stanza": "23122"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2312",
+          "numeroStanza": "23122"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2313",
-          "numero_stanza": "23131"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2313",
+          "numeroStanza": "23131"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2313",
-          "numero_stanza": "23131"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2313",
+          "numeroStanza": "23131"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2315",
-          "numero_stanza": "23152"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2315",
+          "numeroStanza": "23152"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2315",
-          "numero_stanza": "23152"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2315",
+          "numeroStanza": "23152"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2322",
-          "numero_stanza": "23222"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2322",
+          "numeroStanza": "23222"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2322",
-          "numero_stanza": "23222"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2322",
+          "numeroStanza": "23222"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2333",
-          "numero_stanza": "23331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2333",
+          "numeroStanza": "23331"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2333",
-          "numero_stanza": "23331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2333",
+          "numeroStanza": "23331"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2334",
-          "numero_stanza": "23341"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2334",
+          "numeroStanza": "23341"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2334",
-          "numero_stanza": "23341"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2334",
+          "numeroStanza": "23341"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3012",
-          "numero_stanza": "30126"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3012",
+          "numeroStanza": "30126"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 11,
-          "unita_immobiliare": "3012",
-          "numero_stanza": "30126"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 11,
+          "unitaImmobiliare": "3012",
+          "numeroStanza": "30126"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "4",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 22,
-          "unita_immobiliare": "4",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 22,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "10"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "13"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "4",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "4",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "501",
-          "numero_stanza": "112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "501",
+          "numeroStanza": "112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "309"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "309"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "309"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "309"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "403"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "403"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "403"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "403"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5120",
-          "numero_stanza": "5120"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5120",
+          "numeroStanza": "5120"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5120",
-          "numero_stanza": "5120"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5120",
+          "numeroStanza": "5120"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "533",
-          "numero_stanza": "5331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "533",
+          "numeroStanza": "5331"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "533",
-          "numero_stanza": "5331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "533",
+          "numeroStanza": "5331"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "536",
-          "numero_stanza": "5361"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "536",
+          "numeroStanza": "5361"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "536",
-          "numero_stanza": "5361"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "536",
+          "numeroStanza": "5361"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "537",
-          "numero_stanza": "5371"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "537",
+          "numeroStanza": "5371"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 33,
-          "unita_immobiliare": "537",
-          "numero_stanza": "5371"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 33,
+          "unitaImmobiliare": "537",
+          "numeroStanza": "5371"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5401",
-          "numero_stanza": "54011"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5401",
+          "numeroStanza": "54011"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5401",
-          "numero_stanza": "54011"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5401",
+          "numeroStanza": "54011"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5411",
-          "numero_stanza": "54111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5411",
+          "numeroStanza": "54111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5411",
-          "numero_stanza": "54111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5411",
+          "numeroStanza": "54111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C44"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C44"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 39,
-          "unita_immobiliare": "54FB4",
-          "numero_stanza": "FB4C44"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 39,
+          "unitaImmobiliare": "54FB4",
+          "numeroStanza": "FB4C44"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6112"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 56,
-          "unita_immobiliare": "611",
-          "numero_stanza": "6112"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 56,
+          "unitaImmobiliare": "611",
+          "numeroStanza": "6112"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 41,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 41,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 41,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 41,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 46,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 46,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 46,
-          "unita_immobiliare": "1",
-          "numero_stanza": "EA1C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 46,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "EA1C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA3",
-          "numero_stanza": "AA3C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA3",
+          "numeroStanza": "AA3C08"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C37"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C75"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AC6",
-          "numero_stanza": "AC6C75"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AC6",
+          "numeroStanza": "AC6C75"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C13"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA3",
-          "numero_stanza": "BA3C13"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA3",
+          "numeroStanza": "BA3C13"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C37"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA1A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA1A01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S1",
-          "numero_stanza": "S1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S1",
+          "numeroStanza": "S1C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S1",
-          "numero_stanza": "S1C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S1",
+          "numeroStanza": "S1C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S14",
-          "numero_stanza": "S14C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S14",
+          "numeroStanza": "S14C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S14",
-          "numero_stanza": "S14C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S14",
+          "numeroStanza": "S14C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "205"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "205"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S25",
-          "numero_stanza": "S25C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S25",
+          "numeroStanza": "S25C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S25",
-          "numero_stanza": "S25C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S25",
+          "numeroStanza": "S25C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S29",
-          "numero_stanza": "S29C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S29",
+          "numeroStanza": "S29C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S29",
-          "numero_stanza": "S29C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S29",
+          "numeroStanza": "S29C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S32",
-          "numero_stanza": "S32C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S32",
+          "numeroStanza": "S32C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S32",
-          "numero_stanza": "S32C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S32",
+          "numeroStanza": "S32C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P1",
-          "numero_stanza": "P1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P1",
+          "numeroStanza": "P1C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P1",
-          "numero_stanza": "P1C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P1",
+          "numeroStanza": "P1C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 69,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 69,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 58,
-          "unita_immobiliare": "831",
-          "numero_stanza": "8312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 58,
+          "unitaImmobiliare": "831",
+          "numeroStanza": "8312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 58,
-          "unita_immobiliare": "831",
-          "numero_stanza": "8312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 58,
+          "unitaImmobiliare": "831",
+          "numeroStanza": "8312"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "31"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 24,
-          "unita_immobiliare": "3",
-          "numero_stanza": "31"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 24,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "31"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "5",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "5",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "7",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "7",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "208"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "208"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "302"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 20,
-          "unita_immobiliare": "391",
-          "numero_stanza": "3912"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 20,
+          "unitaImmobiliare": "391",
+          "numeroStanza": "3912"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 20,
-          "unita_immobiliare": "391",
-          "numero_stanza": "3912"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 20,
+          "unitaImmobiliare": "391",
+          "numeroStanza": "3912"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 54,
-          "unita_immobiliare": "411",
-          "numero_stanza": "4113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 54,
+          "unitaImmobiliare": "411",
+          "numeroStanza": "4113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 54,
-          "unita_immobiliare": "411",
-          "numero_stanza": "4113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 54,
+          "unitaImmobiliare": "411",
+          "numeroStanza": "4113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "13",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "13",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "13",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "13",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "14",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "14",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "17",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "17",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "17",
-          "numero_stanza": "3"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "17",
+          "numeroStanza": "3"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1011",
-          "numero_stanza": "10113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1011",
+          "numeroStanza": "10113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 60,
-          "unita_immobiliare": "1011",
-          "numero_stanza": "10113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 60,
+          "unitaImmobiliare": "1011",
+          "numeroStanza": "10113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11123"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 61,
-          "unita_immobiliare": "1112",
-          "numero_stanza": "11123"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 61,
+          "unitaImmobiliare": "1112",
+          "numeroStanza": "11123"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1211",
-          "numero_stanza": "12113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1211",
+          "numeroStanza": "12113"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 62,
-          "unita_immobiliare": "1211",
-          "numero_stanza": "12113"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 62,
+          "unitaImmobiliare": "1211",
+          "numeroStanza": "12113"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1315",
-          "numero_stanza": "13152"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1315",
+          "numeroStanza": "13152"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1315",
-          "numero_stanza": "13152"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1315",
+          "numeroStanza": "13152"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "135",
-          "numero_stanza": "1352"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "135",
+          "numeroStanza": "1352"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "135",
-          "numero_stanza": "1352"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "135",
+          "numeroStanza": "1352"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "135",
-          "numero_stanza": "1353"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "135",
+          "numeroStanza": "1353"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "135",
-          "numero_stanza": "1353"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "135",
+          "numeroStanza": "1353"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1430",
-          "numero_stanza": "14302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1430",
+          "numeroStanza": "14302"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1430",
-          "numero_stanza": "14302"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1430",
+          "numeroStanza": "14302"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1822",
-          "numero_stanza": "18221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1822",
+          "numeroStanza": "18221"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1822",
-          "numero_stanza": "18221"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1822",
+          "numeroStanza": "18221"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1823",
-          "numero_stanza": "18231"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1823",
+          "numeroStanza": "18231"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1823",
-          "numero_stanza": "18231"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1823",
+          "numeroStanza": "18231"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1824",
-          "numero_stanza": "18242"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1824",
+          "numeroStanza": "18242"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1824",
-          "numero_stanza": "18242"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1824",
+          "numeroStanza": "18242"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1827",
-          "numero_stanza": "18272"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1827",
+          "numeroStanza": "18272"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1827",
-          "numero_stanza": "18272"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1827",
+          "numeroStanza": "18272"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1831",
-          "numero_stanza": "18312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1831",
+          "numeroStanza": "18312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1831",
-          "numero_stanza": "18312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1831",
+          "numeroStanza": "18312"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1842",
-          "numero_stanza": "18422"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1842",
+          "numeroStanza": "18422"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1842",
-          "numero_stanza": "18422"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1842",
+          "numeroStanza": "18422"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1845",
-          "numero_stanza": "18452"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1845",
+          "numeroStanza": "18452"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1845",
-          "numero_stanza": "18452"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1845",
+          "numeroStanza": "18452"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "221",
-          "numero_stanza": "2212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "221",
+          "numeroStanza": "2212"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "221",
-          "numero_stanza": "2212"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "221",
+          "numeroStanza": "2212"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "222",
-          "numero_stanza": "2222"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "222",
+          "numeroStanza": "2222"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 53,
-          "unita_immobiliare": "222",
-          "numero_stanza": "2222"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 53,
+          "unitaImmobiliare": "222",
+          "numeroStanza": "2222"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2036",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2036",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2036",
-          "numero_stanza": "107"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2036",
+          "numeroStanza": "107"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2043",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2043",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2043",
-          "numero_stanza": "201"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2043",
+          "numeroStanza": "201"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2046",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2046",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2046",
-          "numero_stanza": "207"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2046",
+          "numeroStanza": "207"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2053",
-          "numero_stanza": "301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2053",
+          "numeroStanza": "301"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2053",
-          "numero_stanza": "301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2053",
+          "numeroStanza": "301"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2056",
-          "numero_stanza": "308"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2056",
+          "numeroStanza": "308"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2056",
-          "numero_stanza": "308"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2056",
+          "numeroStanza": "308"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2057",
-          "numero_stanza": "309"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2057",
+          "numeroStanza": "309"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2057",
-          "numero_stanza": "309"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2057",
+          "numeroStanza": "309"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2057",
-          "numero_stanza": "310"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2057",
+          "numeroStanza": "310"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 6,
-          "unita_immobiliare": "2057",
-          "numero_stanza": "310"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 6,
+          "unitaImmobiliare": "2057",
+          "numeroStanza": "310"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2141",
-          "numero_stanza": "206"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2141",
+          "numeroStanza": "206"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "403"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "403"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 7,
-          "unita_immobiliare": "2191",
-          "numero_stanza": "403"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 7,
+          "unitaImmobiliare": "2191",
+          "numeroStanza": "403"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2323",
-          "numero_stanza": "23231"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2323",
+          "numeroStanza": "23231"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2323",
-          "numero_stanza": "23231"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2323",
+          "numeroStanza": "23231"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2331",
-          "numero_stanza": "23312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2331",
+          "numeroStanza": "23312"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 8,
-          "unita_immobiliare": "2331",
-          "numero_stanza": "23312"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 8,
+          "unitaImmobiliare": "2331",
+          "numeroStanza": "23312"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 9,
-          "unita_immobiliare": "281",
-          "numero_stanza": "2817"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 9,
+          "unitaImmobiliare": "281",
+          "numeroStanza": "2817"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 9,
-          "unita_immobiliare": "281",
-          "numero_stanza": "2817"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 9,
+          "unitaImmobiliare": "281",
+          "numeroStanza": "2817"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 10,
-          "unita_immobiliare": "292",
-          "numero_stanza": "2924"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 10,
+          "unitaImmobiliare": "292",
+          "numeroStanza": "2924"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 10,
-          "unita_immobiliare": "292",
-          "numero_stanza": "2924"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 10,
+          "unitaImmobiliare": "292",
+          "numeroStanza": "2924"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "15"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 23,
-          "unita_immobiliare": "1",
-          "numero_stanza": "15"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 23,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "15"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 55,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 55,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5214"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "401"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "401"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "401"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "401"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "402"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "402"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 30,
-          "unita_immobiliare": "503",
-          "numero_stanza": "402"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 30,
+          "unitaImmobiliare": "503",
+          "numeroStanza": "402"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5105",
-          "numero_stanza": "5105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5105",
+          "numeroStanza": "5105"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 31,
-          "unita_immobiliare": "5105",
-          "numero_stanza": "5105"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 31,
+          "unitaImmobiliare": "5105",
+          "numeroStanza": "5105"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 32,
-          "unita_immobiliare": "521",
-          "numero_stanza": "5214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 32,
+          "unitaImmobiliare": "521",
+          "numeroStanza": "5214"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5405",
-          "numero_stanza": "54051"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5405",
+          "numeroStanza": "54051"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 34,
-          "unita_immobiliare": "5405",
-          "numero_stanza": "54051"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 34,
+          "unitaImmobiliare": "5405",
+          "numeroStanza": "54051"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5507",
-          "numero_stanza": "55071"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5507",
+          "numeroStanza": "55071"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 35,
-          "unita_immobiliare": "5507",
-          "numero_stanza": "55071"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 35,
+          "unitaImmobiliare": "5507",
+          "numeroStanza": "55071"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 40,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 40,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 40,
-          "unita_immobiliare": "1",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 40,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C08"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AA2",
-          "numero_stanza": "AA2C08"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AA2",
+          "numeroStanza": "AA2C08"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB4",
-          "numero_stanza": "AB4C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB4",
+          "numeroStanza": "AB4C34"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "AB5",
-          "numero_stanza": "AB5C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "AB5",
+          "numeroStanza": "AB5C34"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C10"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BA4",
-          "numero_stanza": "BA4C10"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BA4",
+          "numeroStanza": "BA4C10"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C37"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB3",
-          "numero_stanza": "BB3C37"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB3",
+          "numeroStanza": "BB3C37"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C34"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "BB4",
-          "numero_stanza": "BB4C34"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "BB4",
+          "numeroStanza": "BB4C34"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA0A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA0A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA0A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA1A04"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CA",
-          "numero_stanza": "CA1A04"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CA",
+          "numeroStanza": "CA1A04"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB201",
-          "numero_stanza": "CB2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB201",
+          "numeroStanza": "CB2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CB201",
-          "numero_stanza": "CB2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CB201",
+          "numeroStanza": "CB2C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC1A01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC",
-          "numero_stanza": "CC1A01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC",
+          "numeroStanza": "CC1A01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC201",
-          "numero_stanza": "CC2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC201",
+          "numeroStanza": "CC2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 50,
-          "unita_immobiliare": "CC201",
-          "numero_stanza": "CC2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 50,
+          "unitaImmobiliare": "CC201",
+          "numeroStanza": "CC2C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "721",
-          "numero_stanza": "101"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "721",
+          "numeroStanza": "101"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S19",
-          "numero_stanza": "S19C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S19",
+          "numeroStanza": "S19C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S19",
-          "numero_stanza": "S19C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S19",
+          "numeroStanza": "S19C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S20",
-          "numero_stanza": "S20C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S20",
+          "numeroStanza": "S20C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S20",
-          "numero_stanza": "S20C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S20",
+          "numeroStanza": "S20C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S23",
-          "numero_stanza": "S23C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S23",
+          "numeroStanza": "S23C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S23",
-          "numero_stanza": "S23C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S23",
+          "numeroStanza": "S23C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S30",
-          "numero_stanza": "S30C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S30",
+          "numeroStanza": "S30C03"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S30",
-          "numero_stanza": "S30C03"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S30",
+          "numeroStanza": "S30C03"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S32",
-          "numero_stanza": "S32C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S32",
+          "numeroStanza": "S32C02"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S32",
-          "numero_stanza": "S32C02"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S32",
+          "numeroStanza": "S32C02"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S9",
-          "numero_stanza": "S9C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S9",
+          "numeroStanza": "S9C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 67,
-          "unita_immobiliare": "S9",
-          "numero_stanza": "S9C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 67,
+          "unitaImmobiliare": "S9",
+          "numeroStanza": "S9C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P2",
-          "numero_stanza": "P2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P2",
+          "numeroStanza": "P2C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P2",
-          "numero_stanza": "P2C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P2",
+          "numeroStanza": "P2C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P4",
-          "numero_stanza": "P4C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P4",
+          "numeroStanza": "P4C01"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 68,
-          "unita_immobiliare": "P4",
-          "numero_stanza": "P4C01"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 68,
+          "unitaImmobiliare": "P4",
+          "numeroStanza": "P4C01"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "9",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 27,
-          "unita_immobiliare": "9",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 27,
+          "unitaImmobiliare": "9",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "2",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "2",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "2",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 28,
-          "unita_immobiliare": "3",
-          "numero_stanza": "2"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 28,
+          "unitaImmobiliare": "3",
+          "numeroStanza": "2"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "1",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "1",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 29,
-          "unita_immobiliare": "11",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 29,
+          "unitaImmobiliare": "11",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "722",
-          "numero_stanza": "209"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "722",
+          "numeroStanza": "209"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1313",
-          "numero_stanza": "13133"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1313",
+          "numeroStanza": "13133"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 63,
-          "unita_immobiliare": "1313",
-          "numero_stanza": "13133"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 63,
+          "unitaImmobiliare": "1313",
+          "numeroStanza": "13133"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1420",
-          "numero_stanza": "14203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1420",
+          "numeroStanza": "14203"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1420",
-          "numero_stanza": "14203"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1420",
+          "numeroStanza": "14203"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1424",
-          "numero_stanza": "14243"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1424",
+          "numeroStanza": "14243"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 2,
-          "unita_immobiliare": "1424",
-          "numero_stanza": "14243"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 2,
+          "unitaImmobiliare": "1424",
+          "numeroStanza": "14243"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 3,
-          "unita_immobiliare": "1521",
-          "numero_stanza": "15213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 3,
+          "unitaImmobiliare": "1521",
+          "numeroStanza": "15213"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 3,
-          "unita_immobiliare": "1521",
-          "numero_stanza": "15213"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 3,
+          "unitaImmobiliare": "1521",
+          "numeroStanza": "15213"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 3,
-          "unita_immobiliare": "1521",
-          "numero_stanza": "15214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 3,
+          "unitaImmobiliare": "1521",
+          "numeroStanza": "15214"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 3,
-          "unita_immobiliare": "1521",
-          "numero_stanza": "15214"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 3,
+          "unitaImmobiliare": "1521",
+          "numeroStanza": "15214"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1827",
-          "numero_stanza": "18271"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1827",
+          "numeroStanza": "18271"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1827",
-          "numero_stanza": "18271"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1827",
+          "numeroStanza": "18271"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1833",
-          "numero_stanza": "18331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1833",
+          "numeroStanza": "18331"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 5,
-          "unita_immobiliare": "1833",
-          "numero_stanza": "18331"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 5,
+          "unitaImmobiliare": "1833",
+          "numeroStanza": "18331"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "301"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 52,
-          "unita_immobiliare": "723",
-          "numero_stanza": "301"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 52,
+          "unitaImmobiliare": "723",
+          "numeroStanza": "301"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "16",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "16",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "8",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "8",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 54,
-          "unita_immobiliare": "411",
-          "numero_stanza": "4111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 54,
+          "unitaImmobiliare": "411",
+          "numeroStanza": "4111"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 54,
-          "unita_immobiliare": "411",
-          "numero_stanza": "4111"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 54,
+          "unitaImmobiliare": "411",
+          "numeroStanza": "4111"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "14",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "A"
+    "postoLetto": "A"
   },
   {
     "stanza": {
       "connect": {
-        "id_fabbricato_unita_immobiliare_numero_stanza": {
-          "id_fabbricato": 21,
-          "unita_immobiliare": "14",
-          "numero_stanza": "1"
+        "idFabbricatoUnitaImmobiliareNumeroStanza": {
+          "idFabbricato": 21,
+          "unitaImmobiliare": "14",
+          "numeroStanza": "1"
         }
       }
     },
-    "posto_letto": "B"
+    "postoLetto": "B"
   }
 ];
 

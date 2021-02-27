@@ -18,14 +18,14 @@ function getFabbricato(a, fabbricatiRaw) {
     const f = fabbricatiRaw.find(f => a.id_anagrafica_fabbricato === f.id);
     return {
         connect: {
-            old_code: +f.codice_fabbricato
+            oldCode: +f.codice_fabbricato
         }
     };
 }
 
 function getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw) {
     const f = +fabbricatiRaw.find(f => a.id_anagrafica_fabbricato === f.id).codice_fabbricato;
-    return +fabbricatiNewRaw.find(el => +el.old_code === f).id;
+    return +fabbricatiNewRaw.find(el => +el.oldCode === f).id;
 }
 
 
@@ -40,45 +40,45 @@ async function main() {
 
     const alloggi = alloggiRaw.map(a => ({
         fabbricato: getFabbricato(a, fabbricatiRaw),
-        unita_immobiliare: a.codice_unita_immobiliare,
-        numero_stanza: a.numero_stanza,
-        tipo_stanza: {
+        unitaImmobiliare: a.codice_unita_immobiliare,
+        numeroStanza: a.numero_stanza,
+        tipoStanza: {
             connect: {
-                tipo_stanza: a.descrizione
+                tipoStanza: a.descrizione
             }
         },
-        centro_di_costo: null,
-        gestione_diretta: a.gestione_diretta === 'S',
+        centroDiCosto: null,
+        gestioneDiretta: a.gestione_diretta === 'S',
         handicap: a.handicap === 'S',
         bagno: a.presenza_bagno === 'S',
         piano: a.descrizione_piano,
-        valida_dal: a.validita_dal ?? new Date('1000-01-01'),
-        valida_al: a.validita_al
+        validaDal: a.validita_dal ?? new Date('1000-01-01'),
+        validaAl: a.validita_al
     }));
     const postiLetto = [];
     for (const a of alloggiRaw) {
-        if (a.posto_letto === '') {
+        if (a.postoLetto === '') {
             postiLetto.push({
                 stanza: {
                     connect: {
-                        id_fabbricato_unita_immobiliare_numero_stanza: {
-                            id_fabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
-                            unita_immobiliare: a.codice_unita_immobiliare,
-                            numero_stanza: a.numero_stanza
+                        idFabbricatoUnitaImmobiliareNumeroStanza: {
+                            idFabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
+                            unitaImmobiliare: a.codice_unita_immobiliare,
+                            numeroStanza: a.numero_stanza
                         }
                     }
                 },
-                posto_letto: 'A'
+                postoLetto: 'A'
             });
         }
         else {
             postiLetto.push({
                 stanza: {
                     connect: {
-                        id_fabbricato_unita_immobiliare_numero_stanza: {
-                            id_fabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
-                            unita_immobiliare: a.codice_unita_immobiliare,
-                            numero_stanza: a.numero_stanza
+                        idFabbricatoUnitaImmobiliareNumeroStanza: {
+                            idFabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
+                            unitaImmobiliare: a.codice_unita_immobiliare,
+                            numeroStanza: a.numero_stanza
                         }
                     }
                 },
@@ -87,10 +87,10 @@ async function main() {
             postiLetto.push({
                 stanza: {
                     connect: {
-                        id_fabbricato_unita_immobiliare_numero_stanza: {
-                            id_fabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
-                            unita_immobiliare: a.codice_unita_immobiliare,
-                            numero_stanza: a.numero_stanza
+                        idFabbricatoUnitaImmobiliareNumeroStanza: {
+                            idFabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
+                            unitaImmobiliare: a.codice_unita_immobiliare,
+                            numeroStanza: a.numero_stanza
                         }
                     }
                 },

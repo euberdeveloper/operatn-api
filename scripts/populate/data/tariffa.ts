@@ -1,632 +1,632 @@
 import { Tariffa } from '@prisma/client';
 
-type TariffaInsert = Omit<Tariffa, 'id' | 'id_tipo_utente' | 'id_utilizzo_stanza' | 'id_tipo_fabbricato' | 'id_tipo_tariffa'> & {
-    tipo_utente: {
+type TariffaInsert = Omit<Tariffa, 'id' | 'idTipoUtente' | 'idUtilizzoStanza' | 'idTipoFabbricato' | 'idTipoTariffa'> & {
+    tipoUtente: {
         connect: {
             sigla: string;
         }
     };
-    utilizzo_stanza: {
+    utilizzoStanza: {
         connect: {
-            utilizzo_stanza: string;
+            utilizzoStanza: string;
         }
     };
-    tipo_fabbricato: {
+    tipoFabbricato: {
         connect: {
-            tipo_fabbricato: string;
+            tipoFabbricato: string;
         }
     };
-    tipo_tariffa: {
+    tipoTariffa: {
         connect: {
-            tipo_tariffa: string;
+            tipoTariffa: string;
         }
     };
 };
 
 const TARIFFE: TariffaInsert[] = [
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'SB'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 160,
-        prezzo_consumi: 60,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 160,
+        prezzoConsumi: 60,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'SB'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 120,
-        prezzo_consumi: 60,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 120,
+        prezzoConsumi: 60,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     }, 
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'SB'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 160,
-        prezzo_consumi: 60,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 160,
+        prezzoConsumi: 60,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'SB'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 120,
-        prezzo_consumi: 60,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 120,
+        prezzoConsumi: 60,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
 
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 260,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 260,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 200,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 200,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'MONOLOCALE'
+                utilizzoStanza: 'MONOLOCALE'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 295,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 295,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'BILOCALE'
+                utilizzoStanza: 'BILOCALE'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 420,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 420,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
 
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 260,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 260,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 200,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 200,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'AS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'MONOLOCALE'
+                utilizzoStanza: 'MONOLOCALE'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 275,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 275,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
 
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 315,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 315,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 255,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 255,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'MONOLOCALE'
+                utilizzoStanza: 'MONOLOCALE'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 340,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 340,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'BILOCALE'
+                utilizzoStanza: 'BILOCALE'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'MENSILE'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 420,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
-    },
-
-    {
-        tipo_utente: {
-            connect: {
-                sigla: 'OS'
-            }
-        },
-        tipo_fabbricato: {
-            connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
-            }
-        },
-        utilizzo_stanza: {
-            connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
-            }
-        },
-        tipo_tariffa: {
-            connect: {
-                tipo_tariffa: 'MENSILE'
-            }
-        },
-        prezzo_canone: 315,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
-    },
-    {
-        tipo_utente: {
-            connect: {
-                sigla: 'OS'
-            }
-        },
-        tipo_fabbricato: {
-            connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
-            }
-        },
-        utilizzo_stanza: {
-            connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
-            }
-        },
-        tipo_tariffa: {
-            connect: {
-                tipo_tariffa: 'MENSILE'
-            }
-        },
-        prezzo_canone: 255,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
-    },
-    {
-        tipo_utente: {
-            connect: {
-                sigla: 'OS'
-            }
-        },
-        tipo_fabbricato: {
-            connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
-            }
-        },
-        utilizzo_stanza: {
-            connect: {
-                utilizzo_stanza: 'MONOLOCALE'
-            }
-        },
-        tipo_tariffa: {
-            connect: {
-                tipo_tariffa: 'MENSILE'
-            }
-        },
-        prezzo_canone: 320,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
-    },
-    {
-        tipo_utente: {
-            connect: {
-                sigla: 'OS'
-            }
-        },
-        tipo_fabbricato: {
-            connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
-            }
-        },
-        utilizzo_stanza: {
-            connect: {
-                utilizzo_stanza: 'BILOCALE'
-            }
-        },
-        tipo_tariffa: {
-            connect: {
-                tipo_tariffa: 'MENSILE'
-            }
-        },
-        prezzo_canone: 420,
-        prezzo_consumi: 70,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 420,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
 
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'GIORNALIERA'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 20,
-        prezzo_consumi: 0,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 315,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'APPARTAMENTO'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'GIORNALIERA'
+                tipoTariffa: 'MENSILE'
             }
         },
-        prezzo_canone: 17,
-        prezzo_consumi: 0,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 255,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
+    },
+    {
+        tipoUtente: {
+            connect: {
+                sigla: 'OS'
+            }
+        },
+        tipoFabbricato: {
+            connect: {
+                tipoFabbricato: 'APPARTAMENTO'
+            }
+        },
+        utilizzoStanza: {
+            connect: {
+                utilizzoStanza: 'MONOLOCALE'
+            }
+        },
+        tipoTariffa: {
+            connect: {
+                tipoTariffa: 'MENSILE'
+            }
+        },
+        prezzoCanoni: 320,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
+    },
+    {
+        tipoUtente: {
+            connect: {
+                sigla: 'OS'
+            }
+        },
+        tipoFabbricato: {
+            connect: {
+                tipoFabbricato: 'APPARTAMENTO'
+            }
+        },
+        utilizzoStanza: {
+            connect: {
+                utilizzoStanza: 'BILOCALE'
+            }
+        },
+        tipoTariffa: {
+            connect: {
+                tipoTariffa: 'MENSILE'
+            }
+        },
+        prezzoCanoni: 420,
+        prezzoConsumi: 70,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
 
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA SINGOLA'
+                utilizzoStanza: 'STANZA SINGOLA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'GIORNALIERA'
+                tipoTariffa: 'GIORNALIERA'
             }
         },
-        prezzo_canone: 20,
-        prezzo_consumi: 0,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 20,
+        prezzoConsumi: 0,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     },
     {
-        tipo_utente: {
+        tipoUtente: {
             connect: {
                 sigla: 'OS'
             }
         },
-        tipo_fabbricato: {
+        tipoFabbricato: {
             connect: {
-                tipo_fabbricato: 'RESIDENZA COLLETTIVA'
+                tipoFabbricato: 'APPARTAMENTO'
             }
         },
-        utilizzo_stanza: {
+        utilizzoStanza: {
             connect: {
-                utilizzo_stanza: 'STANZA DOPPIA'
+                utilizzoStanza: 'STANZA DOPPIA'
             }
         },
-        tipo_tariffa: {
+        tipoTariffa: {
             connect: {
-                tipo_tariffa: 'GIORNALIERA'
+                tipoTariffa: 'GIORNALIERA'
             }
         },
-        prezzo_canone: 17,
-        prezzo_consumi: 0,
-        valida_dal: new Date('2017-09-01'),
-        valida_al: null
+        prezzoCanoni: 17,
+        prezzoConsumi: 0,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
+    },
+
+    {
+        tipoUtente: {
+            connect: {
+                sigla: 'OS'
+            }
+        },
+        tipoFabbricato: {
+            connect: {
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
+            }
+        },
+        utilizzoStanza: {
+            connect: {
+                utilizzoStanza: 'STANZA SINGOLA'
+            }
+        },
+        tipoTariffa: {
+            connect: {
+                tipoTariffa: 'GIORNALIERA'
+            }
+        },
+        prezzoCanoni: 20,
+        prezzoConsumi: 0,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
+    },
+    {
+        tipoUtente: {
+            connect: {
+                sigla: 'OS'
+            }
+        },
+        tipoFabbricato: {
+            connect: {
+                tipoFabbricato: 'RESIDENZA COLLETTIVA'
+            }
+        },
+        utilizzoStanza: {
+            connect: {
+                utilizzoStanza: 'STANZA DOPPIA'
+            }
+        },
+        tipoTariffa: {
+            connect: {
+                tipoTariffa: 'GIORNALIERA'
+            }
+        },
+        prezzoCanoni: 17,
+        prezzoConsumi: 0,
+        validaDal: new Date('2017-09-01'),
+        validaAl: null
     }
 ];
 

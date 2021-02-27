@@ -1,9 +1,9 @@
 import { TipoContratto } from '@prisma/client';
 
-type TipoContrattoInsert = Omit<TipoContratto, 'id' | 'id_tipo_studente'> & {
-    tipo_studente: {
+type TipoContrattoInsert = Omit<TipoContratto, 'id' | 'idTipoStudente'> & {
+    tipoStudente: {
         connect: {
-            tipo_studente: string;
+            tipoStudente: string;
         };
     };
 };
@@ -12,450 +12,450 @@ const TIPI_UTENTE: TipoContrattoInsert[] = [
     {
         sigla: "AFAS",
         nome: "tariffa \"altri studenti\"",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "ALTA FORMAZIONE"
+                tipoStudente: "ALTA FORMAZIONE"
             }
         }
     },
     {
         sigla: "AFSB",
         nome: "tariffa \"da Bando\"",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "ALTA FORMAZIONE"
+                tipoStudente: "ALTA FORMAZIONE"
             }
         }
     },
     {
         sigla: "AMI",
         nome: "altra mobilità internazionale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "BIX2",
         nome: "bilocale per due dottorandi",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "BM",
         nome: "matricole - 1^ anno",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DA BANDO"
+                tipoStudente: "DA BANDO"
             }
         }
     },
     {
         sigla: "BP",
         nome: "proroghe",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DA BANDO"
+                tipoStudente: "DA BANDO"
             }
         }
     },
     {
         sigla: "BS",
         nome: "successivi",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DA BANDO"
+                tipoStudente: "DA BANDO"
             }
         }
     },
     {
         sigla: "CMBC",
         nome: "individuati da UniTrento",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "COLLEGIO"
+                tipoStudente: "COLLEGIO"
             }
         }
     },
     {
         sigla: "DL",
         nome: "doppia laurea",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "DOT 1",
         nome: "dottorandi italiani - 1^ anno",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "DOT1M",
         nome: "dottorandi italiani - 1^ anno - monolocale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "DOTAS",
         nome: "dottorandi italiani anni successivi",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "DOTM",
         nome: "dottorandi italiani anni successivi monolocale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "EIT",
         nome: "progetto EIT",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "ERM",
         nome: "erasmus mundus",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "ER-S",
         nome: "erasmus plus",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "ER-SM",
         nome: "erasmus plus monolocale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "EMBS",
         nome: "european master in business studies ",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "FBK-A",
         nome: "dottorandi",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FBK"
+                tipoStudente: "FBK"
             }
         }
     },
     {
         sigla: "FBK-O",
         nome: "ricercatori",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FBK"
+                tipoStudente: "FBK"
             }
         }
     },
     {
         sigla: "FET",
         nome: "figli emigrati trentini - progetto PAT",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FET"
+                tipoStudente: "FET"
             }
         }
     },
     {
         sigla: "FMS",
         nome: "foresteria mensile tariffa altri studenti",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FORESTERIA"
+                tipoStudente: "FORESTERIA"
             }
         }
     },
     {
         sigla: "FOR",
         nome: "foresteria giornaliera tariffa altri studenti",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FORESTERIA"
+                tipoStudente: "FORESTERIA"
             }
         }
     },
     {
         sigla: "FOR-S",
         nome: "foresteria giornaliera tariffa altri studenti - doppia uso singola",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FORESTERIA"
+                tipoStudente: "FORESTERIA"
             }
         }
     },
     {
         sigla: "FORES",
         nome: "foresteria giornaliera ospitalità",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FORESTERIA"
+                tipoStudente: "FORESTERIA"
             }
         }
     },
     {
         sigla: "FOROM",
         nome: "foresteria mensile tariffa ospitalità - monolocale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FORESTERIA"
+                tipoStudente: "FORESTERIA"
             }
         }
     },
     {
         sigla: "FOROS",
         nome: "foresteria mensile tariffa ospitalità",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "FORESTERIA"
+                tipoStudente: "FORESTERIA"
             }
         }
     },
     {
         sigla: "GRAD",
         nome: "gratuito altri studenti - DOPPIA",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "GRATUITO"
+                tipoStudente: "GRATUITO"
             }
         }
     },
     {
         sigla: "GRAOS",
         nome: "gratuito ospitalità + Lavori di manutenzione",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "GRATUITO"
+                tipoStudente: "GRATUITO"
             }
         }
     },
     {
         sigla: "GRAS",
         nome: "gratuito altri studenti - SINGOLA",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "GRATUITO"
+                tipoStudente: "GRATUITO"
             }
         }
     },
     {
         sigla: "GRAT",
         nome: "gratuito da bando? rifugiati? Assistenti disabili?",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "GRATUITO"
+                tipoStudente: "GRATUITO"
             }
         }
     },
     {
         sigla: "ICM",
         nome: "ICM (erasmus)",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "INT",
         nome: "studenti corsi di laurea interateneo",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "INTERATENEO"
+                tipoStudente: "INTERATENEO"
             }
         }
     },
     {
         sigla: "INT B",
         nome: "studenti corsi di laurea interateneo - da bando entro le soglie",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "INTERATENEO"
+                tipoStudente: "INTERATENEO"
             }
         }
     },
     {
         sigla: "IYT",
         nome: "Invest your talent - laurea magistrale con borsa",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "LM WO",
         nome: "borsisti o esonerati totali - regolamento ex Ue Unitn - 1^ anno",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "LMWOP",
         nome: "borsisti o esonerati totali - regolamento ex Ue Unitn - proroghe",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "MACHA",
         nome: "fondazione MACH - dottorandi",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "MACH"
+                tipoStudente: "MACH"
             }
         }
     },
     {
         sigla: "MACHO",
         nome: "fondazione MACH - ricercatori",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "MACH"
+                tipoStudente: "MACH"
             }
         }
     },
     {
         sigla: "PH",
         nome: "studenti disabili - fuori bando",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DISABILITÀ"
+                tipoStudente: "DISABILITÀ"
             }
         }
     },
     {
         sigla: "PHB",
         nome: "studenti disabili - con requisiti da bando",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DISABILITÀ"
+                tipoStudente: "DISABILITÀ"
             }
         }
     },
     {
         sigla: "PHD 1",
         nome: "dottorandi stranieri - 1^ anno - convenzione",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "PHD1M",
         nome: "dottorandi stranieri - 1^ anno - convenzione - monolocale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DOTTORANDI"
+                tipoStudente: "DOTTORANDI"
             }
         }
     },
     {
         sigla: "PHMB",
         nome: "studenti disabili - con requisiti da bando - monolocale",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "DISABILITÀ"
+                tipoStudente: "DISABILITÀ"
             }
         }
     },
     {
         sigla: "PREAS",
         nome: "Regolamento ex Ue Unitn - PAGANTI - 1^ anno o succ",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "WELCOME OFFICE"
+                tipoStudente: "WELCOME OFFICE"
             }
         }
     },
     {
         sigla: "SANTA",
         nome: "studenti professioni santarie - convenzione PAT",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "SANITÀ"
+                tipoStudente: "SANITÀ"
             }
         }
     },
     {
         sigla: "SANTB",
         nome: "studenti professioni santarie - convenzione PAT - con requisito condizione economica",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "SANITÀ"
+                tipoStudente: "SANITÀ"
             }
         }
     },
     {
         sigla: "SISSA",
         nome: "studenti SISSA - convenzione Unitrento ",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "SISSA"
+                tipoStudente: "SISSA"
             }
         }
     },
     {
         sigla: "SISSB",
         nome: "studenti SISSA - convenzione Unitrento - con requisiti da bando - richiesta borsa Opera idonea",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "SISSA"
+                tipoStudente: "SISSA"
             }
         }
     },
     {
         sigla: "UNISP",
         nome: "studenti Unisport - in convenzione UniTrento/Opera",
-        tipo_studente: {
+        tipoStudente: {
             connect: {
-                tipo_studente: "UNISPORT"
+                tipoStudente: "UNISPORT"
             }
         }
     }

@@ -6,57 +6,57 @@ function hashPassword(password: string): string {
     return bcrypt.hashSync(password, CONFIG.SECURITY.SALT_ROUNDS);
 }
 
-const UTENTI: Omit<Utente, 'uid' | 'token_recupero_password'>[] = [
+const UTENTI: Omit<Utente, 'uid' | 'tokenRecuperoPassword'>[] = [
     {
-        nome_utente: 'admin',
+        nomeUtente: 'admin',
         password: hashPassword('password'),
         email: 'euberdeveloper@gmail.com',
         ruolo: RuoloUtente.ADMIN
     },
     {
-        nome_utente: 'root',
+        nomeUtente: 'root',
         password: hashPassword('password'),
         email: 'euberspam@gmail.com',
         ruolo: RuoloUtente.ADMIN
     },
     {
-        nome_utente: 'carlinux',
+        nomeUtente: 'carlinux',
         password: hashPassword('password'),
         email: 'carlo.agostini@unitn.it',
         ruolo: RuoloUtente.ADMIN
     },
     {
-        nome_utente: 'sportello',
+        nomeUtente: 'sportello',
         password: hashPassword('password'),
         email: 'euberdeveloper@gmail.com',
         ruolo: RuoloUtente.SPORTELLO
     },
     {
-        nome_utente: 'sportello2',
+        nomeUtente: 'sportello2',
         password: hashPassword('password'),
         email: 'carlo.agostini@unitn.it',
         ruolo: RuoloUtente.SPORTELLO
     },
     {
-        nome_utente: 'portineria',
+        nomeUtente: 'portineria',
         password: hashPassword('password'),
         email: 'euberdeveloper@gmail.com',
         ruolo: RuoloUtente.SPORTELLO
     },
     {
-        nome_utente: 'portineria2',
+        nomeUtente: 'portineria2',
         password: hashPassword('password'),
         email: 'carlo.agostini@unitn.it',
         ruolo: RuoloUtente.PORTINERIA
     },
     {
-        nome_utente: 'alloggi',
+        nomeUtente: 'alloggi',
         password: hashPassword('password'),
         email: 'euberdeveloper@gmail.com',
         ruolo: RuoloUtente.CONTROLLO_ALLOGGI
     },
     {
-        nome_utente: 'alloggi2',
+        nomeUtente: 'alloggi2',
         password: hashPassword('password'),
         email: 'carlo.agostini@unitn.it',
         ruolo: RuoloUtente.CONTROLLO_ALLOGGI

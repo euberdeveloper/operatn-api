@@ -1,6 +1,6 @@
 import { DipartimentoUnitn } from '@prisma/client';
 
-const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminato'>[] = [
+const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creatoIl' | 'eliminato'>[] = [
     {
         "codice": "04D1",
         "sigla": null,
@@ -8,9 +8,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "via Tommaso Gar",
-        "n_civico": "14",
+        "nCivico": "14",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/lettere"
+        "sitoWeb": "https://www.unitn.it/lettere"
     },
     {
         "codice": "05D2",
@@ -19,9 +19,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Sommarive",
-        "n_civico": "14",
+        "nCivico": "14",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/dmath"
+        "sitoWeb": "https://www.unitn.it/dmath"
     },
     {
         "codice": "07D1",
@@ -30,9 +30,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Rovereto",
         "cap": "38068",
         "indirizzo": "Corso Bettini",
-        "n_civico": "84",
+        "nCivico": "84",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/cogsci"
+        "sitoWeb": "https://www.unitn.it/cogsci"
     },
     {
         "codice": "05D1",
@@ -41,9 +41,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Sommarive",
-        "n_civico": "14",
+        "nCivico": "14",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/dphys"
+        "sitoWeb": "https://www.unitn.it/dphys"
     },
     {
         "codice": "07D2",
@@ -52,9 +52,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Rovereto",
         "cap": "38068",
         "indirizzo": "corso Bettini",
-        "n_civico": "31",
+        "nCivico": "31",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/cimec"
+        "sitoWeb": "https://www.unitn.it/cimec"
     },
     {
         "codice": "08D1",
@@ -63,9 +63,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Verdi",
-        "n_civico": "8/10",
+        "nCivico": "8/10",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/ssi"
+        "sitoWeb": "https://www.unitn.it/ssi"
     },
     {
         "codice": "01D1",
@@ -74,9 +74,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Inama",
-        "n_civico": "5",
+        "nCivico": "5",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/economia"
+        "sitoWeb": "https://www.unitn.it/economia"
     },
     {
         "codice": "06D1",
@@ -85,9 +85,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Verdi",
-        "n_civico": "26",
+        "nCivico": "26",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/sociologia"
+        "sitoWeb": "https://www.unitn.it/sociologia"
     },
     {
         "codice": "09D1",
@@ -96,9 +96,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "San michele all'adige",
         "cap": "38010",
         "indirizzo": "via E. Mach",
-        "n_civico": "1",
+        "nCivico": "1",
         "provincia": "TN",
-        "sito_web": "https://www.centro3a.unitn.it/"
+        "sitoWeb": "https://www.centro3a.unitn.it/"
     },
     {
         "codice": "05D3",
@@ -107,9 +107,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Sommarive",
-        "n_civico": "14",
+        "nCivico": "14",
         "provincia": "TN",
-        "sito_web": "https://www.cibio.unitn.it/"
+        "sitoWeb": "https://www.cibio.unitn.it/"
     },
     {
         "codice": "02D1",
@@ -118,9 +118,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Verdi",
-        "n_civico": "53",
+        "nCivico": "53",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/giurisprudenza"
+        "sitoWeb": "https://www.unitn.it/giurisprudenza"
     },
     {
         "codice": "03D1",
@@ -129,9 +129,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Mesiano",
-        "n_civico": "77",
+        "nCivico": "77",
         "provincia": "TN",
-        "sito_web": "https://web.unitn.it/dicam"
+        "sitoWeb": "https://web.unitn.it/dicam"
     },
     {
         "codice": "03D2",
@@ -140,9 +140,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Sommarive",
-        "n_civico": "5",
+        "nCivico": "5",
         "provincia": "TN",
-        "sito_web": "https://www.unitn.it/ateneo/25346/dipartimento-di-ingegneria-industriale"
+        "sitoWeb": "https://www.unitn.it/ateneo/25346/dipartimento-di-ingegneria-industriale"
     },
     {
         "codice": "03D3",
@@ -151,9 +151,9 @@ const DIPARTIMENTI_UNITN: Omit<DipartimentoUnitn, 'id' | 'creato_il' | 'eliminat
         "comune": "Trento",
         "cap": "38100",
         "indirizzo": "Via Sommarive",
-        "n_civico": "5",
+        "nCivico": "5",
         "provincia": "TN",
-        "sito_web": "https://disi.unitn.it/"
+        "sitoWeb": "https://disi.unitn.it/"
     }
 ];
 

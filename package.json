@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prisma:introspect": "prisma introspect",
     "prisma:migrate": "prisma migrate dev --preview-feature",
     "prisma:client": "prisma generate",
     "transpile:source": "tsc -p source",

@@ -1,6 +1,6 @@
 import { TipoUtente } from '@prisma/client';
 
-type TipoUtenteInsert = Omit<TipoUtente, 'id' | 'id_conto_ricavi_canoni' | 'id_conto_ricavi_consumi'> & {
+type TipoUtenteInsert = Omit<TipoUtente, 'id' | 'idContoRicaviCanoni' | 'idContoRicaviConsumi'> & {
     conto_ricavi_consumi: {
         connect: {
             codice: string;
@@ -16,7 +16,7 @@ type TipoUtenteInsert = Omit<TipoUtente, 'id' | 'id_conto_ricavi_canoni' | 'id_c
 const TIPI_UTENTE: TipoUtenteInsert[] = [
     { 
         sigla: 'SB',
-        tipo_utente: 'Studente da bando',
+        tipoUtente: 'Studente da bando',
         conto_ricavi_consumi: {
             connect: {
                 codice: '031.002.060'
@@ -30,7 +30,7 @@ const TIPI_UTENTE: TipoUtenteInsert[] = [
      },
      { 
         sigla: 'AS',
-        tipo_utente: 'Altri studenti',
+        tipoUtente: 'Altri studenti',
         conto_ricavi_consumi: {
             connect: {
                 codice: '031.002.060'
@@ -44,7 +44,7 @@ const TIPI_UTENTE: TipoUtenteInsert[] = [
      },
      { 
         sigla: 'OS',
-        tipo_utente: 'Ospitalità',
+        tipoUtente: 'Ospitalità',
         conto_ricavi_consumi: {
             connect: {
                 codice: '031.002.060'

@@ -3,7 +3,7 @@ import { ContoRicaviConsumi } from '@prisma/client';
 const CONTI_RICAVI_CONSUMI: Omit<ContoRicaviConsumi, 'id'>[] = [
     {
         codice: '031.002.060',
-        conto_ricavi_consumi: 'Concorso spese energetiche'
+        contoRicaviConsumi: 'Concorso spese energetiche'
     }
 ];
 
