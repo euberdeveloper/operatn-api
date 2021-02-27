@@ -1,17 +1,20 @@
 import './utils/moduleAlias';
 
 import * as express from 'express';
-import CONFIG from '@/config';
-import loadApp from '@/loaders';
-import logger from '@/utils/logger';
+import { Loader } from '@/loaders';
 import router from '@/api';
+import logger from '@/utils/logger';
+import CONFIG from '@/config';
 
 logger.hr();
 logger.warning('OPERA-TN API');
 
 const app = express();
-loadApp(app);
-app.use(router());
+
+const loader = new Loader(app, router);
+loader.loadMiddlewares();
+loader.loadRouter();
+loader.loadErrorHandler();
 
 logger.info('Starting server...');
 const port = CONFIG.SERVER.PORT;

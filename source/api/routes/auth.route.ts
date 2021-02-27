@@ -2,7 +2,7 @@ import { Router } from 'express';
 import * as passport from 'passport';
 
 import { Utente } from '@prisma/client';
-import * as UtenteService from '@/services/utente';
+import utenteService from '@/services/utente.service';
 
 export default function (): Router {
     const router = Router();
@@ -14,7 +14,7 @@ export default function (): Router {
             return;
         }
 
-        const response = UtenteService.generateAuthResponse(user);
+        const response = utenteService.generateAuthResponse(user);
 
         res.json(response);
     });

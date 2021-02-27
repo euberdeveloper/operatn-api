@@ -10,5 +10,8 @@ module.exports = {
     extends: [
         '@euberdeveloper/typescript',
         'plugin:prettier/recommended'
-    ]
+    ],
+    rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off'
+    }
 };

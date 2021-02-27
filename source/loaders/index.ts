@@ -1,4 +1,4 @@
-import { Express } from 'express';
+import { Express, Router } from 'express';
 
 import logger from '@/utils/logger';
 
@@ -7,19 +7,48 @@ import loadHelmet from './helmet';
 import loadCors from './cors';
 import loadBodyParser from './bodyParser';
 import loadPassport from './passport';
+import getErrorHandler from './errorHandler';
 
-export default function load(app: Express): void {
-    logger.hr();
-    logger.info('Loading middlewares');
-    logger.br();
+export class Loader {
+    private readonly app: Express;
+    private readonly router: () => Router;
 
-    loadMorgan(app);
-    loadCors(app);
-    loadHelmet(app);
-    loadBodyParser(app);
-    loadPassport(app);
+    constructor(app: Express, router: () => Router) {
+        this.app = app;
+        this.router = router;
+    }
 
-    logger.br();
-    logger.success('All middlewares loaded');
-    logger.hr();
+    public loadMiddlewares(): void {
+        logger.hr();
+        logger.info('Loading middlewares');
+
+        loadMorgan(this.app);
+        loadCors(this.app);
+        loadHelmet(this.app);
+        loadBodyParser(this.app);
+        loadPassport(this.app);
+
+        logger.success('Middlewares loaded');
+        logger.hr();
+    }
+
+    public loadRouter(): void {
+        logger.hr();
+        logger.info('Handling routes...');
+
+        this.app.use('/api', this.router());
+
+        logger.success('Handled routes');
+        logger.hr();
+    }
+
+    public loadErrorHandler(): void {
+        logger.hr();
+        logger.info('Loading error handler');
+
+        this.app.use(getErrorHandler());
+
+        logger.success('Error handler loaded');
+        logger.hr();
+    }
 }
