@@ -1,4 +1,4 @@
-import { UserNotAuthenticated } from './UserNotAuthenticated';
+import { UserNotAuthenticated } from './UserNotAuthenticatedError';
 
 export class InvalidCredentials extends UserNotAuthenticated {
     protected static readonly defaultMessate = 'Invalid credentials';

@@ -1,7 +1,7 @@
 import * as bcrypt from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
 import { PrismaClient, Prisma, Utente } from '@prisma/client';
-import { InvalidCredentials } from '@/errors/client/InvalidCredentials';
+import { InvalidCredentials } from '@/errors';
 import CONFIG from '@/config';
 
 interface AuthResponse {
