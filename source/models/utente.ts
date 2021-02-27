@@ -5,5 +5,5 @@ export async function findByUid(uid: string): Promise<Utente | null> {
     return prisma.utente.findUnique({ where: { uid } });
 }
 export async function findByNomeUtente(nomeUtente: string): Promise<Utente | null> {
-    return prisma.utente.findUnique({ where: { nome_utente: nomeUtente } });
+    return prisma.utente.findUnique({ where: { nomeUtente: nomeUtente } });
 }

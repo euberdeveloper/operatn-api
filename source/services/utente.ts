@@ -6,7 +6,7 @@ import CONFIG from '@/config';
 
 interface AuthResponse {
     token: string;
-    user: Pick<Utente, 'uid' | 'nome_utente' | 'email' | 'ruolo'>;
+    user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
 }
 
 export async function verifyUsernameAndPassword(username: string, password: string): Promise<Utente> {
@@ -38,7 +38,7 @@ export function generateAuthResponse(user: Utente): AuthResponse {
         token,
         user: {
             uid: user.uid,
-            nome_utente: user.nome_utente,
+            nomeUtente: user.nomeUtente,
             email: user.email,
             ruolo: user.ruolo
         }
