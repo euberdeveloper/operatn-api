@@ -1,6 +1,7 @@
 import * as bcrypt from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
 import { PrismaClient, Prisma, Utente } from '@prisma/client';
+import { InvalidCredentials } from '@/errors/client/InvalidCredentials';
 import CONFIG from '@/config';
 
 interface AuthResponse {
@@ -33,20 +34,23 @@ export class UserService {
     public async verifyUsernameAndPassword(username: string, password: string): Promise<Utente> {
         const utente = await this.findByNomeUtente(username);
         if (utente === null) {
-            throw new Error('Wrong username or password');
+            throw new InvalidCredentials('Wrong username or password');
         }
-        await bcrypt.compare(password, utente.password);
+        const rightPassword = await bcrypt.compare(password, utente.password);
+        if (!rightPassword) {
+            throw new InvalidCredentials('Wrong username or password');
+        }
         return utente;
     }
 
     public async verifyUserWithJwt(jwtPayload: any): Promise<Utente> {
         const uid: string | null = jwtPayload?.sub;
         if (uid === null) {
-            throw new Error('Invalid token');
+            throw new InvalidCredentials('Invalid token');
         }
         const utente = await this.findByUid(uid);
         if (utente === null) {
-            throw new Error('Invalid token');
+            throw new InvalidCredentials('Invalid token');
         }
         return utente;
     }
