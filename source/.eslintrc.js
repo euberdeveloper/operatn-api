@@ -12,6 +12,7 @@ module.exports = {
         'plugin:prettier/recommended'
     ],
     rules: {
-        '@typescript-eslint/explicit-module-boundary-types': 'off'
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-misused-promises': 'off'
     }
 };

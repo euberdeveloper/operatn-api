@@ -8,14 +8,8 @@ export default function (): Router {
     const router = Router();
 
     router.post('/login', passport.authenticate('local', { session: false }), (req, res) => {
-        const user = req.user as Utente | null;
-
-        if (user === null) {
-            return;
-        }
-
+        const user = req.user as Utente;
         const response = utenteService.generateAuthResponse(user);
-
         res.json(response);
     });
 

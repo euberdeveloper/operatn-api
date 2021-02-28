@@ -8,7 +8,7 @@ interface AuthResponse {
     token: string;
     user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
 }
-export class UserService {
+export class UtenteService {
     private readonly jwtPassword: string;
     private readonly jwtExpiration: string;
     private readonly utenteModel: Prisma.UtenteDelegate<
@@ -72,4 +72,4 @@ export class UserService {
     }
 }
 
-export default new UserService();
+export default new UtenteService();
