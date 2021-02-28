@@ -1,5 +1,8 @@
 import { PrismaClient, Prisma, Fabbricato } from '@prisma/client';
+import * as Joi from 'joi';
+
 import { InvalidIdError, InvalidParamError, NotFoundError } from '@/errors';
+import logger from '@/utils/logger';
 
 export class FabbricatoService {
     private readonly fabbricatoModel: Prisma.FabbricatoDelegate<
@@ -12,13 +15,17 @@ export class FabbricatoService {
     }
 
     private validateId(id: any): void {
-        if (typeof id !== 'number' || id < 0 || isNaN(id)) {
+        const error = Joi.number().positive().validate(id).error;
+        if (error) {
+            logger.warning('Validation error', error.message);
             throw new InvalidIdError();
         }
     }
 
     private validateCodice(codice: any): void {
-        if (typeof codice !== 'string' || !codice) {
+        const error = Joi.string().required().validate(codice).error;
+        if (error) {
+            logger.warning('Validation error', error.message);
             throw new InvalidParamError('Invalid codice');
         }
     }
