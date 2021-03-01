@@ -112,7 +112,7 @@ export class TipoFabbricatoService {
             const tipoFabbricato = this.validatePutBody(body);
             await this.tipoFabbricatoModel.upsert({
                 where: { id },
-                create: tipoFabbricato,
+                create: { id, ...tipoFabbricato },
                 update: tipoFabbricato
             });
         });

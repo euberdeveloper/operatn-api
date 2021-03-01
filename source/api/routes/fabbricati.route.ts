@@ -63,8 +63,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const body = req.body;
-            await fabbricatoService.putFabbricatoByCodice(codice, body);
-            res.json();
+            const id = await fabbricatoService.putFabbricatoByCodice(codice, body);
+            res.json(id);
         })
     );
 

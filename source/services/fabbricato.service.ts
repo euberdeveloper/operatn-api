@@ -124,22 +124,23 @@ export class FabbricatoService {
             const fabbricato = this.validatePutBody(body);
             await this.fabbricatoModel.upsert({
                 where: { id },
-                create: fabbricato,
+                create: { id, ...fabbricato },
                 update: fabbricato
             });
         });
     }
 
     // TODO
-    public async putFabbricatoByCodice(codice: string, body: any): Promise<void> {
+    public async putFabbricatoByCodice(codice: string, body: any): Promise<number> {
         return handlePrismaError(async () => {
             this.validateCodice(codice);
             const fabbricato = this.validatePutBody(body);
-            await this.fabbricatoModel.upsert({
+            const result = await this.fabbricatoModel.upsert({
                 where: { id: 0 },
                 create: fabbricato,
                 update: fabbricato
             });
+            return result.id;
         });
     }
 
