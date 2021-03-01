@@ -74,10 +74,6 @@ export class TipoFabbricatoService {
         return this.validateBody(this.putBodyValidator, body);
     }
 
-    private validatePatchBody(body: any): Partial<Omit<TipoFabbricato, 'id'>> {
-        return this.validateBody(this.patchBodyValidator, body);
-    }
-
     public async getTipiFabbricato(): Promise<TipoFabbricato[]> {
         return this.tipoFabbricatoModel.findMany();
     }
@@ -123,13 +119,17 @@ export class TipoFabbricatoService {
     }
 
     public async delTipoFabbricatoById(id: number): Promise<void> {
-        this.validateId(id);
-        await this.tipoFabbricatoModel.delete({ where: { id } });
+        return handlePrismaError(async () => {
+            this.validateId(id);
+            await this.tipoFabbricatoModel.delete({ where: { id } });
+        });
     }
 
     public async delTipoFabbricatoByValue(value: string): Promise<void> {
-        this.validateTipoFabbricato(value);
-        await this.tipoFabbricatoModel.delete({ where: { tipoFabbricato: value } });
+        return handlePrismaError(async () => {
+            this.validateTipoFabbricato(value);
+            await this.tipoFabbricatoModel.delete({ where: { tipoFabbricato: value } });
+        });
     }
 }
 

@@ -167,14 +167,18 @@ export class FabbricatoService {
     }
 
     public async delFabbricatoById(id: number): Promise<void> {
-        this.validateId(id);
-        await this.fabbricatoModel.delete({ where: { id } });
+        return handlePrismaError(async () => {
+            this.validateId(id);
+            await this.fabbricatoModel.delete({ where: { id } });
+        });
     }
 
     // TODO
     public async delFabbricatoByCodice(codice: string): Promise<void> {
-        this.validateId(codice);
-        await this.fabbricatoModel.delete({ where: { id: 0 } });
+        return handlePrismaError(async () => {
+            this.validateId(codice);
+            await this.fabbricatoModel.delete({ where: { id: 0 } });
+        });
     }
 }
 

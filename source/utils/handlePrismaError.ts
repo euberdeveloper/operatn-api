@@ -1,5 +1,5 @@
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
-import { UniqueConstraintError, ForeignKeyError } from '@/errors';
+import { UniqueConstraintError, ForeignKeyError, NotFoundError } from '@/errors';
 import logger from './logger';
 
 export default async function <T>(callback: () => Promise<T>): Promise<T> {
@@ -14,6 +14,9 @@ export default async function <T>(callback: () => Promise<T>): Promise<T> {
                 case 'P2003':
                     logger.warning('Foreign key error', error);
                     throw new ForeignKeyError();
+                case 'P2025':
+                    logger.warning('Item to delete not found', error);
+                    throw new NotFoundError('Item to delete not found');
             }
         }
         throw error;
