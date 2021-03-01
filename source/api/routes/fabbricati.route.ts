@@ -41,10 +41,52 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const body = req.body;
-            console.log('ciao')
             const id = await fabbricatoService.postFabbricato(body);
-            console.log('id', id)
             res.json(id);
+        })
+    );
+
+    router.put(
+        '/:id',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            const body = req.body;
+            await fabbricatoService.putFabbricatoById(id, body);
+            res.json();
+        })
+    );
+
+    router.put(
+        '/:codice',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const codice = req.params.codice;
+            const body = req.body;
+            await fabbricatoService.putFabbricatoByCodice(codice, body);
+            res.json();
+        })
+    );
+
+    router.patch(
+        '/:id',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            const body = req.body;
+            await fabbricatoService.patchFabbricatoById(id, body);
+            res.json();
+        })
+    );
+
+    router.patch(
+        '/:codice',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const codice = req.params.codice;
+            const body = req.body;
+            await fabbricatoService.patchFabbricatoByCodice(codice, body);
+            res.json();
         })
     );
 
