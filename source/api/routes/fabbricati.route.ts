@@ -58,7 +58,7 @@ export default function (): Router {
     );
 
     router.put(
-        '/:codice',
+        '/codice/:codice',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
@@ -80,7 +80,7 @@ export default function (): Router {
     );
 
     router.patch(
-        '/:codice',
+        '/codice/:codice',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
@@ -101,7 +101,7 @@ export default function (): Router {
     );
 
     router.delete(
-        '/:codice',
+        '/codice/:codice',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;

@@ -1,16 +1,9 @@
 import { PrismaClient, Prisma, Fabbricato } from '@prisma/client';
 import * as Joi from 'joi';
 
-import {
-    ForeignKeyError,
-    UniqueConstraintError,
-    InvalidBodyError,
-    InvalidIdError,
-    InvalidParamError,
-    NotFoundError
-} from '@/errors';
+import { InvalidBodyError, InvalidIdError, InvalidParamError, NotFoundError } from '@/errors';
 import logger from '@/utils/logger';
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
+import handlePrismaError from '@/utils/handlePrismaError';
 
 export class FabbricatoService {
     private readonly fabbricatoModel: Prisma.FabbricatoDelegate<
@@ -117,26 +110,8 @@ export class FabbricatoService {
         return fabbricato;
     }
 
-    private async handleUniquePrismaError<T>(callback: () => Promise<T>): Promise<T> {
-        try {
-            return await callback();
-        } catch (error) {
-            if (error instanceof PrismaClientKnownRequestError) {
-                switch (error.code) {
-                    case 'P2002':
-                        logger.warning('Unique constraint error', error);
-                        throw new UniqueConstraintError();
-                    case 'P2003':
-                        logger.warning('Foreign key error', error);
-                        throw new ForeignKeyError();
-                }
-            }
-            throw error;
-        }
-    }
-
     public async postFabbricato(body: any): Promise<number> {
-        return this.handleUniquePrismaError(async () => {
+        return handlePrismaError(async () => {
             const fabbricato = this.validatePostBody(body);
             const created = await this.fabbricatoModel.create({ data: fabbricato });
             return created.id;
@@ -144,7 +119,7 @@ export class FabbricatoService {
     }
 
     public async putFabbricatoById(id: number, body: any): Promise<void> {
-        return this.handleUniquePrismaError(async () => {
+        return handlePrismaError(async () => {
             this.validateId(id);
             const fabbricato = this.validatePutBody(body);
             await this.fabbricatoModel.upsert({
@@ -157,7 +132,7 @@ export class FabbricatoService {
 
     // TODO
     public async putFabbricatoByCodice(codice: string, body: any): Promise<void> {
-        return this.handleUniquePrismaError(async () => {
+        return handlePrismaError(async () => {
             this.validateCodice(codice);
             const fabbricato = this.validatePutBody(body);
             await this.fabbricatoModel.upsert({
@@ -169,7 +144,7 @@ export class FabbricatoService {
     }
 
     public async patchFabbricatoById(id: number, body: any): Promise<void> {
-        return this.handleUniquePrismaError(async () => {
+        return handlePrismaError(async () => {
             this.validateId(id);
             const fabbricato = this.validatePatchBody(body);
             await this.fabbricatoModel.update({
@@ -181,7 +156,7 @@ export class FabbricatoService {
 
     // TODO
     public async patchFabbricatoByCodice(codice: string, body: any): Promise<void> {
-        return this.handleUniquePrismaError(async () => {
+        return handlePrismaError(async () => {
             this.validateCodice(codice);
             const fabbricato = this.validatePatchBody(body);
             await this.fabbricatoModel.update({
