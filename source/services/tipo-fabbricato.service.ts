@@ -12,15 +12,7 @@ export class TipoFabbricatoService {
 
     private readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
-        codice: Joi.string().min(1).alphanum(),
-        nome: Joi.string().min(1),
-        idTipoFabbricato: Joi.number().integer().positive(),
-        provincia: Joi.string().length(2).alphanum(),
-        comune: Joi.string().min(1),
-        cap: Joi.string().length(5).pattern(/^\d+$/),
-        indirizzo: Joi.string().min(1),
-        nCivico: Joi.string().min(1),
-        oldCode: Joi.number()
+        tipoFabbricato: Joi.string().min(1).required()
     };
 
     private readonly idValidator = Joi.number().integer().positive();
