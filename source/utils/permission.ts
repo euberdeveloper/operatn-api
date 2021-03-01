@@ -3,7 +3,7 @@ import { RuoloUtente, Utente } from '@prisma/client';
 import { Handler } from 'express';
 
 export default function (roles: RuoloUtente | RuoloUtente[]): Handler {
-    return (req, _res) => {
+    return (req, _res, next) => {
         if (!Array.isArray(roles)) {
             roles = [roles];
         }
@@ -13,5 +13,7 @@ export default function (roles: RuoloUtente | RuoloUtente[]): Handler {
         if (!roles.includes(user.ruolo)) {
             throw new UserNotAuthorizedError();
         }
+
+        next();
     };
 }

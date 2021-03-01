@@ -5,3 +5,4 @@ export * from './BadRequestError';
 export * from './NotFoundError';
 export * from './InvalidIderror';
 export * from './InvalidParamError';
+export * from './InvalidBodyError';
