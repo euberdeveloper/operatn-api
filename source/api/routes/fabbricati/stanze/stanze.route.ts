@@ -12,8 +12,9 @@ export default function (): Router {
     router.get(
         '/',
         asyncHandler(async (req, res) => {
+            const queryParams = req.query;
             const fid = +req.params.fid;
-            const stanze = await stanzaService.getStanze(fid);
+            const stanze = await stanzaService.getStanze(fid, queryParams);
             res.json(stanze);
         })
     );
@@ -23,16 +24,24 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const id = +req.params.id;
-            const stanze = await fabbricatoService.getFabbricatoById(id, queryParams);
+            const fid = +req.params.fid;
+            const stanze = await stanzaService.getStanzaById(fid, id, queryParams);
             res.json(stanze);
         })
     );
 
     router.get(
-        '/codice/:codice',
+        '/unita-immobiliare/:unitaImmobiliare/numero-stanza/:numeroStanza',
         asyncHandler(async (req, res) => {
-            const codice = req.params.codice;
-            const stanze = await fabbricatoService.getFabbricatoByCodice(codice);
+            const queryParams = req.query;
+            const fid = +req.params.fid;
+            const { unitaImmobiliare, numeroStanza } = req.params;
+            const stanze = await stanzaService.getStanzaByEdificioAndNumero(
+                fid,
+                unitaImmobiliare,
+                numeroStanza,
+                queryParams
+            );
             res.json(stanze);
         })
     );

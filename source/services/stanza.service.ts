@@ -1,7 +1,13 @@
 import { PrismaClient, Prisma, Stanza } from '@prisma/client';
 import * as Joi from 'joi';
 
-import { InvalidBodyError, InvalidIdError, InvalidPathParamError, NotFoundError } from '@/errors';
+import {
+    InvalidBodyError,
+    InvalidIdError,
+    InvalidPathParamError,
+    InvalidQueryParamError,
+    NotFoundError
+} from '@/errors';
 import logger from '@/utils/logger';
 import handlePrismaError from '@/utils/handlePrismaError';
 
@@ -24,7 +30,7 @@ export class StanzaService {
     };
 
     private readonly idValidator = Joi.number().integer().positive();
-    private readonly codeValidator = Joi.string().min(1).required();
+    private readonly stringValidator = Joi.string().min(1).required();
 
     get postBodyValidator(): Joi.ObjectSchema<Stanza> {
         return Joi.object<Stanza>(this.bodyValidator).required().options({ presence: 'required' });
@@ -47,6 +53,31 @@ export class StanzaService {
         this.stanzaModel = prisma.stanza;
     }
 
+    private validateBoolQueryParam(parameter: string | string[] | undefined, name: string): boolean {
+        parameter = Array.isArray(parameter) ? parameter[0] : parameter;
+
+        if (parameter === undefined) {
+            return false;
+        }
+
+        if (typeof parameter === 'string' && !['true', 'false'].includes(parameter)) {
+            throw new InvalidQueryParamError(`Invalid query param ${name}`);
+        }
+
+        return parameter === 'true';
+    }
+
+    private parseQueryParams(
+        queryParams: Record<string, string | string[]>
+    ): { tipoStanza: boolean; fabbricato: boolean } {
+        let { tipoStanza, fabbricato } = queryParams;
+
+        return {
+            tipoStanza: this.validateBoolQueryParam(tipoStanza, 'tipoStanza'),
+            fabbricato: this.validateBoolQueryParam(fabbricato, 'fabbricato')
+        };
+    }
+
     private validateId(id: any): void {
         const error = this.idValidator.validate(id).error;
         if (error) {
@@ -55,11 +86,11 @@ export class StanzaService {
         }
     }
 
-    private validateCodice(codice: any): void {
-        const error = this.codeValidator.validate(codice).error;
+    private validateStringParam(val: any, name: string): void {
+        const error = this.stringValidator.validate(val).error;
         if (error) {
             logger.warning('Validation error', error.message);
-            throw new InvalidPathParamError('Invalid codice');
+            throw new InvalidPathParamError(`Invalid ${name}`);
         }
     }
 
@@ -86,29 +117,47 @@ export class StanzaService {
         return this.validateBody(this.patchBodyValidator, body);
     }
 
-    public async getStanze(fid: number): Promise<Stanza[]> {
+    public async getStanze(fid: number, queryParams: any): Promise<Stanza[]> {
         this.validateId(fid);
+        const include = this.parseQueryParams(queryParams);
         return this.stanzaModel.findMany({
             where: {
                 idFabbricato: fid
-            }
+            },
+            include
         });
     }
 
-    public async getStanzaById(id: number): Promise<Stanza> {
+    public async getStanzaById(fid: number, id: number, queryParams: any): Promise<Stanza> {
+        this.validateId(fid);
         this.validateId(id);
+        const include = this.parseQueryParams(queryParams);
 
-        const stanza = await this.stanzaModel.findUnique({ where: { id } });
+        const stanza = await this.stanzaModel.findFirst({ where: { id, idFabbricato: fid }, include });
         if (stanza === null) {
             throw new NotFoundError('Stanza not found');
         }
         return stanza;
     }
 
-    public async getStanzaByCodice(codice: string): Promise<Stanza> {
-        this.validateCodice(codice);
+    public async getStanzaByEdificioAndNumero(
+        fid: number,
+        unitaImmobiliare: string,
+        numeroStanza: string,
+        queryParams: any
+    ): Promise<Stanza> {
+        this.validateId(fid);
+        this.validateStringParam(unitaImmobiliare, 'unitaImmobiliare');
+        this.validateStringParam(numeroStanza, 'numeroStanza');
+        const include = this.parseQueryParams(queryParams);
 
-        const stanza = await this.stanzaModel.findFirst({ where: { id: +codice } });
+        const stanza = await this.stanzaModel.findUnique({
+            where: {
+                // eslint-disable-next-line @typescript-eslint/naming-convention
+                idFabbricato_unitaImmobiliare_numeroStanza: { idFabbricato: fid, unitaImmobiliare, numeroStanza }
+            },
+            include
+        });
         if (stanza === null) {
             throw new NotFoundError('Stanza not found');
         }
@@ -138,7 +187,7 @@ export class StanzaService {
     // TODO
     public async putStanzaByCodice(codice: string, body: any): Promise<number> {
         return handlePrismaError(async () => {
-            this.validateCodice(codice);
+            //this.validateCodice(codice);
             const stanza = this.validatePutBody(body);
             const result = await this.stanzaModel.upsert({
                 where: { id: 0 },
@@ -163,7 +212,7 @@ export class StanzaService {
     // TODO
     public async patchStanzaByCodice(codice: string, body: any): Promise<void> {
         return handlePrismaError(async () => {
-            this.validateCodice(codice);
+            //this.validateCodice(codice);
             const stanza = this.validatePatchBody(body);
             await this.stanzaModel.update({
                 where: { id: 0 },
