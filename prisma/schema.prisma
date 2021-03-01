@@ -173,7 +173,7 @@ model Fabbricato {
     idTipoFabbricato Int            @map("id_tipo_fabbricato")
     tipoFabbricato   TipoFabbricato @relation(fields: [idTipoFabbricato], references: [id])
 
-    Stanza Stanza[]
+    stanze Stanza[]
     @@map("fabbricato")
 }
 

@@ -1,7 +1,7 @@
 import { PrismaClient, Prisma, TipoFabbricato } from '@prisma/client';
 import * as Joi from 'joi';
 
-import { InvalidBodyError, InvalidIdError, InvalidParamError, NotFoundError } from '@/errors';
+import { InvalidBodyError, InvalidIdError, InvalidPathParamError, NotFoundError } from '@/errors';
 import logger from '@/utils/logger';
 import handlePrismaError from '@/utils/handlePrismaError';
 
@@ -51,7 +51,7 @@ export class TipoFabbricatoService {
         const error = this.codeValidator.validate(tipoFabbricato).error;
         if (error) {
             logger.warning('Validation error', error.message);
-            throw new InvalidParamError('Invalid tipo fabbricato');
+            throw new InvalidPathParamError('Invalid tipo fabbricato');
         }
     }
 

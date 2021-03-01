@@ -1,7 +1,13 @@
 import { PrismaClient, Prisma, Fabbricato } from '@prisma/client';
 import * as Joi from 'joi';
 
-import { InvalidBodyError, InvalidIdError, InvalidParamError, NotFoundError } from '@/errors';
+import {
+    InvalidBodyError,
+    InvalidIdError,
+    InvalidPathParamError,
+    InvalidQueryParamError,
+    NotFoundError
+} from '@/errors';
 import logger from '@/utils/logger';
 import handlePrismaError from '@/utils/handlePrismaError';
 
@@ -47,6 +53,31 @@ export class FabbricatoService {
         this.fabbricatoModel = prisma.fabbricato;
     }
 
+    private validateBoolQueryParam(parameter: string | string[] | undefined, name: string): boolean {
+        parameter = Array.isArray(parameter) ? parameter[0] : parameter;
+
+        if (parameter === undefined) {
+            return false;
+        }
+
+        if (typeof parameter === 'string' && !['true', 'false'].includes(parameter)) {
+            throw new InvalidQueryParamError(`Invalid query param ${name}`);
+        }
+
+        return parameter === 'true';
+    }
+
+    private parseQueryParams(
+        queryParams: Record<string, string | string[]>
+    ): { tipoFabbricato: boolean; stanze: boolean } {
+        let { tipoFabbricato, stanze } = queryParams;
+
+        return {
+            tipoFabbricato: this.validateBoolQueryParam(tipoFabbricato, 'tipoFabbricato'),
+            stanze: this.validateBoolQueryParam(stanze, 'stanze')
+        };
+    }
+
     private validateId(id: any): void {
         const error = this.idValidator.validate(id).error;
         if (error) {
@@ -59,7 +90,7 @@ export class FabbricatoService {
         const error = this.codeValidator.validate(codice).error;
         if (error) {
             logger.warning('Validation error', error.message);
-            throw new InvalidParamError('Invalid codice');
+            throw new InvalidPathParamError('Invalid codice');
         }
     }
 
@@ -86,14 +117,16 @@ export class FabbricatoService {
         return this.validateBody(this.patchBodyValidator, body);
     }
 
-    public async getFabbricati(): Promise<Fabbricato[]> {
-        return this.fabbricatoModel.findMany();
+    public async getFabbricati(queryParams: any) {
+        const include = this.parseQueryParams(queryParams);
+        return this.fabbricatoModel.findMany({ include });
     }
 
-    public async getFabbricatoById(id: number): Promise<Fabbricato> {
+    public async getFabbricatoById(id: number, queryParams: any): Promise<Fabbricato> {
         this.validateId(id);
+        const include = this.parseQueryParams(queryParams);
 
-        const fabbricato = await this.fabbricatoModel.findUnique({ where: { id } });
+        const fabbricato = await this.fabbricatoModel.findUnique({ where: { id }, include });
         if (fabbricato === null) {
             throw new NotFoundError('Fabbricato not found');
         }
@@ -103,7 +136,10 @@ export class FabbricatoService {
     public async getFabbricatoByCodice(codice: string): Promise<Fabbricato> {
         this.validateCodice(codice);
 
-        const fabbricato = await this.fabbricatoModel.findFirst({ where: { codice } });
+        const fabbricato = await this.fabbricatoModel.findFirst({
+            where: { codice },
+            include: { tipoFabbricato: true }
+        });
         if (fabbricato === null) {
             throw new NotFoundError('Fabbricato not found');
         }
