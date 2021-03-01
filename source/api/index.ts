@@ -1,9 +1,9 @@
 import { Router } from 'express';
 import logger from '@/utils/logger';
 
-import authRoute from './routes/auth.route';
-import fabbricatiRoute from './routes/fabbricati.route';
-import tipiFabbricatoRoute from './routes/tipi-fabbricato.route';
+import authRoute from './routes/auth/auth.route';
+import fabbricatiRoute from './routes/fabbricati/fabbricati.route';
+import tipiFabbricatoRoute from './routes/tipi-fabbricato/tipi-fabbricato.route';
 
 export default function (): Router {
     const router = Router();
