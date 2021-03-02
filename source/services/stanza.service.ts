@@ -17,7 +17,7 @@ export class StanzaService extends TableService {
         'fabbricato',
         'fabbricato.tipoFabbricato'
     ].sort();
-    protected readonly includeQueryParametersSoftCheck = ['stanze.postiLetto'];
+    protected readonly includeQueryParametersSoftCheck = ['postiLetto', 'manutenzioni'];
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
@@ -176,6 +176,15 @@ export class StanzaService extends TableService {
                     }
                 }
             });
+            const deleteManutenzioni = prisma.manutenzione.deleteMany({
+                where: {
+                    stanza: {
+                        idFabbricato: fid,
+                        unitaImmobiliare,
+                        numeroStanza
+                    }
+                }
+            });
             const deleteStanza = this.model.deleteMany({
                 where: {
                     idFabbricato: fid,
@@ -184,7 +193,7 @@ export class StanzaService extends TableService {
                 }
             });
 
-            await prisma.$transaction([deletePostiLetto, deleteStanza]);
+            await prisma.$transaction([deletePostiLetto, deleteManutenzioni, deleteStanza]);
         });
     }
 }

@@ -229,13 +229,15 @@ model TipoStanza {
 }
 
 model Manutenzione {
-    id         Int       @id @default(autoincrement()) @map("id")
-    dataInizio DateTime  @map("data_inizio")
-    dataFine   DateTime? @map("data_fine")
+    id Int @id @default(autoincrement()) @map("id")
 
     idStanza Int    @map("id_stanza")
     stanza   Stanza @relation(fields: [idStanza], references: [id])
 
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
+
+    @@unique([idStanza, eliminato])
     @@map("manutenzione")
 }
 
@@ -250,9 +252,9 @@ model PostoLetto {
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
+    ContrattoSuPostoLetto ContrattoSuPostoLetto[]
     @@unique([idStanza, postoLetto, eliminato])
     @@map("posto_letto")
-    ContrattoSuPostoLetto ContrattoSuPostoLetto[]
 }
 
 enum Piano {

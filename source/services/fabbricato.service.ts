@@ -18,7 +18,7 @@ export class FabbricatoService extends TableService {
         'stanze.postiLetto',
         'stanze.manutenzioni'
     ].sort();
-    protected readonly includeQueryParametersSoftCheck = ['stanze', 'stanze.postiLetto'];
+    protected readonly includeQueryParametersSoftCheck = ['stanze', 'stanze.postiLetto', 'stanze.manutenzioni'];
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
@@ -105,22 +105,24 @@ export class FabbricatoService extends TableService {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
 
+            const deleteManutenzioni = prisma.postoLetto.deleteMany({ where: { stanza: { idFabbricato: id } } });
             const deletePostiLetto = prisma.postoLetto.deleteMany({ where: { stanza: { idFabbricato: id } } });
             const deleteStanza = prisma.stanza.deleteMany({ where: { idFabbricato: id } });
             const deleteFabbricato = this.model.delete({ where: { id } });
 
-            await prisma.$transaction([deletePostiLetto, deleteStanza, deleteFabbricato]);
+            await prisma.$transaction([deleteManutenzioni, deletePostiLetto, deleteStanza, deleteFabbricato]);
         });
     }
 
     public async delFabbricatoByCodice(codice: string): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(codice, 'codice');
+            const deleteManutenzioni = prisma.postoLetto.deleteMany({ where: { stanza: { fabbricato: { codice } } } });
             const deletePostiLetto = prisma.postoLetto.deleteMany({ where: { stanza: { fabbricato: { codice } } } });
             const deleteStanza = prisma.stanza.deleteMany({ where: { fabbricato: { codice } } });
             const deleteFabbricato = this.model.deleteMany({ where: { codice } });
 
-            await prisma.$transaction([deletePostiLetto, deleteStanza, deleteFabbricato]);
+            await prisma.$transaction([deleteManutenzioni, deletePostiLetto, deleteStanza, deleteFabbricato]);
         });
     }
 }

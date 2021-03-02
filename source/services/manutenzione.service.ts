@@ -1,12 +1,12 @@
 import * as Joi from 'joi';
-import prisma, { Prisma, PostoLetto } from '@/services/prisma.service';
+import prisma, { Prisma, Manutenzione } from '@/services/prisma.service';
 
 import { NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 import { TableService } from './table.service';
 
-export class PostoLettoService extends TableService {
-    protected readonly model: Prisma.PostoLettoDelegate<
+export class ManutenzioneService extends TableService {
+    protected readonly model: Prisma.ManutenzioneDelegate<
         boolean | ((error: Error) => Error) | Prisma.RejectPerOperation | undefined
     >;
 
@@ -14,16 +14,14 @@ export class PostoLettoService extends TableService {
         'stanza',
         'stanza.tipoStanza',
         'stanza.postiLetto',
-        'stanza.manutenzioni',
         'stanza.fabbricato',
         'stanza.fabbricato.tipoFabbricato'
     ];
-    protected readonly includeQueryParametersSoftCheck = ['stanza.postiLetto', 'stanza.manutenzioni'];
+    protected readonly includeQueryParametersSoftCheck = ['stanza.postiLetto'];
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
-        idStanza: Joi.number().integer().positive().optional(),
-        postoLetto: Joi.string().min(1)
+        idStanza: Joi.number().integer().positive().optional()
     };
     protected postValidatorExcludes = ['idStanza'];
     protected putValidatorExcludes = ['id'];
@@ -31,10 +29,10 @@ export class PostoLettoService extends TableService {
 
     constructor() {
         super();
-        this.model = prisma.postoLetto;
+        this.model = prisma.manutenzione;
     }
 
-    public async getPostiLetto(fid: number, sid: number, queryParams: any): Promise<PostoLetto[]> {
+    public async getManutenzioni(fid: number, sid: number, queryParams: any): Promise<Manutenzione[]> {
         this.validateId(fid, 'fid');
         this.validateId(sid, 'sid');
         const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
@@ -49,23 +47,23 @@ export class PostoLettoService extends TableService {
         });
     }
 
-    public async getPostoLettoById(fid: number, sid: number, id: number, queryParams: any): Promise<PostoLetto> {
+    public async getManutenzioneById(fid: number, sid: number, id: number, queryParams: any): Promise<Manutenzione> {
         this.validateId(fid, 'fid');
         this.validateId(sid, 'sid');
         this.validateId(id, 'id');
         const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
 
-        const postoLetto = await this.model.findFirst({
+        const manutenzione = await this.model.findFirst({
             where: { id, idStanza: sid, stanza: { idFabbricato: fid } },
             include
         });
-        if (postoLetto === null) {
-            throw new NotFoundError('PostoLetto not found');
+        if (manutenzione === null) {
+            throw new NotFoundError('Manutenzione not found');
         }
-        return postoLetto;
+        return manutenzione;
     }
 
-    public async postPostoLetto(fid: number, sid: number, body: any): Promise<number> {
+    public async postManutenzione(fid: number, sid: number, body: any): Promise<number> {
         return handlePrismaError(async () => {
             this.validateId(fid, 'fid');
             this.validateId(sid, 'sid');
@@ -77,15 +75,15 @@ export class PostoLettoService extends TableService {
                 throw new NotFoundError('Stanza not found');
             }
 
-            const postoLetto = this.validatePostBody(body);
-            postoLetto.idStanza = sid;
+            const manutenzione = this.validatePostBody(body);
+            manutenzione.idStanza = sid;
 
-            const created = await this.model.create({ data: postoLetto });
+            const created = await this.model.create({ data: manutenzione });
             return created.id;
         });
     }
 
-    public async putPostoLettoById(fid: number, sid: number, id: number, body: any): Promise<void> {
+    public async putManutenzioneById(fid: number, sid: number, id: number, body: any): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
             this.validateId(sid, 'sid');
@@ -102,48 +100,48 @@ export class PostoLettoService extends TableService {
                 throw new NotFoundError('Stanza not found');
             }
 
-            const postoLetto = this.validatePutBody(body);
+            const manutenzione = this.validatePutBody(body);
 
             await this.model.upsert({
                 where: { id },
-                create: { id, ...postoLetto },
-                update: postoLetto
+                create: { id, ...manutenzione },
+                update: manutenzione
             });
         });
     }
 
-    public async patchPostoLettoById(fid: number, sid: number, id: number, body: any): Promise<void> {
+    public async patchManutenzioneById(fid: number, sid: number, id: number, body: any): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(fid, 'fid');
             this.validateId(sid, 'sid');
             this.validateId(id, 'id');
 
-            const postoLettoExists = await this.model.findFirst({
+            const manutenzioneExists = await this.model.findFirst({
                 where: { id, idStanza: sid, stanza: { idFabbricato: fid } }
             });
-            if (!postoLettoExists) {
-                throw new NotFoundError('PostoLetto not found');
+            if (!manutenzioneExists) {
+                throw new NotFoundError('Manutenzione not found');
             }
 
-            const postoLetto = this.validatePatchBody(body);
+            const manutenzione = this.validatePatchBody(body);
             await this.model.update({
                 where: { id },
-                data: postoLetto
+                data: manutenzione
             });
         });
     }
 
-    public async delPostoLettoById(fid: number, sid: number, id: number): Promise<void> {
+    public async delManutenzioneById(fid: number, sid: number, id: number): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(fid, 'fid');
             this.validateId(sid, 'sid');
             this.validateId(id, 'id');
 
-            const postoLettoExists = await this.model.findFirst({
+            const manutenzioneExists = await this.model.findFirst({
                 where: { id, idStanza: sid, stanza: { idFabbricato: fid } }
             });
-            if (!postoLettoExists) {
-                throw new NotFoundError('PostoLetto not found');
+            if (!manutenzioneExists) {
+                throw new NotFoundError('Manutenzione not found');
             }
 
             await this.model.deleteMany({ where: { id } });
@@ -151,4 +149,4 @@ export class PostoLettoService extends TableService {
     }
 }
 
-export default new PostoLettoService();
+export default new ManutenzioneService();

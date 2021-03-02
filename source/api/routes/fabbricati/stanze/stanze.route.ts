@@ -6,6 +6,7 @@ import asyncHandler from '@/utils/asyncHandler';
 import stanzaService from '@/services/stanza.service';
 
 import postiLettoRouter from './posti-letto/posti-letto.route';
+import manutenzioniRouter from './manutenzioni/manutenzioni.route';
 
 export default function (): Router {
     const router = Router({ mergeParams: true });
@@ -105,6 +106,7 @@ export default function (): Router {
     );
 
     router.use('/:sid/posti-letto', postiLettoRouter());
+    router.use('/:sid/manutenzione', manutenzioniRouter());
 
     return router;
 }
