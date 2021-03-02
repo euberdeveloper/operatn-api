@@ -24,12 +24,12 @@ export abstract class TableService {
     }
     protected get putBodyValidator(): Joi.ObjectSchema {
         const validator = { ...this.bodyValidator };
-        this.postValidatorExcludes.forEach(key => delete validator[key]);
+        this.putValidatorExcludes.forEach(key => delete validator[key]);
         return Joi.object(validator).required().options({ presence: 'required' });
     }
     protected get patchBodyValidator(): Joi.ObjectSchema {
         const validator = { ...this.bodyValidator };
-        this.postValidatorExcludes.forEach(key => delete validator[key]);
+        this.patchValidatorExcludes.forEach(key => delete validator[key]);
         return Joi.object(validator).required().options({ presence: 'optional' });
     }
 
