@@ -4,6 +4,7 @@ import logger from '@/utils/logger';
 import authRoute from './routes/auth/auth.route';
 import fabbricatiRoute from './routes/fabbricati/fabbricati.route';
 import tipiFabbricatoRoute from './routes/tipi-fabbricato/tipi-fabbricato.route';
+import tipiStanzaRoute from './routes/tipi-stanza/tipi-stanza.route';
 
 export default function (): Router {
     const router = Router();
@@ -16,6 +17,9 @@ export default function (): Router {
 
     logger.debug('/tipi-fabbricato');
     router.use('/tipi-fabbricato', tipiFabbricatoRoute());
+
+    logger.debug('/tipi-stanza');
+    router.use('/tipi-stanza', tipiStanzaRoute());
 
     return router;
 }
