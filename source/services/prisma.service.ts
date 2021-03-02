@@ -2,8 +2,10 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
+const softDeletables = ['Stanza', 'PostoLetto'];
+
 prisma.$use(async (params, next) => {
-    if (params.model == 'Stanza') {
+    if (params.model && softDeletables.includes(params.model)) {
         // eslint-disable-next-line @typescript-eslint/switch-exhaustiveness-check
         switch (params.action) {
             case 'delete':
@@ -32,6 +34,15 @@ prisma.$use(async (params, next) => {
                 }
                 break;
             case 'findMany':
+                if (params.args.where !== undefined) {
+                    if (params.args.where.eliminato === undefined) {
+                        params.args.where.eliminato = null;
+                    }
+                } else {
+                    params.args.where = { eliminato: null };
+                }
+                break;
+            case 'count':
                 if (params.args.where !== undefined) {
                     if (params.args.where.eliminato === undefined) {
                         params.args.where.eliminato = null;

@@ -18,7 +18,7 @@ export class FabbricatoService extends TableService {
         'stanze.postiLetto',
         'stanze.manutenzioni'
     ].sort();
-    protected readonly includeQueryParametersSoftCheck = ['stanze' /* TODO , 'stanze.postiLetto' */];
+    protected readonly includeQueryParametersSoftCheck = ['stanze', 'stanze.postiLetto'];
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),

@@ -3,9 +3,7 @@ import { Router } from 'express';
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
 import asyncHandler from '@/utils/asyncHandler';
-import stanzaService from '@/services/stanza.service';
-
-import postiLettoRouter from './posti-letto/posti-letto.route';
+import postoLettoService from '@/services/posto-letto.service';
 
 export default function (): Router {
     const router = Router({ mergeParams: true });
@@ -15,7 +13,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const fid = +req.params.fid;
-            const stanze = await stanzaService.getStanze(fid, queryParams);
+            const sid = +req.params.sid;
+            const stanze = await postoLettoService.getPostiLetto(fid, sid, queryParams);
             res.json(stanze);
         })
     );
@@ -24,25 +23,10 @@ export default function (): Router {
         '/:id',
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
+            const fid = +req.params.fid;
+            const sid = +req.params.sid;
             const id = +req.params.id;
-            const fid = +req.params.fid;
-            const stanze = await stanzaService.getStanzaById(fid, id, queryParams);
-            res.json(stanze);
-        })
-    );
-
-    router.get(
-        '/unita-immobiliare/:unitaImmobiliare/numero-stanza/:numeroStanza',
-        asyncHandler(async (req, res) => {
-            const queryParams = req.query;
-            const fid = +req.params.fid;
-            const { unitaImmobiliare, numeroStanza } = req.params;
-            const stanze = await stanzaService.getStanzaByEdificioAndNumero(
-                fid,
-                unitaImmobiliare,
-                numeroStanza,
-                queryParams
-            );
+            const stanze = await postoLettoService.getPostoLettoById(fid, sid, id, queryParams);
             res.json(stanze);
         })
     );
@@ -53,7 +37,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const body = req.body;
             const fid = +req.params.fid;
-            const id = await stanzaService.postStanza(fid, body);
+            const sid = +req.params.sid;
+            const id = await postoLettoService.postPostoLetto(fid, sid, body);
             res.json(id);
         })
     );
@@ -63,9 +48,10 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const fid = +req.params.fid;
+            const sid = +req.params.sid;
             const id = +req.params.id;
             const body = req.body;
-            await stanzaService.putStanzaById(fid, id, body);
+            await postoLettoService.putPostoLettoById(fid, sid, id, body);
             res.json();
         })
     );
@@ -75,9 +61,10 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const fid = +req.params.fid;
+            const sid = +req.params.sid;
             const id = +req.params.id;
             const body = req.body;
-            await stanzaService.patchStanzaById(fid, id, body);
+            await postoLettoService.patchPostoLettoById(fid, sid, id, body);
             res.json();
         })
     );
@@ -87,24 +74,12 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const fid = +req.params.fid;
+            const sid = +req.params.sid;
             const id = +req.params.id;
-            await stanzaService.delStanzaById(fid, id);
+            await postoLettoService.delPostoLettoById(fid, sid, id);
             res.json();
         })
     );
-
-    router.delete(
-        '/unita-immobiliare/:unitaImmobiliare/numero-stanza/:numeroStanza',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const fid = +req.params.fid;
-            const { unitaImmobiliare, numeroStanza } = req.params;
-            await stanzaService.delStanzaByEdificioAndNumero(fid, unitaImmobiliare, numeroStanza);
-            res.json();
-        })
-    );
-
-    router.use('/:sid/posti-letto', postiLettoRouter());
 
     return router;
 }
