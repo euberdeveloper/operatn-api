@@ -31,13 +31,11 @@ export class StanzaService extends TableService {
         bagno: Joi.boolean(),
         piano: Joi.string()
             .valid(...Object.values(Piano))
-            .allow(null),
-        dataCreazione: Joi.date().iso().less('now').optional(),
-        eliminato: Joi.date().iso().greater(Joi.ref('dataCreazione')).optional()
+            .allow(null)
     };
     protected postValidatorExcludes = ['idFabbricato'];
     protected putValidatorExcludes = ['id'];
-    protected patchValidatorExcludes = ['id'];
+    protected patchValidatorExcludes = [];
 
     constructor() {
         super();
