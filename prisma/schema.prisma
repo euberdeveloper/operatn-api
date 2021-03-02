@@ -160,7 +160,7 @@ model DipartimentoUnitn {
 
 model Fabbricato {
     id        Int    @id @default(autoincrement()) @map("id")
-    codice    String @map("codice")
+    codice    String @map("codice") @unique
     nome      String @map("nome")
     provincia String @map("provincia")
     comune    String @map("comune")
