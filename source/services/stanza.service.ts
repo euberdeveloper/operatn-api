@@ -154,7 +154,10 @@ export class StanzaService extends TableService {
                 throw new NotFoundError('Stanza not found');
             }
 
-            await this.model.deleteMany({ where: { id } });
+            const deletePostiLetto = prisma.postoLetto.deleteMany({ where: { idStanza: id } });
+            const deleteStanza = this.model.deleteMany({ where: { id } });
+
+            await prisma.$transaction([deletePostiLetto, deleteStanza]);
         });
     }
 
@@ -166,13 +169,24 @@ export class StanzaService extends TableService {
         return handlePrismaError(async () => {
             this.validateId(fid, 'fid');
 
-            await this.model.deleteMany({
+            const deletePostiLetto = prisma.postoLetto.deleteMany({
+                where: {
+                    stanza: {
+                        idFabbricato: fid,
+                        unitaImmobiliare,
+                        numeroStanza
+                    }
+                }
+            });
+            const deleteStanza = this.model.deleteMany({
                 where: {
                     idFabbricato: fid,
                     unitaImmobiliare,
                     numeroStanza
                 }
             });
+
+            await prisma.$transaction([deletePostiLetto, deleteStanza]);
         });
     }
 }

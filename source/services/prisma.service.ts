@@ -14,6 +14,13 @@ prisma.$use(async (params, next) => {
                 break;
             case 'deleteMany':
                 params.action = 'updateMany';
+                if (params.args.where !== undefined) {
+                    if (params.args.where.eliminato === undefined) {
+                        params.args.where.eliminato = null;
+                    }
+                } else {
+                    params.args.where = { eliminato: null };
+                }
                 if (params.args.data != undefined) {
                     params.args.data.eliminato = new Date();
                 } else {
