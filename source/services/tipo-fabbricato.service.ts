@@ -1,4 +1,4 @@
-import { PrismaClient, Prisma, TipoFabbricato } from '@prisma/client';
+import prisma, { Prisma, TipoFabbricato } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
 import { InvalidBodyError, InvalidIdError, InvalidPathParamError, NotFoundError } from '@/errors';
@@ -35,7 +35,6 @@ export class TipoFabbricatoService {
     }
 
     constructor() {
-        const prisma = new PrismaClient();
         this.tipoFabbricatoModel = prisma.tipoFabbricato;
     }
 

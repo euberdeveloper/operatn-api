@@ -198,19 +198,19 @@ model Stanza {
     idTipoStanza Int        @map("id_tipo_stanza")
     tipoStanza   TipoStanza @relation(fields: [idTipoStanza], references: [id])
 
-    centroDiCosto String? @map("centro_di_costo")
+    centroDiCosto String @map("centro_di_costo")
 
     gestioneDiretta Boolean @map("gestione_diretta")
     handicap        Boolean @map("handicap")
     bagno           Boolean @map("bagno")
     piano           Piano?  @map("piano")
 
-    validaDal DateTime  @map("valida_dal")
-    validaAl  DateTime? @map("valida_al")
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
 
     manutenzioni Manutenzione[]
+    postiLetto PostoLetto[]
 
-    PostoLetto PostoLetto[]
     @@unique([idFabbricato, unitaImmobiliare, numeroStanza])
     @@map("stanza")
 }

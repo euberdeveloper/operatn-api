@@ -1,20 +1,24 @@
-import { PrismaClient, Prisma, Fabbricato } from '@prisma/client';
+import prisma, { Prisma, Fabbricato } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
-import {
-    InvalidBodyError,
-    InvalidIdError,
-    InvalidPathParamError,
-    InvalidQueryParamError,
-    NotFoundError
-} from '@/errors';
+import { InvalidBodyError, InvalidIdError, InvalidPathParamError, NotFoundError } from '@/errors';
 import logger from '@/utils/logger';
 import handlePrismaError from '@/utils/handlePrismaError';
+import parseIncludeQueryParameters from '@/utils/includeQueryParams';
 
 export class FabbricatoService {
     private readonly fabbricatoModel: Prisma.FabbricatoDelegate<
         boolean | ((error: Error) => Error) | Prisma.RejectPerOperation | undefined
     >;
+
+    private readonly includeQueryParameters = [
+        'tipoFabbricato',
+        'stanze',
+        'stanze.tipoStanza',
+        'stanze.postiLetto',
+        'stanze.manutenzioni'
+    ].sort();
+    private readonly includeQueryParametersSoftCheck = ['stanze' /* TODO , 'stanze.postiLetto' */];
 
     private readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
@@ -49,33 +53,7 @@ export class FabbricatoService {
     }
 
     constructor() {
-        const prisma = new PrismaClient();
         this.fabbricatoModel = prisma.fabbricato;
-    }
-
-    private validateBoolQueryParam(parameter: string | string[] | undefined, name: string): boolean {
-        parameter = Array.isArray(parameter) ? parameter[0] : parameter;
-
-        if (parameter === undefined) {
-            return false;
-        }
-
-        if (typeof parameter === 'string' && !['true', 'false'].includes(parameter)) {
-            throw new InvalidQueryParamError(`Invalid query param ${name}`);
-        }
-
-        return parameter === 'true';
-    }
-
-    private parseQueryParams(
-        queryParams: Record<string, string | string[]>
-    ): { tipoFabbricato: boolean; stanze: boolean } {
-        let { tipoFabbricato, stanze } = queryParams;
-
-        return {
-            tipoFabbricato: this.validateBoolQueryParam(tipoFabbricato, 'tipoFabbricato'),
-            stanze: this.validateBoolQueryParam(stanze, 'stanze')
-        };
     }
 
     private validateId(id: any): void {
@@ -118,13 +96,21 @@ export class FabbricatoService {
     }
 
     public async getFabbricati(queryParams: any) {
-        const include = this.parseQueryParams(queryParams);
+        const include = parseIncludeQueryParameters(
+            queryParams,
+            this.includeQueryParameters,
+            this.includeQueryParametersSoftCheck
+        );
         return this.fabbricatoModel.findMany({ include });
     }
 
     public async getFabbricatoById(id: number, queryParams: any): Promise<Fabbricato> {
         this.validateId(id);
-        const include = this.parseQueryParams(queryParams);
+        const include = parseIncludeQueryParameters(
+            queryParams,
+            this.includeQueryParameters,
+            this.includeQueryParametersSoftCheck
+        );
 
         const fabbricato = await this.fabbricatoModel.findUnique({ where: { id }, include });
         if (fabbricato === null) {

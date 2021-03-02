@@ -51,7 +51,8 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const body = req.body;
-            const id = await fabbricatoService.postFabbricato(body);
+            const fid = +req.params.fid;
+            const id = await stanzaService.postStanza(fid, body);
             res.json(id);
         })
     );
@@ -104,18 +105,20 @@ export default function (): Router {
         '/:id',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
+            const fid = +req.params.fid;
             const id = +req.params.id;
-            await fabbricatoService.delFabbricatoById(id);
+            await stanzaService.delStanzaById(fid, id);
             res.json();
         })
     );
 
     router.delete(
-        '/codice/:codice',
+        '/unita-immobiliare/:unitaImmobiliare/numero-stanza/:numeroStanza',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
-            const codice = req.params.codice;
-            await fabbricatoService.delFabbricatoByCodice(codice);
+            const fid = +req.params.fid;
+            const { unitaImmobiliare, numeroStanza } = req.params;
+            await stanzaService.delStanzaByEdificioAndNumero(fid, unitaImmobiliare, numeroStanza);
             res.json();
         })
     );
