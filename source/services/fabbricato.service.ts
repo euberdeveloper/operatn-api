@@ -36,16 +36,16 @@ export class FabbricatoService {
     private readonly idValidator = Joi.number().integer().positive();
     private readonly codeValidator = Joi.string().min(1).required();
 
-    get postBodyValidator(): Joi.ObjectSchema<Fabbricato> {
+    private get postBodyValidator(): Joi.ObjectSchema<Fabbricato> {
         return Joi.object<Fabbricato>(this.bodyValidator).required().options({ presence: 'required' });
     }
-    get putBodyValidator(): Joi.ObjectSchema<Omit<Fabbricato, 'id'>> {
+    private get putBodyValidator(): Joi.ObjectSchema<Omit<Fabbricato, 'id'>> {
         const validator = { ...this.bodyValidator };
         delete validator.id;
 
         return Joi.object(validator).required().options({ presence: 'required' });
     }
-    get patchBodyValidator(): Joi.ObjectSchema<Partial<Omit<Fabbricato, 'id'>>> {
+    private get patchBodyValidator(): Joi.ObjectSchema<Partial<Omit<Fabbricato, 'id'>>> {
         const validator = { ...this.bodyValidator };
         delete validator.id;
 

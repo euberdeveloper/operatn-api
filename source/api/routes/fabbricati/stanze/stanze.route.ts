@@ -3,7 +3,6 @@ import { Router } from 'express';
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
 import asyncHandler from '@/utils/asyncHandler';
-import fabbricatoService from '@/services/fabbricato.service';
 import stanzaService from '@/services/stanza.service';
 
 export default function (): Router {
@@ -61,21 +60,11 @@ export default function (): Router {
         '/:id',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
+            const fid = +req.params.fid;
             const id = +req.params.id;
             const body = req.body;
-            await fabbricatoService.putFabbricatoById(id, body);
+            await stanzaService.putStanzaById(fid, id, body);
             res.json();
-        })
-    );
-
-    router.put(
-        '/codice/:codice',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const codice = req.params.codice;
-            const body = req.body;
-            const id = await fabbricatoService.putFabbricatoByCodice(codice, body);
-            res.json(id);
         })
     );
 
@@ -83,20 +72,10 @@ export default function (): Router {
         '/:id',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
+            const fid = +req.params.fid;
             const id = +req.params.id;
             const body = req.body;
-            await fabbricatoService.patchFabbricatoById(id, body);
-            res.json();
-        })
-    );
-
-    router.patch(
-        '/codice/:codice',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const codice = req.params.codice;
-            const body = req.body;
-            await fabbricatoService.patchFabbricatoByCodice(codice, body);
+            await stanzaService.patchStanzaById(fid, id, body);
             res.json();
         })
     );

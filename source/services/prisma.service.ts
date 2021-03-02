@@ -20,7 +20,11 @@ prisma.$use(async (params, next) => {
                 break;
             case 'findUnique':
                 params.action = 'findFirst';
-                params.args.where.eliminato = null;
+                // if a key contains an underscore, it is an "unique group"
+                const uniqueGroups = Object.keys(params.args.where)
+                    .filter(key => key.includes('_'))
+                    .reduce((acc, curr) => ({ ...acc, ...params.args.where[curr] }), {});
+                params.args.where = { ...uniqueGroups, eliminato: null };
                 break;
             case 'findFirst':
                 if (params.args.where !== undefined && params.args.where.eliminato === undefined) {
@@ -38,7 +42,7 @@ prisma.$use(async (params, next) => {
                 break;
             case 'update':
                 params.action = 'updateMany';
-                params.args.where.elminato = null;
+                params.args.where.eliminato = null;
                 break;
             case 'updateMany':
                 if (params.args.where !== undefined) {

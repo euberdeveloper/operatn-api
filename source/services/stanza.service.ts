@@ -1,64 +1,57 @@
 import * as Joi from 'joi';
 import prisma, { Prisma, Stanza, Piano } from '@/services/prisma.service';
 
-import {
-    InvalidBodyError,
-    InvalidIdError,
-    InvalidPathParamError,
-    InvalidQueryParamError,
-    NotFoundError
-} from '@/errors';
+import { InvalidBodyError, InvalidIdError, InvalidPathParamError, NotFoundError } from '@/errors';
 import logger from '@/utils/logger';
 import handlePrismaError from '@/utils/handlePrismaError';
+import parseIncludeQueryParameters from '@/utils/includeQueryParams';
 
 export class StanzaService {
     private readonly stanzaModel: Prisma.StanzaDelegate<
         boolean | ((error: Error) => Error) | Prisma.RejectPerOperation | undefined
     >;
 
+    private readonly includeQueryParameters = [
+        'tipoStanza',
+        'postiLetto',
+        'manutenzioni',
+        'fabbricato',
+        'fabbricato.tipoFabbricato'
+    ].sort();
+    private readonly includeQueryParametersSoftCheck = [
+        /* TODO , 'stanze.postiLetto' */
+    ];
+
     private readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
-        codice: Joi.string().min(1).alphanum(),
-        nome: Joi.string().min(1),
+        idFabbricato: Joi.number().integer().positive(),
+        unitaImmobiliare: Joi.string().min(1).alphanum(),
+        numeroStanza: Joi.string().min(1).alphanum(),
         idTipoStanza: Joi.number().integer().positive(),
-        provincia: Joi.string().length(2).alphanum(),
-        comune: Joi.string().min(1),
-        cap: Joi.string().length(5).pattern(/^\d+$/),
-        indirizzo: Joi.string().min(1),
-        nCivico: Joi.string().min(1),
-        oldCode: Joi.number()
+        centroDiCosto: Joi.string().min(1),
+        gestioneDiretta: Joi.boolean(),
+        handicap: Joi.boolean(),
+        bagno: Joi.boolean(),
+        piano: Joi.string()
+            .valid(...Object.values(Piano))
+            .allow(null),
+        dataCreazione: Joi.date().iso().less('now').optional(),
+        eliminato: Joi.date().iso().greater(Joi.ref('dataCreazione')).optional()
     };
 
     private readonly idValidator = Joi.number().integer().positive();
     private readonly stringValidator = Joi.string().min(1).required();
 
-    get postBodyValidator(): Joi.ObjectSchema<Stanza> {
-        return Joi.object<Stanza>({
-            id: Joi.number().integer().positive().optional(),
-            idFabbricato: Joi.number().integer().positive(),
-            unitaImmobiliare: Joi.string().min(1).alphanum(),
-            numeroStanza: Joi.string().min(1).alphanum(),
-            idTipoStanza: Joi.number().integer().positive(),
-            centroDiCosto: Joi.string().min(1),
-            gestioneDiretta: Joi.boolean(),
-            handicap: Joi.boolean(),
-            bagno: Joi.boolean(),
-            piano: Joi.string()
-                .valid(...Object.values(Piano))
-                .allow(null),
-            dataCreazione: Joi.date().iso().less('now').optional(),
-            eliminato: Joi.date().iso().greater(Joi.ref('dataCreazione')).optional()
-        })
-            .required()
-            .options({ presence: 'required' });
+    private get postBodyValidator(): Joi.ObjectSchema<Stanza> {
+        return Joi.object(this.bodyValidator).required().options({ presence: 'required' });
     }
-    get putBodyValidator(): Joi.ObjectSchema<Omit<Stanza, 'id'>> {
+    private get putBodyValidator(): Joi.ObjectSchema<Omit<Stanza, 'id'>> {
         const validator = { ...this.bodyValidator };
         delete validator.id;
 
         return Joi.object(validator).required().options({ presence: 'required' });
     }
-    get patchBodyValidator(): Joi.ObjectSchema<Partial<Omit<Stanza, 'id'>>> {
+    private get patchBodyValidator(): Joi.ObjectSchema<Partial<Omit<Stanza, 'id'>>> {
         const validator = { ...this.bodyValidator };
         delete validator.id;
 
@@ -67,33 +60,6 @@ export class StanzaService {
 
     constructor() {
         this.stanzaModel = prisma.stanza;
-    }
-
-    private validateBoolQueryParam(parameter: string | string[] | undefined, name: string): boolean {
-        parameter = Array.isArray(parameter) ? parameter[0] : parameter;
-
-        if (parameter === undefined) {
-            return false;
-        }
-
-        if (typeof parameter === 'string' && !['true', 'false'].includes(parameter)) {
-            throw new InvalidQueryParamError(`Invalid query param ${name}`);
-        }
-
-        return parameter === 'true';
-    }
-
-    private parseQueryParams(
-        queryParams: Record<string, string | string[]>
-    ): { tipoStanza: boolean; fabbricato: boolean; manutenzioni: boolean; postiLetto: boolean } {
-        let { tipoStanza, fabbricato, postiLetto, manutenzioni } = queryParams;
-
-        return {
-            tipoStanza: this.validateBoolQueryParam(tipoStanza, 'tipoStanza'),
-            fabbricato: this.validateBoolQueryParam(fabbricato, 'fabbricato'),
-            postiLetto: this.validateBoolQueryParam(postiLetto, 'postiLetto'),
-            manutenzioni: this.validateBoolQueryParam(manutenzioni, 'manutenzioni')
-        };
     }
 
     private validateId(id: any): void {
@@ -137,7 +103,11 @@ export class StanzaService {
 
     public async getStanze(fid: number, queryParams: any): Promise<Stanza[]> {
         this.validateId(fid);
-        const include = this.parseQueryParams(queryParams);
+        const include = parseIncludeQueryParameters(
+            queryParams,
+            this.includeQueryParameters,
+            this.includeQueryParametersSoftCheck
+        );
         return this.stanzaModel.findMany({
             where: {
                 idFabbricato: fid
@@ -149,7 +119,11 @@ export class StanzaService {
     public async getStanzaById(fid: number, id: number, queryParams: any): Promise<Stanza> {
         this.validateId(fid);
         this.validateId(id);
-        const include = this.parseQueryParams(queryParams);
+        const include = parseIncludeQueryParameters(
+            queryParams,
+            this.includeQueryParameters,
+            this.includeQueryParametersSoftCheck
+        );
 
         const stanza = await this.stanzaModel.findFirst({
             where: { id, idFabbricato: fid },
@@ -170,7 +144,11 @@ export class StanzaService {
         this.validateId(fid);
         this.validateStringParam(unitaImmobiliare, 'unitaImmobiliare');
         this.validateStringParam(numeroStanza, 'numeroStanza');
-        const include = this.parseQueryParams(queryParams);
+        const include = parseIncludeQueryParameters(
+            queryParams,
+            this.includeQueryParameters,
+            this.includeQueryParametersSoftCheck
+        );
 
         const stanza = await this.stanzaModel.findUnique({
             where: {
@@ -194,9 +172,15 @@ export class StanzaService {
         });
     }
 
-    public async putStanzaById(id: number, body: any): Promise<void> {
+    public async putStanzaById(fid: number, id: number, body: any): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id);
+            this.validateId(fid);
+
+            if (!body.idFabbricato) {
+                body.idFabbricato = fid;
+            }
+
             const stanza = this.validatePutBody(body);
             await this.stanzaModel.upsert({
                 where: { id },
@@ -206,23 +190,16 @@ export class StanzaService {
         });
     }
 
-    // TODO
-    public async putStanzaByCodice(codice: string, body: any): Promise<number> {
+    public async patchStanzaById(fid: number, id: number, body: any): Promise<void> {
         return handlePrismaError(async () => {
-            //this.validateCodice(codice);
-            const stanza = this.validatePutBody(body);
-            const result = await this.stanzaModel.upsert({
-                where: { id: 0 },
-                create: stanza,
-                update: stanza
-            });
-            return result.id;
-        });
-    }
-
-    public async patchStanzaById(id: number, body: any): Promise<void> {
-        return handlePrismaError(async () => {
+            this.validateId(fid);
             this.validateId(id);
+
+            const stanzaExists = await this.stanzaModel.findFirst({ where: { id, idFabbricato: fid } });
+            if (!stanzaExists || stanzaExists.eliminato) {
+                throw new NotFoundError('Stanza not found');
+            }
+
             const stanza = this.validatePatchBody(body);
             await this.stanzaModel.update({
                 where: { id },
@@ -236,12 +213,12 @@ export class StanzaService {
             this.validateId(fid);
             this.validateId(id);
 
-            const stanzaExists = await this.stanzaModel.count({ where: { id, idFabbricato: fid } });
-            if (!stanzaExists) {
+            const stanzaExists = await this.stanzaModel.findFirst({ where: { id, idFabbricato: fid } });
+            if (!stanzaExists || stanzaExists.eliminato) {
                 throw new NotFoundError('Stanza not found');
             }
 
-            await this.stanzaModel.delete({ where: { id } });
+            await this.stanzaModel.deleteMany({ where: { id } });
         });
     }
 

@@ -211,7 +211,7 @@ model Stanza {
     manutenzioni Manutenzione[]
     postiLetto PostoLetto[]
 
-    @@unique([idFabbricato, unitaImmobiliare, numeroStanza])
+    @@unique([idFabbricato, unitaImmobiliare, numeroStanza, eliminato])
     @@map("stanza")
 }
 
