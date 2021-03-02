@@ -160,7 +160,7 @@ model DipartimentoUnitn {
 
 model Fabbricato {
     id        Int    @id @default(autoincrement()) @map("id")
-    codice    String @map("codice") @unique
+    codice    String @map("codice")
     nome      String @map("nome")
     provincia String @map("provincia")
     comune    String @map("comune")
@@ -168,12 +168,17 @@ model Fabbricato {
     indirizzo String @map("indirizzo")
     nCivico   String @map("n_civico")
 
-    oldCode Int @unique @map("old_code")
+    oldCode Int @map("old_code")
 
     idTipoFabbricato Int            @map("id_tipo_fabbricato")
     tipoFabbricato   TipoFabbricato @relation(fields: [idTipoFabbricato], references: [id])
 
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
+
     stanze Stanza[]
+    @@unique([codice, eliminato])
+    @@unique([nome, eliminato])
     @@map("fabbricato")
 }
 

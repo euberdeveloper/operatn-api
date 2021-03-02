@@ -90,36 +90,12 @@ export class FabbricatoService extends TableService {
         });
     }
 
-    public async putFabbricatoByCodice(codice: string, body: any): Promise<number> {
-        return handlePrismaError(async () => {
-            this.validateStringParam(codice, 'codice');
-            const fabbricato = this.validatePutBody(body);
-            const result = await this.model.upsert({
-                where: { codice },
-                create: fabbricato,
-                update: fabbricato
-            });
-            return result.id;
-        });
-    }
-
     public async patchFabbricatoById(id: number, body: any): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
             const fabbricato = this.validatePatchBody(body);
             await this.model.update({
                 where: { id },
-                data: fabbricato
-            });
-        });
-    }
-
-    public async patchFabbricatoByCodice(codice: string, body: any): Promise<void> {
-        return handlePrismaError(async () => {
-            this.validateStringParam(codice, 'codice');
-            const fabbricato = this.validatePatchBody(body);
-            await this.model.update({
-                where: { codice },
                 data: fabbricato
             });
         });
@@ -142,7 +118,7 @@ export class FabbricatoService extends TableService {
             this.validateId(codice, 'codice');
             const deletePostiLetto = prisma.postoLetto.deleteMany({ where: { stanza: { fabbricato: { codice } } } });
             const deleteStanza = prisma.stanza.deleteMany({ where: { fabbricato: { codice } } });
-            const deleteFabbricato = this.model.delete({ where: { codice } });
+            const deleteFabbricato = this.model.deleteMany({ where: { codice } });
 
             await prisma.$transaction([deletePostiLetto, deleteStanza, deleteFabbricato]);
         });

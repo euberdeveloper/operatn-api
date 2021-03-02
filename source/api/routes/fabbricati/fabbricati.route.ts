@@ -61,17 +61,6 @@ export default function (): Router {
         })
     );
 
-    router.put(
-        '/codice/:codice',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const codice = req.params.codice;
-            const body = req.body;
-            const id = await fabbricatoService.putFabbricatoByCodice(codice, body);
-            res.json(id);
-        })
-    );
-
     router.patch(
         '/:fid',
         permission(RuoloUtente.ADMIN),
@@ -79,17 +68,6 @@ export default function (): Router {
             const id = +req.params.fid;
             const body = req.body;
             await fabbricatoService.patchFabbricatoById(id, body);
-            res.json();
-        })
-    );
-
-    router.patch(
-        '/codice/:codice',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const codice = req.params.codice;
-            const body = req.body;
-            await fabbricatoService.patchFabbricatoByCodice(codice, body);
             res.json();
         })
     );
