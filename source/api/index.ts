@@ -11,6 +11,7 @@ import contiRicaviCanoniRouter from './routes/conti-ricavi-canoni/conti-ricavi-c
 import tipiTariffaRouter from './routes/tipi-tariffa/tipi-tariffa.route';
 import tipiRataRouter from './routes/tipi-rata/tipi-rata.route';
 import tipiBollettaRouter from './routes/tipi-bolletta/tipi-bolletta.route';
+import tipiOspiteRouter from './routes/tipi-ospite/tipi-ospite.route';
 import quietanziantiRouter from './routes/quietanzianti/quietanzianti.route';
 
 export default function (): Router {
@@ -45,6 +46,9 @@ export default function (): Router {
 
     logger.debug('/tipi-bolletta');
     router.use('/tipi-bolletta', tipiBollettaRouter());
+
+    logger.debug('/tipi-ospite');
+    router.use('/tipi-ospite', tipiOspiteRouter());
 
     logger.debug('/quietanzianti');
     router.use('/quietanzianti', quietanziantiRouter());
