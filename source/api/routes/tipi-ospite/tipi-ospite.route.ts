@@ -4,7 +4,7 @@ import * as passport from 'passport';
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
 import asyncHandler from '@/utils/asyncHandler';
-import tipoOspite from '@/services/tipo-ospite.service';
+import tipoOspiteService from '@/services/tipo-ospite.service';
 
 export default function (): Router {
     const router = Router();
@@ -14,7 +14,7 @@ export default function (): Router {
         '/',
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
-            const tipiOspite = await tipoOspite.getTipiOspite(queryParams);
+            const tipiOspite = await tipoOspiteService.getTipiOspite(queryParams);
             res.json(tipiOspite);
         })
     );
@@ -24,8 +24,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const queryParams = req.query;
-            const tipiOspite = await tipoOspite.getTipoOspiteById(id, queryParams);
-            res.json(tipiOspite);
+            const tipoOspite = await tipoOspiteService.getTipoOspiteById(id, queryParams);
+            res.json(tipoOspite);
         })
     );
 
@@ -34,8 +34,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const queryParams = req.query;
-            const tipiOspite = await tipoOspite.getTipoOspiteBySigla(sigla, queryParams);
-            res.json(tipiOspite);
+            const tipoOspite = await tipoOspiteService.getTipoOspiteBySigla(sigla, queryParams);
+            res.json(tipoOspite);
         })
     );
 
@@ -44,7 +44,7 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const body = req.body;
-            const id = await tipoOspite.postTipoOspite(body);
+            const id = await tipoOspiteService.postTipoOspite(body);
             res.json(id);
         })
     );
@@ -55,7 +55,7 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
-            await tipoOspite.putTipoOspiteById(id, body);
+            await tipoOspiteService.putTipoOspiteById(id, body);
             res.json();
         })
     );
@@ -66,7 +66,7 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
-            await tipoOspite.patchTipoOspiteById(id, body);
+            await tipoOspiteService.patchTipoOspiteById(id, body);
             res.json();
         })
     );
@@ -76,7 +76,7 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
-            await tipoOspite.delTipoOspiteById(id);
+            await tipoOspiteService.delTipoOspiteById(id);
             res.json();
         })
     );
@@ -86,7 +86,7 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
-            await tipoOspite.delTipoOspiteBySigla(sigla);
+            await tipoOspiteService.delTipoOspiteBySigla(sigla);
             res.json();
         })
     );
