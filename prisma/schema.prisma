@@ -140,7 +140,7 @@ model DocumentoIdentita {
 
 model DipartimentoUnitn {
     codice    String  @id @map("codice")
-    sigla     String? @map("sigla")
+    sigla     String? @unique @map("sigla")
     nome      String  @unique @map("nome")
     provincia String  @map("provincia")
     comune    String  @map("comune")
@@ -149,8 +149,8 @@ model DipartimentoUnitn {
     nCivico   String  @map("n_civico")
     sitoWeb   String  @map("sito_web")
 
-    dataCreazione  DateTime  @default(now()) @map("_data_creazione")
-    eliminato DateTime? @map("_eliminato")
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
 
     Ospite Ospite[]
     @@map("dipartimento_unitn")
