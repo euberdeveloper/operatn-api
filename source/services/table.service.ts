@@ -136,7 +136,7 @@ export abstract class TableService {
     protected async checkIfExistsById(id: number): Promise<void> {
         const tupleExists = await this.model.findUnique({ where: { id } });
         if (!tupleExists) {
-            throw new NotFoundError('Tariffa not found');
+            throw new NotFoundError();
         }
     }
 }
