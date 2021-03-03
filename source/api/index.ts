@@ -8,6 +8,7 @@ import tipiStanzaRoute from './routes/tipi-stanza/tipi-stanza.route';
 import utilizziStanzaRoute from './routes/utilizzi-stanza/utilizzi-stanza.route';
 import contiRicaviConsumiRoute from './routes/conti-ricavi-consumi/conti-ricavi-consumi.route';
 import contiRicaviCanoniRoute from './routes/conti-ricavi-canoni/conti-ricavi-canoni.route';
+import tipiTariffaRoute from './routes/tipi-tariffa/tipi-tariffa.route';
 
 export default function (): Router {
     const router = Router();
@@ -32,6 +33,9 @@ export default function (): Router {
 
     logger.debug('/conti-ricavi-canoni');
     router.use('/conti-ricavi-canoni', contiRicaviCanoniRoute());
+
+    logger.debug('/tipi-tariffa');
+    router.use('/tipi-tariffa', tipiTariffaRoute());
 
     return router;
 }
