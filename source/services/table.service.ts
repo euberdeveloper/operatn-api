@@ -1,6 +1,6 @@
 import * as Joi from 'joi';
 
-import { InvalidBodyError, InvalidIdError, InvalidPathParamError, InvalidQueryParamError } from '@/errors';
+import { InvalidBodyError, InvalidIdError, InvalidPathParamError, InvalidQueryParamError, NotFoundError } from '@/errors';
 import logger from '@/utils/logger';
 
 export abstract class TableService {
@@ -131,5 +131,12 @@ export abstract class TableService {
         }
 
         return result;
+    }
+
+    protected async checkIfExistsById(id: number): Promise<void> {
+        const tupleExists = await this.model.findUnique({ where: { id } });
+        if (!tupleExists) {
+            throw new NotFoundError('Tariffa not found');
+        }
     }
 }
