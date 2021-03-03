@@ -4,7 +4,7 @@ import * as passport from 'passport';
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
 import asyncHandler from '@/utils/asyncHandler';
-import contoRicaviConsumi from '@/services/conto-ricavi-consumi.service';
+import contoRicaviCanoni from '@/services/conto-ricavi-canoni.service';
 
 export default function (): Router {
     const router = Router();
@@ -13,7 +13,7 @@ export default function (): Router {
     router.get(
         '/',
         asyncHandler(async (_req, res) => {
-            const contiRicaviConsumi = await contoRicaviConsumi.getContiRicaviConsumi();
+            const contiRicaviConsumi = await contoRicaviCanoni.getContiRicaviCanoni();
             res.json(contiRicaviConsumi);
         })
     );
@@ -22,8 +22,8 @@ export default function (): Router {
         '/:id',
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
-            const contoRicaviCanoni = await contoRicaviConsumi.getContoRicaviConsumiById(id);
-            res.json(contoRicaviCanoni);
+            const contoRicaviConsumi = await contoRicaviCanoni.getContoRicaviCanoniById(id);
+            res.json(contoRicaviConsumi);
         })
     );
 
@@ -31,8 +31,8 @@ export default function (): Router {
         '/codice/:codice',
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
-            const contoRicaviCanoni = await contoRicaviConsumi.getContoRicaviConsumiByCodice(codice);
-            res.json(contoRicaviCanoni);
+            const contoRicaviConsumi = await contoRicaviCanoni.getContoRicaviCanoniByCodice(codice);
+            res.json(contoRicaviConsumi);
         })
     );
 
@@ -41,7 +41,7 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const body = req.body;
-            const id = await contoRicaviConsumi.postContoRicaviConsumi(body);
+            const id = await contoRicaviCanoni.postContoRicaviCanoni(body);
             res.json(id);
         })
     );
@@ -52,7 +52,7 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
-            await contoRicaviConsumi.putContoRicaviConsumiById(id, body);
+            await contoRicaviCanoni.putContoRicaviCanoniById(id, body);
             res.json();
         })
     );
@@ -62,7 +62,7 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
-            await contoRicaviConsumi.delContoRicaviConsumiById(id);
+            await contoRicaviCanoni.delContoRicaviCanoniById(id);
             res.json();
         })
     );
@@ -72,7 +72,7 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
-            await contoRicaviConsumi.delContoRicaviConsumiByCodice(codice);
+            await contoRicaviCanoni.delContoRicaviCanoniByCodice(codice);
             res.json();
         })
     );
