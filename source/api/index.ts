@@ -5,6 +5,7 @@ import authRoute from './routes/auth/auth.route';
 import fabbricatiRoute from './routes/fabbricati/fabbricati.route';
 import tipiFabbricatoRoute from './routes/tipi-fabbricato/tipi-fabbricato.route';
 import tipiStanzaRoute from './routes/tipi-stanza/tipi-stanza.route';
+import utilizziStanzaRoute from './routes/utilizzi-stanza/utilizzi-stanza.route';
 import contiRicaviConsumiRoute from './routes/conti-ricavi-consumi/conti-ricavi-consumi.route';
 import contiRicaviCanoniRoute from './routes/conti-ricavi-canoni/conti-ricavi-canoni.route';
 
@@ -22,6 +23,9 @@ export default function (): Router {
 
     logger.debug('/tipi-stanza');
     router.use('/tipi-stanza', tipiStanzaRoute());
+
+    logger.debug('/utilizzi-stanza');
+    router.use('/utilizzi-stanza', utilizziStanzaRoute());
 
     logger.debug('/conti-ricavi-consumi');
     router.use('/conti-ricavi-consumi', contiRicaviConsumiRoute());
