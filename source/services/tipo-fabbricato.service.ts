@@ -11,7 +11,7 @@ export class TipoFabbricatoService extends TableService {
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
-        tipoFabbricato: Joi.string().min(1).required()
+        tipoFabbricato: Joi.string().min(1)
     };
 
     protected postValidatorExcludes = ['id'];

@@ -11,7 +11,7 @@ export class TipoStanzaService extends TableService {
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
-        tipoStanza: Joi.string().min(1).required()
+        tipoStanza: Joi.string().min(1)
     };
 
     protected postValidatorExcludes = ['id'];
