@@ -14,8 +14,8 @@ export default function (): Router {
         '/',
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
-            const contiRicaviConsumi = await tipoOspite.getTipiOspite(queryParams);
-            res.json(contiRicaviConsumi);
+            const tipiOspite = await tipoOspite.getTipiOspite(queryParams);
+            res.json(tipiOspite);
         })
     );
 
@@ -24,8 +24,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const queryParams = req.query;
-            const contoRicaviConsumi = await tipoOspite.getTipoOspiteById(id, queryParams);
-            res.json(contoRicaviConsumi);
+            const tipiOspite = await tipoOspite.getTipoOspiteById(id, queryParams);
+            res.json(tipiOspite);
         })
     );
 
@@ -34,8 +34,8 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const queryParams = req.query;
-            const contoRicaviConsumi = await tipoOspite.getTipoOspiteBySigla(sigla, queryParams);
-            res.json(contoRicaviConsumi);
+            const tipiOspite = await tipoOspite.getTipoOspiteBySigla(sigla, queryParams);
+            res.json(tipiOspite);
         })
     );
 
