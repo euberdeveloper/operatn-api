@@ -149,7 +149,7 @@ model DipartimentoUnitn {
     nCivico   String  @map("n_civico")
     sitoWeb   String  @map("sito_web")
 
-    creatoIl  DateTime  @default(now()) @map("_creato_il")
+    dataCreazione  DateTime  @default(now()) @map("_data_creazione")
     eliminato DateTime? @map("_eliminato")
 
     Ospite Ospite[]
