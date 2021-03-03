@@ -275,8 +275,8 @@ enum Piano {
 model Tariffa {
     id Int @id @default(autoincrement()) @map("id")
 
-    idTipoUtente Int        @map("id_tipo_utente")
-    tipoUtente   TipoUtente @relation(fields: [idTipoUtente], references: [id])
+    idTipoOspite Int        @map("id_tipo_ospite")
+    tipoOspite   TipoOspite @relation(fields: [idTipoOspite], references: [id])
 
     idUtilizzoStanza Int            @map("id_utilizzo_stanza")
     utilizzoStanza   UtilizzoStanza @relation(fields: [idUtilizzoStanza], references: [id])
@@ -294,7 +294,7 @@ model Tariffa {
     validaAl  DateTime? @map("valida_al")
 
     Contratto Contratto[]
-    @@unique([idTipoUtente, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa])
+    @@unique([idTipoOspite, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa])
     @@map("tariffa")
 }
 
@@ -306,10 +306,10 @@ model UtilizzoStanza {
     @@map("utilizzo_stanza")
 }
 
-model TipoUtente {
+model TipoOspite {
     id         Int    @id @default(autoincrement()) @map("id")
     sigla      String @unique @map("sigla")
-    tipoUtente String @unique @map("tipo_utente")
+    tipoOspite String @unique @map("tipo_ospite")
 
     idContoRicaviConsumi Int                @map("id_conto_ricavi_consumi")
     contoRicaviConsumi   ContoRicaviConsumi @relation(fields: [idContoRicaviConsumi], references: [id])
@@ -318,7 +318,7 @@ model TipoUtente {
     contoRicaviCanoni   ContoRicaviCanoni @relation(fields: [idContoRicaviCanoni], references: [id])
 
     Tariffa Tariffa[]
-    @@map("tipo_utente")
+    @@map("tipo_ospite")
 }
 
 model TipoTariffa {
@@ -432,8 +432,8 @@ model ContoRicaviConsumi {
     codice             String @unique @map("codice")
     contoRicaviConsumi String @unique @map("conto_ricavi_consumi")
 
-    TipoUtente TipoUtente[]
     @@map("conto_ricavi_consumi")
+    TipoOspite TipoOspite[]
 }
 
 model ContoRicaviCanoni {
@@ -441,8 +441,8 @@ model ContoRicaviCanoni {
     codice            String @unique @map("codice")
     contoRicaviCanoni String @unique @map("conto_ricavi_canoni")
 
-    TipoUtente TipoUtente[]
     @@map("conto_ricavi_canoni")
+    TipoOspite TipoOspite[]
 }
 
 // BOLLETTA
