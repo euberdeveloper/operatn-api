@@ -65,13 +65,11 @@ export class TariffaService extends TableService {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
             const tariffa = this.validatePutBody(body);
-            console.log('cazzo')
-            const det = await this.model.upsert({
+            await this.model.upsert({
                 where: { id },
                 create: { id, ...tariffa },
                 update: tariffa
             });
-            console.log('merda', det)
         });
     }
 
