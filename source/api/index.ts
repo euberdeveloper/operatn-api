@@ -14,6 +14,7 @@ import tipiBollettaRouter from './routes/tipi-bolletta/tipi-bolletta.route';
 import tipiOspiteRouter from './routes/tipi-ospite/tipi-ospite.route';
 import quietanziantiRouter from './routes/quietanzianti/quietanzianti.route';
 import tariffeRouter from './routes/tariffe/tariffe.route';
+import diparitmentiUnitnRouter from './routes/dipartimenti-unitn/dipartimenti-unitn.route';
 
 export default function (): Router {
     const router = Router();
@@ -56,6 +57,9 @@ export default function (): Router {
 
     logger.debug('/tariffe');
     router.use('/tariffe', tariffeRouter());
+
+    logger.debug('/dipartimenti-unitn');
+    router.use('/dipartimenti-unitn', diparitmentiUnitnRouter());
 
     return router;
 }
