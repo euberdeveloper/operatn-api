@@ -1,41 +1,45 @@
 import { Router } from 'express';
 import logger from '@/utils/logger';
 
-import authRoute from './routes/auth/auth.route';
-import fabbricatiRoute from './routes/fabbricati/fabbricati.route';
-import tipiFabbricatoRoute from './routes/tipi-fabbricato/tipi-fabbricato.route';
-import tipiStanzaRoute from './routes/tipi-stanza/tipi-stanza.route';
-import utilizziStanzaRoute from './routes/utilizzi-stanza/utilizzi-stanza.route';
-import contiRicaviConsumiRoute from './routes/conti-ricavi-consumi/conti-ricavi-consumi.route';
-import contiRicaviCanoniRoute from './routes/conti-ricavi-canoni/conti-ricavi-canoni.route';
-import tipiTariffaRoute from './routes/tipi-tariffa/tipi-tariffa.route';
+import authRouter from './routes/auth/auth.route';
+import fabbricatiRouter from './routes/fabbricati/fabbricati.route';
+import tipiFabbricatoRouter from './routes/tipi-fabbricato/tipi-fabbricato.route';
+import tipiStanzaRouter from './routes/tipi-stanza/tipi-stanza.route';
+import utilizziStanzaRouter from './routes/utilizzi-stanza/utilizzi-stanza.route';
+import contiRicaviConsumiRouter from './routes/conti-ricavi-consumi/conti-ricavi-consumi.route';
+import contiRicaviCanoniRouter from './routes/conti-ricavi-canoni/conti-ricavi-canoni.route';
+import tipiTariffaRouter from './routes/tipi-tariffa/tipi-tariffa.route';
+import quietanziantiRouter from './routes/quietanzianti/quietanzianti.route';
 
 export default function (): Router {
     const router = Router();
 
     logger.debug('/auth');
-    router.use('/auth', authRoute());
+    router.use('/auth', authRouter());
 
     logger.debug('/fabbricati');
-    router.use('/fabbricati', fabbricatiRoute());
+    router.use('/fabbricati', fabbricatiRouter());
 
     logger.debug('/tipi-fabbricato');
-    router.use('/tipi-fabbricato', tipiFabbricatoRoute());
+    router.use('/tipi-fabbricato', tipiFabbricatoRouter());
 
     logger.debug('/tipi-stanza');
-    router.use('/tipi-stanza', tipiStanzaRoute());
+    router.use('/tipi-stanza', tipiStanzaRouter());
 
     logger.debug('/utilizzi-stanza');
-    router.use('/utilizzi-stanza', utilizziStanzaRoute());
+    router.use('/utilizzi-stanza', utilizziStanzaRouter());
 
     logger.debug('/conti-ricavi-consumi');
-    router.use('/conti-ricavi-consumi', contiRicaviConsumiRoute());
+    router.use('/conti-ricavi-consumi', contiRicaviConsumiRouter());
 
     logger.debug('/conti-ricavi-canoni');
-    router.use('/conti-ricavi-canoni', contiRicaviCanoniRoute());
+    router.use('/conti-ricavi-canoni', contiRicaviCanoniRouter());
 
     logger.debug('/tipi-tariffa');
-    router.use('/tipi-tariffa', tipiTariffaRoute());
+    router.use('/tipi-tariffa', tipiTariffaRouter());
+
+    logger.debug('/quietanzianti');
+    router.use('/quietanzianti', quietanziantiRouter());
 
     return router;
 }
