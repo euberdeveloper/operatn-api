@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-const softDeletables = ['Fabbricato', 'Stanza', 'PostoLetto'];
+const softDeletables = ['Fabbricato', 'Stanza', 'PostoLetto', 'Tariffa'];
 
 prisma.$use(async (params, next) => {
     if (params.model && softDeletables.includes(params.model)) {
@@ -33,7 +33,11 @@ prisma.$use(async (params, next) => {
                 const uniqueGroups = Object.keys(params.args.where)
                     .filter(key => key.includes('_'))
                     .reduce((acc, curr) => ({ ...acc, ...params.args.where[curr] }), {});
-                params.args.where = { ...uniqueGroups, eliminato: null };
+                // Otherwise, it is normal
+                const normal = Object.keys(params.args.where)
+                    .filter(key => !key.includes('_'))
+                    .reduce((acc, curr) => ({ ...acc, [curr]: params.args.where[curr] }), {});
+                params.args.where = { eliminato: null, ...uniqueGroups, ...normal };
                 break;
             case 'findFirst':
                 if (params.args.where !== undefined && params.args.where.eliminato === undefined) {
