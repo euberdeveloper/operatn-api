@@ -290,7 +290,7 @@ model Tariffa {
     prezzoConsumi Float @map("prezzo_consumi")
     prezzoCanoni  Float @map("prezzo_canone")
 
-    dataCreazione DateTime  @map("_data_creazione")
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
     Contratto Contratto[]
