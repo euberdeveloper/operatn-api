@@ -87,11 +87,15 @@ model Presidente {
     firma             String   @map("firma")
     persona           Persona  @relation(fields: [id], references: [id])
 
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
+
     @@map("presidente")
 }
 
 model Ospite {
     id                 Int                @id @map("id")
+    idGiada            Int?               @unique @map("id_giada")
     email              String             @map("email")
     telefonoPrincipale String?            @map("telefono_principale")
     telefonoSecondario String?            @map("telefono_secondario")
@@ -106,6 +110,9 @@ model Ospite {
     possiedeCauzione Boolean @default(false) @map("possiede_cauzione")
 
     persona Persona @relation(fields: [id], references: [id])
+
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
 
     ContrattoSuOspite ContrattoSuOspite[]
     Bolletta          Bolletta[]
