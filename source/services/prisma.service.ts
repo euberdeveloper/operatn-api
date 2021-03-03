@@ -45,11 +45,18 @@ prisma.$use(async (params, next) => {
                 }
                 break;
             case 'findMany':
-                if (params.args.where !== undefined) {
+                // If there are not args (I do not know why, it happens but is should not), add the args, the where and the eliminato
+                if (params.args === undefined) {
+                    params.args = { where: { eliminato: null } };
+                }
+                // If there is where, add only the eliminato
+                else if (params.args.where !== undefined) {
                     if (params.args.where.eliminato === undefined) {
                         params.args.where.eliminato = null;
                     }
-                } else {
+                }
+                // Otherwise add the where and the eliminato
+                else {
                     params.args.where = { eliminato: null };
                 }
                 break;
