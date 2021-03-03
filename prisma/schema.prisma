@@ -290,11 +290,11 @@ model Tariffa {
     prezzoConsumi Float @map("prezzo_consumi")
     prezzoCanoni  Float @map("prezzo_canone")
 
-    validaDal DateTime  @map("valida_dal")
-    validaAl  DateTime? @map("valida_al")
+    dataCreazione DateTime  @map("_data_creazione")
+    eliminato  DateTime? @map("_eliminato")
 
     Contratto Contratto[]
-    @@unique([idTipoOspite, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa])
+    @@unique([idTipoOspite, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa, eliminato])
     @@map("tariffa")
 }
 
