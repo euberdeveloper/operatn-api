@@ -24,9 +24,9 @@ model Persona {
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
+    ContrattoSuOspite ContrattoSuOspite[]
     Presidente        Presidente[]
     Ospite            Ospite[]
-    ContrattoSuOspite ContrattoSuOspite[]
     @@map("persona")
 }
 
@@ -291,7 +291,7 @@ model Tariffa {
     prezzoCanoni  Float @map("prezzo_canone")
 
     dataCreazione DateTime  @map("_data_creazione")
-    eliminato  DateTime? @map("_eliminato")
+    eliminato     DateTime? @map("_eliminato")
 
     Contratto Contratto[]
     @@unique([idTipoOspite, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa, eliminato])
@@ -432,8 +432,8 @@ model ContoRicaviConsumi {
     codice             String @unique @map("codice")
     contoRicaviConsumi String @unique @map("conto_ricavi_consumi")
 
-    @@map("conto_ricavi_consumi")
     TipoOspite TipoOspite[]
+    @@map("conto_ricavi_consumi")
 }
 
 model ContoRicaviCanoni {
@@ -441,8 +441,8 @@ model ContoRicaviCanoni {
     codice            String @unique @map("codice")
     contoRicaviCanoni String @unique @map("conto_ricavi_canoni")
 
-    @@map("conto_ricavi_canoni")
     TipoOspite TipoOspite[]
+    @@map("conto_ricavi_canoni")
 }
 
 // BOLLETTA
