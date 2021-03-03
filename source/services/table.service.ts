@@ -1,6 +1,12 @@
 import * as Joi from 'joi';
 
-import { InvalidBodyError, InvalidIdError, InvalidPathParamError, InvalidQueryParamError, NotFoundError } from '@/errors';
+import {
+    InvalidBodyError,
+    InvalidIdError,
+    InvalidPathParamError,
+    InvalidQueryParamError,
+    NotFoundError
+} from '@/errors';
 import logger from '@/utils/logger';
 
 export abstract class TableService {
@@ -133,10 +139,17 @@ export abstract class TableService {
         return result;
     }
 
-    protected async checkIfExistsById(id: number): Promise<void> {
+    protected async checkIfExistsById(id: number, tableName = 'Resource'): Promise<void> {
         const tupleExists = await this.model.findUnique({ where: { id } });
         if (!tupleExists) {
-            throw new NotFoundError();
+            throw new NotFoundError(`${tableName} not found`);
+        }
+    }
+
+    protected async checkIfExistsByParam(param: string, paramName: string, tableName = 'Resource'): Promise<void> {
+        const tupleExists = await this.model.findUnique({ where: { [paramName]: param } });
+        if (!tupleExists) {
+            throw new NotFoundError(`${tableName} not found`);
         }
     }
 }
