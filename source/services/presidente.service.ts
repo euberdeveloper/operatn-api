@@ -98,7 +98,7 @@ export class PresidenteService extends TableService {
             dataInizioMandato: body.dataInizioMandato
         } as any;
         result.persona = {
-            connectOrCreate: {
+            create: {
                 id: body.id,
                 nome: body.nome,
                 cognome: body.cognome,
@@ -107,11 +107,9 @@ export class PresidenteService extends TableService {
                 codiceFiscale: body.codiceFiscale
             }
         };
-        result.persona.connectOrCreate.luogoDiNascita = body.luogoDiNascita
-            ? { connectOrCreate: body.luogoDiNascita }
-            : undefined;
-        result.persona.connectOrCreate.residenza = body.residenza ? { connectOrCreate: body.residenza } : undefined;
-        result.persona.connectOrCreate.domicili = body.domicili ? { createMany: { data: body.domicili } } : undefined;
+        result.persona.create.luogoDiNascita = body.luogoDiNascita ? { create: body.luogoDiNascita } : undefined;
+        result.persona.create.residenza = body.residenza ? { create: body.residenza } : undefined;
+        result.persona.create.domicili = body.domicili ? { createMany: { data: body.domicili } } : undefined;
         return result;
     }
 
