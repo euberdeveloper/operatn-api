@@ -51,7 +51,9 @@ export class PresidenteService extends TableService {
             provincia: Joi.string().alphanum().length(2).optional(),
             comune: Joi.string().min(1),
             istatComune: Joi.string().pattern(/^\d+$/).length(6).optional()
-        }).optional(),
+        })
+            .allow(null)
+            .optional(),
         residenza: Joi.object({
             stato: Joi.string().alphanum().length(2),
             provincia: Joi.string().alphanum().length(2).optional(),
@@ -101,7 +103,8 @@ export class PresidenteService extends TableService {
                 nome: body.nome,
                 cognome: body.cognome,
                 dataDiNascita: body.dataDiNascita,
-                sesso: body.sesso
+                sesso: body.sesso,
+                codiceFiscale: body.codiceFiscale
             }
         };
         result.persona.connectOrCreate.luogoDiNascita = body.luogoDiNascita
@@ -123,12 +126,26 @@ export class PresidenteService extends TableService {
                 nome: body.nome,
                 cognome: body.cognome,
                 dataDiNascita: body.dataDiNascita,
-                sesso: body.sesso
+                sesso: body.sesso,
+                codiceFiscale: body.codiceFiscale
             }
         };
-        result.persona.create.luogoDiNascita = body.luogoDiNascita ? { create: body.luogoDiNascita } : undefined;
-        result.persona.create.residenza = body.residenza ? { create: body.residenza } : undefined;
-        result.persona.create.domicili = body.domicili ? { createMany: { data: body.domicili } } : undefined;
+        result.persona.update.luogoDiNascita = body.luogoDiNascita
+            ? { upsert: { create: body.luogoDiNascita, update: body.luogoDiNascita } }
+            : { delete: true };
+        result.persona.update.residenza = body.residenza
+            ? { upsert: { create: body.residenza, update: body.residenza } }
+            : { delete: true };
+        result.persona.update.domicili = body.domicili
+            ? {
+                  deleteMany: {
+                      idPersona: body.id
+                  },
+                  createMany: {
+                      data: body.domicili
+                  }
+              }
+            : undefined;
         return result;
     }
 
@@ -155,7 +172,6 @@ export class PresidenteService extends TableService {
     public async postPresidente(body: any): Promise<number> {
         return handlePrismaError(async () => {
             const presidente = this.validatePostBody(body);
-            // console.log(JSON.stringify(this.handlePresidenteBody(presidente), null, 2));
             const created = await this.model.create({ data: this.handlePresidenteBodyCreate(presidente) });
             return created.id;
         });
@@ -165,23 +181,10 @@ export class PresidenteService extends TableService {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
             const presidente = this.validatePatchBody(body);
-            await this.checkIfExistsById(id);
+            await this.checkIfExistsById(id, 'Presidente');
             await this.model.update({
                 where: { id },
-                data: {
-                    persona: {
-                        update: {
-                            sesso: body.sesso,
-                            luogoDiNascita: {
-                                upsert: {
-                                    create: {} as any,
-                                    update: {}
-                                }
-                            },
-
-                        }
-                    }
-                }
+                data: this.handlePresidenteBodyUpdate(presidente)
             });
         });
     }
@@ -189,8 +192,12 @@ export class PresidenteService extends TableService {
     public async delPresidenteById(id: number): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
-            await this.checkIfExistsById(id);
-            await this.model.delete({ where: { id } });
+            await this.checkIfExistsById(id, 'Presidente');
+
+            const deletePresidente = this.model.delete({ where: { id } });
+            const deletePersona = prisma.persona.delete({ where: { id } });
+
+            await prisma.$transaction([deletePresidente, deletePersona]);
         });
     }
 }

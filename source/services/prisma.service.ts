@@ -2,7 +2,16 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-const softDeletables = ['Fabbricato', 'Stanza', 'PostoLetto', 'Tariffa', 'DipartimentoUnitn'];
+const softDeletables = [
+    'Fabbricato',
+    'Stanza',
+    'PostoLetto',
+    'Tariffa',
+    'DipartimentoUnitn',
+    'Presidente',
+    'Persona',
+    'Ospite'
+];
 
 prisma.$use(async (params, next) => {
     if (params.model && softDeletables.includes(params.model)) {
