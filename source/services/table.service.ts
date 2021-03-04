@@ -55,7 +55,7 @@ export abstract class TableService {
         }
     }
 
-    private validateBody<T>(schema: Joi.Schema, body: any): T {
+    protected validateBody<T>(schema: Joi.Schema, body: any): T {
         const result = schema.validate(body);
 
         if (result.error) {

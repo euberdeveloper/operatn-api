@@ -2,11 +2,11 @@ import prisma, { Prisma } from '@/services/prisma.service';
 import * as bcrypt from 'bcrypt';
 import * as Joi from 'joi';
 
-import { NotFoundError } from '@/errors';
+import { NotFoundError, UserNotAuthorizedError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 
 import { TableService } from './table.service';
-import { RuoloUtente } from '@prisma/client';
+import { RuoloUtente, Utente } from '@prisma/client';
 
 import CONFIG from '@/config';
 
@@ -25,9 +25,14 @@ export class UtenteService extends TableService {
         email: Joi.string().email(),
         ruolo: Joi.string().valid(...Object.values(RuoloUtente))
     };
+    private readonly changeRoleValidator = Joi.object({
+        ruolo: Joi.string()
+            .valid(...Object.values(RuoloUtente))
+            .required()
+    }).required();
     protected postValidatorExcludes = [];
-    protected putValidatorExcludes = ['id'];
-    protected patchValidatorExcludes = [];
+    protected putValidatorExcludes = [];
+    protected patchValidatorExcludes = ['ruolo'];
 
     private readonly selectedColumns = { uid: true, nomeUtente: true, email: true, ruolo: true };
 
@@ -74,21 +79,12 @@ export class UtenteService extends TableService {
         });
     }
 
-    public async putUtenteByUid(uid: string, body: any): Promise<void> {
+    public async patchUtenteByUid(utenteRichiesta: Utente, uid: string, body: any): Promise<void> {
         return handlePrismaError(async () => {
-            this.validateStringParam(uid, 'uid');
-            const utente = this.validatePutBody(body);
-            utente.password = this.hashPassword(utente.password);
-            await this.model.upsert({
-                where: { uid },
-                create: { uid, ...utente },
-                update: utente
-            });
-        });
-    }
+            if (utenteRichiesta.uid !== uid) {
+                throw new UserNotAuthorizedError('You are not the user you are trying to change');
+            }
 
-    public async patchUtenteByUid(uid: string, body: any): Promise<void> {
-        return handlePrismaError(async () => {
             this.validateStringParam(uid, 'uid');
             const utente = this.validatePatchBody(body);
             utente.password = utente.password ? this.hashPassword(utente.password) : undefined;
@@ -100,14 +96,50 @@ export class UtenteService extends TableService {
         });
     }
 
-    public async patchUtenteByNomeUtente(nomeUtente: string, body: any): Promise<void> {
+    public async patchUtenteByNomeUtente(utenteRichiesta: Utente, nomeUtente: string, body: any): Promise<void> {
         return handlePrismaError(async () => {
+            if (utenteRichiesta.nomeUtente !== nomeUtente) {
+                throw new UserNotAuthorizedError('You are not the user you are trying to change');
+            }
+
             this.validateStringParam(nomeUtente, 'nomeUtente');
             const utente = this.validatePatchBody(body);
             await this.checkIfExistsByParam(nomeUtente, 'nomeUtente', 'Utente');
             await this.model.update({
                 where: { nomeUtente },
                 data: utente
+            });
+        });
+    }
+
+    public async changeUtenteRoleByUid(utenteRichiesta: Utente, uid: string, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            const { ruolo } = this.validateBody(this.changeRoleValidator, body);
+
+            const vecchioUtente = await this.getUtenteByUid(uid);
+            if (utenteRichiesta.uid !== uid && vecchioUtente.ruolo === RuoloUtente.ADMIN) {
+                throw new UserNotAuthorizedError('You are not authorized to change the role of another admin');
+            }
+
+            await this.model.update({
+                where: { uid },
+                data: { ruolo }
+            });
+        });
+    }
+
+    public async changeUtenteRoleByNomeUtente(utenteRichiesta: Utente, nomeUtente: string, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            const { ruolo } = this.validateBody(this.changeRoleValidator, body);
+
+            const vecchioUtente = await this.getUtenteByNomeUtente(nomeUtente);
+            if (utenteRichiesta.nomeUtente !== nomeUtente && vecchioUtente.ruolo === RuoloUtente.ADMIN) {
+                throw new UserNotAuthorizedError('You are not authorized to change the role of another admin');
+            }
+
+            await this.model.update({
+                where: { nomeUtente },
+                data: { ruolo }
             });
         });
     }

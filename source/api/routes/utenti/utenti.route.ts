@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import * as passport from 'passport';
 
-import { RuoloUtente } from '@prisma/client';
+import { RuoloUtente, Utente } from '@prisma/client';
 import permission from '@/utils/permission';
 import asyncHandler from '@/utils/asyncHandler';
 import utenteService from '@/services/utente.service';
@@ -46,24 +46,14 @@ export default function (): Router {
         })
     );
 
-    router.put(
-        '/:uid',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const uid = req.params.uid;
-            const body = req.body;
-            await utenteService.putUtenteByUid(uid, body);
-            res.json();
-        })
-    );
-
     router.patch(
         '/:uid',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
             const uid = req.params.uid;
             const body = req.body;
-            await utenteService.patchUtenteByUid(uid, body);
+            await utenteService.patchUtenteByUid(utente, uid, body);
             res.json();
         })
     );
@@ -72,9 +62,34 @@ export default function (): Router {
         '/username/:username',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
             const username = req.params.username;
             const body = req.body;
-            await utenteService.patchUtenteByNomeUtente(username, body);
+            await utenteService.patchUtenteByNomeUtente(utente, username, body);
+            res.json();
+        })
+    );
+
+    router.patch(
+        '/:uid/ruolo',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
+            const uid = req.params.uid;
+            const body = req.body;
+            await utenteService.changeUtenteRoleByUid(utente, uid, body);
+            res.json();
+        })
+    );
+
+    router.patch(
+        '/username/:username/ruolo',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
+            const username = req.params.username;
+            const body = req.body;
+            await utenteService.changeUtenteRoleByNomeUtente(utente, username, body);
             res.json();
         })
     );
