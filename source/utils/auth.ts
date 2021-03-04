@@ -3,14 +3,14 @@ import { Handler } from 'express';
 import { Strategy as LocalStrategy } from 'passport-local';
 import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 
-import utenteSerivice from '@/services/utente.service';
+import authService from '@/services/auth.service';
 import CONFIG from '@/config';
 
 export default function (): Handler {
     passport.use(
         new LocalStrategy((username, password, done) => {
             async function authenticate() {
-                const utente = await utenteSerivice.verifyUsernameAndPassword(username, password);
+                const utente = await authService.verifyUsernameAndPassword(username, password);
                 return utente;
             }
 
@@ -28,7 +28,7 @@ export default function (): Handler {
             },
             (jwtPayload, done) => {
                 async function authenticate() {
-                    const utente = await utenteSerivice.verifyUserWithJwt(jwtPayload);
+                    const utente = await authService.verifyUserWithJwt(jwtPayload);
                     return utente;
                 }
 
