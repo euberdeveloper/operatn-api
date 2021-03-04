@@ -79,8 +79,10 @@ prisma.$use(async (params, next) => {
                 }
                 break;
             case 'update':
-                params.action = 'updateMany';
-                params.args.where.eliminato = null;
+                if (!['Presidente', 'Ospite'].includes(params.model)) {
+                    params.action = 'updateMany';
+                    params.args.where.eliminato = null;
+                }
                 break;
             case 'updateMany':
                 if (params.args.where !== undefined) {
