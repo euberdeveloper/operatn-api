@@ -84,7 +84,7 @@ model Presidente {
     id                Int      @id @map("id")
     dataInizioMandato DateTime @map("data_inizio_mandato")
     dataFineMandato   DateTime @map("data_fine_mandato")
-    firma             String?   @map("firma")
+    firma             String?  @map("firma")
     persona           Persona  @relation(fields: [id], references: [id])
 
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
@@ -545,6 +545,9 @@ model Utente {
     email                 String      @map("email")
     ruolo                 RuoloUtente @map("ruolo")
     tokenRecuperoPassword String?     @map("token_recupero_password")
+
+    dataCreazione DateTime  @default(now()) @map("_data_creazione")
+    eliminato     DateTime? @map("_eliminato")
 
     Cronologia Cronologia[]
 
