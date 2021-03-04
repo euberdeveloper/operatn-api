@@ -44,7 +44,7 @@ export class OspiteService extends TableService {
         'documentoIdentita',
         'dipartimentoUnitn'
     ].sort();
-    protected readonly includeQueryParametersSoftCheck = ['dipartimentoUnitn'];
+    protected readonly includeQueryParametersSoftCheck = [];
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
@@ -60,8 +60,6 @@ export class OspiteService extends TableService {
         telefonoPrincipale: Joi.string().min(1).allow(null).optional(),
         telefonoSecondario: Joi.string().min(1).allow(null).optional(),
         cittadinanza: Joi.string().min(1),
-        dataInizioMandato: Joi.date().iso(),
-        dataFineMandato: Joi.date().iso().greater(Joi.ref('dataInizioMandato')),
         luogoDiNascita: Joi.object({
             stato: Joi.string().alphanum().length(2),
             provincia: Joi.string().alphanum().length(2).allow(null).optional(),
@@ -137,7 +135,7 @@ export class OspiteService extends TableService {
             cittadinanza: body.cittadinanza
         };
         result.persona = {
-            connectOrCreate: {
+            create: {
                 id: body.id,
                 nome: body.nome,
                 cognome: body.cognome,
@@ -146,16 +144,14 @@ export class OspiteService extends TableService {
                 codiceFiscale: body.codiceFiscale
             }
         };
-        result.persona.connectOrCreate.luogoDiNascita = body.luogoDiNascita
-            ? { connectOrCreate: body.luogoDiNascita }
-            : undefined;
-        result.persona.connectOrCreate.residenza = body.residenza ? { connectOrCreate: body.residenza } : undefined;
-        result.persona.connectOrCreate.domicili = body.domicili ? { createMany: { data: body.domicili } } : undefined;
+        result.persona.create.luogoDiNascita = body.luogoDiNascita ? { create: body.luogoDiNascita } : undefined;
+        result.persona.create.residenza = body.residenza ? { create: body.residenza } : undefined;
+        result.persona.create.domicili = body.domicili ? { createMany: { data: body.domicili } } : undefined;
         result.dipartimentoUnitn = body.codiceDipartimentoUnitn
             ? { connect: { codice: body.codiceDipartimentoUnitn } }
             : undefined;
-        result.documentoIdentita = body.documentoIdentita ? { connectOrCreate: body.documentoIdentita } : undefined;
-        result.contoCorrente = body.contoCorrente ? { connectOrCreate: body.contoCorrente } : undefined;
+        result.documentoIdentita = body.documentoIdentita ? { create: body.documentoIdentita } : undefined;
+        result.contoCorrente = body.contoCorrente ? { create: body.contoCorrente } : undefined;
         return result;
     }
 
@@ -239,6 +235,7 @@ export class OspiteService extends TableService {
             this.validateId(id, 'id');
             const ospite = this.validatePatchBody(body);
             await this.checkIfExistsById(id, 'Ospite');
+            console.log(JSON.stringify(this.handleOspiteBodyUpdate(ospite), null, 2))
             await this.model.update({
                 where: { id },
                 data: this.handleOspiteBodyUpdate(ospite)

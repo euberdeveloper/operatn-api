@@ -16,6 +16,7 @@ import quietanziantiRouter from './routes/quietanzianti/quietanzianti.route';
 import tariffeRouter from './routes/tariffe/tariffe.route';
 import diparitmentiUnitnRouter from './routes/dipartimenti-unitn/dipartimenti-unitn.route';
 import presidentiRouter from './routes/presidenti/presidenti.route';
+import ospitiRouter from './routes/ospiti/ospiti.route';
 
 export default function (): Router {
     const router = Router();
@@ -64,6 +65,9 @@ export default function (): Router {
 
     logger.debug('/presidenti');
     router.use('/presidenti', presidentiRouter());
+
+    logger.debug('/ospiti');
+    router.use('/ospiti', ospitiRouter());
 
     return router;
 }
