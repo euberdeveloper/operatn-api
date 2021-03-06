@@ -183,8 +183,8 @@ model Fabbricato {
     eliminato     DateTime? @map("_eliminato")
 
     stanze Stanza[]
-    @@unique([codice, eliminato])
-    @@unique([nome, eliminato])
+    @@unique([codice])
+    @@unique([nome])
     @@map("fabbricato")
 }
 
@@ -222,7 +222,7 @@ model Stanza {
     manutenzioni Manutenzione[]
     postiLetto   PostoLetto[]
 
-    @@unique([idFabbricato, unitaImmobiliare, numeroStanza, eliminato])
+    @@unique([idFabbricato, unitaImmobiliare, numeroStanza])
     @@map("stanza")
 }
 
@@ -259,7 +259,7 @@ model PostoLetto {
     eliminato     DateTime? @map("_eliminato")
 
     ContrattoSuOspiteSuPostoLetto ContrattoSuOspiteSuPostoLetto[]
-    @@unique([idStanza, postoLetto, eliminato])
+    @@unique([idStanza, postoLetto])
     @@map("posto_letto")
 }
 

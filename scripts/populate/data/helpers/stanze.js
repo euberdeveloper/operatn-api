@@ -61,7 +61,7 @@ async function main() {
             postiLetto.push({
                 stanza: {
                     connect: {
-                        idFabbricatoUnitaImmobiliareNumeroStanza: {
+                        idFabbricato_unitaImmobiliare_numeroStanza: {
                             idFabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
                             unitaImmobiliare: a.codice_unita_immobiliare,
                             numeroStanza: a.numero_stanza
@@ -75,26 +75,26 @@ async function main() {
             postiLetto.push({
                 stanza: {
                     connect: {
-                        idFabbricatoUnitaImmobiliareNumeroStanza: {
+                        idFabbricato_unitaImmobiliare_numeroStanza: {
                             idFabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
                             unitaImmobiliare: a.codice_unita_immobiliare,
                             numeroStanza: a.numero_stanza
                         }
                     }
                 },
-                posto_letto: 'A'
+                postoLetto: 'A'
             });
             postiLetto.push({
                 stanza: {
                     connect: {
-                        idFabbricatoUnitaImmobiliareNumeroStanza: {
+                        idFabbricato_unitaImmobiliare_numeroStanza: {
                             idFabbricato: getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw),
                             unitaImmobiliare: a.codice_unita_immobiliare,
                             numeroStanza: a.numero_stanza
                         }
                     }
                 },
-                posto_letto: 'B'
+                postoLetto: 'B'
             });
         }
     }
