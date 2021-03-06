@@ -25,7 +25,7 @@ function getFabbricato(a, fabbricatiRaw) {
 
 function getIdFabbricato(a, fabbricatiRaw, fabbricatiNewRaw) {
     const f = +fabbricatiRaw.find(f => a.id_anagrafica_fabbricato === f.id).codice_fabbricato;
-    return +fabbricatiNewRaw.find(el => +el.oldCode === f).id;
+    return +fabbricatiNewRaw.find(el => +el.old_code === f).id;
 }
 
 
