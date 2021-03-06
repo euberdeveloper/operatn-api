@@ -24,9 +24,8 @@ model Persona {
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
-    ContrattoSuOspite ContrattoSuOspite[]
-    Presidente        Presidente[]
-    Ospite            Ospite[]
+    Presidente Presidente[]
+    Ospite     Ospite[]
     @@map("persona")
 }
 
@@ -259,7 +258,7 @@ model PostoLetto {
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
-    ContrattoSuPostoLetto ContrattoSuPostoLetto[]
+    ContrattoSuOspiteSuPostoLetto ContrattoSuOspiteSuPostoLetto[]
     @@unique([idStanza, postoLetto, eliminato])
     @@map("posto_letto")
 }
@@ -348,9 +347,7 @@ model Contratto {
     dataContabilizzazione  DateTime? @map("data_contabilizzazione")
     dataChiusuraAnticipata DateTime? @map("data_chiusura_anticipata")
 
-    checkout     Float?    @map("checkout")
-    dataCheckin  DateTime  @map("data_checkin")
-    dataCheckout DateTime? @map("data_checkout")
+    checkout Float? @map("checkout")
 
     cauzione Float? @map("cauzione")
 
@@ -366,8 +363,7 @@ model Contratto {
     idQuietanziante Int           @map("id_quietanziante")
     quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
 
-    ospiti     ContrattoSuOspite[]
-    postiLetto ContrattoSuPostoLetto[]
+    contrattiSuOspite ContrattoSuOspite[]
 
     Bolletta Bolletta[]
     @@map("contratto")
@@ -380,21 +376,28 @@ model ContrattoSuOspite {
     idOspite Int    @map("id_ospite")
     ospite   Ospite @relation(fields: [idOspite], references: [id])
 
-    Persona   Persona? @relation(fields: [personaId], references: [id])
-    personaId Int?
+    dataCheckin          DateTime? @map("data_checkin")
+    dataCheckout         DateTime? @map("data_checkout")
+    dataConsegnaChiavi   DateTime? @map("data_consegna_chiavi")
+    dataConsegnaBadge    DateTime? @map("data_consegna_badge")
+    dataConsegnaLenzuola DateTime? @map("data_consegna_lenzuola")
+
+    contrattiSuOspiteSuPostoLetto ContrattoSuOspiteSuPostoLetto[]
+
     @@id([idContratto, idOspite])
     @@map("contratto_su_ospite")
 }
 
-model ContrattoSuPostoLetto {
-    idContratto Int       @map("id_contratto")
-    contratto   Contratto @relation(fields: [idContratto], references: [id])
+model ContrattoSuOspiteSuPostoLetto {
+    idContratto       Int               @map("id_contratto")
+    idOspite          Int               @map("id_ospite")
+    contrattoSuOspite ContrattoSuOspite @relation(fields: [idContratto, idOspite], references: [idContratto, idOspite])
 
     idPostoLetto Int        @map("id_posto_letto")
     postoLetto   PostoLetto @relation(fields: [idPostoLetto], references: [id])
 
-    @@id([idContratto, idPostoLetto])
-    @@map("contratto_su_posto_letto")
+    @@id([idContratto, idOspite, idPostoLetto])
+    @@map("contratto_su_ospite_su_posto_letto")
 }
 
 model TipoRata {
@@ -457,6 +460,8 @@ model ContoRicaviCanoni {
 model Bolletta {
     id Int @id @default(autoincrement()) @map("id")
 
+    numero Int
+
     importoConsumi Float? @map("importo_consumi")
     importoCanoni  Float? @map("importo_canone")
     importoTotale  Float  @map("importo_totale")
@@ -485,6 +490,7 @@ model Bolletta {
     ospite   Ospite @relation(fields: [idOspite], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
+    @@unique([id, numero])
     @@map("bolletta")
 }
 
