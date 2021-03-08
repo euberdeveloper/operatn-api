@@ -24,6 +24,7 @@
     "bcrypt": "^5.0.0",
     "change-case": "^4.1.2",
     "cors": "^2.8.5",
+    "dayjs": "^1.10.4",
     "dotenv": "^8.2.0",
     "euberlog": "^2.0.9",
     "express": "^4.17.1",
