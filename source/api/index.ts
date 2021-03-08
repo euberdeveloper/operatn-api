@@ -9,7 +9,6 @@ import utilizziStanzaRouter from './routes/utilizzi-stanza/utilizzi-stanza.route
 import contiRicaviConsumiRouter from './routes/conti-ricavi-consumi/conti-ricavi-consumi.route';
 import contiRicaviCanoniRouter from './routes/conti-ricavi-canoni/conti-ricavi-canoni.route';
 import tipiTariffaRouter from './routes/tipi-tariffa/tipi-tariffa.route';
-import tipiRataRouter from './routes/tipi-rata/tipi-rata.route';
 import tipiBollettaRouter from './routes/tipi-bolletta/tipi-bolletta.route';
 import tipiOspiteRouter from './routes/tipi-ospite/tipi-ospite.route';
 import quietanziantiRouter from './routes/quietanzianti/quietanzianti.route';
@@ -45,9 +44,6 @@ export default function (): Router {
 
     logger.debug('/tipi-tariffa');
     router.use('/tipi-tariffa', tipiTariffaRouter());
-
-    logger.debug('/tipi-rata');
-    router.use('/tipi-rata', tipiRataRouter());
 
     logger.debug('/tipi-bolletta');
     router.use('/tipi-bolletta', tipiBollettaRouter());
