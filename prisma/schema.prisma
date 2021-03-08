@@ -113,8 +113,8 @@ model Ospite {
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
-    ContrattoSuOspite ContrattoSuOspite[]
-    Bolletta          Bolletta[]
+    contrattiSuOspite ContrattoSuOspite[]
+    bollette          Bolletta[]
     @@map("ospite")
 }
 
