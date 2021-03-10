@@ -206,8 +206,8 @@ export class ContrattoService extends TableService {
                 dataFine,
                 prezzoCanoni,
                 prezzoConsumi,
-                contoRicaviCanoni.contoRicaviCanoni,
-                contoRicaviConsumi.contoRicaviConsumi,
+                contoRicaviCanoni.codice,
+                contoRicaviConsumi.codice,
                 tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
                 id
             );
