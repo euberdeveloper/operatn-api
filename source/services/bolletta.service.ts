@@ -1,4 +1,9 @@
 import * as dayjs from 'dayjs';
+import * as utc from 'dayjs/plugin/utc';
+import * as timezone from 'dayjs/plugin/timezone';
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
 import prisma, { Prisma, Bolletta, TipoRata } from '@/services/prisma.service';
 
 import { InternalServerError, NotFoundError } from '@/errors';
@@ -63,7 +68,8 @@ export class BollettaService extends TableService {
         }
     }
     private resetTime(date: dayjs.Dayjs): dayjs.Dayjs {
-        return date.hour(0).minute(0).second(0).millisecond(0);
+        //Etc/UTC
+        return date.hour(0).minute(0).second(0).millisecond(0).utc();
     }
     // endOfMonth sets the hours to 23:59:59.999
     private lastDayOfMonth(date: dayjs.Dayjs): dayjs.Dayjs {
@@ -141,9 +147,10 @@ export class BollettaService extends TableService {
                 currentDate = beginsWithTotalMonth
                     ? currentDate
                     : this.lastDayOfMonth(currentDate).add(1, 'day').date(1);
-                currentDate.year() <= endDate.year() &&
-                ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
-                    currentDate.month() < endDate.month());
+                currentDate.year() < endDate.year() ||
+                (currentDate.year() === endDate.year() &&
+                    ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
+                        currentDate.month() < endDate.month()));
                 currentDate = this.lastDayOfMonth(currentDate).add(1, 'day').date(1)
             ) {
                 endOfCurrentMonth = this.lastDayOfMonth(currentDate);
@@ -230,9 +237,10 @@ export class BollettaService extends TableService {
                 currentDate = beginsWithTotalMonth
                     ? currentDate
                     : this.lastDayOfMonth(currentDate).add(1, 'day').date(1);
-                currentDate.year() <= endDate.year() &&
-                ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
-                    currentDate.month() < endDate.month());
+                currentDate.year() < endDate.year() ||
+                (currentDate.year() === endDate.year() &&
+                    ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
+                        currentDate.month() < endDate.month()));
                 currentDate = this.lastDayOfMonth(currentDate).add(1, 'day').date(1)
             ) {
                 importoCanoni += this.calcImportoPerMonth(canone, currentDate.daysInMonth(), tipoTariffa);
@@ -303,36 +311,42 @@ export class BollettaService extends TableService {
                         : this.calcImportoPerDays(consumi, days, tipoTariffa),
                 competenzaDal: startDate.toDate(),
                 competanzaAl: endDate.toDate(),
-                dataScadenza: startDate.date() > 5 ? startDate.toDate() : startDate.set('date', 5).toDate(),
+                dataScadenza: this.lastDayOfMonth(startDate).toDate(),
                 idTipoBolletta: tipiBollettaRata[TipoRata.MENSILE]
             });
         }
         // Otherwise
         else {
-            let currentDate = startDate.clone();
+            let currentDate = startDate.clone(),
+                competanzaAl: dayjs.Dayjs | null = null;
             let endOfCurrentMonth = this.lastDayOfMonth(currentDate);
             let days: number,
                 importoCanoni = 0,
                 importoConsumi = 0;
 
             const addBolletta = (last = false) => {
-                if (last && importoCanoni > 0 && importoConsumi > 0 && ![7, 9, 10, 11].includes(currentDate.month())) {
-                    bollette.push({
-                        importoCanoni: importoCanoni,
-                        importoConsumi: importoConsumi,
-                        competenzaDal: currentDate.toDate(),
-                        competanzaAl: endOfCurrentMonth.toDate(),
-                        dataScadenza: this.lastDayOfMonth(startDate).add(1, 'day').toDate(),
-                        idTipoBolletta: tipiBollettaRata[TipoRata.MENSILE]
-                    });
-                    importoCanoni = 0;
-                    importoConsumi = 0;
+                if (importoCanoni > 0 && importoConsumi > 0) {
+                    if (last || ![6, 8, 9, 10].includes(currentDate.month())) {
+                        bollette.push({
+                            importoCanoni: importoCanoni,
+                            importoConsumi: importoConsumi,
+                            competenzaDal: currentDate.toDate(),
+                            competanzaAl: competanzaAl?.toDate() ?? endOfCurrentMonth.toDate(),
+                            dataScadenza: this.lastDayOfMonth(currentDate).toDate(),
+                            idTipoBolletta: tipiBollettaRata[TipoRata.MENSILE]
+                        });
+                        importoCanoni = 0;
+                        importoConsumi = 0;
+                        competanzaAl = null;
+                    } else if (competanzaAl === null) {
+                        competanzaAl = currentDate.clone();
+                    }
                 }
             };
 
             // first month (difference between endOfMonth and beginDate)
             if (!beginsWithTotalMonth) {
-                days = endDate.diff(startDate, 'days') + 1;
+                days = endOfCurrentMonth.diff(startDate, 'days') + 1;
                 importoCanoni += this.calcImportoPerDays(canone, days, tipoTariffa);
                 importoConsumi += this.calcImportoPerDays(consumi, days, tipoTariffa);
                 addBolletta();
@@ -342,14 +356,16 @@ export class BollettaService extends TableService {
                 currentDate = beginsWithTotalMonth
                     ? currentDate
                     : this.lastDayOfMonth(currentDate).add(1, 'day').date(1);
-                currentDate.year() <= endDate.year() &&
-                ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
-                    currentDate.month() < endDate.month());
+                currentDate.year() < endDate.year() ||
+                (currentDate.year() === endDate.year() &&
+                    ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
+                        currentDate.month() < endDate.month()));
                 currentDate = this.lastDayOfMonth(currentDate).add(1, 'day').date(1)
             ) {
+                console.log('CURRENT DATE', currentDate.toISOString());
                 endOfCurrentMonth = this.lastDayOfMonth(currentDate);
-                importoCanoni = this.calcImportoPerMonth(canone, currentDate.daysInMonth(), tipoTariffa);
-                importoConsumi = this.calcImportoPerMonth(consumi, currentDate.daysInMonth(), tipoTariffa);
+                importoCanoni += this.calcImportoPerMonth(canone, currentDate.daysInMonth(), tipoTariffa);
+                importoConsumi += this.calcImportoPerMonth(consumi, currentDate.daysInMonth(), tipoTariffa);
                 addBolletta();
             }
             // last month (difference between endDate and currentDate)
@@ -357,6 +373,8 @@ export class BollettaService extends TableService {
                 days = endDate.diff(currentDate, 'days') + 1;
                 importoCanoni += this.calcImportoPerDays(canone, days, tipoTariffa);
                 importoConsumi += this.calcImportoPerDays(consumi, days, tipoTariffa);
+                // trick to set right competenzaAl on the last bolletta
+                endOfCurrentMonth = endDate;
                 addBolletta();
             }
             // If the last bolletta was not added because of its month
