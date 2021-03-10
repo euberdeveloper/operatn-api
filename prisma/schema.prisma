@@ -454,7 +454,7 @@ model ContoRicaviCanoni {
 model Bolletta {
     id Int @id @default(autoincrement()) @map("id")
 
-    numero Int
+    numero Int @default(autoincrement()) @map("numero")
 
     importoConsumi Float? @map("importo_consumi")
     importoCanoni  Float? @map("importo_canone")

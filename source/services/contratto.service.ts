@@ -1,7 +1,7 @@
 import prisma, { Prisma, Contratto, TipoRata } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
-import { InvalidBodyError, NotFoundError } from '@/errors';
+import { InternalServerError, InvalidBodyError, NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 import logger from '@/utils/logger';
 
@@ -16,6 +16,7 @@ interface CreateContrattoBody {
     idTipoContratto: number;
     tipoRata: TipoRata;
     cauzione: boolean;
+    checkout: boolean;
     ospiti: {
         idOspite: number;
         postiLetto: number[];
@@ -46,10 +47,6 @@ export class ContrattoService extends TableService {
         return spesa?.importo ?? defaultValue;
     }
 
-    public async getTipiRata(): Promise<Contratto[]> {
-        return this.model.findMany();
-    }
-
     private async validateCreateContrattoBody(body: any): Promise<CreateContrattoBody> {
         // Define joi schema
         const schema = Joi.object({
@@ -63,6 +60,7 @@ export class ContrattoService extends TableService {
             idTipoContratto: Joi.number().integer().positive(),
             tipoRata: Joi.valid(...Object.values(TipoRata)),
             cauzione: Joi.boolean(),
+            checkout: Joi.boolean(),
             ospiti: Joi.array()
                 .items(
                     Joi.object({
@@ -138,7 +136,7 @@ export class ContrattoService extends TableService {
         return validatedBody;
     }
 
-    private getCreateContrattoBody(body: CreateContrattoBody, cauzione: number | null, checkout: number) {
+    private getCreateContrattoBody(body: CreateContrattoBody, cauzione: number | null, checkout: number | null) {
         return {
             dataFine: body.dataFine,
             dataInizio: body.dataInizio,
@@ -168,6 +166,20 @@ export class ContrattoService extends TableService {
             .reduce((acc, curr) => [...acc, ...curr], []);
     }
 
+    private async getCentroDiCosto(validatedBody: CreateContrattoBody): Promise<string> {
+        const idFirstPostoLetto = validatedBody.ospiti[0].postiLetto[0];
+        const postoLetto = await prisma.postoLetto.findUnique({
+            where: { id: idFirstPostoLetto },
+            include: { stanza: { select: { centroDiCosto: true } } }
+        });
+
+        if (!postoLetto) {
+            throw new InternalServerError('Centro di costo not found');
+        }
+
+        return postoLetto.stanza.centroDiCosto;
+    }
+
     public async getContrattoById(id: number): Promise<Contratto> {
         this.validateId(id, 'id');
 
@@ -182,7 +194,7 @@ export class ContrattoService extends TableService {
         return handlePrismaError(async () => {
             const validatedBody = await this.validateCreateContrattoBody(body);
             const cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
-            const checkout = await this.getSpesaAmount('CHECKOUT', 40);
+            const checkout = validatedBody.checkout ? await this.getSpesaAmount('CHECKOUT', 40) : null;
             const createContrattoBody = this.getCreateContrattoBody(validatedBody, cauzione, checkout);
 
             const contratto = await this.model.create({
@@ -215,14 +227,20 @@ export class ContrattoService extends TableService {
                 data: contrattoSuOspiteSuPostoLettoBody
             });
 
+            const centroDiCosto = await this.getCentroDiCosto(validatedBody);
+
             const bollette = await BollettaService.calcBollette(
                 tipoRata,
                 dataInizio,
                 dataFine,
+                cauzione,
+                checkout,
                 prezzoCanoni,
                 prezzoConsumi,
+                validatedBody.ospiti.length,
                 contoRicaviCanoni.codice,
                 contoRicaviConsumi.codice,
+                centroDiCosto,
                 tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
                 id
             );
