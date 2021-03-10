@@ -1,10 +1,11 @@
-import prisma, { Prisma, Contratto, TipoRata, Bolletta } from '@/services/prisma.service';
-import * as dayjs from 'dayjs';
+import prisma, { Prisma, Contratto, TipoRata } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
 import { InvalidBodyError, NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 import logger from '@/utils/logger';
+
+import BollettaService from './bolletta.service';
 import { TableService } from './table.service';
 
 interface CreateContrattoBody {
@@ -132,8 +133,10 @@ export class ContrattoService extends TableService {
             tipoRata: body.tipoRata,
             checkout,
             cauzione,
-            createMany: {
-                data: body.ospiti.map(ospite => ospite.idOspite)
+            contrattiSuOspite: {
+                createMany: {
+                    data: body.ospiti.map(ospite => ({ idOspite: ospite.idOspite }))
+                }
             }
         };
     }
@@ -148,79 +151,6 @@ export class ContrattoService extends TableService {
                 }))
             )
             .reduce((acc, curr) => [...acc, ...curr], []);
-    }
-
-    private getBollette(tipoRata: TipoRata, dataInizio: Date, dataFine: Date, canone: number, consumi: number) {
-        const bollette: any[] = [];
-
-        const currentBeginDate = dayjs(dataInizio);
-        const currentEndDate = dayjs(dataInizio);
-        const endDate = dayjs(dataFine);
-
-        switch (tipoRata) {
-            /*
-                Ogni mese una bolletta. 
-                Se il contratto non inizia il primo del mese o non finisce l'ultimo del mese, i giorni aggiuntivi 
-                vengono aggiunti facendo prezzo / 30.
-                Scade il 5 del mese successivo.
-            */
-            case 'MENSILE':
-                while (currentEndDate.isBefore(endDate, 'days') || currentEndDate.isSame(endDate, 'days')) {
-                    let importoCanoni = canone,
-                        importoConsumi = consumi,
-                        lastOne = false;
-
-                    currentEndDate.add(1, 'month');
-                    if (currentEndDate.date() !== 1) {
-                        currentEndDate.date(1);
-                        const days = currentEndDate.diff(currentBeginDate, 'days');
-                        importoCanoni = (canone / 30) * days;
-                        importoConsumi = (consumi / 30) * days;
-                    } else if (currentEndDate.year() === endDate.year() && currentEndDate.month() === endDate.month()) {
-                        const days = currentEndDate.diff(endDate, 'days');
-                        importoCanoni = (canone / 30) * days;
-                        importoConsumi = (consumi / 30) * days;
-                        lastOne = true;
-                    }
-
-                    bollette.push({
-                        importoCanoni,
-                        importoConsumi,
-                        competenzaDal: currentBeginDate.toDate(),
-                        competenzaAl: lastOne ? endDate.toDate() : dayjs(currentBeginDate).endOf('month').toDate(),
-                        scadenza: dayjs(currentEndDate).date(5).toDate()
-                    });
-                }
-                break;
-            /*
-                Una rata sola.
-                Se il contratto non inizia il primo del mese e non finisce nel'ultimo di un mese, i giorni aggiuntivi
-                vengono aggiunti facendo prezzo / 30
-                Scade il 5 del mese successivo.
-            */
-            case 'UNICA':
-                let days = 0,
-                    months = 0;
-                days += currentEndDate.add(1, 'month').date(1).diff(currentBeginDate, 'days');
-                months += endDate.diff(currentEndDate, 'months');
-                days += endDate.diff(currentEndDate.add(months, 'months'), 'days');
-
-                const importoCanoni = canone * months + (canone / 30) * days;
-                const importoConsumi = consumi * months + (consumi / 30) * days;
-
-                bollette.push({
-                    importoCanoni,
-                    importoConsumi,
-                    competenzaDal: currentBeginDate.toDate(),
-                    competenzaAl: endDate.toDate(),
-                    scadenza: dayjs(endDate).add(1, 'month').date(5).toDate()
-                });
-                break;
-            case 'DA_BANDO':
-                currentEndDate.endOf('month');
-                
-                break;
-        }
     }
 
     public async getContrattoById(id: number): Promise<Contratto> {
@@ -238,23 +168,51 @@ export class ContrattoService extends TableService {
             const validatedBody = await this.validateCreateContrattoBody(body);
             const cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
             const checkout = await this.getSpesaAmount('CHECKOUT', 40);
-
             const createContrattoBody = this.getCreateContrattoBody(validatedBody, cauzione, checkout);
 
             const contratto = await this.model.create({
                 data: createContrattoBody,
-                include: { tariffa: true }
+                include: {
+                    tariffa: {
+                        include: {
+                            tipoOspite: { include: { contoRicaviCanoni: true, contoRicaviConsumi: true } },
+                            tipoTariffa: true
+                        }
+                    }
+                }
             });
 
             const {
                 id,
                 tipoRata,
-                tariffa: { prezzoCanoni, prezzoConsumi }
+                dataInizio,
+                dataFine,
+                tariffa: {
+                    prezzoCanoni,
+                    prezzoConsumi,
+                    tipoTariffa,
+                    tipoOspite: { contoRicaviCanoni, contoRicaviConsumi }
+                }
             } = contratto;
 
             const contrattoSuOspiteSuPostoLettoBody = this.getCreateContrattoPostiLettoBody(body, id);
             await prisma.contrattoSuOspiteSuPostoLetto.createMany({
                 data: contrattoSuOspiteSuPostoLettoBody
+            });
+
+            const bollette = await BollettaService.calcBollette(
+                tipoRata,
+                dataInizio,
+                dataFine,
+                prezzoCanoni,
+                prezzoConsumi,
+                contoRicaviCanoni.contoRicaviCanoni,
+                contoRicaviConsumi.contoRicaviConsumi,
+                tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
+                id
+            );
+            await prisma.bolletta.createMany({
+                data: bollette
             });
 
             return id;

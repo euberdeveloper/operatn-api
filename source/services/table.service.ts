@@ -101,7 +101,7 @@ export abstract class TableService {
 
     protected parseIncludeQueryParameters(
         queryParams: Record<string, string | string[]>,
-        includeQueryParameters: string[]
+        includeQueryParameters: string[] = this.includeQueryParameters
     ): any {
         let result: any = {};
 

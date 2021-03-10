@@ -114,7 +114,6 @@ model Ospite {
     eliminato     DateTime? @map("_eliminato")
 
     contrattiSuOspite ContrattoSuOspite[]
-    bollette          Bolletta[]
     @@map("ospite")
 }
 
@@ -349,7 +348,7 @@ model Contratto {
 
     checkout Float? @map("checkout")
     cauzione Float? @map("cauzione")
-    tipoRata   TipoRata
+    tipoRata   TipoRata @map("tipo_rata")
 
     idTariffa Int     @map("id_tariffa")
     tariffa   Tariffa @relation(fields: [idTariffa], references: [id])
@@ -480,9 +479,6 @@ model Bolletta {
 
     idContratto Int       @map("id_contratto")
     contratto   Contratto @relation(fields: [idContratto], references: [id])
-
-    idOspite Int    @map("id_ospite")
-    ospite   Ospite @relation(fields: [idOspite], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
     @@unique([id, numero])
