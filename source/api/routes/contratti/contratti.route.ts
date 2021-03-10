@@ -22,7 +22,7 @@ export default function (): Router {
         })
     );
 
-    router.use('/:cid/bollette', bolletteRouter);
+    router.use('/:cid/bollette', bolletteRouter());
 
     return router;
 }

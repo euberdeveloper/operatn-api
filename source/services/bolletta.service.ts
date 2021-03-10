@@ -15,7 +15,7 @@ export class BollettaService extends TableService {
     protected putValidatorExcludes = ['id'];
     protected patchValidatorExcludes = [];
 
-    protected includeQueryParameters = ['contratto', 'ospite', 'tipoBolletta'];
+    protected includeQueryParameters = ['contratto', 'tipoBolletta'];
     protected includeQueryParametersSoftCheck = [];
 
     constructor() {
