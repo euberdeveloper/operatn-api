@@ -54,7 +54,10 @@ export class ContrattoService extends TableService {
         // Define joi schema
         const schema = Joi.object({
             dataInizio: Joi.date().iso(),
-            dataFine: Joi.date().iso().greater(Joi.ref('dataInizio')),
+            dataFine: Joi.alternatives().try(
+                Joi.date().iso().greater(Joi.ref('dataInizio')),
+                Joi.date().iso().equal(Joi.ref('dataInizio'))
+            ),
             idQuietanziante: Joi.number().integer().positive(),
             idTariffa: Joi.number().integer().positive(),
             idTipoContratto: Joi.number().integer().positive(),
@@ -64,7 +67,7 @@ export class ContrattoService extends TableService {
                 .items(
                     Joi.object({
                         idOspite: Joi.number().integer().positive(),
-                        postiLetto: Joi.array().items(Joi.number().integer().positive()).min(1)
+                        postiLetto: Joi.array().items(Joi.number().integer().positive()).min(1).max(2)
                     })
                 )
                 .min(1)
@@ -79,7 +82,7 @@ export class ContrattoService extends TableService {
         // Get the validated body
         const validatedBody: CreateContrattoBody = validationResult.value;
 
-        // Check that there are no duplicated ospiti and that they can make a contract
+        // Check that there are no duplicated ospiti and that they can make a contractand that if an ospite takes multiple posti letto, they are a doppia uso singola
         const duplicatesOspiti = validatedBody.ospiti.filter(
             (ospite, index, arr) => arr.findIndex(el => el.idOspite === ospite.idOspite) != index
         );
@@ -98,11 +101,23 @@ export class ContrattoService extends TableService {
                 });
                 throw new InvalidBodyError('Validation error, ospite already has contract');
             }
+
+            if (ospite.postiLetto.length === 2) {
+                const postiLetto = await prisma.postoLetto.findMany({
+                    where: { id: { in: ospite.postiLetto } },
+                    select: { idStanza: true }
+                });
+                const notSameStanza = postiLetto.some(x => postiLetto.find(y => x.idStanza !== y.idStanza));
+                if (notSameStanza) {
+                    logger.warning('Validation error, posti letto are not in the same stanza', postiLetto);
+                    throw new InvalidBodyError('Validation error, posti letto are not in the same stanza');
+                }
+            }
         }
 
-        // Check that there are no duplicated posti letto and that they are all available
+        // Check that there are no duplicated posti letto, that they are all available
         const postiLetto = validatedBody.ospiti.reduce<number[]>((acc, curr) => [...acc, ...curr.postiLetto], []);
-        const duplicatesPostiLetto = validatedBody.ospiti.filter((el, index, arr) => arr.indexOf(el) != index);
+        const duplicatesPostiLetto = postiLetto.filter((el, index, arr) => arr.indexOf(el) != index);
         if (duplicatesPostiLetto.length > 0) {
             logger.warning('Validation error, duplicated posti letto', duplicatesPostiLetto);
             throw new InvalidBodyError('Duplicated posti letto');
