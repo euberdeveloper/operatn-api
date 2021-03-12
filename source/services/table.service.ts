@@ -9,6 +9,11 @@ import {
 } from '@/errors';
 import logger from '@/utils/logger';
 
+interface PageParams {
+    skip?: number;
+    take?: number;
+}
+
 export abstract class TableService {
     protected readonly idValidator = Joi.number().integer().positive();
     protected readonly stringValidator = Joi.string().min(1).required();
@@ -78,11 +83,39 @@ export abstract class TableService {
         return this.validateBody(this.patchBodyValidator, body);
     }
 
+    private extractSingleQueryParam(parameter: undefined | string | string[]): string | undefined {
+        if (Array.isArray(parameter)) {
+            return parameter.length > 0 ? parameter[parameter.length - 1] : undefined;
+        } else {
+            return parameter;
+        }
+    }
+
+    private validateNumberQueryParam(
+        parameter: undefined | string | string[],
+        name: string,
+        min?: number,
+        max?: number
+    ): number | null {
+        parameter = this.extractSingleQueryParam(parameter);
+
+        if (parameter === undefined) {
+            return null;
+        }
+
+        const result = +parameter;
+        if (isNaN(result) || (min !== undefined && result < min) || (max !== undefined && result > max)) {
+            throw new InvalidQueryParamError(`Invalid query param ${name}`);
+        }
+
+        return result;
+    }
+
     private validateBoolQueryParam(
         parameter: string | string[] | undefined,
         name: string
     ): boolean | { where: { eliminato: null } } {
-        parameter = Array.isArray(parameter) ? parameter[0] : parameter;
+        parameter = this.extractSingleQueryParam(parameter);
 
         if (parameter === undefined) {
             return false;
@@ -97,6 +130,28 @@ export abstract class TableService {
                 ? { where: { eliminato: null } }
                 : true
             : false;
+    }
+
+    protected parsePageQueryParameters(queryParams: Record<string, string | string[]>): PageParams {
+        const { page, pageSize } = queryParams;
+        let index = this.validateNumberQueryParam(page, 'page', 1);
+        let size = this.validateNumberQueryParam(pageSize, 'pageSize', 1);
+
+        let result: PageParams = {
+            skip: undefined,
+            take: undefined
+        };
+
+        if (index !== null || size !== null) {
+            size = size ?? 1;
+            index = index ?? 1;
+            result = {
+                take: size,
+                skip: size * (index - 1)
+            };
+        }
+
+        return result;
     }
 
     protected parseIncludeQueryParameters(

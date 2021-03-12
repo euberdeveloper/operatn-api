@@ -203,15 +203,16 @@ export class OspiteService extends TableService {
 
     public async getOspiti(queryParams: any) {
         queryParams = { ...queryParams, persona: 'true' };
-        const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
-        const ospiti = (await this.model.findMany({ include })) as GottenOspite[];
+        const include = this.parseIncludeQueryParameters(queryParams);
+        const pageValues = this.parsePageQueryParameters(queryParams);
+        const ospiti = (await this.model.findMany({ include, ...pageValues })) as GottenOspite[];
         return ospiti.map(ospite => this.handleOspite(ospite));
     }
 
     public async getOspiteById(id: number, queryParams: any): Promise<Ospite> {
         queryParams = { ...queryParams, persona: 'true' };
         this.validateId(id, 'id');
-        const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
+        const include = this.parseIncludeQueryParameters(queryParams);
 
         const ospite = (await this.model.findUnique({ where: { id }, include })) as GottenOspite | null;
         if (ospite === null) {
@@ -235,7 +236,6 @@ export class OspiteService extends TableService {
             this.validateId(id, 'id');
             const ospite = this.validatePatchBody(body);
             await this.checkIfExistsById(id, 'Ospite');
-            console.log(JSON.stringify(this.handleOspiteBodyUpdate(ospite), null, 2))
             await this.model.update({
                 where: { id },
                 data: this.handleOspiteBodyUpdate(ospite)
