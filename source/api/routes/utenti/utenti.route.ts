@@ -18,6 +18,12 @@ export default function (): Router {
         })
     );
 
+    router.get('/me', (req, res) => {
+        const user = req.user;
+        const parsedUser = utenteService.purgeUtente(user);
+        res.json(parsedUser);
+    });
+
     router.get(
         '/:uid',
         asyncHandler(async (req, res) => {

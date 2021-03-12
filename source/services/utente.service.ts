@@ -33,7 +33,7 @@ export class UtenteService extends TableService {
     protected putValidatorExcludes = [];
     protected patchValidatorExcludes = ['ruolo'];
 
-    private readonly selectedColumns = { uid: true, nomeUtente: true, email: true, ruolo: true };
+    public readonly selectedColumns = { uid: true, nomeUtente: true, email: true, ruolo: true };
 
     constructor() {
         super();
@@ -42,6 +42,10 @@ export class UtenteService extends TableService {
 
     private hashPassword(password: string): string {
         return bcrypt.hashSync(password, CONFIG.SECURITY.SALT_ROUNDS);
+    }
+
+    public purgeUtente(utente: any): Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'> {
+        return Object.keys(this.selectedColumns).reduce<any>((acc, key) => ({ ...acc, [key]: utente[key] }), {});
     }
 
     public async getUtenti() {
