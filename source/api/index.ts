@@ -8,6 +8,8 @@ import tipiStanzaRouter from './routes/tipi-stanza/tipi-stanza.route';
 import utilizziStanzaRouter from './routes/utilizzi-stanza/utilizzi-stanza.route';
 import contiRicaviConsumiRouter from './routes/conti-ricavi-consumi/conti-ricavi-consumi.route';
 import contiRicaviCanoniRouter from './routes/conti-ricavi-canoni/conti-ricavi-canoni.route';
+import tipiContrattoRouter from './routes/tipi-contratto/tipi-contratto.route';
+import tipiStudenteRouter from './routes/tipi-studente/tipi-studente.route';
 import tipiTariffaRouter from './routes/tipi-tariffa/tipi-tariffa.route';
 import tipiBollettaRouter from './routes/tipi-bolletta/tipi-bolletta.route';
 import tipiOspiteRouter from './routes/tipi-ospite/tipi-ospite.route';
@@ -42,6 +44,12 @@ export default function (): Router {
 
     logger.debug('/conti-ricavi-canoni');
     router.use('/conti-ricavi-canoni', contiRicaviCanoniRouter());
+
+    logger.debug('/tipi-contratto');
+    router.use('/tipi-contratto', tipiContrattoRouter());
+
+    logger.debug('/tipi-studente');
+    router.use('/tipi-studente', tipiStudenteRouter());
 
     logger.debug('/tipi-tariffa');
     router.use('/tipi-tariffa', tipiTariffaRouter());
