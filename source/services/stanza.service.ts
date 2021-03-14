@@ -164,6 +164,7 @@ export class StanzaService extends TableService {
             },
             // includi tutti i posti letto liberi
             include: {
+                tipoStanza: true,
                 postiLetto: {
                     where: {
                         contrattiSuOspiteSuPostoLetto: {
