@@ -7,6 +7,11 @@ import handlePrismaError from '@/utils/handlePrismaError';
 import { TableService } from './table.service';
 import { ContoCorrente, DipartimentoUnitn, DocumentoIdentita, Sesso } from '@prisma/client';
 
+interface SearchQueryParams {
+    nome?: string;
+    cognome?: string;
+}
+
 type GottenOspite = Ospite & {
     persona: Persona & {
         luogoDiNascita?: LuogoDiNascita | null;
@@ -120,6 +125,13 @@ export class OspiteService extends TableService {
         this.model = prisma.ospite;
     }
 
+    private parseSearchQueryParameters(queryParams: any): SearchQueryParams {
+        const nome = this.extractSingleQueryParam(queryParams.nome);
+        const cognome = this.extractSingleQueryParam(queryParams.cognome);
+
+        return { nome, cognome };
+    }
+
     private handleOspite(ospite: GottenOspite): HandledOspite {
         let result: (GottenOspite & Persona) | HandledOspite = { ...ospite.persona, ...ospite };
         delete (result as any).persona;
@@ -204,8 +216,18 @@ export class OspiteService extends TableService {
     public async getOspiti(queryParams: any) {
         queryParams = { ...queryParams, persona: 'true' };
         const include = this.parseIncludeQueryParameters(queryParams);
+        const { nome, cognome } = this.parseSearchQueryParameters(queryParams);
         const pageValues = this.parsePageQueryParameters(queryParams);
-        const ospiti = (await this.model.findMany({ include, ...pageValues })) as GottenOspite[];
+        const ospiti = (await this.model.findMany({
+            where: {
+                persona: {
+                    nome: { contains: nome, mode: 'insensitive' },
+                    cognome: { contains: cognome, mode: 'insensitive' }
+                }
+            },
+            include,
+            ...pageValues
+        })) as GottenOspite[];
         return ospiti.map(ospite => this.handleOspite(ospite));
     }
 
