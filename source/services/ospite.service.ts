@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import prisma, { Prisma, Ospite, Domicilio, LuogoDiNascita, Persona, Residenza } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
@@ -6,11 +7,6 @@ import handlePrismaError from '@/utils/handlePrismaError';
 
 import { TableService } from './table.service';
 import { ContoCorrente, DipartimentoUnitn, DocumentoIdentita, Sesso } from '@prisma/client';
-
-interface SearchQueryParams {
-    nome?: string;
-    cognome?: string;
-}
 
 type GottenOspite = Ospite & {
     persona: Persona & {
@@ -125,11 +121,22 @@ export class OspiteService extends TableService {
         this.model = prisma.ospite;
     }
 
-    private parseSearchQueryParameters(queryParams: any): SearchQueryParams {
-        const nome = this.extractSingleQueryParam(queryParams.nome);
-        const cognome = this.extractSingleQueryParam(queryParams.cognome);
+    private parseSearchQueryParameters(queryParams: any): any {
+        const search = this.extractSingleQueryParam(queryParams.search) ?? '';
 
-        return { nome, cognome };
+        const words = search
+            .split(/\s/)
+            .map(str => str.trim())
+            .filter(str => !!str);
+
+        const wordsChecks = words.map(word => ({
+            OR: [
+                { nome: { contains: word, mode: 'insensitive' } },
+                { cognome: { contains: word, mode: 'insensitive' } }
+            ]
+        }));
+
+        return { AND: wordsChecks };
     }
 
     private handleOspite(ospite: GottenOspite): HandledOspite {
@@ -216,15 +223,10 @@ export class OspiteService extends TableService {
     public async getOspiti(queryParams: any) {
         queryParams = { ...queryParams, persona: 'true' };
         const include = this.parseIncludeQueryParameters(queryParams);
-        const { nome, cognome } = this.parseSearchQueryParameters(queryParams);
+        const search = this.parseSearchQueryParameters(queryParams);
         const pageValues = this.parsePageQueryParameters(queryParams);
         const ospiti = (await this.model.findMany({
-            where: {
-                persona: {
-                    nome: { contains: nome, mode: 'insensitive' },
-                    cognome: { contains: cognome, mode: 'insensitive' }
-                }
-            },
+            where: { persona: search },
             include,
             ...pageValues
         })) as GottenOspite[];
