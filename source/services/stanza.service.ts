@@ -128,37 +128,33 @@ export class StanzaService extends TableService {
                 idTipoStanza: params.idTipoStanza,
                 // Se è doppia, controlla che nessun posto letto sia occupato da un M/F
                 // eslint-disable-next-line @typescript-eslint/naming-convention
-                OR: params.sesso
-                    ? [
-                          {
-                              tipoStanza: { tipoStanza: { not: 'DOPPIA' } }
-                          },
-                          {
-                              postiLetto: {
-                                  none: {
-                                      contrattiSuOspiteSuPostoLetto: {
-                                          every: {
-                                              contrattoSuOspite: {
-                                                  ospite: {
-                                                      persona: {
-                                                          sesso: { not: params.sesso }
-                                                      }
-                                                  },
-                                                  contratto: {
-                                                      // eslint-disable-next-line @typescript-eslint/naming-convention
-                                                      OR: [
-                                                          { dataInizio: { gt: params.dataFine } },
-                                                          { dataFine: { lt: params.dataInizio } }
-                                                      ]
-                                                  }
+                postiLetto:
+                    params.sesso || params.doppiaUsoSingola
+                        ? {
+                              every: {
+                                  contrattiSuOspiteSuPostoLetto: {
+                                      none: {
+                                          contrattoSuOspite: {
+                                              ospite: !params.doppiaUsoSingola
+                                                  ? {
+                                                        persona: {
+                                                            sesso: { not: params.sesso }
+                                                        }
+                                                    }
+                                                  : undefined,
+                                              contratto: {
+                                                  // eslint-disable-next-line @typescript-eslint/naming-convention
+                                                  NOT: [
+                                                      { dataInizio: { gt: params.dataFine } },
+                                                      { dataFine: { lt: params.dataInizio } }
+                                                  ]
                                               }
                                           }
                                       }
                                   }
                               }
                           }
-                      ]
-                    : undefined,
+                        : undefined,
                 // Non ha menutenzioni
                 manutenzioni: {
                     none: {
@@ -188,7 +184,9 @@ export class StanzaService extends TableService {
             }
         });
 
-        return result.filter(stanza => (params.doppiaUsoSingola ? stanza.postiLetto.length === 2 : true));
+        return result.filter(stanza =>
+            params.doppiaUsoSingola ? stanza.postiLetto.length === 2 : stanza.postiLetto.length > 0
+        );
     }
 
     public async getStanzaById(fid: number, id: number, queryParams: any): Promise<Stanza> {
