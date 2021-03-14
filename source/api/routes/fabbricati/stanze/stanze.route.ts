@@ -22,6 +22,16 @@ export default function (): Router {
     );
 
     router.get(
+        '/libere',
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const fid = +req.params.fid;
+            const stanze = await stanzaService.getStanzeLibere(fid, queryParams);
+            res.json(stanze);
+        })
+    );
+
+    router.get(
         '/:id',
         asyncHandler(async (req, res) => {
             const queryParams = req.query;

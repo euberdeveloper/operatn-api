@@ -83,7 +83,7 @@ export abstract class TableService {
         return this.validateBody(this.patchBodyValidator, body);
     }
 
-    private extractSingleQueryParam(parameter: undefined | string | string[]): string | undefined {
+    protected extractSingleQueryParam(parameter: undefined | string | string[]): string | undefined {
         if (Array.isArray(parameter)) {
             return parameter.length > 0 ? parameter[parameter.length - 1] : undefined;
         } else {
@@ -91,7 +91,7 @@ export abstract class TableService {
         }
     }
 
-    private validateNumberQueryParam(
+    protected validateNumberQueryParam(
         parameter: undefined | string | string[],
         name: string,
         min?: number,
@@ -111,7 +111,7 @@ export abstract class TableService {
         return result;
     }
 
-    private validateBoolQueryParam(
+    protected validateBoolQueryParam(
         parameter: string | string[] | undefined,
         name: string
     ): boolean | { where: { eliminato: null } } {

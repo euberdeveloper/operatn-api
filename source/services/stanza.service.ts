@@ -1,9 +1,20 @@
 import * as Joi from 'joi';
 import prisma, { Prisma, Stanza, Piano } from '@/services/prisma.service';
 
-import { NotFoundError } from '@/errors';
+import { InvalidQueryParamError, NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 import { TableService } from './table.service';
+import { Sesso } from '@prisma/client';
+
+interface StanzaLiberaParams {
+    dataInizio: Date;
+    dataFine: Date;
+    bagno?: boolean;
+    handicap?: boolean;
+    idTipoStanza?: number;
+    sesso?: Sesso;
+    doppiaUsoSingola?: boolean;
+}
 
 export class StanzaService extends TableService {
     protected readonly model: Prisma.StanzaDelegate<
@@ -42,6 +53,56 @@ export class StanzaService extends TableService {
         this.model = prisma.stanza;
     }
 
+    private getStanzaLiberaParams(queryParams: any): StanzaLiberaParams {
+        function validateDate(value: any, name: string): Date {
+            const result = new Date(value);
+            if (isNaN(+result)) {
+                throw new InvalidQueryParamError(`Invalid query param ${name}`);
+            }
+            return result;
+        }
+        function validateNumber(value: any, name: string): number {
+            const result = +value;
+            if (isNaN(result)) {
+                throw new InvalidQueryParamError(`Invalid query param ${name}`);
+            }
+            return result;
+        }
+        function validateBool(value: any, name: string): boolean | undefined {
+            if (value !== undefined && !['true', 'false'].includes(value)) {
+                throw new InvalidQueryParamError(`Invalid query param ${name}`);
+            }
+            return value === undefined ? value : value === 'true';
+        }
+        function validateSex(value: any, name: string): Sesso | undefined {
+            if (value !== undefined && !Object.values(Sesso).includes(value)) {
+                throw new InvalidQueryParamError(`Invalid query param ${name}`);
+            }
+            return value;
+        }
+
+        const dataInizio = validateDate(this.extractSingleQueryParam(queryParams.dataInizio), 'dataInizio');
+        const dataFine = validateDate(this.extractSingleQueryParam(queryParams.dataFine), 'dataFine');
+        const bagno = validateBool(this.extractSingleQueryParam(queryParams.bagno), 'bagno');
+        const handicap = validateBool(this.extractSingleQueryParam(queryParams.handicap), 'handicap');
+        const idTipoStanza = validateNumber(queryParams.idTipoStanza, 'idTipoStanza');
+        const sesso = validateSex(this.extractSingleQueryParam(queryParams.sesso), 'sesso');
+        const doppiaUsoSingola = validateBool(
+            this.extractSingleQueryParam(queryParams.doppiaUsoSingola),
+            'doppiaUsoSingola'
+        );
+
+        return {
+            dataInizio,
+            dataFine,
+            bagno,
+            handicap,
+            sesso,
+            idTipoStanza,
+            doppiaUsoSingola
+        };
+    }
+
     public async getStanze(fid: number, queryParams: any): Promise<Stanza[]> {
         this.validateId(fid, 'fid');
         const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
@@ -51,6 +112,83 @@ export class StanzaService extends TableService {
             },
             include
         });
+    }
+
+    public async getStanzeLibere(fid: number, queryParams: any): Promise<Stanza[]> {
+        this.validateId(fid, 'fid');
+        const params = this.getStanzaLiberaParams(queryParams);
+
+        const result = await prisma.stanza.findMany({
+            where: {
+                // controlla fabbricato
+                idFabbricato: fid,
+                // controlla altri filtri
+                bagno: params.bagno,
+                handicap: params.handicap,
+                idTipoStanza: params.idTipoStanza,
+                // Se è doppia, controlla che nessun posto letto sia occupato da un M/F
+                // eslint-disable-next-line @typescript-eslint/naming-convention
+                OR: params.sesso
+                    ? [
+                          {
+                              tipoStanza: { tipoStanza: { not: 'DOPPIA' } }
+                          },
+                          {
+                              postiLetto: {
+                                  none: {
+                                      contrattiSuOspiteSuPostoLetto: {
+                                          every: {
+                                              contrattoSuOspite: {
+                                                  ospite: {
+                                                      persona: {
+                                                          sesso: { not: params.sesso }
+                                                      }
+                                                  },
+                                                  contratto: {
+                                                      // eslint-disable-next-line @typescript-eslint/naming-convention
+                                                      OR: [
+                                                          { dataInizio: { gt: params.dataFine } },
+                                                          { dataFine: { lt: params.dataInizio } }
+                                                      ]
+                                                  }
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      ]
+                    : undefined,
+                // Non ha menutenzioni
+                manutenzioni: {
+                    none: {
+                        eliminato: null
+                    }
+                }
+            },
+            // includi tutti i posti letto liberi
+            include: {
+                postiLetto: {
+                    where: {
+                        contrattiSuOspiteSuPostoLetto: {
+                            every: {
+                                contrattoSuOspite: {
+                                    contratto: {
+                                        // eslint-disable-next-line @typescript-eslint/naming-convention
+                                        OR: [
+                                            { dataInizio: { gt: params.dataFine } },
+                                            { dataFine: { lt: params.dataInizio } }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        return result.filter(stanza => (params.doppiaUsoSingola ? stanza.postiLetto.length === 2 : true));
     }
 
     public async getStanzaById(fid: number, id: number, queryParams: any): Promise<Stanza> {

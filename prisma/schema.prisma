@@ -257,7 +257,7 @@ model PostoLetto {
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
-    ContrattoSuOspiteSuPostoLetto ContrattoSuOspiteSuPostoLetto[]
+    contrattiSuOspiteSuPostoLetto ContrattoSuOspiteSuPostoLetto[]
     @@unique([idStanza, postoLetto])
     @@map("posto_letto")
 }
