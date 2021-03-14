@@ -12,6 +12,57 @@ export default function (): Router {
     const router = Router();
     router.use(passport.authenticate('jwt', { session: false }));
 
+    router.get(
+        '/',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContratti(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
+        '/da-firmare',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContrattiDaFirmare(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
+        '/da-contabilizzare',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContrattiDaContabilizzare(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
+        '/contabilizzati',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContrattiContabilizzati(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
+        '/:id',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            const queryParams = req.query;
+            const contratto = await contrattoService.getContrattoById(id, queryParams);
+            res.json(contratto);
+        })
+    );
+
     router.post(
         '/',
         permission(RuoloUtente.ADMIN),

@@ -34,7 +34,20 @@ export class ContrattoService extends TableService {
     protected putValidatorExcludes = [];
     protected patchValidatorExcludes = [];
 
-    protected includeQueryParameters = [];
+    protected includeQueryParameters = [
+        'quietanziante',
+        'tariffa',
+        'tariffa.tipoTariffa',
+        'tariffa.utilizzoStanza',
+        'tariffa.tipoOspite',
+        'tariffa.tipoOspite.contoRicaviConsumi',
+        'tariffa.tipoOspite.contoRicaviCanoni',
+        'tariffa.tipoFabbricato',
+        'tipoContratto',
+        'tipoContratto.tipoStudente',
+        'bollette',
+        'bollette.tipoBolletta'
+    ];
     protected includeQueryParametersSoftCheck = [];
 
     constructor() {
@@ -180,10 +193,83 @@ export class ContrattoService extends TableService {
         return postoLetto.stanza.centroDiCosto;
     }
 
-    public async getContrattoById(id: number): Promise<Contratto> {
-        this.validateId(id, 'id');
+    private getInclude(queryParams: any): any {
+        const include = this.parseIncludeQueryParameters(queryParams);
+        return {
+            ...include,
+            contrattiSuOspite: {
+                include: {
+                    contrattiSuOspiteSuPostoLetto: {
+                        include: {
+                            postoLetto: {
+                                include: {
+                                    stanza: {
+                                        include: {
+                                            fabbricato: true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    ospite: {
+                        include: { persona: true }
+                    }
+                }
+            }
+        };
+    }
 
-        const contratto = await this.model.findUnique({ where: { id } });
+    public async getContratti(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const contratti = await this.model.findMany({
+            where: { dataInizio: { lte: new Date() }, dataFine: { gte: new Date() } },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiDaFirmare(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const contratti = await this.model.findMany({
+            where: { dataInizio: { lte: new Date() }, dataFine: { gte: new Date() }, dataFirmaContratto: null },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiDaContabilizzare(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const contratti = await this.model.findMany({
+            where: {
+                dataInizio: { lte: new Date() },
+                dataFine: { gte: new Date() },
+                dataFirmaContratto: { not: null },
+                dataContabilizzazione: null
+            },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiContabilizzati(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const contratti = await this.model.findMany({
+            where: {
+                dataInizio: { lte: new Date() },
+                dataFine: { gte: new Date() },
+                dataContabilizzazione: { not: null }
+            },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattoById(id: number, queryParams: any): Promise<Contratto> {
+        this.validateId(id, 'id');
+        const include = this.getInclude(queryParams);
+
+        const contratto = await this.model.findUnique({ where: { id }, include });
         if (contratto === null) {
             throw new NotFoundError('Contratto not found');
         }

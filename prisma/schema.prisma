@@ -361,7 +361,7 @@ model Contratto {
 
     contrattiSuOspite ContrattoSuOspite[]
 
-    Bolletta Bolletta[]
+    bollette Bolletta[]
     @@map("contratto")
 }
 
