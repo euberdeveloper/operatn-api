@@ -497,7 +497,6 @@ model Stato {
 
     codiceStato     String @unique @map("codice_stato")
     codiceIstat     String @unique @map("codice_istat")
-    codiceIstatInps String @unique @map("codice_istat_inps")
     denominazione   String @unique @map("denominazione")
 
     province Provincia[]
