@@ -64,7 +64,7 @@ export class OspiteService extends TableService {
         luogoDiNascita: Joi.object({
             stato: Joi.string().alphanum().length(2),
             provincia: Joi.string().alphanum().length(2).allow(null).optional(),
-            comune: Joi.string().min(1),
+            comune: Joi.string().min(1).optional(),
             istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).optional()
         })
             .allow(null)

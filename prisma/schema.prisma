@@ -33,7 +33,7 @@ model LuogoDiNascita {
     id          Int     @id @map("id")
     stato       String  @map("stato")
     provincia   String? @map("provincia")
-    comune      String  @map("comune")
+    comune      String?  @map("comune")
     istatComune String? @map("istat_comune")
     persona     Persona @relation(fields: [id], references: [id])
 
