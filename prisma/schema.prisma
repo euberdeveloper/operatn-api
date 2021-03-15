@@ -121,10 +121,6 @@ model ContoCorrente {
     id          Int     @id @map("id")
     iban        String  @map("iban")
     banca       String? @map("banca")
-    swiftBic    String? @map("swift_bic")
-    aba         String? @map("aba")
-    agenzia     String? @map("agenzia")
-    transitCode String? @map("transit_code")
     ospite      Ospite  @relation(fields: [id], references: [id])
 
     @@map("conto_corrente")
@@ -504,12 +500,12 @@ model Stato {
     codiceIstatInps String @unique @map("codice_istat_inps")
     denominazione   String @unique @map("denominazione")
 
-    Provincia Provincia[]
+    province Provincia[]
     @@map("stato")
 }
 
 model Provincia {
-    sigla String @id @map("sigla")
+    sigla String @id @map("sigla") //5
 
     denominazione String @unique @map("denominazione")
     regione       String @map("regione")
@@ -517,13 +513,14 @@ model Provincia {
     codiceStato String @map("codice_stato")
     stato       Stato  @relation(fields: [codiceStato], references: [codiceIso])
 
-    Comune Comune[]
+    comuni Comune[]
     @@map("provincia")
 }
 
 model Comune {
     id Int @id @map("id")
 
+    codiceCatastale String @unique @map("codice_catastale")
     codiceIstat   String @unique @map("codice_istat")
     denominazione String @unique @map("denominazione")
 
