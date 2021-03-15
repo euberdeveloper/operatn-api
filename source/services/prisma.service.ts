@@ -12,6 +12,7 @@ const softDeletables = [
     'Persona',
     'Ospite',
     'Utente'
+    // 'Comune'
 ];
 
 prisma.$use(async (params, next) => {

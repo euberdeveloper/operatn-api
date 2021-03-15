@@ -33,7 +33,7 @@ model LuogoDiNascita {
     id          Int     @id @map("id")
     stato       String  @map("stato")
     provincia   String? @map("provincia")
-    comune      String?  @map("comune")
+    comune      String? @map("comune")
     istatComune String? @map("istat_comune")
     persona     Persona @relation(fields: [id], references: [id])
 
@@ -45,7 +45,7 @@ model Residenza {
 
     stato       String  @map("stato")
     provincia   String? @map("provincia")
-    comune      String  @map("comune")
+    comune      String?  @map("comune")
     istatComune String? @map("istat_comune")
 
     cap       String? @map("cap") @db.Char(5)
@@ -118,10 +118,10 @@ model Ospite {
 }
 
 model ContoCorrente {
-    id          Int     @id @map("id")
-    iban        String  @map("iban")
-    banca       String? @map("banca")
-    ospite      Ospite  @relation(fields: [id], references: [id])
+    id     Int     @id @map("id")
+    iban   String  @map("iban")
+    banca  String? @map("banca")
+    ospite Ospite  @relation(fields: [id], references: [id])
 
     @@map("conto_corrente")
 }
@@ -342,9 +342,9 @@ model Contratto {
     dataContabilizzazione  DateTime? @map("data_contabilizzazione")
     dataChiusuraAnticipata DateTime? @map("data_chiusura_anticipata")
 
-    checkout Float? @map("checkout")
-    cauzione Float? @map("cauzione")
-    tipoRata   TipoRata @map("tipo_rata")
+    checkout Float?   @map("checkout")
+    cauzione Float?   @map("cauzione")
+    tipoRata TipoRata @map("tipo_rata")
 
     idTariffa Int     @map("id_tariffa")
     tariffa   Tariffa @relation(fields: [idTariffa], references: [id])
@@ -495,9 +495,9 @@ model TipoBolletta {
 model Stato {
     codiceIso String @id @map("codice_iso")
 
-    codiceStato     String @unique @map("codice_stato")
-    codiceIstat     String @unique @map("codice_istat")
-    denominazione   String @unique @map("denominazione")
+    codiceStato   String @unique @map("codice_stato")
+    codiceIstat   String @unique @map("codice_istat")
+    denominazione String @unique @map("denominazione")
 
     province Provincia[]
     @@map("stato")
@@ -517,14 +517,17 @@ model Provincia {
 }
 
 model Comune {
-    id Int @id @map("id")
+    id Int @id @default(autoincrement()) @map("id")
 
     codiceCatastale String @unique @map("codice_catastale")
-    codiceIstat   String @unique @map("codice_istat")
-    denominazione String @unique @map("denominazione")
+    codiceIstat     String @unique @map("codice_istat")
+    denominazione   String @unique @map("denominazione")
 
     siglaProvincia String    @map("sigla_provincia")
     provincia      Provincia @relation(fields: [siglaProvincia], references: [sigla])
+
+    dataIstituzione DateTime  @map("data_istituzione")
+    eliminato       DateTime? @map("_eliminato")
 
     @@map("comune")
 }

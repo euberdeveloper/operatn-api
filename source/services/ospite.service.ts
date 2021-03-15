@@ -57,14 +57,14 @@ export class OspiteService extends TableService {
             .allow(null),
         dataDiNascita: Joi.date().iso(),
         idGiada: Joi.number().integer().positive().allow(null).optional(),
-        email: Joi.string().email(),
+        email: Joi.string().min(1).pattern(/@/),
         telefonoPrincipale: Joi.string().min(1).allow(null).optional(),
         telefonoSecondario: Joi.string().min(1).allow(null).optional(),
         cittadinanza: Joi.string().min(1),
         luogoDiNascita: Joi.object({
             stato: Joi.string().alphanum().length(2),
             provincia: Joi.string().alphanum().length(2).allow(null).optional(),
-            comune: Joi.string().min(1).optional(),
+            comune: Joi.string().min(1).allow(null).optional(),
             istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).optional()
         })
             .allow(null)
@@ -72,7 +72,7 @@ export class OspiteService extends TableService {
         residenza: Joi.object({
             stato: Joi.string().alphanum().length(2),
             provincia: Joi.string().alphanum().length(2).allow(null).optional(),
-            comune: Joi.string().min(1),
+            comune: Joi.string().min(1).allow(null).optional(),
             istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).optional(),
             cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).optional(),
             indirizzo: Joi.string().min(1),

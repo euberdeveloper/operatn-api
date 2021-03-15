@@ -19,6 +19,9 @@ import diparitmentiUnitnRouter from './routes/dipartimenti-unitn/dipartimenti-un
 import presidentiRouter from './routes/presidenti/presidenti.route';
 import ospitiRouter from './routes/ospiti/ospiti.route';
 import contrattiRouter from './routes/contratti/contratti.route';
+import statiRouter from './routes/stati/stati.route';
+import provinceRouter from './routes/province/province.route';
+import comuniRouter from './routes/comuni/comuni.route';
 import utentiRouter from './routes/utenti/utenti.route';
 
 export default function (): Router {
@@ -77,6 +80,15 @@ export default function (): Router {
 
     logger.debug('/contratti');
     router.use('/contratti', contrattiRouter());
+
+    logger.debug('/stati');
+    router.use('/stati', statiRouter());
+
+    logger.debug('/province');
+    router.use('/province', provinceRouter());
+
+    logger.debug('/comuni');
+    router.use('/comuni', comuniRouter());
 
     logger.debug('/utenti');
     router.use('/utenti', utentiRouter());
