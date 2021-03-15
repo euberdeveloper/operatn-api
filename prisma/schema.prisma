@@ -456,7 +456,7 @@ model Bolletta {
     importoCanoni  Float? @map("importo_canone")
     importoTotale  Float  @map("importo_totale")
 
-    competanzaAl  DateTime @map("competenza_al")
+    competenzaAl  DateTime @map("competenza_al")
     competenzaDal DateTime @map("competenza_dal")
     dataScadenza  DateTime @map("data_scadenza")
 
