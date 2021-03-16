@@ -453,20 +453,19 @@ export class BollettaService extends TableService {
         tipoTariffa: 'MENSILE' | 'GIORNALIERA',
         idContratto: number
     ) {
-        const result: Omit<
-            Bolletta,
-            'id' | 'numero' | 'idBollettaStornata' | 'dataInvioEusis' | 'dataRegistrazione'
-        >[] = [];
+        const result: Omit<Bolletta, 'id' | 'idBollettaStornata' | 'dataInvioEusis' | 'dataRegistrazione'>[] = [];
         const bollette: Pick<
             Bolletta,
             'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
         >[] = [];
 
         const tipiBolletta = await this.getTipiBolletta();
+        let numero = 0;
 
         if (cauzione) {
             const bollettaCauzione = this.calcBollettaCauzione(cauzione, dataInizio, nOspiti, tipiBolletta);
             result.push({
+                numero: ++numero,
                 idContratto,
                 centroDiCosto,
                 contoRicaviCanoni,
@@ -522,6 +521,7 @@ export class BollettaService extends TableService {
 
         result.push(
             ...bollette.map(bolletta => ({
+                numero: ++numero,
                 idContratto,
                 importoTotale: (bolletta.importoCanoni as number) + (bolletta.importoConsumi as number),
                 centroDiCosto,
@@ -534,6 +534,7 @@ export class BollettaService extends TableService {
         if (checkout) {
             const bollettaCheckout = this.calcBollettaCheckout(checkout, dataFine, nOspiti, tipiBolletta);
             result.push({
+                numero: ++numero,
                 idContratto,
                 centroDiCosto,
                 contoRicaviCanoni,
