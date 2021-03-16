@@ -85,9 +85,11 @@ export class BollettaService extends TableService {
                 return price * days * nOspiti;
         }
     }
+    private utcDate(date: Date): dayjs.Dayjs {
+        return dayjs(date).utc();
+    }
     private resetTime(date: dayjs.Dayjs): dayjs.Dayjs {
-        //Etc/UTC
-        return date.hour(0).minute(0).second(0).millisecond(0).utc();
+        return date.hour(0).minute(0).second(0).millisecond(0);
     }
     // endOfMonth sets the hours to 23:59:59.999
     private lastDayOfMonth(date: dayjs.Dayjs): dayjs.Dayjs {
@@ -100,7 +102,7 @@ export class BollettaService extends TableService {
         nOspiti: number,
         tipiBolletta: Record<string, number>
     ): Pick<Bolletta, 'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'> {
-        const startDate = this.resetTime(dayjs(dataInizio));
+        const startDate = this.resetTime(this.utcDate(dataInizio));
         return {
             competenzaDal: startDate.toDate(),
             competenzaAl: this.lastDayOfMonth(startDate).toDate(),
@@ -116,7 +118,7 @@ export class BollettaService extends TableService {
         nOspiti: number,
         tipiBolletta: Record<string, number>
     ): Pick<Bolletta, 'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'> {
-        const endDate = this.resetTime(dayjs(dataFine));
+        const endDate = this.resetTime(this.utcDate(dataFine));
         return {
             competenzaDal: this.resetTime(endDate.startOf('month')).toDate(),
             competenzaAl: endDate.toDate(),
@@ -147,8 +149,8 @@ export class BollettaService extends TableService {
         >[] = [];
 
         // Get start and end date
-        const startDate = this.resetTime(dayjs(dataInizio));
-        const endDate = this.resetTime(dayjs(dataFine));
+        const startDate = this.resetTime(this.utcDate(dataInizio));
+        const endDate = this.resetTime(this.utcDate(dataFine));
 
         // check if first and last month is total
         const beginsWithTotalMonth = startDate.date() === 1;
@@ -252,8 +254,8 @@ export class BollettaService extends TableService {
             'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
         >[] = [];
 
-        const startDate = this.resetTime(dayjs(dataInizio));
-        const endDate = this.resetTime(dayjs(dataFine));
+        const startDate = this.resetTime(this.utcDate(dataInizio));
+        const endDate = this.resetTime(this.utcDate(dataFine));
 
         // check if first and last month is total
         const beginsWithTotalMonth = startDate.date() === 1;
@@ -342,8 +344,8 @@ export class BollettaService extends TableService {
             'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
         >[] = [];
 
-        const startDate = this.resetTime(dayjs(dataInizio));
-        const endDate = this.resetTime(dayjs(dataFine));
+        const startDate = this.resetTime(this.utcDate(dataInizio));
+        const endDate = this.resetTime(this.utcDate(dataFine));
 
         // check if first and last month is total
         const beginsWithTotalMonth = startDate.date() === 1;
@@ -415,7 +417,6 @@ export class BollettaService extends TableService {
                         currentDate.month() < endDate.month()));
                 currentDate = this.lastDayOfMonth(currentDate).add(1, 'day').date(1)
             ) {
-                console.log('CURRENT DATE', currentDate.toISOString());
                 endOfCurrentMonth = this.lastDayOfMonth(currentDate);
                 importoCanoni += this.calcImportoPerMonth(canone, currentDate.daysInMonth(), tipoTariffa, nOspiti);
                 importoConsumi += this.calcImportoPerMonth(consumi, currentDate.daysInMonth(), tipoTariffa, nOspiti);
