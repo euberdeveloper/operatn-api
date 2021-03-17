@@ -275,16 +275,55 @@ export class BollettaService extends TableService {
             importoConsumi += beginsWithTotalMonth
                 ? this.calcImportoPerMonth(consumi, startDate.daysInMonth(), tipoTariffa, nOspiti)
                 : this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti);
+
+            bollette.push({
+                importoCanoni,
+                importoConsumi,
+                competenzaDal: startDate.toDate(),
+                competenzaAl: endDate.toDate(),
+                dataScadenza:
+                    // If there is only one month that starts after the 5th, the scadenza is the same date
+                    startDate.isSame(endDate, 'months') && startDate.date() > 5
+                        ? startDate.toDate()
+                        : startDate.set('date', 5).toDate(),
+                idTipoBolletta: tipiBolletta[TipoRata.UNICA]
+            });
         }
         // Otherwise
         else {
-            let currentDate = startDate.clone();
+            let currentDate = startDate.clone(),
+                competenzaDal: dayjs.Dayjs | null = null;
             let endOfCurrentMonth = this.lastDayOfMonth(currentDate);
+
+            const addBolletta = (last = false) => {
+                if (importoCanoni > 0 && importoConsumi > 0) {
+                    if (last || currentDate.month() === 11) {
+                        bollette.push({
+                            importoCanoni: importoCanoni,
+                            importoConsumi: importoConsumi,
+                            competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
+                            competenzaAl: endOfCurrentMonth.toDate(),
+                            dataScadenza:
+                                currentDate.month() === endDate.month() && currentDate.date() < 5
+                                    ? currentDate.toDate()
+                                    : currentDate.date(5).toDate(),
+                            idTipoBolletta: tipiBolletta[TipoRata.UNICA]
+                        });
+                        importoCanoni = 0;
+                        importoConsumi = 0;
+                        competenzaDal = null;
+                    } else if (competenzaDal === null) {
+                        competenzaDal = currentDate.clone();
+                    }
+                }
+            };
+
             // first month (difference between endOfMonth and beginDate)
             if (!beginsWithTotalMonth) {
                 days = endOfCurrentMonth.diff(startDate, 'days') + 1;
                 importoCanoni += this.calcImportoPerDays(canone, days, tipoTariffa, nOspiti);
                 importoConsumi += this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti);
+                addBolletta();
             }
             // middle months (whole month)
             for (
@@ -297,29 +336,23 @@ export class BollettaService extends TableService {
                         currentDate.month() < endDate.month()));
                 currentDate = this.lastDayOfMonth(currentDate).add(1, 'day').date(1)
             ) {
+                endOfCurrentMonth = this.lastDayOfMonth(currentDate);
                 importoCanoni += this.calcImportoPerMonth(canone, currentDate.daysInMonth(), tipoTariffa, nOspiti);
                 importoConsumi += this.calcImportoPerMonth(consumi, currentDate.daysInMonth(), tipoTariffa, nOspiti);
+                addBolletta();
             }
             // last month (difference between endDate and currentDate)
             if (!endsWithTotalMonth) {
                 days = endDate.diff(currentDate, 'days') + 1;
                 importoCanoni += this.calcImportoPerDays(canone, days, tipoTariffa, nOspiti);
                 importoConsumi += this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti);
+                // trick to set right competenzaAl on the last bolletta
+                endOfCurrentMonth = endDate;
+                addBolletta();
             }
+            // If the last bolletta was not added because of its month
+            addBolletta(true);
         }
-
-        bollette.push({
-            importoCanoni,
-            importoConsumi,
-            competenzaDal: startDate.toDate(),
-            competenzaAl: endDate.toDate(),
-            dataScadenza:
-                // If there is only one month that starts after the 5th, the scadenza is the same date
-                startDate.isSame(endDate, 'months') && startDate.date() > 5
-                    ? startDate.toDate()
-                    : startDate.set('date', 5).toDate(),
-            idTipoBolletta: tipiBolletta[TipoRata.UNICA]
-        });
 
         return bollette;
     }
@@ -367,7 +400,7 @@ export class BollettaService extends TableService {
                 competenzaDal: startDate.toDate(),
                 competenzaAl: endDate.toDate(),
                 dataScadenza: this.lastDayOfMonth(startDate).toDate(),
-                idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
+                idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO]
             });
         }
         // Otherwise
@@ -388,7 +421,7 @@ export class BollettaService extends TableService {
                             competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
                             competenzaAl: endOfCurrentMonth.toDate(),
                             dataScadenza: this.lastDayOfMonth(currentDate).toDate(),
-                            idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
+                            idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO]
                         });
                         importoCanoni = 0;
                         importoConsumi = 0;
