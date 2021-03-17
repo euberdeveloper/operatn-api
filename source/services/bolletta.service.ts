@@ -373,7 +373,7 @@ export class BollettaService extends TableService {
         // Otherwise
         else {
             let currentDate = startDate.clone(),
-                competenzaAl: dayjs.Dayjs | null = null;
+                competenzaDal: dayjs.Dayjs | null = null;
             let endOfCurrentMonth = this.lastDayOfMonth(currentDate);
             let days: number,
                 importoCanoni = 0,
@@ -385,16 +385,16 @@ export class BollettaService extends TableService {
                         bollette.push({
                             importoCanoni: importoCanoni,
                             importoConsumi: importoConsumi,
-                            competenzaDal: currentDate.toDate(),
-                            competenzaAl: competenzaAl?.toDate() ?? endOfCurrentMonth.toDate(),
+                            competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
+                            competenzaAl: endOfCurrentMonth.toDate(),
                             dataScadenza: this.lastDayOfMonth(currentDate).toDate(),
                             idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
                         });
                         importoCanoni = 0;
                         importoConsumi = 0;
-                        competenzaAl = null;
-                    } else if (competenzaAl === null) {
-                        competenzaAl = currentDate.clone();
+                        competenzaDal = null;
+                    } else if (competenzaDal === null) {
+                        competenzaDal = currentDate.clone();
                     }
                 }
             };
