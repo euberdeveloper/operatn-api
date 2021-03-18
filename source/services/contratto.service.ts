@@ -17,6 +17,7 @@ interface CreateContrattoBody {
     tipoRata: TipoRata;
     cauzione: boolean;
     checkout: boolean;
+    note?: string | null;
     ospiti: {
         idOspite: number;
         postiLetto: number[];
@@ -74,6 +75,7 @@ export class ContrattoService extends TableService {
             tipoRata: Joi.valid(...Object.values(TipoRata)),
             cauzione: Joi.boolean(),
             checkout: Joi.boolean(),
+            note: Joi.string().min(1).allow(null).optional(),
             ospiti: Joi.array()
                 .items(
                     Joi.object({
@@ -159,6 +161,7 @@ export class ContrattoService extends TableService {
             tipoRata: body.tipoRata,
             checkout,
             cauzione,
+            note: body.note,
             contrattiSuOspite: {
                 createMany: {
                     data: body.ospiti.map(ospite => ({ idOspite: ospite.idOspite }))

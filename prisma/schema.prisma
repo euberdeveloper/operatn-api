@@ -45,7 +45,7 @@ model Residenza {
 
     stato       String  @map("stato")
     provincia   String? @map("provincia")
-    comune      String?  @map("comune")
+    comune      String? @map("comune")
     istatComune String? @map("istat_comune")
 
     cap       String? @map("cap") @db.Char(5)
@@ -211,6 +211,8 @@ model Stanza {
     bagno           Boolean @map("bagno")
     piano           Piano?  @map("piano")
 
+    note String? @map("note")
+
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
 
@@ -354,6 +356,8 @@ model Contratto {
 
     idQuietanziante Int           @map("id_quietanziante")
     quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
+
+    note String? @map("note")
 
     contrattiSuOspite ContrattoSuOspite[]
 
