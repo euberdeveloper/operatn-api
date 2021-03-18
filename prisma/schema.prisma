@@ -419,10 +419,10 @@ model Quietanziante {
     id            Int    @id @default(autoincrement()) @map("id")
     quietanziante String @unique @map("quietanziante")
 
-    Contratto Contratto[]
-    Bolletta  Bolletta[]
-    @@map("quietanziante")
+    Contratto    Contratto[]
+    Bolletta     Bolletta[]
     TipoBolletta TipoBolletta[]
+    @@map("quietanziante")
 }
 
 model TipoStudente {
@@ -482,7 +482,7 @@ model Bolletta {
     idContratto Int       @map("id_contratto")
     contratto   Contratto @relation(fields: [idContratto], references: [id])
 
-    idQuietanziante Int           @map("id_tipo_bolletta")
+    idQuietanziante Int           @map("id_quietanziante")
     quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
@@ -495,8 +495,8 @@ model TipoBolletta {
     tipoBolletta String @unique @map("tipo_bolletta")
     importo      Float? @map("importo")
 
-    idQuietanziante Int           @map("id_tipo_bolletta")
-    quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
+    idQuietanziante Int?           @map("id_quietanziante")
+    quietanziante   Quietanziante? @relation(fields: [idQuietanziante], references: [id])
 
     Bolletta Bolletta[]
     @@map("tipo_bolletta")

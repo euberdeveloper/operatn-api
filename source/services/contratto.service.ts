@@ -331,7 +331,8 @@ export class ContrattoService extends TableService {
                 contoRicaviConsumi.codice,
                 centroDiCosto,
                 tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
-                id
+                id,
+                validatedBody.idQuietanziante
             );
             await prisma.bolletta.createMany({
                 data: bollette

@@ -22,11 +22,11 @@ export class BollettaService extends TableService {
 
     protected includeQueryParameters = [
         'contratto',
-        'contratto.quietanziante',
         'contratto.contrattiSuOspite',
         'contratto.contrattiSuOspite.ospite',
         'contratto.contrattiSuOspite.ospite.persona',
-        'tipoBolletta'
+        'tipoBolletta',
+        'quietanziante'
     ];
     protected includeQueryParametersSoftCheck = [];
 
@@ -35,8 +35,10 @@ export class BollettaService extends TableService {
         this.model = prisma.bolletta;
     }
 
-    private async getTipiBolletta(): Promise<Record<string, number>> {
-        const result = {} as Record<string, number>;
+    private async getTipiBolletta(
+        idQuietanzianteContratto: number
+    ): Promise<Record<string, { id: number; idQuietanziante: number }>> {
+        const result = {} as Record<string, { id: number; idQuietanziante: number }>;
 
         for (const [tipoRata, nomeTipoBolletta] of [
             [TipoRata.DA_BANDO, 'RATA DA BANDO'],
@@ -47,14 +49,17 @@ export class BollettaService extends TableService {
         ]) {
             const tipoBolletta = await prisma.tipoBolletta.findUnique({
                 where: { tipoBolletta: nomeTipoBolletta },
-                select: { id: true }
+                select: { id: true, idQuietanziante: true }
             });
 
             if (!tipoBolletta) {
                 throw new InternalServerError(`Tipo bolletta ${nomeTipoBolletta} not found`);
             }
 
-            result[tipoRata] = tipoBolletta.id;
+            result[tipoRata] = {
+                id: tipoBolletta.id,
+                idQuietanziante: tipoBolletta.idQuietanziante ?? idQuietanzianteContratto
+            };
         }
 
         return result;
@@ -101,15 +106,19 @@ export class BollettaService extends TableService {
         cauzione: number,
         dataInizio: Date,
         nOspiti: number,
-        tipiBolletta: Record<string, number>
-    ): Pick<Bolletta, 'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'> {
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>
+    ): Pick<
+        Bolletta,
+        'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta' | 'idQuietanziante'
+    > {
         const startDate = this.resetTime(this.utcDate(dataInizio));
         return {
             competenzaDal: startDate.toDate(),
             competenzaAl: this.lastDayOfMonth(startDate).toDate(),
             dataScadenza: startDate.toDate(),
             importoTotale: nOspiti * cauzione,
-            idTipoBolletta: tipiBolletta.CAUZIONE
+            idTipoBolletta: tipiBolletta.CAUZIONE.id,
+            idQuietanziante: tipiBolletta.CAUZIONE.idQuietanziante
         };
     }
 
@@ -117,15 +126,19 @@ export class BollettaService extends TableService {
         checkout: number,
         dataFine: Date,
         nOspiti: number,
-        tipiBolletta: Record<string, number>
-    ): Pick<Bolletta, 'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'> {
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>
+    ): Pick<
+        Bolletta,
+        'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta' | 'idQuietanziante'
+    > {
         const endDate = this.resetTime(this.utcDate(dataFine));
         return {
             competenzaDal: this.resetTime(endDate.startOf('month')).toDate(),
             competenzaAl: endDate.toDate(),
             dataScadenza: endDate.toDate(),
             importoTotale: nOspiti * checkout,
-            idTipoBolletta: tipiBolletta.CHECKOUT
+            idTipoBolletta: tipiBolletta.CHECKOUT.id,
+            idQuietanziante: tipiBolletta.CHECKOUT.idQuietanziante
         };
     }
 
@@ -141,12 +154,18 @@ export class BollettaService extends TableService {
         canone: number,
         consumi: number,
         nOspiti: number,
-        tipiBolletta: Record<string, number>,
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>,
         tipoTariffa: 'MENSILE' | 'GIORNALIERA'
     ) {
         const bollette: Pick<
             Bolletta,
-            'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
+            | 'importoCanoni'
+            | 'importoConsumi'
+            | 'competenzaDal'
+            | 'competenzaAl'
+            | 'dataScadenza'
+            | 'idTipoBolletta'
+            | 'idQuietanziante'
         >[] = [];
 
         // Get start and end date
@@ -175,7 +194,8 @@ export class BollettaService extends TableService {
                 competenzaDal: startDate.toDate(),
                 competenzaAl: endDate.toDate(),
                 dataScadenza: startDate.date() > 5 ? startDate.toDate() : startDate.set('date', 5).toDate(),
-                idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
+                idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
+                idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
             });
         }
         // Otherwise
@@ -193,7 +213,8 @@ export class BollettaService extends TableService {
                     competenzaDal: currentDate.toDate(),
                     competenzaAl: endOfCurrentMonth.toDate(),
                     dataScadenza: startDate.date() > 5 ? startDate.toDate() : currentDate.set('date', 5).toDate(),
-                    idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
+                    idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
+                    idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
                 });
             }
             // middle months (whole month)
@@ -214,7 +235,8 @@ export class BollettaService extends TableService {
                     competenzaDal: currentDate.toDate(),
                     competenzaAl: endOfCurrentMonth.toDate(),
                     dataScadenza: currentDate.set('date', 5).toDate(),
-                    idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
+                    idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
+                    idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
                 });
             }
             // last month (difference between endDate and currentDate)
@@ -227,7 +249,8 @@ export class BollettaService extends TableService {
                     competenzaDal: currentDate.toDate(),
                     competenzaAl: endDate.toDate(),
                     dataScadenza: currentDate.set('date', 5).toDate(),
-                    idTipoBolletta: tipiBolletta[TipoRata.MENSILE]
+                    idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
+                    idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
                 });
             }
         }
@@ -247,12 +270,18 @@ export class BollettaService extends TableService {
         canone: number,
         consumi: number,
         nOspiti: number,
-        tipiBolletta: Record<string, number>,
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>,
         tipoTariffa: 'MENSILE' | 'GIORNALIERA'
     ) {
         const bollette: Pick<
             Bolletta,
-            'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
+            | 'importoCanoni'
+            | 'importoConsumi'
+            | 'competenzaDal'
+            | 'competenzaAl'
+            | 'dataScadenza'
+            | 'idTipoBolletta'
+            | 'idQuietanziante'
         >[] = [];
 
         const startDate = this.resetTime(this.utcDate(dataInizio));
@@ -287,7 +316,8 @@ export class BollettaService extends TableService {
                     startDate.isSame(endDate, 'months') && startDate.date() > 5
                         ? startDate.toDate()
                         : startDate.set('date', 5).toDate(),
-                idTipoBolletta: tipiBolletta[TipoRata.UNICA]
+                idTipoBolletta: tipiBolletta[TipoRata.UNICA].id,
+                idQuietanziante: tipiBolletta[TipoRata.UNICA].idQuietanziante
             });
         }
         // Otherwise
@@ -308,7 +338,8 @@ export class BollettaService extends TableService {
                                 currentDate.month() === endDate.month() && currentDate.date() < 5
                                     ? currentDate.toDate()
                                     : currentDate.date(5).toDate(),
-                            idTipoBolletta: tipiBolletta[TipoRata.UNICA]
+                            idTipoBolletta: tipiBolletta[TipoRata.UNICA].id,
+                            idQuietanziante: tipiBolletta[TipoRata.UNICA].idQuietanziante
                         });
                         importoCanoni = 0;
                         importoConsumi = 0;
@@ -370,12 +401,18 @@ export class BollettaService extends TableService {
         canone: number,
         consumi: number,
         nOspiti: number,
-        tipiBolletta: Record<string, number>,
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>,
         tipoTariffa: 'MENSILE' | 'GIORNALIERA'
     ) {
         const bollette: Pick<
             Bolletta,
-            'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
+            | 'importoCanoni'
+            | 'importoConsumi'
+            | 'competenzaDal'
+            | 'competenzaAl'
+            | 'dataScadenza'
+            | 'idTipoBolletta'
+            | 'idQuietanziante'
         >[] = [];
 
         const startDate = this.resetTime(this.utcDate(dataInizio));
@@ -401,7 +438,8 @@ export class BollettaService extends TableService {
                 competenzaDal: startDate.toDate(),
                 competenzaAl: endDate.toDate(),
                 dataScadenza: this.lastDayOfMonth(startDate).toDate(),
-                idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO]
+                idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO].id,
+                idQuietanziante: tipiBolletta[TipoRata.DA_BANDO].idQuietanziante
             });
         }
         // Otherwise
@@ -422,7 +460,8 @@ export class BollettaService extends TableService {
                             competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
                             competenzaAl: endOfCurrentMonth.toDate(),
                             dataScadenza: this.lastDayOfMonth(currentDate).toDate(),
-                            idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO]
+                            idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO].id,
+                            idQuietanziante: tipiBolletta[TipoRata.DA_BANDO].idQuietanziante
                         });
                         importoCanoni = 0;
                         importoConsumi = 0;
@@ -485,15 +524,22 @@ export class BollettaService extends TableService {
         contoRicaviConsumi: string,
         centroDiCosto: string,
         tipoTariffa: 'MENSILE' | 'GIORNALIERA',
-        idContratto: number
+        idContratto: number,
+        idQuietanzianteContratto: number
     ) {
         const result: Omit<Bolletta, 'id' | 'idBollettaStornata' | 'dataInvioEusis' | 'dataRegistrazione'>[] = [];
         const bollette: Pick<
             Bolletta,
-            'importoCanoni' | 'importoConsumi' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta'
+            | 'importoCanoni'
+            | 'importoConsumi'
+            | 'competenzaDal'
+            | 'competenzaAl'
+            | 'dataScadenza'
+            | 'idTipoBolletta'
+            | 'idQuietanziante'
         >[] = [];
 
-        const tipiBolletta = await this.getTipiBolletta();
+        const tipiBolletta = await this.getTipiBolletta(idQuietanzianteContratto);
         let numero = 0;
 
         if (cauzione) {
