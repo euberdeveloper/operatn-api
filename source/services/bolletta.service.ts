@@ -22,6 +22,7 @@ export class BollettaService extends TableService {
 
     protected includeQueryParameters = [
         'contratto',
+        'contratto.quietanziante',
         'contratto.contrattiSuOspite',
         'contratto.contrattiSuOspite.ospite',
         'contratto.contrattiSuOspite.ospite.persona',
