@@ -9,7 +9,7 @@
     "prisma:client": "prisma generate",
     "transpile:source": "tsc -p source",
     "transpile:scripts": "tsc -p scripts",
-    "transpile": "npm run transpile:source && npm run transpile:scripts",
+    "transpile": "npm run transpile:source",
     "start": "node dist/server/main",
     "serve": "npm run transpile:source && npm run start",
     "lint": "eslint source --ext ts --format codeframe",
