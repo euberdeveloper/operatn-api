@@ -19,7 +19,7 @@ export class TipoBollettaService extends TableService {
     protected putValidatorExcludes = ['id'];
     protected patchValidatorExcludes = [];
 
-    protected includeQueryParameters = [];
+    protected includeQueryParameters = ['quietanziante'];
     protected includeQueryParametersSoftCheck = [];
 
     constructor() {
@@ -27,24 +27,27 @@ export class TipoBollettaService extends TableService {
         this.model = prisma.tipoBolletta;
     }
 
-    public async getTipiBolletta(): Promise<TipoBolletta[]> {
-        return this.model.findMany();
+    public async getTipiBolletta(queryParams: any): Promise<TipoBolletta[]> {
+        const include = this.parseIncludeQueryParameters(queryParams);
+        return this.model.findMany({ include });
     }
 
-    public async getTipoBollettaById(id: number): Promise<TipoBolletta> {
+    public async getTipoBollettaById(id: number, queryParams: any): Promise<TipoBolletta> {
         this.validateId(id, 'id');
+        const include = this.parseIncludeQueryParameters(queryParams);
 
-        const tipoBolletta = await this.model.findUnique({ where: { id } });
+        const tipoBolletta = await this.model.findUnique({ where: { id }, include });
         if (tipoBolletta === null) {
             throw new NotFoundError('Tipo bolletta not found');
         }
         return tipoBolletta;
     }
 
-    public async getTipoBollettaByValue(value: string): Promise<TipoBolletta> {
+    public async getTipoBollettaByValue(value: string, queryParams: any): Promise<TipoBolletta> {
         this.validateStringParam(value, 'tipoBolletta');
+        const include = this.parseIncludeQueryParameters(queryParams);
 
-        const tipoBolletta = await this.model.findUnique({ where: { tipoBolletta: value } });
+        const tipoBolletta = await this.model.findUnique({ where: { tipoBolletta: value }, include });
         if (tipoBolletta === null) {
             throw new NotFoundError('Tipo bolletta not found');
         }

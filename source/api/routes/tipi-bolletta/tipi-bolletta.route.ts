@@ -12,8 +12,9 @@ export default function (): Router {
 
     router.get(
         '/',
-        asyncHandler(async (_req, res) => {
-            const tipiBolletta = await tipiBollettaService.getTipiBolletta();
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const tipiBolletta = await tipiBollettaService.getTipiBolletta(queryParams);
             res.json(tipiBolletta);
         })
     );
@@ -21,8 +22,9 @@ export default function (): Router {
     router.get(
         '/:id',
         asyncHandler(async (req, res) => {
+            const queryParams = req.query;
             const id = +req.params.id;
-            const tipiBolletta = await tipiBollettaService.getTipoBollettaById(id);
+            const tipiBolletta = await tipiBollettaService.getTipoBollettaById(id, queryParams);
             res.json(tipiBolletta);
         })
     );
@@ -30,8 +32,9 @@ export default function (): Router {
     router.get(
         '/value/:value',
         asyncHandler(async (req, res) => {
+            const queryParams = req.query;
             const value = req.params.value;
-            const tipiBolletta = await tipiBollettaService.getTipoBollettaByValue(value);
+            const tipiBolletta = await tipiBollettaService.getTipoBollettaByValue(value, queryParams);
             res.json(tipiBolletta);
         })
     );
