@@ -28,10 +28,28 @@ export default function (): Router {
     );
 
     router.get(
+        '/codice-istat/:codiceIstat',
+        asyncHandler(async (req, res) => {
+            const codiceIstat = req.params.codiceIstat;
+            const comune = await comuneService.getComuneByCodiceCatastale(codiceIstat);
+            res.json(comune);
+        })
+    );
+
+    router.get(
         '/codice-catastale/:codiceCatastale',
         asyncHandler(async (req, res) => {
             const codiceCatastale = req.params.codiceCatastale;
             const comune = await comuneService.getComuneByCodiceCatastale(codiceCatastale);
+            res.json(comune);
+        })
+    );
+
+    router.get(
+        '/denominazione/:denominazione',
+        asyncHandler(async (req, res) => {
+            const denominazione = req.params.denominazione;
+            const comune = await comuneService.getComuneByDenominazione(denominazione);
             res.json(comune);
         })
     );
@@ -84,6 +102,26 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const codiceCatastale = req.params.codiceCatastale;
             await comuneService.delComuneByCodiceCatastale(codiceCatastale);
+            res.json();
+        })
+    );
+
+    router.delete(
+        '/codice-istat/:codiceIstat',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const codiceIstat = req.params.codiceIstat;
+            await comuneService.delComuneByCodiceCatastale(codiceIstat);
+            res.json();
+        })
+    );
+
+    router.delete(
+        '/denominazione/:denominazione',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const denominazione = req.params.denominazione;
+            await comuneService.delComuneByDenominazione(denominazione);
             res.json();
         })
     );

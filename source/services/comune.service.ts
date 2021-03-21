@@ -45,10 +45,30 @@ export class ComuneService extends TableService {
         return comune;
     }
 
+    public async getComuneByCodiceIstat(codiceIstat: string): Promise<Comune> {
+        this.validateStringParam(codiceIstat, 'codiceIstat');
+
+        const comune = await this.model.findUnique({ where: { codiceIstat } });
+        if (comune === null) {
+            throw new NotFoundError('Comune not found');
+        }
+        return comune;
+    }
+
     public async getComuneByCodiceCatastale(codiceCatastale: string): Promise<Comune> {
         this.validateStringParam(codiceCatastale, 'codiceCatastale');
 
         const comune = await this.model.findUnique({ where: { codiceCatastale } });
+        if (comune === null) {
+            throw new NotFoundError('Comune not found');
+        }
+        return comune;
+    }
+
+    public async getComuneByDenominazione(denominazione: string): Promise<Comune> {
+        this.validateStringParam(denominazione, 'denominazione');
+
+        const comune = await this.model.findUnique({ where: { denominazione } });
         if (comune === null) {
             throw new NotFoundError('Comune not found');
         }
@@ -93,10 +113,24 @@ export class ComuneService extends TableService {
         });
     }
 
+    public async delComuneByCodiceIstat(codiceIstat: string): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateStringParam(codiceIstat, 'codiceIstat');
+            await this.model.delete({ where: { codiceIstat } });
+        });
+    }
+
     public async delComuneByCodiceCatastale(codiceCatastale: string): Promise<void> {
         return handlePrismaError(async () => {
             this.validateStringParam(codiceCatastale, 'codiceCatastale');
             await this.model.delete({ where: { codiceCatastale } });
+        });
+    }
+
+    public async delComuneByDenominazione(denominazione: string): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateStringParam(denominazione, 'denominazione');
+            await this.model.delete({ where: { denominazione } });
         });
     }
 }
