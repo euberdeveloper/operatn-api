@@ -25,6 +25,8 @@ export class BollettaService extends TableService {
         'contratto.contrattiSuOspite',
         'contratto.contrattiSuOspite.ospite',
         'contratto.contrattiSuOspite.ospite.persona',
+        'contratto.contrattiSuOspite.ospite.persona.residenza',
+        'contratto.contrattiSuOspite.ospite.persona.luogoDiNascita',
         'tipoBolletta',
         'quietanziante'
     ];
