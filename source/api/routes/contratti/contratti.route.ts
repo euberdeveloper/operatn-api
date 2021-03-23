@@ -33,21 +33,11 @@ export default function (): Router {
     );
 
     router.get(
-        '/da-contabilizzare',
+        '/firmati',
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
-            const contratti = await contrattoService.getContrattiDaContabilizzare(queryParams);
-            res.json(contratti);
-        })
-    );
-
-    router.get(
-        '/contabilizzati',
-        permission(RuoloUtente.ADMIN),
-        asyncHandler(async (req, res) => {
-            const queryParams = req.query;
-            const contratti = await contrattoService.getContrattiContabilizzati(queryParams);
+            const contratti = await contrattoService.getContrattiFirmati(queryParams);
             res.json(contratti);
         })
     );

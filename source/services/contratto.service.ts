@@ -241,27 +241,13 @@ export class ContrattoService extends TableService {
         return contratti;
     }
 
-    public async getContrattiDaContabilizzare(queryParams: any): Promise<Contratto[]> {
+    public async getContrattiFirmati(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
         const contratti = await this.model.findMany({
             where: {
                 dataInizio: { lte: new Date() },
                 dataFine: { gte: new Date() },
-                dataFirmaContratto: { not: null },
-                dataContabilizzazione: null
-            },
-            include
-        });
-        return contratti;
-    }
-
-    public async getContrattiContabilizzati(queryParams: any): Promise<Contratto[]> {
-        const include = this.getInclude(queryParams);
-        const contratti = await this.model.findMany({
-            where: {
-                dataInizio: { lte: new Date() },
-                dataFine: { gte: new Date() },
-                dataContabilizzazione: { not: null }
+                dataFirmaContratto: { not: null }
             },
             include
         });
