@@ -341,7 +341,6 @@ model Contratto {
     dataFine   DateTime @map("data_fine")
 
     dataFirmaContratto     DateTime? @map("data_firma_contratto")
-    dataContabilizzazione  DateTime? @map("data_contabilizzazione")
     dataChiusuraAnticipata DateTime? @map("data_chiusura_anticipata")
 
     checkout Float?   @map("checkout")
@@ -456,8 +455,6 @@ model ContoRicaviCanoni {
 model Bolletta {
     id Int @id @default(autoincrement()) @map("id")
 
-    numero Int @map("numero")
-
     importoConsumi Float? @map("importo_consumi")
     importoCanoni  Float? @map("importo_canone")
     importoTotale  Float  @map("importo_totale")
@@ -486,7 +483,6 @@ model Bolletta {
     quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
-    @@unique([id, numero])
     @@map("bolletta")
 }
 
