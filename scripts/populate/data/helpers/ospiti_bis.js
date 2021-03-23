@@ -199,6 +199,7 @@ const isoConv = [{ "iso3": "AF", "iso2": "AFG" },
 { "iso3": "SA", "iso2": "SAU" },
 { "iso3": "SN", "iso2": "SEN" },
 { "iso3": "RS", "iso2": "SRB" },
+{ "iso3": "RS", "iso2": "SER" },
 { "iso3": "SC", "iso2": "SYC" },
 { "iso3": "SL", "iso2": "SLE" },
 { "iso3": "SG", "iso2": "SGP" },
@@ -272,24 +273,29 @@ function parseData(data) {
 }
 
 async function getComuneByCodiceIstat(istat) {
-    const result = await axios.get(`http://localhost:3000/api/comuni/${istat}`, { headers: { Authorization: 'SECRET' } });
+    const result = await axios.get(`http://localhost:3000/api/comuni/${istat}`, { headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTQ0Njk5MDUsImV4cCI6MTYxNzE0ODMwNX0.XkpLPWFNt1wKp3NeUReS4ruA8r8TdLAh7fk4FSHpsnM' } });
     return result.data;
 }
 
 async function getComuneByDenominazione(denominazione) {
-    const result = await axios.get(`http://localhost:3000/api/comuni/denominazione/${denominazione}`, { headers: { Authorization: 'SECRET' } });
+    const result = await axios.get(`http://localhost:3000/api/comuni/denominazione/${denominazione}`, { headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTQ0Njk5MDUsImV4cCI6MTYxNzE0ODMwNX0.XkpLPWFNt1wKp3NeUReS4ruA8r8TdLAh7fk4FSHpsnM' } });
     return result.data;
 }
 
 function parseIndirizzo(indirizzo) {
     const parts = indirizzo.split(',');
-    indirizzo = parts.slice(0, parts.length - 1).join(',').trim();
-    const nCivico = parts[parts.length - 1] ? parts[parts.length - 1].trim() : '-';
+    indirizzo = parts.slice(0, parts.length - 1).join(',').trim() || parts[0];
+    const nCivico = parts.length > 1 ? parts[parts.length - 1].trim() : '-';
     return { indirizzo, nCivico };
 }
 
 function parseResidenzaBarbari(localita) {
-    return localita.split('-')[1].trim();
+    try {
+        return localita.split('-')[1].trim();
+    }
+    catch (error) {
+        return localita.trim();
+    }
 }
 
 async function residenza(data) {
@@ -299,17 +305,17 @@ async function residenza(data) {
         // if (data.residenzaIstat) {
         //     try {
         //     com = await getComuneByCodiceIstat(data.residenzaIstat);
-                
+
         //     }
         //     catch (e) { console.log('e codi istat', data.residenzaIstat)}
         // }
-         {
+        {
             try {
-            com = await getComuneByDenominazione(data.residenzaLocalita.trim());
+                com = await getComuneByDenominazione(data.residenzaLocalita.trim());
             }
-            catch (e) { 
+            catch (e) {
                 let parts = [data.residenzaLocalita, ...data.residenzaLocalita.split('-').reverse(), ...data.residenzaLocalita.split('/').reverse()].map(el => el.trim());
-                parts = [...parts, ...(parts.map(el => el.replace(/\(\w\w\)/g, '').replace("POVO DI TRENTO", 'TRENTO').replace("REGGIO EMILIA", "REGGIO NELL'EMILIA").replace("REGGIO CALABRIA", "REGGIO DI CALABRIA").replace("VIGNOLA (MO)", "VIGNOLA").replace(/\\'/, "'").replace(/O'/g, 'Ò').replace(/E'/g, 'È').replace(/I'/g, 'Ì').replace(/A'/g, 'À').replace(/U'/g, 'Ù').replace("ROVERETO (TN)", "ROVERETO").trim()))]
+                parts = [...parts, ...(parts.map(el => el.replace('ARZIGNANO VI', 'ARZIGNANO').replace('AQUILA', `L'AQUILA`).replace(/\(\w\w\)/g, '').replace("POVO DI TRENTO", 'TRENTO').replace("REGGIO EMILIA", "REGGIO NELL'EMILIA").replace("REGGIO CALABRIA", "REGGIO DI CALABRIA").replace("VIGNOLA (MO)", "VIGNOLA").replace(/\\'/, "'").replace(/O'/g, 'Ò').replace(/E'/g, 'È').replace(/I'/g, 'Ì').replace(/A'/g, 'À').replace(/U'/g, 'Ù').replace("ROVERETO (TN)", "ROVERETO").trim()))]
                 let ok = false;
                 for (const part of parts) {
                     try {
@@ -317,13 +323,13 @@ async function residenza(data) {
                         ok = true;
                         break;
                     }
-                    catch (e) {}
+                    catch (e) { }
                 }
                 if (!ok) {
                     console.log('e denominaz', data.residenzaLocalita)
                     throw new Error('aia')
                 }
-                
+
             }
         }
         return {
@@ -353,25 +359,25 @@ async function luogoDiNascita(data) {
         if (data.nascitaLocalita === 'ITALIA') data.nascitaLocalita = data.residenzaLocalita
         try {
             com = await getComuneByDenominazione(data.nascitaLocalita.trim());
-            }
-            catch (e) { 
-                let parts = [data.nascitaLocalita, ...data.nascitaLocalita.split('-').reverse(), ...data.nascitaLocalita.split('/').reverse()].map(el => el.trim());
-                parts = [...parts, ...(parts.map(el => el.replace(/\(\w\w\)/g, '').replace("POVO DI TRENTO", 'TRENTO').replace("REGGIO EMILIA", "REGGIO NELL'EMILIA").replace("REGGIO CALABRIA", "REGGIO DI CALABRIA").replace("VIGNOLA (MO)", "VIGNOLA").replace(/\\'/, "'").replace(/O'/g, 'Ò').replace(/E'/g, 'È').replace(/I'/g, 'Ì').replace(/A'/g, 'À').replace(/U'/g, 'Ù').replace("ROVERETO (TN)", "ROVERETO").trim()))]
-                let ok = false;
-                for (const part of parts) {
-                    try {
-                        com = await getComuneByDenominazione(part.trim());
-                        ok = true;
-                        break;
-                    }
-                    catch (e) {}
+        }
+        catch (e) {
+            let parts = [data.nascitaLocalita, ...data.nascitaLocalita.split('-').reverse(), ...data.nascitaLocalita.split('/').reverse()].map(el => el.trim());
+            parts = [...parts, ...(parts.map(el => el.replace('ARZIGNANO VI', 'ARZIGNANO').replace('AQUILA', `L'AQUILA`).replace(/\(\w\w\)/g, '').replace("POVO DI TRENTO", 'TRENTO').replace("REGGIO EMILIA", "REGGIO NELL'EMILIA").replace("REGGIO CALABRIA", "REGGIO DI CALABRIA").replace("VIGNOLA (MO)", "VIGNOLA").replace(/\\'/, "'").replace(/O'/g, 'Ò').replace(/E'/g, 'È').replace(/I'/g, 'Ì').replace(/A'/g, 'À').replace(/U'/g, 'Ù').replace("ROVERETO (TN)", "ROVERETO").trim()))]
+            let ok = false;
+            for (const part of parts) {
+                try {
+                    com = await getComuneByDenominazione(part.trim());
+                    ok = true;
+                    break;
                 }
-                if (!ok) {
-                    console.log('e luog' + data.nascitaStato, data.nascitaLocalita)
-                    throw new Error('aia')
-                }
-                
+                catch (e) { }
             }
+            if (!ok) {
+                console.log('e luog' + data.nascitaStato, data.nascitaLocalita)
+                throw new Error('aia')
+            }
+
+        }
         return {
             stato,
             provincia: data.nascitaPov,
@@ -395,6 +401,7 @@ const tipiDocs = {
     'PS': 'PASSAPORTO'
 }
 function documentoIdentita(data) {
+    if (data.documentoTipo == null) data.documentoTipo = 'CI';
     if (data.documentoTipo === 'SG') return null;
     if (data.documentoTipo) {
         return {
@@ -445,7 +452,8 @@ const data = rows.map(row => ({
 
 
 async function main() {
-    let ospiti = (await axios.get(`http://localhost:3000/api/ospiti`, { headers: { Authorization: 'SECRET' } })).data;
+    let errati = []
+    let ospiti = (await axios.get(`http://localhost:3000/api/ospiti`, { headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTQ0Njk5MDUsImV4cCI6MTYxNzE0ODMwNX0.XkpLPWFNt1wKp3NeUReS4ruA8r8TdLAh7fk4FSHpsnM' } })).data;
     ospiti = ospiti.reduce((result, ospite) => {
         const email = ospite.email.toLocaleLowerCase().trim();
         result[email] = { id: ospite.id };
@@ -453,18 +461,21 @@ async function main() {
     }, {});
     const bodies = [];
     let i = 0;
-    for (const d of data/*.slice(0, 1000)*/) {
+    for (const d of data.slice(20000, 30000)) {
         let res, luog;
         try {
             res = (await residenza(d));
             luog = (await luogoDiNascita(d));
         }
         catch (error) {
-           continue;
+            console.log(error);
+            console.log(d.residenzaStato + '///' + d.nascitaStato + '///' + d.residenzaLocalita + ' /// ' + d.nascitaLocalita)
+            errati.push(d)
+            continue;
         }
         const documento = documentoIdentita(d)
         const email = d.email ? d.email.toLocaleLowerCase().trim() : null;
-        if (res && res.stato && email && res.cap?.length === 4 && d.codiceFiscale !== 'JOX HNG 94A49 Z4' && res.indirizzo && res.comune && res.nCivico && res.provincia !== '--' && !ospiti[email] && documento?.numero && documento?.ente && d.codiceFiscale.length === 16 && email.indexOf('@') !== -1) {
+        if (res && res.stato && email && !ospiti[email] && (res.stato !== 'IT' || res.cap?.length === 5) && !~d.codiceFiscale.indexOf(' ') && res.indirizzo && res.comune && res.nCivico && res.provincia !== '--' && d.codiceFiscale.match(/^[\d\w]+$/) && documento?.numero && documento?.ente && d.codiceFiscale.length === 16 && email.indexOf('@') !== -1) {
             try {
                 bodies.push({
                     idGiada: null,
@@ -494,7 +505,7 @@ async function main() {
     for (const body of bodies) {
         console.log(i++)
         try {
-            await axios.post(`http://localhost:3000/api/ospiti`, body, { headers: { Authorization: 'SECRET' } });
+            await axios.post(`http://localhost:3000/api/ospiti`, body, { headers: { Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTQ0Njk5MDUsImV4cCI6MTYxNzE0ODMwNX0.XkpLPWFNt1wKp3NeUReS4ruA8r8TdLAh7fk4FSHpsnM' } });
 
         }
         catch (error) {
@@ -502,5 +513,7 @@ async function main() {
             throw new Error();
         }
     }
+
+    fs.writeFileSync('ospiti_errati.json', JSON.stringify(errati))
 }
 main();
