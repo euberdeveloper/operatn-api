@@ -303,6 +303,8 @@ export class ContrattoService extends TableService {
                 data: contrattoSuOspiteSuPostoLettoBody
             });
 
+            console.log('cauzione', cauzione)
+
             if (cauzione) {
                 ospiteId = validatedBody.ospiti[0].idOspite;
                 const possiedeCauzione = (
@@ -311,6 +313,8 @@ export class ContrattoService extends TableService {
                         select: { possiedeCauzione: true }
                     })
                 )?.possiedeCauzione;
+
+                console.log('POSSIEDE', possiedeCauzione)
 
                 if (possiedeCauzione) {
                     cauzione = null;
@@ -340,6 +344,7 @@ export class ContrattoService extends TableService {
             });
 
             if (cauzione) {
+                console.log('ENTRATO', ospiteId)
                 await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
             }
 
