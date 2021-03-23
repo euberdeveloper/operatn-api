@@ -268,9 +268,10 @@ export class ContrattoService extends TableService {
     public async postContratto(body: any): Promise<number> {
         return handlePrismaError(async () => {
             const validatedBody = await this.validateCreateContrattoBody(body);
-            const cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
+            let cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
             const checkout = validatedBody.checkout ? await this.getSpesaAmount('CHECKOUT', 40) : null;
             const createContrattoBody = this.getCreateContrattoBody(validatedBody, cauzione, checkout);
+            let ospiteId = Infinity;
 
             const contratto = await this.model.create({
                 data: createContrattoBody,
@@ -302,6 +303,20 @@ export class ContrattoService extends TableService {
                 data: contrattoSuOspiteSuPostoLettoBody
             });
 
+            if (cauzione) {
+                ospiteId = validatedBody.ospiti[0].idOspite;
+                const possiedeCauzione = (
+                    await prisma.ospite.findUnique({
+                        where: { id: ospiteId },
+                        select: { possiedeCauzione: true }
+                    })
+                )?.possiedeCauzione;
+
+                if (possiedeCauzione) {
+                    cauzione = null;
+                }
+            }
+
             const centroDiCosto = await this.getCentroDiCosto(validatedBody);
 
             const bollette = await BollettaService.calcBollette(
@@ -323,6 +338,10 @@ export class ContrattoService extends TableService {
             await prisma.bolletta.createMany({
                 data: bollette
             });
+
+            if (cauzione) {
+                await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
+            }
 
             return id;
         });
