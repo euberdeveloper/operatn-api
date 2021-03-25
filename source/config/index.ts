@@ -37,6 +37,9 @@ const CONFIG = {
     JOBS: {
         TABELLONE_CRON: process.env.JOBS_TABELLONE_CRON
     },
+    TEMP: {
+        PATH: process.env.TEMP_PATH
+    },
     STORED: {
         PATH: process.env.STORED_PATH
     },

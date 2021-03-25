@@ -19,5 +19,14 @@ export default function (): Router {
         })
     );
 
+    router.get(
+        '/tsv',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (_req, res) => {
+            const filePath = await tabelloneService.getTabelloneTsv();
+            res.download(filePath, 'tabellone.tsv');
+        })
+    );
+
     return router;
 }

@@ -1,6 +1,7 @@
 import * as dayjs from 'dayjs';
 import prisma, { Sesso } from '@/services/prisma.service';
-import CONFIG from '@/config';
+import fileSystemService from '@/services/filesystem.service';
+import logger from '@/utils/logger';
 
 interface Tabellone {
     fabbricatoId: number;
@@ -32,6 +33,36 @@ interface Tabellone {
     contrattoNote: string;
 }
 
+const headersMap = {
+    fabbricatoId: 'ID FABBRICATO',
+    fabbricatoCodice: 'CODICE FABBRICATO',
+    fabbricatoNome: 'NOME FABBRICATO',
+    fabbricatoComune: 'COMUNE FABBRICATO',
+    fabbricatoIndirizzo: 'INDIRIZZO FABBRICATO',
+    fabbricatoNCivico: 'NUMERO FABBRICATO',
+    stanzaUnitaImmobiliare: 'UNITÀ IMMOBILIARE STANZA',
+    stanzaPiano: 'PIANO STANZA',
+    stanzaNumeroStanza: 'NUMERO STANZA',
+    postoLettoPostoLetto: 'POSTO LETTO',
+    stanzaGestioneDiretta: 'GESTIONE DIRETTA',
+    stanzaNote: 'NOTE STANZA',
+    manutenzioneDataCreazione: 'DATA INIZIO MANUTENZIONE',
+    personaId: 'ID OSPITE',
+    personaNome: 'NOME OSPITE',
+    personaCognome: 'COGNOME OSPITE',
+    personaCodiceFiscale: 'CODICE FISCALE OSPITE',
+    personaSesso: 'SESSO OSPITE',
+    ospiteCittadinanza: 'CITTADINANZA OSPITE',
+    ospiteEmail: 'EMAIL OSPITE',
+    ospiteTelefonoPrincipale: 'TELEFONO PRINCIPALE OSPITE',
+    ospiteTelefonoSecondario: 'TELEFONO SECONDARIO OSPITE',
+    contrattoId: 'ID CONTRATTO',
+    contrattoDataInizio: 'DATA INIZIO CONTRATTO',
+    contrattoDataFine: 'DATA FINE CONTRATTO',
+    tipoContrattoSigla: 'SIGLA TIPO CONTRATTO',
+    contrattoNote: 'NOTE CONTRATTO'
+};
+
 export class AuthService {
     private async fetchData(): Promise<Tabellone[]> {
         const start = dayjs().utc().toDate();
@@ -40,7 +71,10 @@ export class AuthService {
         const startString = start.toISOString();
         const endString = end.toISOString();
 
-        const result = await prisma.$queryRaw<Tabellone[]>(`
+        let result: Tabellone[];
+
+        try {
+            result = await prisma.$queryRaw<Tabellone[]>(`
             SELECT
                 F.id AS "fabbricatoId",
                 F.codice AS "fabbricatoCodice",
@@ -102,12 +136,34 @@ export class AuthService {
             LEFT JOIN test.ospite O
             ON P.id = O.id;
         `);
+        } catch (error) {
+            logger.warning('Prisma tabellone error', error);
+            throw error;
+        }
 
         return result;
     }
 
     public async getTabellone(): Promise<Tabellone[]> {
         return this.fetchData();
+    }
+
+    public async getTabelloneTsv(): Promise<string> {
+        const data = await this.fetchData();
+        const headers = Object.keys(headersMap)
+            .map(key => (headersMap as any)[key])
+            .join('\t');
+        const rows = data
+            .map(row =>
+                Object.keys(row)
+                    .map(key => (row as any)[key])
+                    .join('\t')
+            )
+            .join('\n');
+        const text = [headers, rows].join('\n');
+
+        const filePath = await fileSystemService.storeTemp(text, 'tsv');
+        return filePath;
     }
 }
 
