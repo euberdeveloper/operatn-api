@@ -1,9 +1,9 @@
 import { BadRequestError } from './BadRequestError';
 
 export class ForeignKeyError extends BadRequestError {
-    protected static readonly defaultMessate = 'Foreign key constraint failed';
+    protected static readonly defaultMessage: string = 'Foreign key constraint failed';
 
-    constructor(message = ForeignKeyError.defaultMessate) {
+    constructor(message = ForeignKeyError.defaultMessage) {
         super(message);
         this.name = 'ForeignKeyError';
     }

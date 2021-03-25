@@ -1,9 +1,9 @@
 import { BadRequestError } from './BadRequestError';
 
 export class InvalidPathParamError extends BadRequestError {
-    protected static readonly defaultMessate = 'Invalid path param';
+    protected static readonly defaultMessage: string = 'Invalid path param';
 
-    constructor(message = InvalidPathParamError.defaultMessate) {
+    constructor(message = InvalidPathParamError.defaultMessage) {
         super(message);
         this.name = 'InvalidPathParamError';
     }

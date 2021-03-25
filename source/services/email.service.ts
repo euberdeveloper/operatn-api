@@ -1,5 +1,8 @@
 import { createTransport, Transporter } from 'nodemailer';
 import { pugEngine } from 'nodemailer-pug-engine';
+
+import { EmailError } from '@/errors';
+import logger from '@/utils/logger';
 import CONFIG from '@/config';
 
 enum EmailTemplates {
@@ -37,23 +40,33 @@ export class EmailService {
         ctx: any,
         attachments: any[] = []
     ) {
-        await this.mailer.sendMail({
-            from: CONFIG.EMAIL.USER,
-            to,
-            subject,
-            template,
-            ctx: { ...ctx },
-            attachments: [...attachments]
-        } as any);
+        try {
+            await this.mailer.sendMail({
+                from: CONFIG.EMAIL.USER,
+                to,
+                subject,
+                template,
+                ctx: { ...ctx },
+                attachments: [...attachments]
+            } as any);
+        } catch (error) {
+            logger.error('Email error', error);
+            throw new EmailError();
+        }
     }
 
-    public async tabellone(): Promise<void> {
-        const to = 'euberdeveloper@gmail.com';
+    public async tabellone(to: string[], filePath: string, fileName: string): Promise<void> {
         const subject = 'OperaTN - Tabellone';
         const template = EmailTemplates.TABELLONE;
-        const ctx = { name: 'Eugenio' };
+        const ctx = { fileName };
+        const attachments = [
+            {
+                path: filePath,
+                filename: fileName
+            }
+        ];
 
-        await this.sendEmail(to, subject, template, ctx);
+        await this.sendEmail(to, subject, template, ctx, attachments);
     }
 }
 

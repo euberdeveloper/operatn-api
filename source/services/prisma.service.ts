@@ -1,11 +1,11 @@
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient({ log: ['query'] });
+const prisma = new PrismaClient();
 
 const softDeletables = [
-    // 'Fabbricato',
-    // 'Stanza',
-    // 'PostoLetto',
+    'Fabbricato',
+    'Stanza',
+    'PostoLetto',
     'Tariffa',
     'DipartimentoUnitn',
     'Presidente',

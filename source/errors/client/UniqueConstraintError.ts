@@ -1,9 +1,9 @@
 import { BadRequestError } from './BadRequestError';
 
 export class UniqueConstraintError extends BadRequestError {
-    protected static readonly defaultMessate = 'Unique constraint failed';
+    protected static readonly defaultMessage: string = 'Unique constraint failed';
 
-    constructor(message = UniqueConstraintError.defaultMessate) {
+    constructor(message = UniqueConstraintError.defaultMessage) {
         super(message);
         this.name = 'UniqueConstraintError';
     }

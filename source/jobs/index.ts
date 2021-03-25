@@ -10,8 +10,8 @@ export class Jobs {
         this.bull = new Bull(this.queueName);
     }
 
-    public async loadJobs(): Promise<void> {
-        await loadTabellone(this.bull);
+    public loadJobs(): void {
+        loadTabellone(this.bull);
     }
 
     public async addTabellone(): Promise<void> {

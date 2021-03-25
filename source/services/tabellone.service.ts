@@ -144,12 +144,7 @@ export class AuthService {
         return result;
     }
 
-    public async getTabellone(): Promise<Tabellone[]> {
-        return this.fetchData();
-    }
-
-    public async getTabelloneTsv(): Promise<string> {
-        const data = await this.fetchData();
+    private toTsv(data: Tabellone[]): string {
         const headers = Object.keys(headersMap)
             .map(key => (headersMap as any)[key])
             .join('\t');
@@ -161,9 +156,40 @@ export class AuthService {
             )
             .join('\n');
         const text = [headers, rows].join('\n');
+        return text;
+    }
+
+    public async getTabellone(): Promise<Tabellone[]> {
+        return this.fetchData();
+    }
+
+    public async getTabelloneTsv(): Promise<string> {
+        const data = await this.fetchData();
+        const text = this.toTsv(data);
 
         const filePath = await fileSystemService.storeTemp(text, 'tsv');
         return filePath;
+    }
+
+    public async storeTabelloneTsv(): Promise<{ filePath: string; fileName: string }> {
+        const data = await this.fetchData();
+        const text = this.toTsv(data);
+
+        const dateString = new Date().toLocaleDateString('it').replace(/\//g, '-');
+        const fileName = `tabellone_${dateString}`;
+
+        const filePath = await fileSystemService.storeStored(text, 'tabellone', 'tsv', fileName);
+        return { filePath, fileName: `${fileName}.tsv` };
+    }
+
+    public async getRecipients(): Promise<string[]> {
+        try {
+            const result = await prisma.utente.findMany({ select: { email: true } });
+            return result.map(r => r.email);
+        } catch (error) {
+            logger.error('Get recipients error', error);
+            throw error;
+        }
     }
 }
 

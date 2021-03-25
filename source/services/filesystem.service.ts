@@ -22,6 +22,22 @@ export class FileSystemService {
 
         return filePath;
     }
+
+    public async storeStored(data: string, subpath: string, extension: string, filename?: string): Promise<string> {
+        const file = filename ? `${filename}.${extension}` : `${uuid()}.${extension}`;
+        const dirPath = path.join(CONFIG.STORED.PATH, subpath);
+        const filePath = path.resolve(dirPath, file);
+
+        try {
+            await mkdir(dirPath, { recursive: true });
+            await writeFile(filePath, data);
+        } catch (error) {
+            logger.error('File system error', error);
+            throw new FileSystemError();
+        }
+
+        return filePath;
+    }
 }
 
 export default new FileSystemService();

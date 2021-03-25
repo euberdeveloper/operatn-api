@@ -1,9 +1,9 @@
 import { BadRequestError } from './BadRequestError';
 
 export class InvalidQueryParamError extends BadRequestError {
-    protected static readonly defaultMessate = 'Invalid query param';
+    protected static readonly defaultMessage: string = 'Invalid query param';
 
-    constructor(message = InvalidQueryParamError.defaultMessate) {
+    constructor(message = InvalidQueryParamError.defaultMessage) {
         super(message);
         this.name = 'InvalidQueryParamError';
     }
