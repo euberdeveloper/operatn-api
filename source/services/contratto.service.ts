@@ -225,8 +225,9 @@ export class ContrattoService extends TableService {
 
     public async getContratti(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
+        const todayDate = new Date();
         const contratti = await this.model.findMany({
-            where: { dataInizio: { lte: new Date() }, dataFine: { gte: new Date() } },
+            where: { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
             include
         });
         return contratti;
@@ -234,8 +235,9 @@ export class ContrattoService extends TableService {
 
     public async getContrattiDaFirmare(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
+        const todayDate = new Date();
         const contratti = await this.model.findMany({
-            where: { dataInizio: { lte: new Date() }, dataFine: { gte: new Date() }, dataFirmaContratto: null },
+            where: { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate }, dataFirmaContratto: null },
             include
         });
         return contratti;
@@ -243,10 +245,11 @@ export class ContrattoService extends TableService {
 
     public async getContrattiFirmati(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
+        const todayDate = new Date();
         const contratti = await this.model.findMany({
             where: {
-                dataInizio: { lte: new Date() },
-                dataFine: { gte: new Date() },
+                dataInizio: { lte: todayDate },
+                dataFine: { gte: todayDate },
                 dataFirmaContratto: { not: null }
             },
             include
@@ -303,7 +306,7 @@ export class ContrattoService extends TableService {
                 data: contrattoSuOspiteSuPostoLettoBody
             });
 
-            console.log('cauzione', cauzione)
+            console.log('cauzione', cauzione);
 
             if (cauzione) {
                 ospiteId = validatedBody.ospiti[0].idOspite;
@@ -314,7 +317,7 @@ export class ContrattoService extends TableService {
                     })
                 )?.possiedeCauzione;
 
-                console.log('POSSIEDE', possiedeCauzione)
+                console.log('POSSIEDE', possiedeCauzione);
 
                 if (possiedeCauzione) {
                     cauzione = null;
@@ -344,7 +347,7 @@ export class ContrattoService extends TableService {
             });
 
             if (cauzione) {
-                console.log('ENTRATO', ospiteId)
+                console.log('ENTRATO', ospiteId);
                 await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
             }
 

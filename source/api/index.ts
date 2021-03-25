@@ -23,6 +23,7 @@ import statiRouter from './routes/stati/stati.route';
 import provinceRouter from './routes/province/province.route';
 import comuniRouter from './routes/comuni/comuni.route';
 import utentiRouter from './routes/utenti/utenti.route';
+import tabelloneRouter from './routes/tabellone/tabellone.route';
 
 export default function (): Router {
     const router = Router();
@@ -92,6 +93,9 @@ export default function (): Router {
 
     logger.debug('/utenti');
     router.use('/utenti', utentiRouter());
+
+    logger.debug('/tabellone');
+    router.use('/tabellone', tabelloneRouter());
 
     return router;
 }
