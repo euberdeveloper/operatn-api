@@ -1,4 +1,5 @@
 import { Queue } from 'bull';
+import CONFIG from '@/config';
 
 export const JOB_NAME = 'tabellone';
 
@@ -15,6 +16,6 @@ export async function loadTabellone(bull: Queue): Promise<void> {
 }
 
 export async function addTabellone(bull: Queue): Promise<void> {
-    const cron = '0 0 8 * * *';
+    const cron = CONFIG.JOBS.TABELLONE_CRON;
     await bull.add(JOB_NAME, 'data', { repeat: { cron } });
 }
