@@ -16,7 +16,7 @@ export function loadTabellone(bull: Queue): void {
 
 export async function addTabellone(bull: Queue): Promise<void> {
     const cron = CONFIG.JOBS.TABELLONE_CRON;
-    
+
     const oldJobsKeys = (await bull.getRepeatableJobs()).filter(j => j.name === JOB_NAME).map(j => j.key);
     for (const oldJobKey of oldJobsKeys) {
         await bull.removeRepeatableByKey(oldJobKey);
