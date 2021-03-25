@@ -8,6 +8,7 @@ import loadCors from './cors';
 import loadBodyParser from './bodyParser';
 import loadPassport from './passport';
 import getErrorHandler from './errorHandler';
+import loadJobs from './jobs';
 
 export class Loader {
     private readonly app: Express;
@@ -39,6 +40,16 @@ export class Loader {
         this.app.use('/api', this.router());
 
         logger.success('Handled routes');
+        logger.hr();
+    }
+
+    public async loadJobs(): Promise<void> {
+        logger.hr();
+        logger.info('Loading jobs...');
+
+        await loadJobs();
+
+        logger.success('Loaded jobs');
         logger.hr();
     }
 
