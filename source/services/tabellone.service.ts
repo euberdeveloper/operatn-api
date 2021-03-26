@@ -68,13 +68,10 @@ export class AuthService {
         const start = dayjs().utc().toDate();
         const end = dayjs().utc().add(2, 'months').toDate();
 
-        const startString = start.toISOString();
-        const endString = end.toISOString();
-
         let result: Tabellone[];
 
         try {
-            result = await prisma.$queryRaw<Tabellone[]>(`
+            result = await prisma.$queryRaw<Tabellone[]>`
             SELECT
                 F.id AS "fabbricatoId",
                 F.codice AS "fabbricatoCodice",
@@ -112,7 +109,7 @@ export class AuthService {
             ON (
                 S.id = M.id_stanza
                 AND M._eliminato = NULL
-                AND NOT (M._data_creazione > '${endString}'::date)
+                AND NOT (M._data_creazione > ${end})
             )
             LEFT JOIN test.contratto_su_ospite_su_posto_letto COP
             ON COP.id_posto_letto = PL.id
@@ -120,8 +117,8 @@ export class AuthService {
             ON (
                 COP.id_contratto = C.id
                 AND NOT (
-                    C.data_fine < '${startString}'::date
-                    OR C.data_inizio > '${endString}'::date
+                    C.data_fine < ${start}
+                    OR C.data_inizio > ${end}
                 )
             )
             LEFT JOIN test.contratto_su_ospite CO
@@ -135,7 +132,7 @@ export class AuthService {
             ON CO.id_ospite = P.id
             LEFT JOIN test.ospite O
             ON P.id = O.id;
-        `);
+        `;
         } catch (error) {
             logger.warning('Prisma tabellone error', error);
             throw error;
