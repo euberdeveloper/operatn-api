@@ -16,7 +16,7 @@ interface Tabellone {
     postoLettoPostoLetto: string;
     stanzaGestioneDiretta: boolean;
     stanzaNote: string;
-    manutenzioneDataCreazione: Date;
+    manutenzioneDataCreazione: string;
     personaId: number;
     personaNome: string;
     personaCognome: string;
@@ -26,10 +26,13 @@ interface Tabellone {
     ospiteEmail: string;
     ospiteTelefonoPrincipale: string;
     ospiteTelefonoSecondario: string;
+    dipartimentoUnitnCodice: string;
+    dipartimentoUnitnNome: string;
     contrattoId: number;
-    contrattoDataInizio: Date;
-    contrattoDataFine: Date;
+    contrattoDataInizio: string;
+    contrattoDataFine: string;
     tipoContrattoSigla: string;
+    tipoOspiteSigla: string;
     contrattoNote: string;
 }
 
@@ -56,10 +59,13 @@ const headersMap = {
     ospiteEmail: 'EMAIL OSPITE',
     ospiteTelefonoPrincipale: 'TELEFONO PRINCIPALE OSPITE',
     ospiteTelefonoSecondario: 'TELEFONO SECONDARIO OSPITE',
+    dipartimentoUnitnCodice: 'CODICE DIPARTIMENTO',
+    dipartimentoUnitnNome: 'NOME DIPARTIMENTO',
     contrattoId: 'ID CONTRATTO',
     contrattoDataInizio: 'DATA INIZIO CONTRATTO',
     contrattoDataFine: 'DATA FINE CONTRATTO',
     tipoContrattoSigla: 'SIGLA TIPO CONTRATTO',
+    tipoOspiteSigla: 'SIGLA TIPO OSPITE',
     contrattoNote: 'NOTE CONTRATTO'
 };
 
@@ -95,10 +101,13 @@ export class AuthService {
                 O.email AS "ospiteEmail",
                 O.telefono_principale AS "ospiteTelefonoPrincipale",
                 O.telefono_secondario AS "ospiteTelefonoSecondario",
+                DU.codice AS "dipartimentoUnitnCodice",
+                DU.nome AS "dipartimentoUnitnNome",
                 C.id AS "contrattoId",
                 to_char(C.data_inizio, 'DD/MM/YYYY') AS "contrattoDataInizio",
                 to_char(C.data_fine, 'DD/MM/YYYY') AS "contrattoDataFine",
                 TC.sigla AS "tipoContrattoSigla",
+                OT.sigla AS "tipoOspiteSigla",
                 C.note AS "contrattoNote"
             FROM test.posto_letto PL
             JOIN test.stanza S
@@ -128,10 +137,16 @@ export class AuthService {
             )
             LEFT JOIN test.tipo_contratto TC
             ON C.id_tipo_contratto = TC.id
+            LEFT JOIN test.tariffa TR
+            ON C.id_tariffa = TR.id
+            LEFT JOIN test.tipo_ospite OT
+            ON TR.id_tipo_ospite = OT.id
             LEFT JOIN test.persona P
             ON CO.id_ospite = P.id
             LEFT JOIN test.ospite O
-            ON P.id = O.id;
+            ON P.id = O.id
+            LEFT JOIN test.dipartimento_unitn DU
+            ON O.codice_dipartimento_unitn = DU.codice;
         `;
         } catch (error) {
             logger.warning('Prisma tabellone error', error);
@@ -149,6 +164,7 @@ export class AuthService {
             .map(row =>
                 Object.keys(row)
                     .map(key => (row as any)[key])
+                    .map(v => (typeof v === 'boolean' ? (v ? 'SI' : 'NO') : v))
                     .join('\t')
             )
             .join('\n');
@@ -179,10 +195,10 @@ export class AuthService {
         return { filePath, fileName: `${fileName}.tsv` };
     }
 
-    public async getRecipients(): Promise<string[]> {
+    public async getRecipients(): Promise<Set<string>> {
         try {
             const result = await prisma.utente.findMany({ select: { email: true } });
-            return result.map(r => r.email);
+            return new Set(result.map(r => r.email));
         } catch (error) {
             logger.error('Get recipients error', error);
             throw error;
