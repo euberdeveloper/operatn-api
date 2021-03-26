@@ -85,7 +85,7 @@ export class AuthService {
                 PL.posto_letto AS "postoLettoPostoLetto",
                 S.gestione_diretta AS "stanzaGestioneDiretta",
                 S.note AS "stanzaNote",
-                M._data_creazione AS "manutenzioneDataCreazione",
+                to_char(M._data_creazione, 'DD/MM/YYYY') AS "manutenzioneDataCreazione",
                 P.id AS "personaId",
                 P.nome AS "personaNome",
                 P.cognome AS "personaCognome",
@@ -96,8 +96,8 @@ export class AuthService {
                 O.telefono_principale AS "ospiteTelefonoPrincipale",
                 O.telefono_secondario AS "ospiteTelefonoSecondario",
                 C.id AS "contrattoId",
-                C.data_inizio AS "contrattoDataInizio",
-                C.data_fine AS "contrattoDataFine",
+                to_char(C.data_inizio, 'DD/MM/YYYY') AS "contrattoDataInizio",
+                to_char(C.data_fine, 'DD/MM/YYYY') AS "contrattoDataFine",
                 TC.sigla AS "tipoContrattoSigla",
                 C.note AS "contrattoNote"
             FROM test.posto_letto PL
