@@ -29,6 +29,7 @@
     "dayjs": "^1.10.4",
     "dotenv": "^8.2.0",
     "euberlog": "^2.0.9",
+    "exceljs": "^4.2.1",
     "express": "^4.17.1",
     "joi": "^17.4.0",
     "jsonwebtoken": "^8.5.1",

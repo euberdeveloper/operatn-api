@@ -9,7 +9,7 @@ export function loadTabellone(bull: Queue): void {
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
     bull.process(JOB_NAME, async () => {
         const recipients = await tabelloneService.getRecipients();
-        const { filePath, fileName } = await tabelloneService.storeTabelloneTsv();
+        const { filePath, fileName } = await tabelloneService.storeTabelloneXlsx();
         await emailService.tabellone(
             /*Array.from(recipients.values())*/ ['euberdeveloper@gmail.com'],
             filePath,
@@ -19,6 +19,7 @@ export function loadTabellone(bull: Queue): void {
 }
 
 export async function addTabellone(bull: Queue): Promise<void> {
+    await tabelloneService.storeTabelloneXlsx();
     const cron = CONFIG.JOBS.TABELLONE_CRON;
 
     const oldJobsKeys = (await bull.getRepeatableJobs()).filter(j => j.name === JOB_NAME).map(j => j.key);

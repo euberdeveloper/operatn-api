@@ -28,5 +28,14 @@ export default function (): Router {
         })
     );
 
+    router.get(
+        '/xlsx',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (_req, res) => {
+            const filePath = await tabelloneService.getTabelloneXlsx();
+            res.download(filePath, 'tabellone.xlsx');
+        })
+    );
+
     return router;
 }

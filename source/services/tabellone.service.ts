@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import * as dayjs from 'dayjs';
+import * as ExcelJS from 'exceljs';
 import prisma, { Sesso } from '@/services/prisma.service';
 import fileSystemService from '@/services/filesystem.service';
 import logger from '@/utils/logger';
@@ -11,32 +13,32 @@ interface Tabellone {
     fabbricatoIndirizzo: string;
     fabbricatoNCivico: string;
     stanzaUnitaImmobiliare: string;
-    stanzaPiano: string;
+    stanzaPiano: string | null;
     stanzaNumeroStanza: string;
     postoLettoPostoLetto: string;
     stanzaGestioneDiretta: boolean;
-    stanzaNote: string;
-    manutenzioneDataCreazione: string;
-    personaId: number;
-    personaNome: string;
-    personaCognome: string;
-    personaCodiceFiscale: string;
-    personaSesso: Sesso;
-    ospiteCittadinanza: string;
-    ospiteEmail: string;
-    ospiteTelefonoPrincipale: string;
-    ospiteTelefonoSecondario: string;
-    dipartimentoUnitnCodice: string;
-    dipartimentoUnitnNome: string;
-    contrattoId: number;
-    contrattoDataInizio: string;
-    contrattoDataFine: string;
-    tipoContrattoSigla: string;
-    tipoOspiteSigla: string;
-    contrattoNote: string;
+    stanzaNote: string | null;
+    manutenzioneDataCreazione: string | null;
+    personaId: number | null;
+    personaNome: string | null;
+    personaCognome: string | null;
+    personaCodiceFiscale: string | null;
+    personaSesso: Sesso | null;
+    ospiteCittadinanza: string | null;
+    ospiteEmail: string | null;
+    ospiteTelefonoPrincipale: string | null;
+    ospiteTelefonoSecondario: string | null;
+    dipartimentoUnitnCodice: string | null;
+    dipartimentoUnitnNome: string | null;
+    contrattoId: number | null;
+    contrattoDataInizio: string | null;
+    contrattoDataFine: string | null;
+    tipoContrattoSigla: string | null;
+    tipoOspiteSigla: string | null;
+    contrattoNote: string | null;
 }
 
-const headersMap = {
+const headersMap: Record<string, string> = {
     fabbricatoId: 'ID FABBRICATO',
     fabbricatoCodice: 'CODICE FABBRICATO',
     fabbricatoNome: 'NOME FABBRICATO',
@@ -172,6 +174,100 @@ export class AuthService {
         return text;
     }
 
+    private toXlsx(data: Tabellone[]): ExcelJS.Workbook {
+        const HEADER_FSIZE = 12;
+        const HEADER_BORDER_WIDTH = 'medium';
+        const FREE_POSTO_LETTO_COL = '00CAE493';
+        const MALE_POSTO_LETTO_COL = '0079A1D6';
+        const FEMALE_POSTO_LETTO_COL = '00E49393';
+
+        const workbook = new ExcelJS.Workbook();
+        workbook.creator = 'Eugenio Vinicio Berretta <euberdeveloper@gmail.com>';
+        workbook.created = new Date();
+        workbook.properties.date1904 = true;
+
+        const sheet = workbook.addWorksheet('Tabellone', {
+            headerFooter: {
+                firstHeader: 'Tabellone alloggi'
+            }
+        });
+
+        const headerRow = sheet.getRow(1);
+        headerRow.height = HEADER_FSIZE + HEADER_FSIZE / 2;
+        headerRow.alignment = { vertical: 'middle' };
+
+        const hadersMapKeys = Object.keys(headersMap);
+        for (let i = 0; i < hadersMapKeys.length; i++) {
+            const value = headersMap[hadersMapKeys[i]];
+
+            const column = sheet.getColumn(i + 1);
+            column.width = value.length * 2;
+            column.alignment = { horizontal: 'center' };
+
+            const cell = sheet.getCell(1, i + 1);
+            cell.value = value;
+            cell.border = {
+                top: { style: HEADER_BORDER_WIDTH },
+                left: { style: HEADER_BORDER_WIDTH },
+                right: { style: HEADER_BORDER_WIDTH },
+                bottom: { style: HEADER_BORDER_WIDTH }
+            };
+            cell.font = { size: HEADER_FSIZE, bold: true };
+        }
+
+        for (let i = 0; i < data.length; i++) {
+            const tuple = data[i];
+            const keys = Object.keys(tuple);
+            const row = sheet.getRow(i + 2);
+
+            for (let j = 0; j < keys.length; j++) {
+                const key = keys[j];
+                const value = (tuple as any)[key];
+                const cell = row.getCell(j + 1);
+
+                if (['stanzaGestioneDiretta'].includes(key)) {
+                    cell.value = value === true ? 'SI' : 'NO';
+                } else {
+                    cell.value = value;
+                }
+
+                if (['stanzaNumeroStanza', 'postoLettoPostoLetto'].includes(key)) {
+                    switch (tuple.personaSesso) {
+                        case null:
+                            cell.style.fill = {
+                                type: 'pattern',
+                                pattern: 'solid',
+                                fgColor: { argb: FREE_POSTO_LETTO_COL }
+                            };
+                            break;
+                        case 'MASCHIO':
+                            cell.style.fill = {
+                                type: 'pattern',
+                                pattern: 'solid',
+                                fgColor: { argb: MALE_POSTO_LETTO_COL }
+                            };
+                            break;
+                        case 'FEMMINA':
+                            cell.style.fill = {
+                                type: 'pattern',
+                                pattern: 'solid',
+                                fgColor: { argb: FEMALE_POSTO_LETTO_COL }
+                            };
+                            break;
+                    }
+                    cell.border = {
+                        top: { style: 'thin', color: { argb: '00000000' } },
+                        left: { style: 'thin', color: { argb: '00000000' } },
+                        right: { style: 'thin', color: { argb: '00000000' } },
+                        bottom: { style: 'thin', color: { argb: '00000000' } }
+                    };
+                }
+            }
+        }
+
+        return workbook;
+    }
+
     public async getTabellone(): Promise<Tabellone[]> {
         return this.fetchData();
     }
@@ -180,7 +276,15 @@ export class AuthService {
         const data = await this.fetchData();
         const text = this.toTsv(data);
 
-        const filePath = await fileSystemService.storeTemp(text, 'tsv');
+        const filePath = await fileSystemService.saveTempRandomName(text, 'tsv');
+        return filePath;
+    }
+
+    public async getTabelloneXlsx(): Promise<string> {
+        const data = await this.fetchData();
+        const workbook = this.toXlsx(data);
+
+        const filePath = await fileSystemService.saveTempXls(workbook);
         return filePath;
     }
 
@@ -189,10 +293,21 @@ export class AuthService {
         const text = this.toTsv(data);
 
         const dateString = new Date().toLocaleDateString('it').replace(/\//g, '-');
-        const fileName = `tabellone_${dateString}`;
+        const fileName = `tabellone_${dateString}.tsv`;
 
-        const filePath = await fileSystemService.storeStored(text, 'tabellone', 'tsv', fileName);
-        return { filePath, fileName: `${fileName}.tsv` };
+        const filePath = await fileSystemService.saveStored(text, fileName, 'tabellone');
+        return { filePath, fileName };
+    }
+
+    public async storeTabelloneXlsx(): Promise<{ filePath: string; fileName: string }> {
+        const data = await this.fetchData();
+        const workbook = this.toXlsx(data);
+
+        const dateString = new Date().toLocaleDateString('it').replace(/\//g, '-');
+        const fileName = `tabellone_${dateString}.xlsx`;
+
+        const filePath = await fileSystemService.saveStoredXls(workbook, fileName, 'tabellone');
+        return { filePath, fileName };
     }
 
     public async getRecipients(): Promise<Set<string>> {
