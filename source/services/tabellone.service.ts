@@ -181,6 +181,8 @@ export class AuthService {
         const MANUTENZIONE_POSTO_LETTO_COL = '00E49393';
         const MALE_POSTO_LETTO_COL = '0079A1D6';
         const FEMALE_POSTO_LETTO_COL = '00EFADE9';
+        const ARRIVAL_COL = '007FBD98';
+        const DEPARTURE_COL = '00FDFF91';
 
         const workbook = new ExcelJS.Workbook();
         workbook.creator = 'Eugenio Vinicio Berretta <euberdeveloper@gmail.com>';
@@ -193,7 +195,7 @@ export class AuthService {
             }
         });
 
-        const headerRow = sheet.getRow(1);
+        const headerRow = sheet.getRow(2);
         headerRow.height = HEADER_FSIZE + HEADER_FSIZE / 2;
         headerRow.alignment = { vertical: 'middle' };
 
@@ -201,11 +203,11 @@ export class AuthService {
         for (let i = 0; i < hadersMapKeys.length; i++) {
             const value = headersMap[hadersMapKeys[i]];
 
-            const column = sheet.getColumn(i + 1);
+            const column = sheet.getColumn(i + 2);
             column.width = value.length * 2;
             column.alignment = { horizontal: 'center' };
 
-            const cell = sheet.getCell(1, i + 1);
+            const cell = sheet.getCell(2, i + 2);
             cell.value = value;
             cell.border = {
                 top: { style: HEADER_BORDER_WIDTH },
@@ -216,17 +218,21 @@ export class AuthService {
             cell.font = { size: HEADER_FSIZE, bold: true };
         }
 
+        // const start = dayjs().utc().format('DD/MM/YYYY');
+        // const end = dayjs().utc().add(2, 'months').format('DD/MM/YYYY');
+        const start = dayjs('28/03/2000', 'DD/MM/YYYY'),
+            end = dayjs('29/03/3000', 'DD/MM/YYYY');
         for (let i = 0; i < data.length; i++) {
             const tuple = data[i];
             const keys = Object.keys(tuple);
-            const row = sheet.getRow(i + 2);
+            const row = sheet.getRow(i + 3);
 
             const isLastRow = i === data.length - 1;
 
             for (let j = 0; j < keys.length; j++) {
                 const key = keys[j];
                 const value = (tuple as any)[key];
-                const cell = row.getCell(j + 1);
+                const cell = row.getCell(j + 2);
 
                 const isFirstColumn = j === 0;
                 const isLastColumn = j === keys.length - 1;
@@ -265,45 +271,79 @@ export class AuthService {
                             };
                             break;
                     }
-                    cell.border = {
-                        top: { style: 'thin', color: { argb: '00000000' } },
-                        left: { style: isFirstColumn ? HEADER_BORDER_WIDTH : 'thin', color: { argb: '00000000' } },
-                        right: { style: isLastColumn ? HEADER_BORDER_WIDTH : 'thin', color: { argb: '00000000' } },
-                        bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : 'thin', color: { argb: '00000000' } }
+                } else if (
+                    key === 'contrattoDataInizio' &&
+                    !!value &&
+                    +dayjs(value, 'DD/MM/YYYY') >= +start &&
+                    +dayjs(value, 'DD/MM/YYYY') <= +end
+                ) {
+                    cell.style.fill = {
+                        type: 'pattern',
+                        pattern: 'solid',
+                        fgColor: {
+                            argb: ARRIVAL_COL
+                        }
+                    };
+                } else if (
+                    key === 'contrattoDataFine' &&
+                    !!value &&
+                    +dayjs(value, 'DD/MM/YYYY') >= +start &&
+                    +dayjs(value, 'DD/MM/YYYY') <= +end
+                ) {
+                    cell.style.fill = {
+                        type: 'pattern',
+                        pattern: 'solid',
+                        fgColor: {
+                            argb: DEPARTURE_COL
+                        }
                     };
                 }
+                cell.border = {
+                    left: {
+                        style: isFirstColumn ? HEADER_BORDER_WIDTH : 'thin',
+                        color: isFirstColumn ? { argb: '00000000' } : undefined
+                    },
+                    right: {
+                        style: isLastColumn ? HEADER_BORDER_WIDTH : 'thin',
+                        color: isLastColumn ? { argb: '00000000' } : undefined
+                    },
+                    bottom: {
+                        style: isLastRow ? HEADER_BORDER_WIDTH : 'thin',
+                        color: isLastRow ? { argb: '00000000' } : undefined
+                    }
+                };
             }
         }
 
-        const rowLegenda = data.length + 3;
-        sheet.mergeCells(rowLegenda, 1, rowLegenda, 2);
-        const headerLegendaCell = sheet.getCell(rowLegenda, 1);
-        headerLegendaCell.value = `LEGENDA COLORE ALLOGGI`;
-        headerLegendaCell.font = { bold: true };
-        headerLegendaCell.border = {
+        const rowLegendaAlloggi = data.length + 4;
+        sheet.mergeCells(rowLegendaAlloggi, 2, rowLegendaAlloggi, 3);
+        const headerLegendaAlloggiCell = sheet.getCell(rowLegendaAlloggi, 2);
+        headerLegendaAlloggiCell.value = `LEGENDA COLORE ALLOGGI`;
+        headerLegendaAlloggiCell.font = { bold: true };
+        headerLegendaAlloggiCell.border = {
             top: { style: HEADER_BORDER_WIDTH },
             left: { style: HEADER_BORDER_WIDTH },
             right: { style: HEADER_BORDER_WIDTH },
             bottom: { style: HEADER_BORDER_WIDTH }
         };
-        const cellsLegenda = [
+        const cellsLegendaAlloggi = [
             { colour: FREE_POSTO_LETTO_COL, text: 'POSTO LETTO LIBERO' },
             { colour: MANUTENZIONE_POSTO_LETTO_COL, text: 'POSTO LETTO IN MANUTENZIONE' },
             { colour: MALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON MASCHIO' },
             { colour: FEMALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON FEMMINA' }
         ];
-        for (let i = 0; i < cellsLegenda.length; i++) {
-            const row = sheet.getRow(rowLegenda + i + 1);
-            const el = cellsLegenda[i];
+        for (let i = 0; i < cellsLegendaAlloggi.length; i++) {
+            const row = sheet.getRow(rowLegendaAlloggi + i + 1);
+            const el = cellsLegendaAlloggi[i];
 
-            const isLastRow = i === cellsLegenda.length - 1;
+            const isLastRow = i === cellsLegendaAlloggi.length - 1;
 
-            const colourCell = row.getCell(1);
-            const descriptionCell = row.getCell(2);
+            const colourCell = row.getCell(2);
+            const descriptionCell = row.getCell(3);
 
             colourCell.border = {
                 left: { style: HEADER_BORDER_WIDTH },
-                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : 'thin' }
+                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
             };
             colourCell.style.fill = {
                 type: 'pattern',
@@ -314,7 +354,48 @@ export class AuthService {
             descriptionCell.value = el.text;
             descriptionCell.border = {
                 right: { style: HEADER_BORDER_WIDTH },
-                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : 'thin' }
+                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
+            };
+        }
+
+        const rowLegendaContratti = data.length + 4 + cellsLegendaAlloggi.length + 2;
+        sheet.mergeCells(rowLegendaContratti, 2, rowLegendaContratti, 3);
+        const headerLegendaContrattiCell = sheet.getCell(rowLegendaContratti, 2);
+        headerLegendaContrattiCell.value = `LEGENDA COLORE CONTRATTI`;
+        headerLegendaContrattiCell.font = { bold: true };
+        headerLegendaContrattiCell.border = {
+            top: { style: HEADER_BORDER_WIDTH },
+            left: { style: HEADER_BORDER_WIDTH },
+            right: { style: HEADER_BORDER_WIDTH },
+            bottom: { style: HEADER_BORDER_WIDTH }
+        };
+        const cellsLegendaContratti = [
+            { colour: ARRIVAL_COL, text: 'INIZIO CONTRATTO ENTRO DUE MESI' },
+            { colour: DEPARTURE_COL, text: 'FINE CONTRATTO ENTRO DUE MESI' }
+        ];
+        for (let i = 0; i < cellsLegendaContratti.length; i++) {
+            const row = sheet.getRow(rowLegendaContratti + i + 1);
+            const el = cellsLegendaContratti[i];
+
+            const isLastRow = i === cellsLegendaContratti.length - 1;
+
+            const colourCell = row.getCell(2);
+            const descriptionCell = row.getCell(3);
+
+            colourCell.border = {
+                left: { style: HEADER_BORDER_WIDTH },
+                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
+            };
+            colourCell.style.fill = {
+                type: 'pattern',
+                pattern: 'solid',
+                fgColor: { argb: el.colour }
+            };
+
+            descriptionCell.value = el.text;
+            descriptionCell.border = {
+                right: { style: HEADER_BORDER_WIDTH },
+                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
             };
         }
 
