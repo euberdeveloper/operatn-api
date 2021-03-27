@@ -10,11 +10,7 @@ export function loadTabellone(bull: Queue): void {
     bull.process(JOB_NAME, async () => {
         const recipients = await tabelloneService.getRecipients();
         const { filePath, fileName } = await tabelloneService.storeTabelloneXlsx();
-        await emailService.tabellone(
-            /*Array.from(recipients.values())*/ ['euberdeveloper@gmail.com'],
-            filePath,
-            fileName
-        );
+        await emailService.tabellone(Array.from(recipients.values()), filePath, fileName);
     });
 }
 
