@@ -49,26 +49,26 @@ const headersMap: Record<string, string> = {
     stanzaPiano: 'PIANO STANZA',
     stanzaNumeroStanza: 'NUMERO STANZA',
     postoLettoPostoLetto: 'POSTO LETTO',
-    stanzaGestioneDiretta: 'GESTIONE DIRETTA',
     stanzaNote: 'NOTE STANZA',
-    manutenzioneDataCreazione: 'DATA INIZIO MANUTENZIONE',
     personaId: 'ID OSPITE',
-    personaNome: 'NOME OSPITE',
-    personaCognome: 'COGNOME OSPITE',
-    personaCodiceFiscale: 'CODICE FISCALE OSPITE',
     personaSesso: 'SESSO OSPITE',
     ospiteCittadinanza: 'CITTADINANZA OSPITE',
+    personaCognome: 'COGNOME OSPITE',
+    personaNome: 'NOME OSPITE',
+    contrattoDataInizio: 'DATA INIZIO CONTRATTO',
+    contrattoDataFine: 'DATA FINE CONTRATTO',
+    tipoOspiteSigla: 'SIGLA TIPO OSPITE',
+    tipoContrattoSigla: 'SIGLA TIPO CONTRATTO',
+    dipartimentoUnitnCodice: 'CODICE DIPARTIMENTO',
+    dipartimentoUnitnNome: 'NOME DIPARTIMENTO',
+    personaCodiceFiscale: 'CODICE FISCALE OSPITE',
     ospiteEmail: 'EMAIL OSPITE',
     ospiteTelefonoPrincipale: 'TELEFONO PRINCIPALE OSPITE',
     ospiteTelefonoSecondario: 'TELEFONO SECONDARIO OSPITE',
-    dipartimentoUnitnCodice: 'CODICE DIPARTIMENTO',
-    dipartimentoUnitnNome: 'NOME DIPARTIMENTO',
     contrattoId: 'ID CONTRATTO',
-    contrattoDataInizio: 'DATA INIZIO CONTRATTO',
-    contrattoDataFine: 'DATA FINE CONTRATTO',
-    tipoContrattoSigla: 'SIGLA TIPO CONTRATTO',
-    tipoOspiteSigla: 'SIGLA TIPO OSPITE',
-    contrattoNote: 'NOTE CONTRATTO'
+    contrattoNote: 'NOTE CONTRATTO',
+    manutenzioneDataCreazione: 'DATA INIZIO MANUTENZIONE',
+    stanzaGestioneDiretta: 'GESTIONE DIRETTA'
 };
 
 export class AuthService {
@@ -91,26 +91,26 @@ export class AuthService {
                 S.piano AS "stanzaPiano",
                 S.numero_stanza AS "stanzaNumeroStanza",
                 PL.posto_letto AS "postoLettoPostoLetto",
-                S.gestione_diretta AS "stanzaGestioneDiretta",
                 S.note AS "stanzaNote",
-                to_char(M._data_creazione, 'DD/MM/YYYY') AS "manutenzioneDataCreazione",
                 P.id AS "personaId",
-                P.nome AS "personaNome",
-                P.cognome AS "personaCognome",
-                P.codice_fiscale AS "personaCodiceFiscale",
                 P.sesso AS "personaSesso",
                 O.cittadinanza AS "ospiteCittadinanza",
+                P.cognome AS "personaCognome",
+                P.nome AS "personaNome",
+                to_char(C.data_inizio, 'DD/MM/YYYY') AS "contrattoDataInizio",
+                to_char(C.data_fine, 'DD/MM/YYYY') AS "contrattoDataFine",
+                OT.sigla AS "tipoOspiteSigla",
+                TC.sigla AS "tipoContrattoSigla",
+                DU.codice AS "dipartimentoUnitnCodice",
+                DU.nome AS "dipartimentoUnitnNome",
+                P.codice_fiscale AS "personaCodiceFiscale",
                 O.email AS "ospiteEmail",
                 O.telefono_principale AS "ospiteTelefonoPrincipale",
                 O.telefono_secondario AS "ospiteTelefonoSecondario",
-                DU.codice AS "dipartimentoUnitnCodice",
-                DU.nome AS "dipartimentoUnitnNome",
                 C.id AS "contrattoId",
-                to_char(C.data_inizio, 'DD/MM/YYYY') AS "contrattoDataInizio",
-                to_char(C.data_fine, 'DD/MM/YYYY') AS "contrattoDataFine",
-                TC.sigla AS "tipoContrattoSigla",
-                OT.sigla AS "tipoOspiteSigla",
-                C.note AS "contrattoNote"
+                C.note AS "contrattoNote",
+                to_char(M._data_creazione, 'DD/MM/YYYY') AS "manutenzioneDataCreazione",
+                S.gestione_diretta AS "stanzaGestioneDiretta"
             FROM test.posto_letto PL
             JOIN test.stanza S
             ON PL.id_stanza = S.id
@@ -178,8 +178,9 @@ export class AuthService {
         const HEADER_FSIZE = 12;
         const HEADER_BORDER_WIDTH = 'medium';
         const FREE_POSTO_LETTO_COL = '00CAE493';
+        const MANUTENZIONE_POSTO_LETTO_COL = '00E49393';
         const MALE_POSTO_LETTO_COL = '0079A1D6';
-        const FEMALE_POSTO_LETTO_COL = '00E49393';
+        const FEMALE_POSTO_LETTO_COL = '00EFADE9';
 
         const workbook = new ExcelJS.Workbook();
         workbook.creator = 'Eugenio Vinicio Berretta <euberdeveloper@gmail.com>';
@@ -220,10 +221,15 @@ export class AuthService {
             const keys = Object.keys(tuple);
             const row = sheet.getRow(i + 2);
 
+            const isLastRow = i === data.length - 1;
+
             for (let j = 0; j < keys.length; j++) {
                 const key = keys[j];
                 const value = (tuple as any)[key];
                 const cell = row.getCell(j + 1);
+
+                const isFirstColumn = j === 0;
+                const isLastColumn = j === keys.length - 1;
 
                 if (['stanzaGestioneDiretta'].includes(key)) {
                     cell.value = value === true ? 'SI' : 'NO';
@@ -237,7 +243,11 @@ export class AuthService {
                             cell.style.fill = {
                                 type: 'pattern',
                                 pattern: 'solid',
-                                fgColor: { argb: FREE_POSTO_LETTO_COL }
+                                fgColor: {
+                                    argb: tuple.manutenzioneDataCreazione
+                                        ? MANUTENZIONE_POSTO_LETTO_COL
+                                        : FREE_POSTO_LETTO_COL
+                                }
                             };
                             break;
                         case 'MASCHIO':
@@ -257,12 +267,55 @@ export class AuthService {
                     }
                     cell.border = {
                         top: { style: 'thin', color: { argb: '00000000' } },
-                        left: { style: 'thin', color: { argb: '00000000' } },
-                        right: { style: 'thin', color: { argb: '00000000' } },
-                        bottom: { style: 'thin', color: { argb: '00000000' } }
+                        left: { style: isFirstColumn ? HEADER_BORDER_WIDTH : 'thin', color: { argb: '00000000' } },
+                        right: { style: isLastColumn ? HEADER_BORDER_WIDTH : 'thin', color: { argb: '00000000' } },
+                        bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : 'thin', color: { argb: '00000000' } }
                     };
                 }
             }
+        }
+
+        const rowLegenda = data.length + 3;
+        sheet.mergeCells(rowLegenda, 1, rowLegenda, 2);
+        const headerLegendaCell = sheet.getCell(rowLegenda, 1);
+        headerLegendaCell.value = `LEGENDA COLORE ALLOGGI`;
+        headerLegendaCell.font = { bold: true };
+        headerLegendaCell.border = {
+            top: { style: HEADER_BORDER_WIDTH },
+            left: { style: HEADER_BORDER_WIDTH },
+            right: { style: HEADER_BORDER_WIDTH },
+            bottom: { style: HEADER_BORDER_WIDTH }
+        };
+        const cellsLegenda = [
+            { colour: FREE_POSTO_LETTO_COL, text: 'POSTO LETTO LIBERO' },
+            { colour: MANUTENZIONE_POSTO_LETTO_COL, text: 'POSTO LETTO IN MANUTENZIONE' },
+            { colour: MALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON MASCHIO' },
+            { colour: FEMALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON FEMMINA' }
+        ];
+        for (let i = 0; i < cellsLegenda.length; i++) {
+            const row = sheet.getRow(rowLegenda + i + 1);
+            const el = cellsLegenda[i];
+
+            const isLastRow = i === cellsLegenda.length - 1;
+
+            const colourCell = row.getCell(1);
+            const descriptionCell = row.getCell(2);
+
+            colourCell.border = {
+                left: { style: HEADER_BORDER_WIDTH },
+                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : 'thin' }
+            };
+            colourCell.style.fill = {
+                type: 'pattern',
+                pattern: 'solid',
+                fgColor: { argb: el.colour }
+            };
+
+            descriptionCell.value = el.text;
+            descriptionCell.border = {
+                right: { style: HEADER_BORDER_WIDTH },
+                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : 'thin' }
+            };
         }
 
         return workbook;
