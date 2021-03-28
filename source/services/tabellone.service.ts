@@ -184,6 +184,50 @@ export class AuthService {
         const ARRIVAL_COL = '007FBD98';
         const DEPARTURE_COL = '00FDFF91';
 
+        function addLegenda(
+            title: string,
+            legenda: { colour: string; text: string }[],
+            rowOffset: number,
+            columnOffset: number,
+            sheet: ExcelJS.Worksheet
+        ) {
+            sheet.mergeCells(rowOffset, columnOffset, rowOffset, columnOffset + 1);
+            const headerLegendaCell = sheet.getCell(rowOffset, columnOffset + 1);
+            headerLegendaCell.value = title;
+            headerLegendaCell.font = { bold: true };
+            headerLegendaCell.border = {
+                top: { style: HEADER_BORDER_WIDTH },
+                left: { style: HEADER_BORDER_WIDTH },
+                right: { style: HEADER_BORDER_WIDTH },
+                bottom: { style: HEADER_BORDER_WIDTH }
+            };
+            for (let i = 0; i < legenda.length; i++) {
+                const row = sheet.getRow(rowOffset + i + 1);
+                const el = legenda[i];
+
+                const isLastRow = i === legenda.length - 1;
+
+                const colourCell = row.getCell(columnOffset);
+                const descriptionCell = row.getCell(columnOffset + 1);
+
+                colourCell.border = {
+                    left: { style: HEADER_BORDER_WIDTH },
+                    bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
+                };
+                colourCell.style.fill = {
+                    type: 'pattern',
+                    pattern: 'solid',
+                    fgColor: { argb: el.colour }
+                };
+
+                descriptionCell.value = el.text;
+                descriptionCell.border = {
+                    right: { style: HEADER_BORDER_WIDTH },
+                    bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
+                };
+            }
+        }
+
         const workbook = new ExcelJS.Workbook();
         workbook.creator = 'Eugenio Vinicio Berretta <euberdeveloper@gmail.com>';
         workbook.created = new Date();
@@ -195,7 +239,22 @@ export class AuthService {
             }
         });
 
-        const headerRow = sheet.getRow(2);
+        const legendaAlloggi = [
+            { colour: FREE_POSTO_LETTO_COL, text: 'POSTO LETTO LIBERO' },
+            { colour: MANUTENZIONE_POSTO_LETTO_COL, text: 'POSTO LETTO IN MANUTENZIONE' },
+            { colour: MALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON MASCHIO' },
+            { colour: FEMALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON FEMMINA' }
+        ];
+        addLegenda('LEGENDA COLORE ALLOGGI', legendaAlloggi, 2, 2, sheet);
+
+        const legendaContratti = [
+            { colour: ARRIVAL_COL, text: 'INIZIO CONTRATTO ENTRO DUE MESI' },
+            { colour: DEPARTURE_COL, text: 'FINE CONTRATTO ENTRO DUE MESI' }
+        ];
+        addLegenda('LEGENDA COLORE CONTRATTI', legendaContratti, 2, 5, sheet);
+
+        const dataRowOffset = 2 + Math.max(legendaAlloggi.length, legendaContratti.length) + 2;
+        const headerRow = sheet.getRow(dataRowOffset);
         headerRow.height = HEADER_FSIZE + HEADER_FSIZE / 2;
         headerRow.alignment = { vertical: 'middle' };
 
@@ -207,7 +266,7 @@ export class AuthService {
             column.width = value.length * 2;
             column.alignment = { horizontal: 'center' };
 
-            const cell = sheet.getCell(2, i + 2);
+            const cell = headerRow.getCell(i + 2);
             cell.value = value;
             cell.border = {
                 top: { style: HEADER_BORDER_WIDTH },
@@ -218,14 +277,12 @@ export class AuthService {
             cell.font = { size: HEADER_FSIZE, bold: true };
         }
 
-        // const start = dayjs().utc().format('DD/MM/YYYY');
-        // const end = dayjs().utc().add(2, 'months').format('DD/MM/YYYY');
-        const start = dayjs('28/03/2000', 'DD/MM/YYYY'),
-            end = dayjs('29/03/3000', 'DD/MM/YYYY');
+        const start = dayjs().utc().format('DD/MM/YYYY');
+        const end = dayjs().utc().add(2, 'months').format('DD/MM/YYYY');
         for (let i = 0; i < data.length; i++) {
             const tuple = data[i];
             const keys = Object.keys(tuple);
-            const row = sheet.getRow(i + 3);
+            const row = sheet.getRow(i + dataRowOffset + 1);
 
             const isLastRow = i === data.length - 1;
 
@@ -313,90 +370,6 @@ export class AuthService {
                     }
                 };
             }
-        }
-
-        const rowLegendaAlloggi = data.length + 4;
-        sheet.mergeCells(rowLegendaAlloggi, 2, rowLegendaAlloggi, 3);
-        const headerLegendaAlloggiCell = sheet.getCell(rowLegendaAlloggi, 2);
-        headerLegendaAlloggiCell.value = `LEGENDA COLORE ALLOGGI`;
-        headerLegendaAlloggiCell.font = { bold: true };
-        headerLegendaAlloggiCell.border = {
-            top: { style: HEADER_BORDER_WIDTH },
-            left: { style: HEADER_BORDER_WIDTH },
-            right: { style: HEADER_BORDER_WIDTH },
-            bottom: { style: HEADER_BORDER_WIDTH }
-        };
-        const cellsLegendaAlloggi = [
-            { colour: FREE_POSTO_LETTO_COL, text: 'POSTO LETTO LIBERO' },
-            { colour: MANUTENZIONE_POSTO_LETTO_COL, text: 'POSTO LETTO IN MANUTENZIONE' },
-            { colour: MALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON MASCHIO' },
-            { colour: FEMALE_POSTO_LETTO_COL, text: 'POSTO LETTO CON FEMMINA' }
-        ];
-        for (let i = 0; i < cellsLegendaAlloggi.length; i++) {
-            const row = sheet.getRow(rowLegendaAlloggi + i + 1);
-            const el = cellsLegendaAlloggi[i];
-
-            const isLastRow = i === cellsLegendaAlloggi.length - 1;
-
-            const colourCell = row.getCell(2);
-            const descriptionCell = row.getCell(3);
-
-            colourCell.border = {
-                left: { style: HEADER_BORDER_WIDTH },
-                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
-            };
-            colourCell.style.fill = {
-                type: 'pattern',
-                pattern: 'solid',
-                fgColor: { argb: el.colour }
-            };
-
-            descriptionCell.value = el.text;
-            descriptionCell.border = {
-                right: { style: HEADER_BORDER_WIDTH },
-                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
-            };
-        }
-
-        const rowLegendaContratti = data.length + 4 + cellsLegendaAlloggi.length + 2;
-        sheet.mergeCells(rowLegendaContratti, 2, rowLegendaContratti, 3);
-        const headerLegendaContrattiCell = sheet.getCell(rowLegendaContratti, 2);
-        headerLegendaContrattiCell.value = `LEGENDA COLORE CONTRATTI`;
-        headerLegendaContrattiCell.font = { bold: true };
-        headerLegendaContrattiCell.border = {
-            top: { style: HEADER_BORDER_WIDTH },
-            left: { style: HEADER_BORDER_WIDTH },
-            right: { style: HEADER_BORDER_WIDTH },
-            bottom: { style: HEADER_BORDER_WIDTH }
-        };
-        const cellsLegendaContratti = [
-            { colour: ARRIVAL_COL, text: 'INIZIO CONTRATTO ENTRO DUE MESI' },
-            { colour: DEPARTURE_COL, text: 'FINE CONTRATTO ENTRO DUE MESI' }
-        ];
-        for (let i = 0; i < cellsLegendaContratti.length; i++) {
-            const row = sheet.getRow(rowLegendaContratti + i + 1);
-            const el = cellsLegendaContratti[i];
-
-            const isLastRow = i === cellsLegendaContratti.length - 1;
-
-            const colourCell = row.getCell(2);
-            const descriptionCell = row.getCell(3);
-
-            colourCell.border = {
-                left: { style: HEADER_BORDER_WIDTH },
-                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
-            };
-            colourCell.style.fill = {
-                type: 'pattern',
-                pattern: 'solid',
-                fgColor: { argb: el.colour }
-            };
-
-            descriptionCell.value = el.text;
-            descriptionCell.border = {
-                right: { style: HEADER_BORDER_WIDTH },
-                bottom: { style: isLastRow ? HEADER_BORDER_WIDTH : undefined }
-            };
         }
 
         return workbook;
