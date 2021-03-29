@@ -14,6 +14,7 @@ interface Tabellone {
     fabbricatoNCivico: string;
     stanzaUnitaImmobiliare: string;
     stanzaPiano: string | null;
+    tipoStanzaTipoStanza: string;
     stanzaNumeroStanza: string;
     postoLettoPostoLetto: string;
     stanzaGestioneDiretta: boolean;
@@ -47,6 +48,7 @@ const headersMap: Record<string, string> = {
     fabbricatoNCivico: 'NUMERO FABBRICATO',
     stanzaUnitaImmobiliare: 'UNITÀ IMMOBILIARE STANZA',
     stanzaPiano: 'PIANO STANZA',
+    tipoStanzaTipoStanza: 'TIPO STANZA',
     stanzaNumeroStanza: 'NUMERO STANZA',
     postoLettoPostoLetto: 'POSTO LETTO',
     stanzaNote: 'NOTE STANZA',
@@ -89,6 +91,7 @@ export class AuthService {
                 F.n_civico AS "fabbricatoNCivico",
                 S.unita_immobiliare AS "stanzaUnitaImmobiliare",
                 S.piano AS "stanzaPiano",
+                TS.tipo_stanza AS "tipoStanzaTipoStanza",
                 S.numero_stanza AS "stanzaNumeroStanza",
                 PL.posto_letto AS "postoLettoPostoLetto",
                 S.note AS "stanzaNote",
@@ -114,6 +117,8 @@ export class AuthService {
             FROM test.posto_letto PL
             JOIN test.stanza S
             ON PL.id_stanza = S.id
+            JOIN test.tipo_stanza TS
+            ON S.id_tipo_stanza = TS.id
             JOIN test.fabbricato F
             ON S.id_fabbricato = F.id
             LEFT JOIN test.manutenzione M
