@@ -8,8 +8,9 @@ export const JOB_NAME = 'tabellone';
 export function loadTabellone(bull: Queue): void {
     // eslint-disable-next-line @typescript-eslint/no-floating-promises
     bull.process(JOB_NAME, async () => {
+        const [startDate, endDate] = tabelloneService.getTwoMonthsFromNow();
         const recipients = await tabelloneService.getRecipients();
-        const { filePath, fileName } = await tabelloneService.storeTabelloneXlsx();
+        const { filePath, fileName } = await tabelloneService.storeTabelloneXlsx(startDate, endDate);
         await emailService.tabellone(Array.from(recipients.values()), filePath, fileName);
     });
 }

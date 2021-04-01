@@ -13,8 +13,9 @@ export default function (): Router {
     router.get(
         '/',
         permission(RuoloUtente.ADMIN),
-        asyncHandler(async (_req, res) => {
-            await tabelloneService.getTabellone();
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            await tabelloneService.getTabellone(queryParams);
             res.json();
         })
     );
@@ -22,8 +23,9 @@ export default function (): Router {
     router.get(
         '/tsv',
         permission(RuoloUtente.ADMIN),
-        asyncHandler(async (_req, res) => {
-            const filePath = await tabelloneService.getTabelloneTsv();
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const filePath = await tabelloneService.getTabelloneTsv(queryParams);
             res.download(filePath, 'tabellone.tsv');
         })
     );
@@ -31,8 +33,9 @@ export default function (): Router {
     router.get(
         '/xlsx',
         permission(RuoloUtente.ADMIN),
-        asyncHandler(async (_req, res) => {
-            const filePath = await tabelloneService.getTabelloneXlsx();
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const filePath = await tabelloneService.getTabelloneXlsx(queryParams);
             res.download(filePath, 'tabellone.xlsx');
         })
     );

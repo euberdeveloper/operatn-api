@@ -4,6 +4,7 @@ import * as ExcelJS from 'exceljs';
 import prisma, { Sesso } from '@/services/prisma.service';
 import fileSystemService from '@/services/filesystem.service';
 import logger from '@/utils/logger';
+import { InvalidQueryParamError } from '@/errors';
 
 interface Tabellone {
     fabbricatoId: number;
@@ -74,10 +75,27 @@ const headersMap: Record<string, string> = {
 };
 
 export class AuthService {
-    private async fetchData(): Promise<Tabellone[]> {
-        const start = dayjs().utc().toDate();
-        const end = dayjs().utc().add(2, 'months').toDate();
+    private validateQueryDate(value: string[] | undefined, name: string): Date {
+        const singleValue = Array.isArray(value) ? value[value.length - 1] : value;
 
+        if (singleValue === undefined) {
+            throw new InvalidQueryParamError(`${name} query parameter should be passed.`);
+        }
+
+        const result = new Date(singleValue);
+        if (isNaN(+result)) {
+            throw new InvalidQueryParamError(`${name} query parameter should be a valid ISO date.`);
+        }
+
+        return result;
+    }
+
+    private extractDatesFromQuery(queryParams: Record<string, string[] | undefined>): [Date, Date] {
+        const { startDate, endDate } = queryParams;
+        return [this.validateQueryDate(startDate, 'startDate'), this.validateQueryDate(endDate, 'endDate')];
+    }
+
+    private async fetchData(start: Date, end: Date): Promise<Tabellone[]> {
         let result: Tabellone[];
 
         try {
@@ -380,28 +398,31 @@ export class AuthService {
         return workbook;
     }
 
-    public async getTabellone(): Promise<Tabellone[]> {
-        return this.fetchData();
+    public async getTabellone(queryParams: any): Promise<Tabellone[]> {
+        const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
+        return this.fetchData(startDate, endDate);
     }
 
-    public async getTabelloneTsv(): Promise<string> {
-        const data = await this.fetchData();
+    public async getTabelloneTsv(queryParams: any): Promise<string> {
+        const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
+        const data = await this.fetchData(startDate, endDate);
         const text = this.toTsv(data);
 
         const filePath = await fileSystemService.saveTempRandomName(text, 'tsv');
         return filePath;
     }
 
-    public async getTabelloneXlsx(): Promise<string> {
-        const data = await this.fetchData();
+    public async getTabelloneXlsx(queryParams: any): Promise<string> {
+        const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
+        const data = await this.fetchData(startDate, endDate);
         const workbook = this.toXlsx(data);
 
         const filePath = await fileSystemService.saveTempXls(workbook);
         return filePath;
     }
 
-    public async storeTabelloneTsv(): Promise<{ filePath: string; fileName: string }> {
-        const data = await this.fetchData();
+    public async storeTabelloneTsv(startDate: Date, endDate: Date): Promise<{ filePath: string; fileName: string }> {
+        const data = await this.fetchData(startDate, endDate);
         const text = this.toTsv(data);
 
         const dateString = new Date().toLocaleDateString('it').replace(/\//g, '-');
@@ -411,8 +432,8 @@ export class AuthService {
         return { filePath, fileName };
     }
 
-    public async storeTabelloneXlsx(): Promise<{ filePath: string; fileName: string }> {
-        const data = await this.fetchData();
+    public async storeTabelloneXlsx(startDate: Date, endDate: Date): Promise<{ filePath: string; fileName: string }> {
+        const data = await this.fetchData(startDate, endDate);
         const workbook = this.toXlsx(data);
 
         const dateString = new Date().toLocaleDateString('it').replace(/\//g, '-');
@@ -430,6 +451,12 @@ export class AuthService {
             logger.error('Get recipients error', error);
             throw error;
         }
+    }
+
+    public getTwoMonthsFromNow(): [Date, Date] {
+        const start = dayjs().utc().toDate();
+        const end = dayjs().utc().add(2, 'months').toDate();
+        return [start, end];
     }
 }
 
