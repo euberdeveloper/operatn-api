@@ -16,7 +16,7 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             await tabelloneService.getTabellone(queryParams);
-            res.json();
+            res.json(queryParams);
         })
     );
 
