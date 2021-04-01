@@ -15,8 +15,8 @@ export default function (): Router {
         permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
-            await tabelloneService.getTabellone(queryParams);
-            res.json(queryParams);
+            const tabellone = await tabelloneService.getTabellone(queryParams);
+            res.json(tabellone);
         })
     );
 
