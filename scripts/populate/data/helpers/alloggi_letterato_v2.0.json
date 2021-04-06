@@ -2806,7 +2806,7 @@
                         "dataCreazione": "2017-11-30T23:00:00.000Z",
                         "eliminato": null
                     },
-                {
+                    {
                         "id": 6614,
                         "idStanza": 4980,
                         "postoLetto": "B",
@@ -15680,10 +15680,527 @@
                     "tipoStanza": "STANZA SINGOLA"
                 }
             }
-    ],
-    "tipoFabbricato": {
-        "id": 1,
-        "tipoFabbricato": "RESIDENZA COLLETTIVA"
-    }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 333,
+        "codice": "SBRTEA0C09",
+        "nome": "FCS APPARTAMENTI-EA0C09",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 64,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5287,
+                "idFabbricato": 333,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5287,
+                "idFabbricato": 333,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 332,
+        "codice": "SBRTEA0C07",
+        "nome": "FCS APPARTAMENTI-EA0C07",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 63,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5031,
+                "idFabbricato": 332,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6715,
+                        "idStanza": 5031,
+                        "postoLetto": "A",
+                        "dataCreazione": "2007-10-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5031,
+                "idFabbricato": 332,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6715,
+                        "idStanza": 5031,
+                        "postoLetto": "A",
+                        "dataCreazione": "2007-10-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 329,
+        "codice": "SBRTEA0C03",
+        "nome": "FCS APPARTAMENTI-EA0C03",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 60,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5029,
+                "idFabbricato": 329,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": false,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2010-04-30T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6711,
+                        "idStanza": 5029,
+                        "postoLetto": "A",
+                        "dataCreazione": "2010-04-30T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5029,
+                "idFabbricato": 329,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": false,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2010-04-30T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6711,
+                        "idStanza": 5029,
+                        "postoLetto": "A",
+                        "dataCreazione": "2010-04-30T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 334,
+        "codice": "SBRTEA0C11",
+        "nome": "FCS APPARTAMENTI-EA0C11",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 65,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5288,
+                "idFabbricato": 334,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 1111,
+                "idFabbricato": 334,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 338,
+        "codice": "SBRTEA2C13",
+        "nome": "FCS APPARTAMENTI-EA2C13",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 69,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5289,
+                "idFabbricato": 338,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 1112,
+                "idFabbricato": 338,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 331,
+        "codice": "SBRTEA0C05",
+        "nome": "FCS APPARTAMENTI-EA0C05",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 62,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5681,
+                "idFabbricato": 331,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5681,
+                "idFabbricato": 331,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 330,
+        "codice": "SBRTEA1C01",
+        "nome": "FCS APPARTAMENTI-EA1C01",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "90-S. BARTOLAMEO",
+        "oldCode": 61,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2007-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5030,
+                "idFabbricato": 330,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "1",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112020101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": false,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2007-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 330,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "2",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2009-10-12T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2009-10-12T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2009-10-12T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 330,
+                "unitaImmobiliare": "1",
+                "numeroStanza": "3",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2009-10-12T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2009-10-12T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2009-10-12T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
     }
 ]
