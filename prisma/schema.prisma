@@ -169,8 +169,6 @@ model Fabbricato {
     indirizzo String @map("indirizzo")
     nCivico   String @map("n_civico")
 
-    oldCode Int @map("old_code")
-
     idTipoFabbricato Int            @map("id_tipo_fabbricato")
     tipoFabbricato   TipoFabbricato @relation(fields: [idTipoFabbricato], references: [id])
 
