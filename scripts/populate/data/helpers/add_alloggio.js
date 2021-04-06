@@ -1,9 +1,24 @@
-const alloggi = require('./alloggi_letterato_v1.0.json');
+const alloggi = require('./alloggi_letterato_v2.0.json');
 const axios = require('axios');
 
 // Ricordati di togliere il soft delete ed togliere il commento ai body nei services
 
-const JWT = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTQ0Njk5MDUsImV4cCI6MTYxNzE0ODMwNX0.XkpLPWFNt1wKp3NeUReS4ruA8r8TdLAh7fk4FSHpsnM';
+const JWT = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTcyNjQzMjQsImV4cCI6MTYxOTk0MjcyNH0.o86nYCBsbMMiuFDSveIRLYUtnRQnpzf5MrabYhLVJfw';
+
+function getIdTipoStanza(stanza) {
+    switch (stanza) {
+        case 'STANZA SINGOLA':
+            return 1;
+        case 'STANZA DOPPIA':
+            return 2;
+        case 'MONOLOCALE':
+            return 3;
+        case 'BILOCALE':
+            return 4;
+        default:
+            throw new Error('TIpo stanza non ha senso');
+    }
+}
 
 async function addAlloggio(alloggio) {
     const fabbricato = {
@@ -14,18 +29,22 @@ async function addAlloggio(alloggio) {
         cap: alloggio.cap,
         indirizzo: alloggio.indirizzo,
         nCivico: alloggio.nCivico,
-        oldCode: alloggio.oldCode,
         idTipoFabbricato: alloggio.idTipoFabbricato,
         dataCreazione: alloggio.dataCreazione,
         eliminato: alloggio.eliminato
     };
 
-    const idFabbricato = (await axios.post('http://localhost:3000/api/fabbricati', fabbricato, { headers: { Authorization: JWT } })).data;
-
+    try {
+        var idFabbricato = (await axios.post('http://localhost:3000/api/fabbricati', fabbricato, { headers: { Authorization: JWT } })).data;
+    }
+    catch (error) {
+        console.log(fabbricato.codice)
+        throw new Error('Errore fabbricato');
+    }
     const stanze = alloggio.stanze.map(s => ({
         unitaImmobiliare: s.unitaImmobiliare,
         numeroStanza: s.numeroStanza,
-        idTipoStanza: s.idTipoStanza,
+        idTipoStanza: getIdTipoStanza(s.tipoStanza.tipoStanza),
         centroDiCosto: s.centroDiCosto,
         gestioneDiretta: s.gestioneDiretta,
         handicap: s.handicap,
@@ -39,8 +58,11 @@ async function addAlloggio(alloggio) {
     for (const stanza of stanze) {
         try {
             var idStanza = (await axios.post(`http://localhost:3000/api/fabbricati/${idFabbricato}/stanze`, stanza, { headers: { Authorization: JWT } })).data;
-        } catch (e) { console.log(stanza); throw new Error('ss') }
-        const postiLetto = [...(stanza.idTipoStanza === 2 ? ['A', 'B'] : ['A']).map(postoLetto => ({
+        } catch (e) { 
+            console.log(stanza); 
+            throw new Error('Errore stanza') 
+        }
+        const postiLetto = [...(stanza.idTipoStanza === 1 ? ['A', 'B'] : ['A']).map(postoLetto => ({
             postoLetto,
             dataCreazione: stanza.dataCreazione,
             eliminato: stanza.eliminato
@@ -49,7 +71,9 @@ async function addAlloggio(alloggio) {
         for (const postoLetto of postiLetto) {
             try {
                 await axios.post(`http://localhost:3000/api/fabbricati/${idFabbricato}/stanze/${idStanza}/posti-letto`, postoLetto, { headers: { Authorization: JWT } });
-            } catch (e) { console.log('ciao'); throw new Error('ciao') }
+            } catch (e) { 
+                throw new Error('Errore posto letto') 
+            }
         }
     }
 }
