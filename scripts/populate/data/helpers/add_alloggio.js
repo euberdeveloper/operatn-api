@@ -62,7 +62,7 @@ async function addAlloggio(alloggio) {
             console.log(stanza); 
             throw new Error('Errore stanza') 
         }
-        const postiLetto = [...(stanza.idTipoStanza === 1 ? ['A', 'B'] : ['A']).map(postoLetto => ({
+        const postiLetto = [...(stanza.idTipoStanza === 2 ? ['A', 'B'] : ['A']).map(postoLetto => ({
             postoLetto,
             dataCreazione: stanza.dataCreazione,
             eliminato: stanza.eliminato
