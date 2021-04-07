@@ -63,6 +63,17 @@ export default function (): Router {
         })
     );
 
+    router.put(
+        '/:id',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const body = req.body;
+            const id = +req.params.id;
+            await contrattoService.putContratto(id, body);
+            res.json();
+        })
+    );
+
     router.delete(
         '/:id',
         permission(RuoloUtente.ADMIN),

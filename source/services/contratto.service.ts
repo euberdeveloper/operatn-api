@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import prisma, { Prisma, Contratto, TipoRata } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
@@ -61,7 +62,7 @@ export class ContrattoService extends TableService {
         return spesa?.importo ?? defaultValue;
     }
 
-    private async validateCreateContrattoBody(body: any): Promise<CreateContrattoBody> {
+    private async validateCreateContrattoBody(body: any, id?: number): Promise<CreateContrattoBody> {
         // Define joi schema
         const schema = Joi.object({
             dataInizio: Joi.date().iso(),
@@ -95,7 +96,7 @@ export class ContrattoService extends TableService {
         // Get the validated body
         const validatedBody: CreateContrattoBody = validationResult.value;
 
-        // Check that there are no duplicated ospiti and that they can make a contractand that if an ospite takes multiple posti letto, they are a doppia uso singola
+        // Check that there are no duplicated ospiti and that they can make a contract and that if an ospite takes multiple posti letto, they are a doppia uso singola
         const duplicatesOspiti = validatedBody.ospiti.filter(
             (ospite, index, arr) => arr.findIndex(el => el.idOspite === ospite.idOspite) != index
         );
@@ -105,7 +106,19 @@ export class ContrattoService extends TableService {
         }
         for (const ospite of validatedBody.ospiti) {
             const exists = await prisma.contrattoSuOspite.findFirst({
-                where: { idOspite: ospite.idOspite, dataCheckout: null }
+                where: {
+                    idOspite: ospite.idOspite,
+                    contratto: {
+                        dataChiusuraAnticipata: null,
+                        NOT: {
+                            OR: [
+                                { dataFine: { lte: validatedBody.dataInizio } },
+                                { dataInizio: { gte: validatedBody.dataFine } },
+                                ...(id !== undefined ? [{ dataFirmaContratto: null, id: id }] : [])
+                            ]
+                        }
+                    }
+                }
             });
             if (exists) {
                 logger.warning('Validation error, ospite already has contract', {
@@ -128,7 +141,7 @@ export class ContrattoService extends TableService {
             }
         }
 
-        // Check that there are no duplicated posti letto, that they are all available
+        // Check that there are no duplicated posti letto and that they are all available
         const postiLetto = validatedBody.ospiti.reduce<number[]>((acc, curr) => [...acc, ...curr.postiLetto], []);
         const duplicatesPostiLetto = postiLetto.filter((el, index, arr) => arr.indexOf(el) != index);
         if (duplicatesPostiLetto.length > 0) {
@@ -137,7 +150,21 @@ export class ContrattoService extends TableService {
         }
         for (const postoLetto of postiLetto) {
             const exists = await prisma.contrattoSuOspiteSuPostoLetto.findFirst({
-                where: { idPostoLetto: postoLetto, contrattoSuOspite: { dataCheckout: null } }
+                where: {
+                    idPostoLetto: postoLetto,
+                    contrattoSuOspite: {
+                        contratto: {
+                            dataChiusuraAnticipata: null,
+                            NOT: {
+                                OR: [
+                                    { dataFine: { lte: validatedBody.dataInizio } },
+                                    { dataInizio: { gte: validatedBody.dataFine } },
+                                    ...(id !== undefined ? [{ dataFirmaContratto: null, id: id }] : [])
+                                ]
+                            }
+                        }
+                    }
+                }
             });
             if (exists) {
                 logger.warning('Validation error, posto letto already in contract', {
@@ -151,8 +178,14 @@ export class ContrattoService extends TableService {
         return validatedBody;
     }
 
-    private getCreateContrattoBody(body: CreateContrattoBody, cauzione: number | null, checkout: number | null) {
+    private getCreateContrattoBody(
+        body: CreateContrattoBody,
+        cauzione: number | null,
+        checkout: number | null,
+        idContratto?: number
+    ) {
         return {
+            id: idContratto,
             dataFine: body.dataFine,
             dataInizio: body.dataInizio,
             idQuietanziante: body.idQuietanziante,
@@ -223,6 +256,92 @@ export class ContrattoService extends TableService {
         };
     }
 
+    private async pushContratto(body: any, idContratto?: number): Promise<number> {
+        const validatedBody = await this.validateCreateContrattoBody(body, idContratto);
+        let cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
+        const checkout = validatedBody.checkout ? await this.getSpesaAmount('CHECKOUT', 40) : null;
+        const createContrattoBody = this.getCreateContrattoBody(validatedBody, cauzione, checkout, idContratto);
+        let ospiteId = Infinity;
+
+        if (idContratto !== undefined) {
+            try {
+                await this.delContrattoById(idContratto);
+            } catch (error) {}
+        }
+
+        const contratto = await this.model.create({
+            data: createContrattoBody,
+            include: {
+                tariffa: {
+                    include: {
+                        tipoOspite: { include: { contoRicaviCanoni: true, contoRicaviConsumi: true } },
+                        tipoTariffa: true
+                    }
+                }
+            }
+        });
+
+        const {
+            id,
+            tipoRata,
+            dataInizio,
+            dataFine,
+            tariffa: {
+                prezzoCanoni,
+                prezzoConsumi,
+                tipoTariffa,
+                tipoOspite: { contoRicaviCanoni, contoRicaviConsumi }
+            }
+        } = contratto;
+
+        const contrattoSuOspiteSuPostoLettoBody = this.getCreateContrattoPostiLettoBody(body, id);
+        await prisma.contrattoSuOspiteSuPostoLetto.createMany({
+            data: contrattoSuOspiteSuPostoLettoBody
+        });
+
+        if (cauzione) {
+            ospiteId = validatedBody.ospiti[0].idOspite;
+            const possiedeCauzione = (
+                await prisma.ospite.findUnique({
+                    where: { id: ospiteId },
+                    select: { possiedeCauzione: true }
+                })
+            )?.possiedeCauzione;
+
+            if (possiedeCauzione) {
+                cauzione = null;
+            }
+        }
+
+        const centroDiCosto = await this.getCentroDiCosto(validatedBody);
+
+        const bollette = await BollettaService.calcBollette(
+            tipoRata,
+            dataInizio,
+            dataFine,
+            cauzione,
+            checkout,
+            prezzoCanoni,
+            prezzoConsumi,
+            validatedBody.ospiti.length,
+            contoRicaviCanoni.codice,
+            contoRicaviConsumi.codice,
+            centroDiCosto,
+            tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
+            id,
+            validatedBody.idQuietanziante
+        );
+        await prisma.bolletta.createMany({
+            data: bollette
+        });
+
+        if (cauzione) {
+            await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
+        }
+
+        return id;
+    }
+
     public async getContratti(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
         const todayDate = new Date();
@@ -270,88 +389,14 @@ export class ContrattoService extends TableService {
 
     public async postContratto(body: any): Promise<number> {
         return handlePrismaError(async () => {
-            const validatedBody = await this.validateCreateContrattoBody(body);
-            let cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
-            const checkout = validatedBody.checkout ? await this.getSpesaAmount('CHECKOUT', 40) : null;
-            const createContrattoBody = this.getCreateContrattoBody(validatedBody, cauzione, checkout);
-            let ospiteId = Infinity;
+            return this.pushContratto(body);
+        });
+    }
 
-            const contratto = await this.model.create({
-                data: createContrattoBody,
-                include: {
-                    tariffa: {
-                        include: {
-                            tipoOspite: { include: { contoRicaviCanoni: true, contoRicaviConsumi: true } },
-                            tipoTariffa: true
-                        }
-                    }
-                }
-            });
-
-            const {
-                id,
-                tipoRata,
-                dataInizio,
-                dataFine,
-                tariffa: {
-                    prezzoCanoni,
-                    prezzoConsumi,
-                    tipoTariffa,
-                    tipoOspite: { contoRicaviCanoni, contoRicaviConsumi }
-                }
-            } = contratto;
-
-            const contrattoSuOspiteSuPostoLettoBody = this.getCreateContrattoPostiLettoBody(body, id);
-            await prisma.contrattoSuOspiteSuPostoLetto.createMany({
-                data: contrattoSuOspiteSuPostoLettoBody
-            });
-
-            console.log('cauzione', cauzione);
-
-            if (cauzione) {
-                ospiteId = validatedBody.ospiti[0].idOspite;
-                const possiedeCauzione = (
-                    await prisma.ospite.findUnique({
-                        where: { id: ospiteId },
-                        select: { possiedeCauzione: true }
-                    })
-                )?.possiedeCauzione;
-
-                console.log('POSSIEDE', possiedeCauzione);
-
-                if (possiedeCauzione) {
-                    cauzione = null;
-                }
-            }
-
-            const centroDiCosto = await this.getCentroDiCosto(validatedBody);
-
-            const bollette = await BollettaService.calcBollette(
-                tipoRata,
-                dataInizio,
-                dataFine,
-                cauzione,
-                checkout,
-                prezzoCanoni,
-                prezzoConsumi,
-                validatedBody.ospiti.length,
-                contoRicaviCanoni.codice,
-                contoRicaviConsumi.codice,
-                centroDiCosto,
-                tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
-                id,
-                validatedBody.idQuietanziante
-            );
-            await prisma.bolletta.createMany({
-                data: bollette
-            });
-
-            if (cauzione) {
-                console.log('ENTRATO', ospiteId);
-                await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
-            }
-
-            return id;
+    public async putContratto(id: number, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateId(id);
+            await this.pushContratto(body, id);
         });
     }
 

@@ -44,7 +44,7 @@ export abstract class TableService {
         return Joi.object(validator).required().options({ presence: 'optional' });
     }
 
-    protected validateId(id: any, name: string): void {
+    protected validateId(id: any, name = 'id'): void {
         const error = this.idValidator.validate(id).error;
         if (error) {
             logger.warning('Validation error', error.message);
