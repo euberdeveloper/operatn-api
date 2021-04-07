@@ -63,6 +63,16 @@ export default function (): Router {
         })
     );
 
+    router.delete(
+        '/:id',
+        permission(RuoloUtente.ADMIN),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            await contrattoService.delContrattoById(id);
+            res.json();
+        })
+    );
+
     router.use('/:cid/bollette', bolletteRouter());
 
     return router;

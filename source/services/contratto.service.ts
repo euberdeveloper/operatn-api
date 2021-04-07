@@ -358,7 +358,7 @@ export class ContrattoService extends TableService {
     public async delContrattoById(id: number): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
-            await this.model.delete({ where: { id } });
+            await prisma.$executeRaw`DELETE FROM contratto WHERE id = ${id}`;
         });
     }
 }
