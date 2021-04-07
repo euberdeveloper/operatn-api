@@ -24,6 +24,7 @@ import provinceRouter from './routes/province/province.route';
 import comuniRouter from './routes/comuni/comuni.route';
 import utentiRouter from './routes/utenti/utenti.route';
 import tabelloneRouter from './routes/tabellone/tabellone.route';
+import contabilitaRouter from './routes/contabilita/contabilita.route';
 
 export default function (): Router {
     const router = Router();
@@ -96,6 +97,9 @@ export default function (): Router {
 
     logger.debug('/tabellone');
     router.use('/tabellone', tabelloneRouter());
+
+    logger.debug('/contabilita');
+    router.use('/contabilita', contabilitaRouter());
 
     return router;
 }

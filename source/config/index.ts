@@ -52,6 +52,9 @@ const CONFIG = {
         ACCESS_TOKEN: process.env.EMAIL_ACCESS_TOKEN,
         EXPIRES: process.env.EMAIL_EXPIRES,
         TEMPLATES_PATH: process.env.EMAIL_TEMPLATES_PATH
+    },
+    CONTABILITA: {
+        API_URL: process.env.CONTABILITA_API_URL
     }
 };
 
