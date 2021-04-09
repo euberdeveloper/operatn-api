@@ -24,6 +24,10 @@ const CONFIG = {
         DATABASE_SCHEMA: process.env.DATABASE_SCHEMA,
         URL: `postgresql://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@${process.env.DATABASE_HOST}:${process.env.DATABASE_PORT}/${process.env.DATABASE_DB}?schema=${process.env.DATABASE_SCHEMA}`
     },
+    REDIS: {
+        HOST: process.env.REDIS_HOST,
+        PORT: process.env.REDIS_PORT
+    },
     SECURITY: {
         SALT_ROUNDS: +process.env.SECURITY_SALT_ROUNDS,
         JWT: {

@@ -1,5 +1,5 @@
 import * as Bull from 'bull';
-
+import CONFIG from '@/config';
 import { loadTabellone, addTabellone } from './tabellone.job';
 
 export class Jobs {
@@ -7,7 +7,12 @@ export class Jobs {
     private readonly bull: Bull.Queue;
 
     constructor() {
-        this.bull = new Bull(this.queueName);
+        this.bull = new Bull(this.queueName, {
+            redis: {
+                host: CONFIG.REDIS.HOST,
+                port: +CONFIG.REDIS.PORT
+            }
+        });
     }
 
     public loadJobs(): void {
