@@ -1,7 +1,9 @@
-FROM node:alpine
+FROM node:lts-alpine
 WORKDIR /server
-COPY package.json .
+COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run transpile:source
+RUN npm run prisma:client && \
+    npm run transpile:source && \
+    rm -r source
 CMD ["npm", "start"]
