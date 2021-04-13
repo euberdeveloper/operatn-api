@@ -526,6 +526,131 @@ export class BollettaService extends TableService {
         return bollette;
     }
 
+    /*
+        Ogni quattro mesi una bolletta. Se i quattro mesi sono a cavallo di
+        Se il contratto non inizia il primo del mese o non finisce l'ultimo del mese, i giorni aggiuntivi 
+        vengono aggiunti facendo prezzo / 30.
+        Scade il 5 del mese stesso (pagamento anticipato); se il primo mese inizia dopo il 5, scade il giorno stesso di inizio.
+    */
+    private calcBolletteRataQuadrimestrale(
+        dataInizio: Date,
+        dataFine: Date,
+        canone: number,
+        consumi: number,
+        nOspiti: number,
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>,
+        tipoTariffa: 'MENSILE' | 'GIORNALIERA'
+    ) {
+        const bollette: Pick<
+            Bolletta,
+            | 'importoCanoni'
+            | 'importoConsumi'
+            | 'competenzaDal'
+            | 'competenzaAl'
+            | 'dataScadenza'
+            | 'idTipoBolletta'
+            | 'idQuietanziante'
+        >[] = [];
+
+        const startDate = this.resetTime(this.utcDate(dataInizio));
+        const endDate = this.resetTime(this.utcDate(dataFine));
+
+        // check if first and last month is total
+        const beginsWithTotalMonth = startDate.date() === 1;
+        const endsWithTotalMonth = endDate.date() === this.lastDayOfMonth(endDate).date();
+
+        // If the contract starts and finishes in the same month
+        if (startDate.isSame(endDate, 'months')) {
+            // difference in days between end date and start date
+            const days = endDate.diff(startDate, 'days') + 1;
+            bollette.push({
+                importoCanoni:
+                    beginsWithTotalMonth && endsWithTotalMonth
+                        ? this.calcImportoPerMonth(canone, startDate.daysInMonth(), tipoTariffa, nOspiti)
+                        : this.calcImportoPerDays(canone, days, tipoTariffa, nOspiti),
+                importoConsumi:
+                    beginsWithTotalMonth && endsWithTotalMonth
+                        ? this.calcImportoPerMonth(consumi, startDate.daysInMonth(), tipoTariffa, nOspiti)
+                        : this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti),
+                competenzaDal: startDate.toDate(),
+                competenzaAl: endDate.toDate(),
+                dataScadenza: this.lastDayOfMonth(startDate).toDate(),
+                idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO].id,
+                idQuietanziante: tipiBolletta[TipoRata.DA_BANDO].idQuietanziante
+            });
+        }
+        // Otherwise
+        else {
+            let currentDate = startDate.clone(),
+                competenzaDal: dayjs.Dayjs | null = null;
+            let endOfCurrentMonth = this.lastDayOfMonth(currentDate);
+            let days: number,
+                importoCanoni = 0,
+                importoConsumi = 0,
+                monthCount = 0;
+
+            const addBolletta = (last = false) => {
+                monthCount++;
+                if (importoCanoni > 0 && importoConsumi > 0) {
+                    if (last || currentDate.month() === 11 || monthCount === 4) {
+                        bollette.push({
+                            importoCanoni: importoCanoni,
+                            importoConsumi: importoConsumi,
+                            competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
+                            competenzaAl: endOfCurrentMonth.toDate(),
+                            dataScadenza: this.lastDayOfMonth(currentDate).toDate(),
+                            idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO].id,
+                            idQuietanziante: tipiBolletta[TipoRata.DA_BANDO].idQuietanziante
+                        });
+                        importoCanoni = 0;
+                        importoConsumi = 0;
+                        monthCount = 0;
+                        competenzaDal = null;
+                    } else if (competenzaDal === null) {
+                        competenzaDal = currentDate.clone();
+                    }
+                }
+            };
+
+            // first month (difference between endOfMonth and beginDate)
+            if (!beginsWithTotalMonth) {
+                days = endOfCurrentMonth.diff(startDate, 'days') + 1;
+                importoCanoni += this.calcImportoPerDays(canone, days, tipoTariffa, nOspiti);
+                importoConsumi += this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti);
+                addBolletta();
+            }
+            // middle months (whole month)
+            for (
+                currentDate = beginsWithTotalMonth
+                    ? currentDate
+                    : this.lastDayOfMonth(currentDate).add(1, 'day').date(1);
+                currentDate.year() < endDate.year() ||
+                (currentDate.year() === endDate.year() &&
+                    ((endsWithTotalMonth && currentDate.month() === endDate.month()) ||
+                        currentDate.month() < endDate.month()));
+                currentDate = this.lastDayOfMonth(currentDate).add(1, 'day').date(1)
+            ) {
+                endOfCurrentMonth = this.lastDayOfMonth(currentDate);
+                importoCanoni += this.calcImportoPerMonth(canone, currentDate.daysInMonth(), tipoTariffa, nOspiti);
+                importoConsumi += this.calcImportoPerMonth(consumi, currentDate.daysInMonth(), tipoTariffa, nOspiti);
+                addBolletta();
+            }
+            // last month (difference between endDate and currentDate)
+            if (!endsWithTotalMonth) {
+                days = endDate.diff(currentDate, 'days') + 1;
+                importoCanoni += this.calcImportoPerDays(canone, days, tipoTariffa, nOspiti);
+                importoConsumi += this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti);
+                // trick to set right competenzaAl on the last bolletta
+                endOfCurrentMonth = endDate;
+                addBolletta();
+            }
+            // If the last bolletta was not added because of its month
+            addBolletta(true);
+        }
+
+        return bollette;
+    }
+
     public async calcBollette(
         tipoRata: TipoRata,
         dataInizio: Date,
@@ -600,6 +725,20 @@ export class BollettaService extends TableService {
             case 'DA_BANDO':
                 bollette.push(
                     ...this.calcBolletteRataDaBando(
+                        dataInizio,
+                        dataFine,
+                        canone,
+                        consumi,
+                        nOspiti,
+                        tipiBolletta,
+                        tipoTariffa
+                    )
+                );
+                break;
+
+            case 'QUADRIMESTRALE':
+                bollette.push(
+                    ...this.calcBolletteRataQuadrimestrale(
                         dataInizio,
                         dataFine,
                         canone,
