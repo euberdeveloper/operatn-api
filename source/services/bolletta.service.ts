@@ -55,6 +55,7 @@ export class BollettaService extends TableService {
         for (const [tipoRata, nomeTipoBolletta] of [
             [TipoRata.DA_BANDO, 'RATA DA BANDO'],
             [TipoRata.MENSILE, 'RATA MENSILE'],
+            [TipoRata.QUADRIMESTRALE, 'RATA QUADRIMESTRALE'],
             [TipoRata.UNICA, 'RATA UNICA'],
             ['CAUZIONE', 'CAUZIONE'],
             ['CHECKOUT', 'CHECKOUT']
@@ -138,16 +139,18 @@ export class BollettaService extends TableService {
         checkout: number,
         dataFine: Date,
         nOspiti: number,
-        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>
+        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>,
+        dataInizio: Date // Contracts after 01/09/2021 will start having a differend dataScadenza
     ): Pick<
         Bolletta,
         'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta' | 'idQuietanziante'
     > {
         const endDate = this.resetTime(this.utcDate(dataFine));
+        const isNewType = +dataInizio >= +new Date('2021-09-01');
         return {
             competenzaDal: this.resetTime(endDate.startOf('month')).toDate(),
             competenzaAl: endDate.toDate(),
-            dataScadenza: endDate.toDate(),
+            dataScadenza: isNewType ? endDate.date(0).subtract(1, 'day').toDate() : endDate.toDate(),
             importoTotale: nOspiti * checkout,
             idTipoBolletta: tipiBolletta.CHECKOUT.id,
             idQuietanziante: tipiBolletta.CHECKOUT.idQuietanziante
@@ -621,7 +624,7 @@ export class BollettaService extends TableService {
         );
 
         if (checkout) {
-            const bollettaCheckout = this.calcBollettaCheckout(checkout, dataFine, nOspiti, tipiBolletta);
+            const bollettaCheckout = this.calcBollettaCheckout(checkout, dataFine, nOspiti, tipiBolletta, dataInizio);
             result.push({
                 idContratto,
                 centroDiCosto,
