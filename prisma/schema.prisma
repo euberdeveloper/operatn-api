@@ -395,6 +395,7 @@ model ContrattoSuOspiteSuPostoLetto {
 enum TipoRata {
     DA_BANDO
     MENSILE
+    QUADRIMESTRALE
     UNICA
 }
 
