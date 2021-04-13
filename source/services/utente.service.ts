@@ -84,11 +84,12 @@ export class UtenteService extends TableService {
 
     public async patchUtenteByUid(utenteRichiesta: Utente, uid: string, body: any): Promise<void> {
         return handlePrismaError(async () => {
-            if (utenteRichiesta.uid !== uid) {
+            this.validateStringParam(uid, 'uid');
+
+            if (utenteRichiesta.uid !== uid && utenteRichiesta.ruolo !== RuoloUtente.ADMIN) {
                 throw new UserNotAuthorizedError('You are not the user you are trying to change');
             }
 
-            this.validateStringParam(uid, 'uid');
             const utente = this.validatePatchBody(body);
             utente.password = utente.password ? this.hashPassword(utente.password) : undefined;
             await this.checkIfExistsByParam(uid, 'uid', 'Utente');
@@ -101,11 +102,12 @@ export class UtenteService extends TableService {
 
     public async patchUtenteByNomeUtente(utenteRichiesta: Utente, nomeUtente: string, body: any): Promise<void> {
         return handlePrismaError(async () => {
-            if (utenteRichiesta.nomeUtente !== nomeUtente) {
+            this.validateStringParam(nomeUtente, 'nomeUtente');
+
+            if (utenteRichiesta.nomeUtente !== nomeUtente && utenteRichiesta.ruolo !== RuoloUtente.ADMIN) {
                 throw new UserNotAuthorizedError('You are not the user you are trying to change');
             }
 
-            this.validateStringParam(nomeUtente, 'nomeUtente');
             const utente = this.validatePatchBody(body);
             await this.checkIfExistsByParam(nomeUtente, 'nomeUtente', 'Utente');
             await this.model.update({

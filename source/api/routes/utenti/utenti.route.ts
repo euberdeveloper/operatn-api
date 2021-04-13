@@ -12,6 +12,7 @@ export default function (): Router {
 
     router.get(
         '/',
+        permission(RuoloUtente.ADMIN),
         asyncHandler(async (_req, res) => {
             const utenti = await utenteService.getUtenti();
             res.json(utenti);
@@ -54,7 +55,6 @@ export default function (): Router {
 
     router.patch(
         '/:uid',
-        permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const uid = req.params.uid;
@@ -66,7 +66,6 @@ export default function (): Router {
 
     router.patch(
         '/username/:username',
-        permission(RuoloUtente.ADMIN),
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const username = req.params.username;
