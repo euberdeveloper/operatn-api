@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es5",
+        "lib": [
+            "ES2020"
+        ],
+        "sourceMap": true,
+        "outDir": "../dist",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./*"
+            ],
+            "@server/*": [
+                "../../source/*"
+            ]
+        }
+    }
+}

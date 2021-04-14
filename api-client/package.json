@@ -1,0 +1,20 @@
+{
+  "name": "operatn-api-client",
+  "version": "0.0.1",
+  "description": "The api client for operatn",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "shx rm -r dist",
+    "pretranspile": "npm run clean",
+    "transpile": "tsc -p source"
+  },
+  "author": "Eugenio Vinicio Berretta <euberdeveloper@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "shx": "^0.3.3",
+    "typescript": "^4.1.5"
+  }
+}
