@@ -22,7 +22,10 @@ export class UtenteService extends TableService {
         uid: Joi.string().min(1).optional(),
         nomeUtente: Joi.string().min(1).alphanum(),
         password: Joi.string().min(8).max(16),
-        email: Joi.string().email()
+        email: Joi.string().email(),
+        ruolo: Joi.string()
+            .valid(...Object.values(RuoloUtente))
+            .allow(null)
     };
     private readonly changeRoleValidator = Joi.object({
         ruolo: Joi.string()
