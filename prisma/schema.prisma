@@ -560,6 +560,7 @@ enum RuoloUtente {
     ADMIN
     SPORTELLO
     PORTINERIA
+    RAGIONERIA
     CONTROLLO_ALLOGGI
 }
 
