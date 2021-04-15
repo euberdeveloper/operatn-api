@@ -20,7 +20,9 @@ export class UtenteService extends TableService {
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         uid: Joi.string().min(1).optional(),
-        nomeUtente: Joi.string().min(1).alphanum(),
+        nomeUtente: Joi.string()
+            .min(1)
+            .regex(/[\w\.]+/),
         password: Joi.string().min(8).max(16),
         email: Joi.string().email(),
         ruolo: Joi.string()
