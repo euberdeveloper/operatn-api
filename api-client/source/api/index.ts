@@ -27,7 +27,7 @@ export class OperaTN {
             headers: token ? { Authorization: `Bearer ${token}` } : {}
         });
 
-        this.axiosInstance.interceptors.response.use(res => res, error => handleError(error));
+        this.axiosInstance.interceptors.response.use(res => res, error => { throw handleError(error) });
     }
 
     constructor(apiRootEndpoint = DEFAULT_ROOT_ENDPOINT, token: string | null = null) {

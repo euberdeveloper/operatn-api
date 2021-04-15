@@ -9,19 +9,23 @@ export class TipiStanzaController extends BaseController {
     public ROUTE = '/tipi-stanza';
 
     async getAll(): Promise<TipoStanza[]> {
-        return this.axiosInstance.get(`${this.ROUTE}`);
+        const result = await this.axiosInstance.get(`${this.ROUTE}`);
+        return result.data;
     }
 
     async get(id: number): Promise<TipoStanza> {
-        return this.axiosInstance.get(`${this.ROUTE}/${id}`);
+        const result = await this.axiosInstance.get(`${this.ROUTE}/${id}`);
+        return result.data;
     }
 
     async getByValue(value: string): Promise<TipoStanza> {
-        return this.axiosInstance.get(`${this.ROUTE}/value/${value}`);
+        const result = await this.axiosInstance.get(`${this.ROUTE}/value/${value}`);
+        return result.data;
     }
 
     async create(body: TipiStanzaCreateBody): Promise<number> {
-        return this.axiosInstance.post(`${this.ROUTE}`, body);
+        const result = await this.axiosInstance.post(`${this.ROUTE}`, body);
+        return result.data;
     }
 
     async replace(id: number, body: TipiStanzaReplaceBody): Promise<void> {
