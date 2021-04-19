@@ -4,7 +4,7 @@ datasource db {
 }
 
 generator generator {
-    provider        = "prisma-client-js"
+    provider = "prisma-client-js"
 }
 
 // PERSONA
@@ -278,11 +278,11 @@ model Tariffa {
     idTipoOspite Int        @map("id_tipo_ospite")
     tipoOspite   TipoOspite @relation(fields: [idTipoOspite], references: [id])
 
-    idUtilizzoStanza Int            @map("id_utilizzo_stanza")
-    utilizzoStanza   UtilizzoStanza @relation(fields: [idUtilizzoStanza], references: [id])
+    idUtilizzoStanza Int?            @map("id_utilizzo_stanza")
+    utilizzoStanza   UtilizzoStanza? @relation(fields: [idUtilizzoStanza], references: [id])
 
-    idTipoFabbricato Int            @map("id_tipo_fabbricato")
-    tipoFabbricato   TipoFabbricato @relation(fields: [idTipoFabbricato], references: [id])
+    idTipoFabbricato Int?            @map("id_tipo_fabbricato")
+    tipoFabbricato   TipoFabbricato? @relation(fields: [idTipoFabbricato], references: [id])
 
     idTipoTariffa Int         @map("id_tipo_tariffa")
     tipoTariffa   TipoTariffa @relation(fields: [idTipoTariffa], references: [id])

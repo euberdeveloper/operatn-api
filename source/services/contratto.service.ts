@@ -299,44 +299,46 @@ export class ContrattoService extends TableService {
             data: contrattoSuOspiteSuPostoLettoBody
         });
 
-        if (cauzione) {
-            ospiteId = validatedBody.ospiti[0].idOspite;
-            const possiedeCauzione = (
-                await prisma.ospite.findUnique({
-                    where: { id: ospiteId },
-                    select: { possiedeCauzione: true }
-                })
-            )?.possiedeCauzione;
+        if (contratto.tariffa.tipoOspite.sigla !== 'GS') {
+            if (cauzione) {
+                ospiteId = validatedBody.ospiti[0].idOspite;
+                const possiedeCauzione = (
+                    await prisma.ospite.findUnique({
+                        where: { id: ospiteId },
+                        select: { possiedeCauzione: true }
+                    })
+                )?.possiedeCauzione;
 
-            if (possiedeCauzione) {
-                cauzione = null;
+                if (possiedeCauzione) {
+                    cauzione = null;
+                }
             }
-        }
 
-        const centroDiCosto = await this.getCentroDiCosto(validatedBody);
+            const centroDiCosto = await this.getCentroDiCosto(validatedBody);
 
-        const bollette = await BollettaService.calcBollette(
-            tipoRata,
-            dataInizio,
-            dataFine,
-            cauzione,
-            checkout,
-            prezzoCanoni,
-            prezzoConsumi,
-            validatedBody.ospiti.length,
-            contoRicaviCanoni.codice,
-            contoRicaviConsumi.codice,
-            centroDiCosto,
-            tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
-            id,
-            validatedBody.idQuietanziante
-        );
-        await prisma.bolletta.createMany({
-            data: bollette
-        });
+            const bollette = await BollettaService.calcBollette(
+                tipoRata,
+                dataInizio,
+                dataFine,
+                cauzione,
+                checkout,
+                prezzoCanoni,
+                prezzoConsumi,
+                validatedBody.ospiti.length,
+                contoRicaviCanoni.codice,
+                contoRicaviConsumi.codice,
+                centroDiCosto,
+                tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
+                id,
+                validatedBody.idQuietanziante
+            );
+            await prisma.bolletta.createMany({
+                data: bollette
+            });
 
-        if (cauzione) {
-            await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
+            if (cauzione) {
+                await prisma.ospite.update({ where: { id: ospiteId }, data: { possiedeCauzione: true } });
+            }
         }
 
         return id;
