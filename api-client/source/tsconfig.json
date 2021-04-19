@@ -6,6 +6,7 @@
             "ES2020"
         ],
         "sourceMap": true,
+        "declaration": true,
         "outDir": "../dist",
         "baseUrl": ".",
         "paths": {

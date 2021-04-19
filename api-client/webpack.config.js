@@ -1,5 +1,6 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const DtsBundleWebpack = require('dts-bundle-webpack');
 
 module.exports = {
     target: 'node',
@@ -29,6 +30,13 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new DtsBundleWebpack({
+            name: 'operatn-api-client',
+            main: 'dist/api-client/source/index.d.ts',
+            out: '../../../bundled/index.d.ts'
+        })
+    ],
     output: {
         path: path.resolve(__dirname, './bundled'),
         filename: 'index.js',
