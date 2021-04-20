@@ -18,10 +18,11 @@ import { TabelloneController } from './tabellone';
 import { TariffeController } from './tariffe';
 import { TipiBollettaController } from './tipi-bolletta';
 import { TipiContrattoController } from './tipi-contratto';
+import { TipiFabbricatoController } from './tipi-fabbricato';
+import { TipiOspiteController } from './tipi-ospite';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
-import { TipiOspiteController } from './tipi-ospite';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
@@ -49,9 +50,10 @@ export class OperaTN {
     readonly tipiBolletta: TipiBollettaController;
     readonly tipiContratto: TipiContrattoController;
     readonly tipiStanza: TipiStanzaController;
+    readonly tipiFabbricato: TipiFabbricatoController;
+    readonly tipiOspite: TipiOspiteController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
-    readonly tipiOspite: TipiOspiteController;
 
     private axiosContainer!: AxiosContainer;
 
@@ -86,9 +88,10 @@ export class OperaTN {
         this.tipiBolletta = new TipiBollettaController(this.axiosContainer);
         this.tipiContratto = new TipiContrattoController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
+        this.tipiFabbricato = new TipiFabbricatoController(this.axiosContainer);
+        this.tipiOspite = new TipiOspiteController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
-        this.tipiOspite = new TipiOspiteController(this.axiosContainer);
     }
 
     setApiEndpoint(apiRootEndpoint: string): void {
