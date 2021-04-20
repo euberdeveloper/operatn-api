@@ -1,14 +1,13 @@
-import { LuogoDiNascita, Presidente, Residenza } from "@/db-types";
+import { Domicilio, LuogoDiNascita, Persona, Presidente, Residenza } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-type PresidentiCreateBody = Presidente & { id?: number } & {
+export type PresidentiCreateBody = Presidente & { id?: number } & {
     luogoDiNascita: Omit<LuogoDiNascita, 'id'>;
     residenza: Omit<Residenza, 'id'>;
     domicili?: Omit<Residenza, 'id'>[] | null;
 };
-type PresidentiReplaceBody = Omit<Presidente, 'id'>;
-type PresidentiUpdateBody = Partial<PresidentiReplaceBody>;
-
+export type PresidentiReplaceBody = Omit<Presidente, 'id'>;
+export type PresidentiUpdateBody = Partial<PresidentiReplaceBody>;
 export interface PresidentiIncludeParams {
     persona?: boolean | {
         luogoDiNascita?: boolean;
@@ -17,17 +16,25 @@ export interface PresidentiIncludeParams {
     };
 }
 
+export type PresidentiReturned = Presidente & {
+    persona?: Persona & {
+        luogoDiNascita?: LuogoDiNascita;
+        residenza?: Residenza;
+        domicili?: Domicilio[];
+    };
+}
+
 export class PresidentiController extends BaseController {
 
     public ROUTE = '/presidenti';
 
-    async getAll(params: PresidentiIncludeParams = {}): Promise<Presidente[]> {
+    async getAll(params: PresidentiIncludeParams = {}): Promise<PresidentiReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
         return result.data;
     }
 
-    async get(id: number, params: PresidentiIncludeParams = {}): Promise<Presidente> {
+    async get(id: number, params: PresidentiIncludeParams = {}): Promise<PresidentiReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}/${id}${queryParams}`);
         return result.data;
