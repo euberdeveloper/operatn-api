@@ -1,8 +1,8 @@
 import { TipoStanza } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-type TipiStanzaCreateBody = TipoStanza & { id?: number };
-type TipiStanzaReplaceBody = Omit<TipoStanza, 'id'>;
+export type TipiStanzaCreateBody = TipoStanza & { id?: number };
+export type TipiStanzaReplaceBody = Omit<TipoStanza, 'id'>;
 
 export class TipiStanzaController extends BaseController {
 

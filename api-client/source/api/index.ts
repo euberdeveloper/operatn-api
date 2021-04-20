@@ -5,6 +5,7 @@ import { handleError } from '@/utils/handleError';
 
 import { AuthController } from './auth';
 import { ComuniController } from './comuni';
+import { ContabilitaController } from './contabilita';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
@@ -20,6 +21,7 @@ export class OperaTN {
 
     readonly auth: AuthController;
     readonly comuni: ComuniController;
+    readonly contabilita: ContabilitaController;
     readonly tipiStanza: TipiStanzaController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
@@ -44,6 +46,7 @@ export class OperaTN {
 
         this.auth = new AuthController(this.axiosContainer);
         this.comuni = new ComuniController(this.axiosContainer);
+        this.contabilita = new ContabilitaController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);

@@ -1,8 +1,8 @@
 import { TipoStudente } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-type TipiStudenteCreateBody = TipoStudente & { id?: number };
-type TipiStudenteReplaceBody = Omit<TipoStudente, 'id'>;
+export type TipiStudenteCreateBody = TipoStudente & { id?: number };
+export type TipiStudenteReplaceBody = Omit<TipoStudente, 'id'>;
 
 export class TipiStudenteController extends BaseController {
 

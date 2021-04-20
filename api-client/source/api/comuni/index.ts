@@ -1,8 +1,8 @@
 import { Comune } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-type TipiStanzaCreateBody = Comune & { id?: number };
-type TipiStanzaReplaceBody = Omit<Comune, 'id'>;
+export type TipiStanzaCreateBody = Comune & { id?: number };
+export type TipiStanzaReplaceBody = Omit<Comune, 'id'>;
 
 export class ComuniController extends BaseController {
 
