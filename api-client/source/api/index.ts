@@ -13,6 +13,7 @@ import { OspitiController } from './ospiti';
 import { PresidentiController } from './presidenti';
 import { ProvinceController } from './province';
 import { QuietanziantiController } from './quietanzianti';
+import { StatiController } from './stati';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
@@ -38,6 +39,7 @@ export class OperaTN {
     readonly presidenti: PresidentiController;
     readonly province: ProvinceController;
     readonly quietanzianti: QuietanziantiController;
+    readonly stati: StatiController;
     readonly tipiStanza: TipiStanzaController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
@@ -70,6 +72,7 @@ export class OperaTN {
         this.presidenti = new PresidentiController(this.axiosContainer);
         this.province = new ProvinceController(this.axiosContainer);
         this.quietanzianti = new QuietanziantiController(this.axiosContainer);
+        this.stati = new StatiController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
