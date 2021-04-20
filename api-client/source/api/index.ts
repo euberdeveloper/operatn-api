@@ -29,48 +29,36 @@ import { UtilizziStanzaController } from './utilizzi-stanza';
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
 export class OperaTN {
-
-    token!: string | null;
-    apiRootEndpoint!: string;
-    axiosInstance!: AxiosInstance;
+    public token!: string | null;
+    public apiRootEndpoint!: string;
+    public axiosInstance!: AxiosInstance;
 
     // TODO: contratti/bollette
     // TODO: fabbricati
-    readonly auth: AuthController;
-    readonly comuni: ComuniController;
-    readonly contabilita: ContabilitaController;
-    readonly contiRicaviCanoni: ContiRicaviCanoniController;
-    readonly contiRicaviConsumi: ContiRicaviConsumiController;
-    readonly dipartimentiUnitn: DipartimentiUnitnController;
-    readonly ospiti: OspitiController;
-    readonly presidenti: PresidentiController;
-    readonly province: ProvinceController;
-    readonly quietanzianti: QuietanziantiController;
-    readonly stati: StatiController;
-    readonly tabellone: TabelloneController;
-    readonly tariffe: TariffeController;
-    readonly tipiBolletta: TipiBollettaController;
-    readonly tipiContratto: TipiContrattoController;
-    readonly tipiFabbricato: TipiFabbricatoController;
-    readonly tipiOspite: TipiOspiteController;
-    readonly tipiStanza: TipiStanzaController;
-    readonly tipiStudente: TipiStudenteController;
-    readonly tipiTariffa: TipiTariffaController;
-    readonly utenti: UtentiController;
-    readonly utilizziStanza: UtilizziStanzaController;
+    public readonly auth: AuthController;
+    public readonly comuni: ComuniController;
+    public readonly contabilita: ContabilitaController;
+    public readonly contiRicaviCanoni: ContiRicaviCanoniController;
+    public readonly contiRicaviConsumi: ContiRicaviConsumiController;
+    public readonly dipartimentiUnitn: DipartimentiUnitnController;
+    public readonly ospiti: OspitiController;
+    public readonly presidenti: PresidentiController;
+    public readonly province: ProvinceController;
+    public readonly quietanzianti: QuietanziantiController;
+    public readonly stati: StatiController;
+    public readonly tabellone: TabelloneController;
+    public readonly tariffe: TariffeController;
+    public readonly tipiBolletta: TipiBollettaController;
+    public readonly tipiContratto: TipiContrattoController;
+    public readonly tipiFabbricato: TipiFabbricatoController;
+    public readonly tipiOspite: TipiOspiteController;
+    public readonly tipiStanza: TipiStanzaController;
+    public readonly tipiStudente: TipiStudenteController;
+    public readonly tipiTariffa: TipiTariffaController;
+    public readonly utenti: UtentiController;
+    public readonly utilizziStanza: UtilizziStanzaController;
 
     private axiosContainer!: AxiosContainer;
-
-    private init(apiRootEndpoint: string, token: string | null): void {
-        this.apiRootEndpoint = apiRootEndpoint;
-        this.token = token;
-        this.axiosInstance = axios.create({
-            baseURL: apiRootEndpoint,
-            headers: token ? { Authorization: `Bearer ${token}` } : {}
-        });
-
-        this.axiosInstance.interceptors.response.use(res => res, error => { throw handleError(error) });
-    }
 
     constructor(apiRootEndpoint = DEFAULT_ROOT_ENDPOINT, token: string | null = null) {
         this.init(apiRootEndpoint, token);
@@ -100,14 +88,30 @@ export class OperaTN {
         this.utilizziStanza = new UtilizziStanzaController(this.axiosContainer);
     }
 
-    setApiEndpoint(apiRootEndpoint: string): void {
+    private init(apiRootEndpoint: string, token: string | null): void {
+        this.apiRootEndpoint = apiRootEndpoint;
+        this.token = token;
+        this.axiosInstance = axios.create({
+            baseURL: apiRootEndpoint,
+            // eslint-disable-next-line @typescript-eslint/naming-convention
+            headers: token ? { Authorization: `Bearer ${token}` } : {}
+        });
+
+        this.axiosInstance.interceptors.response.use(
+            res => res,
+            error => {
+                throw handleError(error);
+            }
+        );
+    }
+
+    public setApiEndpoint(apiRootEndpoint: string): void {
         this.init(apiRootEndpoint, this.token);
         this.axiosContainer.axiosInstance = this.axiosInstance;
     }
 
-    setToken(token: string | null): void {
+    public setToken(token: string | null): void {
         this.init(this.apiRootEndpoint, token);
         this.axiosContainer.axiosInstance = this.axiosInstance;
     }
-
 }

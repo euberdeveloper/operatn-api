@@ -1,5 +1,5 @@
-import { Quietanziante, TipoBolletta } from "@/db-types";
-import { AxiosContainer, BaseController } from "@/utils/baseController";
+import { Quietanziante, TipoBolletta } from '@/db-types';
+import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type TipiBollettaCreateBody = TipoBolletta & { id?: number } & {
     quietanziante?: Omit<Quietanziante, 'id'> | null;
@@ -11,53 +11,51 @@ export interface TipiBollettaIncludeParams {
 }
 export type TipiBollettaReturned = TipoBolletta & {
     quietanziante?: Quietanziante | null;
-}
+};
 
 export class TipiBollettaController extends BaseController {
-
-    public ROUTE = '/quietanzianti';
+    public route = '/quietanzianti';
 
     async getAll(params: TipiBollettaIncludeParams = {}): Promise<TipiBollettaReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
     async get(id: number, params: TipiBollettaIncludeParams = {}): Promise<TipiBollettaReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}/${id}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
         return result.data;
     }
 
     async getByValue(value: string, params: TipiBollettaIncludeParams = {}): Promise<TipiBollettaReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}/value/${value}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/value/${value}${queryParams}`);
         return result.data;
     }
 
     async create(body: TipiBollettaCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.ROUTE}`, body);
+        const result = await this.axiosInstance.post(`${this.route}`, body);
         return result.data;
     }
 
     async replace(id: number, body: TipiBollettaReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.ROUTE}/${id}`, body);
+        return this.axiosInstance.put(`${this.route}/${id}`, body);
     }
 
     async update(id: number, body: TipiBollettaUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.ROUTE}/${id}`, body);
+        return this.axiosInstance.patch(`${this.route}/${id}`, body);
     }
 
     async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.ROUTE}/${id}`);
+        return this.axiosInstance.delete(`${this.route}/${id}`);
     }
 
     async deleteByValue(value: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.ROUTE}/value/${value}`);
+        return this.axiosInstance.delete(`${this.route}/value/${value}`);
     }
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
     }
-
 }

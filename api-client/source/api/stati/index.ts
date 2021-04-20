@@ -1,42 +1,40 @@
-import { Stato } from "@/db-types";
-import { AxiosContainer, BaseController } from "@/utils/baseController";
+import { Stato } from '@/db-types';
+import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type StatiCreateBody = Stato & { codiceIso?: number };
 export type StatiReplaceBody = Omit<Stato, 'codiceIso'>;
 export type StatiUpdateBody = Partial<StatiReplaceBody>;
 export class StatiController extends BaseController {
+    public route = '/stati';
 
-    public ROUTE = '/stati';
-
-    async getAll(): Promise<Stato[]> {
-        const result = await this.axiosInstance.get(`${this.ROUTE}`);
+    public async getAll(): Promise<Stato[]> {
+        const result = await this.axiosInstance.get(`${this.route}`);
         return result.data;
     }
 
-    async get(codiceIso: number): Promise<Stato> {
-        const result = await this.axiosInstance.get(`${this.ROUTE}/${codiceIso}`);
+    public async get(codiceIso: number): Promise<Stato> {
+        const result = await this.axiosInstance.get(`${this.route}/${codiceIso}`);
         return result.data;
     }
 
-    async create(body: StatiCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.ROUTE}`, body);
+    public async create(body: StatiCreateBody): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body);
         return result.data;
     }
 
-    async replace(codiceIso: number, body: StatiReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.ROUTE}/${codiceIso}`, body);
+    public async replace(codiceIso: number, body: StatiReplaceBody): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${codiceIso}`, body);
     }
 
-    async update(codiceIso: number, body: StatiUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.ROUTE}/${codiceIso}`, body);
+    public async update(codiceIso: number, body: StatiUpdateBody): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${codiceIso}`, body);
     }
 
-    async delete(codiceIso: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.ROUTE}/${codiceIso}`);
+    public async delete(codiceIso: number): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${codiceIso}`);
     }
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
     }
-
 }

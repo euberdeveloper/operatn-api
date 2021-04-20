@@ -9,8 +9,7 @@ interface ReponseError {
 function instanceApiError(error: ReponseError, code: number): errors.ApiError {
     try {
         return new (errors as any)[error.name](error.message);
-    }
-    catch (e) {
+    } catch {
         return new errors.UnknownApiError(code);
     }
 }
@@ -18,12 +17,10 @@ function instanceApiError(error: ReponseError, code: number): errors.ApiError {
 export function handleError(error: AxiosError): errors.OperatnError {
     if (error.response) {
         return instanceApiError(error.response.data, error.response.status);
-    }
-    else if (error.request) {
+    } else if (error.request) {
         console.warn(error.request);
         return new errors.RequestError(error.request?.message ?? undefined);
-    }
-    else {
+    } else {
         console.warn(error);
         return new errors.ClientError(error.message);
     }

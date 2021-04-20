@@ -1,5 +1,5 @@
-import { Sesso } from "@/db-types";
-import { AxiosContainer, BaseController } from "@/utils/baseController";
+import { Sesso } from '@/db-types';
+import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export interface Tabellone {
     fabbricatoId: number;
@@ -41,29 +41,27 @@ export interface TabelloneQueryParams {
 }
 
 export class TabelloneController extends BaseController {
-
-    public ROUTE = '/tabellone';
+    public route = '/tabellone';
 
     async get(params: TabelloneQueryParams): Promise<Tabellone[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
     async getTsv(params: TabelloneQueryParams): Promise<any> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}/tsv${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/tsv${queryParams}`);
         return result.data;
     }
 
     async getXlsx(params: TabelloneQueryParams): Promise<any> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}/xlsx${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/xlsx${queryParams}`);
         return result.data;
     }
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
     }
-
 }

@@ -1,14 +1,13 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { ApiError } from '@server/errors';
 
 export * from '@server/errors';
 
 export class UnknownApiError extends ApiError {
-
     constructor(code: number) {
         super(code, 'Unknown api error');
         this.name = 'UnknownApiError';
     }
-
 }
 
 export class RequestError extends Error {
@@ -36,4 +35,3 @@ export class ClientError extends Error {
 }
 
 export type OperatnError = ApiError | RequestError | ClientError;
-

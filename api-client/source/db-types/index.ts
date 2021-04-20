@@ -38,5 +38,5 @@ export {
     TipoStudente,
     TipoTariffa,
     Utente,
-    UtilizzoStanza,
+    UtilizzoStanza
 } from '@server/services/prisma.service';

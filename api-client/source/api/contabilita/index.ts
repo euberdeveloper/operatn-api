@@ -1,4 +1,4 @@
-import { AxiosContainer, BaseController } from "@/utils/baseController";
+import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export interface ContabilitaQueryParams {
     startDate: Date;
@@ -6,17 +6,15 @@ export interface ContabilitaQueryParams {
 }
 
 export class ContabilitaController extends BaseController {
-
-    public ROUTE = '/contabilita';
+    public route = '/contabilita';
 
     async sendBollette(params: ContabilitaQueryParams): Promise<void> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
     }
-
 }

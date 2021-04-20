@@ -1,5 +1,5 @@
-import { Utente } from "@/db-types";
-import { AxiosContainer, BaseController } from "@/utils/baseController";
+import { Utente } from '@/db-types';
+import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export interface AuthLoginBody {
     username: string;
@@ -11,16 +11,14 @@ export interface AuthLoginResponse {
 }
 
 export class AuthController extends BaseController {
-
-    public ROUTE = '/auth';
+    public route = '/auth';
 
     async login(body: AuthLoginBody): Promise<AuthLoginResponse> {
-        const result = await this.axiosInstance.post(`${this.ROUTE}/login`, body);
+        const result = await this.axiosInstance.post(`${this.route}/login`, body);
         return result.data;
     }
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
     }
-
 }

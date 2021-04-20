@@ -1,5 +1,5 @@
-import { Domicilio, LuogoDiNascita, Persona, Presidente, Residenza } from "@/db-types";
-import { AxiosContainer, BaseController } from "@/utils/baseController";
+import { Domicilio, LuogoDiNascita, Persona, Presidente, Residenza } from '@/db-types';
+import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type PresidentiCreateBody = Presidente & { id?: number } & {
     luogoDiNascita: Omit<LuogoDiNascita, 'id'>;
@@ -9,11 +9,13 @@ export type PresidentiCreateBody = Presidente & { id?: number } & {
 export type PresidentiReplaceBody = Omit<Presidente, 'id'>;
 export type PresidentiUpdateBody = Partial<PresidentiReplaceBody>;
 export interface PresidentiIncludeParams {
-    persona?: boolean | {
-        luogoDiNascita?: boolean;
-        residenza?: boolean;
-        domicili?: boolean;
-    };
+    persona?:
+        | boolean
+        | {
+              luogoDiNascita?: boolean;
+              residenza?: boolean;
+              domicili?: boolean;
+          };
 }
 
 export type PresidentiReturned = Presidente & {
@@ -22,43 +24,41 @@ export type PresidentiReturned = Presidente & {
         residenza?: Residenza;
         domicili?: Domicilio[];
     };
-}
+};
 
 export class PresidentiController extends BaseController {
-
-    public ROUTE = '/presidenti';
+    public route = '/presidenti';
 
     async getAll(params: PresidentiIncludeParams = {}): Promise<PresidentiReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
     async get(id: number, params: PresidentiIncludeParams = {}): Promise<PresidentiReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.ROUTE}/${id}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
         return result.data;
     }
 
     async create(body: PresidentiCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.ROUTE}`, body);
+        const result = await this.axiosInstance.post(`${this.route}`, body);
         return result.data;
     }
 
     async replace(id: number, body: PresidentiReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.ROUTE}/${id}`, body);
+        return this.axiosInstance.put(`${this.route}/${id}`, body);
     }
 
     async update(id: number, body: PresidentiUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.ROUTE}/${id}`, body);
+        return this.axiosInstance.patch(`${this.route}/${id}`, body);
     }
 
     async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.ROUTE}/${id}`);
+        return this.axiosInstance.delete(`${this.route}/${id}`);
     }
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
     }
-
 }
