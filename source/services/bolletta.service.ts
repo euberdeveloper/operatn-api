@@ -208,7 +208,7 @@ export class BollettaService extends TableService {
                         : this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti),
                 competenzaDal: startDate.toDate(),
                 competenzaAl: endDate.toDate(),
-                dataScadenza: startDate.date() > 5 ? startDate.toDate() : startDate.set('date', 5).toDate(),
+                dataScadenza: startDate.date() > 5 ? startDate.toDate() : startDate.date(5).toDate(),
                 idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
                 idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
             });
@@ -227,7 +227,7 @@ export class BollettaService extends TableService {
                     importoConsumi: this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti),
                     competenzaDal: currentDate.toDate(),
                     competenzaAl: endOfCurrentMonth.toDate(),
-                    dataScadenza: startDate.date() > 5 ? startDate.toDate() : currentDate.set('date', 5).toDate(),
+                    dataScadenza: startDate.date() > 5 ? startDate.toDate() : currentDate.date(5).toDate(),
                     idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
                     idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
                 });
@@ -249,7 +249,7 @@ export class BollettaService extends TableService {
                     importoConsumi: this.calcImportoPerMonth(consumi, currentDate.daysInMonth(), tipoTariffa, nOspiti),
                     competenzaDal: currentDate.toDate(),
                     competenzaAl: endOfCurrentMonth.toDate(),
-                    dataScadenza: currentDate.set('date', 5).toDate(),
+                    dataScadenza: currentDate.date(5).toDate(),
                     idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
                     idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
                 });
@@ -263,7 +263,7 @@ export class BollettaService extends TableService {
                     importoConsumi: this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti),
                     competenzaDal: currentDate.toDate(),
                     competenzaAl: endDate.toDate(),
-                    dataScadenza: currentDate.set('date', 5).toDate(),
+                    dataScadenza: currentDate.date(5).toDate(),
                     idTipoBolletta: tipiBolletta[TipoRata.MENSILE].id,
                     idQuietanziante: tipiBolletta[TipoRata.MENSILE].idQuietanziante
                 });
@@ -330,7 +330,7 @@ export class BollettaService extends TableService {
                     // If there is only one month that starts after the 5th, the scadenza is the same date
                     startDate.isSame(endDate, 'months') && startDate.date() > 5
                         ? startDate.toDate()
-                        : startDate.set('date', 5).toDate(),
+                        : startDate.date(5).toDate(),
                 idTipoBolletta: tipiBolletta[TipoRata.UNICA].id,
                 idQuietanziante: tipiBolletta[TipoRata.UNICA].idQuietanziante
             });
@@ -574,9 +574,9 @@ export class BollettaService extends TableService {
                         : this.calcImportoPerDays(consumi, days, tipoTariffa, nOspiti),
                 competenzaDal: startDate.toDate(),
                 competenzaAl: endDate.toDate(),
-                dataScadenza: this.lastDayOfMonth(startDate).toDate(),
-                idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO].id,
-                idQuietanziante: tipiBolletta[TipoRata.DA_BANDO].idQuietanziante
+                dataScadenza: startDate.date() > 5 ? startDate.toDate() : startDate.date(5).toDate(),
+                idTipoBolletta: tipiBolletta[TipoRata.QUADRIMESTRALE].id,
+                idQuietanziante: tipiBolletta[TipoRata.QUADRIMESTRALE].idQuietanziante
             });
         }
         // Otherwise
@@ -598,9 +598,9 @@ export class BollettaService extends TableService {
                             importoConsumi: importoConsumi,
                             competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
                             competenzaAl: endOfCurrentMonth.toDate(),
-                            dataScadenza: this.lastDayOfMonth(currentDate).toDate(),
-                            idTipoBolletta: tipiBolletta[TipoRata.DA_BANDO].id,
-                            idQuietanziante: tipiBolletta[TipoRata.DA_BANDO].idQuietanziante
+                            dataScadenza: currentDate.date(5).toDate(),
+                            idTipoBolletta: tipiBolletta[TipoRata.QUADRIMESTRALE].id,
+                            idQuietanziante: tipiBolletta[TipoRata.QUADRIMESTRALE].idQuietanziante
                         });
                         importoCanoni = 0;
                         importoConsumi = 0;
