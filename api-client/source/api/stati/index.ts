@@ -7,6 +7,10 @@ export type StatiUpdateBody = Partial<StatiReplaceBody>;
 export class StatiController extends BaseController {
     public route = '/stati';
 
+    constructor(axiosContainer: AxiosContainer) {
+        super(axiosContainer);
+    }
+
     public async getAll(): Promise<Stato[]> {
         const result = await this.axiosInstance.get(`${this.route}`);
         return result.data;
@@ -32,9 +36,5 @@ export class StatiController extends BaseController {
 
     public async delete(codiceIso: number): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${codiceIso}`);
-    }
-
-    constructor(axiosContainer: AxiosContainer) {
-        super(axiosContainer);
     }
 }

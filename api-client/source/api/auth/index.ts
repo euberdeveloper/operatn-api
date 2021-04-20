@@ -13,12 +13,12 @@ export interface AuthLoginResponse {
 export class AuthController extends BaseController {
     public route = '/auth';
 
-    async login(body: AuthLoginBody): Promise<AuthLoginResponse> {
-        const result = await this.axiosInstance.post(`${this.route}/login`, body);
-        return result.data;
-    }
-
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);
+    }
+
+    public async login(body: AuthLoginBody): Promise<AuthLoginResponse> {
+        const result = await this.axiosInstance.post(`${this.route}/login`, body);
+        return result.data;
     }
 }

@@ -43,25 +43,25 @@ export interface TabelloneQueryParams {
 export class TabelloneController extends BaseController {
     public route = '/tabellone';
 
-    async get(params: TabelloneQueryParams): Promise<Tabellone[]> {
+    constructor(axiosContainer: AxiosContainer) {
+        super(axiosContainer);
+    }
+
+    public async get(params: TabelloneQueryParams): Promise<Tabellone[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
-    async getTsv(params: TabelloneQueryParams): Promise<any> {
+    public async getTsv(params: TabelloneQueryParams): Promise<any> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/tsv${queryParams}`);
         return result.data;
     }
 
-    async getXlsx(params: TabelloneQueryParams): Promise<any> {
+    public async getXlsx(params: TabelloneQueryParams): Promise<any> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/xlsx${queryParams}`);
         return result.data;
-    }
-
-    constructor(axiosContainer: AxiosContainer) {
-        super(axiosContainer);
     }
 }

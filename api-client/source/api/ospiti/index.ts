@@ -40,36 +40,36 @@ export interface OspitiSearchParams {
 export class OspitiController extends BaseController {
     public route = '/ospiti';
 
-    async getAll(params: OspitiIncludeParams & OspitiSearchParams = {}): Promise<OspitiReturned[]> {
+    constructor(axiosContainer: AxiosContainer) {
+        super(axiosContainer);
+    }
+
+    public async getAll(params: OspitiIncludeParams & OspitiSearchParams = {}): Promise<OspitiReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
-    async get(id: number, params: OspitiIncludeParams = {}): Promise<OspitiReturned> {
+    public async get(id: number, params: OspitiIncludeParams = {}): Promise<OspitiReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
         return result.data;
     }
 
-    async create(body: OspitiCreateBody): Promise<number> {
+    public async create(body: OspitiCreateBody): Promise<number> {
         const result = await this.axiosInstance.post(`${this.route}`, body);
         return result.data;
     }
 
-    async replace(id: number, body: OspitiReplaceBody): Promise<void> {
+    public async replace(id: number, body: OspitiReplaceBody): Promise<void> {
         return this.axiosInstance.put(`${this.route}/${id}`, body);
     }
 
-    async update(id: number, body: OspitiUpdateBody): Promise<void> {
+    public async update(id: number, body: OspitiUpdateBody): Promise<void> {
         return this.axiosInstance.patch(`${this.route}/${id}`, body);
     }
 
-    async delete(id: number): Promise<void> {
+    public async delete(id: number): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${id}`);
-    }
-
-    constructor(axiosContainer: AxiosContainer) {
-        super(axiosContainer);
     }
 }

@@ -22,36 +22,36 @@ export type TariffeReturned = Tariffa & {
 export class TariffeController extends BaseController {
     public route = '/tariffe';
 
-    async getAll(params: TariffeIncludeParams = {}): Promise<TariffeReturned[]> {
+    constructor(axiosContainer: AxiosContainer) {
+        super(axiosContainer);
+    }
+
+    public async getAll(params: TariffeIncludeParams = {}): Promise<TariffeReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
-    async get(id: number, params: TariffeIncludeParams = {}): Promise<TariffeReturned> {
+    public async get(id: number, params: TariffeIncludeParams = {}): Promise<TariffeReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
         return result.data;
     }
 
-    async create(body: TariffeCreateBody): Promise<number> {
+    public async create(body: TariffeCreateBody): Promise<number> {
         const result = await this.axiosInstance.post(`${this.route}`, body);
         return result.data;
     }
 
-    async replace(id: number, body: TariffeReplaceBody): Promise<void> {
+    public async replace(id: number, body: TariffeReplaceBody): Promise<void> {
         return this.axiosInstance.put(`${this.route}/${id}`, body);
     }
 
-    async update(id: number, body: TariffeUpdateBody): Promise<void> {
+    public async update(id: number, body: TariffeUpdateBody): Promise<void> {
         return this.axiosInstance.patch(`${this.route}/${id}`, body);
     }
 
-    async delete(id: number): Promise<void> {
+    public async delete(id: number): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${id}`);
-    }
-
-    constructor(axiosContainer: AxiosContainer) {
-        super(axiosContainer);
     }
 }

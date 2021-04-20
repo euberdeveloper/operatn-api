@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import { AxiosInstance } from 'axios';
 
 export interface AxiosContainer {

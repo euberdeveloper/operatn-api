@@ -15,42 +15,42 @@ export type TipiContrattoReturned = TipoContratto & {
 export class TipiContrattoController extends BaseController {
     public route = '/tipi-contratto';
 
-    async getAll(params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned[]> {
+    constructor(axiosContainer: AxiosContainer) {
+        super(axiosContainer);
+    }
+
+    public async getAll(params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
         return result.data;
     }
 
-    async get(id: number, params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned> {
+    public async get(id: number, params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
         return result.data;
     }
 
-    async getBySigla(sigla: string, params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned> {
+    public async getBySigla(sigla: string, params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}${queryParams}`);
         return result.data;
     }
 
-    async create(body: TipiContrattoCreateBody): Promise<number> {
+    public async create(body: TipiContrattoCreateBody): Promise<number> {
         const result = await this.axiosInstance.post(`${this.route}`, body);
         return result.data;
     }
 
-    async replace(id: number, body: TipiContrattoReplaceBody): Promise<void> {
+    public async replace(id: number, body: TipiContrattoReplaceBody): Promise<void> {
         return this.axiosInstance.put(`${this.route}/${id}`, body);
     }
 
-    async delete(id: number): Promise<void> {
+    public async delete(id: number): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${id}`);
     }
 
-    async deleteBySigla(sigla: string): Promise<void> {
+    public async deleteBySigla(sigla: string): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`);
-    }
-
-    constructor(axiosContainer: AxiosContainer) {
-        super(axiosContainer);
     }
 }
