@@ -5,9 +5,10 @@ import { handleError } from '@/utils/handleError';
 
 import { AuthController } from './auth';
 import { ComuniController } from './comuni';
+import { ContabilitaController } from './contabilita';
 import { ContiRicaviCanoniController } from './conti-ricavi-canoni';
 import { ContiRicaviConsumiController } from './conti-ricavi-consumi';
-import { ContabilitaController } from './contabilita';
+import { DipartimentiUnitnController } from './dipartimenti-unitn';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
@@ -27,6 +28,7 @@ export class OperaTN {
     readonly contabilita: ContabilitaController;
     readonly contiRicaviCanoni: ContiRicaviCanoniController;
     readonly contiRicaviConsumi: ContiRicaviConsumiController;
+    readonly dipartimentiUnitn: DipartimentiUnitnController;
     readonly tipiStanza: TipiStanzaController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
@@ -54,6 +56,7 @@ export class OperaTN {
         this.contabilita = new ContabilitaController(this.axiosContainer);
         this.contiRicaviCanoni = new ContiRicaviCanoniController(this.axiosContainer);
         this.contiRicaviConsumi = new ContiRicaviConsumiController(this.axiosContainer);
+        this.dipartimentiUnitn = new DipartimentiUnitnController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
