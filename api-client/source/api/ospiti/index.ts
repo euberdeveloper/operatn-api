@@ -1,7 +1,7 @@
 import { ContoCorrente, DipartimentoUnitn, DocumentoIdentita, LuogoDiNascita, Ospite, Residenza } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-type OspitiCreateBody = Ospite & { id?: number } & {
+export type OspitiCreateBody = Ospite & { id?: number } & {
     luogoDiNascita: Omit<LuogoDiNascita, 'id'>;
     residenza: Omit<Residenza, 'id'>;
     domicili?: Omit<Residenza, 'id'>[] | null;
@@ -9,8 +9,17 @@ type OspitiCreateBody = Ospite & { id?: number } & {
     documentoIdentita?: Omit<DocumentoIdentita, 'id'> | null;
     dipartimentoUnitn?: Omit<DipartimentoUnitn, 'codice'> | null;
 };
-type OspitiReplaceBody = Omit<Ospite, 'id'>;
-type OspitiUpdateBody = Partial<OspitiReplaceBody>;
+export type OspitiReplaceBody = Omit<Ospite, 'id'>;
+export type OspitiUpdateBody = Partial<OspitiReplaceBody>;
+
+export type OspitiReturned = Ospite & {
+    luogoDiNascita?: LuogoDiNascita;
+    residenza?: Residenza;
+    domicili?: Residenza[] | null;
+    contoCorrente?: ContoCorrente | null;
+    documentoIdentita?: DocumentoIdentita | null;
+    dipartimentoUnitn?: DipartimentoUnitn | null;
+}
 
 export interface OspitiIncludeParams {
     persona?: boolean | {
@@ -30,13 +39,13 @@ export class OspitiController extends BaseController {
 
     public ROUTE = '/ospiti';
 
-    async getAll(params: OspitiIncludeParams & OspitiSearchParams = {}): Promise<Ospite[]> {
+    async getAll(params: OspitiIncludeParams & OspitiSearchParams = {}): Promise<OspitiReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
         return result.data;
     }
 
-    async get(id: number, params: OspitiIncludeParams = {}): Promise<Ospite> {
+    async get(id: number, params: OspitiIncludeParams = {}): Promise<OspitiReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}/${id}${queryParams}`);
         return result.data;
