@@ -172,8 +172,7 @@ export abstract class TableService {
                 let toModify = result;
                 for (const keyPart of keyParts.slice(0, lastKeyPartIndex)) {
                     if (!toModify[keyPart]) {
-                        toModify = null;
-                        break;
+                        toModify[keyPart] = true;
                     }
 
                     if (typeof toModify[keyPart] === 'boolean') {
