@@ -16,6 +16,7 @@ import { QuietanziantiController } from './quietanzianti';
 import { StatiController } from './stati';
 import { TabelloneController } from './tabellone';
 import { TariffeController } from './tariffe';
+import { TipiBollettaController } from './tipi-bolletta';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
@@ -44,6 +45,7 @@ export class OperaTN {
     readonly stati: StatiController;
     readonly tabellone: TabelloneController;
     readonly tariffe: TariffeController;
+    readonly tipiBolletta: TipiBollettaController;
     readonly tipiStanza: TipiStanzaController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
@@ -79,6 +81,7 @@ export class OperaTN {
         this.stati = new StatiController(this.axiosContainer);
         this.tabellone = new TabelloneController(this.axiosContainer);
         this.tariffe = new TariffeController(this.axiosContainer);
+        this.tipiBolletta = new TipiBollettaController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
