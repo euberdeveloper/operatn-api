@@ -21,8 +21,9 @@ import { TipiContrattoController } from './tipi-contratto';
 import { TipiFabbricatoController } from './tipi-fabbricato';
 import { TipiOspiteController } from './tipi-ospite';
 import { TipiStanzaController } from './tipi-stanza';
-import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
+import { TipiTariffaController } from './tipi-tariffa';
+import { UtentiController } from './utenti';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
@@ -49,11 +50,12 @@ export class OperaTN {
     readonly tariffe: TariffeController;
     readonly tipiBolletta: TipiBollettaController;
     readonly tipiContratto: TipiContrattoController;
-    readonly tipiStanza: TipiStanzaController;
     readonly tipiFabbricato: TipiFabbricatoController;
     readonly tipiOspite: TipiOspiteController;
-    readonly tipiTariffa: TipiTariffaController;
+    readonly tipiStanza: TipiStanzaController;
     readonly tipiStudente: TipiStudenteController;
+    readonly tipiTariffa: TipiTariffaController;
+    readonly utenti: UtentiController;
 
     private axiosContainer!: AxiosContainer;
 
@@ -87,11 +89,12 @@ export class OperaTN {
         this.tariffe = new TariffeController(this.axiosContainer);
         this.tipiBolletta = new TipiBollettaController(this.axiosContainer);
         this.tipiContratto = new TipiContrattoController(this.axiosContainer);
-        this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiFabbricato = new TipiFabbricatoController(this.axiosContainer);
         this.tipiOspite = new TipiOspiteController(this.axiosContainer);
-        this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
+        this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
+        this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
+        this.utenti = new UtentiController(this.axiosContainer);
     }
 
     setApiEndpoint(apiRootEndpoint: string): void {
