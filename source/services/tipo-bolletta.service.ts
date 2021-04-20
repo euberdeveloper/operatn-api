@@ -12,7 +12,8 @@ export class TipoBollettaService extends TableService {
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
         tipoBolletta: Joi.string().min(1),
-        importo: Joi.number().positive().precision(2).allow(null).optional().options({ convert: false })
+        importo: Joi.number().positive().precision(2).allow(null).optional().options({ convert: false }),
+        idQuietanziante: Joi.number().integer().positive().optional()
     };
 
     protected postValidatorExcludes = ['id'];
