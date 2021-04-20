@@ -3,6 +3,7 @@ import { AxiosContainer, BaseController } from "@/utils/baseController";
 
 type TipiOspiteCreateBody = TipoOspite & { id?: number };
 type TipiOspiteReplaceBody = Omit<TipoOspite, 'id'>;
+type TipiOspiteUpdateBody = Partial<TipiOspiteReplaceBody>;
 
 export interface TipiOspiteIncludeParams {
     contoRicaviConsumi?: boolean;
@@ -40,8 +41,8 @@ export class TipiOspiteController extends BaseController {
         return this.axiosInstance.put(`${this.ROUTE}/${id}`, body);
     }
 
-    async update(id: number, body: TipiOspiteReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.ROUTE}/${id}`, body);
+    async update(id: number, body: TipiOspiteUpdateBody): Promise<void> {
+        return this.axiosInstance.patch(`${this.ROUTE}/${id}`, body);
     }
 
     async delete(id: number): Promise<void> {
