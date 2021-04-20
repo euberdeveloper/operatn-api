@@ -1,6 +1,6 @@
 {
   "name": "operatn-api-client",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "The api client for operatn",
   "main": "dist/index.js",
   "scripts": {
@@ -30,8 +30,9 @@
     "prettier": "^2.2.1",
     "shx": "^0.3.3",
     "ts-loader": "^8.1.0",
-    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "ttypescript": "^1.5.12",
     "typescript": "^4.1.5",
+    "typescript-transform-paths": "^2.2.3",
     "webpack": "^5.33.2",
     "webpack-cli": "^4.6.0",
     "webpack-node-externals": "^2.5.2"
