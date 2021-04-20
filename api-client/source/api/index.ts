@@ -24,6 +24,7 @@ import { TipiStanzaController } from './tipi-stanza';
 import { TipiStudenteController } from './tipi-studente';
 import { TipiTariffaController } from './tipi-tariffa';
 import { UtentiController } from './utenti';
+import { UtilizziStanzaController } from './utilizzi-stanza';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
@@ -56,6 +57,7 @@ export class OperaTN {
     readonly tipiStudente: TipiStudenteController;
     readonly tipiTariffa: TipiTariffaController;
     readonly utenti: UtentiController;
+    readonly utilizziStanza: UtilizziStanzaController;
 
     private axiosContainer!: AxiosContainer;
 
@@ -95,6 +97,7 @@ export class OperaTN {
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.utenti = new UtentiController(this.axiosContainer);
+        this.utilizziStanza = new UtilizziStanzaController(this.axiosContainer);
     }
 
     setApiEndpoint(apiRootEndpoint: string): void {
