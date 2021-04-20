@@ -11,6 +11,7 @@ import { ContiRicaviConsumiController } from './conti-ricavi-consumi';
 import { DipartimentiUnitnController } from './dipartimenti-unitn';
 import { OspitiController } from './ospiti';
 import { PresidentiController } from './presidenti';
+import { ProvinceController } from './province';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
@@ -34,6 +35,7 @@ export class OperaTN {
     readonly dipartimentiUnitn: DipartimentiUnitnController;
     readonly ospiti: OspitiController;
     readonly presidenti: PresidentiController;
+    readonly province: ProvinceController;
     readonly tipiStanza: TipiStanzaController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
@@ -64,6 +66,7 @@ export class OperaTN {
         this.dipartimentiUnitn = new DipartimentiUnitnController(this.axiosContainer);
         this.ospiti = new OspitiController(this.axiosContainer);
         this.presidenti = new PresidentiController(this.axiosContainer);
+        this.province = new ProvinceController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
