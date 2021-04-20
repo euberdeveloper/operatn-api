@@ -6,7 +6,7 @@ import fileSystemService from '@/services/filesystem.service';
 import logger from '@/utils/logger';
 import { InvalidQueryParamError } from '@/errors';
 
-interface Tabellone {
+export interface Tabellone {
     fabbricatoId: number;
     fabbricatoCodice: string;
     fabbricatoNome: string;
