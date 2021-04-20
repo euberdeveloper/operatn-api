@@ -1,9 +1,9 @@
 import { Comune } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-export type TipiStanzaCreateBody = Comune & { id?: number };
-export type TipiStanzaReplaceBody = Omit<Comune, 'id'>;
-
+export type ComuniCreateBody = Comune & { id?: number };
+export type ComuniReplaceBody = Omit<Comune, 'id'>;
+export type ComuniUpdateBody = Partial<ComuniReplaceBody>;
 export class ComuniController extends BaseController {
 
     public ROUTE = '/comuni';
@@ -33,13 +33,17 @@ export class ComuniController extends BaseController {
         return result.data;
     }
 
-    async create(body: TipiStanzaCreateBody): Promise<number> {
+    async create(body: ComuniCreateBody): Promise<number> {
         const result = await this.axiosInstance.post(`${this.ROUTE}`, body);
         return result.data;
     }
 
-    async replace(id: number, body: TipiStanzaReplaceBody): Promise<void> {
+    async replace(id: number, body: ComuniReplaceBody): Promise<void> {
         return this.axiosInstance.put(`${this.ROUTE}/${id}`, body);
+    }
+
+    async update(id: number, body: ComuniUpdateBody): Promise<void> {
+        return this.axiosInstance.patch(`${this.ROUTE}/${id}`, body);
     }
 
     async delete(id: number): Promise<void> {
