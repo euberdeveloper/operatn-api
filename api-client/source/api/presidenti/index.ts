@@ -16,15 +16,12 @@ export interface PresidentiIncludeParams {
         domicili?: boolean;
     };
 }
-export interface PresidentiSearchParams {
-    search?: string;
-}
 
 export class PresidentiController extends BaseController {
 
     public ROUTE = '/presidenti';
 
-    async getAll(params: PresidentiIncludeParams & PresidentiSearchParams = {}): Promise<Presidente[]> {
+    async getAll(params: PresidentiIncludeParams = {}): Promise<Presidente[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
         return result.data;
