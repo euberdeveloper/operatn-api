@@ -1,9 +1,14 @@
-import { TipoOspite } from "@/db-types";
+import { ContoRicaviCanoni, ContoRicaviConsumi, TipoOspite } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
-type TipiOspiteCreateBody = TipoOspite & { id?: number };
-type TipiOspiteReplaceBody = Omit<TipoOspite, 'id'>;
-type TipiOspiteUpdateBody = Partial<TipiOspiteReplaceBody>;
+export type TipiOspiteCreateBody = TipoOspite & { id?: number };
+export type TipiOspiteReplaceBody = Omit<TipoOspite, 'id'>;
+export type TipiOspiteUpdateBody = Partial<TipiOspiteReplaceBody>;
+
+export type TipiOspiteReturned = TipoOspite & {
+    contoRicaviCanoni?: ContoRicaviCanoni;
+    contoRicaviConsumi?: ContoRicaviConsumi;
+}
 
 export interface TipiOspiteIncludeParams {
     contoRicaviConsumi?: boolean;
@@ -14,19 +19,19 @@ export class TipiOspiteController extends BaseController {
 
     public ROUTE = '/tipi-ospite';
 
-    async getAll(params: TipiOspiteIncludeParams = {}): Promise<TipoOspite[]> {
+    async getAll(params: TipiOspiteIncludeParams = {}): Promise<TipiOspiteReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}${queryParams}`);
         return result.data;
     }
 
-    async get(id: number, params: TipiOspiteIncludeParams = {}): Promise<TipoOspite> {
+    async get(id: number, params: TipiOspiteIncludeParams = {}): Promise<TipiOspiteReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}/${id}${queryParams}`);
         return result.data;
     }
 
-    async getByValue(sigla: string, params: TipiOspiteIncludeParams = {}): Promise<TipoOspite> {
+    async getByValue(sigla: string, params: TipiOspiteIncludeParams = {}): Promise<TipiOspiteReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.ROUTE}/sigla/${sigla}${queryParams}`);
         return result.data;
