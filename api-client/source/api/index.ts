@@ -4,9 +4,11 @@ import { AxiosContainer } from '@/utils/baseController';
 import { handleError } from '@/utils/handleError';
 
 import { AuthController } from './auth';
+import { ComuniController } from './comuni';
 import { TipiStanzaController } from './tipi-stanza';
 import { TipiTariffaController } from './tipi-tariffa';
 import { TipiStudenteController } from './tipi-studente';
+import { TipiOspiteController } from './tipi-ospite';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
@@ -17,9 +19,11 @@ export class OperaTN {
     axiosInstance!: AxiosInstance;
 
     readonly auth: AuthController;
+    readonly comuni: ComuniController;
     readonly tipiStanza: TipiStanzaController;
     readonly tipiTariffa: TipiTariffaController;
     readonly tipiStudente: TipiStudenteController;
+    readonly tipiOspite: TipiOspiteController;
 
     private axiosContainer!: AxiosContainer;
 
@@ -39,9 +43,11 @@ export class OperaTN {
         this.axiosContainer = { axiosInstance: this.axiosInstance };
 
         this.auth = new AuthController(this.axiosContainer);
+        this.comuni = new ComuniController(this.axiosContainer);
         this.tipiStanza = new TipiStanzaController(this.axiosContainer);
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.tipiStudente = new TipiStudenteController(this.axiosContainer);
+        this.tipiOspite = new TipiOspiteController(this.axiosContainer);
     }
 
     setApiEndpoint(apiRootEndpoint: string): void {
