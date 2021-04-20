@@ -1,4 +1,3 @@
-import { Contabi } from "@/db-types";
 import { AxiosContainer, BaseController } from "@/utils/baseController";
 
 export interface ContabilitaQueryParams {
