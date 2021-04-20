@@ -21,6 +21,7 @@ export class OperaTN {
     apiRootEndpoint!: string;
     axiosInstance!: AxiosInstance;
 
+    // TODO: contratti/bollette
     readonly auth: AuthController;
     readonly comuni: ComuniController;
     readonly contabilita: ContabilitaController;
