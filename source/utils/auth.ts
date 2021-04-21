@@ -5,6 +5,18 @@ import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 
 import authService from '@/services/auth.service';
 import CONFIG from '@/config';
+import { UserNotAuthenticatedError } from '@/errors';
+
+export const authenticate: Handler = function authenticate(req, res, next) {
+    passport.authenticate('jwt', { session: false }, function (error, user, info) {
+        if (info) {
+            const error = new UserNotAuthenticatedError();
+            next(error);
+        } else {
+            next();
+        }
+    })(req, res, next);
+};
 
 export default function (): Handler {
     passport.use(

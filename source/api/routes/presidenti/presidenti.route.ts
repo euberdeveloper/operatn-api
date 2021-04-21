@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import * as passport from 'passport';
+import { authenticate } from '@/utils/auth';
 
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
@@ -8,7 +8,7 @@ import presidenteService from '@/services/presidente.service';
 
 export default function (): Router {
     const router = Router();
-    router.use(passport.authenticate('jwt', { session: false }));
+    router.use(authenticate);
 
     router.get(
         '/',

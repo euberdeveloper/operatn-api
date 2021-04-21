@@ -16,8 +16,7 @@ module.exports = {
             {
                 test: /\.ts?$/,
                 include: [
-                    path.resolve(__dirname, 'source'),
-                    path.resolve(__dirname, '..', 'source')
+                    path.resolve(__dirname, 'source')
                 ],
                 use: [
                     {
@@ -33,16 +32,14 @@ module.exports = {
     plugins: [
         new DtsBundleWebpack({
             name: 'operatn-api-client',
-            main: 'dist/api-client/source/index.d.ts',
-            out: '../../../bundled/index.d.ts'
+            main: 'dist/index.d.ts',
+            out: '../bundled/index.d.ts'
         })
     ],
     output: {
         path: path.resolve(__dirname, './bundled'),
         filename: 'index.js',
         library: 'operatn-api-client',
-        libraryTarget: 'umd',
-        globalObject: 'this',
-        umdNamedDefine: true,
+        libraryTarget: 'umd'
     }
 }

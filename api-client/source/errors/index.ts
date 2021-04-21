@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/naming-convention */
-import { ApiError } from '@server/errors';
+import { ApiError } from './apiErrors';
 
-export * from '@server/errors';
+export * from './apiErrors';
 
 export class UnknownApiError extends ApiError {
     constructor(code: number) {

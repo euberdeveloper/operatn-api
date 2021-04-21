@@ -1,11 +1,11 @@
 import { ApiError } from '../ApiError';
 
-export class UserNotAuthenticated extends ApiError {
+export class UserNotAuthenticatedError extends ApiError {
     public static readonly code = 401;
     protected static readonly defaultMessage: string = 'User not authenticated';
 
-    constructor(message = UserNotAuthenticated.defaultMessage) {
-        super(UserNotAuthenticated.code, message);
-        this.name = 'UserNotAuthenticated';
+    constructor(message = UserNotAuthenticatedError.defaultMessage) {
+        super(UserNotAuthenticatedError.code, message);
+        this.name = 'UserNotAuthenticatedError';
     }
 }

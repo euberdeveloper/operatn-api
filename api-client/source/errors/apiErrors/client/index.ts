@@ -3,7 +3,7 @@ export * from './UserNotAuthenticatedError';
 export * from './UserNotAuthorizedError';
 export * from './BadRequestError';
 export * from './NotFoundError';
-export * from './InvalidIdError';
+export * from './InvalidIderror';
 export * from './InvalidPathParamError';
 export * from './InvalidQueryParamError';
 export * from './InvalidBodyError';
