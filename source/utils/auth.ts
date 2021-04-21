@@ -5,14 +5,27 @@ import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 
 import authService from '@/services/auth.service';
 import CONFIG from '@/config';
-import { UserNotAuthenticatedError } from '@/errors';
+import { InvalidCredentials, UserNotAuthenticatedError } from '@/errors';
 
-export const authenticate: Handler = function authenticate(req, res, next) {
-    passport.authenticate('jwt', { session: false }, function (error, user, info) {
+export const authenticateJwt: Handler = function authenticate(req, res, next) {
+    passport.authenticate('jwt', { session: false }, function (_error, user, info) {
         if (info) {
             const error = new UserNotAuthenticatedError();
             next(error);
         } else {
+            req.user = user;
+            next();
+        }
+    })(req, res, next);
+};
+
+export const authenticateLocal: Handler = function authenticate(req, res, next) {
+    passport.authenticate('local', { session: false }, function (err, user, _info) {
+        if (err) {
+            const error = new InvalidCredentials();
+            next(error);
+        } else {
+            req.user = user;
             next();
         }
     })(req, res, next);

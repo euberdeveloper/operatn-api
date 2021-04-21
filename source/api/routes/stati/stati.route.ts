@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { authenticate } from '@/utils/auth';
+import { authenticateJwt } from '@/utils/auth';
 
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
@@ -8,7 +8,7 @@ import statoService from '@/services/stato.service';
 
 export default function (): Router {
     const router = Router();
-    router.use(authenticate);
+    router.use(authenticateJwt);
 
     router.get(
         '/',
