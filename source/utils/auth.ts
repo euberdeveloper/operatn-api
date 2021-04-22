@@ -5,7 +5,7 @@ import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 
 import authService from '@/services/auth.service';
 import CONFIG from '@/config';
-import { InvalidCredentials, UserNotAuthenticatedError } from '@/errors';
+import { InvalidCredentialsError, UserNotAuthenticatedError } from '@/errors';
 
 export const authenticateJwt: Handler = function authenticate(req, res, next) {
     passport.authenticate('jwt', { session: false }, function (_error, user, info) {
@@ -22,7 +22,7 @@ export const authenticateJwt: Handler = function authenticate(req, res, next) {
 export const authenticateLocal: Handler = function authenticate(req, res, next) {
     passport.authenticate('local', { session: false }, function (err, user, _info) {
         if (err) {
-            const error = new InvalidCredentials();
+            const error = new InvalidCredentialsError();
             next(error);
         } else {
             req.user = user;

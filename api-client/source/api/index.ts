@@ -1,4 +1,4 @@
-import axios, { AxiosInstance } from 'axios';
+import axios, { AxiosError, AxiosInstance } from 'axios';
 
 import { AxiosContainer } from '@/utils/baseController';
 import { handleError } from '@/utils/handleError';
@@ -30,9 +30,12 @@ export * as controllers from './controllers';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
+export type ErrorHandler = (error: AxiosError) => void | Promise<void>;
 export class OperaTN {
-    public token!: string | null;
-    public apiRootEndpoint!: string;
+    private _token!: string | null;
+    private _apiRootEndpoint!: string;
+    private _errorHandler!: ErrorHandler | null;
+    private errorHandlerInstance!: number | null;
     public axiosInstance!: AxiosInstance;
 
     // TODO: contratti/bollette
@@ -62,8 +65,12 @@ export class OperaTN {
 
     private axiosContainer!: AxiosContainer;
 
-    constructor(apiRootEndpoint = DEFAULT_ROOT_ENDPOINT, token: string | null = null) {
-        this.init(apiRootEndpoint, token);
+    constructor(
+        apiRootEndpoint = DEFAULT_ROOT_ENDPOINT,
+        token: string | null = null,
+        errorHandler: ErrorHandler | null = null
+    ) {
+        this.init(apiRootEndpoint, token, errorHandler);
         this.axiosContainer = { axiosInstance: this.axiosInstance };
 
         this.auth = new AuthController(this.axiosContainer);
@@ -90,14 +97,20 @@ export class OperaTN {
         this.utilizziStanza = new UtilizziStanzaController(this.axiosContainer);
     }
 
-    private init(apiRootEndpoint: string, token: string | null): void {
-        this.apiRootEndpoint = apiRootEndpoint;
-        this.token = token;
+    private init(apiRootEndpoint: string, token: string | null, errorHandler: ErrorHandler | null): void {
+        this._apiRootEndpoint = apiRootEndpoint;
+        this._token = token;
         this.axiosInstance = axios.create({
             baseURL: apiRootEndpoint,
             // eslint-disable-next-line @typescript-eslint/naming-convention
             headers: token ? { Authorization: `Bearer ${token}` } : {}
         });
+
+        if (this.errorHandlerInstance) {
+            this.axiosInstance.interceptors.response.eject(this.errorHandlerInstance);
+            this.errorHandlerInstance = null;
+            this._errorHandler = null;
+        }
 
         this.axiosInstance.interceptors.response.use(
             res => res,
@@ -105,15 +118,39 @@ export class OperaTN {
                 throw handleError(error);
             }
         );
+
+        if (errorHandler) {
+            this.errorHandlerInstance = this.axiosInstance.interceptors.response.use(
+                res => res,
+                async error => {
+                    await errorHandler(error);
+                }
+            );
+            this._errorHandler = errorHandler;
+        }
     }
 
-    public setApiEndpoint(apiRootEndpoint: string): void {
-        this.init(apiRootEndpoint, this.token);
+    get apiRootEndpoint(): string {
+        return this._apiRootEndpoint;
+    }
+    set apiRootEndpoint(apiEndpoint: string) {
+        this.init(apiEndpoint, this.token, this.errorHandler);
         this.axiosContainer.axiosInstance = this.axiosInstance;
     }
 
-    public setToken(token: string | null): void {
-        this.init(this.apiRootEndpoint, token);
+    get token(): string | null {
+        return this._token;
+    }
+    set token(token: string | null) {
+        this.init(this.apiRootEndpoint, token, this.errorHandler);
+        this.axiosContainer.axiosInstance = this.axiosInstance;
+    }
+
+    get errorHandler(): ErrorHandler | null {
+        return this._errorHandler;
+    }
+    set errorHandler(errorHandler: ErrorHandler | null) {
+        this.init(this.apiRootEndpoint, this.token, errorHandler);
         this.axiosContainer.axiosInstance = this.axiosInstance;
     }
 }

@@ -451,14 +451,14 @@ export type Cronologia = {
 // Based on
 // https://github.com/microsoft/TypeScript/issues/3192#issuecomment-261720275
 
-const Sesso = {
+export const Sesso = {
     MASCHIO: 'MASCHIO',
     FEMMINA: 'FEMMINA'
 };
 
 export type Sesso = typeof Sesso[keyof typeof Sesso];
 
-const Piano = {
+export const Piano = {
     PIANO_TERRA: 'PIANO_TERRA',
     PIANO_RIALZATO: 'PIANO_RIALZATO',
     PRIMO_PIANO: 'PRIMO_PIANO',
@@ -472,7 +472,7 @@ const Piano = {
 };
 export type Piano = typeof Piano[keyof typeof Piano];
 
-const TipoRata = {
+export const TipoRata = {
     DA_BANDO: 'DA_BANDO',
     MENSILE: 'MENSILE',
     QUADRIMESTRALE: 'QUADRIMESTRALE',
@@ -481,7 +481,7 @@ const TipoRata = {
 
 export type TipoRata = typeof TipoRata[keyof typeof TipoRata];
 
-const RuoloUtente = {
+export const RuoloUtente = {
     ADMIN: 'ADMIN',
     SPORTELLO: 'SPORTELLO',
     PORTINERIA: 'PORTINERIA',
@@ -491,7 +491,7 @@ const RuoloUtente = {
 
 export type RuoloUtente = typeof RuoloUtente[keyof typeof RuoloUtente];
 
-const CronologiaAzione = {
+export const CronologiaAzione = {
     CREATE: 'CREATE',
     RETRIEVE: 'RETRIEVE',
     UPDATE: 'UPDATE',
@@ -500,7 +500,7 @@ const CronologiaAzione = {
 
 export type CronologiaAzione = typeof CronologiaAzione[keyof typeof CronologiaAzione];
 
-const CronologiaRisorsa = {
+export const CronologiaRisorsa = {
     OSPITE: 'OSPITE',
     PRESIDENTE: 'PRESIDENTE'
 };

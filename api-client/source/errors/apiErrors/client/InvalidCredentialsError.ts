@@ -1,10 +1,10 @@
-import { UserNotAuthenticated } from './UserNotAuthenticatedError';
+import { UserNotAuthenticatedError } from './UserNotAuthenticatedError';
 
-export class InvalidCredentials extends UserNotAuthenticated {
+export class InvalidCredentialsError extends UserNotAuthenticatedError {
     protected static readonly defaultMessage: string = 'Invalid credentials';
 
-    constructor(message = InvalidCredentials.defaultMessage) {
+    constructor(message = InvalidCredentialsError.defaultMessage) {
         super(message);
-        this.name = 'InvalidCredentials';
+        this.name = 'InvalidCredentialsError';
     }
 }
