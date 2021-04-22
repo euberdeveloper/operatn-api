@@ -598,7 +598,7 @@ export class BollettaService extends TableService {
                             importoConsumi: importoConsumi,
                             competenzaDal: competenzaDal?.toDate() ?? currentDate.toDate(),
                             competenzaAl: endOfCurrentMonth.toDate(),
-                            dataScadenza: currentDate.date(5).toDate(),
+                            dataScadenza: (competenzaDal ?? currentDate).date(5).toDate(),
                             idTipoBolletta: tipiBolletta[TipoRata.QUADRIMESTRALE].id,
                             idQuietanziante: tipiBolletta[TipoRata.QUADRIMESTRALE].idQuietanziante
                         });
