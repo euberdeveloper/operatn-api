@@ -171,7 +171,8 @@ export class AuthService {
             LEFT JOIN test.ospite O
             ON P.id = O.id
             LEFT JOIN test.dipartimento_unitn DU
-            ON O.codice_dipartimento_unitn = DU.codice;
+            ON O.codice_dipartimento_unitn = DU.codice
+            ORDER BY F.indirizzo, S.numero_stanza;
         `;
         } catch (error) {
             logger.warning('Prisma tabellone error', error);
