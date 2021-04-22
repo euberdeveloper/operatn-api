@@ -22,12 +22,10 @@ export class UtenteService extends TableService {
         uid: Joi.string().min(1).optional(),
         nomeUtente: Joi.string()
             .min(1)
-            .regex(/[\w\.]+/),
+            .regex(/^[\w\.]+$/),
         password: Joi.string().min(8).max(16),
         email: Joi.string().email(),
-        ruolo: Joi.string()
-            .valid(...Object.values(RuoloUtente))
-            .allow(null)
+        ruolo: Joi.string().valid(...Object.values(RuoloUtente))
     };
     private readonly changeRoleValidator = Joi.object({
         ruolo: Joi.string()
