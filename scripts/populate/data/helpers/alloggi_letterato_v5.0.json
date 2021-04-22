@@ -1,0 +1,2920 @@
+[
+    {
+        "id": 343,
+        "codice": "ASVATN22",
+        "nome": "ALLOGGI STORICI - VIA ANTONIO DA TRENTO",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Antonio Da Trento",
+        "nCivico": "22",
+        "oldCode": 4,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 343,
+                "unitaImmobiliare": "411",
+                "numeroStanza": "4111",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010113",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SESTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 343,
+                "unitaImmobiliare": "411",
+                "numeroStanza": "4112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010113",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SESTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 343,
+                "unitaImmobiliare": "411",
+                "numeroStanza": "4113",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010113",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SESTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 346,
+        "codice": "ASVGO61",
+        "nome": "ALLOGGI STORICI - VIA GORIZIA",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Gorizia",
+        "nCivico": "61",
+        "oldCode": 7,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 346,
+                "unitaImmobiliare": "711",
+                "numeroStanza": "7113",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010107",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUINTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 346,
+                "unitaImmobiliare": "711",
+                "numeroStanza": "7111",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010107",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUINTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 346,
+                "unitaImmobiliare": "711",
+                "numeroStanza": "7112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010107",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUINTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 347,
+        "codice": "ASVLR16",
+        "nome": "ALLOGGI STORICI - VIA LORENZONI",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Lorenzoni",
+        "nCivico": "16",
+        "oldCode": 8,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 347,
+                "unitaImmobiliare": "831",
+                "numeroStanza": "8311",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010112",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 347,
+                "unitaImmobiliare": "831",
+                "numeroStanza": "8312",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010112",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 347,
+                "unitaImmobiliare": "831",
+                "numeroStanza": "8313",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010112",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 348,
+        "codice": "ASVMTT85",
+        "nome": "ALLOGGI STORICI - VIA MATTEOTTI",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via G. Matteotti",
+        "nCivico": "85",
+        "oldCode": 9,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 348,
+                "unitaImmobiliare": "921",
+                "numeroStanza": "9211",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010116",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SESTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 348,
+                "unitaImmobiliare": "921",
+                "numeroStanza": "9212",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010116",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SESTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 348,
+                "unitaImmobiliare": "921",
+                "numeroStanza": "9213",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010116",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SESTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 344,
+        "codice": "ASVMGG19",
+        "nome": "ALLOGGI STORICI - VIA MOGGIOLI",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38121",
+        "indirizzo": "Via Moggioli",
+        "nCivico": "19",
+        "oldCode": 5,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 344,
+                "unitaImmobiliare": "521",
+                "numeroStanza": "5211",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010106",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 344,
+                "unitaImmobiliare": "521",
+                "numeroStanza": "5212",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010106",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 344,
+                "unitaImmobiliare": "521",
+                "numeroStanza": "5214",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010106",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 344,
+                "unitaImmobiliare": "521",
+                "numeroStanza": "5213",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010106",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 349,
+        "codice": "ASVSMRT15A",
+        "nome": "ALLOGGI STORICI - VIA S. MARTINO-A",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via S. Martino",
+        "nCivico": "15",
+        "oldCode": 10,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 349,
+                "unitaImmobiliare": "1011",
+                "numeroStanza": "10111",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010114",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 349,
+                "unitaImmobiliare": "1011",
+                "numeroStanza": "10112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010114",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 349,
+                "unitaImmobiliare": "1011",
+                "numeroStanza": "10113",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010114",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 349,
+        "codice": "ASVSMRT15B",
+        "nome": "ALLOGGI STORICI - VIA S. MARTINO-B",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via S. Martino",
+        "nCivico": "15",
+        "oldCode": 10,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 349,
+                "unitaImmobiliare": "1021",
+                "numeroStanza": "10211",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010115",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 349,
+                "unitaImmobiliare": "1021",
+                "numeroStanza": "10212",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010115",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 349,
+                "unitaImmobiliare": "1021",
+                "numeroStanza": "10213",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010115",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 350,
+        "codice": "ASPIOX79A",
+        "nome": "ALLOGGI STORICI - VIA S. PIO X - 79-A",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via S. Pio X",
+        "nCivico": "79",
+        "oldCode": 11,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 350,
+                "unitaImmobiliare": "1111",
+                "numeroStanza": "11113",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010109",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 350,
+                "unitaImmobiliare": "1111",
+                "numeroStanza": "11111",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010109",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 350,
+                "unitaImmobiliare": "1111",
+                "numeroStanza": "11112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010109",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 350,
+        "codice": "ASPIOX79B",
+        "nome": "ALLOGGI STORICI - VIA S. PIO X - 79-B",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via S. Pio X",
+        "nCivico": "79",
+        "oldCode": 11,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 350,
+                "unitaImmobiliare": "1112",
+                "numeroStanza": "11123",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010108",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 350,
+                "unitaImmobiliare": "1112",
+                "numeroStanza": "11121",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010108",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 350,
+                "unitaImmobiliare": "1112",
+                "numeroStanza": "11122",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010108",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 351,
+        "codice": "ASPIOX83A",
+        "nome": "ALLOGGI STORICI - VIA S. PIO X - 83-A",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via S. Pio X",
+        "nCivico": "83",
+        "oldCode": 12,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 351,
+                "unitaImmobiliare": "1211",
+                "numeroStanza": "12111",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010111",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 351,
+                "unitaImmobiliare": "1211",
+                "numeroStanza": "12113",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010111",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 351,
+                "unitaImmobiliare": "1211",
+                "numeroStanza": "12112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010111",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 351,
+        "codice": "ASPIOX83B",
+        "nome": "ALLOGGI STORICI - VIA S. PIO X - 83-B",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via S. Pio X",
+        "nCivico": "83",
+        "oldCode": 12,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 351,
+                "unitaImmobiliare": "1212",
+                "numeroStanza": "12121",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010110",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 351,
+                "unitaImmobiliare": "1212",
+                "numeroStanza": "12123",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010110",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 351,
+                "unitaImmobiliare": "1212",
+                "numeroStanza": "12122",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010110",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 342,
+        "codice": "ASVSC41A",
+        "nome": "ALLOGGI STORICI - VIA SCOPOLI-A",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Scopoli",
+        "nCivico": "41",
+        "oldCode": 2,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 342,
+                "unitaImmobiliare": "222",
+                "numeroStanza": "2221",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010104",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 342,
+                "unitaImmobiliare": "222",
+                "numeroStanza": "2222",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010104",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 342,
+                "unitaImmobiliare": "222",
+                "numeroStanza": "2223",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010104",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 342,
+        "codice": "ASVSC41B",
+        "nome": "ALLOGGI STORICI - VIA SCOPOLI-B",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Scopoli",
+        "nCivico": "41",
+        "oldCode": 2,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 342,
+                "unitaImmobiliare": "221",
+                "numeroStanza": "2211",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010103",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 342,
+                "unitaImmobiliare": "221",
+                "numeroStanza": "2212",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010103",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 342,
+                "unitaImmobiliare": "221",
+                "numeroStanza": "2213",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010103",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 292,
+        "codice": "ASTRM1",
+        "nome": "ALLOGGI STORICI - VIA TARAMELLI 8-3",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Taramelli",
+        "nCivico": "8-3",
+        "oldCode": 15,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 292,
+                "unitaImmobiliare": "1521",
+                "numeroStanza": "15211",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010117",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 292,
+                "unitaImmobiliare": "1521",
+                "numeroStanza": "15212",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010117",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 292,
+                "unitaImmobiliare": "1521",
+                "numeroStanza": "15213",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010117",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 292,
+                "unitaImmobiliare": "1521",
+                "numeroStanza": "15214",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010117",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 293,
+        "codice": "ASTRM2",
+        "nome": "ALLOGGI STORICI - VIA TARAMELLI 8-4",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Taramelli",
+        "nCivico": "8-4",
+        "oldCode": 16,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 293,
+                "unitaImmobiliare": "1611",
+                "numeroStanza": "16111",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010118",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 293,
+                "unitaImmobiliare": "1611",
+                "numeroStanza": "16112",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010118",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 293,
+                "unitaImmobiliare": "1611",
+                "numeroStanza": "16113",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010118",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 293,
+                "unitaImmobiliare": "1611",
+                "numeroStanza": "16114",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010118",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_RIALZATO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 353,
+        "codice": "ASVVER33A",
+        "nome": "ALLOGGI STORICI - VIALE VERONA-A",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Viale Verona",
+        "nCivico": "33",
+        "oldCode": 17,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1711",
+                "numeroStanza": "17111",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1711",
+                "numeroStanza": "17112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1711",
+                "numeroStanza": "17113",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 353,
+        "codice": "ASVVER33B",
+        "nome": "ALLOGGI STORICI - VIALE VERONA-B",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Viale Verona",
+        "nCivico": "33",
+        "oldCode": 17,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1721",
+                "numeroStanza": "17211",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010102",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1721",
+                "numeroStanza": "17212",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010102",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1721",
+                "numeroStanza": "17213",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010102",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 353,
+                "unitaImmobiliare": "1721",
+                "numeroStanza": "17214",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010102",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 305,
+        "codice": "ITPGRZ11",
+        "nome": "ITEA - PIAZZA GARZETTI",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Piazza Garzetti",
+        "nCivico": "11",
+        "oldCode": 35,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 305,
+                "unitaImmobiliare": "351",
+                "numeroStanza": "3511",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 305,
+                "unitaImmobiliare": "3518",
+                "numeroStanza": "35181",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 305,
+                "unitaImmobiliare": "3520",
+                "numeroStanza": "35201",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 306,
+        "codice": "ITVSOL435",
+        "nome": "ITEA - VIA SOLTERI 43-5",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38121",
+        "indirizzo": "Via Solteri",
+        "nCivico": "43-5",
+        "oldCode": 36,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2002-02-28T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 306,
+                "unitaImmobiliare": "361",
+                "numeroStanza": "3611",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 303,
+        "codice": "ITVCNT18",
+        "nome": "ITEA - VIA CENTOCHIAVI",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38121",
+        "indirizzo": "Via Centochiavi",
+        "nCivico": "18",
+        "oldCode": 33,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2002-02-28T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 303,
+                "unitaImmobiliare": "3312",
+                "numeroStanza": "33121",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 303,
+                "unitaImmobiliare": "3316",
+                "numeroStanza": "33161",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 303,
+                "unitaImmobiliare": "331",
+                "numeroStanza": "3311",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 301,
+        "codice": "ITDOS35",
+        "nome": "ITEA - VIA DÒS TRENTO 35",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38121",
+        "indirizzo": "Via Dòs Trento",
+        "nCivico": "35",
+        "oldCode": 31,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2002-02-28T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 301,
+                "unitaImmobiliare": "311",
+                "numeroStanza": "3111",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 301,
+                "unitaImmobiliare": "3122",
+                "numeroStanza": "31221",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 301,
+                "unitaImmobiliare": "3103",
+                "numeroStanza": "31031",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 301,
+                "unitaImmobiliare": "312",
+                "numeroStanza": "3121",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 302,
+        "codice": "ITDOS37",
+        "nome": "ITEA - VIA DÒS TRENTO 37",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38121",
+        "indirizzo": "Via Dòs Trento",
+        "nCivico": "37",
+        "oldCode": 32,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2002-02-28T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 302,
+                "unitaImmobiliare": "321",
+                "numeroStanza": "3211",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 302,
+                "unitaImmobiliare": "322",
+                "numeroStanza": "3221",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2002-02-28T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2002-02-28T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 325,
+        "codice": "ITVVLNGR",
+        "nome": "ITEA - VIA VALNIGRA 55-1",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via Valnigra",
+        "nCivico": "55-1",
+        "oldCode": 56,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2005-09-11T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 325,
+                "unitaImmobiliare": "5629",
+                "numeroStanza": "56291",
+                "idTipoStanza": 3,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2005-09-11T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2005-09-11T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 3,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 304,
+        "codice": "ITMUR19A",
+        "nome": "ITEA - VIA DIETRO LE MURA-A",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Dietro Le Mura A",
+        "nCivico": "19",
+        "oldCode": 34,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2003-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 304,
+                "unitaImmobiliare": "3405",
+                "numeroStanza": "34051",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2003-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2003-10-31T23:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2003-10-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 304,
+        "codice": "ITMUR19B",
+        "nome": "ITEA - VIA DIETRO LE MURA-B",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Via Dietro Le Mura A",
+        "nCivico": "19",
+        "oldCode": 34,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "2003-10-31T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 304,
+                "unitaImmobiliare": "341",
+                "numeroStanza": "3411",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111020201",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": null,
+                "note": null,
+                "dataCreazione": "2003-10-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2003-10-31T23:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2003-10-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    },
+    {
+        "id": 345,
+        "codice": "ASFFN45",
+        "nome": "ALLOGGI STORICI - F.LLI FONTANA",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38121",
+        "indirizzo": "Via F.lli Fontana",
+        "nCivico": "45",
+        "oldCode": 6,
+        "idTipoFabbricato": 2,
+        "dataCreazione": "1991-05-23T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": null,
+                "idFabbricato": 345,
+                "unitaImmobiliare": "611",
+                "numeroStanza": "6113",
+                "idTipoStanza": 1,
+                "centroDiCosto": "111010105",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 345,
+                "unitaImmobiliare": "611",
+                "numeroStanza": "6111",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010105",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 345,
+                "unitaImmobiliare": "611",
+                "numeroStanza": "6112",
+                "idTipoStanza": 2,
+                "centroDiCosto": "111010105",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "note": null,
+                "dataCreazione": "1991-05-23T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "1991-05-23T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 2,
+            "tipoFabbricato": "APPARTAMENTO"
+        }
+    }
+]
