@@ -31,7 +31,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await presidenteService.postPresidente(body);
@@ -41,7 +41,7 @@ export default function (): Router {
 
     router.patch(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -52,7 +52,7 @@ export default function (): Router {
 
     router.delete(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             await presidenteService.delPresidenteById(id);

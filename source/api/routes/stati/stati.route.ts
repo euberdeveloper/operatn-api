@@ -29,7 +29,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const codiceIso = await statoService.postStato(body);
@@ -39,7 +39,7 @@ export default function (): Router {
 
     router.put(
         '/:codiceIso',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codiceIso = req.params.codiceIso;
             const body = req.body;
@@ -50,7 +50,7 @@ export default function (): Router {
 
     router.patch(
         '/:codiceIso',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codiceIso = req.params.codiceIso;
             const body = req.body;
@@ -61,7 +61,7 @@ export default function (): Router {
 
     router.delete(
         '/:codiceIso',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codiceIso = req.params.codiceIso;
             await statoService.delStatoByCodiceIso(codiceIso);

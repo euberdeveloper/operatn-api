@@ -56,7 +56,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await comuneService.postComune(body);
@@ -66,7 +66,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -77,7 +77,7 @@ export default function (): Router {
 
     router.patch(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -88,7 +88,7 @@ export default function (): Router {
 
     router.delete(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             await comuneService.delComuneById(id);
@@ -98,7 +98,7 @@ export default function (): Router {
 
     router.delete(
         '/codice-catastale/:codiceCatastale',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codiceCatastale = req.params.codiceCatastale;
             await comuneService.delComuneByCodiceCatastale(codiceCatastale);
@@ -108,7 +108,7 @@ export default function (): Router {
 
     router.delete(
         '/codice-istat/:codiceIstat',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codiceIstat = req.params.codiceIstat;
             await comuneService.delComuneByCodiceCatastale(codiceIstat);
@@ -118,7 +118,7 @@ export default function (): Router {
 
     router.delete(
         '/denominazione/:denominazione',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const denominazione = req.params.denominazione;
             await comuneService.delComuneByDenominazione(denominazione);

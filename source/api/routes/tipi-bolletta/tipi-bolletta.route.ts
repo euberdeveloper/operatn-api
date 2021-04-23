@@ -41,7 +41,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await tipiBollettaService.postTipoBolletta(body);
@@ -51,7 +51,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -62,7 +62,7 @@ export default function (): Router {
 
     router.patch(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -73,7 +73,7 @@ export default function (): Router {
 
     router.delete(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             await tipiBollettaService.delTipoBollettaById(id);
@@ -83,7 +83,7 @@ export default function (): Router {
 
     router.delete(
         '/value/:value',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const value = req.params.value;
             await tipiBollettaService.delTipoBollettaByValue(value);

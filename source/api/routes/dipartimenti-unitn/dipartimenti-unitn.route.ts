@@ -38,7 +38,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const codice = await dipartimentoUnitnService.postDipartimentoUnitn(body);
@@ -48,7 +48,7 @@ export default function (): Router {
 
     router.put(
         '/:codice',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const body = req.body;
@@ -59,7 +59,7 @@ export default function (): Router {
 
     router.patch(
         '/:codice',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const body = req.body;
@@ -70,7 +70,7 @@ export default function (): Router {
 
     router.patch(
         '/sigla/:sigla',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const body = req.body;
@@ -81,7 +81,7 @@ export default function (): Router {
 
     router.delete(
         '/:codice',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             await dipartimentoUnitnService.delDipartimentoUnitnByCodice(codice);
@@ -91,7 +91,7 @@ export default function (): Router {
 
     router.delete(
         '/sigla/:sigla',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             await dipartimentoUnitnService.delDipartimentoUnitnBySigla(sigla);

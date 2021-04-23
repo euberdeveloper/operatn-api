@@ -38,7 +38,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await contoRicaviConsumi.postContoRicaviConsumi(body);
@@ -48,7 +48,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -59,7 +59,7 @@ export default function (): Router {
 
     router.delete(
         '/:id',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             await contoRicaviConsumi.delContoRicaviConsumiById(id);
@@ -69,7 +69,7 @@ export default function (): Router {
 
     router.delete(
         '/codice/:codice',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             await contoRicaviConsumi.delContoRicaviConsumiByCodice(codice);

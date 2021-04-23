@@ -12,7 +12,7 @@ export default function (): Router {
 
     router.post(
         '/bollette',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             await contabilitaService.sendBollette(queryParams);

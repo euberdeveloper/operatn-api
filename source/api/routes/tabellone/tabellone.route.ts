@@ -12,7 +12,7 @@ export default function (): Router {
 
     router.get(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const tabellone = await tabelloneService.getTabellone(queryParams);
@@ -22,7 +22,7 @@ export default function (): Router {
 
     router.get(
         '/tsv',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const filePath = await tabelloneService.getTabelloneTsv(queryParams);
@@ -32,7 +32,7 @@ export default function (): Router {
 
     router.get(
         '/xlsx',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const filePath = await tabelloneService.getTabelloneXlsx(queryParams);

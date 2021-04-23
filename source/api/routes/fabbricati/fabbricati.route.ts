@@ -42,7 +42,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await fabbricatoService.postFabbricato(body);
@@ -52,7 +52,7 @@ export default function (): Router {
 
     router.put(
         '/:fid',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.fid;
             const body = req.body;
@@ -63,7 +63,7 @@ export default function (): Router {
 
     router.patch(
         '/:fid',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.fid;
             const body = req.body;
@@ -74,7 +74,7 @@ export default function (): Router {
 
     router.delete(
         '/:fid',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const id = +req.params.fid;
             await fabbricatoService.delFabbricatoById(id);
@@ -84,7 +84,7 @@ export default function (): Router {
 
     router.delete(
         '/codice/:codice',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             await fabbricatoService.delFabbricatoByCodice(codice);

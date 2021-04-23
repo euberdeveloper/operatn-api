@@ -12,7 +12,7 @@ export default function (): Router {
 
     router.get(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (_req, res) => {
             const utenti = await utenteService.getUtenti();
             res.json(utenti);
@@ -45,7 +45,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const uid = await utenteService.postUtente(body);
@@ -77,7 +77,7 @@ export default function (): Router {
 
     router.patch(
         '/:uid/ruolo',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const uid = req.params.uid;
@@ -89,7 +89,7 @@ export default function (): Router {
 
     router.patch(
         '/username/:username/ruolo',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const username = req.params.username;
@@ -101,7 +101,7 @@ export default function (): Router {
 
     router.delete(
         '/:uid',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const uid = req.params.uid;
             await utenteService.delUtenteByUid(uid);
@@ -111,7 +111,7 @@ export default function (): Router {
 
     router.delete(
         '/username/:username',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const username = req.params.username;
             await utenteService.delUtenteByNomeUtente(username);

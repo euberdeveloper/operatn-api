@@ -29,7 +29,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const sigla = await provinciaService.postProvincia(body);
@@ -39,7 +39,7 @@ export default function (): Router {
 
     router.put(
         '/:sigla',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const body = req.body;
@@ -50,7 +50,7 @@ export default function (): Router {
 
     router.patch(
         '/:sigla',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const body = req.body;
@@ -61,7 +61,7 @@ export default function (): Router {
 
     router.delete(
         '/:sigla',
-        permission(RuoloUtente.ADMIN),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             await provinciaService.delProvinciaBySigla(sigla);
