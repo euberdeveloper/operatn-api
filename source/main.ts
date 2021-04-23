@@ -16,6 +16,7 @@ async function startServer(): Promise<void> {
     loader.loadMiddlewares();
     loader.loadRouter();
     loader.loadErrorHandler();
+    loader.loadSubscribers();
     await loader.loadJobs();
 
     logger.info('Starting server...');

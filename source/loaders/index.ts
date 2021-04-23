@@ -9,6 +9,7 @@ import loadBodyParser from './bodyParser';
 import loadPassport from './passport';
 import getErrorHandler from './errorHandler';
 import loadJobs from './jobs';
+import loadSubscribers from './subscribers';
 
 export class Loader {
     private readonly app: Express;
@@ -50,6 +51,16 @@ export class Loader {
         await loadJobs();
 
         logger.success('Loaded jobs');
+        logger.hr();
+    }
+
+    public loadSubscribers(): void {
+        logger.hr();
+        logger.info('Loading subscribers...');
+
+        loadSubscribers();
+
+        logger.success('Loaded subscribers');
         logger.hr();
     }
 
