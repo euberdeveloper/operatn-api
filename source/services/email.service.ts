@@ -8,7 +8,8 @@ import { Utente } from '@prisma/client';
 
 enum EmailTemplates {
     TABELLONE = 'tabellone',
-    CREAZIONE_UTENTE = 'utenti/creazione'
+    UTENTE_CREAZIONE = 'utenti/creazione',
+    UTENTE_ELIMINAZIONE = 'utenti/eliminazione'
 }
 
 export class EmailService {
@@ -73,7 +74,15 @@ export class EmailService {
 
     public async utenteCreated(to: string, utente: Pick<Utente, 'nomeUtente' | 'email' | 'ruolo'>): Promise<void> {
         const subject = 'OperaTN - Creato utente collegato al tuo indirizzo email';
-        const template = EmailTemplates.CREAZIONE_UTENTE;
+        const template = EmailTemplates.UTENTE_CREAZIONE;
+        const ctx = utente;
+
+        await this.sendEmail(to, subject, template, ctx);
+    }
+
+    public async utenteDeleted(to: string, utente: Pick<Utente, 'nomeUtente' | 'email' | 'ruolo'>): Promise<void> {
+        const subject = 'OperaTN - Eliminato utente collegato a questo indirizzo email';
+        const template = EmailTemplates.UTENTE_ELIMINAZIONE;
         const ctx = utente;
 
         await this.sendEmail(to, subject, template, ctx);

@@ -273,6 +273,8 @@ export class UtenteService extends TableService {
                 throw new UniqueRootError();
             }
 
+            emitter.emitUserDeleted(vecchioUtente as Utente);
+
             await this.model.delete({ where: { uid } });
         });
     }
@@ -302,6 +304,8 @@ export class UtenteService extends TableService {
             if (vecchioUtente.ruolo === RuoloUtente.ROOT) {
                 throw new UniqueRootError();
             }
+
+            emitter.emitUserDeleted(vecchioUtente as Utente);
 
             await this.model.delete({ where: { nomeUtente } });
         });
