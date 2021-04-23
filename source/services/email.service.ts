@@ -4,9 +4,11 @@ import { pugEngine } from 'nodemailer-pug-engine';
 import { EmailError } from '@/errors';
 import logger from '@/utils/logger';
 import CONFIG from '@/config';
+import { Utente } from '@prisma/client';
 
 enum EmailTemplates {
-    TABELLONE = 'tabellone'
+    TABELLONE = 'tabellone',
+    CREAZIONE_UTENTE = 'utenti/creazione'
 }
 
 export class EmailService {
@@ -67,6 +69,14 @@ export class EmailService {
         ];
 
         await this.sendEmail(to, subject, template, ctx, attachments);
+    }
+
+    public async utenteCreated(to: string, utente: Pick<Utente, 'nomeUtente' | 'email' | 'ruolo'>): Promise<void> {
+        const subject = 'OperaTN - Creato utente collegato al tuo indirizzo email';
+        const template = EmailTemplates.CREAZIONE_UTENTE;
+        const ctx = utente;
+
+        await this.sendEmail(to, subject, template, ctx);
     }
 }
 

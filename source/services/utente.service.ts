@@ -1,12 +1,12 @@
-import prisma, { Prisma } from '@/services/prisma.service';
+import prisma, { Prisma, RuoloUtente, Utente } from '@/services/prisma.service';
 import * as bcrypt from 'bcrypt';
 import * as Joi from 'joi';
 
-import { NotFoundError, UniqueRootError, UserNotAuthorizedError } from '@/errors';
+import emitter from '@/subscribers';
 import handlePrismaError from '@/utils/handlePrismaError';
+import { NotFoundError, UniqueRootError, UserNotAuthorizedError } from '@/errors';
 
 import { TableService } from './table.service';
-import { RuoloUtente, Utente } from '@prisma/client';
 
 import CONFIG from '@/config';
 
@@ -80,7 +80,7 @@ export class UtenteService extends TableService {
 
     public async postUtente(body: any): Promise<string> {
         return handlePrismaError(async () => {
-            const utente = this.validatePostBody(body);
+            const utente: Utente = this.validatePostBody(body);
 
             // You cannot create a root user
             if (utente.ruolo === RuoloUtente.ROOT) {
@@ -90,6 +90,8 @@ export class UtenteService extends TableService {
             const created = await this.model.create({
                 data: { ...utente, password: this.hashPassword(utente.password) }
             });
+
+            emitter.emitUserCreated(utente);
 
             return created.uid;
         });

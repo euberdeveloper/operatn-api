@@ -1,4 +1,6 @@
+import { Utente } from '@/services/prisma.service';
 import { EventEmitter } from 'events';
+
 import { emitUserCreated, loadUserCreated } from './userCreated.subscriber';
 
 export class Emitter {
@@ -12,8 +14,8 @@ export class Emitter {
         loadUserCreated(this.emitter);
     }
 
-    public emitUserCreated(data: any): void {
-        emitUserCreated(this.emitter, data);
+    public emitUserCreated(utente: Utente): void {
+        emitUserCreated(this.emitter, utente);
     }
 }
 export default new Emitter();
