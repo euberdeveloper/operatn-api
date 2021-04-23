@@ -101,20 +101,20 @@ export default function (): Router {
 
     router.delete(
         '/:uid',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
             const uid = req.params.uid;
-            await utenteService.delUtenteByUid(uid);
+            await utenteService.delUtenteByUid(utente, uid);
             res.json();
         })
     );
 
     router.delete(
         '/username/:username',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
             const username = req.params.username;
-            await utenteService.delUtenteByNomeUtente(username);
+            await utenteService.delUtenteByNomeUtente(utente, username);
             res.json();
         })
     );

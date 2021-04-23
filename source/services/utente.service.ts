@@ -2,7 +2,7 @@ import prisma, { Prisma } from '@/services/prisma.service';
 import * as bcrypt from 'bcrypt';
 import * as Joi from 'joi';
 
-import { NotFoundError, UserNotAuthorizedError } from '@/errors';
+import { NotFoundError, UniqueRootError, UserNotAuthorizedError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 
 import { TableService } from './table.service';
@@ -78,9 +78,16 @@ export class UtenteService extends TableService {
     public async postUtente(body: any): Promise<string> {
         return handlePrismaError(async () => {
             const utente = this.validatePostBody(body);
+
+            // You cannot create a root user
+            if (utente.ruolo === RuoloUtente.ROOT) {
+                throw new UniqueRootError();
+            }
+
             const created = await this.model.create({
                 data: { ...utente, password: this.hashPassword(utente.password) }
             });
+
             return created.uid;
         });
     }
@@ -89,12 +96,26 @@ export class UtenteService extends TableService {
         return handlePrismaError(async () => {
             this.validateStringParam(uid, 'uid');
 
-            if (utenteRichiesta.uid !== uid && utenteRichiesta.ruolo !== RuoloUtente.ADMIN) {
-                throw new UserNotAuthorizedError('You are not the user you are trying to change');
+            const vecchioUtente = await this.getUtenteByUid(uid);
+
+            // If you are the user itself, you can always change the data
+            if (utenteRichiesta.uid !== uid) {
+                // If you are not root or admin, you can change only your self data
+                if (![RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(utenteRichiesta.ruolo as any)) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to change');
+                }
+                // If you are not root, you cannot change data of other admins.
+                if (
+                    [RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(vecchioUtente.ruolo as any) &&
+                    utenteRichiesta.ruolo !== RuoloUtente.ROOT
+                ) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to change');
+                }
             }
 
             const utente = this.validatePatchBody(body);
             utente.password = utente.password ? this.hashPassword(utente.password) : undefined;
+
             await this.checkIfExistsByParam(uid, 'uid', 'Utente');
             await this.model.update({
                 where: { uid },
@@ -107,12 +128,26 @@ export class UtenteService extends TableService {
         return handlePrismaError(async () => {
             this.validateStringParam(nomeUtente, 'nomeUtente');
 
-            if (utenteRichiesta.nomeUtente !== nomeUtente && utenteRichiesta.ruolo !== RuoloUtente.ADMIN) {
-                throw new UserNotAuthorizedError('You are not the user you are trying to change');
+            const vecchioUtente = await this.getUtenteByNomeUtente(nomeUtente);
+
+            // If you are the user itself, you can always change the data
+            if (utenteRichiesta.nomeUtente !== nomeUtente) {
+                // If you are not root or admin, you can change only your self data
+                if (![RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(utenteRichiesta.ruolo as any)) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to change');
+                }
+                // If you are not root, you cannot change data of other admins.
+                if (
+                    [RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(vecchioUtente.ruolo as any) &&
+                    utenteRichiesta.ruolo !== RuoloUtente.ROOT
+                ) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to change');
+                }
             }
 
             const utente = this.validatePatchBody(body);
             await this.checkIfExistsByParam(nomeUtente, 'nomeUtente', 'Utente');
+
             await this.model.update({
                 where: { nomeUtente },
                 data: utente
@@ -125,8 +160,18 @@ export class UtenteService extends TableService {
             const { ruolo } = this.validateBody(this.changeRoleValidator, body);
 
             const vecchioUtente = await this.getUtenteByUid(uid);
-            if (utenteRichiesta.uid !== uid && vecchioUtente.ruolo === RuoloUtente.ADMIN) {
+
+            // Only root can change the role of other admins. Admin can change roles of less powerful users.
+            if (
+                utenteRichiesta.ruolo !== RuoloUtente.ROOT &&
+                [RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(vecchioUtente.ruolo as any)
+            ) {
                 throw new UserNotAuthorizedError('You are not authorized to change the role of another admin');
+            }
+
+            // Root user cannot be downgraded
+            if (vecchioUtente.ruolo === RuoloUtente.ROOT) {
+                throw new UniqueRootError();
             }
 
             await this.model.update({
@@ -141,8 +186,18 @@ export class UtenteService extends TableService {
             const { ruolo } = this.validateBody(this.changeRoleValidator, body);
 
             const vecchioUtente = await this.getUtenteByNomeUtente(nomeUtente);
-            if (utenteRichiesta.nomeUtente !== nomeUtente && vecchioUtente.ruolo === RuoloUtente.ADMIN) {
+
+            // Only root can change the role of other admins. Admin can change roles of less powerful users.
+            if (
+                utenteRichiesta.ruolo !== RuoloUtente.ROOT &&
+                [RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(vecchioUtente.ruolo as any)
+            ) {
                 throw new UserNotAuthorizedError('You are not authorized to change the role of another admin');
+            }
+
+            // Root user cannot be downgraded
+            if (vecchioUtente.ruolo === RuoloUtente.ROOT) {
+                throw new UniqueRootError();
             }
 
             await this.model.update({
@@ -152,18 +207,61 @@ export class UtenteService extends TableService {
         });
     }
 
-    public async delUtenteByUid(uid: string): Promise<void> {
+    public async delUtenteByUid(utenteRichiesta: Utente, uid: string): Promise<void> {
         return handlePrismaError(async () => {
             this.validateStringParam(uid, 'uid');
-            await this.checkIfExistsByParam(uid, 'uid', 'Utente');
+            const vecchioUtente = await this.getUtenteByUid(uid);
+
+            // If you are the user itself, you can always delete yourself
+            if (utenteRichiesta.uid !== uid) {
+                // If you are not root or admin, delete only your self data
+                if (![RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(utenteRichiesta.ruolo as any)) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to delete');
+                }
+                // If you are not root, you cannot delete other admins.
+                if (
+                    [RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(vecchioUtente.ruolo as any) &&
+                    utenteRichiesta.ruolo !== RuoloUtente.ROOT
+                ) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to delete');
+                }
+            }
+
+            // Root user cannot be deleted
+            if (vecchioUtente.ruolo === RuoloUtente.ROOT) {
+                throw new UniqueRootError();
+            }
+
             await this.model.delete({ where: { uid } });
         });
     }
 
-    public async delUtenteByNomeUtente(nomeUtente: string): Promise<void> {
+    public async delUtenteByNomeUtente(utenteRichiesta: Utente, nomeUtente: string): Promise<void> {
         return handlePrismaError(async () => {
             this.validateStringParam(nomeUtente, 'nomeUtente');
-            await this.checkIfExistsByParam(nomeUtente, 'nomeUtente', 'Utente');
+
+            const vecchioUtente = await this.getUtenteByNomeUtente(nomeUtente);
+
+            // If you are the user itself, you can always delete yourself
+            if (utenteRichiesta.nomeUtente !== nomeUtente) {
+                // If you are not root or admin, delete only your self data
+                if (![RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(utenteRichiesta.ruolo as any)) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to delete');
+                }
+                // If you are not root, you cannot delete other admins.
+                if (
+                    [RuoloUtente.ROOT, RuoloUtente.ADMIN].includes(vecchioUtente.ruolo as any) &&
+                    utenteRichiesta.ruolo !== RuoloUtente.ROOT
+                ) {
+                    throw new UserNotAuthorizedError('You are not the user you are trying to delete');
+                }
+            }
+
+            // Root user cannot be deleted
+            if (vecchioUtente.ruolo === RuoloUtente.ROOT) {
+                throw new UniqueRootError();
+            }
+
             await this.model.delete({ where: { nomeUtente } });
         });
     }
