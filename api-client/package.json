@@ -10,12 +10,14 @@
     "README.md"
   ],
   "scripts": {
+    "port": "node scripts/port",
+    "port:lint": "node scripts/port && npm run lint:fix",
     "clean": "shx rm -rf dist bundled",
-    "pretranspile": "npm run clean",
+    "pretranspile": "npm run clean && npm run port",
     "transpile": "tsc -p source",
     "lint": "eslint source --ext ts --format codeframe",
     "lint:fix": "eslint source --ext ts --format codeframe --fix",
-    "prebundle": "npm run clean",
+    "prebundle": "npm run clean && npm run port",
     "bundle": "webpack",
     "docs": "typedoc",
     "prepublishOnly": "npm run clean && npm run bundle"
@@ -34,6 +36,7 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-unicorn": "^30.0.0",
+    "fs-extra": "^9.1.0",
     "prettier": "^2.2.1",
     "shx": "^0.3.3",
     "ts-loader": "^8.1.0",

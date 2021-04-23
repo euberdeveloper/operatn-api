@@ -470,6 +470,7 @@ export const Piano = {
     SETTIMO_PIANO: 'SETTIMO_PIANO',
     MANSARDA: 'MANSARDA'
 };
+
 export type Piano = typeof Piano[keyof typeof Piano];
 
 export const TipoRata = {
@@ -482,6 +483,7 @@ export const TipoRata = {
 export type TipoRata = typeof TipoRata[keyof typeof TipoRata];
 
 export const RuoloUtente = {
+    ROOT: 'ROOT',
     ADMIN: 'ADMIN',
     SPORTELLO: 'SPORTELLO',
     PORTINERIA: 'PORTINERIA',
@@ -506,6 +508,7 @@ export const CronologiaRisorsa = {
 };
 
 export type CronologiaRisorsa = typeof CronologiaRisorsa[keyof typeof CronologiaRisorsa];
+
 export interface Tabellone {
     fabbricatoId: number;
     fabbricatoCodice: string;
