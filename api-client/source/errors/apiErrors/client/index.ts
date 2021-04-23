@@ -9,3 +9,4 @@ export * from './InvalidQueryParamError';
 export * from './InvalidBodyError';
 export * from './ForeignKeyError';
 export * from './UniqueConstraintError';
+export * from './UniqueRootError';
