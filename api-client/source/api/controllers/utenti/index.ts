@@ -4,6 +4,7 @@ import { AxiosContainer, BaseController } from '@/utils/baseController';
 export type UtentiCreateBody = Pick<Utente, 'nomeUtente' | 'email' | 'ruolo' | 'password'> & { uid?: string };
 export type UtentiUpdateBody = Partial<Omit<UtentiCreateBody, 'uid' | 'ruolo' | 'pasword'>>;
 export type UtentiUpdateRuoloBody = Pick<Utente, 'ruolo'>;
+export type UtentiUpdatePasswordBody = Pick<Utente, 'password'>;
 
 export type UtentiReturned = Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
 
@@ -53,6 +54,14 @@ export class UtentiController extends BaseController {
 
     public async changeRuoloByUsername(username: string, body: UtentiUpdateRuoloBody): Promise<void> {
         return this.axiosInstance.patch(`${this.route}/username/${username}/ruolo`, body);
+    }
+
+    public async changePassword(uid: string, body: UtentiUpdatePasswordBody): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${uid}/password`, body);
+    }
+
+    public async changePasswordByUsername(username: string, body: UtentiUpdatePasswordBody): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/username/${username}/password`, body);
     }
 
     public async delete(uid: string): Promise<void> {

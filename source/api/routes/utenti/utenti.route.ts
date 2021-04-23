@@ -99,6 +99,28 @@ export default function (): Router {
         })
     );
 
+    router.patch(
+        '/:uid/password',
+        asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
+            const uid = req.params.uid;
+            const body = req.body;
+            await utenteService.changeUtentePasswordByUid(utente, uid, body);
+            res.json();
+        })
+    );
+
+    router.patch(
+        '/username/:username/password',
+        asyncHandler(async (req, res) => {
+            const utente = req.user as Utente;
+            const uid = req.params.uid;
+            const body = req.body;
+            await utenteService.changeUtentePasswordByNomeUtente(utente, uid, body);
+            res.json();
+        })
+    );
+
     router.delete(
         '/:uid',
         asyncHandler(async (req, res) => {

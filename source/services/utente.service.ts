@@ -32,9 +32,12 @@ export class UtenteService extends TableService {
             .valid(...Object.values(RuoloUtente))
             .required()
     }).required();
+    private readonly changePasswordValidator = Joi.object({
+        password: Joi.string().min(8).max(16)
+    }).required();
     protected postValidatorExcludes = [];
-    protected putValidatorExcludes = [];
-    protected patchValidatorExcludes = ['ruolo'];
+    protected putValidatorExcludes = ['ruolo', 'password'];
+    protected patchValidatorExcludes = ['ruolo', 'password'];
 
     public readonly selectedColumns = { uid: true, nomeUtente: true, email: true, ruolo: true };
 
@@ -203,6 +206,42 @@ export class UtenteService extends TableService {
             await this.model.update({
                 where: { nomeUtente },
                 data: { ruolo }
+            });
+        });
+    }
+
+    public async changeUtentePasswordByUid(utenteRichiesta: Utente, uid: string, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            const { password } = this.validateBody(this.changePasswordValidator, body);
+
+            // Only root can change the password of everyone. All the other users can change only their password.
+            if (utenteRichiesta.ruolo !== RuoloUtente.ROOT && utenteRichiesta.uid !== uid) {
+                throw new UserNotAuthorizedError('You are not authorized to change the role of another admin');
+            }
+
+            await this.model.update({
+                where: { uid },
+                data: { password: this.hashPassword(password) }
+            });
+        });
+    }
+
+    public async changeUtentePasswordByNomeUtente(
+        utenteRichiesta: Utente,
+        nomeUtente: string,
+        body: any
+    ): Promise<void> {
+        return handlePrismaError(async () => {
+            const { password } = this.validateBody(this.changePasswordValidator, body);
+
+            // Only root can change the password of everyone. All the other users can change only their password.
+            if (utenteRichiesta.ruolo !== RuoloUtente.ROOT && utenteRichiesta.nomeUtente !== nomeUtente) {
+                throw new UserNotAuthorizedError('You are not authorized to change the role of another admin');
+            }
+
+            await this.model.update({
+                where: { nomeUtente },
+                data: { password: this.hashPassword(password) }
             });
         });
     }
