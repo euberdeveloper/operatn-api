@@ -2,7 +2,7 @@ import { Utente } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type UtentiCreateBody = Pick<Utente, 'nomeUtente' | 'email' | 'ruolo'> & { uid?: string };
-export type UtentiUpdateBody = Partial<Omit<UtentiCreateBody, 'ruolo'>>;
+export type UtentiUpdateBody = Partial<Omit<UtentiCreateBody, 'uid' | 'ruolo'>>;
 export type UtentiUpdateRuoloBody = Pick<Utente, 'ruolo'>;
 
 export type UtentiReturned = Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
