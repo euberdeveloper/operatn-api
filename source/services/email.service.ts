@@ -98,7 +98,10 @@ export class EmailService {
     ): Promise<void> {
         const subject = 'OperaTN - Richiesto recupero password';
         const template = EmailTemplates.USERS.PASSWORD_RECOVERY;
-        const ctx = utente;
+        const ctx = {
+            ...utente,
+            link: `${CONFIG.FRONTEND.URL}/password-recovery/${utente.tokenRecuperoPassword as string}`
+        };
 
         await this.sendEmail(to, subject, template, ctx);
     }

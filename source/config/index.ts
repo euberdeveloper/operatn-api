@@ -13,7 +13,11 @@ dotenv.config({
 
 const CONFIG = {
     SERVER: {
-        PORT: process.env.SERVER_PORT || 3000
+        PORT: process.env.SERVER_PORT || 3000,
+        URL: process.env.SERVER_URL
+    },
+    FRONTEND: {
+        URL: process.env.FRONTEND_URL
     },
     DATABASE: {
         DATABASE_HOST: process.env.DATABASE_HOST,
