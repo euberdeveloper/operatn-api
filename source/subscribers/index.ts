@@ -18,7 +18,6 @@ export class Emitter {
 
     public emitUserCreated(utente: Utente): void {
         emitUserCreated(this.emitter, utente);
-        emitUserDeleted(this.emitter, utente);
     }
 
     public emitUserDeleted(utente: Utente): void {
