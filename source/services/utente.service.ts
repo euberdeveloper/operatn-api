@@ -25,7 +25,7 @@ export class UtenteService extends TableService {
         nomeUtente: Joi.string()
             .min(1)
             .regex(/^[\w.]+$/),
-        password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/),
+        password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/),
         email: Joi.string().email(),
         ruolo: Joi.string().valid(...Object.values(RuoloUtente))
     };
@@ -35,7 +35,7 @@ export class UtenteService extends TableService {
             .required()
     }).required();
     private readonly changePasswordValidator = Joi.object({
-        password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/)
+        password: Joi.string().regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/)
     }).required();
     private readonly askPasswordRecoveryValidator = Joi.object({
         nomeUtente: Joi.string().min(1)
