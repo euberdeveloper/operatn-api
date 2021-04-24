@@ -1,6 +1,6 @@
 import * as bcrypt from 'bcrypt';
 import * as jwt from 'jsonwebtoken';
-import { PrismaClient, Prisma, Utente } from '@prisma/client';
+import prisma, { Prisma, Utente } from '@/services/prisma.service';
 import { InvalidCredentialsError } from '@/errors';
 import CONFIG from '@/config';
 
@@ -19,7 +19,6 @@ export class AuthService {
         this.jwtPassword = CONFIG.SECURITY.JWT.PASSWORD;
         this.jwtExpiration = CONFIG.SECURITY.JWT.EXPIRATION;
 
-        const prisma = new PrismaClient();
         this.utenteModel = prisma.utente;
     }
 
