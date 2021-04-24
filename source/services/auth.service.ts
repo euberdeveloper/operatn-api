@@ -6,7 +6,7 @@ import CONFIG from '@/config';
 
 interface AuthResponse {
     token: string;
-    user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
+    user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo' | 'dataCreazione'>;
 }
 export class AuthService {
     private readonly jwtPassword: string;
@@ -65,7 +65,8 @@ export class AuthService {
                 uid: user.uid,
                 nomeUtente: user.nomeUtente,
                 email: user.email,
-                ruolo: user.ruolo
+                ruolo: user.ruolo,
+                dataCreazione: user.dataCreazione
             }
         };
         return response;

@@ -7,7 +7,7 @@ export interface AuthLoginBody {
 }
 export interface AuthLoginResponse {
     token: string;
-    user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
+    user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo' | 'dataCreazione'>;
 }
 
 export class AuthController extends BaseController {

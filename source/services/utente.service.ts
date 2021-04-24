@@ -39,7 +39,7 @@ export class UtenteService extends TableService {
     protected putValidatorExcludes = ['ruolo', 'password'];
     protected patchValidatorExcludes = ['ruolo', 'password'];
 
-    public readonly selectedColumns = { uid: true, nomeUtente: true, email: true, ruolo: true };
+    public readonly selectedColumns = { uid: true, nomeUtente: true, email: true, ruolo: true, dataCreazione: true };
 
     constructor() {
         super();

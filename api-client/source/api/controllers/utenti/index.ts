@@ -6,7 +6,7 @@ export type UtentiUpdateBody = Partial<Omit<UtentiCreateBody, 'uid' | 'ruolo' | 
 export type UtentiUpdateRuoloBody = Pick<Utente, 'ruolo'>;
 export type UtentiUpdatePasswordBody = Pick<Utente, 'password'>;
 
-export type UtentiReturned = Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo'>;
+export type UtentiReturned = Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo' | 'dataCreazione'>;
 
 export class UtentiController extends BaseController {
     public route = '/utenti';
