@@ -8,10 +8,10 @@ import utenteService from '@/services/utente.service';
 
 export default function (): Router {
     const router = Router();
-    router.use(authenticateJwt);
 
     router.get(
         '/',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (_req, res) => {
             const utenti = await utenteService.getUtenti();
@@ -19,7 +19,7 @@ export default function (): Router {
         })
     );
 
-    router.get('/me', (req, res) => {
+    router.get('/me', authenticateJwt, (req, res) => {
         const user = req.user;
         const parsedUser = utenteService.purgeUtente(user);
         res.json(parsedUser);
@@ -27,6 +27,7 @@ export default function (): Router {
 
     router.get(
         '/:uid',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const uid = req.params.uid;
             const utente = await utenteService.getUtenteByUid(uid);
@@ -36,6 +37,7 @@ export default function (): Router {
 
     router.get(
         '/username/:username',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const username = req.params.username;
             const utente = await utenteService.getUtenteByNomeUtente(username);
@@ -45,6 +47,7 @@ export default function (): Router {
 
     router.post(
         '/',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const body = req.body;
@@ -55,6 +58,7 @@ export default function (): Router {
 
     router.patch(
         '/:uid',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const uid = req.params.uid;
@@ -66,6 +70,7 @@ export default function (): Router {
 
     router.patch(
         '/username/:username',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const username = req.params.username;
@@ -77,6 +82,7 @@ export default function (): Router {
 
     router.patch(
         '/:uid/ruolo',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
@@ -89,6 +95,7 @@ export default function (): Router {
 
     router.patch(
         '/username/:username/ruolo',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
@@ -101,6 +108,7 @@ export default function (): Router {
 
     router.patch(
         '/:uid/password',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const uid = req.params.uid;
@@ -112,17 +120,38 @@ export default function (): Router {
 
     router.patch(
         '/username/:username/password',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
-            const uid = req.params.uid;
+            const username = req.params.username;
             const body = req.body;
-            await utenteService.changeUtentePasswordByNomeUtente(utente, uid, body);
+            await utenteService.changeUtentePasswordByNomeUtente(utente, username, body);
+            res.json();
+        })
+    );
+
+    router.post(
+        '/password-recovery',
+        asyncHandler(async (req, res) => {
+            const body = req.body;
+            await utenteService.askPasswordRecovery(body);
+            res.json();
+        })
+    );
+
+    router.post(
+        '/password-recovery/username/:username',
+        asyncHandler(async (req, res) => {
+            const username = req.params.username;
+            const body = req.body;
+            await utenteService.recoverPassword(username, body);
             res.json();
         })
     );
 
     router.delete(
         '/:uid',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const uid = req.params.uid;
@@ -133,6 +162,7 @@ export default function (): Router {
 
     router.delete(
         '/username/:username',
+        authenticateJwt,
         asyncHandler(async (req, res) => {
             const utente = req.user as Utente;
             const username = req.params.username;

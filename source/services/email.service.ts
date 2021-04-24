@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { createTransport, Transporter } from 'nodemailer';
 import { pugEngine } from 'nodemailer-pug-engine';
 
@@ -6,11 +7,14 @@ import logger from '@/utils/logger';
 import CONFIG from '@/config';
 import { Utente } from '@prisma/client';
 
-enum EmailTemplates {
-    TABELLONE = 'tabellone',
-    UTENTE_CREAZIONE = 'utenti/creazione',
-    UTENTE_ELIMINAZIONE = 'utenti/eliminazione'
-}
+const EmailTemplates = {
+    TABELLONE: 'tabellone',
+    USERS: {
+        CREATION: 'users/creation',
+        DELETION: 'users/deletion',
+        PASSWORD_RECOVERY: 'users/password-recovery'
+    }
+};
 
 export class EmailService {
     private readonly mailer: Transporter;
@@ -39,7 +43,7 @@ export class EmailService {
     private async sendEmail(
         to: string | string[],
         subject: string,
-        template: EmailTemplates,
+        template: string,
         ctx: any,
         attachments: any[] = []
     ) {
@@ -74,7 +78,7 @@ export class EmailService {
 
     public async utenteCreated(to: string, utente: Pick<Utente, 'nomeUtente' | 'email' | 'ruolo'>): Promise<void> {
         const subject = 'OperaTN - Creato utente collegato al tuo indirizzo email';
-        const template = EmailTemplates.UTENTE_CREAZIONE;
+        const template = EmailTemplates.USERS.CREATION;
         const ctx = utente;
 
         await this.sendEmail(to, subject, template, ctx);
@@ -82,7 +86,18 @@ export class EmailService {
 
     public async utenteDeleted(to: string, utente: Pick<Utente, 'nomeUtente' | 'email' | 'ruolo'>): Promise<void> {
         const subject = 'OperaTN - Eliminato utente collegato a questo indirizzo email';
-        const template = EmailTemplates.UTENTE_ELIMINAZIONE;
+        const template = EmailTemplates.USERS.DELETION;
+        const ctx = utente;
+
+        await this.sendEmail(to, subject, template, ctx);
+    }
+
+    public async utentePasswordRecovery(
+        to: string,
+        utente: Pick<Utente, 'nomeUtente' | 'ruolo' | 'tokenRecuperoPassword'>
+    ): Promise<void> {
+        const subject = 'OperaTN - Richiesto recupero password';
+        const template = EmailTemplates.USERS.PASSWORD_RECOVERY;
         const ctx = utente;
 
         await this.sendEmail(to, subject, template, ctx);

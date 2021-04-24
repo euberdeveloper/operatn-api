@@ -1,12 +1,14 @@
 import prisma, { Prisma, RuoloUtente, Utente } from '@/services/prisma.service';
 import * as bcrypt from 'bcrypt';
 import * as Joi from 'joi';
+import { v4 as uuid } from 'uuid';
 
 import emitter from '@/subscribers';
 import handlePrismaError from '@/utils/handlePrismaError';
-import { NotFoundError, UniqueRootError, UserNotAuthorizedError } from '@/errors';
+import { InvalidTokenError, NotFoundError, UniqueRootError, UserNotAuthorizedError } from '@/errors';
 
 import { TableService } from './table.service';
+import emailService from './email.service';
 
 import CONFIG from '@/config';
 
@@ -34,6 +36,9 @@ export class UtenteService extends TableService {
     }).required();
     private readonly changePasswordValidator = Joi.object({
         password: Joi.string().min(8).max(16)
+    }).required();
+    private readonly askPasswordRecoveryValidator = Joi.object({
+        nomeUtente: Joi.string().min(1)
     }).required();
     protected postValidatorExcludes = [];
     protected putValidatorExcludes = ['ruolo', 'password'];
@@ -244,6 +249,44 @@ export class UtenteService extends TableService {
             await this.model.update({
                 where: { nomeUtente },
                 data: { password: this.hashPassword(password) }
+            });
+        });
+    }
+
+    public async askPasswordRecovery(body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            const { nomeUtente } = this.validateBody(this.askPasswordRecoveryValidator, body);
+            const vecchioUtente = await this.getUtenteByNomeUtente(nomeUtente);
+            const tokenRecuperoPassword = uuid();
+
+            await emailService.utentePasswordRecovery(vecchioUtente.email, {
+                nomeUtente,
+                ruolo: vecchioUtente.ruolo,
+                tokenRecuperoPassword
+            });
+
+            await this.model.update({
+                where: { nomeUtente },
+                data: { tokenRecuperoPassword }
+            });
+        });
+    }
+
+    public async recoverPassword(tokenRecuperoPassword: string, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            const { password } = this.validateBody(this.changePasswordValidator, body);
+
+            const utente = await this.model.findFirst({
+                where: { tokenRecuperoPassword }
+            });
+
+            if (utente === null) {
+                throw new InvalidTokenError();
+            }
+
+            await this.model.update({
+                where: { uid: utente.uid },
+                data: { password: this.hashPassword(password), tokenRecuperoPassword: null }
             });
         });
     }
