@@ -140,11 +140,11 @@ export default function (): Router {
     );
 
     router.post(
-        '/password-recovery/username/:username',
+        '/password-recovery/:token',
         asyncHandler(async (req, res) => {
-            const username = req.params.username;
+            const token = req.params.token;
             const body = req.body;
-            await utenteService.recoverPassword(username, body);
+            await utenteService.recoverPassword(token, body);
             res.json();
         })
     );
