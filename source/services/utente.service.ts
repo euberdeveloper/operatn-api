@@ -70,6 +70,7 @@ export class UtenteService extends TableService {
         if (utente === null) {
             throw new NotFoundError('Utente not found');
         }
+
         return utente;
     }
 
@@ -269,6 +270,21 @@ export class UtenteService extends TableService {
                 where: { nomeUtente },
                 data: { tokenRecuperoPassword }
             });
+        });
+    }
+
+    public async getRecoveryPasswordUtente(tokenRecuperoPassword: string) {
+        return handlePrismaError(async () => {
+            const utente = await this.model.findFirst({
+                where: { tokenRecuperoPassword },
+                select: this.selectedColumns
+            });
+
+            if (utente === null) {
+                throw new NotFoundError('Utente not found');
+            }
+
+            return utente;
         });
     }
 

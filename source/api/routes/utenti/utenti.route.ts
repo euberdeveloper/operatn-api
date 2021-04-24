@@ -139,6 +139,15 @@ export default function (): Router {
         })
     );
 
+    router.get(
+        '/password-recovery/:token',
+        asyncHandler(async (req, res) => {
+            const token = req.params.token;
+            const utente = await utenteService.getRecoveryPasswordUtente(token);
+            res.json(utente);
+        })
+    );
+
     router.post(
         '/password-recovery/:token',
         asyncHandler(async (req, res) => {
