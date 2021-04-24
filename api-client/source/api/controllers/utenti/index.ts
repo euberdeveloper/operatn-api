@@ -64,6 +64,14 @@ export class UtentiController extends BaseController {
         return this.axiosInstance.patch(`${this.route}/username/${username}/password`, body);
     }
 
+    public async askPasswordRecovery(username: string): Promise<void> {
+        return this.axiosInstance.post(`${this.route}/password-recovery`, { nomeUtente: username });
+    }
+
+    public async recoverPassword(token: string, body: UtentiUpdatePasswordBody): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/password-recovery/${token}`, body);
+    }
+
     public async delete(uid: string): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${uid}`);
     }
