@@ -68,6 +68,10 @@ export class UtentiController extends BaseController {
         return this.axiosInstance.post(`${this.route}/password-recovery`, { nomeUtente: username });
     }
 
+    public async getUserByRecoveryToken(token: string): Promise<UtentiReturned> {
+        return this.axiosInstance.get(`${this.route}/password-recovery/${token}`);
+    }
+
     public async recoverPassword(token: string, body: UtentiUpdatePasswordBody): Promise<void> {
         return this.axiosInstance.patch(`${this.route}/password-recovery/${token}`, body);
     }
