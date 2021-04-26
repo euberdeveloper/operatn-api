@@ -34,7 +34,9 @@ export class StanzaService extends TableService {
         id: Joi.number().integer().positive().optional(),
         idFabbricato: Joi.number().integer().positive(),
         unitaImmobiliare: Joi.string().min(1).alphanum(),
-        numeroStanza: Joi.string().min(1).alphanum(),
+        numeroStanza: Joi.string()
+            .min(1)
+            .regex(/^[\w]+$/),
         idTipoStanza: Joi.number().integer().positive(),
         centroDiCosto: Joi.string().min(1),
         gestioneDiretta: Joi.boolean(),
