@@ -1,8 +1,8 @@
-import { ContoRicaviCanoni } from '@/db-types';
+import { ContoRicaviConsumi } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
-export type ContiRicaviConsumiCreateBody = ContoRicaviCanoni & { id?: number };
-export type ContiRicaviConsumiReplaceBody = Omit<ContoRicaviCanoni, 'id'>;
+export type ContiRicaviConsumiCreateBody = ContoRicaviConsumi & { id?: number };
+export type ContiRicaviConsumiReplaceBody = Omit<ContoRicaviConsumi, 'id'>;
 
 export class ContiRicaviConsumiController extends BaseController {
     public route = '/conti-ricavi-consumi';
@@ -11,17 +11,17 @@ export class ContiRicaviConsumiController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(): Promise<ContoRicaviCanoni[]> {
+    public async getAll(): Promise<ContoRicaviConsumi[]> {
         const result = await this.axiosInstance.get(`${this.route}`);
         return result.data;
     }
 
-    public async get(id: number): Promise<ContoRicaviCanoni> {
+    public async get(id: number): Promise<ContoRicaviConsumi> {
         const result = await this.axiosInstance.get(`${this.route}/${id}`);
         return result.data;
     }
 
-    public async getByCodice(codice: string): Promise<ContoRicaviCanoni> {
+    public async getByCodice(codice: string): Promise<ContoRicaviConsumi> {
         const result = await this.axiosInstance.get(`${this.route}/codice/${codice}`);
         return result.data;
     }
