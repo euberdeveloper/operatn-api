@@ -1,4 +1,4 @@
-const alloggi = require('./alloggi_letterato_v5.0.json');
+const alloggi = require('./alloggi_letterato_v6.0.json');
 const axios = require('axios');
 
 // Ricordati di togliere il soft delete ed togliere il commento ai body nei services

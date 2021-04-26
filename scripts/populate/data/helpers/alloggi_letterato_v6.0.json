@@ -1,0 +1,2111 @@
+[
+    {
+        "id": 360,
+        "codice": "APPMYR",
+        "nome": "APPARTAMENTI MAYER",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38122",
+        "indirizzo": "Piazza Valeria Solesin",
+        "nCivico": "1",
+        "oldCode": 79,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2017-11-30T23:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5610,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7905",
+                "numeroStanza": "221A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7873,
+                        "idStanza": 5610,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5737,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7905",
+                "numeroStanza": "221A_3",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "dataCreazione": "2017-12-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8127,
+                        "idStanza": 5737,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-12-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5869,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7906",
+                "numeroStanza": "222A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "dataCreazione": "2017-12-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8391,
+                        "idStanza": 5869,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-12-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5095,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7906",
+                "numeroStanza": "222A_3",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "dataCreazione": "2017-12-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6843,
+                        "idStanza": 5095,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-12-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5611,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7906",
+                "numeroStanza": "222A_4",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "dataCreazione": "2017-12-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7875,
+                        "idStanza": 5611,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-12-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "MONOLOCALE"
+                }
+            },
+            {
+                "id": 5350,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7907",
+                "numeroStanza": "223A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "NO BALCONE",
+                "dataCreazione": "2017-12-31T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7353,
+                        "idStanza": 5350,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-12-31T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 4987,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7907",
+                "numeroStanza": "223A_3",
+                "idTipoStanza": 2,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "NO BALCONE",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6627,
+                        "idStanza": 4987,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 6628,
+                        "idStanza": 4987,
+                        "postoLetto": "B",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5613,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7908",
+                "numeroStanza": "321A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7879,
+                        "idStanza": 5613,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5875,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7908",
+                "numeroStanza": "321A_3",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8403,
+                        "idStanza": 5875,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5876,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7909",
+                "numeroStanza": "322A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8405,
+                        "idStanza": 5876,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5096,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7909",
+                "numeroStanza": "322A_3",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6845,
+                        "idStanza": 5096,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5218,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7909",
+                "numeroStanza": "322A_4",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7089,
+                        "idStanza": 5218,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5616,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7910",
+                "numeroStanza": "323A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7885,
+                        "idStanza": 5616,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 4988,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7910",
+                "numeroStanza": "323A_3",
+                "idTipoStanza": 2,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "TERZO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6629,
+                        "idStanza": 4988,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 6630,
+                        "idStanza": 4988,
+                        "postoLetto": "B",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5877,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7911",
+                "numeroStanza": "419A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8407,
+                        "idStanza": 5877,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5878,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7911",
+                "numeroStanza": "419A_3",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8409,
+                        "idStanza": 5878,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5223,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7912",
+                "numeroStanza": "420A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7099,
+                        "idStanza": 5223,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5224,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7912",
+                "numeroStanza": "420A_3",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7101,
+                        "idStanza": 5224,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 6006,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7912",
+                "numeroStanza": "420A_4",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8665,
+                        "idStanza": 6006,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 5740,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7913",
+                "numeroStanza": "421A_2",
+                "idTipoStanza": 1,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8133,
+                        "idStanza": 5740,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": 4985,
+                "idFabbricato": 360,
+                "unitaImmobiliare": "7913",
+                "numeroStanza": "421A_3",
+                "idTipoStanza": 2,
+                "centroDiCosto": "114010101",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "QUARTO_PIANO",
+                "dataCreazione": "2017-11-30T23:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 6623,
+                        "idStanza": 4985,
+                        "postoLetto": "A",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 6624,
+                        "idStanza": 4985,
+                        "postoLetto": "B",
+                        "dataCreazione": "2017-11-30T23:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    },
+    {
+        "id": 354,
+        "codice": "APPSBRTC",
+        "nome": "APPARTAMENTI S. BARTOLAMEO - BLOCCO C",
+        "provincia": "TN",
+        "comune": "Trento",
+        "cap": "38123",
+        "indirizzo": "Via della Malpensada",
+        "nCivico": "140",
+        "oldCode": 73,
+        "idTipoFabbricato": 1,
+        "dataCreazione": "2001-10-11T22:00:00.000Z",
+        "eliminato": null,
+        "stanze": [
+            {
+                "id": 5335,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA0A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": true,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": "DOMOTICO",
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7323,
+                        "idStanza": 5335,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7324,
+                        "idStanza": 5335,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5729,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA0A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8111,
+                        "idStanza": 5729,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8112,
+                        "idStanza": 5729,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6555,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA0A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9763,
+                        "idStanza": 6555,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9764,
+                        "idStanza": 6555,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6489,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA1A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9631,
+                        "idStanza": 6489,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9632,
+                        "idStanza": 6489,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5598,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA1A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2001-10-11T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7849,
+                        "idStanza": 5598,
+                        "postoLetto": "A",
+                        "dataCreazione": "2001-10-11T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7850,
+                        "idStanza": 5598,
+                        "postoLetto": "B",
+                        "dataCreazione": "2001-10-11T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5730,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA1A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8113,
+                        "idStanza": 5730,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8114,
+                        "idStanza": 5730,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6556,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA1A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9765,
+                        "idStanza": 6556,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9766,
+                        "idStanza": 6556,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5870,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA",
+                "numeroStanza": "CA2A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8393,
+                        "idStanza": 5870,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8394,
+                        "idStanza": 5870,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5599,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB0A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": true,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": "DOMOTICO",
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7851,
+                        "idStanza": 5599,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7852,
+                        "idStanza": 5599,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5465,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB0A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7583,
+                        "idStanza": 5465,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7584,
+                        "idStanza": 5465,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6415,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB0A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9483,
+                        "idStanza": 6415,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9484,
+                        "idStanza": 6415,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6336,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB1A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9325,
+                        "idStanza": 6336,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9326,
+                        "idStanza": 6336,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5996,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB1A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8645,
+                        "idStanza": 5996,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8646,
+                        "idStanza": 5996,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5871,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB1A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8395,
+                        "idStanza": 5871,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8396,
+                        "idStanza": 5871,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6337,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB1A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9327,
+                        "idStanza": 6337,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9328,
+                        "idStanza": 6337,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5872,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB",
+                "numeroStanza": "CB2A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8397,
+                        "idStanza": 5872,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8398,
+                        "idStanza": 5872,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6200,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CC",
+                "numeroStanza": "CC0A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9053,
+                        "idStanza": 6200,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9054,
+                        "idStanza": 6200,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6558,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CC",
+                "numeroStanza": "CC1A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9769,
+                        "idStanza": 6558,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9770,
+                        "idStanza": 6558,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5466,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CC",
+                "numeroStanza": "CC1A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7585,
+                        "idStanza": 5466,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7586,
+                        "idStanza": 5466,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5873,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CC",
+                "numeroStanza": "CC1A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8399,
+                        "idStanza": 5873,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8400,
+                        "idStanza": 5873,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6055,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CC",
+                "numeroStanza": "CC1A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8763,
+                        "idStanza": 6055,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8764,
+                        "idStanza": 6055,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5600,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CC",
+                "numeroStanza": "CC2A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7853,
+                        "idStanza": 5600,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7854,
+                        "idStanza": 5600,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5225,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD0A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": true,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": "PH STANDARD MECC. MANUALE",
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7103,
+                        "idStanza": 5225,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7104,
+                        "idStanza": 5225,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5467,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD0A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7587,
+                        "idStanza": 5467,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7588,
+                        "idStanza": 5467,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6138,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD0A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PIANO_TERRA",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8929,
+                        "idStanza": 6138,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8930,
+                        "idStanza": 6138,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6338,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD1A01",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9329,
+                        "idStanza": 6338,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9330,
+                        "idStanza": 6338,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5874,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD1A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 8401,
+                        "idStanza": 5874,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 8402,
+                        "idStanza": 5874,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5226,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD1A03",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7105,
+                        "idStanza": 5226,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7106,
+                        "idStanza": 5226,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 6201,
+                "idFabbricato": 339,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD1A04",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "PRIMO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 9055,
+                        "idStanza": 6201,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 9056,
+                        "idStanza": 6201,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": 5468,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD",
+                "numeroStanza": "CD2A02",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": null,
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": 7589,
+                        "idStanza": 5468,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": 7590,
+                        "idStanza": 5468,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA201",
+                "numeroStanza": "CA2C01",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA201",
+                "numeroStanza": "CA2C05",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CA201",
+                "numeroStanza": "CA2C06",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB201",
+                "numeroStanza": "CB2C01",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB201",
+                "numeroStanza": "CB2C05",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CB201",
+                "numeroStanza": "CB2C06",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CC201",
+                "numeroStanza": "CC2C01",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CC201",
+                "numeroStanza": "CC2C05",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CC201",
+                "numeroStanza": "CC2C06",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD201",
+                "numeroStanza": "CD2C01",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD201",
+                "numeroStanza": "CD2C05",
+                "idTipoStanza": 1,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 1,
+                    "tipoStanza": "STANZA SINGOLA"
+                }
+            },
+            {
+                "id": null,
+                "idFabbricato": 354,
+                "unitaImmobiliare": "CD201",
+                "numeroStanza": "CD2C06",
+                "idTipoStanza": 2,
+                "centroDiCosto": "112010301",
+                "gestioneDiretta": true,
+                "handicap": false,
+                "bagno": true,
+                "piano": "SECONDO_PIANO",
+                "note": "APP. DA 4 USO CHIAVI", 
+                "dataCreazione": "2008-08-31T22:00:00.000Z",
+                "eliminato": null,
+                "manutenzioni": [],
+                "postiLetto": [
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "A",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    },
+                    {
+                        "id": null,
+                        "idStanza": null,
+                        "postoLetto": "B",
+                        "dataCreazione": "2008-08-31T22:00:00.000Z",
+                        "eliminato": null
+                    }
+                ],
+                "tipoStanza": {
+                    "id": 2,
+                    "tipoStanza": "STANZA DOPPIA"
+                }
+            }
+        ],
+        "tipoFabbricato": {
+            "id": 1,
+            "tipoFabbricato": "RESIDENZA COLLETTIVA"
+        }
+    }
+]
+            
+            
