@@ -113,14 +113,19 @@ export class PresidenteService extends TableService {
         return result;
     }
 
-    private handlePresidenteBodyUpdate(body: HandledPresidente): any {
+    private async handlePresidenteBodyUpdate(body: HandledPresidente, id: number): Promise<any> {
+        const oldPresidente = await this.getPresidenteById(id, {
+            'persona': 'true',
+            'persona.luogoDiNascita': 'true',
+            'persona.residenza': 'true',
+            'persona.domicili': 'true'
+        });
         const result = {
             dataFineMandato: body.dataFineMandato,
             dataInizioMandato: body.dataInizioMandato
         } as any;
         result.persona = {
             update: {
-                id: body.id,
                 nome: body.nome,
                 cognome: body.cognome,
                 dataDiNascita: body.dataDiNascita,
@@ -130,14 +135,14 @@ export class PresidenteService extends TableService {
         };
         result.persona.update.luogoDiNascita = body.luogoDiNascita
             ? { upsert: { create: body.luogoDiNascita, update: body.luogoDiNascita } }
-            : { delete: true };
+            : { delete: body.luogoDiNascita === null && oldPresidente.luogoDiNascita !== null };
         result.persona.update.residenza = body.residenza
             ? { upsert: { create: body.residenza, update: body.residenza } }
-            : { delete: true };
+            : undefined;
         result.persona.update.domicili = body.domicili
             ? {
                   deleteMany: {
-                      idPersona: body.id
+                      idPersona: id
                   },
                   createMany: {
                       data: body.domicili
@@ -154,7 +159,7 @@ export class PresidenteService extends TableService {
         return presidenti.map(presidente => this.handlePresidente(presidente));
     }
 
-    public async getPresidenteById(id: number, queryParams: any): Promise<Presidente> {
+    public async getPresidenteById(id: number, queryParams: any): Promise<HandledPresidente> {
         queryParams = { ...queryParams, persona: 'true' };
         this.validateId(id, 'id');
         const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
@@ -182,7 +187,7 @@ export class PresidenteService extends TableService {
             await this.checkIfExistsById(id, 'Presidente');
             await this.model.update({
                 where: { id },
-                data: this.handlePresidenteBodyUpdate(presidente)
+                data: await this.handlePresidenteBodyUpdate(presidente, id)
             });
         });
     }
