@@ -72,47 +72,47 @@ export class OspiteService extends TableService {
         telefonoSecondario: Joi.string().min(1).allow(null).optional(),
         cittadinanza: Joi.string().min(1),
         luogoDiNascita: Joi.object({
-            stato: Joi.string().alphanum().length(2),
-            provincia: Joi.string().alphanum().length(2).allow(null).optional(),
-            comune: Joi.string().min(1).allow(null).optional(),
-            istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).optional()
+            stato: Joi.string().alphanum().length(2).required(),
+            provincia: Joi.string().alphanum().length(2).allow(null).required(),
+            comune: Joi.string().min(1).allow(null).required(),
+            istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).required()
         })
             .allow(null)
             .optional(),
         residenza: Joi.object({
-            stato: Joi.string().alphanum().length(2),
-            provincia: Joi.string().alphanum().length(2).allow(null).optional(),
-            comune: Joi.string().min(1).allow(null).optional(),
-            istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).optional(),
-            cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).optional(),
-            indirizzo: Joi.string().min(1),
-            nCivico: Joi.string().min(1)
+            stato: Joi.string().alphanum().length(2).required(),
+            provincia: Joi.string().alphanum().length(2).allow(null).required(),
+            comune: Joi.string().min(1).allow(null).required(),
+            istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).required(),
+            cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).required(),
+            indirizzo: Joi.string().min(1).required(),
+            nCivico: Joi.string().min(1).required()
         }),
         domicili: Joi.array()
             .items(
                 Joi.object({
-                    stato: Joi.string().alphanum().length(2),
-                    provincia: Joi.string().alphanum().length(2).allow(null).optional(),
-                    comune: Joi.string().min(1),
-                    istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).optional(),
-                    cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).optional(),
-                    indirizzo: Joi.string().min(1),
-                    nCivico: Joi.string().min(1)
+                    stato: Joi.string().alphanum().length(2).required(),
+                    provincia: Joi.string().alphanum().length(2).allow(null).required(),
+                    comune: Joi.string().min(1).required(),
+                    istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).required(),
+                    cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).required(),
+                    indirizzo: Joi.string().min(1).required(),
+                    nCivico: Joi.string().min(1).required()
                 })
             )
             .optional(),
         contoCorrente: Joi.object({
-            iban: Joi.string().alphanum().length(27),
-            banca: Joi.string().min(1)
+            iban: Joi.string().alphanum().length(27).required(),
+            banca: Joi.string().min(1).required()
         })
             .allow(null)
             .optional(),
         documentoIdentita: Joi.object({
-            tipo: Joi.string().min(1),
-            numero: Joi.string().min(1),
-            ente: Joi.string().min(1),
-            dataRilascio: Joi.date().iso(),
-            dataScadenza: Joi.date().iso().greater(Joi.ref('dataRilascio'))
+            tipo: Joi.string().min(1).required(),
+            numero: Joi.string().min(1).required(),
+            ente: Joi.string().min(1).required(),
+            dataRilascio: Joi.date().iso().required(),
+            dataScadenza: Joi.date().iso().greater(Joi.ref('dataRilascio')).required()
         })
             .allow(null)
             .optional(),
@@ -180,7 +180,17 @@ export class OspiteService extends TableService {
         return result;
     }
 
-    private handleOspiteBodyUpdate(body: HandledOspite): any {
+    private async handleOspiteBodyUpdate(body: HandledOspite, id: number): Promise<any> {
+        const oldOspite = await this.getOspiteById(id, {
+            'persona': 'true',
+            'persona.luogoDiNascita': 'true',
+            'persona.residenza': 'true',
+            'persona.domicili': 'true',
+            'contoCorrente': 'true',
+            'documentoIdentita': 'true',
+            'dipartimentoUnitn': 'true'
+        });
+
         const result: any = {
             idGiada: body.idGiada,
             email: body.email,
@@ -190,7 +200,6 @@ export class OspiteService extends TableService {
         };
         result.persona = {
             update: {
-                id: body.id,
                 nome: body.nome,
                 cognome: body.cognome,
                 dataDiNascita: body.dataDiNascita,
@@ -200,14 +209,14 @@ export class OspiteService extends TableService {
         };
         result.persona.update.luogoDiNascita = body.luogoDiNascita
             ? { upsert: { create: body.luogoDiNascita, update: body.luogoDiNascita } }
-            : { delete: true };
+            : { delete: body.luogoDiNascita === null && oldOspite.luogoDiNascita !== null };
         result.persona.update.residenza = body.residenza
             ? { upsert: { create: body.residenza, update: body.residenza } }
-            : { delete: true };
+            : undefined;
         result.persona.update.domicili = body.domicili
             ? {
                   deleteMany: {
-                      idPersona: body.id
+                      idPersona: id
                   },
                   createMany: {
                       data: body.domicili
@@ -216,10 +225,10 @@ export class OspiteService extends TableService {
             : undefined;
         result.documentoIdentita = body.documentoIdentita
             ? { upsert: { create: body.documentoIdentita, update: body.documentoIdentita } }
-            : { delete: true };
+            : { delete: body.documentoIdentita === null && oldOspite.documentoIdentita !== null };
         result.contoCorrente = body.contoCorrente
             ? { upsert: { create: body.contoCorrente, update: body.contoCorrente } }
-            : { delete: true };
+            : { delete: body.contoCorrente === null && oldOspite.contoCorrente !== null };
         result.dipartimentoUnitn = body.codiceDipartimentoUnitn
             ? { connect: { codice: body.codiceDipartimentoUnitn } }
             : undefined;
@@ -239,7 +248,7 @@ export class OspiteService extends TableService {
         return ospiti.map(ospite => this.handleOspite(ospite));
     }
 
-    public async getOspiteById(id: number, queryParams: any): Promise<Ospite> {
+    public async getOspiteById(id: number, queryParams: any): Promise<HandledOspite> {
         queryParams = { ...queryParams, persona: 'true' };
         this.validateId(id, 'id');
         const include = this.parseIncludeQueryParameters(queryParams);
@@ -268,7 +277,7 @@ export class OspiteService extends TableService {
             await this.checkIfExistsById(id, 'Ospite');
             await this.model.update({
                 where: { id },
-                data: this.handleOspiteBodyUpdate(ospite)
+                data: await this.handleOspiteBodyUpdate(ospite, id)
             });
         });
     }
