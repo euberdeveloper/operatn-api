@@ -1,12 +1,22 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import prisma, { Prisma, Ospite, Domicilio, LuogoDiNascita, Persona, Residenza } from '@/services/prisma.service';
+import prisma, {
+    Prisma,
+    Ospite,
+    Domicilio,
+    LuogoDiNascita,
+    Persona,
+    Residenza,
+    ContoCorrente,
+    DipartimentoUnitn,
+    DocumentoIdentita,
+    Sesso
+} from '@/services/prisma.service';
 import * as Joi from 'joi';
 
 import { NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 
 import { TableService } from './table.service';
-import { ContoCorrente, DipartimentoUnitn, DocumentoIdentita, Sesso } from '@prisma/client';
 
 type GottenOspite = Ospite & {
     persona: Persona & {
