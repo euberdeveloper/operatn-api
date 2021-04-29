@@ -10,8 +10,8 @@ import { InvalidCredentialsError, UserNotAuthenticatedError } from '@/errors';
 
 export const authenticateJwt: Handler = function authenticate(req, res, next) {
     passport.authenticate('jwt', { session: false }, function (_error, user, info) {
-        logger.warning('Error in jwt authentication', info);
         if (info) {
+            logger.warning('Error in jwt authentication', info);
             const error = new UserNotAuthenticatedError();
             next(error);
         } else {
