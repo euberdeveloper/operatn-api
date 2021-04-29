@@ -455,7 +455,7 @@ export class ContrattoService extends TableService {
                 bolletteToDelete = contratto.bollette.filter(b => b.dataInvioEusis === null);
                 const bolletteContabilizzate = contratto.bollette
                     .filter(b => b.dataInvioEusis !== null)
-                    .sort((x, y) => +y.competenzaAl - +x.competenzaAl);
+                    .sort((x, y) => +x.competenzaAl - +y.competenzaAl);
 
                 const firstBollettaDaStornareIndex = bolletteContabilizzate.findIndex(
                     b => b.competenzaAl > dataChiusura
@@ -475,8 +475,8 @@ export class ContrattoService extends TableService {
                     contratto.tipoRata,
                     newDataInizio,
                     dataChiusura,
-                    contratto.cauzione,
-                    contratto.checkout,
+                    null,
+                    null,
                     contratto.tariffa.prezzoCanoni,
                     contratto.tariffa.prezzoConsumi,
                     contratto.contrattiSuOspite.length,
@@ -505,6 +505,7 @@ export class ContrattoService extends TableService {
                               data: daStornare.map(b => ({
                                   ...b,
                                   id: undefined,
+                                  dataInvioEusis: null,
                                   importoCanoni: b.importoCanoni ? -b.importoCanoni : 0,
                                   importoConsumi: b.importoConsumi ? -b.importoConsumi : 0,
                                   importoTotale: -b.importoTotale,
