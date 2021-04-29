@@ -92,7 +92,7 @@ export class OspiteService extends TableService {
             )
             .optional(),
         contoCorrente: Joi.object({
-            iban: Joi.string().alphanum().min(1),
+            iban: Joi.string().alphanum().length(27),
             banca: Joi.string().min(1)
         })
             .allow(null)
