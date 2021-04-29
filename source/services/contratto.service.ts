@@ -445,7 +445,7 @@ export class ContrattoService extends TableService {
             }
 
             let bolletteToDelete: Bolletta[] = [],
-                daStornare: Bolletta | null = null,
+                daStornare: Bolletta[] = [],
                 newBollette: Omit<
                     Bolletta,
                     'id' | 'idBollettaStornata' | 'dataInvioEusis' | 'dataRegistrazione'
@@ -456,18 +456,19 @@ export class ContrattoService extends TableService {
                 const bolletteContabilizzate = contratto.bollette
                     .filter(b => b.dataInvioEusis !== null)
                     .sort((x, y) => +y.competenzaAl - +x.competenzaAl);
-                const lastContabilizzata = bolletteContabilizzate.length ? bolletteContabilizzate[0] : null;
+
+                const firstBollettaDaStornareIndex = bolletteContabilizzate.findIndex(
+                    b => b.competenzaAl > dataChiusura
+                );
 
                 let newDataInizio: Date;
-                if (lastContabilizzata) {
-                    if (lastContabilizzata.competenzaAl > dataChiusura) {
-                        daStornare = lastContabilizzata;
-                        newDataInizio = lastContabilizzata.competenzaDal;
-                    } else {
-                        newDataInizio = dayjs(lastContabilizzata.competenzaAl).add(1, 'day').toDate();
-                    }
+                if (firstBollettaDaStornareIndex !== -1) {
+                    daStornare = bolletteContabilizzate.slice(firstBollettaDaStornareIndex);
+                    newDataInizio = bolletteContabilizzate[firstBollettaDaStornareIndex].competenzaDal;
                 } else {
-                    newDataInizio = contratto.dataInizio;
+                    newDataInizio = bolletteContabilizzate.length
+                        ? dayjs(bolletteContabilizzate[0].competenzaAl).add(1, 'day').toDate()
+                        : contratto.dataInizio;
                 }
 
                 newBollette = await bollettaService.calcBollette(
@@ -498,17 +499,17 @@ export class ContrattoService extends TableService {
                 prisma.bolletta.createMany({
                     data: newBollette
                 }),
-                ...(daStornare
+                ...(daStornare.length
                     ? [
-                          prisma.bolletta.create({
-                              data: {
-                                  ...daStornare,
+                          prisma.bolletta.createMany({
+                              data: daStornare.map(b => ({
+                                  ...b,
                                   id: undefined,
-                                  importoCanoni: daStornare.importoCanoni ? -daStornare.importoCanoni : 0,
-                                  importoConsumi: daStornare.importoConsumi ? -daStornare.importoConsumi : 0,
-                                  importoTotale: -daStornare.importoTotale,
-                                  idBollettaStornata: daStornare.id
-                              }
+                                  importoCanoni: b.importoCanoni ? -b.importoCanoni : 0,
+                                  importoConsumi: b.importoConsumi ? -b.importoConsumi : 0,
+                                  importoTotale: -b.importoTotale,
+                                  idBollettaStornata: b.id
+                              }))
                           })
                       ]
                     : [])
