@@ -47,32 +47,32 @@ export class PresidenteService extends TableService {
         dataInizioMandato: Joi.date().iso(),
         dataFineMandato: Joi.date().iso().greater(Joi.ref('dataInizioMandato')),
         luogoDiNascita: Joi.object({
-            stato: Joi.string().alphanum().length(2),
-            provincia: Joi.string().alphanum().length(2).optional(),
-            comune: Joi.string().min(1),
-            istatComune: Joi.string().pattern(/^\d+$/).length(6).optional()
+            stato: Joi.string().alphanum().length(2).required(),
+            provincia: Joi.string().alphanum().length(2).allow(null).required(),
+            comune: Joi.string().min(1).required(),
+            istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).required()
         })
             .allow(null)
             .optional(),
         residenza: Joi.object({
-            stato: Joi.string().alphanum().length(2),
-            provincia: Joi.string().alphanum().length(2).optional(),
-            comune: Joi.string().min(1),
-            istatComune: Joi.string().pattern(/^\d+$/).length(6).optional(),
-            cap: Joi.string().pattern(/^\d+$/).length(5).optional(),
-            indirizzo: Joi.string().min(1),
-            nCivico: Joi.string().min(1)
+            stato: Joi.string().alphanum().length(2).required(),
+            provincia: Joi.string().alphanum().length(2).allow(null).required(),
+            comune: Joi.string().min(1).required(),
+            istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).required(),
+            cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).required(),
+            indirizzo: Joi.string().min(1).required(),
+            nCivico: Joi.string().min(1).required()
         }),
         domicili: Joi.array()
             .items(
                 Joi.object({
-                    stato: Joi.string().alphanum().length(2),
-                    provincia: Joi.string().alphanum().length(2).optional(),
-                    comune: Joi.string().min(1),
-                    istatComune: Joi.string().pattern(/^\d+$/).length(6).optional(),
-                    cap: Joi.string().pattern(/^\d+$/).length(5).optional(),
-                    indirizzo: Joi.string().min(1),
-                    nCivico: Joi.string().min(1)
+                    stato: Joi.string().alphanum().length(2).required(),
+                    provincia: Joi.string().alphanum().length(2).allow(null).required(),
+                    comune: Joi.string().min(1).required(),
+                    istatComune: Joi.string().pattern(/^\d+$/).length(6).allow(null).required(),
+                    cap: Joi.string().pattern(/^\d+$/).length(5).allow(null).required(),
+                    indirizzo: Joi.string().min(1).required(),
+                    nCivico: Joi.string().min(1).required()
                 })
             )
             .optional()
