@@ -14,7 +14,7 @@ export default function (): Router {
 
     router.get(
         '/',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const contratti = await contrattoService.getContratti(queryParams);
@@ -24,7 +24,7 @@ export default function (): Router {
 
     router.get(
         '/da-firmare',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const contratti = await contrattoService.getContrattiDaFirmare(queryParams);
@@ -34,7 +34,7 @@ export default function (): Router {
 
     router.get(
         '/firmati',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const contratti = await contrattoService.getContrattiFirmati(queryParams);
@@ -44,7 +44,7 @@ export default function (): Router {
 
     router.get(
         '/:id',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const queryParams = req.query;
@@ -55,7 +55,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await contrattoService.postContratto(body);
@@ -65,7 +65,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = +req.params.id;
@@ -74,9 +74,20 @@ export default function (): Router {
         })
     );
 
+    router.post(
+        '/:id/chiusura-anticipata',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const body = req.body;
+            const id = +req.params.id;
+            await contrattoService.postChiusuraAnticipata(id, body);
+            res.json();
+        })
+    );
+
     router.delete(
         '/:id',
-        permission([RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             await contrattoService.delContrattoById(id);

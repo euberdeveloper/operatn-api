@@ -1,12 +1,13 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import prisma, { Prisma, Contratto, TipoRata } from '@/services/prisma.service';
+import prisma, { Prisma, Contratto, TipoRata, Bolletta } from '@/services/prisma.service';
 import * as Joi from 'joi';
+import * as dayjs from 'dayjs';
 
 import { InternalServerError, InvalidBodyError, NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 import logger from '@/utils/logger';
 
-import BollettaService from './bolletta.service';
+import bollettaService from './bolletta.service';
 import { TableService } from './table.service';
 
 interface CreateContrattoBody {
@@ -31,6 +32,9 @@ export class ContrattoService extends TableService {
     >;
 
     protected readonly bodyValidator = {};
+    private readonly chiusuraAnticipataValidator = Joi.object({
+        dataChiusura: Joi.date().iso()
+    });
 
     protected postValidatorExcludes = [];
     protected putValidatorExcludes = [];
@@ -316,7 +320,7 @@ export class ContrattoService extends TableService {
 
             const centroDiCosto = await this.getCentroDiCosto(validatedBody);
 
-            const bollette = await BollettaService.calcBollette(
+            const bollette = await bollettaService.calcBollette(
                 tipoRata,
                 dataInizio,
                 dataFine,
@@ -399,6 +403,118 @@ export class ContrattoService extends TableService {
         return handlePrismaError(async () => {
             this.validateId(id);
             await this.pushContratto(body, id);
+        });
+    }
+
+    public async postChiusuraAnticipata(id: number, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            const handledBody: { dataChiusura: Date } = this.validateBody(this.chiusuraAnticipataValidator, body);
+            const { dataChiusura } = handledBody;
+
+            const contratto = await this.model.findUnique({
+                where: { id },
+                include: {
+                    bollette: {
+                        where: {
+                            tipoBolletta: { tipoBolletta: { startsWith: 'RATA' } }
+                        }
+                    },
+                    tariffa: {
+                        include: {
+                            tipoTariffa: true
+                        }
+                    },
+                    contrattiSuOspite: {
+                        select: {
+                            idContratto: true
+                        }
+                    }
+                }
+            });
+
+            if (!contratto) {
+                throw new NotFoundError('Contratto not found');
+            }
+
+            if (contratto.dataChiusuraAnticipata) {
+                throw new InvalidBodyError('Contratto is already chiuso');
+            }
+
+            if (contratto.dataFine < dataChiusura || contratto.dataInizio > dataChiusura) {
+                throw new InvalidBodyError('Data chiusura must be in the contratto lifetime');
+            }
+
+            let bolletteToDelete: Bolletta[] = [],
+                daStornare: Bolletta | null = null,
+                newBollette: Omit<
+                    Bolletta,
+                    'id' | 'idBollettaStornata' | 'dataInvioEusis' | 'dataRegistrazione'
+                >[] = [];
+
+            if (contratto.bollette.length) {
+                bolletteToDelete = contratto.bollette.filter(b => b.dataInvioEusis === null);
+                const bolletteContabilizzate = contratto.bollette
+                    .filter(b => b.dataInvioEusis !== null)
+                    .sort((x, y) => +y.competenzaAl - +x.competenzaAl);
+                const lastContabilizzata = bolletteContabilizzate.length ? bolletteContabilizzate[0] : null;
+
+                let newDataInizio: Date;
+                if (lastContabilizzata) {
+                    if (lastContabilizzata.competenzaAl > dataChiusura) {
+                        daStornare = lastContabilizzata;
+                        newDataInizio = lastContabilizzata.competenzaDal;
+                    } else {
+                        newDataInizio = dayjs(lastContabilizzata.competenzaAl).add(1, 'day').toDate();
+                    }
+                } else {
+                    newDataInizio = contratto.dataInizio;
+                }
+
+                newBollette = await bollettaService.calcBollette(
+                    contratto.tipoRata,
+                    newDataInizio,
+                    dataChiusura,
+                    contratto.cauzione,
+                    contratto.checkout,
+                    contratto.tariffa.prezzoCanoni,
+                    contratto.tariffa.prezzoConsumi,
+                    contratto.contrattiSuOspite.length,
+                    contratto.bollette[0].contoRicaviCanoni,
+                    contratto.bollette[0].contoRicaviConsumi,
+                    contratto.bollette[0].centroDiCosto,
+                    contratto.tariffa.tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
+                    id,
+                    contratto.idQuietanziante
+                );
+            }
+
+            const actions = [
+                prisma.contratto.update({ where: { id }, data: { dataChiusuraAnticipata: dataChiusura } }),
+                prisma.bolletta.deleteMany({
+                    where: {
+                        id: { in: bolletteToDelete.map(b => b.id) }
+                    }
+                }),
+                prisma.bolletta.createMany({
+                    data: newBollette
+                }),
+                ...(daStornare
+                    ? [
+                          prisma.bolletta.create({
+                              data: {
+                                  ...daStornare,
+                                  id: undefined,
+                                  importoCanoni: daStornare.importoCanoni ? -daStornare.importoCanoni : 0,
+                                  importoConsumi: daStornare.importoConsumi ? -daStornare.importoConsumi : 0,
+                                  importoTotale: -daStornare.importoTotale,
+                                  idBollettaStornata: daStornare.id
+                              }
+                          })
+                      ]
+                    : [])
+            ];
+
+            await prisma.$transaction(actions);
         });
     }
 
