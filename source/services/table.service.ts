@@ -191,8 +191,6 @@ export abstract class TableService {
             }
         }
 
-        logger.debug(JSON.stringify(result, null, 2))
-
         return result;
     }
 
