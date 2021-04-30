@@ -513,7 +513,21 @@ export class ContrattoService extends TableService {
                               }))
                           })
                       ]
-                    : [])
+                    : []),
+                prisma.bolletta.updateMany({
+                    where: {
+                        idContratto: id,
+                        dataInvioEusis: null,
+                        tipoBolletta: {
+                            tipoBolletta: 'CHECKOUT'
+                        }
+                    },
+                    data: {
+                        dataScadenza: dataChiusura,
+                        competenzaDal: dayjs(dataChiusura).date(1).subtract(1, 'day').date(1).toDate(),
+                        competenzaAl: dataChiusura
+                    }
+                })
             ];
 
             await prisma.$transaction(actions);
