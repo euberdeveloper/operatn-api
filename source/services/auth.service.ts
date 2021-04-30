@@ -9,15 +9,19 @@ interface AuthResponse {
     user: Pick<Utente, 'uid' | 'nomeUtente' | 'email' | 'ruolo' | 'dataCreazione'>;
 }
 export class AuthService {
-    private readonly jwtPassword: string;
+    private readonly jwtAlgorithm: string;
+    private readonly jwtPrivatePassword: string;
     private readonly jwtExpiration: string;
+    private readonly jwtIssuer: string;
     private readonly utenteModel: Prisma.UtenteDelegate<
         boolean | ((error: Error) => Error) | Prisma.RejectPerOperation | undefined
     >;
 
     constructor() {
-        this.jwtPassword = CONFIG.SECURITY.JWT.PASSWORD;
+        this.jwtAlgorithm = CONFIG.SECURITY.JWT.ALGORITHM;
+        this.jwtPrivatePassword = CONFIG.SECURITY.JWT.PRIVATE_PASSWORD;
         this.jwtExpiration = CONFIG.SECURITY.JWT.EXPIRATION;
+        this.jwtIssuer = CONFIG.SECURITY.JWT.ISSUER;
 
         this.utenteModel = prisma.utente;
     }
@@ -56,7 +60,11 @@ export class AuthService {
 
     public generateAuthResponse(user: Utente): AuthResponse {
         const sub = user.uid;
-        const token = jwt.sign({ sub }, this.jwtPassword, { expiresIn: this.jwtExpiration });
+        const token = jwt.sign({ sub, role: user.ruolo }, this.jwtPrivatePassword, {
+            algorithm: this.jwtAlgorithm as jwt.Algorithm,
+            expiresIn: this.jwtExpiration,
+            issuer: this.jwtIssuer
+        });
 
         const response: AuthResponse = {
             token,

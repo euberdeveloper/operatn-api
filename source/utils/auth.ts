@@ -51,7 +51,9 @@ export default function (): Handler {
         new JwtStrategy(
             {
                 jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-                secretOrKey: CONFIG.SECURITY.JWT.PASSWORD
+                algorithms: [CONFIG.SECURITY.JWT.ALGORITHM],
+                secretOrKey: CONFIG.SECURITY.JWT.PUBLIC_PASSWORD,
+                issuer: CONFIG.SECURITY.JWT.ISSUER
             },
             (jwtPayload, done) => {
                 async function authenticate() {

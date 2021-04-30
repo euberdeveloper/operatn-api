@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import * as dotenv from 'dotenv';
+import * as fs from 'fs';
 import * as path from 'path';
 
 declare const process: {
@@ -10,6 +11,14 @@ declare const process: {
 dotenv.config({
     path: path.join(process.cwd(), '.env')
 });
+
+function getPath(address: string): string {
+    return path.join(process.cwd(), address);
+}
+
+function fileContent(path: string): string {
+    return fs.existsSync(path) ? fs.readFileSync(path, 'utf-8') : '';
+}
 
 const CONFIG = {
     SERVER: {
@@ -35,8 +44,13 @@ const CONFIG = {
     SECURITY: {
         SALT_ROUNDS: +process.env.SECURITY_SALT_ROUNDS,
         JWT: {
-            PASSWORD: process.env.SECURITY_JWT_PASSWORD,
-            EXPIRATION: process.env.SECURITY_JWT_EXPIRATION
+            ALGORITHM: process.env.SECURITY_JWT_ALGORITHM,
+            PRIVATE_PASSWORD_PATH: getPath(process.env.SECURITY_JWT_PRIVATE_PASSWORD_PATH),
+            PUBLIC_PASSWORD_PATH: getPath(process.env.SECURITY_JWT_PUBLIC_PASSWORD_PATH),
+            PRIVATE_PASSWORD: fileContent(getPath(process.env.SECURITY_JWT_PRIVATE_PASSWORD_PATH)),
+            PUBLIC_PASSWORD: fileContent(getPath(process.env.SECURITY_JWT_PUBLIC_PASSWORD_PATH)),
+            EXPIRATION: process.env.SECURITY_JWT_EXPIRATION,
+            ISSUER: process.env.SECURITY_JWT_ISSUER
         }
     },
     LOGGER: {
@@ -59,7 +73,7 @@ const CONFIG = {
         REFRESH_TOKEN: process.env.EMAIL_REFRESH_TOKEN,
         ACCESS_TOKEN: process.env.EMAIL_ACCESS_TOKEN,
         EXPIRES: process.env.EMAIL_EXPIRES,
-        TEMPLATES_PATH: process.env.EMAIL_TEMPLATES_PATH
+        TEMPLATES_PATH: getPath(process.env.EMAIL_TEMPLATES_PATH)
     },
     CONTABILITA: {
         API_URL: process.env.CONTABILITA_API_URL
