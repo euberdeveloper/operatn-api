@@ -32,7 +32,7 @@ export * from './controllers';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
-export type ErrorHandler = (error: AxiosError) => void | Promise<void>;
+export type ErrorHandler = (error: { error: AxiosError; config: any }) => void | Promise<void>;
 export class OperaTN {
     private _token!: string | null;
     private _apiRootEndpoint!: string;
@@ -117,7 +117,8 @@ export class OperaTN {
         this.axiosInstance.interceptors.response.use(
             res => res,
             error => {
-                throw handleError(error);
+                // eslint-disable-next-line @typescript-eslint/no-throw-literal
+                throw { error: handleError(error), config: error.config };
             }
         );
 
