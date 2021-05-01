@@ -22,42 +22,53 @@ export class TipiOspiteController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(params: TipiOspiteIncludeParams = {}): Promise<TipiOspiteReturned[]> {
+    public async getAll(
+        params: TipiOspiteIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiOspiteReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async get(id: number, params: TipiOspiteIncludeParams = {}): Promise<TipiOspiteReturned> {
+    public async get(
+        id: number,
+        params: TipiOspiteIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiOspiteReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async getByValue(sigla: string, params: TipiOspiteIncludeParams = {}): Promise<TipiOspiteReturned> {
+    public async getByValue(
+        sigla: string,
+        params: TipiOspiteIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiOspiteReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async create(body: TipiOspiteCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: TipiOspiteCreateBody, options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async replace(id: number, body: TipiOspiteReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${id}`, body);
+    public async replace(id: number, body: TipiOspiteReplaceBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async update(id: number, body: TipiOspiteUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${id}`, body);
+    public async update(id: number, body: TipiOspiteUpdateBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${id}`);
+    public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }
 
-    public async deleteByValue(sigla: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`);
+    public async deleteByValue(sigla: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`, { ...options });
     }
 }

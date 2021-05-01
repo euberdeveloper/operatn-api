@@ -12,9 +12,9 @@ export class ContabilitaController extends BaseController {
         super(axiosContainer);
     }
 
-    public async sendBollette(params: ContabilitaQueryParams): Promise<void> {
+    public async sendBollette(params: ContabilitaQueryParams, options: Record<string, any> = {}): Promise<void> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
     }
 }

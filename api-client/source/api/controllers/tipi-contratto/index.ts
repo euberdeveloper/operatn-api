@@ -19,38 +19,49 @@ export class TipiContrattoController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned[]> {
+    public async getAll(
+        params: TipiContrattoIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiContrattoReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async get(id: number, params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned> {
+    public async get(
+        id: number,
+        params: TipiContrattoIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiContrattoReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async getBySigla(sigla: string, params: TipiContrattoIncludeParams = {}): Promise<TipiContrattoReturned> {
+    public async getBySigla(
+        sigla: string,
+        params: TipiContrattoIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiContrattoReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async create(body: TipiContrattoCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: TipiContrattoCreateBody, options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async replace(id: number, body: TipiContrattoReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${id}`, body);
+    public async replace(id: number, body: TipiContrattoReplaceBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${id}`);
+    public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }
 
-    public async deleteBySigla(sigla: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`);
+    public async deleteBySigla(sigla: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`, { ...options });
     }
 }

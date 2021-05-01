@@ -15,72 +15,96 @@ export class UtentiController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(): Promise<UtentiReturned[]> {
-        const result = await this.axiosInstance.get(`${this.route}`);
+    public async getAll(options: Record<string, any> = {}): Promise<UtentiReturned[]> {
+        const result = await this.axiosInstance.get(`${this.route}`, { ...options });
         return result.data;
     }
 
-    public async getMe(): Promise<UtentiReturned> {
-        const result = await this.axiosInstance.get(`${this.route}/me`);
+    public async getMe(options: Record<string, any> = {}): Promise<UtentiReturned> {
+        const result = await this.axiosInstance.get(`${this.route}/me`, { ...options });
         return result.data;
     }
 
-    public async get(uuid: string): Promise<UtentiReturned> {
-        const result = await this.axiosInstance.get(`${this.route}/${uuid}`);
+    public async get(uuid: string, options: Record<string, any> = {}): Promise<UtentiReturned> {
+        const result = await this.axiosInstance.get(`${this.route}/${uuid}`, { ...options });
         return result.data;
     }
 
-    public async getByUsername(username: string): Promise<UtentiReturned> {
-        const result = await this.axiosInstance.get(`${this.route}/username/${username}`);
+    public async getByUsername(username: string, options: Record<string, any> = {}): Promise<UtentiReturned> {
+        const result = await this.axiosInstance.get(`${this.route}/username/${username}`, { ...options });
         return result.data;
     }
 
-    public async create(body: UtentiCreateBody): Promise<string> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: UtentiCreateBody, options: Record<string, any> = {}): Promise<string> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async update(uid: string, body: UtentiUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${uid}`, body);
+    public async update(uid: string, body: UtentiUpdateBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${uid}`, body, { ...options });
     }
 
-    public async updateByUsername(username: string, body: UtentiUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/username/${username}`, body);
+    public async updateByUsername(
+        username: string,
+        body: UtentiUpdateBody,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/username/${username}`, body, { ...options });
     }
 
-    public async changeRuolo(uid: string, body: UtentiUpdateRuoloBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${uid}/ruolo`, body);
+    public async changeRuolo(
+        uid: string,
+        body: UtentiUpdateRuoloBody,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${uid}/ruolo`, body, { ...options });
     }
 
-    public async changeRuoloByUsername(username: string, body: UtentiUpdateRuoloBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/username/${username}/ruolo`, body);
+    public async changeRuoloByUsername(
+        username: string,
+        body: UtentiUpdateRuoloBody,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/username/${username}/ruolo`, body, { ...options });
     }
 
-    public async changePassword(uid: string, body: UtentiUpdatePasswordBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${uid}/password`, body);
+    public async changePassword(
+        uid: string,
+        body: UtentiUpdatePasswordBody,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${uid}/password`, body, { ...options });
     }
 
-    public async changePasswordByUsername(username: string, body: UtentiUpdatePasswordBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/username/${username}/password`, body);
+    public async changePasswordByUsername(
+        username: string,
+        body: UtentiUpdatePasswordBody,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/username/${username}/password`, body, { ...options });
     }
 
-    public async askPasswordRecovery(username: string): Promise<void> {
-        return this.axiosInstance.post(`${this.route}/password-recovery`, { nomeUtente: username });
+    public async askPasswordRecovery(username: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.post(`${this.route}/password-recovery`, { nomeUtente: username }, { ...options });
     }
 
-    public async getUserByRecoveryToken(token: string): Promise<UtentiReturned> {
-        return this.axiosInstance.get(`${this.route}/password-recovery/${token}`);
+    public async getUserByRecoveryToken(token: string, options: Record<string, any> = {}): Promise<UtentiReturned> {
+        return this.axiosInstance.get(`${this.route}/password-recovery/${token}`, { ...options });
     }
 
-    public async recoverPassword(token: string, body: UtentiUpdatePasswordBody): Promise<void> {
-        return this.axiosInstance.post(`${this.route}/password-recovery/${token}`, body);
+    public async recoverPassword(
+        token: string,
+        body: UtentiUpdatePasswordBody,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        return this.axiosInstance.post(`${this.route}/password-recovery/${token}`, body, { ...options });
     }
 
-    public async delete(uid: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${uid}`);
+    public async delete(uid: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${uid}`, { ...options });
     }
 
-    public async deleteByUsername(username: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/username/${username}`);
+    public async deleteByUsername(username: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/username/${username}`, { ...options });
     }
 }

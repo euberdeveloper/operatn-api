@@ -17,8 +17,8 @@ export class AuthController extends BaseController {
         super(axiosContainer);
     }
 
-    public async login(body: AuthLoginBody): Promise<AuthLoginResponse> {
-        const result = await this.axiosInstance.post(`${this.route}/login`, body);
+    public async login(body: AuthLoginBody, options: Record<string, any> = {}): Promise<AuthLoginResponse> {
+        const result = await this.axiosInstance.post(`${this.route}/login`, body, { ...options });
         return result.data;
     }
 }

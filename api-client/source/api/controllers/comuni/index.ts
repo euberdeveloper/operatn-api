@@ -11,57 +11,59 @@ export class ComuniController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(): Promise<Comune[]> {
-        const result = await this.axiosInstance.get(`${this.route}`);
+    public async getAll(options: Record<string, any> = {}): Promise<Comune[]> {
+        const result = await this.axiosInstance.get(`${this.route}`, { ...options });
         return result.data;
     }
 
-    public async get(id: number): Promise<Comune> {
-        const result = await this.axiosInstance.get(`${this.route}/${id}`);
+    public async get(id: number, options: Record<string, any> = {}): Promise<Comune> {
+        const result = await this.axiosInstance.get(`${this.route}/${id}`, { ...options });
         return result.data;
     }
 
-    public async getByCodiceIstat(codiceIstat: string): Promise<Comune> {
-        const result = await this.axiosInstance.get(`${this.route}/codice-istat/${codiceIstat}`);
+    public async getByCodiceIstat(codiceIstat: string, options: Record<string, any> = {}): Promise<Comune> {
+        const result = await this.axiosInstance.get(`${this.route}/codice-istat/${codiceIstat}`, { ...options });
         return result.data;
     }
 
-    public async getByCodiceCatastale(codiceCatastale: string): Promise<Comune> {
-        const result = await this.axiosInstance.get(`${this.route}/codice-catastale/${codiceCatastale}`);
+    public async getByCodiceCatastale(codiceCatastale: string, options: Record<string, any> = {}): Promise<Comune> {
+        const result = await this.axiosInstance.get(`${this.route}/codice-catastale/${codiceCatastale}`, {
+            ...options
+        });
         return result.data;
     }
 
-    public async getByDenominazione(denominazione: string): Promise<Comune> {
-        const result = await this.axiosInstance.get(`${this.route}/denominazione/${denominazione}`);
+    public async getByDenominazione(denominazione: string, options: Record<string, any> = {}): Promise<Comune> {
+        const result = await this.axiosInstance.get(`${this.route}/denominazione/${denominazione}`, { ...options });
         return result.data;
     }
 
-    public async create(body: ComuniCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: ComuniCreateBody, options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async replace(id: number, body: ComuniReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${id}`, body);
+    public async replace(id: number, body: ComuniReplaceBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async update(id: number, body: ComuniUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${id}`, body);
+    public async update(id: number, body: ComuniUpdateBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${id}`);
+    public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }
 
-    public async deleteByCodiceIstat(codiceIstat: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/codice-istat/${codiceIstat}`);
+    public async deleteByCodiceIstat(codiceIstat: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/codice-istat/${codiceIstat}`, { ...options });
     }
 
-    public async deleteByCodiceCatastale(codiceCatastale: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/codice-catastale/${codiceCatastale}`);
+    public async deleteByCodiceCatastale(codiceCatastale: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/codice-catastale/${codiceCatastale}`, { ...options });
     }
 
-    public async deleteByDenominazione(denominazione: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/denominazione/${denominazione}`);
+    public async deleteByDenominazione(denominazione: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/denominazione/${denominazione}`, { ...options });
     }
 }

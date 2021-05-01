@@ -20,42 +20,53 @@ export class TipiBollettaController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(params: TipiBollettaIncludeParams = {}): Promise<TipiBollettaReturned[]> {
+    public async getAll(
+        params: TipiBollettaIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiBollettaReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async get(id: number, params: TipiBollettaIncludeParams = {}): Promise<TipiBollettaReturned> {
+    public async get(
+        id: number,
+        params: TipiBollettaIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiBollettaReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async getByValue(value: string, params: TipiBollettaIncludeParams = {}): Promise<TipiBollettaReturned> {
+    public async getByValue(
+        value: string,
+        params: TipiBollettaIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<TipiBollettaReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/value/${value}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/value/${value}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async create(body: TipiBollettaCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: TipiBollettaCreateBody, options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async replace(id: number, body: TipiBollettaReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${id}`, body);
+    public async replace(id: number, body: TipiBollettaReplaceBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async update(id: number, body: TipiBollettaUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${id}`, body);
+    public async update(id: number, body: TipiBollettaUpdateBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${id}`);
+    public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }
 
-    public async deleteByValue(value: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/value/${value}`);
+    public async deleteByValue(value: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/value/${value}`, { ...options });
     }
 }

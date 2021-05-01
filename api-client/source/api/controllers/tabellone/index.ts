@@ -13,21 +13,21 @@ export class TabelloneController extends BaseController {
         super(axiosContainer);
     }
 
-    public async get(params: TabelloneQueryParams): Promise<Tabellone[]> {
+    public async get(params: TabelloneQueryParams, options: Record<string, any> = {}): Promise<Tabellone[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async getTsv(params: TabelloneQueryParams): Promise<any> {
+    public async getTsv(params: TabelloneQueryParams, options: Record<string, any> = {}): Promise<any> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/tsv${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/tsv${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async getXlsx(params: TabelloneQueryParams): Promise<any> {
+    public async getXlsx(params: TabelloneQueryParams, options: Record<string, any> = {}): Promise<any> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/xlsx${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/xlsx${queryParams}`, { ...options });
         return result.data;
     }
 }

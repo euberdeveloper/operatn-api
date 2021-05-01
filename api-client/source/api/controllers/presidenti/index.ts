@@ -33,32 +33,39 @@ export class PresidentiController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(params: PresidentiIncludeParams = {}): Promise<PresidentiReturned[]> {
+    public async getAll(
+        params: PresidentiIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<PresidentiReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async get(id: number, params: PresidentiIncludeParams = {}): Promise<PresidentiReturned> {
+    public async get(
+        id: number,
+        params: PresidentiIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<PresidentiReturned> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`);
+        const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async create(body: PresidentiCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: PresidentiCreateBody, options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async replace(id: number, body: PresidentiReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${id}`, body);
+    public async replace(id: number, body: PresidentiReplaceBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async update(id: number, body: PresidentiUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${id}`, body);
+    public async update(id: number, body: PresidentiUpdateBody, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${id}`, body, { ...options });
     }
 
-    public async delete(id: number): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${id}`);
+    public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }
 }

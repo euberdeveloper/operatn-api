@@ -11,43 +11,55 @@ export class DipartimentiUnitnController extends BaseController {
         super(axiosContainer);
     }
 
-    public async getAll(): Promise<DipartimentoUnitn[]> {
-        const result = await this.axiosInstance.get(`${this.route}`);
+    public async getAll(options: Record<string, any> = {}): Promise<DipartimentoUnitn[]> {
+        const result = await this.axiosInstance.get(`${this.route}`, { ...options });
         return result.data;
     }
 
-    public async get(codice: string): Promise<DipartimentoUnitn> {
-        const result = await this.axiosInstance.get(`${this.route}/${codice}`);
+    public async get(codice: string, options: Record<string, any> = {}): Promise<DipartimentoUnitn> {
+        const result = await this.axiosInstance.get(`${this.route}/${codice}`, { ...options });
         return result.data;
     }
 
-    public async getBySigla(sigla: string): Promise<DipartimentoUnitn> {
-        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}`);
+    public async getBySigla(sigla: string, options: Record<string, any> = {}): Promise<DipartimentoUnitn> {
+        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}`, { ...options });
         return result.data;
     }
 
-    public async create(body: DipartimentiUnitnCreateBody): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body);
+    public async create(body: DipartimentiUnitnCreateBody, options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
 
-    public async replace(codice: string, body: DipartimentiUnitnReplaceBody): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${codice}`, body);
+    public async replace(
+        codice: string,
+        body: DipartimentiUnitnReplaceBody,
+        options: Record<string, any>
+    ): Promise<void> {
+        return this.axiosInstance.put(`${this.route}/${codice}`, body, { ...options });
     }
 
-    public async update(codice: string, body: DipartimentiUnitnUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${codice}`, body);
+    public async update(
+        codice: string,
+        body: DipartimentiUnitnUpdateBody,
+        options: Record<string, any>
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/${codice}`, body, { ...options });
     }
 
-    public async updateBySigla(sigla: string, body: DipartimentiUnitnUpdateBody): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/sigla/${sigla}`, body);
+    public async updateBySigla(
+        sigla: string,
+        body: DipartimentiUnitnUpdateBody,
+        options: Record<string, any>
+    ): Promise<void> {
+        return this.axiosInstance.patch(`${this.route}/sigla/${sigla}`, body, { ...options });
     }
 
-    public async delete(codice: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/${codice}`);
+    public async delete(codice: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/${codice}`, { ...options });
     }
 
-    public async deleteBySigla(sigla: string): Promise<void> {
-        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`);
+    public async deleteBySigla(sigla: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`, { ...options });
     }
 }
