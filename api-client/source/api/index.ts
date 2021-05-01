@@ -3,30 +3,32 @@ import axios, { AxiosError, AxiosInstance } from 'axios';
 import { AxiosContainer } from '@/utils/baseController';
 import { handleError } from '@/utils/handleError';
 
-import { AuthController } from './controllers/auth';
-import { ComuniController } from './controllers/comuni';
-import { ContabilitaController } from './controllers/contabilita';
-import { ContiRicaviCanoniController } from './controllers/conti-ricavi-canoni';
-import { ContiRicaviConsumiController } from './controllers/conti-ricavi-consumi';
-import { DipartimentiUnitnController } from './controllers/dipartimenti-unitn';
-import { OspitiController } from './controllers/ospiti';
-import { PresidentiController } from './controllers/presidenti';
-import { ProvinceController } from './controllers/province';
-import { QuietanziantiController } from './controllers/quietanzianti';
-import { StatiController } from './controllers/stati';
-import { TabelloneController } from './controllers/tabellone';
-import { TariffeController } from './controllers/tariffe';
-import { TipiBollettaController } from './controllers/tipi-bolletta';
-import { TipiContrattoController } from './controllers/tipi-contratto';
-import { TipiFabbricatoController } from './controllers/tipi-fabbricato';
-import { TipiOspiteController } from './controllers/tipi-ospite';
-import { TipiStanzaController } from './controllers/tipi-stanza';
-import { TipiStudenteController } from './controllers/tipi-studente';
-import { TipiTariffaController } from './controllers/tipi-tariffa';
-import { UtentiController } from './controllers/utenti';
-import { UtilizziStanzaController } from './controllers/utilizzi-stanza';
+import {
+    AuthController,
+    ComuniController,
+    ContabilitaController,
+    ContiRicaviCanoniController,
+    ContiRicaviConsumiController,
+    DipartimentiUnitnController,
+    OspitiController,
+    PresidentiController,
+    ProvinceController,
+    QuietanziantiController,
+    StatiController,
+    TabelloneController,
+    TariffeController,
+    TipiBollettaController,
+    TipiContrattoController,
+    TipiFabbricatoController,
+    TipiOspiteController,
+    TipiStanzaController,
+    TipiStudenteController,
+    TipiTariffaController,
+    UtentiController,
+    UtilizziStanzaController
+} from './controllers';
 
-export * as controllers from './controllers';
+export * from './controllers';
 
 const DEFAULT_ROOT_ENDPOINT = 'http://localhost:3000/api/';
 
