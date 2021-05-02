@@ -1,7 +1,7 @@
 import { DipartimentoUnitn } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
-export type DipartimentiUnitnCreateBody = DipartimentoUnitn & { codice?: number };
+export type DipartimentiUnitnCreateBody = DipartimentoUnitn & { codice?: string };
 export type DipartimentiUnitnReplaceBody = Omit<DipartimentoUnitn, 'codice'>;
 export type DipartimentiUnitnUpdateBody = Partial<DipartimentiUnitnReplaceBody>;
 export class DipartimentiUnitnController extends BaseController {
@@ -26,7 +26,7 @@ export class DipartimentiUnitnController extends BaseController {
         return result.data;
     }
 
-    public async create(body: DipartimentiUnitnCreateBody, options: Record<string, any> = {}): Promise<number> {
+    public async create(body: DipartimentiUnitnCreateBody, options: Record<string, any> = {}): Promise<string> {
         const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
     }
