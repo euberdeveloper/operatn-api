@@ -140,7 +140,7 @@ model DocumentoIdentita {
 
 model DipartimentoUnitn {
     codice    String  @id @map("codice")
-    sigla     String? @unique @map("sigla")
+    sigla     String @unique @map("sigla")
     nome      String  @unique @map("nome")
     provincia String  @map("provincia")
     comune    String  @map("comune")
