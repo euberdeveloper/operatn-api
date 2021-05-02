@@ -3,7 +3,7 @@ import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type DipartimentiUnitnCreateBody = DipartimentoUnitn & { codice?: string };
 export type DipartimentiUnitnReplaceBody = Omit<DipartimentoUnitn, 'codice'>;
-export type DipartimentiUnitnUpdateBody = Partial<DipartimentiUnitnReplaceBody>;
+export type DipartimentiUnitnUpdateBody = Partial<DipartimentiUnitnCreateBody>;
 export class DipartimentiUnitnController extends BaseController {
     public route = '/dipartimenti-unitn';
 
