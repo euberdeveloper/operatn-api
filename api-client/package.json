@@ -17,7 +17,7 @@
     "transpile": "tsc -p source",
     "lint": "eslint source --ext ts --format codeframe",
     "lint:fix": "eslint source --ext ts --format codeframe --fix",
-    "prebundle": "npm run clean && npm run port",
+    "prebundle": "npm run clean && npm run port && npm run lint:fix",
     "bundle": "webpack",
     "docs": "typedoc",
     "prepublishOnly": "npm run clean && npm run bundle"
