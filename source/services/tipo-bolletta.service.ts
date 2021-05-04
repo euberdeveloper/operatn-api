@@ -13,7 +13,9 @@ export class TipoBollettaService extends TableService {
         id: Joi.number().integer().positive().optional(),
         tipoBolletta: Joi.string().min(1),
         importo: Joi.number().positive().precision(2).allow(null).optional().options({ convert: false }),
-        idQuietanziante: Joi.number().integer().positive().optional()
+        idQuietanziante: Joi.number().integer().positive().allow(null).optional(),
+        idContoRicaviCanoni: Joi.number().integer().positive().allow(null).optional(),
+        idContoRicaviConsumi: Joi.number().integer().positive().allow(null).optional()
     };
 
     protected postValidatorExcludes = ['id'];
