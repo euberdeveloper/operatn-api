@@ -9,6 +9,13 @@ import prisma, { Prisma, Bolletta, TipoRata } from '@/services/prisma.service';
 import { InternalServerError, NotFoundError } from '@/errors';
 import { TableService } from './table.service';
 
+interface TipoBollettaDetails {
+    id: number;
+    idQuietanziante: number;
+    contoRicaviCanoni: string;
+    contoRicaviConsumi: string;
+}
+
 export class BollettaService extends TableService {
     protected readonly model: Prisma.BollettaDelegate<
         boolean | ((error: Error) => Error) | Prisma.RejectPerOperation | undefined
@@ -48,9 +55,11 @@ export class BollettaService extends TableService {
     }
 
     private async getTipiBolletta(
-        idQuietanzianteContratto: number
-    ): Promise<Record<string, { id: number; idQuietanziante: number }>> {
-        const result = {} as Record<string, { id: number; idQuietanziante: number }>;
+        idQuietanzianteContratto: number,
+        contoRicaviCanoniContratto: string,
+        contoRicaviConsumiContratto: string
+    ): Promise<Record<string, TipoBollettaDetails>> {
+        const result = {} as Record<string, TipoBollettaDetails>;
 
         for (const [tipoRata, nomeTipoBolletta] of [
             [TipoRata.DA_BANDO, 'RATA DA BANDO'],
@@ -62,7 +71,12 @@ export class BollettaService extends TableService {
         ]) {
             const tipoBolletta = await prisma.tipoBolletta.findUnique({
                 where: { tipoBolletta: nomeTipoBolletta },
-                select: { id: true, idQuietanziante: true }
+                select: {
+                    id: true,
+                    idQuietanziante: true,
+                    contoRicaviCanoni: { select: { contoRicaviCanoni: true } },
+                    contoRicaviConsumi: { select: { contoRicaviConsumi: true } }
+                }
             });
 
             if (!tipoBolletta) {
@@ -71,7 +85,9 @@ export class BollettaService extends TableService {
 
             result[tipoRata] = {
                 id: tipoBolletta.id,
-                idQuietanziante: tipoBolletta.idQuietanziante ?? idQuietanzianteContratto
+                idQuietanziante: tipoBolletta.idQuietanziante ?? idQuietanzianteContratto,
+                contoRicaviCanoni: tipoBolletta.contoRicaviCanoni?.contoRicaviCanoni ?? contoRicaviCanoniContratto,
+                contoRicaviConsumi: tipoBolletta.contoRicaviConsumi?.contoRicaviConsumi ?? contoRicaviConsumiContratto
             };
         }
 
@@ -119,10 +135,17 @@ export class BollettaService extends TableService {
         cauzione: number,
         dataInizio: Date,
         nOspiti: number,
-        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>
+        tipiBolletta: Record<string, TipoBollettaDetails>
     ): Pick<
         Bolletta,
-        'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta' | 'idQuietanziante'
+        | 'importoTotale'
+        | 'competenzaDal'
+        | 'competenzaAl'
+        | 'dataScadenza'
+        | 'idTipoBolletta'
+        | 'idQuietanziante'
+        | 'contoRicaviCanoni'
+        | 'contoRicaviConsumi'
     > {
         const startDate = this.resetTime(this.utcDate(dataInizio));
         return {
@@ -131,7 +154,9 @@ export class BollettaService extends TableService {
             dataScadenza: startDate.toDate(),
             importoTotale: nOspiti * cauzione,
             idTipoBolletta: tipiBolletta.CAUZIONE.id,
-            idQuietanziante: tipiBolletta.CAUZIONE.idQuietanziante
+            idQuietanziante: tipiBolletta.CAUZIONE.idQuietanziante,
+            contoRicaviCanoni: tipiBolletta.CAUZIONE.contoRicaviCanoni,
+            contoRicaviConsumi: tipiBolletta.CAUZIONE.contoRicaviConsumi
         };
     }
 
@@ -139,11 +164,18 @@ export class BollettaService extends TableService {
         checkout: number,
         dataFine: Date,
         nOspiti: number,
-        tipiBolletta: Record<string, { id: number; idQuietanziante: number }>,
+        tipiBolletta: Record<string, TipoBollettaDetails>,
         dataInizio: Date // Contracts after 01/09/2021 will start having a differend dataScadenza
     ): Pick<
         Bolletta,
-        'importoTotale' | 'competenzaDal' | 'competenzaAl' | 'dataScadenza' | 'idTipoBolletta' | 'idQuietanziante'
+        | 'importoTotale'
+        | 'competenzaDal'
+        | 'competenzaAl'
+        | 'dataScadenza'
+        | 'idTipoBolletta'
+        | 'idQuietanziante'
+        | 'contoRicaviCanoni'
+        | 'contoRicaviConsumi'
     > {
         const endDate = this.resetTime(this.utcDate(dataFine));
         const isNewType = +dataInizio >= +new Date('2021-09-01');
@@ -153,7 +185,9 @@ export class BollettaService extends TableService {
             dataScadenza: isNewType ? endDate.date(0).subtract(1, 'day').toDate() : endDate.toDate(),
             importoTotale: nOspiti * checkout,
             idTipoBolletta: tipiBolletta.CHECKOUT.id,
-            idQuietanziante: tipiBolletta.CHECKOUT.idQuietanziante
+            idQuietanziante: tipiBolletta.CHECKOUT.idQuietanziante,
+            contoRicaviCanoni: tipiBolletta.CHECKOUT.contoRicaviCanoni,
+            contoRicaviConsumi: tipiBolletta.CHECKOUT.contoRicaviConsumi
         };
     }
 
@@ -679,15 +713,17 @@ export class BollettaService extends TableService {
             | 'idQuietanziante'
         >[] = [];
 
-        const tipiBolletta = await this.getTipiBolletta(idQuietanzianteContratto);
+        const tipiBolletta = await this.getTipiBolletta(
+            idQuietanzianteContratto,
+            contoRicaviCanoni,
+            contoRicaviConsumi
+        );
 
         if (cauzione) {
             const bollettaCauzione = this.calcBollettaCauzione(cauzione, dataInizio, nOspiti, tipiBolletta);
             result.push({
                 idContratto,
                 centroDiCosto,
-                contoRicaviCanoni,
-                contoRicaviConsumi,
                 importoCanoni: null,
                 importoConsumi: null,
                 ...bollettaCauzione
@@ -767,8 +803,6 @@ export class BollettaService extends TableService {
             result.push({
                 idContratto,
                 centroDiCosto,
-                contoRicaviCanoni,
-                contoRicaviConsumi,
                 importoCanoni: null,
                 importoConsumi: null,
                 ...bollettaCheckout
