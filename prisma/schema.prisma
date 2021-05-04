@@ -139,15 +139,15 @@ model DocumentoIdentita {
 }
 
 model DipartimentoUnitn {
-    codice    String  @id @map("codice")
+    codice    String @id @map("codice")
     sigla     String @unique @map("sigla")
-    nome      String  @unique @map("nome")
-    provincia String  @map("provincia")
-    comune    String  @map("comune")
-    cap       String  @map("cap") @db.Char(5)
-    indirizzo String  @map("indirizzo")
-    nCivico   String  @map("n_civico")
-    sitoWeb   String  @map("sito_web")
+    nome      String @unique @map("nome")
+    provincia String @map("provincia")
+    comune    String @map("comune")
+    cap       String @map("cap") @db.Char(5)
+    indirizzo String @map("indirizzo")
+    nCivico   String @map("n_civico")
+    sitoWeb   String @map("sito_web")
 
     dataCreazione DateTime  @default(now()) @map("_data_creazione")
     eliminato     DateTime? @map("_eliminato")
@@ -437,6 +437,7 @@ model ContoRicaviConsumi {
 
     TipoOspite TipoOspite[]
     @@map("conto_ricavi_consumi")
+    TipoBolletta TipoBolletta[]
 }
 
 model ContoRicaviCanoni {
@@ -446,6 +447,7 @@ model ContoRicaviCanoni {
 
     TipoOspite TipoOspite[]
     @@map("conto_ricavi_canoni")
+    TipoBolletta TipoBolletta[]
 }
 
 // BOLLETTA
@@ -491,6 +493,12 @@ model TipoBolletta {
 
     idQuietanziante Int?           @map("id_quietanziante")
     quietanziante   Quietanziante? @relation(fields: [idQuietanziante], references: [id])
+
+    idContoRicaviCanoni Int?               @map("id_conto_ricavi_canoni")
+    contoRicaviCanoni   ContoRicaviCanoni? @relation(fields: [idContoRicaviCanoni], references: [id])
+
+    idContoRicaviConsumi Int?                @map("id_conto_ricavi_consumi")
+    contoRicaviConsumi   ContoRicaviConsumi? @relation(fields: [idContoRicaviConsumi], references: [id])
 
     Bolletta Bolletta[]
     @@map("tipo_bolletta")
@@ -568,7 +576,7 @@ enum RuoloUtente {
 // CRONOLOGIA
 
 model Cronologia {
-    id        Int               @id @default(autoincrement()) @map("uid")
+    id        Int               @id @default(autoincrement()) @map("id")
     timestamp DateTime          @map("timestamp")
     ip        String            @map("ip")
     uid       String            @map("uid")
