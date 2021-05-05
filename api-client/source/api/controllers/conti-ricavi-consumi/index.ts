@@ -26,6 +26,11 @@ export class ContiRicaviConsumiController extends BaseController {
         return result.data;
     }
 
+    public async getBySigla(sigla: string, options: Record<string, any> = {}): Promise<ContoRicaviConsumi> {
+        const result = await this.axiosInstance.get(`${this.route}/sigla/${sigla}`, { ...options });
+        return result.data;
+    }
+
     public async create(body: ContiRicaviConsumiCreateBody, options: Record<string, any> = {}): Promise<number> {
         const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;
@@ -45,5 +50,9 @@ export class ContiRicaviConsumiController extends BaseController {
 
     public async deleteByCodice(codice: string, options: Record<string, any> = {}): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/codice/${codice}`, { ...options });
+    }
+
+    public async deleteBySigla(sigla: string, options: Record<string, any> = {}): Promise<void> {
+        return this.axiosInstance.delete(`${this.route}/sigla/${sigla}`, { ...options });
     }
 }
