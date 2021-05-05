@@ -12,6 +12,7 @@ export class ContoRicaviConsumiService extends TableService {
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
         codice: Joi.string().min(1),
+        sigla: Joi.string().min(1),
         contoRicaviConsumi: Joi.string().min(1)
     };
 
@@ -51,6 +52,16 @@ export class ContoRicaviConsumiService extends TableService {
         return contoRicaviConsumi;
     }
 
+    public async getContoRicaviConsumiBySigla(sigla: string): Promise<ContoRicaviConsumi> {
+        this.validateStringParam(sigla, 'sigla');
+
+        const contoRicaviConsumi = await this.model.findUnique({ where: { sigla } });
+        if (contoRicaviConsumi === null) {
+            throw new NotFoundError('Conto ricavi consumi not found');
+        }
+        return contoRicaviConsumi;
+    }
+
     public async postContoRicaviConsumi(body: any): Promise<number> {
         return handlePrismaError(async () => {
             const contoRicaviConsumi = this.validatePostBody(body);
@@ -82,6 +93,13 @@ export class ContoRicaviConsumiService extends TableService {
         return handlePrismaError(async () => {
             this.validateStringParam(codice, 'codice');
             await this.model.delete({ where: { codice } });
+        });
+    }
+
+    public async delContoRicaviConsumiBySigla(sigla: string): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateStringParam(sigla, 'sigla');
+            await this.model.delete({ where: { sigla } });
         });
     }
 }

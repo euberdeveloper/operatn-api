@@ -36,6 +36,15 @@ export default function (): Router {
         })
     );
 
+    router.get(
+        '/sigla/:sigla',
+        asyncHandler(async (req, res) => {
+            const sigla = req.params.sigla;
+            const contoRicaviConsumi = await contoRicaviCanoni.getContoRicaviCanoniBySigla(sigla);
+            res.json(contoRicaviConsumi);
+        })
+    );
+
     router.post(
         '/',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
@@ -73,6 +82,16 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             await contoRicaviCanoni.delContoRicaviCanoniByCodice(codice);
+            res.json();
+        })
+    );
+
+    router.delete(
+        '/sigla/:sigla',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        asyncHandler(async (req, res) => {
+            const sigla = req.params.sigla;
+            await contoRicaviCanoni.delContoRicaviCanoniBySigla(sigla);
             res.json();
         })
     );

@@ -4,10 +4,14 @@ import prisma, { Bolletta, Quietanziante, TipoBolletta } from '@/services/prisma
 import { ContabilitaError, InvalidQueryParamError } from '@/errors';
 import logger from '@/utils/logger';
 import CONFIG from '@/config';
+import { Contratto, TipoContratto } from '@prisma/client';
 
 type BollettaInfo = Bolletta & {
     quietanziante: Quietanziante;
     tipoBolletta: TipoBolletta;
+    contratto: Contratto & {
+        tipoContratto: TipoContratto;
+    };
 };
 
 export class ContabilitaService {
@@ -21,9 +25,55 @@ export class ContabilitaService {
             },
             include: {
                 quietanziante: true,
-                tipoBolletta: true
+                tipoBolletta: true,
+                contratto: {
+                    include: {
+                        tipoContratto: true
+                    }
+                }
             }
         });
+    }
+
+    private getXmlTestata(bolletta: BollettaInfo): string {
+        const currDate = new Date();
+        const year = currDate.getFullYear();
+        const month = currDate.getMonth() + 1;
+        const dateStr = `${year}-${month}-${currDate.getDay()}`;
+        const idBolletta = bolletta.id;
+        const siglaTipoContratto = bolletta.contratto.tipoContratto.sigla;
+        return `
+        <tem:testata>
+            <tem:istituto>1</tem:istituto>
+            <tem:subtserie>0</tem:subtserie>
+            <tem:codserie>${year}</tem:codserie>
+            <tem:coddoc>3001</tem:coddoc>
+            <tem:tipodoc>D</tem:tipodoc>
+            <tem:codcont>CO</tem:codcont>
+            <tem:clascont>GE</tem:clascont>
+            <tem:datacar>${dateStr}</tem:datacar>
+            <tem:sezionale>101</tem:sezionale>
+            <tem:codpag>8</tem:codpag>
+            <tem:cliente></tem:cliente>
+            <tem:numdoc>${idBolletta}</tem:numdoc>
+            <tem:datadoc>${dateStr}</tem:datadoc>
+            <tem:denomin>EL HAYEK SOPHIE</tem:denomin><!-- cognome nome -->
+            <tem:indirizzo>ST ZAKHIA STREET, 6</tem:indirizzo><!-- indirizzo di residenza -->
+            <tem:cap>11111</tem:cap><!-- cap residenza (11111) se straniero -->
+            <tem:citta>AMCHIT</tem:citta><!-- cttà residenza -->
+            <tem:prov>EE</tem:prov><!-- sigla provincia (EE) se stero -->
+            <tem:codfisc>LHYSPH97B61Z229U</tem:codfisc><!-- codice fiscale -->
+            <tem:impbollo>0</tem:impbollo><!-- == -->
+            <tem:totale>160.00</tem:totale><!-- totale importo -->
+            <tem:stato>2</tem:stato><!-- == -->
+            <tem:fl_postel>S</tem:fl_postel><!-- == -->
+            <tem:ufficio>1</tem:ufficio><!-- == -->
+            <tem:distretto>0</tem:distretto><!-- == -->
+            <tem:causale>BB</tem:causale><!-- B prefisso /// C se cauzione, B se rata, F altre spese /// (checkout 3 N MAI MESSO) /// CAUSALE -> TIPO BOLLETTA --> 
+            <tem:descr>${siglaTipoContratto} - B - ${year}/515 RIFER.MESE: ${month} - ANNO: ${year}</tem:descr>
+            <tem:numdoc_def>B-${idBolletta}</tem:numdoc_def><!-- BCF-ID_BOLLETTA -->
+        </tem:testata>  
+        `;
     }
 
     private getXmlFromBolletta(bolletta: BollettaInfo): string {

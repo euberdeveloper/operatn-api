@@ -433,21 +433,23 @@ model TipoStudente {
 model ContoRicaviConsumi {
     id                 Int    @id @default(autoincrement()) @map("id")
     codice             String @unique @map("codice")
+    sigla              String @unique @map("sigla")
     contoRicaviConsumi String @unique @map("conto_ricavi_consumi")
 
-    TipoOspite TipoOspite[]
-    @@map("conto_ricavi_consumi")
+    TipoOspite   TipoOspite[]
     TipoBolletta TipoBolletta[]
+    @@map("conto_ricavi_consumi")
 }
 
 model ContoRicaviCanoni {
     id                Int    @id @default(autoincrement()) @map("id")
     codice            String @unique @map("codice")
+    sigla             String @unique @map("sigla")
     contoRicaviCanoni String @unique @map("conto_ricavi_canoni")
 
-    TipoOspite TipoOspite[]
-    @@map("conto_ricavi_canoni")
+    TipoOspite   TipoOspite[]
     TipoBolletta TipoBolletta[]
+    @@map("conto_ricavi_canoni")
 }
 
 // BOLLETTA
