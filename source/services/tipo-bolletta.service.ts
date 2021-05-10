@@ -12,7 +12,9 @@ export class TipoBollettaService extends TableService {
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
         tipoBolletta: Joi.string().min(1),
-        importo: Joi.number().positive().precision(2).allow(null).optional().options({ convert: false }),
+        siglaCausale: Joi.string().length(1),
+        importoCanone: Joi.number().positive().precision(2).allow(null).optional().options({ convert: false }),
+        importoConsumi: Joi.number().positive().precision(2).allow(null).optional().options({ convert: false }),
         idQuietanziante: Joi.number().integer().positive().allow(null).optional(),
         idContoRicaviCanoni: Joi.number().integer().positive().allow(null).optional(),
         idContoRicaviConsumi: Joi.number().integer().positive().allow(null).optional()
@@ -22,7 +24,7 @@ export class TipoBollettaService extends TableService {
     protected putValidatorExcludes = ['id'];
     protected patchValidatorExcludes = [];
 
-    protected includeQueryParameters = ['quietanziante'];
+    protected includeQueryParameters = ['quietanziante', 'contoRicaviCanoni', 'contoRicaviConsumi'];
     protected includeQueryParametersSoftCheck = [];
 
     constructor() {

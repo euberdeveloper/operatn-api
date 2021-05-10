@@ -476,6 +476,7 @@ model Bolletta {
 
     centroDiCosto String? @map("centro_di_costo")
     siglaCausale  String  @map("sigla_causale")
+    siglaTipoContratto  String  @map("sigla_tipo_contratto")
 
     idContoRicaviCanoni Int?         @map("id_conto_ricavi_canoni")
     contoRicaviCanoni   ContoRicavi? @relation(name: "bolletta_to_conto_ricavi_canoni", fields: [idContoRicaviCanoni], references: [id])
@@ -495,8 +496,8 @@ model Bolletta {
     idQuietanziante Int           @map("id_quietanziante")
     quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
 
-    idOspite Int    @map("id_ospite")
-    ospite   Ospite @relation(fields: [idOspite], references: [id])
+    idOspite Int?    @map("id_ospite")
+    ospite   Ospite? @relation(fields: [idOspite], references: [id])
 
     Bolletta Bolletta[] @relation("BollettaToBolletta")
     @@map("bolletta")

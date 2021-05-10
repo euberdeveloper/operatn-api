@@ -11,9 +11,10 @@ import { TableService } from './table.service';
 
 interface TipoBollettaDetails {
     id: number;
+    siglaCausale: string;
     idQuietanziante: number;
-    contoRicaviCanoni: string;
-    contoRicaviConsumi: string;
+    idContoRicaviCanoni: number;
+    idContoRicaviConsumi: number;
 }
 
 export class BollettaService extends TableService {
@@ -41,11 +42,13 @@ export class BollettaService extends TableService {
         'contratto.contrattiSuOspite.ospite.persona.residenza',
         'contratto.contrattiSuOspite.ospite.persona.luogoDiNascita',
         'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto',
-        'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto',
+        'contratto.contrattiSuOspite.contrattiSuOcontoRicaviConsumispiteSuPostoLetto.postoLetto',
         'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto.stanza',
         'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto.stanza.fabbricato',
         'tipoBolletta',
-        'quietanziante'
+        'quietanziante',
+        'contoRicaviCanoni',
+        'contoRicaviConsumi'
     ];
     protected includeQueryParametersSoftCheck = [];
 
@@ -56,8 +59,8 @@ export class BollettaService extends TableService {
 
     private async getTipiBolletta(
         idQuietanzianteContratto: number,
-        contoRicaviCanoniContratto: string,
-        contoRicaviConsumiContratto: string
+        contoRicaviCanoniContratto: number,
+        contoRicaviConsumiContratto: number
     ): Promise<Record<string, TipoBollettaDetails>> {
         const result = {} as Record<string, TipoBollettaDetails>;
 
@@ -70,13 +73,7 @@ export class BollettaService extends TableService {
             ['CHECKOUT', 'CHECKOUT']
         ]) {
             const tipoBolletta = await prisma.tipoBolletta.findUnique({
-                where: { tipoBolletta: nomeTipoBolletta },
-                select: {
-                    id: true,
-                    idQuietanziante: true,
-                    contoRicaviCanoni: { select: { contoRicaviCanoni: true } },
-                    contoRicaviConsumi: { select: { contoRicaviConsumi: true } }
-                }
+                where: { tipoBolletta: nomeTipoBolletta }
             });
 
             if (!tipoBolletta) {
@@ -85,9 +82,10 @@ export class BollettaService extends TableService {
 
             result[tipoRata] = {
                 id: tipoBolletta.id,
+                siglaCausale: tipoBolletta.siglaCausale,
                 idQuietanziante: tipoBolletta.idQuietanziante ?? idQuietanzianteContratto,
-                contoRicaviCanoni: tipoBolletta.contoRicaviCanoni?.contoRicaviCanoni ?? contoRicaviCanoniContratto,
-                contoRicaviConsumi: tipoBolletta.contoRicaviConsumi?.contoRicaviConsumi ?? contoRicaviConsumiContratto
+                idContoRicaviCanoni: tipoBolletta.idContoRicaviCanoni ?? contoRicaviCanoniContratto,
+                idContoRicaviConsumi: tipoBolletta.idContoRicaviConsumi ?? contoRicaviConsumiContratto
             };
         }
 
@@ -138,25 +136,31 @@ export class BollettaService extends TableService {
         tipiBolletta: Record<string, TipoBollettaDetails>
     ): Pick<
         Bolletta,
+        | 'importoCanoni'
+        | 'importoConsumi'
         | 'importoTotale'
         | 'competenzaDal'
         | 'competenzaAl'
         | 'dataScadenza'
         | 'idTipoBolletta'
         | 'idQuietanziante'
-        | 'contoRicaviCanoni'
-        | 'contoRicaviConsumi'
+        | 'idContoRicaviCanoni'
+        | 'idContoRicaviConsumi'
+        | 'siglaCausale'
     > {
         const startDate = this.resetTime(this.utcDate(dataInizio));
         return {
             competenzaDal: startDate.toDate(),
             competenzaAl: this.lastDayOfMonth(startDate).toDate(),
             dataScadenza: startDate.toDate(),
+            importoCanoni: nOspiti * cauzione,
+            importoConsumi: null,
             importoTotale: nOspiti * cauzione,
             idTipoBolletta: tipiBolletta.CAUZIONE.id,
             idQuietanziante: tipiBolletta.CAUZIONE.idQuietanziante,
-            contoRicaviCanoni: tipiBolletta.CAUZIONE.contoRicaviCanoni,
-            contoRicaviConsumi: tipiBolletta.CAUZIONE.contoRicaviConsumi
+            idContoRicaviCanoni: tipiBolletta.CAUZIONE.idContoRicaviCanoni,
+            idContoRicaviConsumi: tipiBolletta.CAUZIONE.idContoRicaviConsumi,
+            siglaCausale: tipiBolletta.CAUZIONE.siglaCausale
         };
     }
 
@@ -168,14 +172,17 @@ export class BollettaService extends TableService {
         dataInizio: Date // Contracts after 01/09/2021 will start having a differend dataScadenza
     ): Pick<
         Bolletta,
+        | 'importoCanoni'
+        | 'importoConsumi'
         | 'importoTotale'
         | 'competenzaDal'
         | 'competenzaAl'
         | 'dataScadenza'
         | 'idTipoBolletta'
         | 'idQuietanziante'
-        | 'contoRicaviCanoni'
-        | 'contoRicaviConsumi'
+        | 'idContoRicaviCanoni'
+        | 'idContoRicaviConsumi'
+        | 'siglaCausale'
     > {
         const endDate = this.resetTime(this.utcDate(dataFine));
         const isNewType = +dataInizio >= +new Date('2021-09-01');
@@ -183,11 +190,14 @@ export class BollettaService extends TableService {
             competenzaDal: this.resetTime(endDate.startOf('month')).toDate(),
             competenzaAl: endDate.toDate(),
             dataScadenza: isNewType ? endDate.date(0).subtract(1, 'day').toDate() : endDate.toDate(),
+            importoCanoni: null,
+            importoConsumi: nOspiti * checkout,
             importoTotale: nOspiti * checkout,
             idTipoBolletta: tipiBolletta.CHECKOUT.id,
             idQuietanziante: tipiBolletta.CHECKOUT.idQuietanziante,
-            contoRicaviCanoni: tipiBolletta.CHECKOUT.contoRicaviCanoni,
-            contoRicaviConsumi: tipiBolletta.CHECKOUT.contoRicaviConsumi
+            idContoRicaviCanoni: tipiBolletta.CHECKOUT.idContoRicaviCanoni,
+            idContoRicaviConsumi: tipiBolletta.CHECKOUT.idContoRicaviConsumi,
+            siglaCausale: tipiBolletta.CHECKOUT.siglaCausale
         };
     }
 
@@ -694,11 +704,13 @@ export class BollettaService extends TableService {
         canone: number,
         consumi: number,
         nOspiti: number,
-        contoRicaviCanoni: string,
-        contoRicaviConsumi: string,
+        idContoRicaviCanoni: number,
+        idContoRicaviConsumi: number,
         centroDiCosto: string,
         tipoTariffa: 'MENSILE' | 'GIORNALIERA',
+        siglaTipoContratto: string,
         idContratto: number,
+        idOspite: number | null,
         idQuietanzianteContratto: number
     ) {
         const result: Omit<Bolletta, 'id' | 'idBollettaStornata' | 'dataInvioEusis' | 'dataRegistrazione'>[] = [];
@@ -715,17 +727,17 @@ export class BollettaService extends TableService {
 
         const tipiBolletta = await this.getTipiBolletta(
             idQuietanzianteContratto,
-            contoRicaviCanoni,
-            contoRicaviConsumi
+            idContoRicaviCanoni,
+            idContoRicaviConsumi
         );
 
         if (cauzione) {
             const bollettaCauzione = this.calcBollettaCauzione(cauzione, dataInizio, nOspiti, tipiBolletta);
             result.push({
                 idContratto,
-                centroDiCosto,
-                importoCanoni: null,
-                importoConsumi: null,
+                idOspite,
+                siglaTipoContratto,
+                centroDiCosto: null,
                 ...bollettaCauzione
             });
         }
@@ -790,10 +802,13 @@ export class BollettaService extends TableService {
         result.push(
             ...bollette.map(bolletta => ({
                 idContratto,
+                idOspite,
+                siglaTipoContratto,
+                siglaCausale: 'B',
                 importoTotale: (bolletta.importoCanoni as number) + (bolletta.importoConsumi as number),
                 centroDiCosto,
-                contoRicaviCanoni,
-                contoRicaviConsumi,
+                idContoRicaviCanoni,
+                idContoRicaviConsumi,
                 ...bolletta
             }))
         );
@@ -802,9 +817,9 @@ export class BollettaService extends TableService {
             const bollettaCheckout = this.calcBollettaCheckout(checkout, dataFine, nOspiti, tipiBolletta, dataInizio);
             result.push({
                 idContratto,
+                idOspite,
+                siglaTipoContratto,
                 centroDiCosto,
-                importoCanoni: null,
-                importoConsumi: null,
                 ...bollettaCheckout
             });
         }

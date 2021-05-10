@@ -61,9 +61,13 @@ export class ContrattoService extends TableService {
         this.model = prisma.contratto;
     }
 
-    private async getSpesaAmount(tipoBolletta: string, defaultValue: number): Promise<number> {
+    private async getSpesaAmount(
+        tipoBolletta: string,
+        tipoImporto: 'importoCanone' | 'importoConsumi',
+        defaultValue: number
+    ): Promise<number> {
         const spesa = await prisma.tipoBolletta.findUnique({ where: { tipoBolletta } });
-        return spesa?.importo ?? defaultValue;
+        return spesa?.[tipoImporto] ?? defaultValue;
     }
 
     private async validateCreateContrattoBody(body: any, id?: number): Promise<CreateContrattoBody> {
@@ -262,8 +266,8 @@ export class ContrattoService extends TableService {
 
     private async pushContratto(body: any, idContratto?: number): Promise<number> {
         const validatedBody = await this.validateCreateContrattoBody(body, idContratto);
-        let cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 360) : null;
-        const checkout = validatedBody.checkout ? await this.getSpesaAmount('CHECKOUT', 40) : null;
+        let cauzione = validatedBody.cauzione ? await this.getSpesaAmount('CAUZIONE', 'importoCanone', 360) : null;
+        const checkout = validatedBody.checkout ? await this.getSpesaAmount('CHECKOUT', 'importoConsumi', 40) : null;
         const createContrattoBody = this.getCreateContrattoBody(validatedBody, cauzione, checkout, idContratto);
         let ospiteId = Infinity;
 
@@ -278,10 +282,11 @@ export class ContrattoService extends TableService {
             include: {
                 tariffa: {
                     include: {
-                        tipoOspite: { include: { contoRicaviCanoni: true, contoRicaviConsumi: true } },
+                        tipoOspite: true,
                         tipoTariffa: true
                     }
-                }
+                },
+                tipoContratto: true
             }
         });
 
@@ -294,8 +299,9 @@ export class ContrattoService extends TableService {
                 prezzoCanoni,
                 prezzoConsumi,
                 tipoTariffa,
-                tipoOspite: { contoRicaviCanoni, contoRicaviConsumi }
-            }
+                tipoOspite: { idContoRicaviCanoni, idContoRicaviConsumi }
+            },
+            tipoContratto
         } = contratto;
 
         const contrattoSuOspiteSuPostoLettoBody = this.getCreateContrattoPostiLettoBody(body, id);
@@ -329,11 +335,13 @@ export class ContrattoService extends TableService {
                 prezzoCanoni,
                 prezzoConsumi,
                 validatedBody.ospiti.length,
-                contoRicaviCanoni.codice,
-                contoRicaviConsumi.codice,
+                idContoRicaviCanoni,
+                idContoRicaviConsumi,
                 centroDiCosto,
                 tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
+                tipoContratto.sigla,
                 id,
+                validatedBody.ospiti[0].idOspite,
                 validatedBody.idQuietanziante
             );
             await prisma.bolletta.createMany({
@@ -480,11 +488,13 @@ export class ContrattoService extends TableService {
                     contratto.tariffa.prezzoCanoni,
                     contratto.tariffa.prezzoConsumi,
                     contratto.contrattiSuOspite.length,
-                    contratto.bollette[0].contoRicaviCanoni,
-                    contratto.bollette[0].contoRicaviConsumi,
-                    contratto.bollette[0].centroDiCosto,
+                    contratto.bollette[0].idContoRicaviCanoni as number,
+                    contratto.bollette[0].idContoRicaviConsumi as number,
+                    contratto.bollette[0].centroDiCosto as string,
                     contratto.tariffa.tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
-                    id,
+                    contratto.bollette[0].siglaTipoContratto,
+                    contratto.id,
+                    contratto.bollette[0].idOspite,
                     contratto.idQuietanziante
                 );
             }

@@ -11,7 +11,17 @@ export class QuietanzianteService extends TableService {
 
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
-        quietanziante: Joi.string().min(1)
+        quietanziante: Joi.string().min(1),
+        denominazione: Joi.string().min(1).allow(null).optional(),
+        sesso: Joi.string().min(1).allow(null).optional(),
+        dataNascita: Joi.date().iso().allow(null).optional(),
+        comuneNascita: Joi.string().min(1).allow(null).optional(),
+        indirizzo: Joi.string().min(1).allow(null).optional(),
+        cap: Joi.string().length(5).allow(null).optional(),
+        citta: Joi.string().min(1).allow(null).optional(),
+        siglaProvincia: Joi.string().length(2).allow(null).optional(),
+        codiceFiscale: Joi.string().min(1).allow(null).optional(),
+        numeroTelefono: Joi.string().min(1).allow(null).optional()
     };
 
     protected postValidatorExcludes = ['id'];
