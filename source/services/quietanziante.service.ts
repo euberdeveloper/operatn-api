@@ -21,7 +21,8 @@ export class QuietanzianteService extends TableService {
         citta: Joi.string().min(1).allow(null).optional(),
         siglaProvincia: Joi.string().length(2).allow(null).optional(),
         codiceFiscale: Joi.string().min(1).allow(null).optional(),
-        numeroTelefono: Joi.string().min(1).allow(null).optional()
+        numeroTelefono: Joi.string().min(1).allow(null).optional(),
+        email: Joi.string().min(1).allow(null).optional()
     };
 
     protected postValidatorExcludes = ['id'];

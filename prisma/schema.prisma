@@ -113,8 +113,8 @@ model Ospite {
     eliminato     DateTime? @map("_eliminato")
 
     contrattiSuOspite ContrattoSuOspite[]
+    Bolletta          Bolletta[]
     @@map("ospite")
-    Bolletta Bolletta[]
 }
 
 model ContoCorrente {
@@ -427,6 +427,7 @@ model Quietanziante {
     siglaProvincia String?   @map("sigla_provincia")
     codiceFiscale  String?   @map("codice_fiscale")
     numeroTelefono String?   @map("numero_telefono")
+    email          String?   @map("email")
 
     Contratto    Contratto[]
     Bolletta     Bolletta[]
@@ -444,7 +445,7 @@ model TipoStudente {
 
 model ContoRicavi {
     id          Int    @id @default(autoincrement()) @map("id")
-    prg         String @unique @map("prg")
+    prg         Int @unique @map("prg")
     codice      String @unique @map("codice")
     conto       String @unique @map("conto")
     descrizione String @unique @map("descrizione")
@@ -474,9 +475,9 @@ model Bolletta {
     dataInvioEusis    DateTime? @map("data_invio_eusis")
     dataRegistrazione DateTime? @map("data_registrazione")
 
-    centroDiCosto String? @map("centro_di_costo")
-    siglaCausale  String  @map("sigla_causale")
-    siglaTipoContratto  String  @map("sigla_tipo_contratto")
+    centroDiCosto      String? @map("centro_di_costo")
+    siglaCausale       String  @map("sigla_causale")
+    siglaTipoContratto String  @map("sigla_tipo_contratto")
 
     idContoRicaviCanoni Int?         @map("id_conto_ricavi_canoni")
     contoRicaviCanoni   ContoRicavi? @relation(name: "bolletta_to_conto_ricavi_canoni", fields: [idContoRicaviCanoni], references: [id])

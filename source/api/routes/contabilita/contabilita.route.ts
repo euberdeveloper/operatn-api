@@ -15,8 +15,8 @@ export default function (): Router {
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
-            await contabilitaService.sendBollette(queryParams);
-            res.json();
+            const result = await contabilitaService.sendBollette(queryParams);
+            res.json(result);
         })
     );
 

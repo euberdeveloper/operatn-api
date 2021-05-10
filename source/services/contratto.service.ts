@@ -341,7 +341,7 @@ export class ContrattoService extends TableService {
                 tipoTariffa.tipoTariffa as 'MENSILE' | 'GIORNALIERA',
                 tipoContratto.sigla,
                 id,
-                validatedBody.ospiti[0].idOspite,
+                validatedBody.ospiti.length === 1 ? validatedBody.ospiti[0].idOspite : null,
                 validatedBody.idQuietanziante
             );
             await prisma.bolletta.createMany({
