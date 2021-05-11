@@ -19,13 +19,6 @@ export class ContabilitaError extends ApiError {
         this.name = 'ContabilitaError';
     }
 
-    public getDetails() {
-        return {
-            failedBollette: this.failedBollette,
-            passedBollette: this.passedBollette
-        };
-    }
-
     public getServerResponse(): ServerErrorResponse {
         return {
             ...super.getServerResponse(),

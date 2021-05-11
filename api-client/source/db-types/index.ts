@@ -315,6 +315,17 @@ export type TipoContratto = {
 export type Quietanziante = {
     id: number;
     quietanziante: string;
+    denominazione: string | null;
+    sesso: string | null;
+    dataNascita: Date | null;
+    comuneNascita: string | null;
+    indirizzo: string | null;
+    cap: string | null;
+    citta: string | null;
+    siglaProvincia: string | null;
+    codiceFiscale: string | null;
+    numeroTelefono: string | null;
+    email: string | null;
 };
 
 /**
@@ -327,23 +338,15 @@ export type TipoStudente = {
 };
 
 /**
- * Model ContoRicaviConsumi
+ * Model ContoRicavi
  */
 
-export type ContoRicaviConsumi = {
+export type ContoRicavi = {
     id: number;
+    prg: number;
     codice: string;
-    contoRicaviConsumi: string;
-};
-
-/**
- * Model ContoRicaviCanoni
- */
-
-export type ContoRicaviCanoni = {
-    id: number;
-    codice: string;
-    contoRicaviCanoni: string;
+    conto: string;
+    descrizione: string;
 };
 
 /**
@@ -360,13 +363,16 @@ export type Bolletta = {
     dataScadenza: Date;
     dataInvioEusis: Date | null;
     dataRegistrazione: Date | null;
-    centroDiCosto: string;
-    contoRicaviConsumi: string;
-    contoRicaviCanoni: string;
+    centroDiCosto: string | null;
+    siglaCausale: string;
+    siglaTipoContratto: string;
+    idContoRicaviCanoni: number | null;
+    idContoRicaviConsumi: number | null;
     idBollettaStornata: number | null;
     idTipoBolletta: number;
     idContratto: number;
     idQuietanziante: number;
+    idOspite: number | null;
 };
 
 /**
@@ -376,8 +382,12 @@ export type Bolletta = {
 export type TipoBolletta = {
     id: number;
     tipoBolletta: string;
-    importo: number | null;
+    siglaCausale: string;
+    importoCanone: number | null;
+    importoConsumi: number | null;
     idQuietanziante: number | null;
+    idContoRicaviCanoni: number | null;
+    idContoRicaviConsumi: number | null;
 };
 
 /**

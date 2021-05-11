@@ -1,4 +1,4 @@
-import { ContoRicaviCanoni, ContoRicaviConsumi, TipoOspite } from '@/db-types';
+import { ContoRicavi, TipoOspite } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type TipiOspiteCreateBody = TipoOspite & { id?: number };
@@ -6,8 +6,8 @@ export type TipiOspiteReplaceBody = Omit<TipoOspite, 'id'>;
 export type TipiOspiteUpdateBody = Partial<TipiOspiteReplaceBody>;
 
 export type TipiOspiteReturned = TipoOspite & {
-    contoRicaviCanoni?: ContoRicaviCanoni;
-    contoRicaviConsumi?: ContoRicaviConsumi;
+    contoRicaviCanoni?: ContoRicavi;
+    contoRicaviConsumi?: ContoRicavi;
 };
 
 export interface TipiOspiteIncludeParams {

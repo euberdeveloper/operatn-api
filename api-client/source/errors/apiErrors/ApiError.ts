@@ -1,6 +1,7 @@
 export interface ServerErrorResponse {
     name: string;
     message: string;
+    details?: any;
 }
 
 export class ApiError extends Error {

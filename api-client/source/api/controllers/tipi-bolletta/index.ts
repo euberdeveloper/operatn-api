@@ -1,8 +1,10 @@
-import { Quietanziante, TipoBolletta } from '@/db-types';
+import { ContoRicavi, Quietanziante, TipoBolletta } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type TipiBollettaCreateBody = TipoBolletta & { id?: number } & {
     quietanziante?: Omit<Quietanziante, 'id'> | null;
+    contoRicaviConsumi?: Omit<ContoRicavi, 'id'> | null;
+    contoRicaviCanoni?: Omit<ContoRicavi, 'id'> | null;
 };
 export type TipiBollettaReplaceBody = Omit<TipoBolletta, 'id'>;
 export type TipiBollettaUpdateBody = Partial<TipiBollettaReplaceBody>;
@@ -14,7 +16,7 @@ export type TipiBollettaReturned = TipoBolletta & {
 };
 
 export class TipiBollettaController extends BaseController {
-    public route = '/quietanzianti';
+    public route = '/tipi-bolletta';
 
     constructor(axiosContainer: AxiosContainer) {
         super(axiosContainer);

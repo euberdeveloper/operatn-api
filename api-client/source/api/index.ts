@@ -7,8 +7,7 @@ import {
     AuthController,
     ComuniController,
     ContabilitaController,
-    ContiRicaviCanoniController,
-    ContiRicaviConsumiController,
+    ContiRicaviController,
     DipartimentiUnitnController,
     OspitiController,
     PresidentiController,
@@ -45,8 +44,7 @@ export class OperaTN {
     public readonly auth: AuthController;
     public readonly comuni: ComuniController;
     public readonly contabilita: ContabilitaController;
-    public readonly contiRicaviCanoni: ContiRicaviCanoniController;
-    public readonly contiRicaviConsumi: ContiRicaviConsumiController;
+    public readonly contiRicavi: ContiRicaviController;
     public readonly dipartimentiUnitn: DipartimentiUnitnController;
     public readonly ospiti: OspitiController;
     public readonly presidenti: PresidentiController;
@@ -78,8 +76,7 @@ export class OperaTN {
         this.auth = new AuthController(this.axiosContainer);
         this.comuni = new ComuniController(this.axiosContainer);
         this.contabilita = new ContabilitaController(this.axiosContainer);
-        this.contiRicaviCanoni = new ContiRicaviCanoniController(this.axiosContainer);
-        this.contiRicaviConsumi = new ContiRicaviConsumiController(this.axiosContainer);
+        this.contiRicavi = new ContiRicaviController(this.axiosContainer);
         this.dipartimentiUnitn = new DipartimentiUnitnController(this.axiosContainer);
         this.ospiti = new OspitiController(this.axiosContainer);
         this.presidenti = new PresidentiController(this.axiosContainer);
