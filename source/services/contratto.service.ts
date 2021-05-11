@@ -358,9 +358,9 @@ export class ContrattoService extends TableService {
 
     public async getContratti(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const todayDate = new Date();
+        // const todayDate = new Date();
         const contratti = await this.model.findMany({
-            where: { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
+            // where: { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
             include
         });
         return contratti;
