@@ -11,19 +11,24 @@ export class QuietanziantiController extends BaseController {
         super(axiosContainer);
     }
 
+    private purgeValue(value: Quietanziante): Quietanziante {
+        value.dataNascita = value.dataNascita ? new Date(value.dataNascita) : null;
+        return value;
+    }
+
     public async getAll(options: Record<string, any> = {}): Promise<Quietanziante[]> {
         const result = await this.axiosInstance.get(`${this.route}`, { ...options });
-        return result.data;
+        return result.data.map((v: Quietanziante) => this.purgeValue(v));
     }
 
     public async get(id: number, options: Record<string, any> = {}): Promise<Quietanziante> {
         const result = await this.axiosInstance.get(`${this.route}/${id}`, { ...options });
-        return result.data;
+        return this.purgeValue(result.data);
     }
 
     public async getByValue(value: string, options: Record<string, any> = {}): Promise<Quietanziante> {
         const result = await this.axiosInstance.get(`${this.route}/value/${value}`, { ...options });
-        return result.data;
+        return this.purgeValue(result.data);
     }
 
     public async create(body: QuietanziantiCreateBody, options: Record<string, any> = {}): Promise<number> {
