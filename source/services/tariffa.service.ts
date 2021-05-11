@@ -25,8 +25,8 @@ export class TariffaService extends TableService {
         idUtilizzoStanza: Joi.number().integer().positive(),
         idTipoFabbricato: Joi.number().integer().positive(),
         idTipoTariffa: Joi.number().integer().positive(),
-        prezzoConsumi: Joi.number().positive().precision(2).options({ convert: false }),
-        prezzoCanoni: Joi.number().positive().precision(2).options({ convert: false })
+        prezzoConsumi: Joi.number().positive().allow(0).precision(2).options({ convert: false }),
+        prezzoCanoni: Joi.number().positive().allow(0).precision(2).options({ convert: false })
     };
     protected postValidatorExcludes = [];
     protected putValidatorExcludes = ['id'];
