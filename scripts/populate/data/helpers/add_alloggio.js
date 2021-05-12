@@ -1,9 +1,9 @@
-const alloggi = require('./alloggi_letterato_v6.0.json');
+const alloggi = require('./alloggi_letterato_v7.0.json');
 const axios = require('axios');
 
 // Ricordati di togliere il soft delete ed togliere il commento ai body nei services
 
-const JWT = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJpYXQiOjE2MTcyNjQzMjQsImV4cCI6MTYxOTk0MjcyNH0.o86nYCBsbMMiuFDSveIRLYUtnRQnpzf5MrabYhLVJfw';
+const JWT = 'Bearer eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZjY2NTczNS03MzhmLTRhZDYtOGZiZi1hMGVkOTA5OTU0NzgiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE2MTk3ODU1MjMsImV4cCI6MTYyMjQ2MzkyMywiaXNzIjoiT3BlcmFUTiJ9.-ceHDFT0g6Eplj_8eaVPtJUUhXLGNpzd03NCwsOC-FYnxTjlJpc_PJxJuQ1l5HdT46Oft4a6h3DTi0OF7RBNeA';
 
 function getIdTipoStanza(stanza) {
     switch (stanza) {
