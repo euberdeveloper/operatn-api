@@ -1,4 +1,4 @@
-import { Manutenzione, PostoLetto, TipoFabbricato, Stanza, TipoStanza, Fabbricato } from '@/db-types';
+import { Manutenzione, PostoLetto, TipoFabbricato, TipoStanza, Fabbricato, Stanza } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type PostiLettoCreateBody = Omit<PostoLetto, 'dataCreazione' | 'eliminato' | 'idStanza'> & { id?: number };
@@ -16,12 +16,14 @@ export interface PostiLettoIncludeParams {
     };
 }
 
-export type PostiLettoReturned = Stanza & {
-    tipoStanza?: TipoStanza;
-    postiLetto?: PostoLetto[];
-    manutenzioni?: Manutenzione[];
-    fabbricato?: Fabbricato & {
-        tipoFabbricato?: TipoFabbricato;
+export type PostiLettoReturned = PostoLetto & {
+    stanza?: Stanza & {
+        tipoStanza?: TipoStanza;
+        postiLetto?: PostoLetto[];
+        manutenzioni?: Manutenzione[];
+        fabbricato?: Fabbricato & {
+            tipoFabbricato?: TipoFabbricato;
+        };
     };
 };
 

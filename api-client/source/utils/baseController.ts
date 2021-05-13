@@ -18,8 +18,9 @@ export abstract class BaseController {
         const keys = Object.keys(params);
         const prefix = parents.length ? parents.join() + '.' : '';
         return keys.reduce(
-            (result, key) =>
+            (result, key, index) =>
                 result +
+                (index === 0 ? '' : '&') +
                 (typeof params[key] === 'object'
                     ? this.parseQueryParams(params[key], [...parents, key])
                     : `${prefix}${key}=${params[key]}`),
