@@ -1,39 +1,34 @@
 import { Manutenzione, PostoLetto, TipoFabbricato, TipoStanza, Fabbricato, Stanza } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
-export type PostiLettoCreateBody = Omit<PostoLetto, 'dataCreazione' | 'eliminato' | 'idStanza'> & { id?: number };
-export type PostiLettoReplaceBody = Omit<PostiLettoCreateBody, 'id'>;
-export type PostiLettoUpdateBody = Partial<PostiLettoReplaceBody>;
-
-export interface PostiLettoIncludeParams {
+export interface ManutenzioniIncludeParams {
     stanza?: {
         tipoStanza?: boolean;
         postiLetto?: boolean;
-        manutenzioni?: boolean;
         fabbricato?:
             | {
                   tipoFabbricato?: boolean;
               }
             | boolean;
     };
+    includeSoftDeleted?: boolean;
 }
 
-export type PostiLettoReturned = PostoLetto & {
+export type ManutenzioniReturned = Manutenzione & {
     stanza?: Stanza & {
         tipoStanza?: TipoStanza;
         postiLetto?: PostoLetto[];
-        manutenzioni?: Manutenzione[];
         fabbricato?: Fabbricato & {
             tipoFabbricato?: TipoFabbricato;
         };
     };
 };
 
-export class PostiLettoController extends BaseController {
+export class ManutenzioniController extends BaseController {
     private readonly baseUrl: string;
 
     get route(): string {
-        return `${this.baseUrl}/posti-letto`;
+        return `${this.baseUrl}/manutenzioni`;
     }
 
     constructor(axiosContainer: AxiosContainer, baseUrl: string) {
@@ -42,9 +37,9 @@ export class PostiLettoController extends BaseController {
     }
 
     public async getAll(
-        params: PostiLettoIncludeParams = {},
+        params: ManutenzioniIncludeParams = {},
         options: Record<string, any> = {}
-    ): Promise<PostiLettoReturned[]> {
+    ): Promise<ManutenzioniReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
         return result.data;
@@ -52,25 +47,17 @@ export class PostiLettoController extends BaseController {
 
     public async get(
         id: number,
-        params: PostiLettoIncludeParams = {},
+        params: ManutenzioniIncludeParams = {},
         options: Record<string, any> = {}
-    ): Promise<PostiLettoReturned> {
+    ): Promise<ManutenzioniReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`, { ...options });
         return result.data;
     }
 
-    public async create(body: PostiLettoCreateBody, options: Record<string, any> = {}): Promise<number> {
-        const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
+    public async create(options: Record<string, any> = {}): Promise<number> {
+        const result = await this.axiosInstance.post(`${this.route}`, null, { ...options });
         return result.data;
-    }
-
-    public async replace(id: number, body: PostiLettoReplaceBody, options: Record<string, any> = {}): Promise<void> {
-        return this.axiosInstance.put(`${this.route}/${id}`, body, { ...options });
-    }
-
-    public async update(id: number, body: PostiLettoUpdateBody, options: Record<string, any> = {}): Promise<void> {
-        return this.axiosInstance.patch(`${this.route}/${id}`, body, { ...options });
     }
 
     public async delete(id: number, options: Record<string, any> = {}): Promise<void> {

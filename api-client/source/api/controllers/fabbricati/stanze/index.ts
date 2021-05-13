@@ -1,8 +1,10 @@
 import { Stanza, Manutenzione, PostoLetto, TipoStanza, Fabbricato, TipoFabbricato, Sesso } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
+import { ManutenzioniController } from './manutenzioni';
 import { PostiLettoController } from './posti-letto';
 
 export * from './posti-letto';
+export * from './manutenzioni';
 
 export type StanzeCreateBody = Omit<Stanza, 'dataCreazione' | 'eliminato' | 'idFabbricato'> & { id?: number };
 export type StanzeReplaceBody = Omit<StanzeCreateBody, 'id'>;
@@ -40,6 +42,7 @@ export class StanzeController extends BaseController {
     private readonly baseUrl: string;
 
     private readonly postiLettoCache: Map<number, PostiLettoController> = new Map();
+    private readonly manutenzioniCache: Map<number, ManutenzioniController> = new Map();
 
     get route(): string {
         return `${this.baseUrl}/stanze`;
@@ -56,6 +59,14 @@ export class StanzeController extends BaseController {
             this.postiLettoCache.set(sid, postiLettoController);
         }
         return this.postiLettoCache.get(sid) as PostiLettoController;
+    }
+
+    public manutenzioni(sid: number): ManutenzioniController {
+        if (!this.manutenzioniCache.has(sid)) {
+            const manutenzioniController = new ManutenzioniController(this.axiosContainer, `${this.route}/${sid}`);
+            this.manutenzioniCache.set(sid, manutenzioniController);
+        }
+        return this.manutenzioniCache.get(sid) as ManutenzioniController;
     }
 
     public async getAll(
