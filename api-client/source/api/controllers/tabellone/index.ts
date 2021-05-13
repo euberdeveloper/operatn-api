@@ -1,4 +1,4 @@
-import { Tabellone } from '@/db-types';
+import { Tabellone, FilesInfo } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export interface TabelloneQueryParams {
@@ -16,6 +16,11 @@ export class TabelloneController extends BaseController {
     public async get(params: TabelloneQueryParams, options: Record<string, any> = {}): Promise<Tabellone[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
+        return result.data;
+    }
+
+    public async getCronology(options: Record<string, any> = {}): Promise<FilesInfo[]> {
+        const result = await this.axiosInstance.get(`${this.route}/cronology`, { ...options });
         return result.data;
     }
 

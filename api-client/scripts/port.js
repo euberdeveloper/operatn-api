@@ -40,6 +40,12 @@ export interface Tabellone {
     tipoOspiteSigla: string | null;
     contrattoNote: string | null;
 }
+
+export interface FilesInfo {
+    path: string;
+    size: string;
+    extension: string;
+}
 `;
 
 const prismaText = fs.readFileSync(PRISMA_PATH, 'utf-8');
