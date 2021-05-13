@@ -50,7 +50,7 @@ export class StanzeController extends BaseController {
         this.baseUrl = baseUrl;
     }
 
-    public stanze(sid: number): PostiLettoController {
+    public postiLetto(sid: number): PostiLettoController {
         if (!this.postiLettoCache.has(sid)) {
             const postiLettoController = new PostiLettoController(this.axiosContainer, `${this.route}/${sid}`);
             this.postiLettoCache.set(sid, postiLettoController);
