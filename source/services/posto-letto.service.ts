@@ -23,9 +23,7 @@ export class PostoLettoService extends TableService {
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
         idStanza: Joi.number().integer().positive().optional(),
-        postoLetto: Joi.string().min(1),
-        dataCreazione: Joi.date().iso().allow(null),
-        eliminato: Joi.date().iso().allow(null)
+        postoLetto: Joi.string().min(1)
     };
     protected postValidatorExcludes = ['idStanza'];
     protected putValidatorExcludes = ['id'];
