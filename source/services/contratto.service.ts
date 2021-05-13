@@ -182,6 +182,27 @@ export class ContrattoService extends TableService {
                 throw new InvalidBodyError('Validation error, posto letto already in contract');
             }
         }
+        for (const postoLetto of postiLetto) {
+            const exists = await prisma.manutenzione.findFirst({
+                where: {
+                    eliminato: null,
+                    stanza: {
+                        postiLetto: {
+                            some: {
+                                id: postoLetto
+                            }
+                        }
+                    }
+                }
+            });
+            if (exists) {
+                logger.warning('Validation error, posto letto is in manutenzione', {
+                    postoLettoId: postoLetto,
+                    manutenzioneId: exists.id
+                });
+                throw new InvalidBodyError('Validation error, is in manutenzione');
+            }
+        }
 
         return validatedBody;
     }
