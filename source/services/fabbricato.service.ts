@@ -29,9 +29,7 @@ export class FabbricatoService extends TableService {
         comune: Joi.string().min(1),
         cap: Joi.string().length(5).pattern(/^\d+$/),
         indirizzo: Joi.string().min(1),
-        nCivico: Joi.string().min(1),
-        dataCreazione: Joi.date().iso().allow(null),
-        eliminato: Joi.date().iso().allow(null)
+        nCivico: Joi.string().min(1)
     };
     protected postValidatorExcludes = [];
     protected putValidatorExcludes = ['id'];

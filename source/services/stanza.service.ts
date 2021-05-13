@@ -45,9 +45,7 @@ export class StanzaService extends TableService {
         piano: Joi.string()
             .valid(...Object.values(Piano))
             .allow(null),
-        note: Joi.string().min(1).allow(null).optional(),
-        dataCreazione: Joi.date().iso().allow(null),
-        eliminato: Joi.date().iso().allow(null)
+        note: Joi.string().min(1).allow(null).optional()
     };
     protected postValidatorExcludes = ['idFabbricato'];
     protected putValidatorExcludes = ['id'];

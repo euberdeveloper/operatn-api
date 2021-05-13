@@ -3,16 +3,16 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 const softDeletables = [
-    // 'Fabbricato',
-    // 'Stanza',
-    // 'PostoLetto',
+    'Fabbricato',
+    'Stanza',
+    'PostoLetto',
     'Tariffa',
     'DipartimentoUnitn',
     'Presidente',
     'Persona',
     'Ospite',
-    'Utente'
-    // 'Comune'
+    'Utente',
+    'Comune'
 ];
 
 prisma.$use(async (params, next) => {
