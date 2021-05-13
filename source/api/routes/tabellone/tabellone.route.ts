@@ -21,6 +21,15 @@ export default function (): Router {
     );
 
     router.get(
+        '/cronology',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        asyncHandler(async (req, res) => {
+            const tabellone = await tabelloneService.getTabelloneCronology();
+            res.json(tabellone);
+        })
+    );
+
+    router.get(
         '/tsv',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {

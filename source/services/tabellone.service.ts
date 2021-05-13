@@ -2,7 +2,7 @@
 import * as dayjs from 'dayjs';
 import * as ExcelJS from 'exceljs';
 import prisma, { Sesso } from '@/services/prisma.service';
-import fileSystemService from '@/services/filesystem.service';
+import fileSystemService, { FilesInfo } from '@/services/filesystem.service';
 import logger from '@/utils/logger';
 import { InvalidQueryParamError } from '@/errors';
 
@@ -404,6 +404,10 @@ export class AuthService {
         return this.fetchData(startDate, endDate);
     }
 
+    public async getTabelloneCronology(): Promise<FilesInfo[]> {
+        return fileSystemService.filesOfStoredDir('tabellone');
+    }
+
     public async getTabelloneTsv(queryParams: any): Promise<string> {
         const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
         const data = await this.fetchData(startDate, endDate);
@@ -437,7 +441,7 @@ export class AuthService {
         const data = await this.fetchData(startDate, endDate);
         const workbook = this.toXlsx(data);
 
-        const dateString = new Date().toLocaleDateString('it').replace(/\//g, '-');
+        const dateString = new Date().toISOString().slice(0, 10).replace(/-/g, '_');
         const fileName = `tabellone_${dateString}.xlsx`;
 
         const filePath = await fileSystemService.saveStoredXls(workbook, fileName, 'tabellone');

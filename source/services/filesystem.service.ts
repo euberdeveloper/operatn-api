@@ -1,11 +1,18 @@
 import { v4 as uuid } from 'uuid';
 import { Workbook } from 'exceljs';
 import * as path from 'path';
+import * as dree from 'dree';
 
 import { FileSystemError } from '@/errors';
 import { writeFile, mkdir } from '@/utils/fsAsync';
 import logger from '@/utils/logger';
 import CONFIG from '@/config';
+
+export interface FilesInfo {
+    path: string;
+    size: string;
+    extension: string;
+}
 
 export class FileSystemService {
     private async save(basepath: string, data: string, fileName: string, subpath = ''): Promise<string> {
@@ -78,6 +85,25 @@ export class FileSystemService {
     public async saveStoredXls(workbook: Workbook, fileName?: string, subpath = ''): Promise<string> {
         fileName = fileName ?? `${uuid()}.xlsx`;
         return this.saveXls(CONFIG.STORED.PATH, workbook, fileName, subpath);
+    }
+
+    public async filesOfStoredDir(dirpath: string): Promise<FilesInfo[]> {
+        try {
+            const p = path.join(CONFIG.STORED.PATH, dirpath);
+            const filesInfo = await dree.scanAsync(p, { depth: 1, sizeInBytes: true, hash: false });
+            return filesInfo.children
+                ? filesInfo.children
+                      .filter(node => node.type === dree.Type.FILE)
+                      .map(node => ({
+                          path: node.relativePath,
+                          size: node.size as string,
+                          extension: node.extension as string
+                      }))
+                : [];
+        } catch (error) {
+            logger.error('File system error', error);
+            throw new FileSystemError();
+        }
     }
 }
 
