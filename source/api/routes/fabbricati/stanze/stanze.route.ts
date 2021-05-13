@@ -116,7 +116,7 @@ export default function (): Router {
     );
 
     router.use('/:sid/posti-letto', postiLettoRouter());
-    router.use('/:sid/manutenzione', manutenzioniRouter());
+    router.use('/:sid/manutenzioni', manutenzioniRouter());
 
     return router;
 }

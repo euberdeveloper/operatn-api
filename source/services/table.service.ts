@@ -194,6 +194,18 @@ export abstract class TableService {
         return result;
     }
 
+    protected parseSoftDeleteParams(queryParams: any): boolean {
+        const param = this.extractSingleQueryParam(queryParams.includeSoftDeleted);
+
+        if (param === undefined || param === 'false') {
+            return false;
+        } else if (param === 'true') {
+            return true;
+        } else {
+            throw new InvalidQueryParamError();
+        }
+    }
+
     protected async checkIfExistsById(id: number, tableName = 'Resource'): Promise<void> {
         const tupleExists = await this.model.findUnique({ where: { id } });
         if (!tupleExists) {

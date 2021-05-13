@@ -12,7 +12,8 @@ const softDeletables = [
     'Persona',
     'Ospite',
     'Utente',
-    'Comune'
+    'Comune',
+    'Manutenzione'
 ];
 
 prisma.$use(async (params, next) => {
@@ -60,9 +61,9 @@ prisma.$use(async (params, next) => {
                 if (params.args === undefined) {
                     params.args = { where: { eliminato: null } };
                 }
-                // If there is where, add only the eliminato
+                // If there is where, add only the eliminato (if there is not it)
                 else if (params.args.where !== undefined) {
-                    if (params.args.where.eliminato === undefined) {
+                    if (!('eliminato' in params.args.where)) {
                         params.args.where.eliminato = null;
                     }
                 }

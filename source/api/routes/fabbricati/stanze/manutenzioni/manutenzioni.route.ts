@@ -43,32 +43,6 @@ export default function (): Router {
         })
     );
 
-    router.put(
-        '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
-        asyncHandler(async (req, res) => {
-            const fid = +req.params.fid;
-            const sid = +req.params.sid;
-            const id = +req.params.id;
-            const body = req.body;
-            await manutenzioneService.putManutenzioneById(fid, sid, id, body);
-            res.json();
-        })
-    );
-
-    router.patch(
-        '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
-        asyncHandler(async (req, res) => {
-            const fid = +req.params.fid;
-            const sid = +req.params.sid;
-            const id = +req.params.id;
-            const body = req.body;
-            await manutenzioneService.patchManutenzioneById(fid, sid, id, body);
-            res.json();
-        })
-    );
-
     router.delete(
         '/:id',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
