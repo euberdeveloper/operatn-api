@@ -45,6 +45,10 @@ export interface OspitiIncludeParams {
 export interface OspitiSearchParams {
     search?: string;
 }
+export interface OspitiPageParams {
+    page?: number;
+    pageSize?: number;
+}
 
 export class OspitiController extends BaseController {
     public route = '/ospiti';
@@ -53,13 +57,22 @@ export class OspitiController extends BaseController {
         super(axiosContainer);
     }
 
+    private purgeValue(value: OspitiReturned): OspitiReturned {
+        value.dataDiNascita = new Date(value.dataDiNascita);
+        if (value.documentoIdentita) {
+            value.documentoIdentita.dataRilascio = new Date(value.documentoIdentita.dataRilascio);
+            value.documentoIdentita.dataScadenza = new Date(value.documentoIdentita.dataScadenza);
+        }
+        return value;
+    }
+
     public async getAll(
-        params: OspitiIncludeParams & OspitiSearchParams = {},
+        params: OspitiIncludeParams & OspitiSearchParams & OspitiPageParams = {},
         options: Record<string, any> = {}
     ): Promise<OspitiReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
-        return result.data;
+        return result.data.map((o: OspitiReturned) => this.purgeValue(o));
     }
 
     public async get(
@@ -69,7 +82,7 @@ export class OspitiController extends BaseController {
     ): Promise<OspitiReturned> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/${id}${queryParams}`, { ...options });
-        return result.data;
+        return this.purgeValue(result.data);
     }
 
     public async create(body: OspitiCreateBody, options: Record<string, any> = {}): Promise<number> {
