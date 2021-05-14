@@ -20,8 +20,8 @@
   "author": "Eugenio Vinicio Berretta <euberdeveloper@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@euberdeveloper/asciify": "^1.0.4",
     "@prisma/client": "^2.21.2",
-    "any-ascii": "^0.2.0",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
     "bull": "^3.22.0",

@@ -1,10 +1,21 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import axios from 'axios';
-import prisma, { Bolletta, Quietanziante, TipoBolletta } from '@/services/prisma.service';
+import * as asciify from '@euberdeveloper/asciify';
+
+import prisma, {
+    Bolletta,
+    Quietanziante,
+    TipoBolletta,
+    ContoRicavi,
+    Contratto,
+    LuogoDiNascita,
+    Ospite,
+    Persona,
+    Residenza
+} from '@/services/prisma.service';
 import { ContabilitaError, InvalidQueryParamError } from '@/errors';
 import logger from '@/utils/logger';
 import CONFIG from '@/config';
-import { ContoRicavi, Contratto, LuogoDiNascita, Ospite, Persona, Residenza } from '@prisma/client';
 
 type OspiteInfo = Ospite & {
     persona: Persona & {
@@ -22,14 +33,34 @@ type BollettaInfo = Bolletta & {
     contoRicaviConsumi: ContoRicavi | null;
 };
 
+function purge(value: any): string {
+    return value ? asciify.traduce(value) : '';
+}
+
 export class ContabilitaService {
-    private async fetchBollette(start: Date, end: Date): Promise<BollettaInfo[]> {
+    private async fetchBollette(
+        start: Date,
+        end: Date,
+        idTipoOspite?: number,
+        idOspite?: number,
+        siglaCausale?: string
+    ): Promise<BollettaInfo[]> {
         return prisma.bolletta.findMany({
             where: {
                 dataInvioEusis: null,
                 NOT: {
                     OR: [{ dataScadenza: { lte: start } }, { dataScadenza: { gte: end } }]
-                }
+                },
+                idOspite,
+                siglaCausale,
+                contratto:
+                    idTipoOspite !== undefined
+                        ? {
+                              tariffa: {
+                                  idTipoOspite
+                              }
+                          }
+                        : undefined
             },
             include: {
                 contratto: true,
@@ -117,12 +148,12 @@ export class ContabilitaService {
             <tem:cliente></tem:cliente>
             <tem:numdoc>${idBolletta}</tem:numdoc>
             <tem:datadoc>${dateStr}</tem:datadoc>
-            <tem:denomin>${anagrafica.denominazione}</tem:denomin>
-            <tem:indirizzo>${anagrafica.indirizzo}</tem:indirizzo>
-            <tem:cap>${anagrafica.cap}</tem:cap>
-            <tem:citta>${anagrafica.citta}</tem:citta>
-            <tem:prov>${anagrafica.siglaProvincia}</tem:prov>
-            <tem:codfisc>${anagrafica.codiceFiscale}</tem:codfisc>
+            <tem:denomin>${purge(anagrafica.denominazione)}</tem:denomin>
+            <tem:indirizzo>${purge(anagrafica.indirizzo)}</tem:indirizzo>
+            <tem:cap>${purge(anagrafica.cap)}</tem:cap>
+            <tem:citta>${purge(anagrafica.citta)}</tem:citta>
+            <tem:prov>${purge(anagrafica.siglaProvincia)}</tem:prov>
+            <tem:codfisc>${purge(anagrafica.codiceFiscale)}</tem:codfisc>
             <tem:impbollo>0</tem:impbollo>
             <tem:totale>${importo}</tem:totale>
             <tem:stato>2</tem:stato>
@@ -143,23 +174,23 @@ export class ContabilitaService {
         return `
         <tem:anagrafica>
             <tem:codice xsi:nil="true" xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance" />
-            <tem:denomin>${anagrafica.denominazione}</tem:denomin>
-            <tem:sesso>${anagrafica.sesso}</tem:sesso>
-            <tem:datanasc>${anagrafica.dataNascita}</tem:datanasc>
-            <tem:comunasc>${anagrafica.comuneNascita}</tem:comunasc>
-            <tem:indirizzo>${anagrafica.indirizzo}</tem:indirizzo>
-            <tem:cap>${anagrafica.cap}</tem:cap>
-            <tem:citta>${anagrafica.citta}</tem:citta>
-            <tem:prov>${anagrafica.siglaProvincia}</tem:prov>
+            <tem:denomin>${purge(anagrafica.denominazione)}</tem:denomin>
+            <tem:sesso>${purge(anagrafica.sesso)}</tem:sesso>
+            <tem:datanasc>${purge(anagrafica.dataNascita)}</tem:datanasc>
+            <tem:comunasc>${purge(anagrafica.comuneNascita)}</tem:comunasc>
+            <tem:indirizzo>${purge(anagrafica.indirizzo)}</tem:indirizzo>
+            <tem:cap>${purge(anagrafica.cap)}</tem:cap>
+            <tem:citta>${purge(anagrafica.citta)}</tem:citta>
+            <tem:prov>${purge(anagrafica.siglaProvincia)}</tem:prov>
             <tem:codstato></tem:codstato>
             <tem:piva></tem:piva>
-            <tem:codfisc>${anagrafica.codiceFiscale}</tem:codfisc>
-            <tem:telefono>${anagrafica.numeroTelefono}</tem:telefono>
+            <tem:codfisc>${purge(anagrafica.codiceFiscale)}</tem:codfisc>
+            <tem:telefono>${purge(anagrafica.numeroTelefono)}</tem:telefono>
             <tem:conto></tem:conto>
             <tem:siglaconto></tem:siglaconto>
             <tem:dtinirapp>${dataInizioRapporto}</tem:dtinirapp>
             <tem:note1>ENCO</tem:note1>
-            <tem:email>${anagrafica.email}</tem:email>
+            <tem:email>${purge(anagrafica.email)}</tem:email>
             <tem:tty>105</tem:tty>
             <tem:utente>ENCO</tem:utente>
         </tem:anagrafica> 
@@ -293,14 +324,51 @@ export class ContabilitaService {
         return result;
     }
 
+    private validateQueryNumber(value: string[] | undefined, name: string): number | undefined {
+        const singleValue = Array.isArray(value) ? value[value.length - 1] : value;
+
+        if (singleValue === undefined) {
+            return undefined;
+        }
+
+        const result = +singleValue;
+        if (isNaN(result)) {
+            throw new InvalidQueryParamError(`${name} query parameter should be a valid number.`);
+        }
+
+        return result;
+    }
+
+    private validateQueryString(value: string[] | undefined): string | undefined {
+        return Array.isArray(value) ? value[value.length - 1] : value;
+    }
+
     private extractDatesFromQuery(queryParams: Record<string, string[] | undefined>): [Date, Date] {
         const { startDate, endDate } = queryParams;
         return [this.validateQueryDate(startDate, 'startDate'), this.validateQueryDate(endDate, 'endDate')];
     }
 
+    private extractParamsFromQuery(
+        queryParams: Record<string, string[] | undefined>
+    ): [number | undefined, number | undefined, string | undefined] {
+        const { idTipoOspite, idOspite, siglaCausale } = queryParams;
+        return [
+            this.validateQueryNumber(idTipoOspite, 'idTipoOspite'),
+            this.validateQueryNumber(idOspite, 'idOspite'),
+            this.validateQueryString(siglaCausale)
+        ];
+    }
+
+    public async getBollette(queryParams: any): Promise<BollettaInfo[]> {
+        const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
+        const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
+        return this.fetchBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale);
+    }
+
     public async sendBollette(queryParams: any): Promise<number[]> {
         const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
-        const bollette = await this.fetchBollette(startDate, endDate);
+        const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
+        const bollette = await this.fetchBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale);
 
         const failedBollette: number[] = [];
         const passedBollette: number[] = [];
