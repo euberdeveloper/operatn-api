@@ -12,6 +12,13 @@ async function startServer(): Promise<void> {
 
     const app = express();
 
+    /* TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+    // TODO: to remove, because stored assets will be served statically by nginx. So the ngxinx, same way of the frontend, will use a docker volume for this stored folder and serve it under /stored.
+    // eslint-disable-next-line
+    app.use(require('cors')())
+    app.use('/api/stored', express.static('./stored'));
+    /* TODOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
     const loader = new Loader(app, router);
     loader.loadMiddlewares();
     loader.loadRouter();
