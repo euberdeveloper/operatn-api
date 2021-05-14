@@ -19,6 +19,11 @@ export interface ContabilitaQueryParams {
     siglaCausale?: string;
 }
 
+export interface ContabilitaPageParams {
+    page?: number;
+    pageSize?: number;
+}
+
 type OspiteInfo = Ospite & {
     persona: Persona & {
         luogoDiNascita: LuogoDiNascita | null;
@@ -42,13 +47,20 @@ export class ContabilitaController extends BaseController {
         super(axiosContainer);
     }
 
+    private purgeValue(value: ContabilitaBollettaInfo): ContabilitaBollettaInfo {
+        value.competenzaAl = new Date(value.competenzaAl);
+        value.competenzaDal = new Date(value.competenzaDal);
+        value.dataScadenza = new Date(value.dataScadenza);
+        return value;
+    }
+
     public async getBollette(
-        params: ContabilitaQueryParams,
+        params: ContabilitaQueryParams & ContabilitaPageParams,
         options: Record<string, any> = {}
     ): Promise<ContabilitaBollettaInfo[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/bollette${queryParams}`, { ...options });
-        return result.data;
+        return result.data.map((el: ContabilitaBollettaInfo) => this.purgeValue(el));
     }
 
     public async sendBollette(params: ContabilitaQueryParams, options: Record<string, any> = {}): Promise<number[]> {

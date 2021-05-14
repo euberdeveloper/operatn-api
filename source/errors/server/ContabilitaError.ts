@@ -4,8 +4,8 @@ export class ContabilitaError extends ApiError {
     public static readonly code = 500;
     private static readonly defaultMessage: string = 'Contabilita error';
 
-    private readonly failedBollette: number[];
-    private readonly passedBollette: number[];
+    public readonly failedBollette: number[];
+    public readonly passedBollette: number[];
 
     constructor(
         message = ContabilitaError.defaultMessage,
