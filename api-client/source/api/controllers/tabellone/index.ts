@@ -26,13 +26,19 @@ export class TabelloneController extends BaseController {
 
     public async getTsv(params: TabelloneQueryParams, options: Record<string, any> = {}): Promise<any> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/tsv${queryParams}`, { ...options });
+        const result = await this.axiosInstance.get(`${this.route}/tsv${queryParams}`, {
+            ...options,
+            responseType: 'blob'
+        });
         return result.data;
     }
 
     public async getXlsx(params: TabelloneQueryParams, options: Record<string, any> = {}): Promise<any> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}/xlsx${queryParams}`, { ...options });
+        const result = await this.axiosInstance.get(`${this.route}/xlsx${queryParams}`, {
+            ...options,
+            responseType: 'blob'
+        });
         return result.data;
     }
 }
