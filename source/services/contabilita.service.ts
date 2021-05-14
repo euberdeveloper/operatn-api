@@ -33,6 +33,11 @@ type BollettaInfo = Bolletta & {
     contoRicaviConsumi: ContoRicavi | null;
 };
 
+interface PageParams {
+    skip?: number;
+    take?: number;
+}
+
 function purge(value: any): string {
     return value ? asciify.traduce(value) : '';
 }
@@ -43,7 +48,8 @@ export class ContabilitaService {
         end: Date,
         idTipoOspite?: number,
         idOspite?: number,
-        siglaCausale?: string
+        siglaCausale?: string,
+        pageValues: PageParams = {}
     ): Promise<BollettaInfo[]> {
         return prisma.bolletta.findMany({
             where: {
@@ -78,7 +84,8 @@ export class ContabilitaService {
                 tipoBolletta: true,
                 contoRicaviCanoni: true,
                 contoRicaviConsumi: true
-            }
+            },
+            ...pageValues
         });
     }
 
@@ -343,6 +350,56 @@ export class ContabilitaService {
         return Array.isArray(value) ? value[value.length - 1] : value;
     }
 
+    private extractSingleQueryParam(parameter: undefined | string | string[]): string | undefined {
+        if (Array.isArray(parameter)) {
+            return parameter.length > 0 ? parameter[parameter.length - 1] : undefined;
+        } else {
+            return parameter;
+        }
+    }
+
+    private validateNumberQueryParam(
+        parameter: undefined | string | string[],
+        name: string,
+        min?: number,
+        max?: number
+    ): number | null {
+        parameter = this.extractSingleQueryParam(parameter);
+
+        if (parameter === undefined) {
+            return null;
+        }
+
+        const result = +parameter;
+        if (isNaN(result) || (min !== undefined && result < min) || (max !== undefined && result > max)) {
+            throw new InvalidQueryParamError(`Invalid query param ${name}`);
+        }
+
+        return result;
+    }
+
+    private parsePageQueryParameters(queryParams: Record<string, string | string[]>): PageParams {
+        const { page, pageSize } = queryParams;
+        let index = this.validateNumberQueryParam(page, 'page', 1);
+        let size = this.validateNumberQueryParam(pageSize, 'pageSize', 1);
+
+        let result: PageParams = {
+            skip: undefined,
+            take: undefined
+        };
+
+        if (index !== null || size !== null) {
+            size = size ?? 1;
+            index = index ?? 1;
+            result = {
+                take: size,
+                skip: size * (index - 1)
+            };
+        }
+
+        return result;
+    }
+
     private extractDatesFromQuery(queryParams: Record<string, string[] | undefined>): [Date, Date] {
         const { startDate, endDate } = queryParams;
         return [this.validateQueryDate(startDate, 'startDate'), this.validateQueryDate(endDate, 'endDate')];
@@ -362,7 +419,8 @@ export class ContabilitaService {
     public async getBollette(queryParams: any): Promise<BollettaInfo[]> {
         const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
         const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
-        return this.fetchBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale);
+        const pageValues = this.parsePageQueryParameters(queryParams);
+        return this.fetchBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale, pageValues);
     }
 
     public async sendBollette(queryParams: any): Promise<number[]> {

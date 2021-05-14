@@ -14,6 +14,15 @@ export abstract class BaseController {
         return this.axiosContainer.axiosInstance;
     }
 
+    private parseNonObject(value: any, prefix: string, key: string): string {
+        if (value === undefined || value === null) {
+            return '';
+        }
+
+        let val = value instanceof Date ? value.toISOString() : value;
+        return `${prefix}${key}=${val}`;
+    }
+
     protected parseQueryParams(params: any, parents: string[] = []): string {
         const keys = Object.keys(params);
         const prefix = parents.length ? parents.join() + '.' : '';
@@ -23,7 +32,7 @@ export abstract class BaseController {
                 (index === 0 ? '' : '&') +
                 (typeof params[key] === 'object' && !(params[key] instanceof Date)
                     ? this.parseQueryParams(params[key], [...parents, key])
-                    : `${prefix}${key}=${params[key]}`),
+                    : this.parseNonObject(params[key], prefix, key)),
             keys.length && !parents.length ? '?' : ''
         );
     }
