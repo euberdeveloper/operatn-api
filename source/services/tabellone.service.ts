@@ -98,6 +98,10 @@ export class AuthService {
     private async fetchData(start: Date, end: Date): Promise<Tabellone[]> {
         let result: Tabellone[];
 
+        if (+end < +start) {
+            throw new InvalidQueryParamError('Data inizio must be before data fine');
+        }
+
         try {
             result = await prisma.$queryRaw<Tabellone[]>`
             SELECT
@@ -132,22 +136,22 @@ export class AuthService {
                 C.note AS "contrattoNote",
                 to_char(M._data_creazione, 'DD/MM/YYYY') AS "manutenzioneDataCreazione",
                 S.gestione_diretta AS "stanzaGestioneDiretta"
-            FROM test.posto_letto PL
-            JOIN test.stanza S
+            FROM posto_letto PL
+            JOIN stanza S
             ON PL.id_stanza = S.id
-            JOIN test.tipo_stanza TS
+            JOIN tipo_stanza TS
             ON S.id_tipo_stanza = TS.id
-            JOIN test.fabbricato F
+            JOIN fabbricato F
             ON S.id_fabbricato = F.id
-            LEFT JOIN test.manutenzione M
+            LEFT JOIN manutenzione M
             ON (
                 S.id = M.id_stanza
                 AND M._eliminato = NULL
                 AND NOT (M._data_creazione > ${end})
             )
-            LEFT JOIN test.contratto_su_ospite_su_posto_letto COP
+            LEFT JOIN contratto_su_ospite_su_posto_letto COP
             ON COP.id_posto_letto = PL.id
-            LEFT JOIN test.contratto C
+            LEFT JOIN contratto C
             ON (
                 COP.id_contratto = C.id
                 AND NOT (
@@ -155,22 +159,22 @@ export class AuthService {
                     OR C.data_inizio > ${end}
                 )
             )
-            LEFT JOIN test.contratto_su_ospite CO
+            LEFT JOIN contratto_su_ospite CO
             ON (
                 CO.id_contratto = C.id
                 AND CO.id_ospite = COP.id_ospite
             )
-            LEFT JOIN test.tipo_contratto TC
+            LEFT JOIN tipo_contratto TC
             ON C.id_tipo_contratto = TC.id
-            LEFT JOIN test.tariffa TR
+            LEFT JOIN tariffa TR
             ON C.id_tariffa = TR.id
-            LEFT JOIN test.tipo_ospite OT
+            LEFT JOIN tipo_ospite OT
             ON TR.id_tipo_ospite = OT.id
-            LEFT JOIN test.persona P
+            LEFT JOIN persona P
             ON CO.id_ospite = P.id
-            LEFT JOIN test.ospite O
+            LEFT JOIN ospite O
             ON P.id = O.id
-            LEFT JOIN test.dipartimento_unitn DU
+            LEFT JOIN dipartimento_unitn DU
             ON O.codice_dipartimento_unitn = DU.codice
             ORDER BY F.indirizzo, S.numero_stanza;
         `;
