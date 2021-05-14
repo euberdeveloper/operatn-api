@@ -1,4 +1,12 @@
-import { ContoCorrente, DipartimentoUnitn, DocumentoIdentita, LuogoDiNascita, Ospite, Residenza } from '@/db-types';
+import {
+    ContoCorrente,
+    DipartimentoUnitn,
+    DocumentoIdentita,
+    LuogoDiNascita,
+    Ospite,
+    Persona,
+    Residenza
+} from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type OspitiCreateBody = Ospite & { id?: number } & {
@@ -12,14 +20,15 @@ export type OspitiCreateBody = Ospite & { id?: number } & {
 export type OspitiReplaceBody = Omit<Ospite, 'id'>;
 export type OspitiUpdateBody = Partial<OspitiReplaceBody>;
 
-export type OspitiReturned = Ospite & {
-    luogoDiNascita?: LuogoDiNascita;
-    residenza?: Residenza;
-    domicili?: Residenza[] | null;
-    contoCorrente?: ContoCorrente | null;
-    documentoIdentita?: DocumentoIdentita | null;
-    dipartimentoUnitn?: DipartimentoUnitn | null;
-};
+export type OspitiReturned = Ospite &
+    Persona & {
+        luogoDiNascita?: LuogoDiNascita;
+        residenza?: Residenza;
+        domicili?: Residenza[] | null;
+        contoCorrente?: ContoCorrente | null;
+        documentoIdentita?: DocumentoIdentita | null;
+        dipartimentoUnitn?: DipartimentoUnitn | null;
+    };
 
 export interface OspitiIncludeParams {
     persona?:
