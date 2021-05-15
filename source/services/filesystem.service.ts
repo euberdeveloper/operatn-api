@@ -14,6 +14,11 @@ export interface FilesInfo {
     extension: string;
 }
 
+export interface DirsInfo {
+    path: string;
+    size: string;
+}
+
 export class FileSystemService {
     private async save(basepath: string, data: string, fileName: string, subpath = ''): Promise<string> {
         const dirPath = path.join(basepath, subpath);
@@ -23,7 +28,7 @@ export class FileSystemService {
             await mkdir(dirPath, { recursive: true });
             await writeFile(filePath, data);
         } catch (error) {
-            logger.error('File system error', error);
+            logger.warning('File system error', error);
             throw new FileSystemError();
         }
 
@@ -39,7 +44,7 @@ export class FileSystemService {
             await mkdir(dirPath, { recursive: true });
             await writeFile(filePath, data);
         } catch (error) {
-            logger.error('File system error', error);
+            logger.warning('File system error', error);
             throw new FileSystemError();
         }
 
@@ -54,7 +59,7 @@ export class FileSystemService {
             await mkdir(dirPath, { recursive: true });
             await workbook.xlsx.writeFile(filePath);
         } catch (error) {
-            logger.error('File system error', error);
+            logger.warning('File system error', error);
             throw new FileSystemError();
         }
 
@@ -90,8 +95,12 @@ export class FileSystemService {
     public async filesOfStoredDir(dirpath: string): Promise<FilesInfo[]> {
         try {
             const p = path.join(CONFIG.STORED.PATH, dirpath);
-            const filesInfo = await dree.scanAsync(p, { depth: 1, sizeInBytes: true, hash: false });
-            return filesInfo.children
+            const filesInfo = (await dree.scanAsync(p, {
+                depth: 1,
+                sizeInBytes: true,
+                hash: false
+            })) as dree.Dree | null;
+            return filesInfo?.children
                 ? filesInfo.children
                       .filter(node => node.type === dree.Type.FILE)
                       .map(node => ({
@@ -101,7 +110,29 @@ export class FileSystemService {
                       }))
                 : [];
         } catch (error) {
-            logger.error('File system error', error);
+            logger.warning('File system error', error);
+            throw new FileSystemError();
+        }
+    }
+
+    public async dirsOfStoredDir(dirpath: string): Promise<DirsInfo[]> {
+        try {
+            const p = path.join(CONFIG.STORED.PATH, dirpath);
+            const dirsInfo = (await dree.scanAsync(p, {
+                depth: 1,
+                sizeInBytes: true,
+                hash: false
+            })) as dree.Dree | null;
+            return dirsInfo?.children
+                ? dirsInfo.children
+                      .filter(node => node.type === dree.Type.DIRECTORY)
+                      .map(node => ({
+                          path: node.relativePath,
+                          size: node.size as string
+                      }))
+                : [];
+        } catch (error) {
+            logger.warning('File system error', error);
             throw new FileSystemError();
         }
     }

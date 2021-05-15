@@ -74,7 +74,7 @@ const headersMap: Record<string, string> = {
     stanzaGestioneDiretta: 'GESTIONE DIRETTA'
 };
 
-export class AuthService {
+export class TabelloneService {
     private validateQueryDate(value: string[] | undefined, name: string): Date {
         const singleValue = Array.isArray(value) ? value[value.length - 1] : value;
 
@@ -469,4 +469,4 @@ export class AuthService {
     }
 }
 
-export default new AuthService();
+export default new TabelloneService();

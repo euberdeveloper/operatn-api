@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import axios from 'axios';
 import * as asciify from '@euberdeveloper/asciify';
-import emitter from '@/subscribers';
 
+import fileSystemService, { DirsInfo } from '@/services/filesystem.service';
+import emitter from '@/subscribers';
 import prisma, {
     Bolletta,
     Quietanziante,
@@ -517,6 +518,10 @@ export class ContabilitaService {
         }
 
         return Array.from(passedBollette);
+    }
+
+    public async getContabilitaCronology(): Promise<DirsInfo[]> {
+        return fileSystemService.dirsOfStoredDir('contabilita');
     }
 }
 

@@ -11,6 +11,15 @@ export default function (): Router {
     router.use(authenticateJwt);
 
     router.get(
+        '/cronology',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        asyncHandler(async (_req, res) => {
+            const result = await contabilitaService.getContabilitaCronology();
+            res.json(result);
+        })
+    );
+
+    router.get(
         '/bollette',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
         asyncHandler(async (req, res) => {
