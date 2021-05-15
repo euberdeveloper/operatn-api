@@ -4,11 +4,12 @@ import * as errors from '@/errors';
 interface ReponseError {
     name: string;
     message: string;
+    details: any;
 }
 
 function instanceApiError(error: ReponseError, code: number): errors.ApiError {
     try {
-        return new (errors as any)[error.name](error.message);
+        return new (errors as any)[error.name](error.message, error.details);
     } catch {
         return new errors.UnknownApiError(code);
     }

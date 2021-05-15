@@ -89,6 +89,33 @@ export class ContabilitaService {
         });
     }
 
+    private async countBollette(
+        start: Date,
+        end: Date,
+        idTipoOspite?: number,
+        idOspite?: number,
+        siglaCausale?: string
+    ): Promise<number> {
+        return prisma.bolletta.count({
+            where: {
+                dataInvioEusis: null,
+                NOT: {
+                    OR: [{ dataScadenza: { lte: start } }, { dataScadenza: { gte: end } }]
+                },
+                idOspite,
+                siglaCausale,
+                contratto:
+                    idTipoOspite !== undefined
+                        ? {
+                              tariffa: {
+                                  idTipoOspite
+                              }
+                          }
+                        : undefined
+            }
+        });
+    }
+
     private getAnagraficaData(bolletta: BollettaInfo) {
         const quietanziante = bolletta.quietanziante;
         const ospite = bolletta.ospite;
@@ -423,6 +450,12 @@ export class ContabilitaService {
         return this.fetchBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale, pageValues);
     }
 
+    public async getBolletteCount(queryParams: any): Promise<number> {
+        const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
+        const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
+        return this.countBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale);
+    }
+
     public async sendBollette(queryParams: any): Promise<number[]> {
         const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
         const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
@@ -461,7 +494,7 @@ export class ContabilitaService {
         }
 
         if (failedBollette.length) {
-            throw new ContabilitaError(undefined, failedBollette, passedBollette);
+            throw new ContabilitaError(undefined, { failedBollette, passedBollette });
         }
 
         return passedBollette;

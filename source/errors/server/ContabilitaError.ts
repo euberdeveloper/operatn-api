@@ -9,13 +9,12 @@ export class ContabilitaError extends ApiError {
 
     constructor(
         message = ContabilitaError.defaultMessage,
-        failedBollette: number[] = [],
-        passedBollette: number[] = []
+        details = { failedBollette: [] as number[], passedBollette: [] as number[] }
     ) {
         super(ContabilitaError.code, message);
 
-        this.failedBollette = failedBollette;
-        this.passedBollette = passedBollette;
+        this.failedBollette = details.failedBollette;
+        this.passedBollette = details.passedBollette;
         this.name = 'ContabilitaError';
     }
 

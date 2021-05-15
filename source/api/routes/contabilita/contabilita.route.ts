@@ -20,6 +20,16 @@ export default function (): Router {
         })
     );
 
+    router.get(
+        '/bollette/count',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const result = await contabilitaService.getBolletteCount(queryParams);
+            res.json(result);
+        })
+    );
+
     router.post(
         '/bollette',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
