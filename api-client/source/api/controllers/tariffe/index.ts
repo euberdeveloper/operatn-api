@@ -1,4 +1,4 @@
-import { Tariffa, TipoFabbricato, TipoOspite, TipoTariffa, UtilizzoStanza } from '@/db-types';
+import { Tariffa, TipoFabbricato, TipoOspite, TipoStanza, TipoTariffa } from '@/db-types';
 import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type TariffeCreateBody = Omit<Tariffa, 'dataCreazione' | 'eliminato'> & { id?: number };
@@ -14,7 +14,7 @@ export interface TariffeIncludeParams {
 
 export type TariffeReturned = Tariffa & {
     tipoOspite?: TipoOspite;
-    utilizzoStanza?: UtilizzoStanza;
+    utilizzoStanza?: TipoStanza;
     tipoFabbricato?: TipoFabbricato;
     tipoTariffa?: TipoTariffa;
 };

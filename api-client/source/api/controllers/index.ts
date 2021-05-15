@@ -3,6 +3,7 @@ export * from './comuni';
 export * from './contabilita';
 export * from './conti-ricavi';
 export * from './dipartimenti-unitn';
+export * from './contratti';
 export * from './ospiti';
 export * from './presidenti';
 export * from './province';
