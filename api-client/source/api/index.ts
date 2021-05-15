@@ -24,7 +24,6 @@ import {
     TipiStudenteController,
     TipiTariffaController,
     UtentiController,
-    UtilizziStanzaController,
     FabbricatiController
 } from './controllers';
 
@@ -63,7 +62,6 @@ export class OperaTN {
     public readonly tipiTariffa: TipiTariffaController;
     public readonly utenti: UtentiController;
     public readonly fabbricati: FabbricatiController;
-    public readonly utilizziStanza: UtilizziStanzaController;
 
     private axiosContainer!: AxiosContainer;
 
@@ -96,7 +94,6 @@ export class OperaTN {
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.utenti = new UtentiController(this.axiosContainer);
         this.fabbricati = new FabbricatiController(this.axiosContainer);
-        this.utilizziStanza = new UtilizziStanzaController(this.axiosContainer);
     }
 
     private init(apiRootEndpoint: string, token: string | null, errorHandler: ErrorHandler | null): void {

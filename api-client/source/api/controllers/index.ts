@@ -18,5 +18,4 @@ export * from './tipi-stanza';
 export * from './tipi-studente';
 export * from './tipi-tariffa';
 export * from './utenti';
-export * from './utilizzi-stanza';
 export * from './fabbricati';

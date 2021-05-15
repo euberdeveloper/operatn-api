@@ -227,6 +227,7 @@ model TipoStanza {
 
     Stanza Stanza[]
     @@map("tipo_stanza")
+    Tariffa Tariffa[]
 }
 
 model Manutenzione {
@@ -279,8 +280,8 @@ model Tariffa {
     idTipoOspite Int        @map("id_tipo_ospite")
     tipoOspite   TipoOspite @relation(fields: [idTipoOspite], references: [id])
 
-    idUtilizzoStanza Int?            @map("id_utilizzo_stanza")
-    utilizzoStanza   UtilizzoStanza? @relation(fields: [idUtilizzoStanza], references: [id])
+    idUtilizzoStanza Int?        @map("id_utilizzo_stanza")
+    utilizzoStanza   TipoStanza? @relation(fields: [idUtilizzoStanza], references: [id])
 
     idTipoFabbricato Int?            @map("id_tipo_fabbricato")
     tipoFabbricato   TipoFabbricato? @relation(fields: [idTipoFabbricato], references: [id])
@@ -297,14 +298,6 @@ model Tariffa {
     Contratto Contratto[]
     @@unique([idTipoOspite, idUtilizzoStanza, idTipoFabbricato, idTipoTariffa, eliminato])
     @@map("tariffa")
-}
-
-model UtilizzoStanza {
-    id             Int    @id @default(autoincrement()) @map("id")
-    utilizzoStanza String @unique @map("utilizzo_stanza")
-
-    Tariffa Tariffa[]
-    @@map("utilizzo_stanza")
 }
 
 model TipoOspite {
@@ -445,7 +438,7 @@ model TipoStudente {
 
 model ContoRicavi {
     id          Int    @id @default(autoincrement()) @map("id")
-    prg         Int @unique @map("prg")
+    prg         Int    @unique @map("prg")
     codice      String @unique @map("codice")
     conto       String @unique @map("conto")
     descrizione String @unique @map("descrizione")

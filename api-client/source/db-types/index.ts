@@ -225,15 +225,6 @@ export type Tariffa = {
 };
 
 /**
- * Model UtilizzoStanza
- */
-
-export type UtilizzoStanza = {
-    id: number;
-    utilizzoStanza: string;
-};
-
-/**
  * Model TipoOspite
  */
 
