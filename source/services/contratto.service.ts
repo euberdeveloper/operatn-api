@@ -411,13 +411,27 @@ export class ContrattoService extends TableService {
         return contratti;
     }
 
-    public async getContrattiFirmati(queryParams: any): Promise<Contratto[]> {
+    public async getContrattiDaVisionare(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const todayDate = new Date();
+        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                dataInizio: { lte: todayDate },
-                dataFine: { gte: todayDate },
+                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }],
+                dataFirmaContratto: null,
+                dataRispostaEmail: { not: null },
+                file: { not: null }
+            },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiFirmati(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
+        const contratti = await this.model.findMany({
+            where: {
+                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }],
                 dataFirmaContratto: { not: null }
             },
             include

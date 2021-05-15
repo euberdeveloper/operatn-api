@@ -33,6 +33,16 @@ export default function (): Router {
     );
 
     router.get(
+        '/da-visionare',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContrattiDaVisionare(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
         '/firmati',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
