@@ -40,6 +40,11 @@ export type ContabilitaBollettaInfo = Bolletta & {
     contoRicaviConsumi: ContoRicavi | null;
 };
 
+export interface ContabilitaDirsInfo {
+    path: string;
+    size: string;
+}
+
 export class ContabilitaController extends BaseController {
     public route = '/contabilita';
 
@@ -52,6 +57,11 @@ export class ContabilitaController extends BaseController {
         value.competenzaDal = new Date(value.competenzaDal);
         value.dataScadenza = new Date(value.dataScadenza);
         return value;
+    }
+
+    public async getCronology(options: Record<string, any> = {}): Promise<ContabilitaDirsInfo[]> {
+        const result = await this.axiosInstance.get(`${this.route}/cronology`, { ...options });
+        return result.data;
     }
 
     public async getBollette(
