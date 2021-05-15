@@ -350,6 +350,7 @@ model Contratto {
     note String? @map("note")
 
     contrattiSuOspite ContrattoSuOspite[]
+    dataInserimento DateTime  @default(now()) @map("data_inserimento")
 
     bollette Bolletta[]
     @@map("contratto")
