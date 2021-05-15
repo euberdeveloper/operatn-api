@@ -507,6 +507,7 @@ export class ContabilitaService {
         const dirname = this.getDirName();
         emitter.emitContabilitaXml(failedXml, passedXml, dirname);
         emitter.emitContabilitaXlsx(bollette, passedBollette, dirname);
+        emitter.emitContabilitaTsv(bollette, passedBollette, dirname);
 
         if (failedBollette.size) {
             throw new ContabilitaError(undefined, {

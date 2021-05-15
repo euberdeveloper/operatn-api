@@ -5,6 +5,7 @@ import { emitUserCreated, loadUserCreated } from './userCreated.subscriber';
 import { emitUserDeleted, loadUserDeleted } from './userDeleted.subscriber';
 import { emitContabilitaXml, loadContabilitaXml } from './contabilitaXml.subscriber';
 import { BollettaInfo, emitContabilitaXlsx, loadContabilitaXlsx } from './contabilitaXlsx.subscriber';
+import { emitContabilitaTsv, loadContabilitaTsv } from './contabilitaTsv.subscriber';
 
 export class Emitter {
     private readonly emitter: EventEmitter;
@@ -18,6 +19,7 @@ export class Emitter {
         loadUserDeleted(this.emitter);
         loadContabilitaXml(this.emitter);
         loadContabilitaXlsx(this.emitter);
+        loadContabilitaTsv(this.emitter);
     }
 
     public emitUserCreated(utente: Utente): void {
@@ -34,6 +36,10 @@ export class Emitter {
 
     public emitContabilitaXlsx(bollette: BollettaInfo[], passedBollette: Set<number>, dirname: string): void {
         emitContabilitaXlsx(this.emitter, bollette, passedBollette, dirname);
+    }
+
+    public emitContabilitaTsv(bollette: BollettaInfo[], passedBollette: Set<number>, dirname: string): void {
+        emitContabilitaTsv(this.emitter, bollette, passedBollette, dirname);
     }
 }
 export default new Emitter();
