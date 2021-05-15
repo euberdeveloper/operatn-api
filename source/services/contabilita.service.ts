@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import axios from 'axios';
 import * as asciify from '@euberdeveloper/asciify';
+import emitter from '@/subscribers';
 
 import prisma, {
     Bolletta,
@@ -24,7 +25,7 @@ type OspiteInfo = Ospite & {
     };
 };
 
-type BollettaInfo = Bolletta & {
+export type BollettaInfo = Bolletta & {
     contratto: Contratto;
     quietanziante: Quietanziante;
     ospite: OspiteInfo | null;
@@ -443,6 +444,11 @@ export class ContabilitaService {
         ];
     }
 
+    private getDirName(): string {
+        const now = new Date();
+        return `contabilita__${now.toISOString().slice(0, 10).replace(/-/g, '_')}__${now.getTime()}`;
+    }
+
     public async getBollette(queryParams: any): Promise<BollettaInfo[]> {
         const [startDate, endDate] = this.extractDatesFromQuery(queryParams);
         const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
@@ -461,8 +467,10 @@ export class ContabilitaService {
         const [idTipoOspite, idOspite, siglaCausale] = this.extractParamsFromQuery(queryParams);
         const bollette = await this.fetchBollette(startDate, endDate, idTipoOspite, idOspite, siglaCausale);
 
-        const failedBollette: number[] = [];
-        const passedBollette: number[] = [];
+        const failedBollette: Set<number> = new Set();
+        const passedBollette: Set<number> = new Set();
+        const failedXml: string[] = [];
+        const passedXml: string[] = [];
         for (const bolletta of bollette) {
             const soapRequest = this.getXmlFromBolletta(bolletta);
 
@@ -473,7 +481,8 @@ export class ContabilitaService {
                         'Content-Type': 'application/xml'
                     }
                 });
-                passedBollette.push(bolletta.id);
+                passedBollette.add(bolletta.id);
+                passedXml.push(soapRequest);
             } catch (error) {
                 let err;
                 if (error.response) {
@@ -489,15 +498,24 @@ export class ContabilitaService {
                     logger.warning('ERROR, cannot reset data invio EUSIS to null of bolletta with id', bolletta.id);
                 }
                 logger.warning('Error in contabilità', err);
-                failedBollette.push(bolletta.id);
+
+                failedBollette.add(bolletta.id);
+                failedXml.push(soapRequest);
             }
         }
 
-        if (failedBollette.length) {
-            throw new ContabilitaError(undefined, { failedBollette, passedBollette });
+        const dirname = this.getDirName();
+        emitter.emitContabilitaXml(failedXml, passedXml, dirname);
+        emitter.emitContabilitaXlsx(bollette, passedBollette, dirname);
+
+        if (failedBollette.size) {
+            throw new ContabilitaError(undefined, {
+                failedBollette: Array.from(failedBollette),
+                passedBollette: Array.from(passedBollette)
+            });
         }
 
-        return passedBollette;
+        return Array.from(passedBollette);
     }
 }
 
