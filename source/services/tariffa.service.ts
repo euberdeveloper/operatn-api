@@ -22,8 +22,8 @@ export class TariffaService extends TableService {
     protected readonly bodyValidator: Record<string, Joi.Schema> = {
         id: Joi.number().integer().positive().optional(),
         idTipoOspite: Joi.number().integer().positive(),
-        idUtilizzoStanza: Joi.number().integer().positive(),
-        idTipoFabbricato: Joi.number().integer().positive(),
+        idUtilizzoStanza: Joi.number().integer().positive().allow(null),
+        idTipoFabbricato: Joi.number().integer().positive().allow(null),
         idTipoTariffa: Joi.number().integer().positive(),
         prezzoConsumi: Joi.number().allow(0).positive().precision(2).options({ convert: false }),
         prezzoCanoni: Joi.number().allow(0).positive().precision(2).options({ convert: false })
