@@ -63,6 +63,12 @@ export class ContabilitaController extends BaseController {
         return result.data.map((el: ContabilitaBollettaInfo) => this.purgeValue(el));
     }
 
+    public async countBollette(params: ContabilitaQueryParams, options: Record<string, any> = {}): Promise<number> {
+        const queryParams = this.parseQueryParams(params);
+        const result = await this.axiosInstance.get(`${this.route}/bollette/count${queryParams}`, { ...options });
+        return result.data;
+    }
+
     public async sendBollette(params: ContabilitaQueryParams, options: Record<string, any> = {}): Promise<number[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.post(`${this.route}/bollette${queryParams}`, { ...options });
