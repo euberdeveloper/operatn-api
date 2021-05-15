@@ -182,6 +182,7 @@ export class ContrattoService extends TableService {
                 throw new InvalidBodyError('Validation error, posto letto already in contract');
             }
         }
+        // Check that there are not manutenzioni on the stanze (Note: actually manutenzioni should have a prefixed end date and not _eliminato...)
         for (const postoLetto of postiLetto) {
             const exists = await prisma.manutenzione.findFirst({
                 where: {
@@ -377,11 +378,21 @@ export class ContrattoService extends TableService {
         return id;
     }
 
+    protected parseFilterQueryParameters(
+        queryParams: Record<string, string | string[]>
+    ): { dataInizio?: Date; dataFine?: Date } {
+        const dataInizio = this.parseQueryParamsDate(queryParams.dataInizio, 'dataInizio');
+        const dataFine = this.parseQueryParamsDate(queryParams.dataFine, 'dataFine');
+        return { dataInizio, dataFine };
+    }
+
     public async getContratti(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        // const todayDate = new Date();
+        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
-            // where: { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
+            where: {
+                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }]
+            },
             include
         });
         return contratti;
@@ -389,9 +400,12 @@ export class ContrattoService extends TableService {
 
     public async getContrattiDaFirmare(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const todayDate = new Date();
+        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
-            where: { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate }, dataFirmaContratto: null },
+            where: {
+                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }],
+                dataFirmaContratto: null
+            },
             include
         });
         return contratti;

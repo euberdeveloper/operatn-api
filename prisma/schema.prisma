@@ -333,6 +333,10 @@ model Contratto {
 
     dataFirmaContratto     DateTime? @map("data_firma_contratto")
     dataChiusuraAnticipata DateTime? @map("data_chiusura_anticipata")
+    
+    tokenEmail String? @map("token_email")
+    dataInvioEmail DateTime? @map("data_invio_email")
+    dataRispostaEmail DateTime? @map("data_risposta_email")
 
     checkout Float?   @map("checkout")
     cauzione Float?   @map("cauzione")
@@ -347,10 +351,12 @@ model Contratto {
     idQuietanziante Int           @map("id_quietanziante")
     quietanziante   Quietanziante @relation(fields: [idQuietanziante], references: [id])
 
+    file String? @map("file")
     note String? @map("note")
 
     contrattiSuOspite ContrattoSuOspite[]
     dataInserimento DateTime  @default(now()) @map("data_inserimento")
+
 
     bollette Bolletta[]
     @@map("contratto")

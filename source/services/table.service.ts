@@ -206,6 +206,29 @@ export abstract class TableService {
         }
     }
 
+    protected parseQueryParamsDate(
+        value: string[] | string | undefined,
+        name: string,
+        mandatory = false
+    ): Date | undefined {
+        const singleValue = Array.isArray(value) ? value[value.length - 1] : value;
+
+        if (singleValue === undefined) {
+            if (mandatory) {
+                throw new InvalidQueryParamError(`${name} query parameter should be passed.`);
+            } else {
+                return undefined;
+            }
+        }
+
+        const result = new Date(singleValue);
+        if (isNaN(+result)) {
+            throw new InvalidQueryParamError(`${name} query parameter should be a valid ISO date.`);
+        }
+
+        return result;
+    }
+
     protected async checkIfExistsById(id: number, tableName = 'Resource'): Promise<void> {
         const tupleExists = await this.model.findUnique({ where: { id } });
         if (!tupleExists) {
