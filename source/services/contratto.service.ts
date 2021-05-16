@@ -51,6 +51,15 @@ export class ContrattoService extends TableService {
         'tariffa.tipoFabbricato',
         'tipoContratto',
         'tipoContratto.tipoStudente',
+        'contrattiSuOspite',
+        'contrattiSuOspite.ospite',
+        'contrattiSuOspite.ospite.persona',
+        'contrattiSuOspite.ospite.persona.residenza',
+        'contrattiSuOspite.ospite.persona.luogoDiNascita',
+        'contrattiSuOspite.contrattiSuOspiteSuPostoLetto',
+        'contrattiSuOspite.contrattiSuOcontoRicaviConsumispiteSuPostoLetto.postoLetto',
+        'contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto.stanza',
+        'contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto.stanza.fabbricato',
         'bollette',
         'bollette.tipoBolletta'
     ];
