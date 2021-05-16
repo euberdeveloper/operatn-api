@@ -64,7 +64,11 @@ export class StanzaService extends TableService {
             }
             return result;
         }
-        function validateNumber(value: any, name: string): number {
+        function validateNumber(value: any, name: string): number | undefined {
+            if (value === undefined) {
+                return undefined;
+            }
+
             const result = +value;
             if (isNaN(result)) {
                 throw new InvalidQueryParamError(`Invalid query param ${name}`);
