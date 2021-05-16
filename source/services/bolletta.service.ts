@@ -42,7 +42,7 @@ export class BollettaService extends TableService {
         'contratto.contrattiSuOspite.ospite.persona.residenza',
         'contratto.contrattiSuOspite.ospite.persona.luogoDiNascita',
         'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto',
-        'contratto.contrattiSuOspite.contrattiSuOcontoRicaviConsumispiteSuPostoLetto.postoLetto',
+        'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto',
         'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto.stanza',
         'contratto.contrattiSuOspite.contrattiSuOspiteSuPostoLetto.postoLetto.stanza.fabbricato',
         'tipoBolletta',
