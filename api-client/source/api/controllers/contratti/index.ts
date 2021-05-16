@@ -2,7 +2,16 @@ import {
     Bolletta,
     ContoRicavi,
     Contratto,
+    ContrattoSuOspite,
+    ContrattoSuOspiteSuPostoLetto,
+    Fabbricato,
+    LuogoDiNascita,
+    Ospite,
+    Persona,
+    PostoLetto,
     Quietanziante,
+    Residenza,
+    Stanza,
     Tariffa,
     TipoBolletta,
     TipoContratto,
@@ -50,11 +59,24 @@ export type ContrattiReturned = Contratto & {
     tipoContratto?: TipoContratto & {
         tipoStudente?: TipoStudente;
     };
-    bollette?: (Bolletta & {
-        tipoBolletta?: TipoBolletta;
-    })[];
+    contrattiSuOspite?: ContrattoSuOspite & {
+        ospite?: Ospite &
+            Persona & {
+                luogoDiNascita?: LuogoDiNascita;
+                residenza?: Residenza;
+            };
+        contrattiSuOspiteSuPostoLetto?: ContrattoSuOspiteSuPostoLetto & {
+            postoLetto?: PostoLetto & {
+                stanza?: Stanza & {
+                    fabbricato?: Fabbricato;
+                };
+            };
+        };
+        bollette?: (Bolletta & {
+            tipoBolletta?: TipoBolletta;
+        })[];
+    };
 };
-
 export interface ContrattiIncludeParams {
     quietanziante?: boolean;
     tariffa?:
@@ -73,6 +95,33 @@ export interface ContrattiIncludeParams {
     tipoContratto?:
         | {
               tipoStudente?: boolean;
+          }
+        | boolean;
+    contrattiSuOspite?:
+        | {
+              ospite?:
+                  | {
+                        persona?:
+                            | {
+                                  residenza?: boolean;
+                                  luogoDiNascita?: boolean;
+                              }
+                            | boolean;
+                    }
+                  | boolean;
+              contrattiSuOspiteSuPostoLetto?:
+                  | {
+                        postoLetto?:
+                            | {
+                                  stanza?:
+                                      | {
+                                            fabbricato?: boolean;
+                                        }
+                                      | boolean;
+                              }
+                            | boolean;
+                    }
+                  | boolean;
           }
         | boolean;
     bollette?:
