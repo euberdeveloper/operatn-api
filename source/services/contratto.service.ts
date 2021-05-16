@@ -387,6 +387,15 @@ export class ContrattoService extends TableService {
         return id;
     }
 
+    private getDatesWhere(dataInizio?: Date, dataFine?: Date): any {
+        return {
+            AND: [
+                dataFine ? { dataFine: { lte: dataFine } } : { id: undefined },
+                dataInizio ? { dataInizio: { gte: dataInizio } } : { id: undefined }
+            ]
+        };
+    }
+
     protected parseFilterQueryParameters(
         queryParams: Record<string, string | string[]>
     ): { dataInizio?: Date; dataFine?: Date } {
@@ -400,7 +409,7 @@ export class ContrattoService extends TableService {
         const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }]
+                ...this.getDatesWhere(dataInizio, dataFine)
             },
             include
         });
@@ -412,7 +421,7 @@ export class ContrattoService extends TableService {
         const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }],
+                ...this.getDatesWhere(dataInizio, dataFine),
                 dataFirmaContratto: null
             },
             include
@@ -425,7 +434,7 @@ export class ContrattoService extends TableService {
         const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }],
+                ...this.getDatesWhere(dataInizio, dataFine),
                 dataFirmaContratto: null,
                 dataRispostaEmail: { not: null },
                 file: { not: null }
@@ -440,7 +449,7 @@ export class ContrattoService extends TableService {
         const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                OR: [{ dataFine: { lte: dataInizio } }, { dataInizio: { gte: dataFine } }],
+                ...this.getDatesWhere(dataInizio, dataFine),
                 dataFirmaContratto: { not: null }
             },
             include
