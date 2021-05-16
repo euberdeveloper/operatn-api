@@ -29,7 +29,7 @@ export abstract class BaseController {
         return keys.reduce(
             (result, key, index) =>
                 result +
-                (index === 0 ? '' : '&') +
+                (index === 0 || params[key] === undefined || params[key] === null ? '' : '&') +
                 (typeof params[key] === 'object' && !(params[key] instanceof Date)
                     ? this.parseQueryParams(params[key], [...parents, key])
                     : this.parseNonObject(params[key], prefix, key)),

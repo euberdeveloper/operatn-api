@@ -80,7 +80,7 @@ export class StanzeController extends BaseController {
 
     public async getLibere(params: StanzeLibereParams, options: Record<string, any> = {}): Promise<StanzeReturned[]> {
         const queryParams = this.parseQueryParams(params);
-        const result = await this.axiosInstance.get(`${this.route}${queryParams}`, { ...options });
+        const result = await this.axiosInstance.get(`${this.route}/libere${queryParams}`, { ...options });
         return result.data;
     }
 

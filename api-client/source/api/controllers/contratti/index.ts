@@ -31,7 +31,7 @@ export type ContrattiCreateBody = Pick<
         postiLetto: number[];
     }[];
 };
-export type ContrattiReplaceBody = Omit<Contratto, 'id'>;
+export type ContrattiReplaceBody = Omit<ContrattiCreateBody, 'id'>;
 export interface ContrattiChiusuraAnticipataBody {
     dataChiusura: Date;
 }
