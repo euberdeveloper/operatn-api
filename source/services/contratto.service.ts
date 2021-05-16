@@ -4,7 +4,7 @@ import { v4 as uuid } from 'uuid';
 import * as Joi from 'joi';
 import * as dayjs from 'dayjs';
 
-import { InternalServerError, InvalidBodyError, NotFoundError } from '@/errors';
+import { BadRequestError, InternalServerError, InvalidBodyError, NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 import logger from '@/utils/logger';
 
@@ -624,6 +624,11 @@ export class ContrattoService extends TableService {
                     }
                 }
             });
+
+            if (contratto.dataFirmaContratto) {
+                throw new BadRequestError('Contratto already firmato');
+            }
+
             const token = uuid();
             await this.model.update({
                 where: { id },
