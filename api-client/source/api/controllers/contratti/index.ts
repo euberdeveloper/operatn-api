@@ -60,11 +60,12 @@ export type ContrattiReturned = Contratto & {
         tipoStudente?: TipoStudente;
     };
     contrattiSuOspite?: (ContrattoSuOspite & {
-        ospite?: Ospite &
-            Persona & {
+        ospite?: Ospite & {
+            persona?: Persona & {
                 luogoDiNascita?: LuogoDiNascita;
                 residenza?: Residenza;
             };
+        };
         contrattiSuOspiteSuPostoLetto?: (ContrattoSuOspiteSuPostoLetto & {
             postoLetto?: PostoLetto & {
                 stanza?: Stanza & {
