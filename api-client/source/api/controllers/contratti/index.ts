@@ -150,6 +150,7 @@ export class ContrattiController extends BaseController {
         value.dataChiusuraAnticipata = value.dataChiusuraAnticipata ? new Date(value.dataChiusuraAnticipata) : null;
         value.dataInvioEmail = value.dataInvioEmail ? new Date(value.dataInvioEmail) : null;
         value.dataRispostaEmail = value.dataRispostaEmail ? new Date(value.dataRispostaEmail) : null;
+        value.dataInserimento = new Date(value.dataInserimento);
         return value;
     }
 
