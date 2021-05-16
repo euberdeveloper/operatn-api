@@ -11,6 +11,7 @@ import logger from '@/utils/logger';
 import bollettaService from './bolletta.service';
 import { TableService } from './table.service';
 import emailService from './email.service';
+import filesystemService from './filesystem.service';
 
 interface CreateContrattoBody {
     dataInizio: Date;
@@ -649,6 +650,31 @@ export class ContrattoService extends TableService {
                 }
             });
             await emailService.contrattiFirma(contratto, token);
+        });
+    }
+
+    public async uploadFromEmailFirma(token: string, path: string): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateStringParam(token, 'token');
+            const contratto = await this.getContrattoByToken(token, {});
+
+            if (contratto.dataFirmaContratto) {
+                throw new BadRequestError('Contratto already firmato');
+            }
+            if (contratto.dataRispostaEmail) {
+                throw new BadRequestError('Contratto già inviato');
+            }
+
+            await filesystemService.moveToStored(path, `${contratto.id}.pdf`, 'contratti');
+
+            await this.model.update({
+                where: { id: contratto.id },
+                data: {
+                    tokenEmail: null,
+                    dataRispostaEmail: new Date(),
+                    file: `${contratto.id}.pdf`
+                }
+            });
         });
     }
 

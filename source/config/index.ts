@@ -57,6 +57,9 @@ const CONFIG = {
     LOGGER: {
         DEBUG: process.env.LOGGER_DEBUG === 'true'
     },
+    UPLOAD: {
+        SIZE_LIMIT: +process.env.UPLOAD_SIZE_LIMIT
+    },
     JOBS: {
         TABELLONE_CRON: process.env.JOBS_TABELLONE_CRON
     },

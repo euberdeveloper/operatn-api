@@ -4,7 +4,9 @@ import { authenticateJwt } from '@/utils/auth';
 import { RuoloUtente } from '@prisma/client';
 import permission from '@/utils/permission';
 import asyncHandler from '@/utils/asyncHandler';
+import upload from '@/utils/uploader';
 import contrattoService from '@/services/contratto.service';
+import CONFIG from '@/config';
 
 import bolletteRouter from './bollette/bollette.route';
 
@@ -101,6 +103,18 @@ export default function (): Router {
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             await contrattoService.postEmailFirma(id);
+            res.json();
+        })
+    );
+
+    router.post(
+        '/token/:token/email-firma',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        upload(CONFIG.TEMP.PATH, 'contratto'),
+        asyncHandler(async (req, res) => {
+            const token = req.params.token;
+            const filePath = req.file.path;
+            await contrattoService.uploadFromEmailFirma(token, filePath);
             res.json();
         })
     );

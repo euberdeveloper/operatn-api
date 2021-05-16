@@ -22,6 +22,7 @@
   "dependencies": {
     "@euberdeveloper/asciify": "^1.0.4",
     "@prisma/client": "^2.22.1",
+    "@types/multer": "^1.4.5",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
     "bull": "^3.22.0",
@@ -38,6 +39,7 @@
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
     "morgan": "^1.10.0",
+    "multer": "^1.4.2",
     "nodemailer": "^6.5.0",
     "nodemailer-pug-engine": "^2.0.0",
     "passport": "^0.4.1",

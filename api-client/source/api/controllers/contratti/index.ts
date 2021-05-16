@@ -200,6 +200,16 @@ export class ContrattiController extends BaseController {
         return this.purgeValue(result.data);
     }
 
+    public async getByToken(
+        token: string,
+        params: ContrattiIncludeParams = {},
+        options: Record<string, any> = {}
+    ): Promise<ContrattiReturned> {
+        const queryParams = this.parseQueryParams(params);
+        const result = await this.axiosInstance.get(`${this.route}/token/${token}${queryParams}`, { ...options });
+        return this.purgeValue(result.data);
+    }
+
     public async create(body: ContrattiCreateBody, options: Record<string, any> = {}): Promise<number> {
         const result = await this.axiosInstance.post(`${this.route}`, body, { ...options });
         return result.data;

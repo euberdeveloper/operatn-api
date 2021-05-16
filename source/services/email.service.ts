@@ -133,6 +133,18 @@ export class EmailService {
 
         await this.sendEmail(to, subject, template, ctx, [attachedPdf]);
     }
+
+    public async contrattiFirmato(contratto: any): Promise<void> {
+        const to = contratto.contrattiSuOspite[0].ospite.email;
+        const subject = 'OperaTN - Contratto firmato con successo';
+        const template = EmailTemplates.CONTRATTI.FIRMATO;
+        const ctx = {
+            nome: contratto.contrattiSuOspite[0].ospite.persona.nome,
+            cognome: contratto.contrattiSuOspite[0].ospite.persona.cognome
+        };
+
+        await this.sendEmail(to, subject, template, ctx);
+    }
 }
 
 export default new EmailService();
