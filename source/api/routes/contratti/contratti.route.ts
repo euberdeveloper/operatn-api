@@ -85,6 +85,16 @@ export default function (): Router {
     );
 
     router.post(
+        '/:id/email-firma',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            await contrattoService.postEmailFirma(id);
+            res.json();
+        })
+    );
+
+    router.post(
         '/:id/chiusura-anticipata',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {

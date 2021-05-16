@@ -3,12 +3,18 @@ import { createTransport, Transporter } from 'nodemailer';
 import { pugEngine } from 'nodemailer-pug-engine';
 
 import { EmailError } from '@/errors';
+import { Utente } from '@/services/prisma.service';
+import filesystemService from '@/services/filesystem.service';
 import logger from '@/utils/logger';
+import { pdfContratto, pdfGetBuffer } from '@/utils/pdf';
 import CONFIG from '@/config';
-import { Utente } from '@prisma/client';
 
 const EmailTemplates = {
     TABELLONE: 'tabellone',
+    CONTRATTI: {
+        FIRMA: 'contratti/firma',
+        FIRMATO: 'contratti/firmato'
+    },
     USERS: {
         CREATION: 'users/creation',
         DELETION: 'users/deletion',
@@ -104,6 +110,28 @@ export class EmailService {
         };
 
         await this.sendEmail(to, subject, template, ctx);
+    }
+
+    public async contrattiFirma(contratto: any, token: string): Promise<void> {
+        const to = contratto.contrattiSuOspite[0].ospite.email;
+        const subject = 'OperaTN - Firma il tuo contratto';
+        const template = EmailTemplates.CONTRATTI.FIRMA;
+        const ctx = {
+            nome: contratto.contrattiSuOspite[0].ospite.persona.nome,
+            cognome: contratto.contrattiSuOspite[0].ospite.persona.cognome,
+            link: `${CONFIG.FRONTEND.URL}/contratti/email-token/${token}/firma`
+        };
+
+        const pdfCreator = pdfContratto(contratto);
+        const pdfBuffer = await pdfGetBuffer(pdfCreator);
+        const filePath = await filesystemService.saveTempRandomName(pdfBuffer, 'pdf');
+
+        const attachedPdf = {
+            path: filePath,
+            filename: 'contratto.pdf'
+        };
+
+        await this.sendEmail(to, subject, template, ctx, [attachedPdf]);
     }
 }
 

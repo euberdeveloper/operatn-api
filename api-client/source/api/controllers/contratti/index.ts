@@ -217,6 +217,10 @@ export class ContrattiController extends BaseController {
         await this.axiosInstance.post(`${this.route}/${id}/chiusura-anticipata`, body, { ...options });
     }
 
+    public async sendEmailFirma(id: number, options: Record<string, any> = {}): Promise<void> {
+        await this.axiosInstance.post(`${this.route}/${id}/email-firma`, null, { ...options });
+    }
+
     public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }

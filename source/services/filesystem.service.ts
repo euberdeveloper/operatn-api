@@ -35,7 +35,12 @@ export class FileSystemService {
         return filePath;
     }
 
-    private async saveRandomName(basepath: string, data: string, extension: string, subpath = ''): Promise<string> {
+    private async saveRandomName(
+        basepath: string,
+        data: string | Buffer,
+        extension: string,
+        subpath = ''
+    ): Promise<string> {
         const file = `${uuid()}.${extension}`;
         const dirPath = path.join(basepath, subpath);
         const filePath = path.resolve(dirPath, file);
@@ -66,7 +71,7 @@ export class FileSystemService {
         return filePath;
     }
 
-    public async saveTempRandomName(data: string, extension: string, subpath = ''): Promise<string> {
+    public async saveTempRandomName(data: string | Buffer, extension: string, subpath = ''): Promise<string> {
         return this.saveRandomName(CONFIG.TEMP.PATH, data, extension, subpath);
     }
 

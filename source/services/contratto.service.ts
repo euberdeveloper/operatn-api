@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import prisma, { Prisma, Contratto, TipoRata, Bolletta } from '@/services/prisma.service';
+import { v4 as uuid } from 'uuid';
 import * as Joi from 'joi';
 import * as dayjs from 'dayjs';
 
@@ -9,6 +10,7 @@ import logger from '@/utils/logger';
 
 import bollettaService from './bolletta.service';
 import { TableService } from './table.service';
+import emailService from './email.service';
 
 interface CreateContrattoBody {
     dataInizio: Date;
@@ -608,6 +610,29 @@ export class ContrattoService extends TableService {
             ];
 
             await prisma.$transaction(actions);
+        });
+    }
+
+    public async postEmailFirma(id: number): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateId(id);
+            const contratto = await this.getContrattoById(id, {
+                contrattiSuOspite: {
+                    ospite: { persona: 'true' },
+                    contrattiSuOspiteSuPostoLetto: {
+                        postoLetto: 'true'
+                    }
+                }
+            });
+            const token = uuid();
+            await this.model.update({
+                where: { id },
+                data: {
+                    tokenEmail: token,
+                    dataInvioEmail: new Date()
+                }
+            });
+            await emailService.contrattiFirma(contratto, token);
         });
     }
 

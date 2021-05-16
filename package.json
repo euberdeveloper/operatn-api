@@ -43,6 +43,7 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
+    "pdfmake": "^0.1.71",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
@@ -58,6 +59,7 @@
     "@types/passport": "^1.0.6",
     "@types/passport-jwt": "^3.0.5",
     "@types/passport-local": "^1.0.33",
+    "@types/pdfmake": "^0.1.17",
     "@types/uuid": "^8.3.0",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^8.1.0",
