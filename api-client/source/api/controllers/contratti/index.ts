@@ -59,23 +59,23 @@ export type ContrattiReturned = Contratto & {
     tipoContratto?: TipoContratto & {
         tipoStudente?: TipoStudente;
     };
-    contrattiSuOspite?: ContrattoSuOspite & {
+    contrattiSuOspite?: (ContrattoSuOspite & {
         ospite?: Ospite &
             Persona & {
                 luogoDiNascita?: LuogoDiNascita;
                 residenza?: Residenza;
             };
-        contrattiSuOspiteSuPostoLetto?: ContrattoSuOspiteSuPostoLetto & {
+        contrattiSuOspiteSuPostoLetto?: (ContrattoSuOspiteSuPostoLetto & {
             postoLetto?: PostoLetto & {
                 stanza?: Stanza & {
                     fabbricato?: Fabbricato;
                 };
             };
-        };
-        bollette?: (Bolletta & {
-            tipoBolletta?: TipoBolletta;
         })[];
-    };
+    })[];
+    bollette?: (Bolletta & {
+        tipoBolletta?: TipoBolletta;
+    })[];
 };
 export interface ContrattiIncludeParams {
     quietanziante?: boolean;
