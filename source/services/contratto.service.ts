@@ -470,6 +470,17 @@ export class ContrattoService extends TableService {
         return contratto;
     }
 
+    public async getContrattoByToken(token: string, queryParams: any): Promise<Contratto> {
+        this.validateStringParam(token, 'token');
+        const include = this.getInclude(queryParams);
+
+        const contratto = await this.model.findFirst({ where: { tokenEmail: token }, include });
+        if (contratto === null) {
+            throw new NotFoundError('Contratto not found');
+        }
+        return contratto;
+    }
+
     public async postContratto(body: any): Promise<number> {
         return handlePrismaError(async () => {
             return this.pushContratto(body);

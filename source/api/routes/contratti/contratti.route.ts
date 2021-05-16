@@ -63,6 +63,17 @@ export default function (): Router {
         })
     );
 
+    router.get(
+        '/token/:token',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const token = req.params.token;
+            const queryParams = req.query;
+            const contratto = await contrattoService.getContrattoByToken(token, queryParams);
+            res.json(contratto);
+        })
+    );
+
     router.post(
         '/',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
