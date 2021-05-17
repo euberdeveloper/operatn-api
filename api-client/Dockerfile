@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 WORKDIR /api-client
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 COPY . .
 RUN npm run docs
