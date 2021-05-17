@@ -12,10 +12,10 @@ import bolletteRouter from './bollette/bollette.route';
 
 export default function (): Router {
     const router = Router();
-    router.use(authenticateJwt);
 
     router.get(
         '/',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
@@ -26,6 +26,7 @@ export default function (): Router {
 
     router.get(
         '/da-firmare',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
@@ -36,6 +37,7 @@ export default function (): Router {
 
     router.get(
         '/da-visionare',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
@@ -46,6 +48,7 @@ export default function (): Router {
 
     router.get(
         '/firmati',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
@@ -56,6 +59,7 @@ export default function (): Router {
 
     router.get(
         '/:id',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
@@ -67,7 +71,6 @@ export default function (): Router {
 
     router.get(
         '/token/:token',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const token = req.params.token;
             const queryParams = req.query;
@@ -78,6 +81,7 @@ export default function (): Router {
 
     router.post(
         '/',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
@@ -88,6 +92,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
@@ -98,7 +103,21 @@ export default function (): Router {
     );
 
     router.post(
+        '/:id/firma',
+        authenticateJwt,
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        upload(CONFIG.TEMP.PATH, 'contratto'),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            const filePath = req.file.path;
+            await contrattoService.uploadFirma(id, filePath);
+            res.json();
+        })
+    );
+
+    router.post(
         '/:id/email-firma',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
@@ -109,7 +128,6 @@ export default function (): Router {
 
     router.post(
         '/token/:token/email-firma',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         upload(CONFIG.TEMP.PATH, 'contratto'),
         asyncHandler(async (req, res) => {
             const token = req.params.token;
@@ -121,6 +139,7 @@ export default function (): Router {
 
     router.post(
         '/:id/email-firma/risposta',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
@@ -132,6 +151,7 @@ export default function (): Router {
 
     router.post(
         '/:id/chiusura-anticipata',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
@@ -143,6 +163,7 @@ export default function (): Router {
 
     router.delete(
         '/:id',
+        authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;

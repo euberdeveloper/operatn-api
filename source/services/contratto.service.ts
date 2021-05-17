@@ -677,6 +677,38 @@ export class ContrattoService extends TableService {
             });
         });
     }
+
+    public async uploadFirma(id: number, path: string): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateId(id);
+            const contratto = await this.getContrattoById(id, {
+                contrattiSuOspite: {
+                    ospite: { persona: 'true' },
+                    contrattiSuOspiteSuPostoLetto: {
+                        postoLetto: 'true'
+                    }
+                }
+            });
+
+            if (contratto.dataFirmaContratto) {
+                throw new BadRequestError('Contratto already firmato');
+            }
+
+            await filesystemService.moveToStored(path, `${contratto.id}.pdf`, 'contratti');
+
+            await this.model.update({
+                where: { id: contratto.id },
+                data: {
+                    tokenEmail: null,
+                    file: `${contratto.id}.pdf`,
+                    dataFirmaContratto: new Date()
+                }
+            });
+
+            await emailService.contrattiFirmato(contratto);
+        });
+    }
+
     public async answerEmailFirma(id: number, body: any): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id);
