@@ -120,6 +120,17 @@ export default function (): Router {
     );
 
     router.post(
+        '/:id/email-firma/risposta',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const id = +req.params.id;
+            const body = req.body;
+            await contrattoService.answerEmailFirma(id, body);
+            res.json();
+        })
+    );
+
+    router.post(
         '/:id/chiusura-anticipata',
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {

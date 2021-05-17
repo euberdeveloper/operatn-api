@@ -677,6 +677,53 @@ export class ContrattoService extends TableService {
             });
         });
     }
+    public async answerEmailFirma(id: number, body: any): Promise<void> {
+        return handlePrismaError(async () => {
+            this.validateId(id);
+            const contratto = await this.getContrattoById(id, {
+                contrattiSuOspite: {
+                    ospite: { persona: 'true' },
+                    contrattiSuOspiteSuPostoLetto: {
+                        postoLetto: 'true'
+                    }
+                }
+            });
+
+            if (contratto.dataFirmaContratto) {
+                throw new BadRequestError('Contratto already firmato');
+            }
+            if (!contratto.dataRispostaEmail) {
+                throw new BadRequestError('Risposta email mai ricevuta');
+            }
+            if (typeof body.accettato !== 'boolean') {
+                logger.warning('Body should have the accettato field as boolean');
+                throw new InvalidBodyError();
+            }
+
+            if (body.accettato) {
+                await this.model.update({
+                    where: { id: contratto.id },
+                    data: {
+                        dataFirmaContratto: new Date()
+                    }
+                });
+
+                await emailService.contrattiFirmaAccetta(contratto);
+            } else {
+                await this.model.update({
+                    where: { id: contratto.id },
+                    data: {
+                        file: null,
+                        dataInvioEmail: null,
+                        dataRispostaEmail: null
+                    }
+                });
+
+                await filesystemService.removeStored(`${contratto.id}.pdf`, 'contratti');
+                await emailService.contrattiFirmaRifiuta(contratto);
+            }
+        });
+    }
 
     public async delContrattoById(id: number): Promise<void> {
         return handlePrismaError(async () => {

@@ -13,6 +13,8 @@ const EmailTemplates = {
     TABELLONE: 'tabellone',
     CONTRATTI: {
         FIRMA: 'contratti/firma',
+        FIRMA_ACCETTA: 'contratti/firma_accetta',
+        FIRMA_RIFIUTA: 'contratti/firma_rifiuta',
         FIRMATO: 'contratti/firmato'
     },
     USERS: {
@@ -138,6 +140,30 @@ export class EmailService {
         const to = contratto.contrattiSuOspite[0].ospite.email;
         const subject = 'OperaTN - Contratto firmato con successo';
         const template = EmailTemplates.CONTRATTI.FIRMATO;
+        const ctx = {
+            nome: contratto.contrattiSuOspite[0].ospite.persona.nome,
+            cognome: contratto.contrattiSuOspite[0].ospite.persona.cognome
+        };
+
+        await this.sendEmail(to, subject, template, ctx);
+    }
+
+    public async contrattiFirmaAccetta(contratto: any): Promise<void> {
+        const to = contratto.contrattiSuOspite[0].ospite.email;
+        const subject = 'OperaTN - Firma contratto accettata';
+        const template = EmailTemplates.CONTRATTI.FIRMA_ACCETTA;
+        const ctx = {
+            nome: contratto.contrattiSuOspite[0].ospite.persona.nome,
+            cognome: contratto.contrattiSuOspite[0].ospite.persona.cognome
+        };
+
+        await this.sendEmail(to, subject, template, ctx);
+    }
+
+    public async contrattiFirmaRifiuta(contratto: any): Promise<void> {
+        const to = contratto.contrattiSuOspite[0].ospite.email;
+        const subject = 'OperaTN - Firma contratto rifiutata';
+        const template = EmailTemplates.CONTRATTI.FIRMA_RIFIUTA;
         const ctx = {
             nome: contratto.contrattiSuOspite[0].ospite.persona.nome,
             cognome: contratto.contrattiSuOspite[0].ospite.persona.cognome

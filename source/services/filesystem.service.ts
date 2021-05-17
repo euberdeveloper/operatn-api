@@ -4,7 +4,7 @@ import * as path from 'path';
 import * as dree from 'dree';
 
 import { FileSystemError } from '@/errors';
-import { writeFile, mkdir, rename } from '@/utils/fsAsync';
+import { writeFile, mkdir, rename, unlink } from '@/utils/fsAsync';
 import logger from '@/utils/logger';
 import CONFIG from '@/config';
 
@@ -104,6 +104,18 @@ export class FileSystemService {
             await mkdir(toDir, { recursive: true });
             await rename(tempPath, toPath);
             return toPath;
+        } catch (error) {
+            logger.warning('File system error', error);
+            throw new FileSystemError();
+        }
+    }
+
+    public async removeStored(fileName: string, subpath = ''): Promise<string> {
+        try {
+            const fileDir = path.join(CONFIG.STORED.PATH, subpath);
+            const filePath = path.join(fileDir, fileName);
+            await unlink(filePath);
+            return filePath;
         } catch (error) {
             logger.warning('File system error', error);
             throw new FileSystemError();
