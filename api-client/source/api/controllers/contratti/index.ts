@@ -231,6 +231,14 @@ export class ContrattiController extends BaseController {
         await this.axiosInstance.post(`${this.route}/${id}/email-firma`, null, { ...options });
     }
 
+    public async uploadFirmaFromEmail(
+        token: string,
+        formData: FormData,
+        options: Record<string, any> = {}
+    ): Promise<void> {
+        await this.axiosInstance.post(`${this.route}/token/${token}/email-firma`, formData, { ...options });
+    }
+
     public async delete(id: number, options: Record<string, any> = {}): Promise<void> {
         return this.axiosInstance.delete(`${this.route}/${id}`, { ...options });
     }
