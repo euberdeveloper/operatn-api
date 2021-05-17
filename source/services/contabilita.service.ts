@@ -118,6 +118,10 @@ export class ContabilitaService {
         });
     }
 
+    private twoDigits(n: number): string {
+        return n < 10 ? `0${n}` : `${n}`;
+    }
+
     private getAnagraficaData(bolletta: BollettaInfo) {
         const quietanziante = bolletta.quietanziante;
         const ospite = bolletta.ospite;
@@ -158,8 +162,8 @@ export class ContabilitaService {
     private getXmlTestata(bolletta: BollettaInfo): string {
         const currDate = new Date();
         const year = currDate.getFullYear();
-        const month = currDate.getMonth() + 1;
-        const dateStr = `${year}-${month}-${currDate.getDay()}`;
+        const month = this.twoDigits(currDate.getMonth() + 1);
+        const dateStr = currDate.toISOString().slice(0, 10);
 
         const idBolletta = bolletta.id;
         const idContratto = bolletta.idContratto;
@@ -237,10 +241,10 @@ export class ContabilitaService {
         const contoRicavi = bolletta[tipoConto] as ContoRicavi;
 
         const annoDal = bolletta.competenzaDal.getFullYear();
-        const meseDal = bolletta.competenzaDal.getMonth() + 1;
+        const meseDal = this.twoDigits(bolletta.competenzaDal.getMonth() + 1);
 
         const annoAl = bolletta.competenzaAl.getFullYear();
-        const meseAl = bolletta.competenzaAl.getMonth() + 1;
+        const meseAl = this.twoDigits(bolletta.competenzaAl.getMonth() + 1);
 
         const centroDiCosto = bolletta.centroDiCosto as string;
         const importo = (tipoConto === 'contoRicaviCanoni'
@@ -477,10 +481,11 @@ export class ContabilitaService {
 
             try {
                 await prisma.bolletta.update({ where: { id: bolletta.id }, data: { dataInvioEusis: new Date() } });
-                await axios.post(CONFIG.CONTABILITA.API_URL, soapRequest, {
-                    headers: {
-                        'Content-Type': 'application/xml'
-                    }
+                await axios({
+                    method: 'post',
+                    url: CONFIG.CONTABILITA.API_URL,
+                    headers: { 'Content-Type': 'text/plain' },
+                    data: soapRequest
                 });
                 passedBollette.add(bolletta.id);
                 passedXml.push(soapRequest);
