@@ -154,7 +154,7 @@ export class StanzaService extends TableService {
                                                   NOT: [
                                                       { dataInizio: { gt: params.dataFine } },
                                                       { dataFine: { lt: params.dataInizio } }
-                                                      //   ,{ dataChiusuraAnticipata: null }
+                                                      //   ,{  dataChiusuraAnticipata: { not: null } }
                                                   ]
                                               }
                                           }
@@ -183,6 +183,7 @@ export class StanzaService extends TableService {
                                         OR: [
                                             { dataInizio: { gt: params.dataFine } },
                                             { dataFine: { lt: params.dataInizio } }
+                                            //   ,{  dataChiusuraAnticipata: { not: null } }
                                         ]
                                     }
                                 }

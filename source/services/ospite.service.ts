@@ -161,7 +161,7 @@ export class OspiteService extends TableService {
                               NOT: [
                                   { dataInizio: { gt: dataFine } },
                                   { dataFine: { lt: dataInizio } },
-                                  { dataChiusuraAnticipata: null }
+                                  { dataChiusuraAnticipata: { not: null } }
                               ]
                           }
                       }
@@ -274,6 +274,14 @@ export class OspiteService extends TableService {
             include,
             ...pageValues
         })) as GottenOspite[];
+        const ospiti2 = (await this.model.findMany({
+            where: {
+                persona: search,
+                ...filter
+            },
+            include
+        })) as GottenOspite[];
+        console.log('ciao', ospiti2.length);
         return ospiti.map(ospite => this.handleOspite(ospite));
     }
 
