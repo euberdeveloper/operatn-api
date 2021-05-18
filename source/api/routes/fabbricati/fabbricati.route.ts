@@ -14,6 +14,7 @@ export default function (): Router {
 
     router.get(
         '/',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const fabbricati = await fabbricatoService.getFabbricati(queryParams);
@@ -23,6 +24,7 @@ export default function (): Router {
 
     router.get(
         '/:fid',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.fid;
             const queryParams = req.query;
@@ -33,6 +35,7 @@ export default function (): Router {
 
     router.get(
         '/codice/:codice',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const fabbricati = await fabbricatoService.getFabbricatoByCodice(codice);
@@ -42,7 +45,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await fabbricatoService.postFabbricato(body);
@@ -52,7 +55,7 @@ export default function (): Router {
 
     router.put(
         '/:fid',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.fid;
             const body = req.body;
@@ -63,7 +66,7 @@ export default function (): Router {
 
     router.patch(
         '/:fid',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.fid;
             const body = req.body;

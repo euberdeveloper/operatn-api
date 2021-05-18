@@ -12,7 +12,7 @@ export default function (): Router {
 
     router.get(
         '/',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const cid = +req.params.cid;
             const queryParams = req.query;
@@ -23,7 +23,7 @@ export default function (): Router {
 
     router.get(
         '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const cid = +req.params.cid;
             const id = +req.params.id;

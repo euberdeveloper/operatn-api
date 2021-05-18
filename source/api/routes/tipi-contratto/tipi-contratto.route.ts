@@ -41,7 +41,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await tipoContrattoService.postTipoContratto(body);
@@ -51,7 +51,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;

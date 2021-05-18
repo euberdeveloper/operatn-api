@@ -12,6 +12,7 @@ export default function (): Router {
 
     router.get(
         '/',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (_req, res) => {
             const dipartimentiUnitn = await dipartimentoUnitnService.getDipartimentiUnitn();
             res.json(dipartimentiUnitn);
@@ -20,6 +21,7 @@ export default function (): Router {
 
     router.get(
         '/:codice',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const dipartimentoUnitn = await dipartimentoUnitnService.getDipartimentoUnitnByCodice(codice);
@@ -29,6 +31,7 @@ export default function (): Router {
 
     router.get(
         '/sigla/:sigla',
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const dipartimentoUnitn = await dipartimentoUnitnService.getDipartimentoUnitnBySigla(sigla);
@@ -38,7 +41,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const codice = await dipartimentoUnitnService.postDipartimentoUnitn(body);
@@ -48,7 +51,7 @@ export default function (): Router {
 
     router.put(
         '/:codice',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const body = req.body;
@@ -59,7 +62,7 @@ export default function (): Router {
 
     router.patch(
         '/:codice',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const codice = req.params.codice;
             const body = req.body;
@@ -70,7 +73,7 @@ export default function (): Router {
 
     router.patch(
         '/sigla/:sigla',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const sigla = req.params.sigla;
             const body = req.body;
