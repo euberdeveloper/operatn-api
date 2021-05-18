@@ -134,6 +134,7 @@ export interface ContrattiIncludeParams {
 export interface ContrattiFilterParams {
     dataInizio?: Date;
     dataFine?: Date;
+    idOspite?: number;
 }
 
 export class ContrattiController extends BaseController {
