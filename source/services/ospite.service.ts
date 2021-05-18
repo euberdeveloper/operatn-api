@@ -281,7 +281,6 @@ export class OspiteService extends TableService {
             },
             include
         })) as GottenOspite[];
-        console.log('ciao', ospiti2.length);
         return ospiti.map(ospite => this.handleOspite(ospite));
     }
 
