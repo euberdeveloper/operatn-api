@@ -12,7 +12,7 @@ export default function (): Router {
 
     router.get(
         '/cronology',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (_req, res) => {
             const result = await contabilitaService.getContabilitaCronology();
             res.json(result);
@@ -21,7 +21,7 @@ export default function (): Router {
 
     router.get(
         '/bollette',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const result = await contabilitaService.getBollette(queryParams);
@@ -31,7 +31,7 @@ export default function (): Router {
 
     router.get(
         '/bollette/count',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const result = await contabilitaService.getBolletteCount(queryParams);
@@ -41,7 +41,7 @@ export default function (): Router {
 
     router.post(
         '/bollette',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (req, res) => {
             const queryParams = req.query;
             const result = await contabilitaService.sendBollette(queryParams);
