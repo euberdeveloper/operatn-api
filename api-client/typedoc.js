@@ -10,5 +10,5 @@ module.exports = {
     excludePrivate: true,
     excludeProtected: true,
     disableSources: true,
-    out: './docs/documentation/html'
+    out: './docs/html'
 };

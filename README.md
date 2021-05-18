@@ -24,6 +24,8 @@ Other modules that were used:
 * __pdfmake__ for generating pdf files
 * __exceljs__ for generating excel files
 
+__Note:__ If you need to get the gmail tokens for sending emails, you should check [this stack overflow anser](https://stackoverflow.com/a/24123550)
+
 ## How to start it
 
 The first time:

@@ -31,7 +31,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const id = await tariffaService.postTariffa(body);
@@ -41,7 +41,7 @@ export default function (): Router {
 
     router.put(
         '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;
@@ -52,7 +52,7 @@ export default function (): Router {
 
     router.patch(
         '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.RAGIONERIA]),
         asyncHandler(async (req, res) => {
             const id = +req.params.id;
             const body = req.body;

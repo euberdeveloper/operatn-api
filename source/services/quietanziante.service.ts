@@ -84,7 +84,7 @@ export class QuietanzianteService extends TableService {
     public async delQuietanzianteById(id: number): Promise<void> {
         return handlePrismaError(async () => {
             this.validateId(id, 'id');
-            await this.model.delete({ where: { id } });
+            await prisma.$executeRaw`DELETE FROM quietanziante WHERE id = ${id}`;
         });
     }
 
