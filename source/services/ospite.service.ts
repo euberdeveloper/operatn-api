@@ -274,13 +274,6 @@ export class OspiteService extends TableService {
             include,
             ...pageValues
         })) as GottenOspite[];
-        const ospiti2 = (await this.model.findMany({
-            where: {
-                persona: search,
-                ...filter
-            },
-            include
-        })) as GottenOspite[];
         return ospiti.map(ospite => this.handleOspite(ospite));
     }
 
