@@ -473,11 +473,15 @@ export class ContrattoService extends TableService {
     public async getContrattiAttivi(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
         const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
+        const todayDate = new Date();
         const contratti = await this.model.findMany({
             where: {
                 ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
                 dataFirmaContratto: { not: null },
-                OR: [{ dataChiusuraAnticipata: { gte: dataFine } }, { dataChiusuraAnticipata: null }]
+                AND: [
+                    { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
+                    { OR: [{ dataChiusuraAnticipata: { lte: todayDate } }, { dataChiusuraAnticipata: null }] }
+                ]
             },
             include
         });
@@ -487,11 +491,12 @@ export class ContrattoService extends TableService {
     public async getContrattiTerminati(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
         const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
+        const todayDate = new Date();
         const contratti = await this.model.findMany({
             where: {
                 ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
                 dataFirmaContratto: { not: null },
-                OR: [{ dataFine: { lt: dataFine } }, { dataChiusuraAnticipata: { lt: dataFine } }]
+                OR: [{ dataFine: { lt: todayDate } }, { dataChiusuraAnticipata: { lt: todayDate } }]
             },
             include
         });
