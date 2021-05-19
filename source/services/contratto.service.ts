@@ -480,7 +480,7 @@ export class ContrattoService extends TableService {
                 dataFirmaContratto: { not: null },
                 AND: [
                     { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
-                    { OR: [{ dataChiusuraAnticipata: { lte: todayDate } }, { dataChiusuraAnticipata: null }] }
+                    { OR: [{ dataChiusuraAnticipata: { gte: todayDate } }, { dataChiusuraAnticipata: null }] }
                 ]
             },
             include

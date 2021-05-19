@@ -34,6 +34,13 @@ export class PostoLettoService extends TableService {
         this.model = prisma.postoLetto;
     }
 
+    public async getAllPostiLetto(queryParams: any): Promise<PostoLetto[]> {
+        const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
+        return this.model.findMany({
+            include
+        });
+    }
+
     public async getPostiLetto(fid: number, sid: number, queryParams: any): Promise<PostoLetto[]> {
         this.validateId(fid, 'fid');
         this.validateId(sid, 'sid');
@@ -57,6 +64,25 @@ export class PostoLettoService extends TableService {
 
         const postoLetto = await this.model.findFirst({
             where: { id, idStanza: sid, stanza: { idFabbricato: fid } },
+            include
+        });
+        if (postoLetto === null) {
+            throw new NotFoundError('PostoLetto not found');
+        }
+        return postoLetto;
+    }
+
+    public async getPostoLettoByIdGeneral(id: number, _queryParams: any): Promise<PostoLetto> {
+        this.validateId(id, 'id');
+        // TODO: rimuovere
+        const qp = {
+            'stanza': 'true',
+            'stanza.fabbricato': 'true'
+        };
+        const include = this.parseIncludeQueryParameters(qp, this.includeQueryParameters);
+
+        const postoLetto = await this.model.findFirst({
+            where: { id },
             include
         });
         if (postoLetto === null) {

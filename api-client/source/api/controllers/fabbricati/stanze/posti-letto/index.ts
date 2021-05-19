@@ -29,7 +29,7 @@ export type PostiLettoReturned = PostoLetto & {
     };
 };
 
-export class PostiLettoController extends BaseController {
+export class FabbricatiStanzePostiLettoController extends BaseController {
     private readonly baseUrl: string;
 
     get route(): string {
