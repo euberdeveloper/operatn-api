@@ -58,6 +58,28 @@ export default function (): Router {
     );
 
     router.get(
+        '/attivi',
+        authenticateJwt,
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContrattiAttivi(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
+        '/terminati',
+        authenticateJwt,
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
+        asyncHandler(async (req, res) => {
+            const queryParams = req.query;
+            const contratti = await contrattoService.getContrattiTerminati(queryParams);
+            res.json(contratti);
+        })
+    );
+
+    router.get(
         '/:id',
         authenticateJwt,
         permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),

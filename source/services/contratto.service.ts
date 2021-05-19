@@ -470,6 +470,34 @@ export class ContrattoService extends TableService {
         return contratti;
     }
 
+    public async getContrattiAttivi(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
+        const contratti = await this.model.findMany({
+            where: {
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
+                dataFirmaContratto: { not: null },
+                OR: [{ dataChiusuraAnticipata: { gte: dataFine } }, { dataChiusuraAnticipata: null }]
+            },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiTerminati(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
+        const contratti = await this.model.findMany({
+            where: {
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
+                dataFirmaContratto: { not: null },
+                OR: [{ dataFine: { lt: dataFine } }, { dataChiusuraAnticipata: { lt: dataFine } }]
+            },
+            include
+        });
+        return contratti;
+    }
+
     public async getContrattoById(id: number, queryParams: any): Promise<Contratto> {
         this.validateId(id, 'id');
         const include = this.getInclude(queryParams);
