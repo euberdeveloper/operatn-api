@@ -191,6 +191,24 @@ export class ContrattiController extends BaseController {
         return result.data.map((o: ContrattiReturned) => this.purgeValue(o));
     }
 
+    public async getAttivi(
+        params: ContrattiIncludeParams & ContrattiFilterParams = {},
+        options: Record<string, any> = {}
+    ): Promise<ContrattiReturned[]> {
+        const queryParams = this.parseQueryParams(params);
+        const result = await this.axiosInstance.get(`${this.route}/attivi${queryParams}`, { ...options });
+        return result.data.map((o: ContrattiReturned) => this.purgeValue(o));
+    }
+
+    public async getTerminati(
+        params: ContrattiIncludeParams & ContrattiFilterParams = {},
+        options: Record<string, any> = {}
+    ): Promise<ContrattiReturned[]> {
+        const queryParams = this.parseQueryParams(params);
+        const result = await this.axiosInstance.get(`${this.route}/terminati${queryParams}`, { ...options });
+        return result.data.map((o: ContrattiReturned) => this.purgeValue(o));
+    }
+
     public async get(
         id: number,
         params: ContrattiIncludeParams = {},
