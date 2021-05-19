@@ -50,6 +50,11 @@ export interface OspitiPageParams {
     pageSize?: number;
 }
 
+export interface OspitiFilterParams {
+    dataInizio?: Date;
+    dataFine?: Date;
+}
+
 export class OspitiController extends BaseController {
     public route = '/ospiti';
 
@@ -67,7 +72,7 @@ export class OspitiController extends BaseController {
     }
 
     public async getAll(
-        params: OspitiIncludeParams & OspitiSearchParams & OspitiPageParams = {},
+        params: OspitiIncludeParams & OspitiSearchParams & OspitiPageParams & OspitiFilterParams = {},
         options: Record<string, any> = {}
     ): Promise<OspitiReturned[]> {
         const queryParams = this.parseQueryParams(params);

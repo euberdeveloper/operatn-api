@@ -13,7 +13,7 @@ import prisma, {
 } from '@/services/prisma.service';
 import * as Joi from 'joi';
 
-import { NotFoundError } from '@/errors';
+import { InvalidQueryParamError, NotFoundError } from '@/errors';
 import handlePrismaError from '@/utils/handlePrismaError';
 
 import { TableService } from './table.service';
@@ -145,6 +145,31 @@ export class OspiteService extends TableService {
         return { AND: wordsChecks };
     }
 
+    private parseFilterQueryParameters(queryParams: any): any {
+        const dataInizio = this.parseQueryParamsDate(queryParams.dataInizio, 'dataInizio');
+        const dataFine = this.parseQueryParamsDate(queryParams.dataFine, 'dataFine');
+
+        if ((!dataInizio && dataFine) || (dataInizio && !dataFine)) {
+            throw new InvalidQueryParamError('Both or none query params dataInizio and dataFine should be provided');
+        }
+
+        return dataInizio && dataFine
+            ? {
+                  contrattiSuOspite: {
+                      none: {
+                          contratto: {
+                              NOT: [
+                                  { dataInizio: { gt: dataFine } },
+                                  { dataFine: { lt: dataInizio } },
+                                  { dataChiusuraAnticipata: { not: null } }
+                              ]
+                          }
+                      }
+                  }
+              }
+            : {};
+    }
+
     private handleOspite(ospite: GottenOspite): HandledOspite {
         let result: (GottenOspite & Persona) | HandledOspite = { ...ospite.persona, ...ospite };
         delete (result as any).persona;
@@ -239,9 +264,13 @@ export class OspiteService extends TableService {
         queryParams = { ...queryParams, persona: 'true' };
         const include = this.parseIncludeQueryParameters(queryParams);
         const search = this.parseSearchQueryParameters(queryParams);
+        const filter = this.parseFilterQueryParameters(queryParams);
         const pageValues = this.parsePageQueryParameters(queryParams);
         const ospiti = (await this.model.findMany({
-            where: { persona: search },
+            where: {
+                persona: search,
+                ...filter
+            },
             include,
             ...pageValues
         })) as GottenOspite[];
