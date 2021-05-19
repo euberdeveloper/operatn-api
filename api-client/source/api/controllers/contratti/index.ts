@@ -25,16 +25,8 @@ import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type ContrattiCreateBody = Pick<
     Omit<Contratto, 'id'>,
-    | 'dataInizio'
-    | 'dataFine'
-    | 'idQuietanziante'
-    | 'idTariffa'
-    | 'idTipoContratto'
-    | 'tipoRata'
-    | 'cauzione'
-    | 'checkout'
-    | 'note'
-> & { id?: number } & {
+    'dataInizio' | 'dataFine' | 'idQuietanziante' | 'idTariffa' | 'idTipoContratto' | 'tipoRata' | 'note'
+> & { id?: number; checkout: boolean; cauzione: boolean } & {
     ospiti: {
         idOspite: number;
         postiLetto: number[];
