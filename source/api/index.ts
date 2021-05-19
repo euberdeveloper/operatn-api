@@ -3,6 +3,7 @@ import logger from '@/utils/logger';
 
 import authRouter from './routes/auth/auth.route';
 import fabbricatiRouter from './routes/fabbricati/fabbricati.route';
+import postiLettoRouter from './routes/posti-letto/posti-letto.route';
 import tipiFabbricatoRouter from './routes/tipi-fabbricato/tipi-fabbricato.route';
 import tipiStanzaRouter from './routes/tipi-stanza/tipi-stanza.route';
 import contiRicaviRouter from './routes/conti-ricavi/conti-ricavi.route';
@@ -32,6 +33,9 @@ export default function (): Router {
 
     logger.debug('/fabbricati');
     router.use('/fabbricati', fabbricatiRouter());
+
+    logger.debug('/posti-letto');
+    router.use('/posti-letto', postiLettoRouter());
 
     logger.debug('/tipi-fabbricato');
     router.use('/tipi-fabbricato', tipiFabbricatoRouter());
