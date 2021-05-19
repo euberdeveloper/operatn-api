@@ -72,9 +72,14 @@ export class PostoLettoService extends TableService {
         return postoLetto;
     }
 
-    public async getPostoLettoByIdGeneral(id: number, queryParams: any): Promise<PostoLetto> {
+    public async getPostoLettoByIdGeneral(id: number, _queryParams: any): Promise<PostoLetto> {
         this.validateId(id, 'id');
-        const include = this.parseIncludeQueryParameters(queryParams, this.includeQueryParameters);
+        // TODO: rimuovere
+        const qp = {
+            'stanza': 'true',
+            'stanza.fabbricato': 'true'
+        };
+        const include = this.parseIncludeQueryParameters(qp, this.includeQueryParameters);
 
         const postoLetto = await this.model.findFirst({
             where: { id },
