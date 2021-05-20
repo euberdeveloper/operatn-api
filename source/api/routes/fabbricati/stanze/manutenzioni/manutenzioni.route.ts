@@ -33,7 +33,7 @@ export default function (): Router {
 
     router.post(
         '/',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const body = req.body;
             const fid = +req.params.fid;
@@ -45,7 +45,7 @@ export default function (): Router {
 
     router.delete(
         '/:id',
-        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN]),
+        permission([RuoloUtente.ROOT, RuoloUtente.ADMIN, RuoloUtente.SPORTELLO]),
         asyncHandler(async (req, res) => {
             const fid = +req.params.fid;
             const sid = +req.params.sid;

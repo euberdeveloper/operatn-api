@@ -390,29 +390,39 @@ export class ContrattoService extends TableService {
         return id;
     }
 
-    private getDatesWhere(dataInizio?: Date, dataFine?: Date): any {
+    private getDatesAndOspiteWhere(dataInizio?: Date, dataFine?: Date, idOspite?: number): any {
         return {
             AND: [
                 dataFine ? { dataFine: { lte: dataFine } } : { id: undefined },
-                dataInizio ? { dataInizio: { gte: dataInizio } } : { id: undefined }
+                dataInizio ? { dataInizio: { gte: dataInizio } } : { id: undefined },
+                idOspite
+                    ? {
+                          contrattiSuOspite: {
+                              some: {
+                                  idOspite
+                              }
+                          }
+                      }
+                    : { id: undefined }
             ]
         };
     }
 
     protected parseFilterQueryParameters(
         queryParams: Record<string, string | string[]>
-    ): { dataInizio?: Date; dataFine?: Date } {
+    ): { dataInizio?: Date; dataFine?: Date; idOspite?: number } {
         const dataInizio = this.parseQueryParamsDate(queryParams.dataInizio, 'dataInizio');
         const dataFine = this.parseQueryParamsDate(queryParams.dataFine, 'dataFine');
-        return { dataInizio, dataFine };
+        const idOspite = this.validateNumberQueryParam(queryParams.idOspite, 'idOspite') ?? undefined;
+        return { dataInizio, dataFine, idOspite };
     }
 
     public async getContratti(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                ...this.getDatesWhere(dataInizio, dataFine)
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite)
             },
             include
         });
@@ -421,10 +431,10 @@ export class ContrattoService extends TableService {
 
     public async getContrattiDaFirmare(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                ...this.getDatesWhere(dataInizio, dataFine),
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
                 dataFirmaContratto: null
             },
             include
@@ -434,10 +444,10 @@ export class ContrattoService extends TableService {
 
     public async getContrattiDaVisionare(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                ...this.getDatesWhere(dataInizio, dataFine),
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
                 dataFirmaContratto: null,
                 dataRispostaEmail: { not: null },
                 file: { not: null }
@@ -449,11 +459,44 @@ export class ContrattoService extends TableService {
 
     public async getContrattiFirmati(queryParams: any): Promise<Contratto[]> {
         const include = this.getInclude(queryParams);
-        const { dataInizio, dataFine } = this.parseFilterQueryParameters(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
         const contratti = await this.model.findMany({
             where: {
-                ...this.getDatesWhere(dataInizio, dataFine),
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
                 dataFirmaContratto: { not: null }
+            },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiAttivi(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
+        const todayDate = new Date();
+        const contratti = await this.model.findMany({
+            where: {
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
+                dataFirmaContratto: { not: null },
+                AND: [
+                    { dataInizio: { lte: todayDate }, dataFine: { gte: todayDate } },
+                    { OR: [{ dataChiusuraAnticipata: { gte: todayDate } }, { dataChiusuraAnticipata: null }] }
+                ]
+            },
+            include
+        });
+        return contratti;
+    }
+
+    public async getContrattiTerminati(queryParams: any): Promise<Contratto[]> {
+        const include = this.getInclude(queryParams);
+        const { dataInizio, dataFine, idOspite } = this.parseFilterQueryParameters(queryParams);
+        const todayDate = new Date();
+        const contratti = await this.model.findMany({
+            where: {
+                ...this.getDatesAndOspiteWhere(dataInizio, dataFine, idOspite),
+                dataFirmaContratto: { not: null },
+                OR: [{ dataFine: { lt: todayDate } }, { dataChiusuraAnticipata: { lt: todayDate } }]
             },
             include
         });

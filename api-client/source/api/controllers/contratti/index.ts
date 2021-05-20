@@ -25,16 +25,8 @@ import { AxiosContainer, BaseController } from '@/utils/baseController';
 
 export type ContrattiCreateBody = Pick<
     Omit<Contratto, 'id'>,
-    | 'dataInizio'
-    | 'dataFine'
-    | 'idQuietanziante'
-    | 'idTariffa'
-    | 'idTipoContratto'
-    | 'tipoRata'
-    | 'cauzione'
-    | 'checkout'
-    | 'note'
-> & { id?: number } & {
+    'dataInizio' | 'dataFine' | 'idQuietanziante' | 'idTariffa' | 'idTipoContratto' | 'tipoRata' | 'note'
+> & { id?: number; checkout: boolean; cauzione: boolean } & {
     ospiti: {
         idOspite: number;
         postiLetto: number[];
@@ -134,6 +126,7 @@ export interface ContrattiIncludeParams {
 export interface ContrattiFilterParams {
     dataInizio?: Date;
     dataFine?: Date;
+    idOspite?: number;
 }
 
 export class ContrattiController extends BaseController {
@@ -187,6 +180,24 @@ export class ContrattiController extends BaseController {
     ): Promise<ContrattiReturned[]> {
         const queryParams = this.parseQueryParams(params);
         const result = await this.axiosInstance.get(`${this.route}/firmati${queryParams}`, { ...options });
+        return result.data.map((o: ContrattiReturned) => this.purgeValue(o));
+    }
+
+    public async getAttivi(
+        params: ContrattiIncludeParams & ContrattiFilterParams = {},
+        options: Record<string, any> = {}
+    ): Promise<ContrattiReturned[]> {
+        const queryParams = this.parseQueryParams(params);
+        const result = await this.axiosInstance.get(`${this.route}/attivi${queryParams}`, { ...options });
+        return result.data.map((o: ContrattiReturned) => this.purgeValue(o));
+    }
+
+    public async getTerminati(
+        params: ContrattiIncludeParams & ContrattiFilterParams = {},
+        options: Record<string, any> = {}
+    ): Promise<ContrattiReturned[]> {
+        const queryParams = this.parseQueryParams(params);
+        const result = await this.axiosInstance.get(`${this.route}/terminati${queryParams}`, { ...options });
         return result.data.map((o: ContrattiReturned) => this.purgeValue(o));
     }
 

@@ -25,6 +25,7 @@ import {
     TipiTariffaController,
     UtentiController,
     FabbricatiController,
+    PostiLettoController,
     ContrattiController
 } from './controllers';
 
@@ -41,7 +42,6 @@ export class OperaTN {
     public axiosInstance!: AxiosInstance;
 
     // TODO: contratti/bollette
-    // TODO: fabbricati
     public readonly auth: AuthController;
     public readonly comuni: ComuniController;
     public readonly contabilita: ContabilitaController;
@@ -63,6 +63,7 @@ export class OperaTN {
     public readonly tipiTariffa: TipiTariffaController;
     public readonly utenti: UtentiController;
     public readonly fabbricati: FabbricatiController;
+    public readonly postiLetto: PostiLettoController;
     public readonly contratti: ContrattiController;
 
     private axiosContainer!: AxiosContainer;
@@ -96,6 +97,7 @@ export class OperaTN {
         this.tipiTariffa = new TipiTariffaController(this.axiosContainer);
         this.utenti = new UtentiController(this.axiosContainer);
         this.fabbricati = new FabbricatiController(this.axiosContainer);
+        this.postiLetto = new PostiLettoController(this.axiosContainer);
         this.contratti = new ContrattiController(this.axiosContainer);
     }
 
